@@ -1,1 +1,52 @@
-# Interview-Web3-Ai
+# VitaFlux社区Web3面试题集合
+
+
+
+## VitaFlux
+
+<div align=center><img src="0.Image/VitaFluxLogo.png" alt="VitaFlux" width="375" /></div>
+
+
+
+VitaFlux：由 Qi Capital 发起，面向全球高校学生与Web3爱好者，打造 Web3 × AI × 新金融的创新融合社区. 
+
+核心支持 
+
+1️⃣ 技术赋能：Solidity、跨链协议、DAO 治理、AI+区块链课程等
+
+2️⃣ 项目孵化：提供种子资金、技术指导（支持 DeFi、NFT、RWA）等 
+
+3️⃣ 资源对接：依托 Qi Capital 资金池，链接全球机构 
+
+4️⃣ 职业支持：设有专属求职板块，帮助寻找Web3 实习与就业机会
+
+欢迎加入VitaFlux一起交流～ ➡️ [🍀Telegram频道](https://t.me/+04_gJoUytQo0MjBl)
+
+**与我们一起探索未来，创造可能！**
+
+
+
+## 项目说明
+
+本项目的初衷是为大家提供一个方便查阅、社区共建、真实有温度的Web3&AI面试题集合。
+
+项目目录按照 **岗位类别 -> 真实面经 + 技术栈 + 业务场景** 的结构设置，说明如下：
+
+岗位类别
+
+- 真实面经
+- 技术栈：专业技术（内容为**一问一答**）
+- 业务场景：岗位工作中会遇到的实际业务场景，比如合约部署、钱包集成、项目设计等等（内容为**一问一答**）
+
+
+
+## PR说明
+
+👏欢迎提交PR，一起分享面试经验，共同进步～
+
+PR格式无要求，请随心写❤️～ 
+
+如果对PR不熟悉，可以加入 [🍀VitaFlux Telegram频道](https://t.me/+04_gJoUytQo0MjBl)，在协作角联系社区工作人员代替上传。
+
+## Contributor
+
