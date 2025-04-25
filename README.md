@@ -48,6 +48,33 @@ PR格式无要求，请随心写❤️～
 
 如果对PR不熟悉，可以加入 [🍀VitaFlux Telegram频道](https://t.me/+04_gJoUytQo0MjBl)，在协作角联系社区工作人员代替上传。
 
-## Contributor
 
+
+## 参考项目/资料
+
+https://github.com/the-web3/chaineye-blockchain-interview
+
+https://github.com/xwal/Web3-Interview-Questions/tree/main/WTF-Solidity-Quiz
+
+https://github.com/AmazingAng/WTF-Solidity
+
+https://github.com/Metana-Inc/web3-interview-questions
+
+https://github.com/rohitscript/Blockchain-Interview-Questions
+
+https://gist.github.com/19sajib/d6a6b766bfdb5a4b0f670583f4917bca
+
+https://github.com/sharpWit/Web3FrontEndInterview/
+
+https://hackmd.io/@amintalebi/Bk1Zi0hm3  
+
+https://blog.ibuidl.org/%E7%A4%BE%E5%8C%BA%E6%B4%BB%E5%8A%A8/ce4c1ebc-446c-49f7-b96a-61c4dd2937fc
+
+https://www.tealhq.com/interview-questions/web3-developer
+
+https://github.com/frankiefab100/Web3.0-Roadmap https://xiaolincoding.com/ https://interviewguide.cn/notes/10-interview/0-guide.html
+
+https://www.rareskills.io/post/solidity-interview-questions https://github.com/the-web3/chaineye-blockchain-interview
+
+## Contributor
 
