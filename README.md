@@ -46,11 +46,15 @@ VitaFlux：由 Qi Capital 发起，面向全球高校学生与Web3爱好者，�
 
 PR格式无要求，请随心写❤️～ 
 
+面试题库内容来源广泛，如果存在错误请指正～
+
 如果对PR不熟悉，可以加入 [🍀VitaFlux Telegram频道](https://t.me/+04_gJoUytQo0MjBl)，在协作角联系社区工作人员代替上传。
 
 
 
 ## 参考项目/资料
+
+以下排名不分先后：
 
 https://github.com/the-web3/chaineye-blockchain-interview
 
@@ -75,6 +79,18 @@ https://www.tealhq.com/interview-questions/web3-developer
 https://github.com/frankiefab100/Web3.0-Roadmap https://xiaolincoding.com/ https://interviewguide.cn/notes/10-interview/0-guide.html
 
 https://www.rareskills.io/post/solidity-interview-questions https://github.com/the-web3/chaineye-blockchain-interview
+
+https://learnblockchain.cn/article/7257
+
+https://learnblockchain.cn/article/7260
+
+https://learnblockchain.cn/article/7264
+
+https://learnblockchain.cn/article/7268
+
+https://learnblockchain.cn/article/7275
+
+https://juejin.cn/post/7293392480452132874
 
 ## Contributor
 
