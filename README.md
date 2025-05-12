@@ -54,7 +54,9 @@ PR格式无要求，请随心写❤️～
 
 ## 参考项目/资料
 
-以下排名不分先后：
+本项目的部分题目来自网络，经过整理、部分修改和完善，若有侵权，请联系删除～
+
+具体来源见下方（排名不分先后）：
 
 https://github.com/the-web3/chaineye-blockchain-interview
 
@@ -91,6 +93,12 @@ https://learnblockchain.cn/article/7268
 https://learnblockchain.cn/article/7275
 
 https://juejin.cn/post/7293392480452132874
+
+https://binschool.org/solidity-test/solidity-test-basic.html
+
+https://binschool.org/solidity-test/solidity-test-intermediate.html
+
+https://binschool.org/solidity-test/solidity-test-advanced.html
 
 ## Contributor
 
