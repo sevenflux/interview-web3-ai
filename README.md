@@ -96,9 +96,19 @@ https://juejin.cn/post/7293392480452132874
 
 https://binschool.org/solidity-test/solidity-test-basic.html
 
+https://github.com/lengyue1024/BAT_interviews
+
 https://binschool.org/solidity-test/solidity-test-intermediate.html
 
 https://binschool.org/solidity-test/solidity-test-advanced.html
+
+https://juejin.cn/post/7253466047890554939
+
+https://www.analyticsvidhya.com/blog/2016/12/45-questions-to-test-a-data-scientist-on-regression-skill-test-regression-solution/ 
+
+https://www.analyticsvidhya.com/blog/2016/11/solution-for-skilltest-machine-learning-revealed/
+
+https://www.analyticsvidhya.com/blog/2017/04/40-questions-test-data-scientist-machine-learning-solution-skillpower-machine-learning-datafest-2017/
 
 ## Contributor
 
