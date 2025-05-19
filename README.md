@@ -163,4 +163,7 @@ PR格式无要求，请随心写❤️～
 <https://www.techbeamers.com/java-interview-questions/>
 <https://fdk.codes/some-java-interview-questions/>
 
+<https://www.code-sample.com/2018/02/rust-programming-interview-questions.html>
+<https://www.bestinterviewquestion.com/rust-programming-language-interview-questions>
+
 ## Contributor
