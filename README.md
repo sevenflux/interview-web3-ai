@@ -154,4 +154,13 @@ PR格式无要求，请随心写❤️～
 <https://www.techbeamers.com/python-interview-questions-programmers/>
 <https://www.edureka.co/blog/interview-questions/python-interview-questions/>
 
+<http://www.javacodegeeks.com/2014/04/java-interview-questions-and-answers.html>
+<https://www.codementor.io/java/tutorial/java-interview-sample-questions-answers>
+<http://www.toptal.com/java/interview-questions>
+<https://www.janbasktraining.com/blog/core-java-interview-questions-answers/>
+<https://blog.udemy.com/java-interview-questions/>
+<https://www.interviewcake.com/java-interview-questions>
+<https://www.techbeamers.com/java-interview-questions/>
+<https://fdk.codes/some-java-interview-questions/>
+
 ## Contributor
