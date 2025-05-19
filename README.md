@@ -140,4 +140,18 @@ PR格式无要求，请随心写❤️～
 
 <https://github.com/sudheerj/vuejs-interview-questions>
 
+<https://adevait.com/python/interview-questions>
+<http://www.careerride.com/python-interview-questions.aspx>
+<http://www.toptal.com/python/interview-questions>
+<https://github.com/sigmavirus24/python-interview-questions>
+<http://www.bogotobogo.com/python/python_interview_questions.php>
+<https://www.interviewcake.com/python-interview-questions>
+<https://docs.python.org/2/faq/programming.html>
+<https://luminousmen.com/post/6>
+<https://luminousmen.com/post/7>
+<https://luminousmen.com/post/8>
+<https://www.interviewbit.com/python-interview-questions/>
+<https://www.techbeamers.com/python-interview-questions-programmers/>
+<https://www.edureka.co/blog/interview-questions/python-interview-questions/>
+
 ## Contributor
