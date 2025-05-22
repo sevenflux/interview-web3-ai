@@ -136,4 +136,10 @@ PR格式无要求，请随心写❤️～
 
 <https://github.com/sudheerj/reactjs-interview-questions>
 
+<https://github.com/sudheerj/vuejs-interview-questions>
+
+<https://www.simplilearn.com/vue-js-interview-questions-article>
+
+<https://arc.dev/talent-blog/vue-interview-questions/>
+
 ## Contributor
