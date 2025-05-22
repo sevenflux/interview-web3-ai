@@ -142,4 +142,12 @@ PR格式无要求，请随心写❤️～
 
 <https://arc.dev/talent-blog/vue-interview-questions/>
 
+<https://arc.dev/talent-blog/java-interview-questions/>\
+
+<https://www.toptal.com/java/interview-questions>\
+
+<https://www.janbasktraining.com/interview-questions/core-java-questions-answers/>\
+
+<https://blog.udemy.com/java-interview-questions/>
+
 ## Contributor
