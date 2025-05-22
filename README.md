@@ -156,4 +156,12 @@ PR格式无要求，请随心写❤️～
 
 <https://www.code-sample.com/2018/02/rust-programming-interview-questions.html#main>
 
+<http://www.toptal.com/python/interview-questions>
+
+<https://www.interviewbit.com/python-interview-questions/>
+
+<https://www.geeksforgeeks.org/python-interview-questions/>
+
+<https://www.datacamp.com/blog/top-python-interview-questions-and-answers>
+
 ## Contributor
