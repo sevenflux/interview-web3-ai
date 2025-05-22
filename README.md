@@ -142,12 +142,18 @@ PR格式无要求，请随心写❤️～
 
 <https://arc.dev/talent-blog/vue-interview-questions/>
 
-<https://arc.dev/talent-blog/java-interview-questions/>\
+<https://arc.dev/talent-blog/java-interview-questions/>
 
-<https://www.toptal.com/java/interview-questions>\
+<https://www.toptal.com/java/interview-questions>
 
-<https://www.janbasktraining.com/interview-questions/core-java-questions-answers/>\
+<https://www.janbasktraining.com/interview-questions/core-java-questions-answers/>
 
 <https://blog.udemy.com/java-interview-questions/>
+
+<https://www.bestinterviewquestion.com/rust-programming-language-interview-questions>
+
+<https://www.turing.com/interview-questions/rust>
+
+<https://www.code-sample.com/2018/02/rust-programming-interview-questions.html#main>
 
 ## Contributor
