@@ -126,4 +126,42 @@ PR格式无要求，请随心写❤️～
 
 <https://www.techgeekbuzz.com/top-docker-interview-questions/>
 
+<https://arc.dev/talent-blog/reactjs-interview-questions/>
+
+<https://ui.dev/react-interview-questions>
+
+<https://www.toptal.com/react/interview-questions>
+
+<https://www.onlineinterviewquestions.com/typescript-interview-questions>
+
+<https://github.com/sudheerj/reactjs-interview-questions>
+
+<https://github.com/sudheerj/vuejs-interview-questions>
+
+<https://www.simplilearn.com/vue-js-interview-questions-article>
+
+<https://arc.dev/talent-blog/vue-interview-questions/>
+
+<https://arc.dev/talent-blog/java-interview-questions/>
+
+<https://www.toptal.com/java/interview-questions>
+
+<https://www.janbasktraining.com/interview-questions/core-java-questions-answers/>
+
+<https://blog.udemy.com/java-interview-questions/>
+
+<https://www.bestinterviewquestion.com/rust-programming-language-interview-questions>
+
+<https://www.turing.com/interview-questions/rust>
+
+<https://www.code-sample.com/2018/02/rust-programming-interview-questions.html#main>
+
+<http://www.toptal.com/python/interview-questions>
+
+<https://www.interviewbit.com/python-interview-questions/>
+
+<https://www.geeksforgeeks.org/python-interview-questions/>
+
+<https://www.datacamp.com/blog/top-python-interview-questions-and-answers>
+
 ## Contributor
