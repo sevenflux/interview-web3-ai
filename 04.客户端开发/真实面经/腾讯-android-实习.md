@@ -42,6 +42,3 @@
 42，高德sdk，手机在室内时无法做卫星定位，如何发挥作用，误差是多少？
 43，网络请求框架现在普遍使用的是什么？dio是一种什么样的网络请求框架？
 
-作者：lzh_hbsd
-链接：[https://www.nowcoder.com/interview/center?entranceType=%E5%AF%BC%E8%88%AA%E6%A0%8F](https://www.nowcoder.com/interview/center?entranceType=导航栏)
-来源：牛客网

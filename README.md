@@ -164,4 +164,15 @@ PR格式无要求，请随心写❤️～
 
 <https://www.datacamp.com/blog/top-python-interview-questions-and-answers>
 
+<https://juejin.cn/post/7200377381613666341?searchId=20250513222705F9FA492A8DDDCA68A2AA>
+
+<https://juejin.cn/post/6988016003162570782>
+
+<https://www.nowcoder.com/interview/center?entranceType=%E5%AF%BC%E8%88%AA%E6%A0%8F>
+
+<https://juejin.cn/post/7242127432203665468>
+
 ## Contributor
+
+
+
