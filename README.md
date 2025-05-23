@@ -172,7 +172,12 @@ PR格式无要求，请随心写❤️～
 
 <https://juejin.cn/post/7242127432203665468>
 
+<http://www.careerride.com/android-interview-questions.aspx>
+
+<https://github.com/derekargueta/Android-Interview-Questions>
+
+<https://medium.com/@neteinstein/not-another-android-interviews-article-the-questions-3dedafa30bec>
+
+<https://juejin.cn/post/6844903901557161992>
+
 ## Contributor
-
-
-
