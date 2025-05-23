@@ -54,21 +54,21 @@ Intent 是系统级的消息传递机制，既可用于组件间通信（如启�
 
 ## 10. Activity 与 Service 的区别？
 
-核心差异在于生命周期和可见性：<br>
-Activity 随用户操作随时关闭，主要负责界面交互<br>
-Service 无界面长期后台运行，处理音乐播放等持续任务<br>
+核心差异在于生命周期和可见性：
+Activity 随用户操作随时关闭，主要负责界面交互
+Service 无界面长期后台运行，处理音乐播放等持续任务
 > [生命周期对比] Activity 受界面状态影响，而 Service 需主动调用 stopService() 终止。
 
 ## 11. Android 项目的必备文件？
 
-每个 Android 项目必须包含：<br>
+每个 Android 项目必须包含：
 
-- 清单文件 AndroidManifest.xml<br>
-- 构建配置 build.gradle（旧版用 build.xml）<br>
-- 编译输出目录 build/<br>
-- 源代码目录 src/<br>
-- 资源目录 res/<br>
-- 原始资源 assets/<br>
+- 清单文件 AndroidManifest.xml
+- 构建配置 build.gradle（旧版用 build.xml）
+- 编译输出目录 build/
+- 源代码目录 src/
+- 资源目录 res/
+- 原始资源 assets/
 
 ## 12. XML 布局的重要性？
 
@@ -89,10 +89,10 @@ XML 布局实现界面与逻辑的分离，保证 UI 定义规范统一。主流
 
 ## 14. 什么是 Orientation？
 
-通过 setOrientation() 设置线性布局方向：<br>
+通过 setOrientation() 设置线性布局方向：
 
-- HORIZONTAL 横向排列子元素<br>
-- VERTICAL 纵向堆叠子元素<br>
+- HORIZONTAL 横向排列子元素
+- VERTICAL 纵向堆叠子元素
 这种特性使得 LinearLayout 成为最基础的布局容器之一。
 
 ## 15. Android 在移动市场的优势？
@@ -101,21 +101,21 @@ XML 布局实现界面与逻辑的分离，保证 UI 定义规范统一。主流
 
 ## 16. Android 的缺点？
 
-主要痛点表现在：<br>
+主要痛点表现在：
 
-1. 系统碎片化：不同厂商定制导致版本兼容问题<br>
-2. 硬件多样性：屏幕尺寸、分辨率适配复杂<br>
-3. 功耗管理：后台服务过度消耗电量<br>
+1. 系统碎片化：不同厂商定制导致版本兼容问题
+2. 硬件多样性：屏幕尺寸、分辨率适配复杂
+3. 功耗管理：后台服务过度消耗电量
 这需要开发者花费额外精力处理兼容性测试和优化。
 
 ## 17. 什么是 adb？
 
-Android 调试桥 (Android Debug Bridge) 是 PC 与设备/模拟器通信的命令行工具。核心功能包括：<br>
+Android 调试桥 (Android Debug Bridge) 是 PC 与设备/模拟器通信的命令行工具。核心功能包括：
 
-- 安装/卸载应用<br>
-- logcat 日志查看<br>
-- 文件传输<br>
-- shell 命令执行<br>
+- 安装/卸载应用
+- logcat 日志查看
+- 文件传输
+- shell 命令执行
 
 ```shell
 # 查看连接设备
@@ -126,11 +126,11 @@ adb install app.apk
 
 ## 18. Activity 的四个生命周期状态？
 
-完整生命周期包括：<br>
-Active（活动）: 界面可见且可交互<br>
-Paused（暂停）: 部分遮挡但仍可见（如对话框弹出）<br>
-Stopped（停止）: 完全不可见但对象存在<br>
-Destroyed（销毁）: 对象被回收<br>
+完整生命周期包括：
+Active（活动）: 界面可见且可交互
+Paused（暂停）: 部分遮挡但仍可见（如对话框弹出）
+Stopped（停止）: 完全不可见但对象存在
+Destroyed（销毁）: 对象被回收
 需结合 onStart()/onStop() 等方法理解状态转变。
 
 ## 19. 什么是 ANR？
@@ -143,25 +143,25 @@ manifest 根元素与 application 元素必须存在且唯一。其他组件如 
 
 ## 21. 属性中如何转义特殊字符？
 
-使用双反斜杠转义，典型场景如：<br>
+使用双反斜杠转义，典型场景如：
 
-- 换行符 `\\n`<br>
-- 引号 `\\"`<br>
-- Unicode 字符 `\\u0020`<br>
+- 换行符 `\\n`
+- 引号 `\\"`
+- Unicode 字符 `\\u0020`
 这些转义主要在 XML 资源文件中使用。
 
 ## 22. 权限设置的开发意义？
 
-保护敏感数据和系统功能，例如：<br>
+保护敏感数据和系统功能，例如：
 
-- 网络访问权限<br>
-- 相机调用权限<br>
-- 定位权限<br>
+- 网络访问权限
+- 相机调用权限
+- 定位权限
 缺省情况下应用无权限访问这些资源，需在 AndroidManifest.xml 显式声明。
 
 ## 23. Intent 过滤器的作用？
 
-Intent 过滤器在清单文件中声明组件能处理的意图类型，例如：<br>
+Intent 过滤器在清单文件中声明组件能处理的意图类型，例如：
 
 ```xml
 <activity android:name=".ShareActivity">
@@ -177,9 +177,9 @@ Intent 过滤器在清单文件中声明组件能处理的意图类型，例如�
 
 ## 24. Activity 监控的三大生命周期？
 
-1. 完整周期（onCreate 到 onDestroy）：管理全局资源申请与释放<br>
-2. 可见周期（onStart 到 onStop）：控制界面相关资源（如摄像头）<br>
-3. 前台周期（onResume 到 onPause）：处理用户交互<br>
+1. 完整周期（onCreate 到 onDestroy）：管理全局资源申请与释放
+2. 可见周期（onStart 到 onStop）：控制界面相关资源（如摄像头）
+3. 前台周期（onResume 到 onPause）：处理用户交互
 正确管理这些周期是避免内存泄漏的关键。
 
 ## 25. 在什么情况下会触发 onStop() 方法？
@@ -1009,9 +1009,6 @@ interface IMyService {
 ```
 
 ## 87. 什么是九宫格图片？
-
-这种 .9.png 图片通过边缘黑线定义伸缩区域：  
-![](https://developer.android.com/studio/write/draw9patch)  
 
 - 四角区域不拉伸  
 - 上下边缘控制水平拉伸区域  

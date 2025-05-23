@@ -178,4 +178,6 @@ PR格式无要求，请随心写❤️～
 
 <https://medium.com/@neteinstein/not-another-android-interviews-article-the-questions-3dedafa30bec>
 
+<https://juejin.cn/post/6844903901557161992>
+
 ## Contributor
