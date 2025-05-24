@@ -287,3 +287,9 @@
 <https://hellointern.in/blog/vite-interview-questions-and-answers-for-7-years-experience-54440>
 
 <https://hellointern.in/blog/vite-interview-questions-and-answers-22019>
+
+<https://mui.com/material-ui/getting-started/faq/>
+
+<https://www.remoterocketship.com/advice/10-material-ui-interview-questions-and-answers-in-2023>
+
+<https://www.glassdoor.co.in/Interview/Material-UI-Developer-Interview-Questions-EI_IE5355174.0,8_KO9,21.htm>
