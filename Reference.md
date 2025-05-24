@@ -281,3 +281,9 @@
 <https://blog.csdn.net/qq_40522090/article/details/139922669>
 
 <https://www.iamshuaidi.com/30237.html>
+
+<https://github.com/machao07/interview-questions/issues/59>
+
+<https://hellointern.in/blog/vite-interview-questions-and-answers-for-7-years-experience-54440>
+
+<https://hellointern.in/blog/vite-interview-questions-and-answers-22019>
