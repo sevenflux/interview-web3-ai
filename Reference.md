@@ -20,9 +20,15 @@
 
 <https://www.tealhq.com/interview-questions/web3-developer>
 
-<https://github.com/frankiefab100/Web3.0-Roadmap> <https://xiaolincoding.com/> <https://interviewguide.cn/notes/10-interview/0-guide.html>
+<https://github.com/frankiefab100/Web3.0-Roadmap>
 
-<https://www.rareskills.io/post/solidity-interview-questions> <https://github.com/the-web3/chaineye-blockchain-interview>
+ <https://xiaolincoding.com/>
+
+ <https://interviewguide.cn/notes/10-interview/0-guide.html>
+
+<https://www.rareskills.io/post/solidity-interview-questions> 
+
+<https://github.com/the-web3/chaineye-blockchain-interview>
 
 <https://learnblockchain.cn/article/7257>
 
@@ -263,3 +269,8 @@
 [https://huggingface.co/docs/transformers/en/peft](https://huggingface.co/docs/transformers/en/peft)
 
 [https://huggingface.co/docs/transformers/en/training](https://huggingface.co/docs/transformers/en/training)
+
+https://www.nowcoder.com/interview/center?entranceType=%E5%AF%BC%E8%88%AA%E6%A0%8F
+
+> 忽然发现牛客自动粘贴的来源链接都是一样的，前面没注意到......
+

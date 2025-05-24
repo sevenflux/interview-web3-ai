@@ -44,7 +44,5 @@
 感觉三面主要更侧重软技能
 无手撕
 
-作者：卷不动的西瓜
-链接：[https://www.nowcoder.com/interview/center?entranceType=%E5%AF%BC%E8%88%AA%E6%A0%8F](https://www.nowcoder.com/interview/center?entranceType=导航栏)
-来源：牛客网
+
 
