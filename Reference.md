@@ -26,7 +26,7 @@
 
  <https://interviewguide.cn/notes/10-interview/0-guide.html>
 
-<https://www.rareskills.io/post/solidity-interview-questions> 
+<https://www.rareskills.io/post/solidity-interview-questions>
 
 <https://github.com/the-web3/chaineye-blockchain-interview>
 
@@ -270,7 +270,26 @@
 
 [https://huggingface.co/docs/transformers/en/training](https://huggingface.co/docs/transformers/en/training)
 
-https://www.nowcoder.com/interview/center?entranceType=%E5%AF%BC%E8%88%AA%E6%A0%8F
+<https://www.nowcoder.com/interview/center?entranceType=%E5%AF%BC%E8%88%AA%E6%A0%8F>
 
 > 忽然发现牛客自动粘贴的来源链接都是一样的，前面没注意到......
 
+<https://blog.csdn.net/qq_45659769/article/details/119515064>
+
+<https://www.cnblogs.com/fairya/p/17323895.html>
+
+<https://blog.csdn.net/qq_40522090/article/details/139922669>
+
+<https://www.iamshuaidi.com/30237.html>
+
+<https://github.com/machao07/interview-questions/issues/59>
+
+<https://hellointern.in/blog/vite-interview-questions-and-answers-for-7-years-experience-54440>
+
+<https://hellointern.in/blog/vite-interview-questions-and-answers-22019>
+
+<https://mui.com/material-ui/getting-started/faq/>
+
+<https://www.remoterocketship.com/advice/10-material-ui-interview-questions-and-answers-in-2023>
+
+<https://www.glassdoor.co.in/Interview/Material-UI-Developer-Interview-Questions-EI_IE5355174.0,8_KO9,21.htm>
