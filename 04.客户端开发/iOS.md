@@ -1530,7 +1530,7 @@ func stepWays(n: Int) -> Int {
 1. NSObject作为根类，提供基本内存管理方法（alloc/dealloc）
 2. 根类中包含isa指针指向元类（Meta Class）
 3. 元类保存类方法信息，其继承关系与实例类平行
-![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2019/7/29/16c39567d970ee6e~tplv-t2oaga2asx-jj-mark:3024:0:0:0:q75.awebp)
+![](../0.Image/iOS/1.webp)
 
 > [Runtime特性] 通过object_getClass()追踪isa指针可以发现：  
 实例的isa → 类对象  

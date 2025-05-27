@@ -1288,7 +1288,7 @@ Rust 提供了多种智能指针类型，每种都有特定用途：
 - `RefCell<T>`：提供运行时借用检查的内部可变性容器
 - `Mutex<T>` 和 `RwLock<T>`：线程间共享数据时使用的同步原语
 
-![Image 06-06-23 at 4.41 PM.webp](https://images.prismic.io/turing/658c0027531ac2845a26f56f_Image_06_06_23_at_4_41_PM_366c2237ba.webp?auto=format,compress)
+![Image 06-06-23 at 4.41 PM.webp](../0.Image/Rust/1.webp)
 
 ## 95. 如何在 Rust 中使用智能指针？
 
@@ -1305,7 +1305,7 @@ let data_clone = Rc::clone(&data);  // 增加引用计数
 
 通过这种方式，多个变量可以共享同一数据的所有权。当最后一个 Rc 被丢弃时数据才会释放。
 
-![Image 06-06-23 at 4.43 PM.webp](https://images.prismic.io/turing/658c0028531ac2845a26f570_Image_06_06_23_at_4_43_PM_bd66f06606.webp?auto=format,compress)
+![Image 06-06-23 at 4.43 PM.webp](../0.Image/Rust/2.webp)
 
 ## 96. Rust 中分片（slices）有哪些使用场景？
 
