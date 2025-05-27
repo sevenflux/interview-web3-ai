@@ -293,3 +293,25 @@
 <https://www.remoterocketship.com/advice/10-material-ui-interview-questions-and-answers-in-2023>
 
 <https://www.glassdoor.co.in/Interview/Material-UI-Developer-Interview-Questions-EI_IE5355174.0,8_KO9,21.htm>
+
+<https://www.turing.com/interview-questions/flutter>
+
+<https://www.interviewbit.com/flutter-interview-questions/>
+
+<https://github.com/thisissandipp/flutter-interview-questions>
+
+<https://www.wscubetech.com/blog/wp-content/uploads/2023/11/Flutter-Questions-.pdf>
+
+<https://www.simplilearn.com/tutorials/kubernetes-tutorial/>
+
+<https://www.datacamp.com/blog/kubernetes-interview-questions>
+
+<https://www.turing.com/interview-questions/kubernetes>
+
+<https://www.datacamp.com/blog/rag-interview-questions>
+
+<https://skphd.medium.com/interview-questions-and-answers-on-retrieval-augmented-generation-rag-f5fb7b5b8228>
+
+<https://www.analyticsvidhya.com/blog/2024/04/rag-interview-questions/>
+
+<https://www.projectpro.io/article/rag-interview-questions-and-answers/1065>
