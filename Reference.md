@@ -307,3 +307,11 @@
 <https://www.datacamp.com/blog/kubernetes-interview-questions>
 
 <https://www.turing.com/interview-questions/kubernetes>
+
+<https://www.datacamp.com/blog/rag-interview-questions>
+
+<https://skphd.medium.com/interview-questions-and-answers-on-retrieval-augmented-generation-rag-f5fb7b5b8228>
+
+<https://www.analyticsvidhya.com/blog/2024/04/rag-interview-questions/>
+
+<https://www.projectpro.io/article/rag-interview-questions-and-answers/1065>
