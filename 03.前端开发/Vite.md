@@ -82,7 +82,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Vite 利用浏览器的原生 ES 模块支持，按需即时编译和加载模块，避免了传统打包的等待时间。 解释：Vite 在开发模式下利用浏览器对 ES 模块的原生支持，按需加载模块，避免了传统打包工具先打包所有模块带来的启动延迟，从而实现更快的启动速度。选项 A 描述的是传统打包方式，与 Vite 的即时编译理念相反；选项 C 关于 Node.js 版本限制错误，Vite 支持较新的版本；选项 D 对 Vite 的资源处理方式理解错误。</strong></p>
+  <p><strong>
+
+正确答案: B. Vite 利用浏览器的原生 ES 模块支持，按需即时编译和加载模块，避免了传统打包的等待时间。 解释：Vite 在开发模式下利用浏览器对 ES 模块的原生支持，按需加载模块，避免了传统打包工具先打包所有模块带来的启动延迟，从而实现更快的启动速度。选项 A 描述的是传统打包方式，与 Vite 的即时编译理念相反；选项 C 关于 Node.js 版本限制错误，Vite 支持较新的版本；选项 D 对 Vite 的资源处理方式理解错误。</strong></p>
 </details>
 
 **问题 2:**
@@ -91,7 +93,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Vite通过利用浏览器原生的ES模块（ESM）支持，实现了快速的热模块替换（HMR）。当代码发生修改时，Vite只会发送更新的模块给浏览器，而不需要重新打包整个应用。其核心工作原理是：
+  <p><strong>
+
+正确答案: Vite通过利用浏览器原生的ES模块（ESM）支持，实现了快速的热模块替换（HMR）。当代码发生修改时，Vite只会发送更新的模块给浏览器，而不需要重新打包整个应用。其核心工作原理是：
 
 1. 开发服务器基于原生ESM，浏览器按需加载模块，无需预先打包。
 2. 当文件改变时，Vite通过WebSocket向浏览器推送更新的模块路径。
@@ -118,7 +122,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. Vite 在开发模式下通过预构建所有依赖来提升启动速度，而传统构建工具通常一次性打包整个项目。 解释：Vite 利用浏览器原生 ES 模块特性，在开发环境下只对依赖做预构建，减少启动时间，而传统构建工具如 Webpack 通常需要一次性打包整个项目，导致启动较慢。选项 B 错误，因为 Vite 仍需预构建依赖。选项 C 错误，传统构建工具启动较慢。选项 D 错误，Vite 生产构建仍依赖 Rollup 等打包工具做优化。</strong></p>
+  <p><strong>
+
+正确答案: A. Vite 在开发模式下通过预构建所有依赖来提升启动速度，而传统构建工具通常一次性打包整个项目。 解释：Vite 利用浏览器原生 ES 模块特性，在开发环境下只对依赖做预构建，减少启动时间，而传统构建工具如 Webpack 通常需要一次性打包整个项目，导致启动较慢。选项 B 错误，因为 Vite 仍需预构建依赖。选项 C 错误，传统构建工具启动较慢。选项 D 错误，Vite 生产构建仍依赖 Rollup 等打包工具做优化。</strong></p>
 </details>
 
 **问题 2:**
@@ -127,7 +133,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Vite 相较于传统的 webpack 主要有以下优势：
+  <p><strong>
+
+正确答案: Vite 相较于传统的 webpack 主要有以下优势：
 
 1. **快速冷启动**：Vite 利用原生 ES 模块，开发服务器启动时无需打包整个项目，而是按需加载模块，极大缩短启动时间。对于中小型 SPA 项目，开发者可以更快看到应用运行效果，提升调试效率。
 
@@ -163,7 +171,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Vite 插件是通过实现特定的钩子函数来扩展打包和开发流程的。解释：Vite插件机制基于Rollup插件系统，通过实现钩子函数（如transform、load等）来扩展和定制开发和构建流程。选项A错误，因为插件同样影响构建过程；选项C错误，插件可以用JavaScript或TypeScript编写；选项D错误，插件可以处理多种类型的文件，不仅限于CSS。</strong></p>
+  <p><strong>
+
+正确答案: B. Vite 插件是通过实现特定的钩子函数来扩展打包和开发流程的。解释：Vite插件机制基于Rollup插件系统，通过实现钩子函数（如transform、load等）来扩展和定制开发和构建流程。选项A错误，因为插件同样影响构建过程；选项C错误，插件可以用JavaScript或TypeScript编写；选项D错误，插件可以处理多种类型的文件，不仅限于CSS。</strong></p>
 </details>
 
 **问题 2:**
@@ -172,7 +182,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Vite 插件本质上是一个包含特定钩子函数的对象。这些钩子函数对应构建过程中的不同阶段。一个基本的 Vite 插件结构通常包括一个 `name` 属性和一个或多个生命周期钩子函数。要在每次构建时打印日志，可以使用 `buildStart` 钩子，该钩子在构建开始时触发。示例插件结构：
+  <p><strong>
+
+正确答案: Vite 插件本质上是一个包含特定钩子函数的对象。这些钩子函数对应构建过程中的不同阶段。一个基本的 Vite 插件结构通常包括一个 `name` 属性和一个或多个生命周期钩子函数。要在每次构建时打印日志，可以使用 `buildStart` 钩子，该钩子在构建开始时触发。示例插件结构：
 
 ```js
 export default function myPlugin() {
@@ -209,7 +221,9 @@ export default function myPlugin() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. Vite 配置文件导出的是一个配置对象或返回配置对象的函数，常见的配置项包括 root、plugins、server、build 等。这是 Vite 配置文件的标准结构，允许灵活配置项目根目录、插件、开发服务器和构建选项等。</strong></p>
+  <p><strong>
+
+正确答案: C. Vite 配置文件导出的是一个配置对象或返回配置对象的函数，常见的配置项包括 root、plugins、server、build 等。这是 Vite 配置文件的标准结构，允许灵活配置项目根目录、插件、开发服务器和构建选项等。</strong></p>
 </details>
 
 **问题 2:**
@@ -218,7 +232,9 @@ export default function myPlugin() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Vite配置文件通常导出一个配置对象，结构包括：
+  <p><strong>
+
+正确答案: Vite配置文件通常导出一个配置对象，结构包括：
 
 1. `root`：项目根目录。
 2. `plugins`：插件数组，用于扩展功能。
@@ -268,7 +284,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Vite 的 HMR 仅在代码发生变化时，替换对应模块的代码，而不刷新整个页面，提升开发效率。 Vite 利用原生 ES 模块特性，实现了精准的模块热替换，只更新变更的模块，避免整个页面刷新，从而加快开发反馈速度。</strong></p>
+  <p><strong>
+
+正确答案: B. Vite 的 HMR 仅在代码发生变化时，替换对应模块的代码，而不刷新整个页面，提升开发效率。 Vite 利用原生 ES 模块特性，实现了精准的模块热替换，只更新变更的模块，避免整个页面刷新，从而加快开发反馈速度。</strong></p>
 </details>
 
 **问题 2:**
@@ -277,7 +295,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Vite 的热更新机制（HMR）基于原生 ES 模块和 WebSocket。开发服务器监听文件变化，发生变动后只发送变动模块的代码给浏览器，浏览器接收并替换对应模块，避免整页刷新，从而加快开发体验。具体来说，Vite 通过 WebSocket 向客户端推送模块更新请求，客户端收到后调用模块的 HMR 接口进行更新。
+  <p><strong>
+
+正确答案: Vite 的热更新机制（HMR）基于原生 ES 模块和 WebSocket。开发服务器监听文件变化，发生变动后只发送变动模块的代码给浏览器，浏览器接收并替换对应模块，避免整页刷新，从而加快开发体验。具体来说，Vite 通过 WebSocket 向客户端推送模块更新请求，客户端收到后调用模块的 HMR 接口进行更新。
 
 在该场景中，样式修改没有立即生效，可能原因包括：
 1. CSS 模块未正确导入或绑定，导致样式变动未触发 HMR。
@@ -317,7 +337,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. `base` 用来设置项目中所有资源的基础公共路径。因为 `base` 配置项用于指定应用在生产环境下的公共基础路径，影响资源文件的引用路径，常用于部署时设置相对路径或 CDN 路径。</strong></p>
+  <p><strong>
+
+正确答案: B. `base` 用来设置项目中所有资源的基础公共路径。因为 `base` 配置项用于指定应用在生产环境下的公共基础路径，影响资源文件的引用路径，常用于部署时设置相对路径或 CDN 路径。</strong></p>
 </details>
 
 **问题 2:**
@@ -326,7 +348,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. base 配置项用于指定项目中所有资源的基础路径，默认是 '/'，表示根路径。如果你的项目部署在服务器的子路径下（例如 https://example.com/myapp/），需要将 base 配置为 '/myapp/'，这样资源路径才会正确。
+  <p><strong>
+
+正确答案: 1. base 配置项用于指定项目中所有资源的基础路径，默认是 '/'，表示根路径。如果你的项目部署在服务器的子路径下（例如 https://example.com/myapp/），需要将 base 配置为 '/myapp/'，这样资源路径才会正确。
 
 2. publicDir 配置项用于指定静态资源的目录，默认是 'public'。该目录下的文件会原样复制到最终构建输出目录的根目录。你可以通过修改 publicDir 来改变静态资源的存放位置。
 
@@ -364,7 +388,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 环境变量需要以 VITE_ 前缀命名，放在不同的 .env 文件中（如 .env.development、.env.production），通过 --mode 参数来指定环境，Vite 会自动加载对应文件。 环境变量管理中，VITE_ 前缀是 Vite 识别和注入环境变量的关键，且通过不同的 .env 文件区分环境，--mode 参数用于切换环境，Vite 会据此自动加载对应的环境变量文件。选项 A 错误在于所有环境变量必须以 VITE_ 前缀命名，但不是所有变量都必须写在根目录的单一 .env 文件中，应该根据环境分文件管理；选项 B 错误，因为环境变量不能随意命名且不能放在项目源码文件中；选项 D 错误，因为 package.json 中定义的变量不会自动注入到 Vite 项目中。</strong></p>
+  <p><strong>
+
+正确答案: C. 环境变量需要以 VITE_ 前缀命名，放在不同的 .env 文件中（如 .env.development、.env.production），通过 --mode 参数来指定环境，Vite 会自动加载对应文件。 环境变量管理中，VITE_ 前缀是 Vite 识别和注入环境变量的关键，且通过不同的 .env 文件区分环境，--mode 参数用于切换环境，Vite 会据此自动加载对应的环境变量文件。选项 A 错误在于所有环境变量必须以 VITE_ 前缀命名，但不是所有变量都必须写在根目录的单一 .env 文件中，应该根据环境分文件管理；选项 B 错误，因为环境变量不能随意命名且不能放在项目源码文件中；选项 D 错误，因为 package.json 中定义的变量不会自动注入到 Vite 项目中。</strong></p>
 </details>
 
 **问题 2:**
@@ -380,7 +406,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 环境变量文件的命名和放置：
+  <p><strong>
+
+正确答案: 1. 环境变量文件的命名和放置：
    - Vite 默认支持在项目根目录放置以 `.env` 为前缀的文件来管理环境变量。
    - 不同环境可使用不同的文件，例如：
      - `.env` ：默认加载，适用于所有环境
@@ -427,7 +455,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 通过配置 build.rollupOptions.output.manualChunks 可以自定义代码分割策略，从而实现更细粒度的拆包；缓存优化主要依赖于 Vite 默认的缓存机制，无需额外配置。因为 Vite 基于 Rollup 实现构建，manualChunks 是控制代码分割的重要配置项，可以帮助开发者实现按需拆包，提升加载效率。而缓存优化方面，Vite 默认利用缓存机制减少重复构建，通常不需要开发者手动配置缓存目录或其他参数。</strong></p>
+  <p><strong>
+
+正确答案: A. 通过配置 build.rollupOptions.output.manualChunks 可以自定义代码分割策略，从而实现更细粒度的拆包；缓存优化主要依赖于 Vite 默认的缓存机制，无需额外配置。因为 Vite 基于 Rollup 实现构建，manualChunks 是控制代码分割的重要配置项，可以帮助开发者实现按需拆包，提升加载效率。而缓存优化方面，Vite 默认利用缓存机制减少重复构建，通常不需要开发者手动配置缓存目录或其他参数。</strong></p>
 </details>
 
 **问题 2:**
@@ -436,7 +466,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 针对首次加载时间长的问题，可以通过配置 Vite 的代码分割策略来优化。具体做法包括：
+  <p><strong>
+
+正确答案: 针对首次加载时间长的问题，可以通过配置 Vite 的代码分割策略来优化。具体做法包括：
 1. 利用 Vite 内置的 Rollup 代码分割功能，将第三方库（如 React、Vue）和业务代码拆分为不同的 chunk，减少主包体积，加快首次加载。
 2. 配置 `build.rollupOptions.output.manualChunks`，根据业务模块划分合理的 chunk，实现按需加载。
 
@@ -466,7 +498,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 直接在 `plugins` 数组中引入插件实例，例如：`plugins: [vue()]`。这是 Vite 正确的插件配置方式，插件需要作为实例传入 plugins 数组中，才能生效。选项 B 是错误的，插件不能直接用路径字符串表示；选项 C 的 `configureServer` 是插件开发中的钩子选项，不是配置插件的方式；选项 D 中动态导入返回的是 Promise，不能直接作为插件实例使用。</strong></p>
+  <p><strong>
+
+正确答案: A. 直接在 `plugins` 数组中引入插件实例，例如：`plugins: [vue()]`。这是 Vite 正确的插件配置方式，插件需要作为实例传入 plugins 数组中，才能生效。选项 B 是错误的，插件不能直接用路径字符串表示；选项 C 的 `configureServer` 是插件开发中的钩子选项，不是配置插件的方式；选项 D 中动态导入返回的是 Promise，不能直接作为插件实例使用。</strong></p>
 </details>
 
 **问题 2:**
@@ -480,7 +514,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 针对自动引入常用组件，可以使用类似 `unplugin-vue-components` 这样的插件，它支持自动扫描组件目录并自动导入组件，减少手动导入的工作量。配置时，需要在 `vite.config.js` 中引入并配置该插件，比如指定组件目录和解析器。
+  <p><strong>
+
+正确答案: 针对自动引入常用组件，可以使用类似 `unplugin-vue-components` 这样的插件，它支持自动扫描组件目录并自动导入组件，减少手动导入的工作量。配置时，需要在 `vite.config.js` 中引入并配置该插件，比如指定组件目录和解析器。
 
 针对根据环境变量动态调整插件配置，可以在 `vite.config.js` 中使用 `mode` 或 `process.env` 来判断当前环境，然后根据环境条件来启用或配置不同的插件。例如，在生产环境中启用代码压缩插件（如 `vite-plugin-compression` 或使用内置的 `build.minify`），在开发环境中启用调试插件（如 `vite-plugin-react` 的调试选项）。
 
@@ -510,7 +546,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在 vite.config.js 中使用 `build.rollupOptions.input` 对象，指定多个入口文件，每个入口对应一个页面。这是 Vite 官方推荐的多入口配置方式，利用 Rollup 的多入口功能实现多页面打包。选项 B 混淆了代理配置与入口配置，选项 C 只是简单添加脚本标签，不能实现多页面打包，选项 D 中 `define` 是用于替换变量，不支持声明入口。</strong></p>
+  <p><strong>
+
+正确答案: A. 在 vite.config.js 中使用 `build.rollupOptions.input` 对象，指定多个入口文件，每个入口对应一个页面。这是 Vite 官方推荐的多入口配置方式，利用 Rollup 的多入口功能实现多页面打包。选项 B 混淆了代理配置与入口配置，选项 C 只是简单添加脚本标签，不能实现多页面打包，选项 D 中 `define` 是用于替换变量，不支持声明入口。</strong></p>
 </details>
 
 **问题 2:**
@@ -521,7 +559,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Vite 中实现多入口和多页面配置，通常通过配置 `build.rollupOptions.input` 来指定多个入口文件。每个入口文件对应一个独立的页面。示例配置如下：
+  <p><strong>
+
+正确答案: 在 Vite 中实现多入口和多页面配置，通常通过配置 `build.rollupOptions.input` 来指定多个入口文件。每个入口文件对应一个独立的页面。示例配置如下：
 
 ```js
 import { defineConfig } from 'vite';
@@ -575,7 +615,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 `build.rollupOptions.external` 将大型库标记为外部依赖，减少打包体积。这个配置可以避免将大型库打包进最终构建产物，从而减少打包时间和输出文件体积，提高构建性能。选项A开启 sourcemap 会增加构建时间和输出体积，选项C设置低版本编译目标会增加转译成本，选项D排除依赖可能导致运行时加载问题，并不一定提升构建性能。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 `build.rollupOptions.external` 将大型库标记为外部依赖，减少打包体积。这个配置可以避免将大型库打包进最终构建产物，从而减少打包时间和输出文件体积，提高构建性能。选项A开启 sourcemap 会增加构建时间和输出体积，选项C设置低版本编译目标会增加转译成本，选项D排除依赖可能导致运行时加载问题，并不一定提升构建性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -584,7 +626,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能导致 Vite 构建性能问题的原因包括：
+  <p><strong>
+
+正确答案: 可能导致 Vite 构建性能问题的原因包括：
 
 1. 依赖过大或未合理拆分：项目中引入了体积较大的依赖库且未进行按需加载或代码分割。
 2. 未开启缓存或缓存机制配置不合理：构建过程未利用缓存导致重复打包。
@@ -622,7 +666,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 设置 `build.minify` 以控制是否压缩代码。正确，因为开启代码压缩可以显著减小构建产物体积，提高加载性能。A 项仅影响开发服务器代理，不影响构建产物；B 项虽然影响打包结构，但不直接决定是否压缩；D 项用于依赖预构建，主要影响开发体验，非生产构建体积优化。</strong></p>
+  <p><strong>
+
+正确答案: C. 设置 `build.minify` 以控制是否压缩代码。正确，因为开启代码压缩可以显著减小构建产物体积，提高加载性能。A 项仅影响开发服务器代理，不影响构建产物；B 项虽然影响打包结构，但不直接决定是否压缩；D 项用于依赖预构建，主要影响开发体验，非生产构建体积优化。</strong></p>
 </details>
 
 **问题 2:**
@@ -631,7 +677,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Vite 生产环境构建中，优化产物体积和加载速度主要可以从以下几个方面入手：
+  <p><strong>
+
+正确答案: 在 Vite 生产环境构建中，优化产物体积和加载速度主要可以从以下几个方面入手：
 
 1. **代码分割（Code Splitting）**：利用 Vite 默认基于 Rollup 的代码分割能力，通过合理使用动态导入（dynamic import）实现按需加载，减少首屏加载体积。
 
@@ -673,7 +721,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Vite 插件通过返回一个包含钩子函数的对象来扩展构建流程。 解释：Vite 插件的核心是一个函数，该函数返回一个包含多个生命周期钩子函数的对象，这些钩子允许插件在不同阶段扩展构建流程。选项 A 错误，因为 transform 方法不是必须实现的；选项 C 错误，插件既能影响开发也能影响构建产物；选项 D 错误，插件钩子可以是异步函数。</strong></p>
+  <p><strong>
+
+正确答案: B. Vite 插件通过返回一个包含钩子函数的对象来扩展构建流程。 解释：Vite 插件的核心是一个函数，该函数返回一个包含多个生命周期钩子函数的对象，这些钩子允许插件在不同阶段扩展构建流程。选项 A 错误，因为 transform 方法不是必须实现的；选项 C 错误，插件既能影响开发也能影响构建产物；选项 D 错误，插件钩子可以是异步函数。</strong></p>
 </details>
 
 **问题 2:**
@@ -682,7 +732,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Vite 插件中，可以通过实现 `transform` 钩子来访问和修改项目中的文件内容。该钩子会在 Vite 处理文件时被调用，接收两个参数：文件内容和文件路径。通过判断文件路径后缀是否为 `.css`，可以有针对性地对 CSS 文件进行处理。插件中，`transform` 函数返回修改后的代码，从而实现对文件的替换。示例如下：
+  <p><strong>
+
+正确答案: 在 Vite 插件中，可以通过实现 `transform` 钩子来访问和修改项目中的文件内容。该钩子会在 Vite 处理文件时被调用，接收两个参数：文件内容和文件路径。通过判断文件路径后缀是否为 `.css`，可以有针对性地对 CSS 文件进行处理。插件中，`transform` 函数返回修改后的代码，从而实现对文件的替换。示例如下：
 
 ```js
 export default function myCssReplacePlugin() {
@@ -720,7 +772,9 @@ export default function myCssReplacePlugin() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. buildStart - 因为 buildStart 钩子是在构建过程开始之前调用的，适合做一些构建前的准备工作。transform 用于转换模块代码，closeBundle 是构建完成后的清理操作，handleHotUpdate 用于热更新处理，所以它们不在构建开始之前调用。</strong></p>
+  <p><strong>
+
+正确答案: B. buildStart - 因为 buildStart 钩子是在构建过程开始之前调用的，适合做一些构建前的准备工作。transform 用于转换模块代码，closeBundle 是构建完成后的清理操作，handleHotUpdate 用于热更新处理，所以它们不在构建开始之前调用。</strong></p>
 </details>
 
 **问题 2:**
@@ -729,7 +783,9 @@ export default function myCssReplacePlugin() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Vite 插件生命周期中，主要用于构建开始和结束的钩子是 `buildStart` 和 `buildEnd`。
+  <p><strong>
+
+正确答案: Vite 插件生命周期中，主要用于构建开始和结束的钩子是 `buildStart` 和 `buildEnd`。
 
 - `buildStart`：在构建过程开始前调用，适合初始化资源，如开启数据库连接、读取配置文件等。此钩子支持返回 Promise，允许执行异步操作，确保初始化完成后再继续构建。
 - `buildEnd`：在构建完成后调用，适合释放资源，如关闭连接、清理临时文件等。
@@ -757,7 +813,9 @@ export default function myCssReplacePlugin() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. generateBundle
+  <p><strong>
+
+正确答案: C. generateBundle
 
 解释：generateBundle 钩子用于在构建过程的最后阶段对生成的代码进行修改或处理，适合对最终产物进行自定义操作。configResolved 是配置解析完成后的钩子，transform 用于处理单个模块代码转换，buildStart 是构建开始时调用的钩子。</strong></p>
 </details>
@@ -768,7 +826,9 @@ export default function myCssReplacePlugin() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以通过创建一个 Vite 自定义插件来实现模块路径的替换。核心思路是利用 Vite 插件的 `resolveId` 钩子，在模块解析阶段拦截并修改模块路径。具体步骤如下：
+  <p><strong>
+
+正确答案: 你可以通过创建一个 Vite 自定义插件来实现模块路径的替换。核心思路是利用 Vite 插件的 `resolveId` 钩子，在模块解析阶段拦截并修改模块路径。具体步骤如下：
 
 1. **定义插件对象**，实现 `name` 属性以标识插件。
 2. **实现 `resolveId` 钩子**，该钩子接收模块路径作为参数，判断路径是否符合替换条件。
@@ -823,7 +883,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 缓存处理结果以避免重复计算，尤其是在钩子被频繁调用时。 解析：缓存是提升插件性能的关键手段之一，能减少重复计算和资源消耗。选项A的同步阻塞操作会降低性能，选项C可能导致状态管理混乱且不一定提升性能，选项D对所有文件都做完整解析会严重影响性能。</strong></p>
+  <p><strong>
+
+正确答案: B. 缓存处理结果以避免重复计算，尤其是在钩子被频繁调用时。 解析：缓存是提升插件性能的关键手段之一，能减少重复计算和资源消耗。选项A的同步阻塞操作会降低性能，选项C可能导致状态管理混乱且不一定提升性能，选项D对所有文件都做完整解析会严重影响性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -838,7 +900,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 定位性能瓶颈：
+  <p><strong>
+
+正确答案: 1. 定位性能瓶颈：
 - 利用性能分析工具（如 Node.js 的 `--inspect`，Chrome DevTools，或内置的性能日志）监控插件钩子执行时间。
 - 通过添加时间戳日志或使用性能监测包（如 `perf_hooks`）来具体定位是哪个钩子或哪个环节耗时最长。
 - 分析插件处理的文件数量和处理逻辑的复杂度，确认是否存在重复计算或不必要的全量扫描。
@@ -877,7 +941,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 插件未在 `vite.config.js` 中正确导入，导致插件根本未被 Vite 加载。 解释：如果插件没有被正确导入和注册，Vite 根本不会执行插件的任何钩子，包括 `transform`，这是造成钩子不触发的最根本原因。选项 A 中，`enforce` 设置影响钩子执行阶段，但不会导致钩子完全不触发；选项 C 中，`transform` 钩子可以返回 `null` 或 `undefined`，这不会阻止钩子被调用；选项 D 中，参数类型错误通常会导致运行时报错，而不是钩子不触发。</strong></p>
+  <p><strong>
+
+正确答案: B. 插件未在 `vite.config.js` 中正确导入，导致插件根本未被 Vite 加载。 解释：如果插件没有被正确导入和注册，Vite 根本不会执行插件的任何钩子，包括 `transform`，这是造成钩子不触发的最根本原因。选项 A 中，`enforce` 设置影响钩子执行阶段，但不会导致钩子完全不触发；选项 C 中，`transform` 钩子可以返回 `null` 或 `undefined`，这不会阻止钩子被调用；选项 D 中，参数类型错误通常会导致运行时报错，而不是钩子不触发。</strong></p>
 </details>
 
 **问题 2:**
@@ -886,7 +952,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. **准备工作**
+  <p><strong>
+
+正确答案: 1. **准备工作**
    - 克隆或下载该插件的源码，确保可以在本地环境中调试。
    - 阅读插件的 README 和文档，了解其功能和工作流程。
 
@@ -933,7 +1001,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在 Vite 配置文件中安装并使用 `@vitejs/plugin-react` 插件。该插件专为 React 设计，支持快速的热模块替换（HMR）和 JSX 转换，确保开发体验流畅。选项 B 是使用 create-react-app，不是 Vite 集成方式；选项 C 是为 Vue 设计的插件，与 React 不兼容；选项 D 虽可优化依赖，但不足以实现完整的 React 集成和 HMR 支持。</strong></p>
+  <p><strong>
+
+正确答案: A. 在 Vite 配置文件中安装并使用 `@vitejs/plugin-react` 插件。该插件专为 React 设计，支持快速的热模块替换（HMR）和 JSX 转换，确保开发体验流畅。选项 B 是使用 create-react-app，不是 Vite 集成方式；选项 C 是为 Vue 设计的插件，与 React 不兼容；选项 D 虽可优化依赖，但不足以实现完整的 React 集成和 HMR 支持。</strong></p>
 </details>
 
 **问题 2:**
@@ -942,7 +1012,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能原因包括：
+  <p><strong>
+
+正确答案: 可能原因包括：
 
 1. 第三方组件库没有正确支持ES模块或未被Vite处理，导致HMR失效。
 2. 组件库使用了不兼容的打包格式（如CommonJS），Vite默认对ES模块支持更好。
@@ -981,7 +1053,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 npm 或 yarn 安装插件包，然后在 vite.config.js 中引入并配置插件。解释：社区插件通常作为 npm 包发布，需要先通过 npm 或 yarn 安装，然后才能在 Vite 配置文件中正确引入和配置，才能生效。A 选项忽略了安装步骤，C 选项错误地认为 Vite 会自动下载插件，D 选项误以为仅放置文件夹即可生效。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 npm 或 yarn 安装插件包，然后在 vite.config.js 中引入并配置插件。解释：社区插件通常作为 npm 包发布，需要先通过 npm 或 yarn 安装，然后才能在 Vite 配置文件中正确引入和配置，才能生效。A 选项忽略了安装步骤，C 选项错误地认为 Vite 会自动下载插件，D 选项误以为仅放置文件夹即可生效。</strong></p>
 </details>
 
 **问题 2:**
@@ -990,7 +1064,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 选择社区插件时，首先需要确认插件的功能是否满足需求，比如能够自动根据接口定义生成对应的 TypeScript 类型。其次，查看插件的维护状态、社区活跃度和兼容性，确保它支持当前 Vite 版本和项目技术栈。集成时，一般通过 npm 安装插件，然后在 vite.config.ts 中配置插件。常见问题包括插件版本不兼容、配置错误导致功能失效、生成的类型定义与接口不一致等。解决思路是：
+  <p><strong>
+
+正确答案: 选择社区插件时，首先需要确认插件的功能是否满足需求，比如能够自动根据接口定义生成对应的 TypeScript 类型。其次，查看插件的维护状态、社区活跃度和兼容性，确保它支持当前 Vite 版本和项目技术栈。集成时，一般通过 npm 安装插件，然后在 vite.config.ts 中配置插件。常见问题包括插件版本不兼容、配置错误导致功能失效、生成的类型定义与接口不一致等。解决思路是：
 1. 查阅插件文档，确认正确的安装和配置方法；
 2. 检查插件版本及其依赖，必要时升级或降级；
 3. 查看社区 Issues 及讨论，寻找类似问题的解决方案；
@@ -1019,7 +1095,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 安装并配置 @vitejs/plugin-vue，并确保安装了 typescript 依赖。 解析：
+  <p><strong>
+
+正确答案: B. 安装并配置 @vitejs/plugin-vue，并确保安装了 typescript 依赖。 解析：
 
 在 Vite 项目中集成 TypeScript，尤其是使用 Vue 时，需要安装并配置官方的 @vitejs/plugin-vue 插件以支持 Vue 单文件组件中的 TypeScript，同时需要确保安装了 typescript 依赖。选项 A 提到的 ts-loader 是 webpack 生态的工具，Vite 不需要使用它。选项 C 虽然 Vite 本身支持 TypeScript，但在 Vue 项目中仍需插件支持以正确处理 .vue 文件中的 TypeScript。选项 D 中的 "type": "module" 主要用于 Node.js 识别 ES 模块，与 Vite 处理 TypeScript 无直接关系。</strong></p>
 </details>
@@ -1030,7 +1108,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 初始化项目时，使用 `npm init vite@latest` 创建项目时选择包含 TypeScript 的模板，或者在已有项目中安装 TypeScript 依赖：
+  <p><strong>
+
+正确答案: 1. 初始化项目时，使用 `npm init vite@latest` 创建项目时选择包含 TypeScript 的模板，或者在已有项目中安装 TypeScript 依赖：
 ```bash
 npm install --save-dev typescript @types/node
 ```
@@ -1081,7 +1161,9 @@ npm install --save-dev @types/react @types/react-dom
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 只需安装 `sass`，Vite 会自动识别并支持，无需额外配置。 解释：Vite 原生支持 Sass 预处理，只需要安装 `sass` 包即可，无需像 webpack 那样配置 loader。选项 A 错误，因为 Vite 并不需要在配置中专门配置 `css.preprocessorOptions.sass`（虽然可以配置全局变量等）。选项 B 错误，`sass-loader` 是 webpack 的 loader，不适用于 Vite。选项 D 错误，Vite 支持在任意文件中直接导入 Sass，且会自动编译，无需手工导入所有文件。</strong></p>
+  <p><strong>
+
+正确答案: C. 只需安装 `sass`，Vite 会自动识别并支持，无需额外配置。 解释：Vite 原生支持 Sass 预处理，只需要安装 `sass` 包即可，无需像 webpack 那样配置 loader。选项 A 错误，因为 Vite 并不需要在配置中专门配置 `css.preprocessorOptions.sass`（虽然可以配置全局变量等）。选项 B 错误，`sass-loader` 是 webpack 的 loader，不适用于 Vite。选项 D 错误，Vite 支持在任意文件中直接导入 Sass，且会自动编译，无需手工导入所有文件。</strong></p>
 </details>
 
 **问题 2:**
@@ -1090,7 +1172,9 @@ npm install --save-dev @types/react @types/react-dom
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 集成步骤：
+  <p><strong>
+
+正确答案: 1. 集成步骤：
 - 安装 Sass 依赖，通常使用 npm 或 yarn 安装 sass 包（例如：npm install -D sass）。
 - 在 Vite 项目中，直接在组件或样式文件中使用 .scss 或 .sass 后缀的文件，Vite 会自动识别并处理。
 - 在 vite.config.js 中一般不需要额外配置，除非需要自定义预处理器选项。
@@ -1131,7 +1215,9 @@ css: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 将静态资源直接放入 public 目录，引用时使用绝对路径，Vite 会在构建时将资源原样复制到输出目录。正确，因为 Vite 的 public 目录用于存放不会被打包处理的静态资源，构建时会直接复制到输出目录，且引用时使用绝对路径，确保生产环境访问正确。</strong></p>
+  <p><strong>
+
+正确答案: A. 将静态资源直接放入 public 目录，引用时使用绝对路径，Vite 会在构建时将资源原样复制到输出目录。正确，因为 Vite 的 public 目录用于存放不会被打包处理的静态资源，构建时会直接复制到输出目录，且引用时使用绝对路径，确保生产环境访问正确。</strong></p>
 </details>
 
 **问题 2:**
@@ -1140,7 +1226,9 @@ css: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Vite 项目中集成和优化静态资源，通常会涉及以下几个方面：
+  <p><strong>
+
+正确答案: 在 Vite 项目中集成和优化静态资源，通常会涉及以下几个方面：
 
 1. 资源类型处理：
   - 图片、字体、SVG 等静态资源默认可以通过 `import` 或者在 CSS 中直接引用，Vite 会自动内联小文件（默认小于4kb）为 base64，较大文件则复制到 `dist` 目录并重命名以支持缓存。
@@ -1179,7 +1267,9 @@ css: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在 vitest.config.js 中设置 test.include 指定测试文件目录。Vitest 的配置文件中，test.include 用于指定哪些测试文件或目录会被运行，这样可以精确控制测试范围。选项 B 的 --dir 参数并非 Vitest 的标准用法；选项 C 的 import.meta.dir 是运行时元信息，不用于控制测试执行；选项 D 中的 build.include 是 Vite 打包配置，和测试文件执行无关。</strong></p>
+  <p><strong>
+
+正确答案: A. 在 vitest.config.js 中设置 test.include 指定测试文件目录。Vitest 的配置文件中，test.include 用于指定哪些测试文件或目录会被运行，这样可以精确控制测试范围。选项 B 的 --dir 参数并非 Vitest 的标准用法；选项 C 的 import.meta.dir 是运行时元信息，不用于控制测试执行；选项 D 中的 build.include 是 Vite 打包配置，和测试文件执行无关。</strong></p>
 </details>
 
 **问题 2:**
@@ -1190,7 +1280,9 @@ css: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 配置Vitest：
+  <p><strong>
+
+正确答案: 1. 配置Vitest：
 - 在vite.config.ts中，确保引入了Vitest的配置支持，如`test`字段配置，包括环境（environment）设置为`jsdom`以模拟浏览器环境。
 - 如果使用Vue，需要安装并配置`@vitejs/plugin-vue`，确保测试环境可以正确解析Vue单文件组件。
 
@@ -1265,7 +1357,9 @@ test('异步加载数据后显示内容', async () => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. build.rollupOptions
+  <p><strong>
+
+正确答案: B. build.rollupOptions
 
 解释：Vite 的构建流程底层使用 Rollup，想要自定义构建产物（如修改输出文件名、注入内容等）通常需要通过 build.rollupOptions 配置项来传递 Rollup 的配置，定制打包输出行为。optimizeDeps 用于依赖预构建，server.proxy 用于开发服务器代理，plugins.transform 则是插件中的代码转换钩子，不能直接配置构建产物的输出方式。</strong></p>
 </details>
@@ -1276,7 +1370,9 @@ test('异步加载数据后显示内容', async () => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 要实现对不同页面执行不同构建配置，首先可以利用 Vite 提供的多入口配置功能，通过配置 `build.rollupOptions.input` 来指定多个入口页面。针对每个入口，可以在 Vite 配置中使用条件逻辑，结合环境变量或自定义参数，动态调整构建选项。
+  <p><strong>
+
+正确答案: 要实现对不同页面执行不同构建配置，首先可以利用 Vite 提供的多入口配置功能，通过配置 `build.rollupOptions.input` 来指定多个入口页面。针对每个入口，可以在 Vite 配置中使用条件逻辑，结合环境变量或自定义参数，动态调整构建选项。
 
 具体步骤如下：
 1. **多入口配置**：在 `vite.config.js` 中配置多个入口，如：
@@ -1325,7 +1421,9 @@ build: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 通过 Vite 内置的 sourcemap 支持，结合浏览器开发者工具，可以直接映射到源码的 TS/JS 文件和对应行号。 Vite 在开发模式下默认开启 sourcemap 支持，生成源码映射文件，这样浏览器开发者工具可以将打包后的代码映射回原始源码，方便开发者进行断点设置和调试。选项 B 错误，因为 Vite 支持源码映射；选项 C 错误，HMR 用于模块热替换，不支持直接输入路径断点；选项 D 是较为低效的调试方法，非源码级调试的标准做法。</strong></p>
+  <p><strong>
+
+正确答案: A. 通过 Vite 内置的 sourcemap 支持，结合浏览器开发者工具，可以直接映射到源码的 TS/JS 文件和对应行号。 Vite 在开发模式下默认开启 sourcemap 支持，生成源码映射文件，这样浏览器开发者工具可以将打包后的代码映射回原始源码，方便开发者进行断点设置和调试。选项 B 错误，因为 Vite 支持源码映射；选项 C 错误，HMR 用于模块热替换，不支持直接输入路径断点；选项 D 是较为低效的调试方法，非源码级调试的标准做法。</strong></p>
 </details>
 
 **问题 2:**
@@ -1334,7 +1432,9 @@ build: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，定位性能瓶颈需要对 Vite 的源码结构有较深入的理解。Vite 的核心主要包括两个关键部分：开发服务器（server）和构建构建器（build）。针对性能问题，可以从以下几个方面进行源码调试和分析：
+  <p><strong>
+
+正确答案: 首先，定位性能瓶颈需要对 Vite 的源码结构有较深入的理解。Vite 的核心主要包括两个关键部分：开发服务器（server）和构建构建器（build）。针对性能问题，可以从以下几个方面进行源码调试和分析：
 
 1. **关注关键模块**：
    - **Server 相关模块**：如 `server/index.ts`，负责启动和管理开发服务器的生命周期。
@@ -1380,7 +1480,9 @@ build: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 Vite 的 monorepo 支持，结合工具如 pnpm workspace，通过共享配置文件和依赖管理，实现跨项目的构建优化和统一维护。 解释：选项 B 正确地体现了跨项目架构设计中，通过 monorepo 管理多个相关项目，利用 pnpm workspace 等工具统一依赖和配置，提升复用性和维护性，符合 Vite 的最佳实践。选项 A 忽略了依赖共享的优势且可能导致版本冲突，选项 C 合并所有项目会增加项目体积和耦合度，不利于维护，选项 D 虽然使用 MPA 模式分隔项目，但并未解决共享依赖和统一配置的问题。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 Vite 的 monorepo 支持，结合工具如 pnpm workspace，通过共享配置文件和依赖管理，实现跨项目的构建优化和统一维护。 解释：选项 B 正确地体现了跨项目架构设计中，通过 monorepo 管理多个相关项目，利用 pnpm workspace 等工具统一依赖和配置，提升复用性和维护性，符合 Vite 的最佳实践。选项 A 忽略了依赖共享的优势且可能导致版本冲突，选项 C 合并所有项目会增加项目体积和耦合度，不利于维护，选项 D 虽然使用 MPA 模式分隔项目，但并未解决共享依赖和统一配置的问题。</strong></p>
 </details>
 
 **问题 2:**
@@ -1395,7 +1497,9 @@ build: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 针对大型企业中多个 Vite 项目的跨项目共享需求，可以设计如下架构方案：
+  <p><strong>
+
+正确答案: 针对大型企业中多个 Vite 项目的跨项目共享需求，可以设计如下架构方案：
 
 1. 组织和发布共享代码：
 - 将公共部分抽象成独立的 npm 包（如 UI 组件库、工具函数库）。
@@ -1436,7 +1540,9 @@ build: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用 Vite 的 `build.rollupOptions.output.manualChunks` 手动拆分代码，按需加载，提高缓存利用率。 解析：手动拆分代码（manualChunks）是极限性能调优中非常关键的手段，它能有效减少初始加载包大小，实现按需加载和更合理的缓存策略，从而显著提升页面加载性能。A 选项中排除依赖预构建反而可能导致运行时加载问题，降低性能。C 选项禁用 HMR 仅影响开发体验，不影响生产性能。D 选项虽然 esbuild 压缩速度快，但压缩率通常不及 terser，且压缩质量和性能提升有限，不是极限性能调优的首选。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用 Vite 的 `build.rollupOptions.output.manualChunks` 手动拆分代码，按需加载，提高缓存利用率。 解析：手动拆分代码（manualChunks）是极限性能调优中非常关键的手段，它能有效减少初始加载包大小，实现按需加载和更合理的缓存策略，从而显著提升页面加载性能。A 选项中排除依赖预构建反而可能导致运行时加载问题，降低性能。C 选项禁用 HMR 仅影响开发体验，不影响生产性能。D 选项虽然 esbuild 压缩速度快，但压缩率通常不及 terser，且压缩质量和性能提升有限，不是极限性能调优的首选。</strong></p>
 </details>
 
 **问题 2:**
@@ -1445,7 +1551,9 @@ build: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 配置优化：
+  <p><strong>
+
+正确答案: 1. 配置优化：
    - 使用 `esbuild` 替代 `babel` 进行代码转换，加快构建速度，因为esbuild是用Go语言实现的，速度更快。
    - 关闭不必要的Vite插件或功能，例如禁用sourceMap生成以减少构建时间。
    - 优化依赖预构建，通过配置 `optimizeDeps`，明确指定需要预构建的依赖，避免无效扫描。
@@ -1494,7 +1602,9 @@ build: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 统一使用 Vite 的多入口配置，结合按需加载和代码分割，配合合理的缓存策略，实现高性能和模块化。--选项 B 符合企业级最佳实践，利用多入口配置支持复杂应用的模块化，结合按需加载和代码分割优化性能，同时合理缓存提升用户体验。选项 A 忽视了企业项目对灵活定制的需求；选项 C 全局安装版本管理不利于项目独立性和升级兼容；选项 D 打包成大文件会导致初次加载慢且不适合现代分布式架构。</strong></p>
+  <p><strong>
+
+正确答案: B. 统一使用 Vite 的多入口配置，结合按需加载和代码分割，配合合理的缓存策略，实现高性能和模块化。--选项 B 符合企业级最佳实践，利用多入口配置支持复杂应用的模块化，结合按需加载和代码分割优化性能，同时合理缓存提升用户体验。选项 A 忽视了企业项目对灵活定制的需求；选项 C 全局安装版本管理不利于项目独立性和升级兼容；选项 D 打包成大文件会导致初次加载慢且不适合现代分布式架构。</strong></p>
 </details>
 
 **问题 2:**
@@ -1503,7 +1613,9 @@ build: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 制定企业级 Vite 最佳实践规范时，应综合考虑以下几个方面：
+  <p><strong>
+
+正确答案: 制定企业级 Vite 最佳实践规范时，应综合考虑以下几个方面：
 
 1. 项目结构设计
 - 建议采用模块化和分层设计，按照功能或业务域划分目录，保证代码清晰易维护。

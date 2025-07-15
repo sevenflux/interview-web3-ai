@@ -123,7 +123,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Wagmi 通过 React hooks 提供以太坊区块链交互的简洁接口，强调模块化和灵活性。 这是因为 Wagmi 设计为一个轻量级的 React 库，利用 hooks 来简化区块链交互过程，注重模块化设计，方便开发者灵活组合和扩展功能，而非全栈框架或依赖大型状态管理库，也不是专注于服务器端渲染。</strong></p>
+  <p><strong>
+
+正确答案: B. Wagmi 通过 React hooks 提供以太坊区块链交互的简洁接口，强调模块化和灵活性。 这是因为 Wagmi 设计为一个轻量级的 React 库，利用 hooks 来简化区块链交互过程，注重模块化设计，方便开发者灵活组合和扩展功能，而非全栈框架或依赖大型状态管理库，也不是专注于服务器端渲染。</strong></p>
 </details>
 
 **问题 2:**
@@ -132,7 +134,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Wagmi的架构设计理念主要围绕模块化和钩子（hooks）设计，旨在简化与区块链的交互。它将复杂的区块链操作封装成一组易用的React钩子，如useAccount、useContractRead等，使开发者能够以声明式的方式处理连接钱包、读取合约数据、发送交易等操作。通过这种设计，Wagmi实现了代码的复用性和可维护性，降低了前端与区块链交互的复杂度，提升了开发效率。同时，Wagmi采用了轻量级的状态管理，避免了冗余的数据流，保证了性能的优化。整体来看，Wagmi通过模块化和钩子设计理念帮助开发者专注业务逻辑，快速构建稳定、高效的区块链应用。</strong></p>
+  <p><strong>
+
+正确答案: Wagmi的架构设计理念主要围绕模块化和钩子（hooks）设计，旨在简化与区块链的交互。它将复杂的区块链操作封装成一组易用的React钩子，如useAccount、useContractRead等，使开发者能够以声明式的方式处理连接钱包、读取合约数据、发送交易等操作。通过这种设计，Wagmi实现了代码的复用性和可维护性，降低了前端与区块链交互的复杂度，提升了开发效率。同时，Wagmi采用了轻量级的状态管理，避免了冗余的数据流，保证了性能的优化。整体来看，Wagmi通过模块化和钩子设计理念帮助开发者专注业务逻辑，快速构建稳定、高效的区块链应用。</strong></p>
 </details>
 
 ---
@@ -156,7 +160,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. Wagmi通过自定义React Hooks封装了区块链交互逻辑，使组件可以通过调用这些Hooks实现状态管理和异步请求。Wagmi的设计核心是利用React Hooks来抽象复杂的区块链操作，保证组件的响应式更新和简洁的逻辑编写，这也是其与React深度集成的关键所在。</strong></p>
+  <p><strong>
+
+正确答案: A. Wagmi通过自定义React Hooks封装了区块链交互逻辑，使组件可以通过调用这些Hooks实现状态管理和异步请求。Wagmi的设计核心是利用React Hooks来抽象复杂的区块链操作，保证组件的响应式更新和简洁的逻辑编写，这也是其与React深度集成的关键所在。</strong></p>
 </details>
 
 **问题 2:**
@@ -165,7 +171,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Wagmi库通过自定义React Hooks（如useAccount）封装了与以太坊钱包交互的逻辑，这些Hooks内部利用React的状态管理和副作用机制，实现对钱包状态的监听和更新。
+  <p><strong>
+
+正确答案: Wagmi库通过自定义React Hooks（如useAccount）封装了与以太坊钱包交互的逻辑，这些Hooks内部利用React的状态管理和副作用机制，实现对钱包状态的监听和更新。
 
 具体来说，useAccount Hook会返回当前连接的钱包地址及其状态，并且自动监听账户变化事件。当用户切换账户或断开连接时，Hook会触发组件的重新渲染，保证UI显示的是最新的钱包地址。
 
@@ -207,7 +215,9 @@ function WalletInfo() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 连接钱包允许应用获取用户的公钥地址，从而能够读取用户账户的区块链数据。 解释：连接钱包的主要作用是让应用获得用户的公钥地址（即账户地址），应用可以基于此读取该账户在区块链上的公开数据，如余额或交易记录。私钥始终由用户钱包安全管理，应用无法直接获取。交易费用需要用户自己支付，连接钱包并不自动支付。安全性是钱包本身的功能，而连接钱包主要是为了身份验证和授权。</strong></p>
+  <p><strong>
+
+正确答案: B. 连接钱包允许应用获取用户的公钥地址，从而能够读取用户账户的区块链数据。 解释：连接钱包的主要作用是让应用获得用户的公钥地址（即账户地址），应用可以基于此读取该账户在区块链上的公开数据，如余额或交易记录。私钥始终由用户钱包安全管理，应用无法直接获取。交易费用需要用户自己支付，连接钱包并不自动支付。安全性是钱包本身的功能，而连接钱包主要是为了身份验证和授权。</strong></p>
 </details>
 
 **问题 2:**
@@ -216,7 +226,9 @@ function WalletInfo() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在使用 Wagmi 开发以太坊 DApp 时，前端与区块链交互的基本流程包括以下几个步骤：
+  <p><strong>
+
+正确答案: 在使用 Wagmi 开发以太坊 DApp 时，前端与区块链交互的基本流程包括以下几个步骤：
 
 1. **连接用户钱包**：通过 Wagmi 提供的连接器（如 MetaMask Connector），前端可以触发用户钱包的连接请求。用户确认后，钱包地址和网络信息被前端获取，用于后续交易签名和发送。
 
@@ -251,7 +263,9 @@ function WalletInfo() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Wagmi是基于ethers.js构建的React钩子库，简化了与以太坊交互的过程。Wagmi利用ethers.js作为底层库，封装了其功能，通过React钩子提供更便捷的以太坊交互接口，方便前端开发者集成和使用。</strong></p>
+  <p><strong>
+
+正确答案: B. Wagmi是基于ethers.js构建的React钩子库，简化了与以太坊交互的过程。Wagmi利用ethers.js作为底层库，封装了其功能，通过React钩子提供更便捷的以太坊交互接口，方便前端开发者集成和使用。</strong></p>
 </details>
 
 **问题 2:**
@@ -260,7 +274,9 @@ function WalletInfo() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Wagmi 是一个基于 React 的以太坊钩子库，专注于简化钱包连接、账户管理和链上交互的流程，而 ethers.js 是一个功能全面的以太坊 JavaScript 库，提供底层的智能合约调用、交易构建和签名等功能。Wagmi 在内部封装和调用了 ethers.js 的功能，提供了更高层次的抽象和便捷的 React Hook API，帮助开发者快速集成钱包连接和链上交互功能。在实际开发中，开发者可以使用 Wagmi 处理钱包连接、账户状态和链上事件监听，同时利用 ethers.js 提供的合约实例和工具，进行复杂的合约调用和数据处理，从而发挥两者的优势，实现高效且易维护的前端以太坊应用。</strong></p>
+  <p><strong>
+
+正确答案: Wagmi 是一个基于 React 的以太坊钩子库，专注于简化钱包连接、账户管理和链上交互的流程，而 ethers.js 是一个功能全面的以太坊 JavaScript 库，提供底层的智能合约调用、交易构建和签名等功能。Wagmi 在内部封装和调用了 ethers.js 的功能，提供了更高层次的抽象和便捷的 React Hook API，帮助开发者快速集成钱包连接和链上交互功能。在实际开发中，开发者可以使用 Wagmi 处理钱包连接、账户状态和链上事件监听，同时利用 ethers.js 提供的合约实例和工具，进行复杂的合约调用和数据处理，从而发挥两者的优势，实现高效且易维护的前端以太坊应用。</strong></p>
 </details>
 
 ---
@@ -287,7 +303,9 @@ function WalletInfo() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 配置连接器时需要指定链（chains），以确保连接器知道要连接哪些区块链网络。 解释：在 Wagmi 中配置连接器时，通常需要指定支持的链（chains），这样连接器才能正确识别和连接到对应的区块链网络。其他选项中，A 错误，因为连接器可以在初始化时配置；C 错误，因为大多数连接器需要传入参数如链信息或选项；D 错误，因为连接器支持多种钱包类型，不仅限于 MetaMask。</strong></p>
+  <p><strong>
+
+正确答案: B. 配置连接器时需要指定链（chains），以确保连接器知道要连接哪些区块链网络。 解释：在 Wagmi 中配置连接器时，通常需要指定支持的链（chains），这样连接器才能正确识别和连接到对应的区块链网络。其他选项中，A 错误，因为连接器可以在初始化时配置；C 错误，因为大多数连接器需要传入参数如链信息或选项；D 错误，因为连接器支持多种钱包类型，不仅限于 MetaMask。</strong></p>
 </details>
 
 **问题 2:**
@@ -296,7 +314,9 @@ function WalletInfo() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Wagmi 中配置连接器时，需要导入对应的连接器类，如 MetaMaskConnector 和 WalletConnectConnector。针对场景中需要支持 MetaMask 和 WalletConnect，可以在创建客户端时传入这两种连接器的实例数组。
+  <p><strong>
+
+正确答案: 在 Wagmi 中配置连接器时，需要导入对应的连接器类，如 MetaMaskConnector 和 WalletConnectConnector。针对场景中需要支持 MetaMask 和 WalletConnect，可以在创建客户端时传入这两种连接器的实例数组。
 
 配置示例：
 ```javascript
@@ -352,7 +372,9 @@ const client = createClient({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 useAccount 钩子来订阅账户状态变化，并结合 useConnect 和 useDisconnect 钩子管理连接操作。 这是因为 useAccount 钩子可以自动监听和更新账户连接状态，确保组件在钱包连接或断开时实时响应，而 useConnect 和 useDisconnect 钩子则用于发起连接和断开操作，组合使用能有效管理钱包连接状态。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 useAccount 钩子来订阅账户状态变化，并结合 useConnect 和 useDisconnect 钩子管理连接操作。 这是因为 useAccount 钩子可以自动监听和更新账户连接状态，确保组件在钱包连接或断开时实时响应，而 useConnect 和 useDisconnect 钩子则用于发起连接和断开操作，组合使用能有效管理钱包连接状态。</strong></p>
 </details>
 
 **问题 2:**
@@ -361,7 +383,9 @@ const client = createClient({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 React + Wagmi 的环境中管理钱包连接状态，通常会使用 Wagmi 提供的钩子如 `useAccount` 和 `useConnect` 来监听和管理钱包连接信息。
+  <p><strong>
+
+正确答案: 在 React + Wagmi 的环境中管理钱包连接状态，通常会使用 Wagmi 提供的钩子如 `useAccount` 和 `useConnect` 来监听和管理钱包连接信息。
 
 1. 使用 `useAccount` 钩子获取当前账户信息和连接状态。它会返回当前连接的钱包地址、连接状态（connected）等信息。
 
@@ -433,7 +457,9 @@ function WalletStatus() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 Wagmi 提供的 `autoConnect` 选项，它会在页面刷新或重新加载时自动尝试连接之前已连接的钱包。 解释：Wagmi 的 `autoConnect` 配置项是官方提供的自动重连机制，能够在页面刷新时自动尝试连接用户之前使用的钱包，简化开发者操作。选项 B 是较为低效且容易出错的手动实现；选项 C 会导致频繁无效的连接尝试；选项 D 则忽略了连接状态，可能带来不必要的连接开销。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 Wagmi 提供的 `autoConnect` 选项，它会在页面刷新或重新加载时自动尝试连接之前已连接的钱包。 解释：Wagmi 的 `autoConnect` 配置项是官方提供的自动重连机制，能够在页面刷新时自动尝试连接用户之前使用的钱包，简化开发者操作。选项 B 是较为低效且容易出错的手动实现；选项 C 会导致频繁无效的连接尝试；选项 D 则忽略了连接状态，可能带来不必要的连接开销。</strong></p>
 </details>
 
 **问题 2:**
@@ -442,7 +468,9 @@ function WalletStatus() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Wagmi 中实现自动重连机制，核心思路是利用其提供的连接管理钩子和配置项，如 `useConnect` 和 `useAccount`。
+  <p><strong>
+
+正确答案: 在 Wagmi 中实现自动重连机制，核心思路是利用其提供的连接管理钩子和配置项，如 `useConnect` 和 `useAccount`。
 
 1. 监听连接状态：通过 `useAccount` 钩子可以监听用户的连接状态和钱包地址，当检测到连接断开（比如 `isConnected` 变为 false）时，触发重连逻辑。
 
@@ -478,7 +506,9 @@ function WalletStatus() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 Wagmi 提供的 `useConnect` 和 `useDisconnect` 钩子管理连接状态，切换钱包时先断开当前连接再连接新钱包。 解释：Wagmi 推荐通过 `useConnect` 和 `useDisconnect` 钩子来管理钱包连接状态，确保在切换钱包时先断开当前连接，避免状态冲突和资源浪费。选项 A 不推荐因为创建多个 Client 实例复杂且不必要；选项 C 错误，因为自动覆盖可能导致状态不一致；选项 D 误导，因为并行连接多个钱包会增加资源消耗且一般不符合实际使用场景。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 Wagmi 提供的 `useConnect` 和 `useDisconnect` 钩子管理连接状态，切换钱包时先断开当前连接再连接新钱包。 解释：Wagmi 推荐通过 `useConnect` 和 `useDisconnect` 钩子来管理钱包连接状态，确保在切换钱包时先断开当前连接，避免状态冲突和资源浪费。选项 A 不推荐因为创建多个 Client 实例复杂且不必要；选项 C 错误，因为自动覆盖可能导致状态不一致；选项 D 误导，因为并行连接多个钱包会增加资源消耗且一般不符合实际使用场景。</strong></p>
 </details>
 
 **问题 2:**
@@ -487,7 +517,9 @@ function WalletStatus() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 实现多钱包支持与切换时，通常需要对连接状态进行集中管理。使用 Wagmi 的 `useConnect` 和 `useDisconnect` 钩子，可以分别处理连接和断开操作。具体步骤如下：
+  <p><strong>
+
+正确答案: 实现多钱包支持与切换时，通常需要对连接状态进行集中管理。使用 Wagmi 的 `useConnect` 和 `useDisconnect` 钩子，可以分别处理连接和断开操作。具体步骤如下：
 
 1. **连接管理**：
    - 初始化时，加载支持的钱包适配器（connectors），如 MetaMaskConnector、WalletConnectConnector 等。
@@ -529,7 +561,9 @@ function WalletStatus() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 自定义连接器需要实现 connect、disconnect、getAccount 和 getChainId 等方法，以确保与 Wagmi 的连接管理兼容。 解析：在 Wagmi 中开发自定义连接器时，必须实现一套核心方法，如 connect、disconnect、getAccount 和 getChainId，来保证连接器能够正确管理连接状态和账户信息。选项 A 错误，因为 Wagmi 并没有强制要求继承某个基类，连接器通常是实现特定接口即可。选项 C 错误，自定义连接器需要自行处理相关事件监听以同步状态。选项 D 错误，Wagmi 的连接器设计支持多种 EVM 兼容链，不局限于以太坊主网。</strong></p>
+  <p><strong>
+
+正确答案: B. 自定义连接器需要实现 connect、disconnect、getAccount 和 getChainId 等方法，以确保与 Wagmi 的连接管理兼容。 解析：在 Wagmi 中开发自定义连接器时，必须实现一套核心方法，如 connect、disconnect、getAccount 和 getChainId，来保证连接器能够正确管理连接状态和账户信息。选项 A 错误，因为 Wagmi 并没有强制要求继承某个基类，连接器通常是实现特定接口即可。选项 C 错误，自定义连接器需要自行处理相关事件监听以同步状态。选项 D 错误，Wagmi 的连接器设计支持多种 EVM 兼容链，不局限于以太坊主网。</strong></p>
 </details>
 
 **问题 2:**
@@ -545,7 +579,9 @@ function WalletStatus() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 继承或实现连接器接口：
+  <p><strong>
+
+正确答案: 1. 继承或实现连接器接口：
    - 在 Wagmi 中，自定义连接器通常需要继承 `Connector` 类，重写必要的方法如 `connect()`, `disconnect()`, `getAccount()`, `getProvider()` 和 `getChainId()`。
    - 实现自定义钱包的连接逻辑，比如通过钱包特定的 SDK 或 API 进行连接和签名。
 
@@ -588,7 +624,9 @@ function WalletStatus() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 useAccount() hook 获取地址，使用 useBalance() hook 获取余额，并确保传入正确的地址参数。 - 这是正确的做法。useAccount() 可以提供当前连接账户的地址信息，useBalance() 通过传入地址参数可以获取对应账户的余额。选项 B 错误，Wagmi 提供了专门的 hook 而非直接从 window.ethereum 读取。选项 C 混淆了 signer 的用法，signer.getBalance() 不是标准方法，余额应通过 useBalance() 获取。选项 D 用错了 hook，useProvider() 是获取 Provider，useContract() 用于合约交互，不适合直接获取账户信息。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 useAccount() hook 获取地址，使用 useBalance() hook 获取余额，并确保传入正确的地址参数。 - 这是正确的做法。useAccount() 可以提供当前连接账户的地址信息，useBalance() 通过传入地址参数可以获取对应账户的余额。选项 B 错误，Wagmi 提供了专门的 hook 而非直接从 window.ethereum 读取。选项 C 混淆了 signer 的用法，signer.getBalance() 不是标准方法，余额应通过 useBalance() 获取。选项 D 用错了 hook，useProvider() 是获取 Provider，useContract() 用于合约交互，不适合直接获取账户信息。</strong></p>
 </details>
 
 **问题 2:**
@@ -597,7 +635,9 @@ function WalletStatus() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 实现步骤：
+  <p><strong>
+
+正确答案: 实现步骤：
 1. 利用Wagmi提供的`useAccount`钩子获取用户的以太坊地址。
 2. 使用`useBalance`钩子，传入获取到的地址，查询该地址的ETH余额。
 
@@ -648,7 +688,9 @@ function AccountInfo() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 使用 useEffect 监听 useAccount 返回的 address 变化来执行回调。解释：Wagmi 提供的 useAccount Hook 会返回当前连接账户信息，监听账户变化的推荐做法是通过 useEffect 监听 address 的变化，从而触发相关逻辑。选项 A 中直接监听 address 变化但未提及 useEffect，无法响应变化；选项 B 的方法并非 Wagmi 官方 API；选项 D 也不是标准的监听账户变化的方式。</strong></p>
+  <p><strong>
+
+正确答案: C. 使用 useEffect 监听 useAccount 返回的 address 变化来执行回调。解释：Wagmi 提供的 useAccount Hook 会返回当前连接账户信息，监听账户变化的推荐做法是通过 useEffect 监听 address 的变化，从而触发相关逻辑。选项 A 中直接监听 address 变化但未提及 useEffect，无法响应变化；选项 B 的方法并非 Wagmi 官方 API；选项 D 也不是标准的监听账户变化的方式。</strong></p>
 </details>
 
 **问题 2:**
@@ -657,7 +699,9 @@ function AccountInfo() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 使用 Wagmi，可以通过 `useAccount` 钩子来监听账户变化。该钩子会返回当前账户信息和一个 `onChange` 事件，当用户切换钱包账户时，该事件会触发，从而让应用自动更新状态。例如：
+  <p><strong>
+
+正确答案: 使用 Wagmi，可以通过 `useAccount` 钩子来监听账户变化。该钩子会返回当前账户信息和一个 `onChange` 事件，当用户切换钱包账户时，该事件会触发，从而让应用自动更新状态。例如：
 
 ```jsx
 import { useAccount } from 'wagmi';
@@ -704,7 +748,9 @@ function AccountListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用 nonce（一次性随机数）机制，在每次签名请求中包含唯一的 nonce 值。 这是因为 nonce 可以防止重放攻击，确保每次签名请求都是唯一且不可重复的，从而提升账户权限管理的安全性。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用 nonce（一次性随机数）机制，在每次签名请求中包含唯一的 nonce 值。 这是因为 nonce 可以防止重放攻击，确保每次签名请求都是唯一且不可重复的，从而提升账户权限管理的安全性。</strong></p>
 </details>
 
 **问题 2:**
@@ -720,7 +766,9 @@ function AccountListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 账户权限识别与验证：
+  <p><strong>
+
+正确答案: 1. 账户权限识别与验证：
    - 使用 Wagmi 的 `useAccount` 钩子获取当前连接的用户地址。
    - 结合后端或智能合约中的权限列表，前端通过调用合约读取接口或请求后端API来验证该地址是否具备操作权限。
 
@@ -764,7 +812,9 @@ function AccountListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 Wagmi 提供的 useAccount 和 useConnect 钩子管理账户连接状态，结合全局状态管理（如 Redux 或 React Context）同步多个账户信息。 这是因为 useAccount 和 useConnect 是 Wagmi 官方推荐的账户管理钩子，能够实时监听账户变化，而结合全局状态管理可以更好地同步和管理多个账户的状态，支持灵活切换和状态一致性。选项 A 虽能保存当前账户但缺乏全局同步，C 频繁请求授权影响用户体验，D 忽略连接状态管理，依赖刷新不够实时。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 Wagmi 提供的 useAccount 和 useConnect 钩子管理账户连接状态，结合全局状态管理（如 Redux 或 React Context）同步多个账户信息。 这是因为 useAccount 和 useConnect 是 Wagmi 官方推荐的账户管理钩子，能够实时监听账户变化，而结合全局状态管理可以更好地同步和管理多个账户的状态，支持灵活切换和状态一致性。选项 A 虽能保存当前账户但缺乏全局同步，C 频繁请求授权影响用户体验，D 忽略连接状态管理，依赖刷新不够实时。</strong></p>
 </details>
 
 **问题 2:**
@@ -773,7 +823,9 @@ function AccountListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Wagmi框架中设计多账户管理策略时，可以考虑以下几个方面：
+  <p><strong>
+
+正确答案: 在Wagmi框架中设计多账户管理策略时，可以考虑以下几个方面：
 
 1. **连接管理**：使用Wagmi提供的`useConnect`钩子管理多个连接实例，支持监听不同钱包的连接状态。通过维护一个账户列表，记录当前所有活跃的连接和对应账户信息。
 
@@ -806,7 +858,9 @@ function AccountListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用硬件钱包（如 Ledger 或 Trezor）进行签名操作，私钥始终不离开设备。该机制通过硬件隔离私钥，防止私钥暴露在浏览器或网络环境中，大大增强了账户安全性和隐私保护。选项A虽然加密存储，但浏览器环境容易被攻击；选项C将私钥托管给服务器，存在泄露风险；选项D虽然便捷，但简单助记词易被窃取。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用硬件钱包（如 Ledger 或 Trezor）进行签名操作，私钥始终不离开设备。该机制通过硬件隔离私钥，防止私钥暴露在浏览器或网络环境中，大大增强了账户安全性和隐私保护。选项A虽然加密存储，但浏览器环境容易被攻击；选项C将私钥托管给服务器，存在泄露风险；选项D虽然便捷，但简单助记词易被窃取。</strong></p>
 </details>
 
 **问题 2:**
@@ -815,7 +869,9 @@ function AccountListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 防止账户被恶意访问：
+  <p><strong>
+
+正确答案: 1. 防止账户被恶意访问：
 - 利用 Wagmi 提供的连接事件监听（如 onConnect/onDisconnect），确保账户状态实时同步，避免会话劫持。
 - 结合前端身份验证机制（如签名验证）确认账户的真正归属。
 
@@ -861,7 +917,9 @@ function AccountListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 合约 ABI 应该是一个 JavaScript 对象数组，描述合约的函数和事件，这样钩子才能正确解析并调用合约方法。因为 Wagmi 的钩子需要通过 ABI 了解合约的接口细节，ABI 通常是一个 JSON 数组形式的对象，包含了合约函数、事件的名称、参数类型和返回值类型，才能正确构造调用和解析返回数据。</strong></p>
+  <p><strong>
+
+正确答案: B. 合约 ABI 应该是一个 JavaScript 对象数组，描述合约的函数和事件，这样钩子才能正确解析并调用合约方法。因为 Wagmi 的钩子需要通过 ABI 了解合约的接口细节，ABI 通常是一个 JSON 数组形式的对象，包含了合约函数、事件的名称、参数类型和返回值类型，才能正确构造调用和解析返回数据。</strong></p>
 </details>
 
 **问题 2:**
@@ -870,7 +928,9 @@ function AccountListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，需要准备智能合约的ABI，其中定义了`getUserBalance`函数的接口信息，包括方法名、输入参数类型和返回值类型。ABI是前端与智能合约交互的桥梁，帮助Wagmi理解如何编码函数调用数据和解码返回结果。
+  <p><strong>
+
+正确答案: 首先，需要准备智能合约的ABI，其中定义了`getUserBalance`函数的接口信息，包括方法名、输入参数类型和返回值类型。ABI是前端与智能合约交互的桥梁，帮助Wagmi理解如何编码函数调用数据和解码返回结果。
 
 接着，在前端代码中使用Wagmi提供的`useContractRead`钩子。传入参数包括：
 1. 合约地址（contractAddress），
@@ -917,7 +977,9 @@ const { data, isError, isLoading } = useContractRead({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 useContractRead 钩子直接调用智能合约的只读函数，并监听返回值的变化。这个钩子专门设计用于读取链上数据，能够自动处理缓存和实时更新，非常适合调用合约的 view 或 pure 函数。B 选项的 useContractWrite 是用于写操作，不适合读取。C 选项的 useSendTransaction 是发送交易用的，通常用于有状态修改的操作，读取数据不会发送交易。D 选项的 usePrepareContractWrite 用于准备写操作参数，也不适合只读调用。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 useContractRead 钩子直接调用智能合约的只读函数，并监听返回值的变化。这个钩子专门设计用于读取链上数据，能够自动处理缓存和实时更新，非常适合调用合约的 view 或 pure 函数。B 选项的 useContractWrite 是用于写操作，不适合读取。C 选项的 useSendTransaction 是发送交易用的，通常用于有状态修改的操作，读取数据不会发送交易。D 选项的 usePrepareContractWrite 用于准备写操作参数，也不适合只读调用。</strong></p>
 </details>
 
 **问题 2:**
@@ -928,7 +990,9 @@ const { data, isError, isLoading } = useContractRead({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在使用 Wagmi 读取链上数据时，通常会用到 useContractRead 这个钩子。假设我们要读取某个地址的 ERC20 代币余额，步骤如下：
+  <p><strong>
+
+正确答案: 在使用 Wagmi 读取链上数据时，通常会用到 useContractRead 这个钩子。假设我们要读取某个地址的 ERC20 代币余额，步骤如下：
 
 1. 准备合约地址和 ABI：确保合约地址和 ABI 是正确的，并且对应当前连接的网络。
 2. 使用 useContractRead 钩子：传入合约地址、ABI、调用的函数名（例如 balanceOf）和相应参数（用户地址）。
@@ -971,7 +1035,9 @@ const { data, isError, isLoading } = useContractRead({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 usePrepareContractWrite 钩子预先准备交易参数，然后将结果传递给 useContractWrite 钩子执行写操作。 — 因为 Wagmi 推荐先使用 usePrepareContractWrite 钩子构造和验证交易参数，确保交易配置正确，再通过 useContractWrite 钩子发送交易，这样可以避免参数错误和交易失败。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 usePrepareContractWrite 钩子预先准备交易参数，然后将结果传递给 useContractWrite 钩子执行写操作。 — 因为 Wagmi 推荐先使用 usePrepareContractWrite 钩子构造和验证交易参数，确保交易配置正确，再通过 useContractWrite 钩子发送交易，这样可以避免参数错误和交易失败。</strong></p>
 </details>
 
 **问题 2:**
@@ -980,7 +1046,9 @@ const { data, isError, isLoading } = useContractRead({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 使用 Wagmi 的 `useContractWrite` 钩子可以方便地进行合约的写操作。
+  <p><strong>
+
+正确答案: 使用 Wagmi 的 `useContractWrite` 钩子可以方便地进行合约的写操作。
 
 1. **初始化 `useContractWrite`**：传入合约地址、ABI、要调用的函数名及参数。
 
@@ -1053,7 +1121,9 @@ function MintButton({ amount }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 Wagmi 提供的 useWaitForTransaction 钩子监听事务的状态变化，包括 pending、success 和 error，从而动态更新界面。因为 useWaitForTransaction 是 Wagmi 中专门用于监听事务状态变化的钩子，它可以帮助开发者实时获取事务的不同状态，确保用户界面准确反映交易进度，避免误导用户或界面状态不一致。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 Wagmi 提供的 useWaitForTransaction 钩子监听事务的状态变化，包括 pending、success 和 error，从而动态更新界面。因为 useWaitForTransaction 是 Wagmi 中专门用于监听事务状态变化的钩子，它可以帮助开发者实时获取事务的不同状态，确保用户界面准确反映交易进度，避免误导用户或界面状态不一致。</strong></p>
 </details>
 
 **问题 2:**
@@ -1064,7 +1134,9 @@ function MintButton({ amount }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Wagmi 中，可以使用 `useContractWrite` 钩子来发起交易，配合 `useWaitForTransaction` 钩子来监听交易的状态变化。
+  <p><strong>
+
+正确答案: 在 Wagmi 中，可以使用 `useContractWrite` 钩子来发起交易，配合 `useWaitForTransaction` 钩子来监听交易的状态变化。
 
 1. 发起交易时，`useContractWrite` 的返回值中包含 `write` 方法和 `data`（交易哈希）等信息。
 
@@ -1100,7 +1172,9 @@ function MintButton({ amount }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 Wagmi 的 useContractEvent 钩子，指定合约地址和事件名称，实现事件的自动订阅和回调处理。 解释：Wagmi 提供了专门的钩子 useContractEvent 用于简化智能合约事件的订阅和处理，能够自动管理订阅生命周期，且只监听指定合约和事件，效率较高。选项A虽然可行但需要手动过滤，增加复杂度；选项C的轮询方式效率低且不实时；选项D只适合查询历史事件，不适合实时事件订阅。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 Wagmi 的 useContractEvent 钩子，指定合约地址和事件名称，实现事件的自动订阅和回调处理。 解释：Wagmi 提供了专门的钩子 useContractEvent 用于简化智能合约事件的订阅和处理，能够自动管理订阅生命周期，且只监听指定合约和事件，效率较高。选项A虽然可行但需要手动过滤，增加复杂度；选项C的轮询方式效率低且不实时；选项D只适合查询历史事件，不适合实时事件订阅。</strong></p>
 </details>
 
 **问题 2:**
@@ -1109,7 +1183,9 @@ function MintButton({ amount }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 事件订阅实现流程：
+  <p><strong>
+
+正确答案: 1. 事件订阅实现流程：
 - 使用 Wagmi 提供的 `useContractEvent` 钩子，配置合约地址、ABI 以及需要监听的事件名称（如 `Transfer`）。
 - 在事件回调中，解析事件参数（例如转账的发送者、接收者和金额），并基于这些数据更新前端状态，如重新获取或直接更新用户余额。
 
@@ -1136,7 +1212,9 @@ function MintButton({ amount }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用合约的 batch 批量处理功能，通过单次调用执行多个合约方法。这种方法能显著减少网络请求次数和链上交互成本，从而提升性能。选项 A 会导致多次独立请求，增加延迟和费用；选项 C 虽能减少调用但可能导致数据不一致；选项 D 不适合只读操作且写操作合并存在风险。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用合约的 batch 批量处理功能，通过单次调用执行多个合约方法。这种方法能显著减少网络请求次数和链上交互成本，从而提升性能。选项 A 会导致多次独立请求，增加延迟和费用；选项 C 虽能减少调用但可能导致数据不一致；选项 D 不适合只读操作且写操作合并存在风险。</strong></p>
 </details>
 
 **问题 2:**
@@ -1151,7 +1229,9 @@ function MintButton({ amount }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 减少网络请求次数：
+  <p><strong>
+
+正确答案: 1. 减少网络请求次数：
    - 采用批量调用方法，一次请求获取多个用户余额，避免多次单独调用。
    - 使用多调用（multicall）合约将多个调用打包成一个交易，减少区块链节点请求次数。
 
@@ -1190,7 +1270,9 @@ function MintButton({ amount }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: D. 使用 Wagmi 的 useContract 钩子创建合约实例，结合 useMutation（如 react-query）管理合约写操作的状态和错误。 解释：Wagmi 的 useContract 钩子用于创建合约实例，结合 react-query 的 useMutation 可以高效地管理异步合约写操作的状态（如加载、成功、错误）和错误处理，符合 React 的状态管理最佳实践。选项 A 忽略了 Wagmi 的内置钩子优势，导致工作量大且易出错；选项 B 虽利用了部分 Wagmi 钩子，但手动管理状态复杂且不够优雅；选项 C 中“继承钩子”在 React 和 Wagmi 中并非推荐或常用模式，因此不正确。</strong></p>
+  <p><strong>
+
+正确答案: D. 使用 Wagmi 的 useContract 钩子创建合约实例，结合 useMutation（如 react-query）管理合约写操作的状态和错误。 解释：Wagmi 的 useContract 钩子用于创建合约实例，结合 react-query 的 useMutation 可以高效地管理异步合约写操作的状态（如加载、成功、错误）和错误处理，符合 React 的状态管理最佳实践。选项 A 忽略了 Wagmi 的内置钩子优势，导致工作量大且易出错；选项 B 虽利用了部分 Wagmi 钩子，但手动管理状态复杂且不够优雅；选项 C 中“继承钩子”在 React 和 Wagmi 中并非推荐或常用模式，因此不正确。</strong></p>
 </details>
 
 **问题 2:**
@@ -1205,7 +1287,9 @@ function MintButton({ amount }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 利用 Wagmi 底层钩子：
+  <p><strong>
+
+正确答案: 1. 利用 Wagmi 底层钩子：
 - 使用 useContractRead 来封装复杂的状态读取逻辑，传入合约地址、ABI 和函数名。
 - 在自定义钩子内部调用 useContractRead，暴露统一的接口给调用方。
 
@@ -1256,7 +1340,9 @@ function MintButton({ amount }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在 Wagmi 配置中使用 `chainId` 属性，并确保其值为网络的十进制链ID。 解析：Wagmi中配置自定义网络时，必须明确指定 `chainId`，且该值应为网络的标准十进制链ID，以确保正确识别和连接对应的区块链网络。其他选项中，`networkId` 并非 Wagmi 的标准配置属性，链ID不能是任意字符串，且不能仅通过网络名称自动匹配链ID，避免出现连接错误。</strong></p>
+  <p><strong>
+
+正确答案: A. 在 Wagmi 配置中使用 `chainId` 属性，并确保其值为网络的十进制链ID。 解析：Wagmi中配置自定义网络时，必须明确指定 `chainId`，且该值应为网络的标准十进制链ID，以确保正确识别和连接对应的区块链网络。其他选项中，`networkId` 并非 Wagmi 的标准配置属性，链ID不能是任意字符串，且不能仅通过网络名称自动匹配链ID，避免出现连接错误。</strong></p>
 </details>
 
 **问题 2:**
@@ -1265,7 +1351,9 @@ function MintButton({ amount }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Wagmi 中，配置网络和链ID通常通过创建自定义的链对象或使用内置的链配置完成。每个链对象包含链ID（chainId）、网络名称、RPC URL 等信息。你可以通过 Wagmi 的配置函数（如 configureChains）传入这些链对象，从而让应用识别不同的区块链网络。
+  <p><strong>
+
+正确答案: 在 Wagmi 中，配置网络和链ID通常通过创建自定义的链对象或使用内置的链配置完成。每个链对象包含链ID（chainId）、网络名称、RPC URL 等信息。你可以通过 Wagmi 的配置函数（如 configureChains）传入这些链对象，从而让应用识别不同的区块链网络。
 
 正确配置链ID非常重要，因为链ID用于唯一标识区块链网络，确保交易和请求被发送到正确的链上。如果链ID配置错误，可能会导致交易失败、数据读取错误，甚至安全风险（如重放攻击）。因此，在多链环境中，准确配置和使用链ID是保证网络交互正确性和安全性的基础。</strong></p>
 </details>
@@ -1288,7 +1376,9 @@ function MintButton({ amount }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 直接调用 `switchNetwork` 函数，并传入目标网络的 chainId。 解析：在 Wagmi 中，切换网络的正确方法是调用 `switchNetwork` 函数并传入目标网络的 chainId。选项 B 是错误的，因为修改 .env 文件后需要重新编译和加载，且无法即时切换网络；选项 C 错误，网络切换需要与钱包交互，单纯修改状态无法实现；选项 D 错误，连接钱包时指定网络只是在连接时生效，后续网络切换仍需调用切换函数。</strong></p>
+  <p><strong>
+
+正确答案: A. 直接调用 `switchNetwork` 函数，并传入目标网络的 chainId。 解析：在 Wagmi 中，切换网络的正确方法是调用 `switchNetwork` 函数并传入目标网络的 chainId。选项 B 是错误的，因为修改 .env 文件后需要重新编译和加载，且无法即时切换网络；选项 C 错误，网络切换需要与钱包交互，单纯修改状态无法实现；选项 D 错误，连接钱包时指定网络只是在连接时生效，后续网络切换仍需调用切换函数。</strong></p>
 </details>
 
 **问题 2:**
@@ -1297,7 +1387,9 @@ function MintButton({ amount }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 使用 Wagmi 提供的 `useNetwork` 钩子获取当前网络信息和切换网络的函数。
+  <p><strong>
+
+正确答案: 1. 使用 Wagmi 提供的 `useNetwork` 钩子获取当前网络信息和切换网络的函数。
 2. 通过调用 `switchNetwork` 方法来请求钱包切换到目标网络，该方法通常接收目标网络的 chainId。
 3. 在切换网络前，需确保目标网络已被钱包支持，否则可能需要先调用添加网络的方法（比如 MetaMask 的 `wallet_addEthereumChain` RPC）。
 4. 监听网络切换事件，更新应用的网络状态，确保 UI 和业务逻辑与当前网络保持一致。
@@ -1329,7 +1421,9 @@ function MintButton({ amount }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 直接通过 useNetwork 钩子提供的 onChange 回调来监听网络变化。 解释：在 Wagmi 中，useNetwork 钩子提供了一个方便的方式来监听网络变化，通常通过其返回的状态和回调（如 onChange）来响应链的切换，而不是直接监听 window.ethereum 的事件或不存在的方法。选项 A 虽然是传统 Web3 的做法，但在 Wagmi 中不推荐这样直接操作。选项 C 表述不准确，network 对象没有 change 事件。选项 D 是不存在的 API。</strong></p>
+  <p><strong>
+
+正确答案: B. 直接通过 useNetwork 钩子提供的 onChange 回调来监听网络变化。 解释：在 Wagmi 中，useNetwork 钩子提供了一个方便的方式来监听网络变化，通常通过其返回的状态和回调（如 onChange）来响应链的切换，而不是直接监听 window.ethereum 的事件或不存在的方法。选项 A 虽然是传统 Web3 的做法，但在 Wagmi 中不推荐这样直接操作。选项 C 表述不准确，network 对象没有 change 事件。选项 D 是不存在的 API。</strong></p>
 </details>
 
 **问题 2:**
@@ -1338,7 +1432,9 @@ function MintButton({ amount }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Wagmi 中，可以使用 `useNetwork` 钩子来监听和获取当前连接的区块链网络信息。该钩子会返回当前网络的状态、网络对象（包括 chainId）以及连接错误等。通过监听 `chain` 的变化，可以实时感知用户切换网络。
+  <p><strong>
+
+正确答案: 在 Wagmi 中，可以使用 `useNetwork` 钩子来监听和获取当前连接的区块链网络信息。该钩子会返回当前网络的状态、网络对象（包括 chainId）以及连接错误等。通过监听 `chain` 的变化，可以实时感知用户切换网络。
 
 示例代码：
 ```jsx
@@ -1391,7 +1487,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 根据用户选择的链动态创建和激活对应的连接，只保持一个活跃连接。 这是因为动态管理连接可以有效节省资源，提升性能，同时避免多个连接带来的复杂状态同步问题，符合 Wagmi 推荐的多链支持策略。</strong></p>
+  <p><strong>
+
+正确答案: B. 根据用户选择的链动态创建和激活对应的连接，只保持一个活跃连接。 这是因为动态管理连接可以有效节省资源，提升性能，同时避免多个连接带来的复杂状态同步问题，符合 Wagmi 推荐的多链支持策略。</strong></p>
 </details>
 
 **问题 2:**
@@ -1400,7 +1498,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在使用 Wagmi 框架支持多链的场景下，可以从以下几个方面设计前端多链支持策略：
+  <p><strong>
+
+正确答案: 在使用 Wagmi 框架支持多链的场景下，可以从以下几个方面设计前端多链支持策略：
 
 1. 网络切换管理：
 - 利用 Wagmi 提供的 network 和 provider hooks（如 useNetwork, useSwitchNetwork）实现用户链的自动检测和切换。
@@ -1437,7 +1537,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用 Wagmi 提供的缓存机制和请求去重功能，减少重复请求和网络开销。 解析：Wagmi 内置了缓存和请求去重功能，这有助于减少重复的链上调用和网络请求，从而优化性能和提升容错能力。选项 A 忽视了请求重试的时间间隔，可能导致网络拥堵；选项 C 放弃内置错误处理会增加开发复杂度且不利于容错；选项 D 仅依赖浏览器缓存忽略了链上数据的特性和 Wagmi 的专属优化机制，因此不够有效。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用 Wagmi 提供的缓存机制和请求去重功能，减少重复请求和网络开销。 解析：Wagmi 内置了缓存和请求去重功能，这有助于减少重复的链上调用和网络请求，从而优化性能和提升容错能力。选项 A 忽视了请求重试的时间间隔，可能导致网络拥堵；选项 C 放弃内置错误处理会增加开发复杂度且不利于容错；选项 D 仅依赖浏览器缓存忽略了链上数据的特性和 Wagmi 的专属优化机制，因此不够有效。</strong></p>
 </details>
 
 **问题 2:**
@@ -1446,7 +1548,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在使用Wagmi构建DApp时，为了提升网络性能和容错能力，可以采取以下措施：
+  <p><strong>
+
+正确答案: 在使用Wagmi构建DApp时，为了提升网络性能和容错能力，可以采取以下措施：
 
 1. 缓存策略：
  - 使用本地缓存（如IndexedDB或localStorage）缓存链上数据，减少不必要的网络请求。
@@ -1489,7 +1593,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用跨链桥服务（如 Hop 或 Connext）在后端完成跨链消息传递，前端通过 Wagmi 调用统一的智能合约接口，结合事件监听保障状态同步。——正确答案。跨链交互设计中，原子性和状态一致性是核心难点。通过跨链桥服务进行消息传递，并在前端结合 Wagmi 监听链上事件，可以有效保证跨链交易的同步和一致性，避免因用户手动操作或异步交易导致状态不一致的问题。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用跨链桥服务（如 Hop 或 Connext）在后端完成跨链消息传递，前端通过 Wagmi 调用统一的智能合约接口，结合事件监听保障状态同步。——正确答案。跨链交互设计中，原子性和状态一致性是核心难点。通过跨链桥服务进行消息传递，并在前端结合 Wagmi 监听链上事件，可以有效保证跨链交易的同步和一致性，避免因用户手动操作或异步交易导致状态不一致的问题。</strong></p>
 </details>
 
 **问题 2:**
@@ -1498,7 +1604,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 跨链交互整体方案设计：
+  <p><strong>
+
+正确答案: 1. 跨链交互整体方案设计：
 - 多链连接管理：利用Wagmi的Provider和useNetwork钩子分别管理以太坊和Polygon的连接状态，通过配置多个Connector（如MetaMask、WalletConnect），实现用户在不同链间的无缝切换。
 - 签名交易管理：使用Wagmi的useSigner钩子获取对应链的签名器，针对不同链构造交易请求，确保交易数据格式和链的兼容性。
 - 跨链消息传递机制：结合跨链桥（如Polygon Bridge或第三方跨链协议）实现资产和数据的跨链转移，前端通过监听跨链事件（如区块确认、交易状态）更新UI状态。
@@ -1536,7 +1644,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用签名恢复函数（如`recoverAddress`）从签名中恢复签名者地址，并与预期地址进行比对。 签名验证的核心在于通过恢复签名者地址来确保签名确实来自预期的账户，从而保证消息的真实性和完整性。仅验证地址或消息格式是不够的，必须通过恢复地址来确认签名者身份。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用签名恢复函数（如`recoverAddress`）从签名中恢复签名者地址，并与预期地址进行比对。 签名验证的核心在于通过恢复签名者地址来确保签名确实来自预期的账户，从而保证消息的真实性和完整性。仅验证地址或消息格式是不够的，必须通过恢复地址来确认签名者身份。</strong></p>
 </details>
 
 **问题 2:**
@@ -1545,7 +1655,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在该场景中，签名验证机制的工作流程如下：
+  <p><strong>
+
+正确答案: 在该场景中，签名验证机制的工作流程如下：
 
 1. 前端生成签名：前端应用使用 Wagmi 库调用用户的钱包（如 MetaMask）请求用户对一段特定消息（通常是随机生成的nonce或挑战字符串）进行签名。这个消息一般包含用户标识和时间戳，以防重放攻击。
 
@@ -1582,7 +1694,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -1591,7 +1705,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在基于 Wagmi 的前端应用中实现权限管理时，首先需要明确不同用户角色及其对应的权限范围。通常做法是：
+  <p><strong>
+
+正确答案: 在基于 Wagmi 的前端应用中实现权限管理时，首先需要明确不同用户角色及其对应的权限范围。通常做法是：
 
 1. **用户身份验证**：利用 Wagmi 的钩子（如 `useAccount`）获取连接的钱包地址，作为用户身份的基础。
 
@@ -1627,7 +1743,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -1636,7 +1754,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 防重放攻击通常指攻击者捕获并重复发送合法用户的请求以实现恶意操作。针对 Wagmi 和前端以太坊交互的场景，可以采取以下策略：
+  <p><strong>
+
+正确答案: 防重放攻击通常指攻击者捕获并重复发送合法用户的请求以实现恶意操作。针对 Wagmi 和前端以太坊交互的场景，可以采取以下策略：
 
 1. 使用唯一的交易 nonce：以太坊交易本身通过 nonce 来防止交易重放，前端应确保每笔交易使用正确且唯一的 nonce。Wagmi 通常会自动处理 nonce，但在复杂场景下可手动管理。
 
@@ -1667,7 +1787,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在签名交易时，确保签名请求的消息内容是明确且不可篡改的，以防止钓鱼攻击。 解释：Wagmi 作为以太坊前端库，安全签名是关键环节。确保签名内容明确且不可篡改，可以有效防止钓鱼攻击和恶意交易。选项A虽然涉及地址验证，但重放攻击主要发生在链上和签名层面，且简单验证地址不足以防止。选项C客户端存储私钥极易导致私钥泄露，是严重安全隐患。选项D自动批准所有交易极易导致资金被盗，违背安全原则。</strong></p>
+  <p><strong>
+
+正确答案: B. 在签名交易时，确保签名请求的消息内容是明确且不可篡改的，以防止钓鱼攻击。 解释：Wagmi 作为以太坊前端库，安全签名是关键环节。确保签名内容明确且不可篡改，可以有效防止钓鱼攻击和恶意交易。选项A虽然涉及地址验证，但重放攻击主要发生在链上和签名层面，且简单验证地址不足以防止。选项C客户端存储私钥极易导致私钥泄露，是严重安全隐患。选项D自动批准所有交易极易导致资金被盗，违背安全原则。</strong></p>
 </details>
 
 **问题 2:**
@@ -1676,7 +1798,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 漏洞识别：
+  <p><strong>
+
+正确答案: 1. 漏洞识别：
    - 通过代码审查，重点检查涉及私钥、助记词、签名数据等敏感信息的钩子（如 useSigner、useAccount）和状态管理。
    - 利用浏览器开发者工具查看应用运行时的控制台输出、网络请求和本地存储，确认是否有敏感数据暴露。
    - 检查是否有敏感信息被非加密地存储在 Redux、Context 或其他全局状态中。
@@ -1718,7 +1842,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用 Wagmi 提供的事件监听功能，实时监控合约状态变化与异常交易。——这是最有效的安全措施之一，因为通过实时监听智能合约事件，可以及时发现异常状态和潜在攻击，辅助安全审计与合规监控。其他选项中，A限制环境使用不利于全面测试，C过度限制钱包类型不实用且影响用户体验，D硬编码私钥严重违反安全原则。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用 Wagmi 提供的事件监听功能，实时监控合约状态变化与异常交易。——这是最有效的安全措施之一，因为通过实时监听智能合约事件，可以及时发现异常状态和潜在攻击，辅助安全审计与合规监控。其他选项中，A限制环境使用不利于全面测试，C过度限制钱包类型不实用且影响用户体验，D硬编码私钥严重违反安全原则。</strong></p>
 </details>
 
 **问题 2:**
@@ -1727,7 +1853,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 安全审计流程设计：
+  <p><strong>
+
+正确答案: 1. 安全审计流程设计：
    - 代码审查：对 Wagmi 相关的连接钱包、交易签名等功能代码进行静态分析，识别潜在漏洞。
    - 动态测试：模拟用户操作场景，特别是签名请求和交易执行，检测异常行为。
    - 集成安全工具：使用安全扫描工具，如 MythX、Slither（针对智能合约），以及前端安全分析工具，确保前后端统一安全。
@@ -1769,7 +1897,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 在智能合约中实现权限控制逻辑，前端通过 Wagmi 调用合约方法前，先进行权限判断，前端和合约共同保障安全。
+  <p><strong>
+
+正确答案: C. 在智能合约中实现权限控制逻辑，前端通过 Wagmi 调用合约方法前，先进行权限判断，前端和合约共同保障安全。
 
 解释：安全策略的核心应在链上智能合约中实现权限控制，确保即使前端被攻击或绕过，合约依然能保护敏感操作。前端通过 Wagmi 进行权限判断是提升用户体验的辅助手段，但不能作为唯一的安全保障。选项 A 仅靠前端判断容易被绕过，选项 B 事件监听不适合做权限校验，选项 D Wagmi 本身无内置权限控制配置，故不正确。</strong></p>
 </details>
@@ -1780,7 +1910,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 设计思路：
+  <p><strong>
+
+正确答案: 1. 设计思路：
 - 通过智能合约接口读取用户链上资产信息（如持有的代币余额）。
 - 在前端使用 Wagmi 提供的钩子（如 useContractRead）实时获取用户的资产数据。
 - 根据业务规则（例如持有代币数量阈值）判断用户是否具备执行权限。
@@ -1823,7 +1955,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用Wagmi的自动缓存机制，对相同查询参数的请求进行缓存，并在请求发起时自动去重，避免重复请求。 解释：Wagmi内置了请求的缓存和去重机制，能够自动识别相同的查询请求并复用缓存结果，避免重复请求发起，这不仅提升了性能，也保证了数据一致性。选项A忽略了缓存带来的性能提升，C会增加开发复杂度且不必要，D则误解了缓存机制通常适用于读操作以提高性能。因而B是最合适的做法。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用Wagmi的自动缓存机制，对相同查询参数的请求进行缓存，并在请求发起时自动去重，避免重复请求。 解释：Wagmi内置了请求的缓存和去重机制，能够自动识别相同的查询请求并复用缓存结果，避免重复请求发起，这不仅提升了性能，也保证了数据一致性。选项A忽略了缓存带来的性能提升，C会增加开发复杂度且不必要，D则误解了缓存机制通常适用于读操作以提高性能。因而B是最合适的做法。</strong></p>
 </details>
 
 **问题 2:**
@@ -1832,7 +1966,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Wagmi 中，可以利用其内置的请求缓存和去重机制优化重复的合约调用请求。具体做法包括：
+  <p><strong>
+
+正确答案: 在 Wagmi 中，可以利用其内置的请求缓存和去重机制优化重复的合约调用请求。具体做法包括：
 
 1. **请求缓存**：Wagmi 会自动缓存相同参数的查询结果，后续相同请求命中缓存时可以直接返回缓存数据，避免重复的网络请求。
 
@@ -1871,7 +2007,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 useQuery 的缓存机制和合理设置 staleTime 来减少不必要的网络请求。 解释：Wagmi 的 useQuery 钩子内置了缓存和请求去重机制，通过合理设置 staleTime，可以避免重复请求，提高性能；而 A 会导致大量重复请求，影响性能；C 放弃 Wagmi 自带钩子会失去很多优化特性；D 禁用缓存会导致请求频繁，反而降低性能。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 useQuery 的缓存机制和合理设置 staleTime 来减少不必要的网络请求。 解释：Wagmi 的 useQuery 钩子内置了缓存和请求去重机制，通过合理设置 staleTime，可以避免重复请求，提高性能；而 A 会导致大量重复请求，影响性能；C 放弃 Wagmi 自带钩子会失去很多优化特性；D 禁用缓存会导致请求频繁，反而降低性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -1880,7 +2018,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Wagmi 中处理多个异步数据请求时，优化的关键在于合理管理请求的并发和依赖关系。具体策略包括：
+  <p><strong>
+
+正确答案: 在 Wagmi 中处理多个异步数据请求时，优化的关键在于合理管理请求的并发和依赖关系。具体策略包括：
 
 1. **请求并发控制**：对于相互独立的数据请求，可以使用 Promise.all 并发发送查询，减少总等待时间。
 
@@ -1915,7 +2055,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用 React Profiler 组件包裹 Wagmi 钩子调用，并结合性能分析工具进行监控。因为 React Profiler 能够非侵入式地收集钩子调用及组件渲染的性能数据，结合性能分析工具可以更系统地定位性能瓶颈，避免了直接修改钩子代码或产生大量日志的缺点。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用 React Profiler 组件包裹 Wagmi 钩子调用，并结合性能分析工具进行监控。因为 React Profiler 能够非侵入式地收集钩子调用及组件渲染的性能数据，结合性能分析工具可以更系统地定位性能瓶颈，避免了直接修改钩子代码或产生大量日志的缺点。</strong></p>
 </details>
 
 **问题 2:**
@@ -1924,7 +2066,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. **定位性能瓶颈的方法**：
+  <p><strong>
+
+正确答案: 1. **定位性能瓶颈的方法**：
 - 使用 React Profiler 监控组件和钩子渲染时间，观察 `useContractRead` 钩子的调用频率和耗时。
 - 利用浏览器的性能分析工具（如 Chrome DevTools Performance 面板）记录钩子执行过程中 CPU 使用情况和调用堆栈。
 - 在钩子内部添加自定义的性能日志（例如使用 `performance.now()` 记录开始和结束时间），以精准获取钩子调用时长。
@@ -1963,7 +2107,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 确保所有使用的 Wagmi Hooks（如 useAccount、useContract）在组件卸载时正确取消订阅或清理。 解释：Wagmi Hooks 通常内部维护订阅和事件监听，如果组件卸载时未取消这些订阅，会导致内存泄漏。正确清理订阅是排查和优化内存泄漏的关键。选项 A 和 D 主要关注性能优化和渲染次数，不能直接解决内存泄漏；选项 C 使用 setInterval 反而可能加剧内存泄漏风险。</strong></p>
+  <p><strong>
+
+正确答案: B. 确保所有使用的 Wagmi Hooks（如 useAccount、useContract）在组件卸载时正确取消订阅或清理。 解释：Wagmi Hooks 通常内部维护订阅和事件监听，如果组件卸载时未取消这些订阅，会导致内存泄漏。正确清理订阅是排查和优化内存泄漏的关键。选项 A 和 D 主要关注性能优化和渲染次数，不能直接解决内存泄漏；选项 C 使用 setInterval 反而可能加剧内存泄漏风险。</strong></p>
 </details>
 
 **问题 2:**
@@ -1972,7 +2118,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: ### 排查思路
+  <p><strong>
+
+正确答案: 排查思路
 1. **复现问题**：先确认内存泄漏是否存在，使用应用长时间运行或者频繁切换网络、账户等操作，观察应用性能变化。
 2. **使用浏览器开发者工具**：
    - 利用Chrome的Memory面板，进行堆快照（Heap Snapshot）和分配时间线（Allocation Timeline）分析，查看内存增长情况。
@@ -2022,7 +2170,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用 Wagmi 提供的缓存机制，通过 useQueryClient 或 React Query 的缓存功能，避免重复请求相同的链上数据。 解释：Wagmi 内部集成了 React Query，利用其缓存机制可以有效减少重复网络请求和链上调用，从而提升渲染性能和响应速度。选项A会导致不必要的多次请求，选项C的手动清理缓存反而降低性能，选项D禁用缓存会极大增加网络请求，降低性能，均不符合源码级性能调优的最佳实践。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用 Wagmi 提供的缓存机制，通过 useQueryClient 或 React Query 的缓存功能，避免重复请求相同的链上数据。 解释：Wagmi 内部集成了 React Query，利用其缓存机制可以有效减少重复网络请求和链上调用，从而提升渲染性能和响应速度。选项A会导致不必要的多次请求，选项C的手动清理缓存反而降低性能，选项D禁用缓存会极大增加网络请求，降低性能，均不符合源码级性能调优的最佳实践。</strong></p>
 </details>
 
 **问题 2:**
@@ -2031,7 +2181,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 可能的性能瓶颈原因：
+  <p><strong>
+
+正确答案: 1. 可能的性能瓶颈原因：
 - 过多重复调用 Wagmi 提供的钩子（如 useAccount、useBalance 等）导致大量无效的重新渲染。
 - 状态管理不合理，导致状态频繁更新和传播，增加组件渲染压力。
 - 网络请求未做有效缓存或批量处理，导致重复请求链上数据。
@@ -2076,7 +2228,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 React Testing Library 的 renderHook 方法来渲染 Hook，然后断言其返回值。 解释：React Testing Library 提供的 renderHook 是测试自定义 Hook 最合适的工具，能模拟 Hook 的执行环境并访问其返回值。选项 A 缺乏模拟 React Hook 环境，直接调用会出错。选项 C 是间接测试，虽然可行但不够精确。选项 D 错误，Hook 的逻辑也应被单元测试。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 React Testing Library 的 renderHook 方法来渲染 Hook，然后断言其返回值。 解释：React Testing Library 提供的 renderHook 是测试自定义 Hook 最合适的工具，能模拟 Hook 的执行环境并访问其返回值。选项 A 缺乏模拟 React Hook 环境，直接调用会出错。选项 C 是间接测试，虽然可行但不够精确。选项 D 错误，Hook 的逻辑也应被单元测试。</strong></p>
 </details>
 
 **问题 2:**
@@ -2085,7 +2239,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 为了为使用 Wagmi 库编写的自定义 Hook 进行单元测试，首先需要模拟 Wagmi 提供的连接状态（如连接成功、连接失败、连接中等），以保证测试环境的可控性。可以使用 Jest 的 mock 功能模拟 Wagmi 的 Hook 或者相关方法。
+  <p><strong>
+
+正确答案: 为了为使用 Wagmi 库编写的自定义 Hook 进行单元测试，首先需要模拟 Wagmi 提供的连接状态（如连接成功、连接失败、连接中等），以保证测试环境的可控性。可以使用 Jest 的 mock 功能模拟 Wagmi 的 Hook 或者相关方法。
 
 关键步骤包括：
 1. 使用 `jest.mock` 来模拟 Wagmi 的核心 Hook，如 `useConnect`、`useAccount` 等，返回预设的状态和数据。
@@ -2116,7 +2272,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用 Wagmi 的 `MockConnector` 或类似的模拟连接器来模拟钱包行为。因为在集成测试中，使用 `MockConnector` 可以安全且高效地模拟钱包连接和用户操作，避免依赖真实钱包或网络，提高测试的稳定性和可控性。选项A不安全且不适合测试环境；选项C会导致无法模拟真实钱包行为；选项D忽略了连接流程，无法完整测试交互。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用 Wagmi 的 `MockConnector` 或类似的模拟连接器来模拟钱包行为。因为在集成测试中，使用 `MockConnector` 可以安全且高效地模拟钱包连接和用户操作，避免依赖真实钱包或网络，提高测试的稳定性和可控性。选项A不安全且不适合测试环境；选项C会导致无法模拟真实钱包行为；选项D忽略了连接流程，无法完整测试交互。</strong></p>
 </details>
 
 **问题 2:**
@@ -2125,7 +2283,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在使用 Wagmi 进行集成测试时，可以通过模拟钱包来复现用户连接钱包和执行交易的流程。具体步骤包括：
+  <p><strong>
+
+正确答案: 在使用 Wagmi 进行集成测试时，可以通过模拟钱包来复现用户连接钱包和执行交易的流程。具体步骤包括：
 
 1. **选择或搭建模拟钱包环境**：可以使用像 Hardhat Network 的模拟钱包，或者使用 Wagmi 提供的模拟连接器（比如 MockConnector），以便在测试环境中模拟钱包的行为。
 
@@ -2168,7 +2328,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A</strong></p>
+  <p><strong>
+
+正确答案: A</strong></p>
 </details>
 
 **问题 2:**
@@ -2177,7 +2339,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 使用 React DevTools 进行调试：
+  <p><strong>
+
+正确答案: 1. 使用 React DevTools 进行调试：
   - 检查组件状态和 Props：打开 React DevTools，定位到负责显示交易状态的组件，确认其状态（state）和属性（props）是否正确更新。
   - 跟踪状态变化：观察组件树中相关状态的变化，确认状态更新是否触发了组件的重新渲染。
   - 查找潜在的状态管理问题：如果状态没有更新，可能是异步调用未正确处理或者状态更新逻辑存在问题，需要检查相关代码。
@@ -2215,7 +2379,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在使用 Wagmi 的异步钩子时，应结合钩子的返回状态（如 isError 和 error 对象）进行错误处理，因为 React Error Boundary 无法捕获异步钩子中的 Promise 异常。 - React 的 Error Boundary 只能捕获渲染期间的同步错误，无法捕获异步钩子中的 Promise 异常。Wagmi 提供的钩子通过状态返回错误，需要开发者基于这些状态进行处理，确保应用稳定性。</strong></p>
+  <p><strong>
+
+正确答案: B. 在使用 Wagmi 的异步钩子时，应结合钩子的返回状态（如 isError 和 error 对象）进行错误处理，因为 React Error Boundary 无法捕获异步钩子中的 Promise 异常。 - React 的 Error Boundary 只能捕获渲染期间的同步错误，无法捕获异步钩子中的 Promise 异常。Wagmi 提供的钩子通过状态返回错误，需要开发者基于这些状态进行处理，确保应用稳定性。</strong></p>
 </details>
 
 **问题 2:**
@@ -2224,7 +2390,9 @@ function NetworkListener() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 错误边界的作用：
+  <p><strong>
+
+正确答案: 1. 错误边界的作用：
 错误边界是 React 中用于捕获其子组件渲染期间的 JavaScript 错误的特殊组件。它可以防止整个 React 组件树因某个组件错误而崩溃，提供降级 UI 或错误提示。
 
 2. 实现方式：
@@ -2265,7 +2433,9 @@ React 的错误边界只能捕获渲染阶段、生命周期方法和构造器�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用模拟钱包（Mock Wallet）和模拟区块链响应，替代真实钱包和网络，确保测试的可重复性和稳定性。 解析：端到端测试需要保证测试环境的稳定和可重复。直接使用真实钱包和网络（选项A）会导致测试不稳定且难以自动化。选项B通过模拟钱包和区块链响应，避免了网络波动和钱包状态变化带来的不确定性，是设计端到端测试的最佳实践。选项C忽略了核心功能的测试，无法全面验证应用。选项D则放弃了重要的业务流程测试，不符合端到端测试设计目的。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用模拟钱包（Mock Wallet）和模拟区块链响应，替代真实钱包和网络，确保测试的可重复性和稳定性。 解析：端到端测试需要保证测试环境的稳定和可重复。直接使用真实钱包和网络（选项A）会导致测试不稳定且难以自动化。选项B通过模拟钱包和区块链响应，避免了网络波动和钱包状态变化带来的不确定性，是设计端到端测试的最佳实践。选项C忽略了核心功能的测试，无法全面验证应用。选项D则放弃了重要的业务流程测试，不符合端到端测试设计目的。</strong></p>
 </details>
 
 **问题 2:**
@@ -2274,7 +2444,9 @@ React 的错误边界只能捕获渲染阶段、生命周期方法和构造器�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 测试用例设计：
+  <p><strong>
+
+正确答案: 1. 测试用例设计：
 - 钱包连接测试：验证用户点击连接按钮后，钱包弹窗出现，用户成功连接钱包。
 - 链切换测试：模拟用户从一个链切换到另一个链，验证应用是否正确响应链的变化。
 - 交易签名测试：模拟用户发起交易并签名，验证交易是否被正确发送和确认。
@@ -2312,7 +2484,9 @@ React 的错误边界只能捕获渲染阶段、生命周期方法和构造器�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Wagmi 的源码经过了编译和打包，断点需设置在对应的源码映射（Source Map）文件中。因为 Wagmi 源码通常经过 TypeScript 编译和打包，浏览器调试器需要依赖 Source Map 文件将编译后的代码映射回原始源码，只有在源码映射正确加载且断点设置在映射的源码位置时，断点才会被触发。这是前端调试打包库源码时的常见问题和解决方案。</strong></p>
+  <p><strong>
+
+正确答案: B. Wagmi 的源码经过了编译和打包，断点需设置在对应的源码映射（Source Map）文件中。因为 Wagmi 源码通常经过 TypeScript 编译和打包，浏览器调试器需要依赖 Source Map 文件将编译后的代码映射回原始源码，只有在源码映射正确加载且断点设置在映射的源码位置时，断点才会被触发。这是前端调试打包库源码时的常见问题和解决方案。</strong></p>
 </details>
 
 **问题 2:**
@@ -2323,7 +2497,9 @@ React 的错误边界只能捕获渲染阶段、生命周期方法和构造器�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. **了解源码结构**：首先，阅读 Wagmi 源码中相关 hook 的实现，尤其是 useContractWrite 的代码逻辑，理解其如何管理状态、发起交易以及处理回调。
+  <p><strong>
+
+正确答案: 1. **了解源码结构**：首先，阅读 Wagmi 源码中相关 hook 的实现，尤其是 useContractWrite 的代码逻辑，理解其如何管理状态、发起交易以及处理回调。
 
 2. **设置断点**：在源码调试工具（如 VSCode 或浏览器开发者工具的 Sources 面板）中，对关键位置设置断点，包括：
    - hook 中发起交易的函数调用处
@@ -2367,7 +2543,9 @@ React 的错误边界只能捕获渲染阶段、生命周期方法和构造器�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 在自定义钩子中使用 Wagmi 的 useAccount 和 useConnect 钩子，结合内部逻辑处理连接状态和账户信息，只暴露必要的状态和操作方法，避免组件直接处理多个钩子。——因为封装自定义钩子的目的是复用和抽象复杂逻辑，合理组合多个 Wagmi 钩子并只暴露必要接口可以提升代码可维护性和复用性，同时避免组件层代码复杂且冗余。</strong></p>
+  <p><strong>
+
+正确答案: C. 在自定义钩子中使用 Wagmi 的 useAccount 和 useConnect 钩子，结合内部逻辑处理连接状态和账户信息，只暴露必要的状态和操作方法，避免组件直接处理多个钩子。——因为封装自定义钩子的目的是复用和抽象复杂逻辑，合理组合多个 Wagmi 钩子并只暴露必要接口可以提升代码可维护性和复用性，同时避免组件层代码复杂且冗余。</strong></p>
 </details>
 
 **问题 2:**
@@ -2382,7 +2560,9 @@ React 的错误边界只能捕获渲染阶段、生命周期方法和构造器�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计思路：
+  <p><strong>
+
+正确答案: 设计思路：
 
 1. 封装一个名为 useFormattedBalance 的自定义钩子。
 2. 该钩子接收一个可选的以太坊地址参数，默认使用 Wagmi 提供的 useAccount 钩子获取当前连接账户地址。
@@ -2427,7 +2607,9 @@ React 的错误边界只能捕获渲染阶段、生命周期方法和构造器�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在组件中直接使用Wagmi的hooks获取链上状态，同时在全局状态中保存必要的派生数据，避免重复同步相同原始状态。 解析：Wagmi的hooks本身已经高效管理了链上状态，直接将其状态重复存入全局状态会导致数据冗余和同步复杂。最佳实践是组件直接使用Wagmi提供的hooks获取链上原始状态，而全局状态管理工具用于保存基于这些原始状态的派生或业务相关状态，从而避免重复数据源和同步问题。</strong></p>
+  <p><strong>
+
+正确答案: B. 在组件中直接使用Wagmi的hooks获取链上状态，同时在全局状态中保存必要的派生数据，避免重复同步相同原始状态。 解析：Wagmi的hooks本身已经高效管理了链上状态，直接将其状态重复存入全局状态会导致数据冗余和同步复杂。最佳实践是组件直接使用Wagmi提供的hooks获取链上原始状态，而全局状态管理工具用于保存基于这些原始状态的派生或业务相关状态，从而避免重复数据源和同步问题。</strong></p>
 </details>
 
 **问题 2:**
@@ -2436,7 +2618,9 @@ React 的错误边界只能捕获渲染阶段、生命周期方法和构造器�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在基于 React 和 Wagmi 的 DeFi 应用中，设计状态管理与 Wagmi 集成方案时，可以从以下几个方面考虑：
+  <p><strong>
+
+正确答案: 在基于 React 和 Wagmi 的 DeFi 应用中，设计状态管理与 Wagmi 集成方案时，可以从以下几个方面考虑：
 
 1. **状态划分与集中管理**：
    - 将用户的连接状态（如钱包地址、连接状态、链ID）和交易状态分离管理。
@@ -2483,7 +2667,9 @@ React 的错误边界只能捕获渲染阶段、生命周期方法和构造器�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 Wagmi 的 React Hooks 按需组合，结合上下文（Context）分层管理不同链的数据和连接状态，避免全局状态膨胀。 解析：在大型项目中，集中管理所有链状态容易导致全局状态过于庞大且难以维护（排除A）。每个组件独立创建客户端不但浪费资源，还会带来复杂的状态同步问题（排除C）。使用单一客户端连接所有链缺乏灵活性，且不符合 Wagmi 多链设计理念（排除D）。采用按需组合 Hooks 并结合 Context 分层管理，是保持代码清晰、模块化、便于扩展的最佳实践。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 Wagmi 的 React Hooks 按需组合，结合上下文（Context）分层管理不同链的数据和连接状态，避免全局状态膨胀。 解析：在大型项目中，集中管理所有链状态容易导致全局状态过于庞大且难以维护（排除A）。每个组件独立创建客户端不但浪费资源，还会带来复杂的状态同步问题（排除C）。使用单一客户端连接所有链缺乏灵活性，且不符合 Wagmi 多链设计理念（排除D）。采用按需组合 Hooks 并结合 Context 分层管理，是保持代码清晰、模块化、便于扩展的最佳实践。</strong></p>
 </details>
 
 **问题 2:**
@@ -2492,7 +2678,9 @@ React 的错误边界只能捕获渲染阶段、生命周期方法和构造器�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计基于 React 和 Wagmi 的大型 DeFi 平台前端架构时，需重点考虑以下几个方面：
+  <p><strong>
+
+正确答案: 在设计基于 React 和 Wagmi 的大型 DeFi 平台前端架构时，需重点考虑以下几个方面：
 
 1. 架构层次划分：
    - 组件层：拆分为 UI 组件和业务组件，UI 组件负责通用样式和交互，业务组件封装具体业务逻辑。
@@ -2545,7 +2733,9 @@ React 的错误边界只能捕获渲染阶段、生命周期方法和构造器�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 制定统一的 Wagmi 使用规范和共享组件库，明确接口和状态管理，确保代码复用和一致性。 这是因为跨团队协作的核心在于通过统一规范和共享资源减少重复开发和不一致的实现，明确接口和状态管理可以避免团队间的冲突和误解，提升整体开发效率和代码质量。</strong></p>
+  <p><strong>
+
+正确答案: B. 制定统一的 Wagmi 使用规范和共享组件库，明确接口和状态管理，确保代码复用和一致性。 这是因为跨团队协作的核心在于通过统一规范和共享资源减少重复开发和不一致的实现，明确接口和状态管理可以避免团队间的冲突和误解，提升整体开发效率和代码质量。</strong></p>
 </details>
 
 **问题 2:**
@@ -2554,7 +2744,9 @@ React 的错误边界只能捕获渲染阶段、生命周期方法和构造器�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 规范设计的关键考虑点：
+  <p><strong>
+
+正确答案: 1. 规范设计的关键考虑点：
 - 统一接口抽象：设计一套统一的 Wagmi Hook 封装规范，比如统一的连接钱包、查询链上数据、发送交易接口，避免各团队自行实现导致的不一致。
 - 状态管理策略：确定状态管理方案（如 React Context、Recoil 或 Redux），并规范状态的更新和共享方式，避免状态混乱。
 - 错误处理和重试机制：统一错误处理逻辑和用户反馈方案，确保用户体验一致。
@@ -2594,7 +2786,9 @@ React 的错误边界只能捕获渲染阶段、生命周期方法和构造器�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在项目中定义统一的 hooks 和 context，用于管理链上数据和状态，确保代码复用和可维护性。 解释：企业级最佳实践强调代码的模块化、可复用性和可维护性。通过统一定义 hooks 和 context 来管理链上数据和状态，能有效降低重复代码和提高团队协作效率。而 A 选项虽然方便调试，但不利于维护和扩展；C 选项缺少抽象层，会导致代码耦合度高；D 选项忽视了团队规范和标准，是不符合企业级开发要求的做法。</strong></p>
+  <p><strong>
+
+正确答案: B. 在项目中定义统一的 hooks 和 context，用于管理链上数据和状态，确保代码复用和可维护性。 解释：企业级最佳实践强调代码的模块化、可复用性和可维护性。通过统一定义 hooks 和 context 来管理链上数据和状态，能有效降低重复代码和提高团队协作效率。而 A 选项虽然方便调试，但不利于维护和扩展；C 选项缺少抽象层，会导致代码耦合度高；D 选项忽视了团队规范和标准，是不符合企业级开发要求的做法。</strong></p>
 </details>
 
 **问题 2:**
@@ -2603,7 +2797,9 @@ React 的错误边界只能捕获渲染阶段、生命周期方法和构造器�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 架构设计：
+  <p><strong>
+
+正确答案: 1. 架构设计：
 - 统一数据流和状态管理，建议将Wagmi的Hooks封装成自定义Hooks，提供统一接口，避免业务代码直接调用底层API。
 - 设计可扩展的Provider层，例如统一管理连接钱包、链切换、事件监听，确保跨链支持和环境切换的灵活性。
 

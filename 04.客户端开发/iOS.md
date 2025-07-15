@@ -166,7 +166,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. let name = "Alice"  
+  <p><strong>
+
+正确答案: B. let name = "Alice"  
 解释：在Swift中，使用关键字 `let` 来声明一个常量，其值在初始化后不能被修改。`var` 用于声明变量，其值可以改变；`const` 不是Swift中的关键字；`static` 用于声明类型属性或方法，而不是常量。</strong></p>
 </details>
 
@@ -176,7 +178,10 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: ```swift
+  <p><strong>
+
+正确答案: 
+```swift
 struct Transaction {
     var amount: Double
     var type: String
@@ -211,7 +216,9 @@ struct Transaction {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 类支持继承，结构体不支持继承。 解析：在Swift中，类是引用类型并且支持继承，而结构体是值类型且不支持继承。选项A错误，类是引用类型，结构体是值类型。选项C错误，只有类可以有析构函数（deinit），结构体不支持。选项D错误，结构体是值类型，赋值时会复制，而非增加引用计数。</strong></p>
+  <p><strong>
+
+正确答案: B. 类支持继承，结构体不支持继承。 解析：在Swift中，类是引用类型并且支持继承，而结构体是值类型且不支持继承。选项A错误，类是引用类型，结构体是值类型。选项C错误，只有类可以有析构函数（deinit），结构体不支持。选项D错误，结构体是值类型，赋值时会复制，而非增加引用计数。</strong></p>
 </details>
 
 **问题 2:**
@@ -220,7 +227,9 @@ struct Transaction {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以设计一个基类`User`，包含所有用户共有的属性和方法，比如用户名、登录、登出等。然后为不同用户类型创建子类，如`RegularUser`、`AdminUser`和`GuestUser`，它们继承自`User`，并重写或扩展基类的方法以实现各自特有的行为。例如，`AdminUser`可能有管理权限的方法，而`GuestUser`则可能限制某些操作。通过继承，子类复用了基类的代码，避免重复定义；通过多态，程序可以通过基类类型的引用调用子类重写的方法，实现行为的动态变化，提高代码的灵活性和扩展性。</strong></p>
+  <p><strong>
+
+正确答案: 你可以设计一个基类`User`，包含所有用户共有的属性和方法，比如用户名、登录、登出等。然后为不同用户类型创建子类，如`RegularUser`、`AdminUser`和`GuestUser`，它们继承自`User`，并重写或扩展基类的方法以实现各自特有的行为。例如，`AdminUser`可能有管理权限的方法，而`GuestUser`则可能限制某些操作。通过继承，子类复用了基类的代码，避免重复定义；通过多态，程序可以通过基类类型的引用调用子类重写的方法，实现行为的动态变化，提高代码的灵活性和扩展性。</strong></p>
 </details>
 
 ---
@@ -244,7 +253,9 @@ struct Transaction {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 协议可以通过扩展为所有遵循该协议的类型提供默认实现。——这是 Swift 协议和扩展的重要特性，协议扩展允许为协议中的方法或属性提供默认实现，所有遵循协议的类型自动获得该实现。A 错误，因为扩展不能添加存储属性。C 错误，扩展可以添加协议的静态方法实现。D 错误，结构体和枚举同样可以重写协议扩展中的方法（通过提供自己的实现）。</strong></p>
+  <p><strong>
+
+正确答案: B. 协议可以通过扩展为所有遵循该协议的类型提供默认实现。——这是 Swift 协议和扩展的重要特性，协议扩展允许为协议中的方法或属性提供默认实现，所有遵循协议的类型自动获得该实现。A 错误，因为扩展不能添加存储属性。C 错误，扩展可以添加协议的静态方法实现。D 错误，结构体和枚举同样可以重写协议扩展中的方法（通过提供自己的实现）。</strong></p>
 </details>
 
 **问题 2:**
@@ -253,7 +264,9 @@ struct Transaction {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计思路：
+  <p><strong>
+
+正确答案: 设计思路：
 
 1. 定义一个名为 `PaymentMethod` 的协议，声明所有支付方式必须实现的基本支付功能，比如 `pay(amount: Double)` 方法。
 
@@ -329,7 +342,9 @@ struct ApplePayPayment: PaymentMethod {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. func fetchData() throws -> String
+  <p><strong>
+
+正确答案: A. func fetchData() throws -> String
 
 解释：在 Swift 中，声明一个会抛出错误的函数时，需要在返回类型之前使用关键字 `throws`，正确的语法是 `func 函数名() throws -> 返回类型`。选项 B 错误地使用了 `throw`，Swift 中使用的是 `throws`。选项 C 和 D 的语法均不符合 Swift 函数声明规则，因此只有选项 A 是正确的。</strong></p>
 </details>
@@ -340,7 +355,9 @@ struct ApplePayPayment: PaymentMethod {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Swift 中，可以定义一个自定义的错误类型（通常遵循 `Error` 协议），用来表示网络请求和数据解析中可能出现的不同错误。网络请求和解析函数可以通过声明 `throws` 来表示它们可能抛出错误。调用这些函数时，使用 `do-catch` 语句捕获并处理错误。这样做的思路是：
+  <p><strong>
+
+正确答案: 在 Swift 中，可以定义一个自定义的错误类型（通常遵循 `Error` 协议），用来表示网络请求和数据解析中可能出现的不同错误。网络请求和解析函数可以通过声明 `throws` 来表示它们可能抛出错误。调用这些函数时，使用 `do-catch` 语句捕获并处理错误。这样做的思路是：
 
 1. 定义错误类型，例如 `enum NetworkError: Error`，包含如网络连接失败、数据格式错误等错误情况。
 2. 网络请求函数和解析函数声明为 `throws`，在出现错误时使用 `throw` 抛出具体错误。
@@ -370,7 +387,9 @@ struct ApplePayPayment: PaymentMethod {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 泛型类型参数可以有多个，并且可以通过 where 子句对类型参数进行约束。 解释：Swift 中泛型不仅允许定义多个类型参数，还支持通过 where 子句对类型参数进行复杂约束，从而实现灵活且类型安全的泛型编程。选项 A 错误，因为泛型函数可以处理不同类型的参数，通过多个类型参数实现。选项 C 错误，因为泛型不仅支持函数和方法，也支持自定义类型（如泛型结构体、类和枚举）。选项 D 错误，因为 Swift 编译器通常可以进行类型推断，调用时并不总是需要显式指定类型参数。</strong></p>
+  <p><strong>
+
+正确答案: B. 泛型类型参数可以有多个，并且可以通过 where 子句对类型参数进行约束。 解释：Swift 中泛型不仅允许定义多个类型参数，还支持通过 where 子句对类型参数进行复杂约束，从而实现灵活且类型安全的泛型编程。选项 A 错误，因为泛型函数可以处理不同类型的参数，通过多个类型参数实现。选项 C 错误，因为泛型不仅支持函数和方法，也支持自定义类型（如泛型结构体、类和枚举）。选项 D 错误，因为 Swift 编译器通常可以进行类型推断，调用时并不总是需要显式指定类型参数。</strong></p>
 </details>
 
 **问题 2:**
@@ -379,7 +398,9 @@ struct ApplePayPayment: PaymentMethod {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计一个通用的数据缓存管理器，可以使用Swift的泛型来定义一个泛型类或结构体，使得缓存管理器能够存储和读取任意类型的数据。设计思路如下：
+  <p><strong>
+
+正确答案: 设计一个通用的数据缓存管理器，可以使用Swift的泛型来定义一个泛型类或结构体，使得缓存管理器能够存储和读取任意类型的数据。设计思路如下：
 
 1. 定义一个泛型类CacheManager<T>，其中T表示缓存的数据类型。
 2. 使用字典或其他数据结构存储缓存数据，键通常为唯一标识符（如String），值为泛型类型T。
@@ -434,7 +455,9 @@ if let user = userCache.load(forKey: "user_1") {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. ARC会在实例不再被任何变量引用时，自动调用deinit方法并立即释放内存。——答案解析：ARC通过维护实例的强引用计数，当计数降为0时，立即调用实例的deinit方法进行清理，并释放内存。选项B错误，deinit方法会在内存释放前调用；选项C错误，Swift的ARC是自动的，不需要手动释放内存；选项D错误，ARC不会自动将所有变量设为弱引用，循环引用需开发者通过弱引用或无主引用避免。</strong></p>
+  <p><strong>
+
+正确答案: A. ARC会在实例不再被任何变量引用时，自动调用deinit方法并立即释放内存。——答案解析：ARC通过维护实例的强引用计数，当计数降为0时，立即调用实例的deinit方法进行清理，并释放内存。选项B错误，deinit方法会在内存释放前调用；选项C错误，Swift的ARC是自动的，不需要手动释放内存；选项D错误，ARC不会自动将所有变量设为弱引用，循环引用需开发者通过弱引用或无主引用避免。</strong></p>
 </details>
 
 **问题 2:**
@@ -443,7 +466,9 @@ if let user = userCache.load(forKey: "user_1") {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 这种情况下会发生“循环引用（retain cycle）”，导致内存泄漏。因为 `ViewController` 和 `DataManager` 互相持有对方的强引用，ARC无法释放它们，造成内存无法被回收。
+  <p><strong>
+
+正确答案: 这种情况下会发生“循环引用（retain cycle）”，导致内存泄漏。因为 `ViewController` 和 `DataManager` 互相持有对方的强引用，ARC无法释放它们，造成内存无法被回收。
 
 ARC通过自动引用计数来管理内存，但它无法解决循环引用，因为两个对象的引用计数都不会降为零。
 
@@ -491,7 +516,9 @@ class ViewController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 调用async函数时，必须使用await关键字来等待其执行结果。——这是因为async函数是异步的，调用方需要使用await来挂起当前任务，等待异步操作完成并获得结果。选项A错误，async函数可以有返回值。选项B错误，async函数不能被同步代码直接调用，必须在异步上下文中使用await。选项D错误，async函数内部可以调用其他async函数。</strong></p>
+  <p><strong>
+
+正确答案: C. 调用async函数时，必须使用await关键字来等待其执行结果。——这是因为async函数是异步的，调用方需要使用await来挂起当前任务，等待异步操作完成并获得结果。选项A错误，async函数可以有返回值。选项B错误，async函数不能被同步代码直接调用，必须在异步上下文中使用await。选项D错误，async函数内部可以调用其他async函数。</strong></p>
 </details>
 
 **问题 2:**
@@ -500,7 +527,9 @@ class ViewController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以使用async/await中的async let语法来实现两个异步请求的并行执行。例如：
+  <p><strong>
+
+正确答案: 你可以使用async/await中的async let语法来实现两个异步请求的并行执行。例如：
 
 ```swift
 func fetchUserAndConfig() async throws -> (User, Config) {
@@ -545,7 +574,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 尽量使用`lazy`属性延迟初始化，避免不必要的资源分配。——使用`lazy`属性可以延迟资源的分配直到真正需要时，避免了初始化不必要的对象，从而有效减少内存占用和提升性能。选项A虽然引用语义减少了拷贝，但类的引用计数开销可能更大；选项C中使用`Any`类型会增加类型擦除的成本，降低性能；选项D错误，`final`关键字可以帮助编译器进行优化，避免动态派发，提升效率。</strong></p>
+  <p><strong>
+
+正确答案: B. 尽量使用`lazy`属性延迟初始化，避免不必要的资源分配。——使用`lazy`属性可以延迟资源的分配直到真正需要时，避免了初始化不必要的对象，从而有效减少内存占用和提升性能。选项A虽然引用语义减少了拷贝，但类的引用计数开销可能更大；选项C中使用`Any`类型会增加类型擦除的成本，降低性能；选项D错误，`final`关键字可以帮助编译器进行优化，避免动态派发，提升效率。</strong></p>
 </details>
 
 **问题 2:**
@@ -554,7 +585,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能导致滚动性能差的原因包括：
+  <p><strong>
+
+正确答案: 可能导致滚动性能差的原因包括：
 
 1. **频繁的内存分配与释放**：Swift的值类型（如结构体）在频繁复制时会产生额外开销，引用类型（类）如果存在循环引用或未及时释放也会导致内存压力。大量对象创建和销毁会增加内存管理负担，导致卡顿。
 
@@ -606,7 +639,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 利用 Swift 的源码包管理工具（如 Swift Package Manager）将标准库源码作为依赖，基于该源码进行分支和定制，再通过依赖管理集成。——这是最推荐且安全的做法，能够在保留原有标准库稳定性的同时，方便管理和集成定制的版本。A 选项风险大且复杂，B 会带来维护和版本兼容问题，D 虽安全但不适用于所有源码级定制场景。</strong></p>
+  <p><strong>
+
+正确答案: C. 利用 Swift 的源码包管理工具（如 Swift Package Manager）将标准库源码作为依赖，基于该源码进行分支和定制，再通过依赖管理集成。——这是最推荐且安全的做法，能够在保留原有标准库稳定性的同时，方便管理和集成定制的版本。A 选项风险大且复杂，B 会带来维护和版本兼容问题，D 虽安全但不适用于所有源码级定制场景。</strong></p>
 </details>
 
 **问题 2:**
@@ -615,7 +650,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 要优化Swift标准库中Array的性能，首先需要从Swift开源库（Swift GitHub仓库）中定位Array的实现源码，主要是在`stdlib/public/core/Array.swift`及其相关文件中。Array在Swift中是一个泛型结构体，其底层通过一个名为`_Buffer`的引用类型来实现共享存储，利用了写时复制（Copy-on-Write）机制以提高性能和内存效率。\n\n1. **定位性能瓶颈**：\n- 通过阅读源码，关注Array的插入和删除操作相关的方法（如`append`, `insert`, `remove`等）。\n- 理解写时复制时机，分析是否存在过多的内存复制导致性能下降。\n- 使用Xcode的性能工具（Instruments）结合源码分析，找出具体的热点方法。\n\n2. **底层实现关键点**：\n- Array的存储依赖于`_ContiguousArrayBuffer`，它负责管理底层的连续内存。\n- 写时复制机制通过引用计数判断是否需要复制底层存储。\n- 插入和删除操作可能涉及内存的重新分配和元素的移动，影响性能。\n\n3. **定制与改进方案**：\n- 优化写时复制逻辑，避免不必要的复制。比如在多线程场景中改进同步策略。\n- 改进内存分配策略，减少内存重新分配的频率。\n- 针对特定业务场景，定制化实现部分操作，如批量插入或删除，利用更高效的数据结构（如链表或分段数组）。\n- 通过扩展或fork Swift标准库，修改`_ContiguousArrayBuffer`或相关方法实现定制。\n\n总结来说，通过深入阅读Array的源码结构和写时复制机制，结合实际性能分析，能够定位性能瓶颈并设计有效的定制方案，提升Array在特定场景下的性能表现。</strong></p>
+  <p><strong>
+
+正确答案: 要优化Swift标准库中Array的性能，首先需要从Swift开源库（Swift GitHub仓库）中定位Array的实现源码，主要是在`stdlib/public/core/Array.swift`及其相关文件中。Array在Swift中是一个泛型结构体，其底层通过一个名为`_Buffer`的引用类型来实现共享存储，利用了写时复制（Copy-on-Write）机制以提高性能和内存效率。1. **定位性能瓶颈**：- 通过阅读源码，关注Array的插入和删除操作相关的方法（如`append`, `insert`, `remove`等）。- 理解写时复制时机，分析是否存在过多的内存复制导致性能下降。- 使用Xcode的性能工具（Instruments）结合源码分析，找出具体的热点方法。2. **底层实现关键点**：- Array的存储依赖于`_ContiguousArrayBuffer`，它负责管理底层的连续内存。- 写时复制机制通过引用计数判断是否需要复制底层存储。- 插入和删除操作可能涉及内存的重新分配和元素的移动，影响性能。3. **定制与改进方案**：- 优化写时复制逻辑，避免不必要的复制。比如在多线程场景中改进同步策略。- 改进内存分配策略，减少内存重新分配的频率。- 针对特定业务场景，定制化实现部分操作，如批量插入或删除，利用更高效的数据结构（如链表或分段数组）。- 通过扩展或fork Swift标准库，修改`_ContiguousArrayBuffer`或相关方法实现定制。总结来说，通过深入阅读Array的源码结构和写时复制机制，结合实际性能分析，能够定位性能瓶颈并设计有效的定制方案，提升Array在特定场景下的性能表现。</strong></p>
 </details>
 
 ---
@@ -639,7 +676,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 函数内联（Function Inlining）——函数内联通过将被调用函数的代码直接插入调用点，消除了函数调用的开销（如参数传递和返回），从而显著提升运行时性能。延迟加载主要用于资源管理，垃圾回收不是 Swift 的内存管理机制，运行时类型检查增加额外开销，不是优化手段。</strong></p>
+  <p><strong>
+
+正确答案: B. 函数内联（Function Inlining）——函数内联通过将被调用函数的代码直接插入调用点，消除了函数调用的开销（如参数传递和返回），从而显著提升运行时性能。延迟加载主要用于资源管理，垃圾回收不是 Swift 的内存管理机制，运行时类型检查增加额外开销，不是优化手段。</strong></p>
 </details>
 
 **问题 2:**
@@ -648,7 +687,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Swift编译器的工作原理包括词法分析、语法分析、语义分析、中间代码生成、优化和最终代码生成。编译时间变长可能由于以下原因：
+  <p><strong>
+
+正确答案: Swift编译器的工作原理包括词法分析、语法分析、语义分析、中间代码生成、优化和最终代码生成。编译时间变长可能由于以下原因：
 
 1. **模块间依赖复杂**：大量头文件或模块之间相互依赖，导致模块化编译效率降低。
 2. **泛型实例化数量庞大**：泛型代码在编译时需要实例化，泛型使用越广泛，实例化数量越多，编译负担越重。
@@ -688,7 +729,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. viewWillAppear - 因为 viewWillAppear 方法是在视图即将被加入视图层级并显示之前调用，适合做视图即将展示时的准备工作，如更新界面或启动动画。viewDidLoad 只调用一次，视图加载后调用；viewDidAppear 在视图已经显示后调用；viewWillLayoutSubviews 是在布局子视图之前调用，主要用于布局调整。</strong></p>
+  <p><strong>
+
+正确答案: B. viewWillAppear - 因为 viewWillAppear 方法是在视图即将被加入视图层级并显示之前调用，适合做视图即将展示时的准备工作，如更新界面或启动动画。viewDidLoad 只调用一次，视图加载后调用；viewDidAppear 在视图已经显示后调用；viewWillLayoutSubviews 是在布局子视图之前调用，主要用于布局调整。</strong></p>
 </details>
 
 **问题 2:**
@@ -697,7 +740,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 视图控制器（UIViewController）是负责管理一个视图（UIView）及其子视图的对象。它不仅管理视图的布局和显示，还负责处理用户交互和视图的生命周期。
+  <p><strong>
+
+正确答案: 视图控制器（UIViewController）是负责管理一个视图（UIView）及其子视图的对象。它不仅管理视图的布局和显示，还负责处理用户交互和视图的生命周期。
 
 当视图控制器的视图首次访问时，系统会调用loadView方法创建视图层次结构，随后调用viewDidLoad来进行额外的初始化。视图加载完成后，视图控制器进入显示状态。
 
@@ -727,7 +772,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 优先级的取值范围是0到1000，其中1000表示必需满足的约束。——这是正确的，因为Auto Layout中约束的优先级范围是从0到1000，1000表示必需满足的约束，系统不会忽略这类约束。其他选项的描述均不准确：A错误，优先级高的约束会被优先满足；C错误，优先级为1000的约束是不可调整的必需约束；D错误，优先级确实影响约束的解决顺序。</strong></p>
+  <p><strong>
+
+正确答案: B. 优先级的取值范围是0到1000，其中1000表示必需满足的约束。——这是正确的，因为Auto Layout中约束的优先级范围是从0到1000，1000表示必需满足的约束，系统不会忽略这类约束。其他选项的描述均不准确：A错误，优先级高的约束会被优先满足；C错误，优先级为1000的约束是不可调整的必需约束；D错误，优先级确实影响约束的解决顺序。</strong></p>
 </details>
 
 **问题 2:**
@@ -736,7 +783,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以通过以下步骤使用Auto Layout实现该布局：
+  <p><strong>
+
+正确答案: 你可以通过以下步骤使用Auto Layout实现该布局：
 
 1. 将UILabel和UIButton添加到同一个父视图中。
 2. 为UILabel设置顶部、左侧和底部的约束，以确保其位置和高度受到父视图限制。
@@ -771,7 +820,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 事件响应链从事件最初被触发的视图开始，沿着视图层级向上传递直到UIApplication对象。因为在UIKit中，事件响应链从触摸事件最初接收的视图开始，依次传递给该视图的下一个响应者（通常是其父视图），最终传递到UIApplication对象，允许不同层级的对象都有机会响应事件。</strong></p>
+  <p><strong>
+
+正确答案: B. 事件响应链从事件最初被触发的视图开始，沿着视图层级向上传递直到UIApplication对象。因为在UIKit中，事件响应链从触摸事件最初接收的视图开始，依次传递给该视图的下一个响应者（通常是其父视图），最终传递到UIApplication对象，允许不同层级的对象都有机会响应事件。</strong></p>
 </details>
 
 **问题 2:**
@@ -780,7 +831,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 事件响应链是iOS中触摸事件传递的机制。当用户点击屏幕时，系统首先从窗口（UIWindow）开始，调用`hitTest(_:with:)`方法来确定最合适响应事件的视图。`hitTest(_:with:)`会调用`point(inside:with:)`方法判断触摸点是否在视图范围内，如果是，则递归遍历子视图来找到最深层的符合条件的视图。最终，事件会传递给该视图的`touchesBegan(_:with:)`等事件处理方法。
+  <p><strong>
+
+正确答案: 事件响应链是iOS中触摸事件传递的机制。当用户点击屏幕时，系统首先从窗口（UIWindow）开始，调用`hitTest(_:with:)`方法来确定最合适响应事件的视图。`hitTest(_:with:)`会调用`point(inside:with:)`方法判断触摸点是否在视图范围内，如果是，则递归遍历子视图来找到最深层的符合条件的视图。最终，事件会传递给该视图的`touchesBegan(_:with:)`等事件处理方法。
 
 具体场景：假设有一个父视图A，里面有子视图B和C，用户点击了视图B的范围内，系统会先调用A的`hitTest(_:with:)`，确认是否在A范围内，再递归调用B的`hitTest(_:with:)`，找出最合适响应事件的视图，最后将事件传递给B处理。
 
@@ -810,7 +863,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 UIView.animate(withDuration:animations:completion:) 方法。该方法支持在动画完成后执行额外操作的 completion 闭包，适合在动画结束时进行状态更新或触发后续逻辑。其他选项中，A 方法不包含 completion 参数，C 方法虽然支持关键帧动画，但没有直接包含 completion 参数，D 方法主要用于视图过渡动画，也支持 completion，但不如 B 选项通用且直观。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 UIView.animate(withDuration:animations:completion:) 方法。该方法支持在动画完成后执行额外操作的 completion 闭包，适合在动画结束时进行状态更新或触发后续逻辑。其他选项中，A 方法不包含 completion 参数，C 方法虽然支持关键帧动画，但没有直接包含 completion 参数，D 方法主要用于视图过渡动画，也支持 completion，但不如 B 选项通用且直观。</strong></p>
 </details>
 
 **问题 2:**
@@ -819,7 +874,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 要实现视图控制器之间的自定义转场动画，通常需要使用UIViewControllerTransitioningDelegate协议配合UIViewControllerAnimatedTransitioning协议。
+  <p><strong>
+
+正确答案: 要实现视图控制器之间的自定义转场动画，通常需要使用UIViewControllerTransitioningDelegate协议配合UIViewControllerAnimatedTransitioning协议。
 
 具体步骤如下：
 1. 创建一个自定义的动画类，实现UIViewControllerAnimatedTransitioning协议，在其中实现transitionDuration和animateTransition方法。
@@ -855,7 +912,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在自定义控件的layoutSubviews方法中更新子视图的frame和布局。解释：layoutSubviews是UIKit中专门用于调整子视图布局的方法，当控件的bounds或frame发生变化时，系统会自动调用该方法。开发者应在此方法中更新子视图的frame，确保布局正确。drawRect用于绘制内容，不适合调整布局；init方法中设置固定frame会导致在布局变化时无法适应；监听通知调整frame虽然可行，但不如layoutSubviews机制集成且高效。</strong></p>
+  <p><strong>
+
+正确答案: A. 在自定义控件的layoutSubviews方法中更新子视图的frame和布局。解释：layoutSubviews是UIKit中专门用于调整子视图布局的方法，当控件的bounds或frame发生变化时，系统会自动调用该方法。开发者应在此方法中更新子视图的frame，确保布局正确。drawRect用于绘制内容，不适合调整布局；init方法中设置固定frame会导致在布局变化时无法适应；监听通知调整frame虽然可行，但不如layoutSubviews机制集成且高效。</strong></p>
 </details>
 
 **问题 2:**
@@ -864,7 +923,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 继承类选择：通常选择继承UIView，因为UIView提供了绘图的基础环境和事件响应机制。
+  <p><strong>
+
+正确答案: 1. 继承类选择：通常选择继承UIView，因为UIView提供了绘图的基础环境和事件响应机制。
 
 2. 绘制方法：重写UIView的draw(_ rect: CGRect)方法，使用Core Graphics绘制圆形进度条。具体步骤包括绘制底层圆环作为进度条的背景，然后根据当前进度绘制一个对应角度的圆弧表示进度。
 
@@ -904,7 +965,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用Auto Layout结合Size Classes，根据屏幕尺寸和方向动态调整布局。 解析：Auto Layout提供了基于约束的动态布局方式，配合Size Classes，可以针对不同屏幕尺寸和方向调整界面布局，避免了硬编码像素值带来的适配问题，也减少了针对每个设备写特定代码的复杂度，是苹果官方推荐的多屏适配方案。选项A硬编码像素值不灵活且难维护；选项C忽略部分设备不合理；选项D增加了代码复杂度且不易维护。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用Auto Layout结合Size Classes，根据屏幕尺寸和方向动态调整布局。 解析：Auto Layout提供了基于约束的动态布局方式，配合Size Classes，可以针对不同屏幕尺寸和方向调整界面布局，避免了硬编码像素值带来的适配问题，也减少了针对每个设备写特定代码的复杂度，是苹果官方推荐的多屏适配方案。选项A硬编码像素值不灵活且难维护；选项C忽略部分设备不合理；选项D增加了代码复杂度且不易维护。</strong></p>
 </details>
 
 **问题 2:**
@@ -913,7 +976,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. **自动布局（Auto Layout）**：通过Auto Layout约束来定义UI元素间的相对位置和大小，避免固定尺寸，保证在不同屏幕尺寸下UI布局自适应调整。这样可以适配各种屏幕尺寸和方向变化，提升多设备兼容性。
+  <p><strong>
+
+正确答案: 1. **自动布局（Auto Layout）**：通过Auto Layout约束来定义UI元素间的相对位置和大小，避免固定尺寸，保证在不同屏幕尺寸下UI布局自适应调整。这样可以适配各种屏幕尺寸和方向变化，提升多设备兼容性。
 
 2. **点（pt）与像素（px）**：iOS中UI设计单位为点（pt），它是一个逻辑上的单位，与实际像素数相关。不同设备的屏幕分辨率不同，如@1x表示1pt对应1像素，@2x表示1pt对应2像素，@3x表示1pt对应3像素。采用点作为设计单位，可以保证界面元素在不同分辨率设备上尺寸一致。
 
@@ -945,7 +1010,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用自动布局（Auto Layout）时，尽量避免在 cellForRowAt 中频繁更新约束，改为预先设置好静态约束。 解析：频繁在 cellForRowAt 中更新 Auto Layout 约束会导致性能下降和内存开销增加，预先设置静态约束能有效减少计算和布局开销，提升性能。选项 A 过多图层会增加 GPU 负担，反而降低性能；选项 C 并非所有闭包都应声明为弱引用，错误使用容易导致提前释放或循环引用；选项 D 虽然 UIImage(named:) 会缓存图片，但过度缓存大图反而会导致内存压力，推荐使用合适的图片加载和缓存策略。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用自动布局（Auto Layout）时，尽量避免在 cellForRowAt 中频繁更新约束，改为预先设置好静态约束。 解析：频繁在 cellForRowAt 中更新 Auto Layout 约束会导致性能下降和内存开销增加，预先设置静态约束能有效减少计算和布局开销，提升性能。选项 A 过多图层会增加 GPU 负担，反而降低性能；选项 C 并非所有闭包都应声明为弱引用，错误使用容易导致提前释放或循环引用；选项 D 虽然 UIImage(named:) 会缓存图片，但过度缓存大图反而会导致内存压力，推荐使用合适的图片加载和缓存策略。</strong></p>
 </details>
 
 **问题 2:**
@@ -954,7 +1021,9 @@ func fetchUserAndConfig() async throws -> (User, Config) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能导致性能问题和内存泄漏的原因包括：
+  <p><strong>
+
+正确答案: 可能导致性能问题和内存泄漏的原因包括：
 
 1. 图片加载不合理：同步加载大图或在主线程加载图片会阻塞 UI，导致卡顿。
 2. 复用机制未正确使用：UITableViewCell 未正确复用，导致内存占用过高。
@@ -1020,7 +1089,9 @@ override func prepareForReuse() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用子视图控制器（Child View Controllers）来拆分复杂界面，将不同功能模块封装在各自的子控制器中。 解释：使用子视图控制器可以有效拆分复杂界面，将不同功能模块封装在各自的子控制器中，从而避免单一 UIViewController 代码过于庞大和复杂，改善控制器膨胀问题。选项A错误，因为将所有业务逻辑放在 UIViewController 中正是导致控制器膨胀的原因。选项C错误，Model 层不应承担 UI 更新逻辑。选项D错误，View 不应直接处理数据绑定和复杂业务逻辑，这违反了职责分离原则。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用子视图控制器（Child View Controllers）来拆分复杂界面，将不同功能模块封装在各自的子控制器中。 解释：使用子视图控制器可以有效拆分复杂界面，将不同功能模块封装在各自的子控制器中，从而避免单一 UIViewController 代码过于庞大和复杂，改善控制器膨胀问题。选项A错误，因为将所有业务逻辑放在 UIViewController 中正是导致控制器膨胀的原因。选项C错误，Model 层不应承担 UI 更新逻辑。选项D错误，View 不应直接处理数据绑定和复杂业务逻辑，这违反了职责分离原则。</strong></p>
 </details>
 
 **问题 2:**
@@ -1029,7 +1100,9 @@ override func prepareForReuse() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计复杂的iOS界面架构时，通常采用模块化和分层设计原则，结合UIKit的组件，确保代码清晰且易于维护。
+  <p><strong>
+
+正确答案: 在设计复杂的iOS界面架构时，通常采用模块化和分层设计原则，结合UIKit的组件，确保代码清晰且易于维护。
 
 1. 视图控制器组织：
 - 避免“大型视图控制器”，将功能拆分成多个子视图控制器（Child ViewControllers），每个子控制器负责单一职责。这样可以提升复用性和模块化。
@@ -1076,7 +1149,9 @@ override func prepareForReuse() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. setNeedsDisplay
+  <p><strong>
+
+正确答案: A. setNeedsDisplay
 
 解析：在UIKit中，调用setNeedsDisplay会标记视图为需要重绘，此操作会触发系统在下一个绘制周期调用drawRect:方法。layoutSubviews是布局子视图的方法，updateConstraints用于更新约束，drawLayer:inContext:是CALayer的绘制回调，虽然也可用于绘制，但UIView的标准自定义绘制流程是通过drawRect:触发，间接由setNeedsDisplay启动。</strong></p>
 </details>
@@ -1093,7 +1168,9 @@ override func prepareForReuse() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. UITableView是UIScrollView的子类，负责数据展示和滑动行为。其滑动依赖于UIScrollView的contentOffset和contentInset属性来管理内容的显示区域。
+  <p><strong>
+
+正确答案: 1. UITableView是UIScrollView的子类，负责数据展示和滑动行为。其滑动依赖于UIScrollView的contentOffset和contentInset属性来管理内容的显示区域。
 
 2. UIScrollView的回弹效果主要由其内部的弹性动画机制实现，核心是通过UIScrollViewDelegate的scrollViewDidEndDragging和scrollViewDidEndDecelerating等回调，结合核心动画（Core Animation）改变contentOffset，实现回弹动画。
 
@@ -1131,7 +1208,9 @@ override func prepareForReuse() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. UIView 持有一个 CALayer 实例，CALayer 负责底层的渲染和动画，UIView 负责事件处理和布局。因为在 UIKit 中，UIView 是视图层级的主要组件，负责用户交互和布局管理，同时它内部持有一个 CALayer 对象，CALayer 负责底层的绘制和动画，是视图的显示核心。这种设计将视图的显示和事件处理职责分离，提高了架构的灵活性和性能。</strong></p>
+  <p><strong>
+
+正确答案: B. UIView 持有一个 CALayer 实例，CALayer 负责底层的渲染和动画，UIView 负责事件处理和布局。因为在 UIKit 中，UIView 是视图层级的主要组件，负责用户交互和布局管理，同时它内部持有一个 CALayer 对象，CALayer 负责底层的绘制和动画，是视图的显示核心。这种设计将视图的显示和事件处理职责分离，提高了架构的灵活性和性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -1147,7 +1226,9 @@ override func prepareForReuse() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计一个高度可扩展且性能优异的用户界面架构时，需要深入理解UIKit框架中UIView、UIViewController和UIResponder的架构设计和职责划分。
+  <p><strong>
+
+正确答案: 在设计一个高度可扩展且性能优异的用户界面架构时，需要深入理解UIKit框架中UIView、UIViewController和UIResponder的架构设计和职责划分。
 
 1. 核心类职责分配及设计理念：
 - UIView负责视图的显示和布局，管理内容的绘制和触摸事件的初步处理。它是界面元素的基础，专注于视图的视觉表现。
@@ -1186,7 +1267,9 @@ UIResponder通过事件响应链机制将触摸事件从接收者传递给下一
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. VStack。因为VStack是SwiftUI中用于垂直堆叠子视图的容器，而HStack是水平排列，ZStack是层叠排列，List用于展示可滚动的列表。</strong></p>
+  <p><strong>
+
+正确答案: B. VStack。因为VStack是SwiftUI中用于垂直堆叠子视图的容器，而HStack是水平排列，ZStack是层叠排列，List用于展示可滚动的列表。</strong></p>
 </details>
 
 **问题 2:**
@@ -1195,7 +1278,9 @@ UIResponder通过事件响应链机制将触摸事件从接收者传递给下一
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在SwiftUI中，可以使用HStack来实现任务标题、优先级图标和截止日期的横向排列。具体做法如下：
+  <p><strong>
+
+正确答案: 在SwiftUI中，可以使用HStack来实现任务标题、优先级图标和截止日期的横向排列。具体做法如下：
 
 1. 使用HStack作为整体的水平布局容器。
 2. 在HStack中，放置一个Image视图用于显示优先级图标（例如一个星星或警告图标）。
@@ -1246,7 +1331,9 @@ HStack {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. @State - @State 属性包装器用于管理视图内部的简单本地状态。当 @State 标记的变量发生变化时，SwiftUI 会自动重新渲染视图。其他选项如 @ObservedObject 和 @EnvironmentObject 适用于跨视图的状态管理，而 @Binding 用于绑定父视图传递的可变状态。</strong></p>
+  <p><strong>
+
+正确答案: B. @State - @State 属性包装器用于管理视图内部的简单本地状态。当 @State 标记的变量发生变化时，SwiftUI 会自动重新渲染视图。其他选项如 @ObservedObject 和 @EnvironmentObject 适用于跨视图的状态管理，而 @Binding 用于绑定父视图传递的可变状态。</strong></p>
 </details>
 
 **问题 2:**
@@ -1255,7 +1342,9 @@ HStack {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在SwiftUI中，要实现用户信息的双向绑定并确保视图实时更新，通常会使用不同的属性包装器来管理状态和数据流。具体步骤如下：
+  <p><strong>
+
+正确答案: 在SwiftUI中，要实现用户信息的双向绑定并确保视图实时更新，通常会使用不同的属性包装器来管理状态和数据流。具体步骤如下：
 
 1. @State：用于视图内部的局部状态管理。如果用户信息只在单个视图中使用且不需要与其他视图共享，可以使用 @State 来存储姓名和年龄的状态。
 
@@ -1292,7 +1381,9 @@ HStack {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. SwiftUI 视图是值类型，每次状态变化时都会重新创建视图，因此没有传统的创建和销毁生命周期回调。 解释：SwiftUI 中视图是结构体，属于值类型，每次视图状态变化时，视图会被重新构建，而不是像 UIKit 中那样依赖生命周期回调。开发者更多关注状态驱动和数据变化，而不是视图的创建与销毁生命周期方法。</strong></p>
+  <p><strong>
+
+正确答案: B. SwiftUI 视图是值类型，每次状态变化时都会重新创建视图，因此没有传统的创建和销毁生命周期回调。 解释：SwiftUI 中视图是结构体，属于值类型，每次视图状态变化时，视图会被重新构建，而不是像 UIKit 中那样依赖生命周期回调。开发者更多关注状态驱动和数据变化，而不是视图的创建与销毁生命周期方法。</strong></p>
 </details>
 
 **问题 2:**
@@ -1301,7 +1392,9 @@ HStack {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: SwiftUI 中的视图是声明式且状态驱动的，视图本身是轻量且可被频繁创建和销毁的。视图的生命周期不像 UIKit 那样明确地有 viewDidLoad、viewWillAppear 等方法，而是通过修饰符如 onAppear 和 onDisappear 来观察视图的显示和隐藏。
+  <p><strong>
+
+正确答案: SwiftUI 中的视图是声明式且状态驱动的，视图本身是轻量且可被频繁创建和销毁的。视图的生命周期不像 UIKit 那样明确地有 viewDidLoad、viewWillAppear 等方法，而是通过修饰符如 onAppear 和 onDisappear 来观察视图的显示和隐藏。
 
 在新闻阅读应用中，当文章详情视图出现时（onAppear），可以触发网络请求加载文章内容，或者从缓存加载数据以提升响应速度；当视图消失时（onDisappear），应释放与该视图相关的资源，比如取消未完成的网络请求或停止音频播放，避免资源浪费和潜在的内存泄漏。
 
@@ -1329,7 +1422,9 @@ HStack {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 .animation() 修饰符配合 DragGesture 的 .onChanged 和 .onEnded 事件来更新状态变量，实现视图位置的平滑过渡。因为 SwiftUI 动画通常通过状态绑定实现，结合 .animation() 修饰符和手势事件可以实现平滑动画效果。B 选项忽略了 .onEnded 事件，导致回弹动画无法触发。C 选项错误，UIView.animate 是 UIKit 的方法，不适用于纯 SwiftUI 视图。D 选项缺少动画处理，视图位置变更会突兀而非平滑。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 .animation() 修饰符配合 DragGesture 的 .onChanged 和 .onEnded 事件来更新状态变量，实现视图位置的平滑过渡。因为 SwiftUI 动画通常通过状态绑定实现，结合 .animation() 修饰符和手势事件可以实现平滑动画效果。B 选项忽略了 .onEnded 事件，导致回弹动画无法触发。C 选项错误，UIView.animate 是 UIKit 的方法，不适用于纯 SwiftUI 视图。D 选项缺少动画处理，视图位置变更会突兀而非平滑。</strong></p>
 </details>
 
 **问题 2:**
@@ -1338,7 +1433,9 @@ HStack {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 实现思路：
+  <p><strong>
+
+正确答案: 实现思路：
 1. 使用 @State 属性来保存卡片的偏移量（如 offset）以响应用户拖动。
 2. 使用 DragGesture 捕捉拖动手势，更新 offset 状态，使卡片跟随手势移动。
 3. 当手势结束（onEnded）时，将 offset 重置为 .zero，并使用带弹性效果的动画（如 .spring()）实现回弹动画。
@@ -1389,7 +1486,9 @@ struct DraggableCardView: View {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: D. 使用 class 继承自 ObservableObject 并在视图中使用 @ObservedObject 绑定状态。解释：SwiftUI 自定义组件通常使用 struct 遵循 View 协议来定义视图结构。对于内部状态管理，@State 适用于视图内部简单状态，@Binding 用于父子视图间的状态传递。而当组件需要复杂的、可共享的状态管理时，使用 ObservableObject 类结合 @ObservedObject 属性包装器是最佳实践，允许状态集中管理且视图能响应状态变化。选项 A 虽然正确使用 @State，但不适合复杂状态管理；选项 B 属于 UIKit 组件集成，与纯 SwiftUI 自定义组件不符；选项 C 错误地使用 @Binding 管理内部状态，@Binding 应用于外部传入的状态绑定。</strong></p>
+  <p><strong>
+
+正确答案: D. 使用 class 继承自 ObservableObject 并在视图中使用 @ObservedObject 绑定状态。解释：SwiftUI 自定义组件通常使用 struct 遵循 View 协议来定义视图结构。对于内部状态管理，@State 适用于视图内部简单状态，@Binding 用于父子视图间的状态传递。而当组件需要复杂的、可共享的状态管理时，使用 ObservableObject 类结合 @ObservedObject 属性包装器是最佳实践，允许状态集中管理且视图能响应状态变化。选项 A 虽然正确使用 @State，但不适合复杂状态管理；选项 B 属于 UIKit 组件集成，与纯 SwiftUI 自定义组件不符；选项 C 错误地使用 @Binding 管理内部状态，@Binding 应用于外部传入的状态绑定。</strong></p>
 </details>
 
 **问题 2:**
@@ -1398,7 +1497,9 @@ struct DraggableCardView: View {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计 "ProductCard" 组件时，应将其设计为一个独立的 SwiftUI 视图结构体，接受必要的商品数据作为输入参数（如商品图片、名称、价格等）。
+  <p><strong>
+
+正确答案: 设计 "ProductCard" 组件时，应将其设计为一个独立的 SwiftUI 视图结构体，接受必要的商品数据作为输入参数（如商品图片、名称、价格等）。
 
 1. 视图结构设计：使用 VStack 或 HStack 布局商品图片、名称和价格，按钮放置在合适位置。使用 SwiftUI 的 Image、Text 和 Button 视图组件。
 
@@ -1432,7 +1533,9 @@ struct DraggableCardView: View {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用`UIViewRepresentable`协议包装UIKit视图，并在`makeUIView`和`updateUIView`方法中管理视图的生命周期。 解释：SwiftUI中集成UIKit视图需要使用`UIViewRepresentable`协议包装UIKit的UIView，必须实现`makeUIView`来创建视图实例，`updateUIView`来更新视图。选项A错误，因为SwiftUI不能直接使用UIKit视图实例；选项C错误，UIKit视图控制器不能直接作为SwiftUI子视图；选项D描述的是包装UIKit视图控制器而非视图，虽然也是集成方式之一，但题目询问的是UIKit视图的集成方式，因此B为唯一正确答案。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用`UIViewRepresentable`协议包装UIKit视图，并在`makeUIView`和`updateUIView`方法中管理视图的生命周期。 解释：SwiftUI中集成UIKit视图需要使用`UIViewRepresentable`协议包装UIKit的UIView，必须实现`makeUIView`来创建视图实例，`updateUIView`来更新视图。选项A错误，因为SwiftUI不能直接使用UIKit视图实例；选项C错误，UIKit视图控制器不能直接作为SwiftUI子视图；选项D描述的是包装UIKit视图控制器而非视图，虽然也是集成方式之一，但题目询问的是UIKit视图的集成方式，因此B为唯一正确答案。</strong></p>
 </details>
 
 **问题 2:**
@@ -1441,7 +1544,9 @@ struct DraggableCardView: View {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 要在 SwiftUI 中集成已有的 UIKit 自定义视图组件，通常使用 UIViewRepresentable 协议（针对 UIView）或 UIViewControllerRepresentable 协议（针对 UIViewController）。实现步骤包括：
+  <p><strong>
+
+正确答案: 要在 SwiftUI 中集成已有的 UIKit 自定义视图组件，通常使用 UIViewRepresentable 协议（针对 UIView）或 UIViewControllerRepresentable 协议（针对 UIViewController）。实现步骤包括：
 
 1. 创建一个遵守 UIViewRepresentable 的结构体。
 2. 实现 makeUIView(context:) 方法，该方法返回 UIKit 自定义视图的实例。
@@ -1480,7 +1585,9 @@ struct DraggableCardView: View {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 将复杂的视图拆分成多个小的子视图，并通过实现 Equatable 协议减少不必要的重新渲染。 解释：拆分视图可以减少每次状态变化时需要重新计算和渲染的内容，Equatable 协议的实现可以让 SwiftUI 判断视图是否真正发生变化，避免不必要的视图刷新，从而提升性能。选项 A 虽然是状态管理的基础，但过度使用 @State 可能导致大量视图重绘。选项 C 异步调用不当反而可能引起线程安全问题和渲染时序混乱。选项 D 绑定模型数据虽然方便，但如果不加控制会导致视图频繁刷新，影响性能。</strong></p>
+  <p><strong>
+
+正确答案: B. 将复杂的视图拆分成多个小的子视图，并通过实现 Equatable 协议减少不必要的重新渲染。 解释：拆分视图可以减少每次状态变化时需要重新计算和渲染的内容，Equatable 协议的实现可以让 SwiftUI 判断视图是否真正发生变化，避免不必要的视图刷新，从而提升性能。选项 A 虽然是状态管理的基础，但过度使用 @State 可能导致大量视图重绘。选项 C 异步调用不当反而可能引起线程安全问题和渲染时序混乱。选项 D 绑定模型数据虽然方便，但如果不加控制会导致视图频繁刷新，影响性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -1489,7 +1596,9 @@ struct DraggableCardView: View {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能导致性能问题的原因包括：
+  <p><strong>
+
+正确答案: 可能导致性能问题的原因包括：
 
 1. 视图层级过深或过于复杂，导致SwiftUI频繁重新计算视图。
 2. 使用了不必要的状态绑定或频繁触发视图刷新。
@@ -1534,7 +1643,9 @@ struct DraggableCardView: View {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用组合（Composition）将大视图拆分为多个小的可重用子视图，并通过协议或 ViewModifier 来封装通用行为。该方法符合 SwiftUI 的设计理念，有助于提升代码的可读性、可维护性和复用性，同时避免单个视图过于庞大导致性能问题。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用组合（Composition）将大视图拆分为多个小的可重用子视图，并通过协议或 ViewModifier 来封装通用行为。该方法符合 SwiftUI 的设计理念，有助于提升代码的可读性、可维护性和复用性，同时避免单个视图过于庞大导致性能问题。</strong></p>
 </details>
 
 **问题 2:**
@@ -1543,7 +1654,9 @@ struct DraggableCardView: View {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计复杂的SwiftUI界面架构时，首先需要分层解耦视图和数据逻辑。可以采用MVVM架构，将业务逻辑和状态管理放在ViewModel中，视图只负责展示。对于多个动态更新的嵌套列表和图表，建议将每个独立组件封装成子视图，并用@ObservedObject或@StateObject绑定对应的ViewModel，确保数据变化时视图自动刷新。对于跨多个视图共享的状态，使用@EnvironmentObject传递全局状态，避免层层传递@Binding，减少耦合。深层状态传递时，@Binding适合父子视图间简单数据绑定，复杂或多层共享状态应借助ObservableObject和EnvironmentObject。此外，利用Combine框架处理异步数据流，保证数据的响应式更新。
+  <p><strong>
+
+正确答案: 在设计复杂的SwiftUI界面架构时，首先需要分层解耦视图和数据逻辑。可以采用MVVM架构，将业务逻辑和状态管理放在ViewModel中，视图只负责展示。对于多个动态更新的嵌套列表和图表，建议将每个独立组件封装成子视图，并用@ObservedObject或@StateObject绑定对应的ViewModel，确保数据变化时视图自动刷新。对于跨多个视图共享的状态，使用@EnvironmentObject传递全局状态，避免层层传递@Binding，减少耦合。深层状态传递时，@Binding适合父子视图间简单数据绑定，复杂或多层共享状态应借助ObservableObject和EnvironmentObject。此外，利用Combine框架处理异步数据流，保证数据的响应式更新。
 
 性能优化方面，应避免视图层级过深导致的重绘开销。通过合理拆分子视图和使用equatable视图减少不必要的刷新。对大型列表，使用LazyVStack和onAppear进行分页加载，提高滚动性能。对于复杂图表，尽量缓存计算结果，避免重复绘制。还可以通过 Instruments 监测内存和CPU使用，定位性能瓶颈。整体设计应保证状态单向流动和清晰界面更新逻辑，以提升界面响应速度和用户体验。</strong></p>
 </details>
@@ -1569,7 +1682,9 @@ struct DraggableCardView: View {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 为了隐藏具体视图类型，提升编译效率，同时允许视图的类型推断和组合。 解释：SwiftUI利用`some View`（opaque return type）隐藏视图具体类型，使得编译器能够高效地推断和优化视图结构，同时保持视图的组合灵活性。选项B错误，因为`body`的类型在编译期是固定的，不支持动态改变；选项C描述的反射机制并非SwiftUI设计方式；选项D错误，SwiftUI中的视图通常是值类型（struct），而非引用类型。</strong></p>
+  <p><strong>
+
+正确答案: A. 为了隐藏具体视图类型，提升编译效率，同时允许视图的类型推断和组合。 解释：SwiftUI利用`some View`（opaque return type）隐藏视图具体类型，使得编译器能够高效地推断和优化视图结构，同时保持视图的组合灵活性。选项B错误，因为`body`的类型在编译期是固定的，不支持动态改变；选项C描述的反射机制并非SwiftUI设计方式；选项D错误，SwiftUI中的视图通常是值类型（struct），而非引用类型。</strong></p>
 </details>
 
 **问题 2:**
@@ -1578,7 +1693,9 @@ struct DraggableCardView: View {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: SwiftUI中视图的更新主要依赖于状态（State）、绑定（Binding）等机制触发的视图树重新计算。根据SwiftUI源码，视图是通过声明式的协议View定义的，视图的body属性返回视图的结构。视图更新时，SwiftUI会重新调用body计算新的视图树。频繁重绘通常由以下几个原因导致：
+  <p><strong>
+
+正确答案: SwiftUI中视图的更新主要依赖于状态（State）、绑定（Binding）等机制触发的视图树重新计算。根据SwiftUI源码，视图是通过声明式的协议View定义的，视图的body属性返回视图的结构。视图更新时，SwiftUI会重新调用body计算新的视图树。频繁重绘通常由以下几个原因导致：
 
 1. 状态变化过于频繁且粒度过大：如果State变量过于粗粒，任何变动都会触发整个视图的重新计算和渲染。
 
@@ -1622,7 +1739,9 @@ struct DraggableCardView: View {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 创建一个遵循View协议的结构体，利用组合多个子视图和自定义的@ViewBuilder闭包实现灵活的内容传递。——SwiftUI的设计哲学强调声明式UI和视图的组合性，定义遵循View协议的结构体是扩展和复用的核心方式，而@ViewBuilder允许灵活传递和组合视图内容，符合SwiftUI的设计原则。</strong></p>
+  <p><strong>
+
+正确答案: B. 创建一个遵循View协议的结构体，利用组合多个子视图和自定义的@ViewBuilder闭包实现灵活的内容传递。——SwiftUI的设计哲学强调声明式UI和视图的组合性，定义遵循View协议的结构体是扩展和复用的核心方式，而@ViewBuilder允许灵活传递和组合视图内容，符合SwiftUI的设计原则。</strong></p>
 </details>
 
 **问题 2:**
@@ -1631,7 +1750,9 @@ struct DraggableCardView: View {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 要实现一个支持自定义主题系统和动态组件注册机制的SwiftUI扩展，可以从以下几个方面设计：
+  <p><strong>
+
+正确答案: 要实现一个支持自定义主题系统和动态组件注册机制的SwiftUI扩展，可以从以下几个方面设计：
 
 1. 主题系统设计
 - 使用EnvironmentValues注入主题数据，确保主题能在视图层级中传递。
@@ -1751,7 +1872,9 @@ class ComponentRegistry: ObservableObject {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用URLSession.shared.dataTask(with: url) 创建任务，然后调用 resume() 启动任务。 解析：正确的做法是创建URLSessionDataTask后，必须调用 resume() 方法来启动任务。URLSession任务创建后是处于挂起状态，只有调用 resume() 才会开始执行。B选项错误，因为任务不会自动启动；C选项错误，因为下载任务需要调用 resume() 而非 start()；D选项错误，URLSessionTask没有 execute() 方法。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用URLSession.shared.dataTask(with: url) 创建任务，然后调用 resume() 启动任务。 解析：正确的做法是创建URLSessionDataTask后，必须调用 resume() 方法来启动任务。URLSession任务创建后是处于挂起状态，只有调用 resume() 才会开始执行。B选项错误，因为任务不会自动启动；C选项错误，因为下载任务需要调用 resume() 而非 start()；D选项错误，URLSessionTask没有 execute() 方法。</strong></p>
 </details>
 
 **问题 2:**
@@ -1760,7 +1883,9 @@ class ComponentRegistry: ObservableObject {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 要使用URLSession完成一个简单的GET请求，首先需要创建一个URL对象，然后使用URLSession.shared.dataTask(with: url)方法创建一个数据任务。数据任务的闭包回调中会返回数据、响应和错误。关键步骤包括：
+  <p><strong>
+
+正确答案: 要使用URLSession完成一个简单的GET请求，首先需要创建一个URL对象，然后使用URLSession.shared.dataTask(with: url)方法创建一个数据任务。数据任务的闭包回调中会返回数据、响应和错误。关键步骤包括：
 
 1. 创建URL：确保URL格式正确。
 2. 创建数据任务：使用URLSession.shared.dataTask方法。
@@ -1813,7 +1938,9 @@ task.resume()
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. POST
+  <p><strong>
+
+正确答案: B. POST
 
 解释：POST方法用于向服务器提交数据，通常用于创建新的资源或提交表单数据。GET方法用于请求数据，DELETE用于删除资源，OPTIONS用于请求服务器支持的通信选项。</strong></p>
 </details>
@@ -1824,7 +1951,9 @@ task.resume()
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: GET方法用于请求获取资源，参数通常附加在URL中，适用于获取数据且对数据安全性和大小没有严格要求的场景。POST方法用于向服务器提交数据，参数放在请求体中，适合提交敏感或大量数据。比如，获取用户列表时使用GET，而提交用户注册信息时使用POST。</strong></p>
+  <p><strong>
+
+正确答案: GET方法用于请求获取资源，参数通常附加在URL中，适用于获取数据且对数据安全性和大小没有严格要求的场景。POST方法用于向服务器提交数据，参数放在请求体中，适合提交敏感或大量数据。比如，获取用户列表时使用GET，而提交用户注册信息时使用POST。</strong></p>
 </details>
 
 ---
@@ -1848,7 +1977,9 @@ task.resume()
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用`JSONSerialization`解析JSON数据时，如果JSON根元素是数组，返回的类型会是`[Any]`。
+  <p><strong>
+
+正确答案: B. 使用`JSONSerialization`解析JSON数据时，如果JSON根元素是数组，返回的类型会是`[Any]`。
 
 解释：`JSONSerialization.jsonObject(with:options:)`方法返回的类型是`Any`，具体类型取决于JSON的根元素。如果根元素是字典，则返回`[String: Any]`，如果根元素是数组，则返回`[Any]`。选项A错误，因为返回类型不总是字典。选项C错误，数字可能会被解析为`Double`，而非总是`Int`。选项D错误，`JSONSerialization`方法会抛出错误，需使用`try`进行异常处理。</strong></p>
 </details>
@@ -1859,7 +1990,9 @@ task.resume()
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以定义一个符合Codable协议的结构体来映射JSON数据，例如：
+  <p><strong>
+
+正确答案: 你可以定义一个符合Codable协议的结构体来映射JSON数据，例如：
 
 ```swift
 struct User: Codable {
@@ -1907,7 +2040,9 @@ if let user = try? decoder.decode(User.self, from: jsonData) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 NSURLSession 的默认缓存策略（NSURLRequestUseProtocolCachePolicy），允许系统根据 HTTP 头部信息自动缓存和验证缓存。 解释：NSURLRequestUseProtocolCachePolicy 是 NSURLRequest 的默认缓存策略，它遵循 HTTP 协议中的缓存头部（如 ETag、Cache-Control 等），能够智能地缓存和验证数据，既保证数据的时效性又减少不必要的网络请求，是实现 HTTP GET 请求响应缓存的最佳实践。选项 B 会导致性能下降，选项 C 虽然可以缓存但缺乏自动缓存验证机制且实现复杂，选项 D 错误，因为 POST 请求通常不适合缓存。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 NSURLSession 的默认缓存策略（NSURLRequestUseProtocolCachePolicy），允许系统根据 HTTP 头部信息自动缓存和验证缓存。 解释：NSURLRequestUseProtocolCachePolicy 是 NSURLRequest 的默认缓存策略，它遵循 HTTP 协议中的缓存头部（如 ETag、Cache-Control 等），能够智能地缓存和验证数据，既保证数据的时效性又减少不必要的网络请求，是实现 HTTP GET 请求响应缓存的最佳实践。选项 B 会导致性能下降，选项 C 虽然可以缓存但缺乏自动缓存验证机制且实现复杂，选项 D 错误，因为 POST 请求通常不适合缓存。</strong></p>
 </details>
 
 **问题 2:**
@@ -1916,7 +2051,9 @@ if let user = try? decoder.decode(User.self, from: jsonData) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 设计思路：
+  <p><strong>
+
+正确答案: 1. 设计思路：
 - 采用合理的缓存策略，减少不必要的网络请求，提升响应速度。
 - 支持离线访问，提高用户体验。
 - 控制缓存大小和生命周期，避免占用过多存储。
@@ -1958,7 +2095,9 @@ if let user = try? decoder.decode(User.self, from: jsonData) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用定时心跳包机制检测连接状态，并在连接断开时自动尝试重连。 解释：在iOS中使用WebSocket进行实时通信时，保持连接的稳定性是关键。通过定时发送心跳包可以检测网络连接是否活跃，及时发现断开情况。并且实现自动重连机制可以确保在网络波动或服务器重启等情况下，客户端能够尽快恢复连接，从而保证数据的及时传输。选项A缺少心跳和重连机制，容易导致连接断开后无法恢复。选项C频繁建立和关闭连接，会增加延迟和资源消耗，不利于实时通信。选项D依赖系统自动管理不可靠，通常需要开发者主动管理连接状态。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用定时心跳包机制检测连接状态，并在连接断开时自动尝试重连。 解释：在iOS中使用WebSocket进行实时通信时，保持连接的稳定性是关键。通过定时发送心跳包可以检测网络连接是否活跃，及时发现断开情况。并且实现自动重连机制可以确保在网络波动或服务器重启等情况下，客户端能够尽快恢复连接，从而保证数据的及时传输。选项A缺少心跳和重连机制，容易导致连接断开后无法恢复。选项C频繁建立和关闭连接，会增加延迟和资源消耗，不利于实时通信。选项D依赖系统自动管理不可靠，通常需要开发者主动管理连接状态。</strong></p>
 </details>
 
 **问题 2:**
@@ -1967,7 +2106,9 @@ if let user = try? decoder.decode(User.self, from: jsonData) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: **选择WebSocket的原因：**
+  <p><strong>
+
+正确答案: **选择WebSocket的原因：**
 1. **实时性高**：WebSocket建立的是持久连接，客户端和服务器之间可以双向即时通信，消息传输延迟低，适合实时推送场景。
 2. **减少资源消耗**：相比HTTP轮询频繁建立和关闭连接，WebSocket只需一次握手，后续通信保持连接，减少了网络开销和服务器压力。
 
@@ -1998,7 +2139,9 @@ if let user = try? decoder.decode(User.self, from: jsonData) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在客户端实现证书固定（Certificate Pinning）
+  <p><strong>
+
+正确答案: B. 在客户端实现证书固定（Certificate Pinning）
 
 解释：证书固定是一种将服务器的公钥或证书直接嵌入客户端的技术，确保客户端只接受特定的证书，即使攻击者拥有合法CA签发的证书，也无法欺骗客户端，从而有效防止中间人攻击。虽然HTTPS（A）和系统默认的证书验证（D）是基础安全措施，但它们无法完全防止MITM攻击。双向TLS认证（C）虽然安全，但实现复杂且服务器端配置要求较高，且不能完全替代客户端证书固定的防护效果。</strong></p>
 </details>
@@ -2009,7 +2152,9 @@ if let user = try? decoder.decode(User.self, from: jsonData) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在iOS应用中，遇到服务器使用自签名证书时，默认的NSURLSession不会信任该证书，因此需要在客户端实现证书验证逻辑。通常做法是使用证书钉扎（Certificate Pinning），具体步骤如下：
+  <p><strong>
+
+正确答案: 在iOS应用中，遇到服务器使用自签名证书时，默认的NSURLSession不会信任该证书，因此需要在客户端实现证书验证逻辑。通常做法是使用证书钉扎（Certificate Pinning），具体步骤如下：
 
 1. 获取服务器的自签名证书（通常是.pem或.der格式），并将其包含在应用包中。
 2. 使用NSURLSession的代理方法`URLSession:didReceiveChallenge:completionHandler:`来拦截服务器证书验证。
@@ -2046,7 +2191,9 @@ if let user = try? decoder.decode(User.self, from: jsonData) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 将网络请求抽象成独立的服务层，并通过协议进行解耦，方便测试和替换实现。 解析：将网络请求逻辑抽象成独立的服务层，并通过协议进行解耦，可以使网络层更加模块化，便于单元测试和未来替换不同的网络实现，提升系统的可维护性和扩展性。选项A会导致视图控制器臃肿，难以维护；选项B虽然集中管理，但可能导致单一类过于庞大且难以扩展；选项D会导致代码重复，且难以统一管理。</strong></p>
+  <p><strong>
+
+正确答案: C. 将网络请求抽象成独立的服务层，并通过协议进行解耦，方便测试和替换实现。 解析：将网络请求逻辑抽象成独立的服务层，并通过协议进行解耦，可以使网络层更加模块化，便于单元测试和未来替换不同的网络实现，提升系统的可维护性和扩展性。选项A会导致视图控制器臃肿，难以维护；选项B虽然集中管理，但可能导致单一类过于庞大且难以扩展；选项D会导致代码重复，且难以统一管理。</strong></p>
 </details>
 
 **问题 2:**
@@ -2062,7 +2209,9 @@ if let user = try? decoder.decode(User.self, from: jsonData) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计思路可以分为以下几个部分：
+  <p><strong>
+
+正确答案: 设计思路可以分为以下几个部分：
 
 1. **架构分层和设计模式**
    - 采用分层架构，将网络层抽象为独立模块，通常包括请求构建层、网络请求执行层和数据解析层。
@@ -2113,7 +2262,9 @@ if let user = try? decoder.decode(User.self, from: jsonData) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 每个数据包必须包含固定长度的头部信息以标识包的起始和长度。解释：自定义网络协议中，为了确保数据包的正确分割和完整性，通常会设计固定格式的包头，其中包含包的起始标志和长度信息，这样客户端和服务器才能正确解析接收的数据流。选项B错误，因为加密需要客户端和服务器协同完成；选项C错误，HTTP协议虽然基于TCP，但仍需自行处理协议层的包边界；选项D错误，仅依赖TCP的可靠性无法区分数据包边界，可能导致粘包或拆包现象。</strong></p>
+  <p><strong>
+
+正确答案: A. 每个数据包必须包含固定长度的头部信息以标识包的起始和长度。解释：自定义网络协议中，为了确保数据包的正确分割和完整性，通常会设计固定格式的包头，其中包含包的起始标志和长度信息，这样客户端和服务器才能正确解析接收的数据流。选项B错误，因为加密需要客户端和服务器协同完成；选项C错误，HTTP协议虽然基于TCP，但仍需自行处理协议层的包边界；选项D错误，仅依赖TCP的可靠性无法区分数据包边界，可能导致粘包或拆包现象。</strong></p>
 </details>
 
 **问题 2:**
@@ -2122,7 +2273,9 @@ if let user = try? decoder.decode(User.self, from: jsonData) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计自定义网络协议时，需重点考虑以下几个方面：
+  <p><strong>
+
+正确答案: 设计自定义网络协议时，需重点考虑以下几个方面：
 
 1. 消息格式：
    - 头部（Header）：包含消息类型、消息长度、版本号、序列号、时间戳等字段，方便解析和校验。
@@ -2174,7 +2327,9 @@ if let user = try? decoder.decode(User.self, from: jsonData) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用NSURLSession的HTTP/2特性实现多路复用，减少连接数和延迟。解释：HTTP/2通过多路复用技术允许多个请求在一个TCP连接中并行处理，显著减少了连接建立和请求排队的延迟，提升了网络通信性能。选项A虽然兼容但效率较低，HTTP/1.1不支持多路复用；选项C忽略了缓存对减少网络请求次数的优势；选项D在主线程同步请求会阻塞UI，降低用户体验。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用NSURLSession的HTTP/2特性实现多路复用，减少连接数和延迟。解释：HTTP/2通过多路复用技术允许多个请求在一个TCP连接中并行处理，显著减少了连接建立和请求排队的延迟，提升了网络通信性能。选项A虽然兼容但效率较低，HTTP/1.1不支持多路复用；选项C忽略了缓存对减少网络请求次数的优势；选项D在主线程同步请求会阻塞UI，降低用户体验。</strong></p>
 </details>
 
 **问题 2:**
@@ -2183,7 +2338,9 @@ if let user = try? decoder.decode(User.self, from: jsonData) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在iOS客户端高性能网络通信优化中，可以从以下几个方面进行考虑：
+  <p><strong>
+
+正确答案: 在iOS客户端高性能网络通信优化中，可以从以下几个方面进行考虑：
 
 1. **减少延迟**
 - 使用HTTP/2或HTTP/3协议：支持多路复用，减少请求建立的延迟。
@@ -2236,7 +2393,9 @@ if let user = try? decoder.decode(User.self, from: jsonData) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. UserDefaults适合存储小型的简单数据，如布尔值、字符串和数字。 解释：UserDefaults设计用于存储简单的数据类型，比如布尔值、字符串、数字和数组等，不适合存储大型或自定义对象。它的数据不会自动加密，也不需要手动调用保存方法，系统会自动管理数据的同步。</strong></p>
+  <p><strong>
+
+正确答案: C. UserDefaults适合存储小型的简单数据，如布尔值、字符串和数字。 解释：UserDefaults设计用于存储简单的数据类型，比如布尔值、字符串、数字和数组等，不适合存储大型或自定义对象。它的数据不会自动加密，也不需要手动调用保存方法，系统会自动管理数据的同步。</strong></p>
 </details>
 
 **问题 2:**
@@ -2245,7 +2404,9 @@ if let user = try? decoder.decode(User.self, from: jsonData) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 保存数据：使用UserDefaults.standard.set(value, forKey: "key")方法将数据保存到UserDefaults中。例如，保存主题颜色和通知开关状态：
+  <p><strong>
+
+正确答案: 1. 保存数据：使用UserDefaults.standard.set(value, forKey: "key")方法将数据保存到UserDefaults中。例如，保存主题颜色和通知开关状态：
 ```swift
 UserDefaults.standard.set("dark", forKey: "theme")
 UserDefaults.standard.set(true, forKey: "notificationsEnabled")
@@ -2281,7 +2442,9 @@ let notificationsEnabled = UserDefaults.standard.bool(forKey: "notificationsEnab
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. Library/Caches目录。因为Library/Caches目录适合存放可重新生成或下载的数据，系统不会对其进行备份，符合苹果对不需要备份数据的推荐存储位置要求。Documents目录用于存储用户生成的数据，需要备份；tmp目录用于临时文件，系统可能随时清理；Library/Preferences目录用于存储用户偏好设置。</strong></p>
+  <p><strong>
+
+正确答案: C. Library/Caches目录。因为Library/Caches目录适合存放可重新生成或下载的数据，系统不会对其进行备份，符合苹果对不需要备份数据的推荐存储位置要求。Documents目录用于存储用户生成的数据，需要备份；tmp目录用于临时文件，系统可能随时清理；Library/Preferences目录用于存储用户偏好设置。</strong></p>
 </details>
 
 **问题 2:**
@@ -2290,7 +2453,9 @@ let notificationsEnabled = UserDefaults.standard.bool(forKey: "notificationsEnab
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 目录选择：
+  <p><strong>
+
+正确答案: 1. 目录选择：
 - 推荐使用Caches目录保存用户生成的文本文件，原因是：
   - Caches目录用于存储应用的缓存数据，系统不会备份这里的数据，适合临时但可重新生成的数据，且应用卸载时该目录会被清空。
   - Documents目录一般用于存放需要被用户访问和备份的重要数据，不适合临时文件。
@@ -2338,7 +2503,9 @@ if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .us
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. NSManagedObjectContext 是一个轻量级的对象，用于在内存中管理和追踪数据对象的状态变化。 解释：NSManagedObjectContext 是 Core Data 的核心组件之一，负责管理数据对象的生命周期和状态变化。它在内存中操作数据对象，支持对数据的增删改查，并通过协调持久化存储协调器将数据保存到磁盘。选项A描述的是 NSManagedObjectModel，选项C是 NSPersistentStoreCoordinator 的职责，选项D不正确，NSManagedObjectContext 可以在后台线程中创建，只要遵守线程安全规则。</strong></p>
+  <p><strong>
+
+正确答案: B. NSManagedObjectContext 是一个轻量级的对象，用于在内存中管理和追踪数据对象的状态变化。 解释：NSManagedObjectContext 是 Core Data 的核心组件之一，负责管理数据对象的生命周期和状态变化。它在内存中操作数据对象，支持对数据的增删改查，并通过协调持久化存储协调器将数据保存到磁盘。选项A描述的是 NSManagedObjectModel，选项C是 NSPersistentStoreCoordinator 的职责，选项D不正确，NSManagedObjectContext 可以在后台线程中创建，只要遵守线程安全规则。</strong></p>
 </details>
 
 **问题 2:**
@@ -2347,7 +2514,9 @@ if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .us
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: NSManagedObjectContext（简称MOC）是Core Data中的一个关键类，负责管理一组托管对象（NSManagedObject）的生命周期和持久化操作。它充当了一个临时的“工作区”，用于创建、读取、更新和删除数据。所有的数据变更都先在MOC中进行，只有调用save()方法后，变更才会被持久化到存储中。
+  <p><strong>
+
+正确答案: NSManagedObjectContext（简称MOC）是Core Data中的一个关键类，负责管理一组托管对象（NSManagedObject）的生命周期和持久化操作。它充当了一个临时的“工作区”，用于创建、读取、更新和删除数据。所有的数据变更都先在MOC中进行，只有调用save()方法后，变更才会被持久化到存储中。
 
 在多线程环境中，每个线程或队列应当拥有自己的NSManagedObjectContext实例，因为NSManagedObjectContext不是线程安全的。通常做法是：
 
@@ -2379,7 +2548,9 @@ if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .us
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用sqlite3_step函数可以执行预编译好的SQL语句，并且每调用一次，都会返回下一行查询结果，直到返回SQLITE_DONE。 解释：sqlite3_step是用于执行sqlite3_prepare_v2预编译后的SQL语句的函数，它会逐行遍历查询结果，直到返回SQLITE_DONE表示完成。A选项错误，因为sqlite3_prepare_v2支持带参数的SQL语句。C选项错误，关闭数据库连接需要调用sqlite3_close，而sqlite3_finalize是用于释放预编译语句资源。D选项错误，sqlite3_exec可以直接执行SQL语句，无需预编译。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用sqlite3_step函数可以执行预编译好的SQL语句，并且每调用一次，都会返回下一行查询结果，直到返回SQLITE_DONE。 解释：sqlite3_step是用于执行sqlite3_prepare_v2预编译后的SQL语句的函数，它会逐行遍历查询结果，直到返回SQLITE_DONE表示完成。A选项错误，因为sqlite3_prepare_v2支持带参数的SQL语句。C选项错误，关闭数据库连接需要调用sqlite3_close，而sqlite3_finalize是用于释放预编译语句资源。D选项错误，sqlite3_exec可以直接执行SQL语句，无需预编译。</strong></p>
 </details>
 
 **问题 2:**
@@ -2388,7 +2559,9 @@ if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .us
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 数据库表设计：
+  <p><strong>
+
+正确答案: 1. 数据库表设计：
 - 创建一个名为`Notes`的表，包含字段：`id`（主键，自增）、`title`（文本）、`content`（文本）、`created_at`（时间戳）、`updated_at`（时间戳）。
 - 该结构支持笔记的基本信息存储及时间管理，便于增删改查操作。
 
@@ -2421,7 +2594,9 @@ if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .us
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Keychain提供系统级的安全存储机制，数据会自动使用设备的安全硬件（如Secure Enclave）加密。 Keychain是iOS系统提供的安全存储机制，它会自动对存储的数据进行加密，并且在支持的设备上利用Secure Enclave等硬件提高安全性。选项A错误，Keychain数据不是明文存储；选项C错误，NSUserDefaults不适合存储敏感信息且不自动加密；选项D错误，Keychain支持通过访问组实现跨应用数据共享。</strong></p>
+  <p><strong>
+
+正确答案: B. Keychain提供系统级的安全存储机制，数据会自动使用设备的安全硬件（如Secure Enclave）加密。 Keychain是iOS系统提供的安全存储机制，它会自动对存储的数据进行加密，并且在支持的设备上利用Secure Enclave等硬件提高安全性。选项A错误，Keychain数据不是明文存储；选项C错误，NSUserDefaults不适合存储敏感信息且不自动加密；选项D错误，Keychain支持通过访问组实现跨应用数据共享。</strong></p>
 </details>
 
 **问题 2:**
@@ -2430,7 +2605,9 @@ if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .us
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在iOS中，存储敏感信息时，通常会结合Keychain和数据加密来保证安全。具体设计如下：
+  <p><strong>
+
+正确答案: 在iOS中，存储敏感信息时，通常会结合Keychain和数据加密来保证安全。具体设计如下：
 
 1. 存储容器选择：
    - 使用Keychain存储登录凭证等敏感信息，因为Keychain由系统管理，支持硬件加密，并且会在设备锁定时保护数据。
@@ -2477,7 +2654,9 @@ if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .us
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用NSLock对数组的读写操作加锁，确保同一时间只有一个线程访问。——这是保证多线程环境下共享可变数据安全访问的标准方法，通过加锁避免竞态条件，确保数据一致性。A选项仅在主线程操作会阻塞UI且不适用于多线程场景；C选项会导致数据竞态和崩溃；D选项复制数组虽能避免直接竞争，但复制开销大且不能实现数据的实时同步。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用NSLock对数组的读写操作加锁，确保同一时间只有一个线程访问。——这是保证多线程环境下共享可变数据安全访问的标准方法，通过加锁避免竞态条件，确保数据一致性。A选项仅在主线程操作会阻塞UI且不适用于多线程场景；C选项会导致数据竞态和崩溃；D选项复制数组虽能避免直接竞争，但复制开销大且不能实现数据的实时同步。</strong></p>
 </details>
 
 **问题 2:**
@@ -2486,7 +2665,9 @@ if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .us
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在多线程环境下，为了保证共享可变数组的数据一致性和线程安全，必须对数据访问进行同步。
+  <p><strong>
+
+正确答案: 在多线程环境下，为了保证共享可变数组的数据一致性和线程安全，必须对数据访问进行同步。
 
 1. 使用GCD的串行队列（Serial Dispatch Queue）：
    - 创建一个专用的串行队列用于所有对数组的读写操作。
@@ -2530,7 +2711,9 @@ if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .us
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 创建两个实体（例如User和Tag）并使用一个中间实体（例如UserTag）来表示多对多关系。 解析：在Core Data中，多对多关系通常通过引入一个中间实体来实现，这样可以清晰、规范地管理关联数据，支持关系的增删改查。选项A中使用数组属性不利于查询和维护关系，选项C的Transformable类型适合存储非结构化数据但不适合关系表示，选项D通过多个可选属性会导致数据冗余且难以扩展。</strong></p>
+  <p><strong>
+
+正确答案: B. 创建两个实体（例如User和Tag）并使用一个中间实体（例如UserTag）来表示多对多关系。 解析：在Core Data中，多对多关系通常通过引入一个中间实体来实现，这样可以清晰、规范地管理关联数据，支持关系的增删改查。选项A中使用数组属性不利于查询和维护关系，选项C的Transformable类型适合存储非结构化数据但不适合关系表示，选项D通过多个可选属性会导致数据冗余且难以扩展。</strong></p>
 </details>
 
 **问题 2:**
@@ -2539,7 +2722,9 @@ if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .us
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计复杂的社交网络数据模型时，可以使用Core Data作为本地存储方案。设计思路如下：
+  <p><strong>
+
+正确答案: 在设计复杂的社交网络数据模型时，可以使用Core Data作为本地存储方案。设计思路如下：
 
 1. 实体设计：
 - User实体：包含用户ID、用户名、头像URL等基本信息。
@@ -2588,7 +2773,9 @@ if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .us
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用批量插入（batch insert）和批量删除（batch delete）操作来减少对上下文的频繁操作。 解析：批量操作可以显著减少Core Data对上下文的操作次数，从而提高性能。选项A频繁调用save()会阻塞主线程，降低性能；选项C重新加载持久化存储协调器开销大且不必要；选项D在主线程直接操作大量NSManagedObject对象容易导致UI卡顿。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用批量插入（batch insert）和批量删除（batch delete）操作来减少对上下文的频繁操作。 解析：批量操作可以显著减少Core Data对上下文的操作次数，从而提高性能。选项A频繁调用save()会阻塞主线程，降低性能；选项C重新加载持久化存储协调器开销大且不必要；选项D在主线程直接操作大量NSManagedObject对象容易导致UI卡顿。</strong></p>
 </details>
 
 **问题 2:**
@@ -2597,7 +2784,9 @@ if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .us
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能导致性能瓶颈的原因包括：
+  <p><strong>
+
+正确答案: 可能导致性能瓶颈的原因包括：
 1. 主线程执行大量数据操作，导致UI阻塞。
 2. 查询未优化，导致大量无效数据读取。
 3. 缓存机制缺失，重复查询增加开销。
@@ -2649,7 +2838,9 @@ if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .us
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B。采用多版本并发控制（MVCC）机制是设计高性能且保证数据一致性的存储引擎的关键方法。MVCC允许读操作不阻塞写操作，极大提高并发性能，同时借助版本控制保证数据一致性。选项A的单一全局锁会严重限制并发效率，选项C虽然降低写延迟但可能导致数据持久性风险，选项D的文件锁机制开销大且粒度粗，难以满足高性能需求。</strong></p>
+  <p><strong>
+
+正确答案: B。采用多版本并发控制（MVCC）机制是设计高性能且保证数据一致性的存储引擎的关键方法。MVCC允许读操作不阻塞写操作，极大提高并发性能，同时借助版本控制保证数据一致性。选项A的单一全局锁会严重限制并发效率，选项C虽然降低写延迟但可能导致数据持久性风险，选项D的文件锁机制开销大且粒度粗，难以满足高性能需求。</strong></p>
 </details>
 
 **问题 2:**
@@ -2665,7 +2856,9 @@ if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .us
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计思路如下：
+  <p><strong>
+
+正确答案: 设计思路如下：
 
 1. 数据存储结构设计：
 - 采用基于文件系统的多文件存储或者自定义二进制格式存储，利用索引文件维护笔记ID到数据块的映射。
@@ -2717,7 +2910,9 @@ if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .us
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. dispatch_async提交的任务是异步执行的，不会阻塞当前线程。——dispatch_async函数会异步提交任务，提交后立即返回，不会阻塞当前线程，任务会在后台队列中执行。dispatch_sync则是同步提交任务，会阻塞当前线程直到任务执行完成。</strong></p>
+  <p><strong>
+
+正确答案: C. dispatch_async提交的任务是异步执行的，不会阻塞当前线程。——dispatch_async函数会异步提交任务，提交后立即返回，不会阻塞当前线程，任务会在后台队列中执行。dispatch_sync则是同步提交任务，会阻塞当前线程直到任务执行完成。</strong></p>
 </details>
 
 **问题 2:**
@@ -2726,7 +2921,9 @@ if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .us
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在iOS开发中，为了避免阻塞主线程导致界面卡顿，通常会使用GCD的全局异步队列（DispatchQueue.global()）来执行网络请求和图片下载操作。这是因为全局队列是一个并发队列，可以有效地利用多核CPU完成耗时任务。
+  <p><strong>
+
+正确答案: 在iOS开发中，为了避免阻塞主线程导致界面卡顿，通常会使用GCD的全局异步队列（DispatchQueue.global()）来执行网络请求和图片下载操作。这是因为全局队列是一个并发队列，可以有效地利用多核CPU完成耗时任务。
 
 具体步骤如下：
 1. 使用DispatchQueue.global().async异步执行图片下载任务。
@@ -2774,7 +2971,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. OperationQueue可以通过设置maxConcurrentOperationCount属性来限制同时执行的操作数量。 解释：OperationQueue的maxConcurrentOperationCount属性用于控制队列中最大并发操作数，合理设置可避免资源竞争和过度并发。选项A错误，调用start方法不会自动将操作加入队列；选项C错误，NSOperation是操作类，OperationQueue是队列类，NSOperation不需要继承OperationQueue；选项D错误，cancelAllOperations只会取消未开始或正在执行的操作，已完成的操作不会被取消。</strong></p>
+  <p><strong>
+
+正确答案: B. OperationQueue可以通过设置maxConcurrentOperationCount属性来限制同时执行的操作数量。 解释：OperationQueue的maxConcurrentOperationCount属性用于控制队列中最大并发操作数，合理设置可避免资源竞争和过度并发。选项A错误，调用start方法不会自动将操作加入队列；选项C错误，NSOperation是操作类，OperationQueue是队列类，NSOperation不需要继承OperationQueue；选项D错误，cancelAllOperations只会取消未开始或正在执行的操作，已完成的操作不会被取消。</strong></p>
 </details>
 
 **问题 2:**
@@ -2783,7 +2982,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以为每个图片下载任务创建一个自定义的NSOperation子类或者使用BlockOperation来封装下载逻辑。将这些NSOperation对象添加到OperationQueue中以实现并发下载。为了设置任务之间的依赖关系，可以使用NSOperation的addDependency:方法，将需要先执行的操作作为依赖添加到后续操作中。这样，OperationQueue会自动管理任务的执行顺序，确保依赖的操作先完成。例如，如果图片B依赖于图片A的下载完成，则调用imageBOperation.addDependency(imageAOperation)。
+  <p><strong>
+
+正确答案: 你可以为每个图片下载任务创建一个自定义的NSOperation子类或者使用BlockOperation来封装下载逻辑。将这些NSOperation对象添加到OperationQueue中以实现并发下载。为了设置任务之间的依赖关系，可以使用NSOperation的addDependency:方法，将需要先执行的操作作为依赖添加到后续操作中。这样，OperationQueue会自动管理任务的执行顺序，确保依赖的操作先完成。例如，如果图片B依赖于图片A的下载完成，则调用imageBOperation.addDependency(imageAOperation)。
 
 此外，可以通过设置OperationQueue的maxConcurrentOperationCount属性控制并发数，保证性能和资源利用的平衡。最终，OperationQueue会根据依赖关系和并发设置，合理安排各个下载任务的执行顺序和时间。</strong></p>
 </details>
@@ -2807,7 +3008,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用`@synchronized`关键字来锁定代码块，防止多线程竞争。`@synchronized`是Objective-C提供的一个便捷同步机制，可以确保同一时刻只有一个线程执行被锁定的代码块，从而避免数据竞争和状态不一致的问题。选项A虽然使用了主队列，但`dispatch_async`本身并不保证线程安全，它只是将任务异步放到主线程。选项C的`NSTimer`与线程安全无直接关系，主要用于定时操作。选项D虽然通过`maxConcurrentOperationCount`设置为1实现了串行执行，但这是一种间接的线程安全控制方式，且开销相对较大，不如`@synchronized`直观和简洁。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用`@synchronized`关键字来锁定代码块，防止多线程竞争。`@synchronized`是Objective-C提供的一个便捷同步机制，可以确保同一时刻只有一个线程执行被锁定的代码块，从而避免数据竞争和状态不一致的问题。选项A虽然使用了主队列，但`dispatch_async`本身并不保证线程安全，它只是将任务异步放到主线程。选项C的`NSTimer`与线程安全无直接关系，主要用于定时操作。选项D虽然通过`maxConcurrentOperationCount`设置为1实现了串行执行，但这是一种间接的线程安全控制方式，且开销相对较大，不如`@synchronized`直观和简洁。</strong></p>
 </details>
 
 **问题 2:**
@@ -2820,7 +3023,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 多线程直接操作共享的可变数组会导致数据竞争（race condition）和不一致状态，因为数组的读写操作不是原子性的，多个线程同时修改可能导致数组结构损坏或读取到错误的数据。
+  <p><strong>
+
+正确答案: 1. 多线程直接操作共享的可变数组会导致数据竞争（race condition）和不一致状态，因为数组的读写操作不是原子性的，多个线程同时修改可能导致数组结构损坏或读取到错误的数据。
 
 2. 两种常用的同步机制：
    - @synchronized：Objective-C的语法糖，内部基于递归锁（NSRecursiveLock）实现，保证同一时刻只有一个线程访问代码块，适合简单的临界区保护。
@@ -2850,7 +3055,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用DispatchQueue.global()在后台线程执行耗时任务，然后使用DispatchQueue.main.async回到主线程更新UI。——这是iOS中处理耗时任务并安全更新UI的标准异步编程模式。耗时任务放在后台线程避免阻塞主线程，更新UI必须在主线程执行，故需要切换回主线程。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用DispatchQueue.global()在后台线程执行耗时任务，然后使用DispatchQueue.main.async回到主线程更新UI。——这是iOS中处理耗时任务并安全更新UI的标准异步编程模式。耗时任务放在后台线程避免阻塞主线程，更新UI必须在主线程执行，故需要切换回主线程。</strong></p>
 </details>
 
 **问题 2:**
@@ -2859,7 +3066,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在iOS中，实现异步下载图片并显示通常会采用GCD（Grand Central Dispatch）或NSOperationQueue来处理异步任务。常见做法是使用GCD的全局并发队列执行网络请求，下载完成后切换回主线程更新UI。
+  <p><strong>
+
+正确答案: 在iOS中，实现异步下载图片并显示通常会采用GCD（Grand Central Dispatch）或NSOperationQueue来处理异步任务。常见做法是使用GCD的全局并发队列执行网络请求，下载完成后切换回主线程更新UI。
 
 选择GCD的理由是它轻量且高效，能方便地管理线程和任务调度，适合简单的异步操作。
 
@@ -2884,7 +3093,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用全局并发队列处理耗时操作，并在主线程更新UI。原因是耗时操作如果在主线程执行，会导致界面卡顿，使用全局并发队列可以异步处理这些任务，避免阻塞主线程，但UI更新必须回到主线程，否则会引起UI异常或崩溃。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用全局并发队列处理耗时操作，并在主线程更新UI。原因是耗时操作如果在主线程执行，会导致界面卡顿，使用全局并发队列可以异步处理这些任务，避免阻塞主线程，但UI更新必须回到主线程，否则会引起UI异常或崩溃。</strong></p>
 </details>
 
 **问题 2:**
@@ -2893,7 +3104,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 导致性能问题的主要原因是所有图片处理任务都放在了主线程异步队列中执行，虽然是异步的，但仍然占用了主线程的资源，导致界面卡顿。此外，主线程的任务执行是串行的，不能有效利用多核CPU的优势。
+  <p><strong>
+
+正确答案: 导致性能问题的主要原因是所有图片处理任务都放在了主线程异步队列中执行，虽然是异步的，但仍然占用了主线程的资源，导致界面卡顿。此外，主线程的任务执行是串行的，不能有效利用多核CPU的优势。
 
 优化方案：
 1. **使用GCD的并发队列**：将图片处理任务放到全局并发队列（如`DispatchQueue.global(qos: .userInitiated)`）执行，避免占用主线程，提升处理效率。
@@ -2923,7 +3136,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用 Xcode 的 Thread Sanitizer，它能自动检测和报告死锁情况。——Thread Sanitizer 是 Xcode 提供的一个专门工具，能够动态检测数据竞争和死锁等并发问题，通过自动化分析线程状态和锁等待情况，帮助开发者快速定位死锁问题。相比其他选项，Thread Sanitizer 更加高效和准确，适合用来排查死锁。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用 Xcode 的 Thread Sanitizer，它能自动检测和报告死锁情况。——Thread Sanitizer 是 Xcode 提供的一个专门工具，能够动态检测数据竞争和死锁等并发问题，通过自动化分析线程状态和锁等待情况，帮助开发者快速定位死锁问题。相比其他选项，Thread Sanitizer 更加高效和准确，适合用来排查死锁。</strong></p>
 </details>
 
 **问题 2:**
@@ -2932,7 +3147,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 死锁检测方法：
+  <p><strong>
+
+正确答案: 1. 死锁检测方法：
 - 使用Xcode的线程调试工具（Thread Debugger）观察线程的状态和调用栈，查看线程是否在等待锁。
 - 利用Xcode的Instruments中的“Thread Sanitizer”工具，它可以帮助检测数据竞争和潜在死锁。
 - 在代码中添加日志，记录线程获取和释放锁的顺序，辅助分析死锁发生的具体位置。
@@ -2969,7 +3186,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用GCD的并发队列配合合适的同步机制（如Dispatch Barrier）来保护共享资源。因为GCD的并发队列允许多个任务并行执行，提高性能，而Dispatch Barrier可以确保对共享资源的写操作是独占的，从而避免数据竞争和不一致问题。这种设计兼顾了高并发性能和数据安全性，适合iOS高并发架构设计。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用GCD的并发队列配合合适的同步机制（如Dispatch Barrier）来保护共享资源。因为GCD的并发队列允许多个任务并行执行，提高性能，而Dispatch Barrier可以确保对共享资源的写操作是独占的，从而避免数据竞争和不一致问题。这种设计兼顾了高并发性能和数据安全性，适合iOS高并发架构设计。</strong></p>
 </details>
 
 **问题 2:**
@@ -2978,7 +3197,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计高并发的iOS客户端架构时，针对实时消息推送和展示，关键点包括以下几个方面：
+  <p><strong>
+
+正确答案: 在设计高并发的iOS客户端架构时，针对实时消息推送和展示，关键点包括以下几个方面：
 
 1. 主线程与后台线程分离：所有UI更新必须在主线程执行，耗时的消息处理应放在后台线程（如使用GCD的全局队列或自定义的串行/并行队列）进行，避免主线程阻塞。
 
@@ -3026,7 +3247,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 线程亲和性能够减少线程切换带来的缓存失效，但错误设置亲和性可能导致线程饥饿和负载不均。线程亲和性（affinity）使得线程倾向于在特定CPU上运行，从而提升缓存命中率，减少调度开销，但如果设置不当，会造成部分CPU过载而其他CPU空闲，导致性能下降。选项A错误，因为过高的优先级不能保证执行速度线性提升，且可能导致优先级反转问题；选项C错误，iOS系统中优先级和亲和性是独立控制的；选项D错误，线程优先级影响的是整个调度过程，包括内核态线程的调度。 </strong></p>
+  <p><strong>
+
+正确答案: B. 线程亲和性能够减少线程切换带来的缓存失效，但错误设置亲和性可能导致线程饥饿和负载不均。线程亲和性（affinity）使得线程倾向于在特定CPU上运行，从而提升缓存命中率，减少调度开销，但如果设置不当，会造成部分CPU过载而其他CPU空闲，导致性能下降。选项A错误，因为过高的优先级不能保证执行速度线性提升，且可能导致优先级反转问题；选项C错误，iOS系统中优先级和亲和性是独立控制的；选项D错误，线程优先级影响的是整个调度过程，包括内核态线程的调度。 </strong></p>
 </details>
 
 **问题 2:**
@@ -3035,7 +3258,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: ### 可能出现线程阻塞和调度不均衡的原因：
+  <p><strong>
+
+正确答案: 可能出现线程阻塞和调度不均衡的原因：
 1. **线程优先级设置不合理**：线程优先级未合理分配，导致高优先级任务被低优先级线程阻塞。
 2. **资源竞争与锁机制**：线程间存在锁竞争（如互斥锁、信号量等），导致部分线程长时间等待。
 3. **线程数量过多或过少**：线程数量超过CPU核心数，导致频繁上下文切换，或线程不足无法充分利用CPU。
@@ -3088,7 +3313,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. LLDB调试控制台
+  <p><strong>
+
+正确答案: B. LLDB调试控制台
 
 解释：LLDB调试控制台是Xcode内置的调试工具，可以在程序运行暂停时查看和修改变量的值。Instruments主要用于性能分析，Simulator用于模拟设备运行环境，Interface Builder是用于设计UI界面，因此它们不适合查看和修改变量的实时值。</strong></p>
 </details>
@@ -3099,7 +3326,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，可以通过在按钮的点击事件处理函数中设置断点，利用Xcode的断点功能暂停程序执行，观察代码的执行流程。然后，使用调试面板查看变量的值和状态，确认事件是否被正确触发以及相关数据是否正常。接着，可以利用Xcode的视图调试（View Debugging）功能，检查界面布局和控件状态，确认按钮是否处于可交互状态。若问题涉及多线程或异步操作，可以使用线程调试功能查看当前线程状态和调用堆栈，排查是否因死锁或线程阻塞导致无响应。此外，还可以使用Xcode的性能调试工具（如Time Profiler）分析是否存在性能瓶颈。通过这些调试步骤，可以系统地定位和解决按钮点击无响应的问题。</strong></p>
+  <p><strong>
+
+正确答案: 首先，可以通过在按钮的点击事件处理函数中设置断点，利用Xcode的断点功能暂停程序执行，观察代码的执行流程。然后，使用调试面板查看变量的值和状态，确认事件是否被正确触发以及相关数据是否正常。接着，可以利用Xcode的视图调试（View Debugging）功能，检查界面布局和控件状态，确认按钮是否处于可交互状态。若问题涉及多线程或异步操作，可以使用线程调试功能查看当前线程状态和调用堆栈，排查是否因死锁或线程阻塞导致无响应。此外，还可以使用Xcode的性能调试工具（如Time Profiler）分析是否存在性能瓶颈。通过这些调试步骤，可以系统地定位和解决按钮点击无响应的问题。</strong></p>
 </details>
 
 ---
@@ -3122,7 +3351,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: D. setUpWithError()  
+  <p><strong>
+
+正确答案: D. setUpWithError()  
 解释：在 XCTest 框架中，setUpWithError() 是在每个测试方法执行前调用的初始化方法，它可以抛出错误，从而支持更灵活的初始化操作。虽然 setUp() 也用于初始化，但它不能抛出错误。tearDown() 是在测试方法执行后调用，用于清理资源。testExample() 只是示例测试方法的命名，不用于初始化。</strong></p>
 </details>
 
@@ -3132,7 +3363,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 为了为 `validateUserCredentials` 方法设计单元测试，应该考虑覆盖各种输入情况，确保方法行为符合预期。具体测试内容包括：
+  <p><strong>
+
+正确答案: 为了为 `validateUserCredentials` 方法设计单元测试，应该考虑覆盖各种输入情况，确保方法行为符合预期。具体测试内容包括：
 
 1. **有效输入测试**：测试用户名和密码均符合格式要求时，方法应返回 `true`。
 2. **用户名为空**：测试用户名为空字符串，方法应返回 `false`。
@@ -3161,7 +3394,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. isHittable
+  <p><strong>
+
+正确答案: B. isHittable
 
 解释：
 虽然exists属性用来判断元素是否存在于界面层级中，但它并不保证元素当前可见或可交互。isHittable属性不仅判断元素存在，还确认元素是可见且可被用户交互的状态，因此更适合用于验证UI元素是否实际可用。isVisible不是XCUIElement的有效属性。isEnabled则表示该元素是否被启用，但不代表元素一定可见或存在。</strong></p>
@@ -3173,7 +3408,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 启动应用并导航到登录界面。
+  <p><strong>
+
+正确答案: 1. 启动应用并导航到登录界面。
 2. 使用XCUIElement查询用户名和密码输入框，模拟输入正确的用户名和密码。
 3. 查询登录按钮，验证其是否处于可点击状态（enabled）。
 4. 模拟点击登录按钮。
@@ -3207,7 +3444,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. Leaks。Instruments中的Leakes仪器专门设计用于检测内存泄漏，通过跟踪未释放的内存块，帮助开发者定位泄漏源。虽然Allocations也涉及内存管理，但它主要用来监控内存分配情况，而非直接检测泄漏。Time Profiler用于分析CPU使用情况，Network则用于监控网络请求，两者都不适合用于内存泄漏检测。</strong></p>
+  <p><strong>
+
+正确答案: C. Leaks。Instruments中的Leakes仪器专门设计用于检测内存泄漏，通过跟踪未释放的内存块，帮助开发者定位泄漏源。虽然Allocations也涉及内存管理，但它主要用来监控内存分配情况，而非直接检测泄漏。Time Profiler用于分析CPU使用情况，Network则用于监控网络请求，两者都不适合用于内存泄漏检测。</strong></p>
 </details>
 
 **问题 2:**
@@ -3216,7 +3455,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 针对列表滚动时的卡顿和掉帧，首先可以使用 Instruments 中的 "Core Animation" 模板来分析界面渲染性能。该工具可以帮助检测主线程的渲染瓶颈、图层合成以及动画性能问题。具体步骤包括：
+  <p><strong>
+
+正确答案: 针对列表滚动时的卡顿和掉帧，首先可以使用 Instruments 中的 "Core Animation" 模板来分析界面渲染性能。该工具可以帮助检测主线程的渲染瓶颈、图层合成以及动画性能问题。具体步骤包括：
 
 1. 启动 Instruments，选择 "Core Animation" 模板，连接并运行你的应用。
 2. 触发列表滚动操作，观察帧率（FPS）和界面渲染的时间线。
@@ -3256,7 +3497,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. XCTest支持模拟用户交互和UI测试，能够集成在Xcode中进行持续集成。——XCTest不仅支持单元测试，还支持UI自动化测试，可以模拟用户操作，并且与Xcode和持续集成工具无缝集成，提高测试效率和覆盖率。选项A错误，因为XCTest不自动生成测试用例；选项C错误，因为它支持UI测试；选项D错误，因为它是苹果官方框架，无需依赖第三方库。</strong></p>
+  <p><strong>
+
+正确答案: B. XCTest支持模拟用户交互和UI测试，能够集成在Xcode中进行持续集成。——XCTest不仅支持单元测试，还支持UI自动化测试，可以模拟用户操作，并且与Xcode和持续集成工具无缝集成，提高测试效率和覆盖率。选项A错误，因为XCTest不自动生成测试用例；选项C错误，因为它支持UI测试；选项D错误，因为它是苹果官方框架，无需依赖第三方库。</strong></p>
 </details>
 
 **问题 2:**
@@ -3271,7 +3514,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计和扩展iOS自动化测试框架以满足上述需求时，可以考虑以下方案：
+  <p><strong>
+
+正确答案: 在设计和扩展iOS自动化测试框架以满足上述需求时，可以考虑以下方案：
 
 1. 稳定且高效的UI自动化测试：
    - 基于XCTest UI测试模块（XCUITest）编写测试脚本，利用其对UI元素的访问和交互能力。
@@ -3316,7 +3561,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 重点覆盖关键业务逻辑和高风险代码，同时结合手动测试和自动化测试。理由：全面覆盖所有代码路径（A）虽然理想，但在实际项目中成本高且不一定带来等比例的质量提升。仅依赖单元测试（C）忽略了 UI 和集成层面的质量保障。关注测试数量（D）容易导致大量低质量测试用例，不能有效提升软件质量。最佳实践是聚焦关键部分并结合多种测试手段，提升测试的实际覆盖和质量保障效果。</strong></p>
+  <p><strong>
+
+正确答案: B. 重点覆盖关键业务逻辑和高风险代码，同时结合手动测试和自动化测试。理由：全面覆盖所有代码路径（A）虽然理想，但在实际项目中成本高且不一定带来等比例的质量提升。仅依赖单元测试（C）忽略了 UI 和集成层面的质量保障。关注测试数量（D）容易导致大量低质量测试用例，不能有效提升软件质量。最佳实践是聚焦关键部分并结合多种测试手段，提升测试的实际覆盖和质量保障效果。</strong></p>
 </details>
 
 **问题 2:**
@@ -3332,7 +3579,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 测试用例设计：
+  <p><strong>
+
+正确答案: 1. 测试用例设计：
 - 重点覆盖业务关键路径和用户常用功能，确保核心功能稳定。
 - 设计边界条件和异常场景测试，如输入边界值、网络异常、内存警告等。
 - 使用等价类划分和边界值分析，减少冗余测试。
@@ -3372,7 +3621,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用模拟（Mock）和桩（Stub）对象来隔离外部依赖，结合UI自动化测试覆盖关键交互流程。 解析：复杂场景测试设计需要兼顾测试的全面性和稳定性，使用模拟和桩可以有效隔离外部依赖，避免环境不稳定导致测试失败，同时UI自动化测试保证关键用户交互流程被覆盖。A选项虽然灵活，但效率低且不易重复，C选项忽略了复杂场景，降低测试质量，D选项频繁修改代码可能引入不稳定因素，反而不利于测试的稳定性。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用模拟（Mock）和桩（Stub）对象来隔离外部依赖，结合UI自动化测试覆盖关键交互流程。 解析：复杂场景测试设计需要兼顾测试的全面性和稳定性，使用模拟和桩可以有效隔离外部依赖，避免环境不稳定导致测试失败，同时UI自动化测试保证关键用户交互流程被覆盖。A选项虽然灵活，但效率低且不易重复，C选项忽略了复杂场景，降低测试质量，D选项频繁修改代码可能引入不稳定因素，反而不利于测试的稳定性。</strong></p>
 </details>
 
 **问题 2:**
@@ -3381,7 +3632,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计离线模式和数据同步的复杂场景测试时，应重点考虑以下几个方面：
+  <p><strong>
+
+正确答案: 在设计离线模式和数据同步的复杂场景测试时，应重点考虑以下几个方面：
 
 1. **网络状态变化测试**
    - 测试从在线切换到离线的过程，验证应用是否能正确进入离线模式。
@@ -3430,7 +3683,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 确认当前的dSYM文件与发布的二进制版本完全匹配，并在Xcode中导入对应的dSYM。 解析崩溃日志时，缺失符号化堆栈信息通常是因为缺少对应的dSYM文件或dSYM文件版本不匹配。dSYM文件包含调试符号，只有确保dSYM与发布的二进制一致，才能正确符号化堆栈信息，从而准确定位崩溃代码位置。选项A是运行时检测工具，不直接解决符号化问题；选项C中Bitcode启用后苹果会重新编译生成dSYM，但这个过程并不保证开发者本地已有正确dSYM；选项D虽然方便，但如果本地没有正确dSYM，第三方工具也无法生成准确符号信息。</strong></p>
+  <p><strong>
+
+正确答案: B. 确认当前的dSYM文件与发布的二进制版本完全匹配，并在Xcode中导入对应的dSYM。 解析崩溃日志时，缺失符号化堆栈信息通常是因为缺少对应的dSYM文件或dSYM文件版本不匹配。dSYM文件包含调试符号，只有确保dSYM与发布的二进制一致，才能正确符号化堆栈信息，从而准确定位崩溃代码位置。选项A是运行时检测工具，不直接解决符号化问题；选项C中Bitcode启用后苹果会重新编译生成dSYM，但这个过程并不保证开发者本地已有正确dSYM；选项D虽然方便，但如果本地没有正确dSYM，第三方工具也无法生成准确符号信息。</strong></p>
 </details>
 
 **问题 2:**
@@ -3439,7 +3694,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 收集崩溃日志和用户反馈：
+  <p><strong>
+
+正确答案: 1. 收集崩溃日志和用户反馈：
    - 通过Crashlytics、Xcode Organizer或其他崩溃收集工具获取崩溃日志。
    - 询问用户复现步骤，确认崩溃发生的具体业务场景。
 
@@ -3491,7 +3748,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 将测试拆分为多个独立的、小粒度的测试用例，并通过并行测试执行来加快测试速度。 解析：
+  <p><strong>
+
+正确答案: B. 将测试拆分为多个独立的、小粒度的测试用例，并通过并行测试执行来加快测试速度。 解析：
 拆分测试用例使得测试更具模块化和可维护性，减少单个测试用例的复杂度。并行执行利用多核处理器资源，显著缩短测试执行时间，同时保持测试的全面性和可靠性。选项A会导致测试难以维护且执行缓慢；选项C虽然缩短时间但牺牲了测试覆盖和质量；选项D过度依赖UI测试，容易导致测试不稳定且执行缓慢。</strong></p>
 </details>
 
@@ -3501,7 +3760,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计自定义 iOS 测试框架时，需重点考虑以下核心要素：
+  <p><strong>
+
+正确答案: 设计自定义 iOS 测试框架时，需重点考虑以下核心要素：
 
 1. **模块化设计**：将测试框架拆分为核心测试执行模块、断言库、mock 服务和报告生成模块，确保各部分职责单一，便于维护和扩展。
 
@@ -3546,7 +3807,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 应用必须在Info.plist中声明相应权限用途说明，否则无法通过审核。 解释：iOS权限模型要求开发者在Info.plist文件中声明需要访问的隐私权限和用途说明，系统才会在首次请求时弹出授权提示。如果未声明，应用可能会崩溃或被App Store拒绝。选项A错误，因为权限需要用户明确同意；选项C错误，用户可以随时在设置中更改权限；选项D错误，应用不能静默获取权限，必须经过用户授权。</strong></p>
+  <p><strong>
+
+正确答案: B. 应用必须在Info.plist中声明相应权限用途说明，否则无法通过审核。 解释：iOS权限模型要求开发者在Info.plist文件中声明需要访问的隐私权限和用途说明，系统才会在首次请求时弹出授权提示。如果未声明，应用可能会崩溃或被App Store拒绝。选项A错误，因为权限需要用户明确同意；选项C错误，用户可以随时在设置中更改权限；选项D错误，应用不能静默获取权限，必须经过用户授权。</strong></p>
 </details>
 
 **问题 2:**
@@ -3555,7 +3818,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: iOS权限模型设计的核心是保护用户隐私和安全，系统通过权限授权机制确保应用在访问敏感数据（如定位和相册）前必须获得用户明确同意。这防止应用未经允许滥用用户信息。用户首次访问相关功能时，系统会弹出授权请求，用户可以选择允许或拒绝。若用户拒绝授权，应用应尊重用户选择，避免强制访问。为了提升用户体验，应用可以：
+  <p><strong>
+
+正确答案: iOS权限模型设计的核心是保护用户隐私和安全，系统通过权限授权机制确保应用在访问敏感数据（如定位和相册）前必须获得用户明确同意。这防止应用未经允许滥用用户信息。用户首次访问相关功能时，系统会弹出授权请求，用户可以选择允许或拒绝。若用户拒绝授权，应用应尊重用户选择，避免强制访问。为了提升用户体验，应用可以：
 
 1. 预先在界面说明为何需要该权限，增加用户信任。
 2. 在用户拒绝后，提供引导说明如何在设置中开启权限。
@@ -3585,7 +3850,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 对称加密算法使用同一个密钥进行数据的加密和解密。 解释：对称加密使用单一密钥进行加密和解密，效率较高，适合客户端快速加密数据。选项A描述的是非对称加密，选项B错误，非对称加密通常比对称加密慢，不适合大批量数据加密，选项D错误，客户端加密可以提高数据安全性。</strong></p>
+  <p><strong>
+
+正确答案: C. 对称加密算法使用同一个密钥进行数据的加密和解密。 解释：对称加密使用单一密钥进行加密和解密，效率较高，适合客户端快速加密数据。选项A描述的是非对称加密，选项B错误，非对称加密通常比对称加密慢，不适合大批量数据加密，选项D错误，客户端加密可以提高数据安全性。</strong></p>
 </details>
 
 **问题 2:**
@@ -3594,7 +3861,9 @@ DispatchQueue.global().async {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 对于本地存储的敏感信息，通常选择对称加密方式，因为对称加密在性能和实现复杂度上更适合本地数据加密。常用的对称加密算法有AES，其加密和解密速度快，适合处理大量数据。
+  <p><strong>
+
+正确答案: 对于本地存储的敏感信息，通常选择对称加密方式，因为对称加密在性能和实现复杂度上更适合本地数据加密。常用的对称加密算法有AES，其加密和解密速度快，适合处理大量数据。
 
 选择理由：
 - 对称加密算法计算效率高，适合本地快速加解密。
@@ -3631,7 +3900,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用Keychain Services API存储数据时，必须设置适当的访问控制（如kSecAttrAccessible属性）来确保数据的安全性。 解析：Keychain提供安全的数据存储，但开发者需要合理设置访问控制属性（如kSecAttrAccessible）来控制数据的访问时机和范围，确保敏感信息安全。而A选项错误，因为UserDefaults不适合存储敏感信息，且Keychain性能足够满足安全需求；C选项错误，因为可以通过设置访问组实现多个应用间的Keychain数据共享；D选项错误，虽然Keychain会加密数据，但合理的访问控制仍然是保障安全的重要环节。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用Keychain Services API存储数据时，必须设置适当的访问控制（如kSecAttrAccessible属性）来确保数据的安全性。 解析：Keychain提供安全的数据存储，但开发者需要合理设置访问控制属性（如kSecAttrAccessible）来控制数据的访问时机和范围，确保敏感信息安全。而A选项错误，因为UserDefaults不适合存储敏感信息，且Keychain性能足够满足安全需求；C选项错误，因为可以通过设置访问组实现多个应用间的Keychain数据共享；D选项错误，虽然Keychain会加密数据，但合理的访问控制仍然是保障安全的重要环节。</strong></p>
 </details>
 
 **问题 2:**
@@ -3640,7 +3911,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 使用 Keychain 存储登录凭证：
+  <p><strong>
+
+正确答案: 1. 使用 Keychain 存储登录凭证：
    - 利用 Keychain Services API，将用户名和密码作为敏感信息存储在系统的 Keychain 中，这样数据会被加密并受系统保护。
    - 通过设置合适的访问控制（如 kSecAttrAccessibleWhenUnlocked 或 kSecAttrAccessibleAfterFirstUnlock）确保数据只在设备解锁时可用。
 
@@ -3675,7 +3948,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 防止应用访问除自身沙盒外的文件系统，以保护用户数据安全。——应用沙盒机制的核心目的是限制应用程序只能访问自己的文件和资源，防止对其他应用或系统数据造成影响，从而保护用户隐私和系统安全。选项B和D描述的功能违反了沙盒的安全隔离原则，C选项虽然提到性能优化，但与沙盒机制无关。</strong></p>
+  <p><strong>
+
+正确答案: A. 防止应用访问除自身沙盒外的文件系统，以保护用户数据安全。——应用沙盒机制的核心目的是限制应用程序只能访问自己的文件和资源，防止对其他应用或系统数据造成影响，从而保护用户隐私和系统安全。选项B和D描述的功能违反了沙盒的安全隔离原则，C选项虽然提到性能优化，但与沙盒机制无关。</strong></p>
 </details>
 
 **问题 2:**
@@ -3684,7 +3959,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: iOS的应用沙盒机制限制了应用只能访问自己沙盒目录内的文件，无法直接访问其他应用的私有数据或系统文件，因此应用默认只能读写其沙盒内的Documents、Caches等目录。对于用户“文件”应用中的文件，应用不能直接访问，需要通过系统提供的UIDocumentPickerViewController等API让用户显式选择文件。这样可以保证安全性和隐私，同时允许应用获得访问权限。
+  <p><strong>
+
+正确答案: iOS的应用沙盒机制限制了应用只能访问自己沙盒目录内的文件，无法直接访问其他应用的私有数据或系统文件，因此应用默认只能读写其沙盒内的Documents、Caches等目录。对于用户“文件”应用中的文件，应用不能直接访问，需要通过系统提供的UIDocumentPickerViewController等API让用户显式选择文件。这样可以保证安全性和隐私，同时允许应用获得访问权限。
 
 设计文件导入功能时，应用应使用UIDocumentPickerViewController让用户选择文件，应用获得访问所选文件的权限，并可将文件复制到沙盒目录中，方便后续处理。导出文件时，可以同样使用UIDocumentPickerViewController或UIActivityViewController，将文件导出到其他应用或位置。
 
@@ -3713,7 +3990,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用 iOS Keychain 存储敏感信息，因为它提供了系统级别的安全保护。——iOS Keychain 是专门设计用于安全存储敏感信息的机制，具有系统级别的加密和访问控制，能够有效防止非授权访问。选项A虽然加密了数据，但硬编码密钥会导致密钥泄露风险。选项C忽略了持续验证，增加安全漏洞风险。选项D的Base64编码并不具备加密功能，无法保护数据安全。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用 iOS Keychain 存储敏感信息，因为它提供了系统级别的安全保护。——iOS Keychain 是专门设计用于安全存储敏感信息的机制，具有系统级别的加密和访问控制，能够有效防止非授权访问。选项A虽然加密了数据，但硬编码密钥会导致密钥泄露风险。选项C忽略了持续验证，增加安全漏洞风险。选项D的Base64编码并不具备加密功能，无法保护数据安全。</strong></p>
 </details>
 
 **问题 2:**
@@ -3722,7 +4001,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在iOS金融类应用中，常见的安全漏洞包括：
+  <p><strong>
+
+正确答案: 在iOS金融类应用中，常见的安全漏洞包括：
 
 1. 敏感信息明文存储：如将密码、银行卡号等明文存储在UserDefaults或本地文件中，容易被越狱设备或恶意程序读取。
 
@@ -3776,7 +4057,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在客户端实现SSL Pinning，绑定服务器的公钥或证书。 解释：虽然HTTPS协议可以提供基本的加密通信，但依赖系统默认的证书验证机制仍可能遭受中间人攻击，尤其是在用户设备受信任根证书被篡改的情况下。SSL Pinning通过绑定服务器的公钥或证书，能够有效防止中间人攻击，确保通信双方的身份可信。选项A虽然常用但安全性较弱，C选项的简单验证无法防止MITM，D选项使用自定义加密算法容易出现安全漏洞且绕过了标准的TLS机制。</strong></p>
+  <p><strong>
+
+正确答案: B. 在客户端实现SSL Pinning，绑定服务器的公钥或证书。 解释：虽然HTTPS协议可以提供基本的加密通信，但依赖系统默认的证书验证机制仍可能遭受中间人攻击，尤其是在用户设备受信任根证书被篡改的情况下。SSL Pinning通过绑定服务器的公钥或证书，能够有效防止中间人攻击，确保通信双方的身份可信。选项A虽然常用但安全性较弱，C选项的简单验证无法防止MITM，D选项使用自定义加密算法容易出现安全漏洞且绕过了标准的TLS机制。</strong></p>
 </details>
 
 **问题 2:**
@@ -3785,7 +4068,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 传输层安全：
+  <p><strong>
+
+正确答案: 1. 传输层安全：
  - 使用HTTPS（TLS）协议保证数据传输加密，防止中间人攻击和数据窃听。
  - 在iOS中，默认使用NSURLSession等网络库自带的TLS支持。
  - 开启App Transport Security (ATS)，确保所有请求都符合安全标准。
@@ -3833,7 +4118,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: D. 在应用中集成反调试机制，检测并阻止调试器附加。——反调试机制直接针对逆向工程过程中的调试行为，能够有效阻止调试器的附加和动态分析，从而提高应用防篡改和防逆向的能力。选项A虽能增加反编译难度，但Swift代码混淆工具并非官方推荐，且效果有限；选项B和C是保障数据和通信安全的措施，虽重要但不直接防止逆向工程。</strong></p>
+  <p><strong>
+
+正确答案: D. 在应用中集成反调试机制，检测并阻止调试器附加。——反调试机制直接针对逆向工程过程中的调试行为，能够有效阻止调试器的附加和动态分析，从而提高应用防篡改和防逆向的能力。选项A虽能增加反编译难度，但Swift代码混淆工具并非官方推荐，且效果有限；选项B和C是保障数据和通信安全的措施，虽重要但不直接防止逆向工程。</strong></p>
 </details>
 
 **问题 2:**
@@ -3842,7 +4129,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计iOS金融类应用的安全架构时，需要从以下几个方面进行综合考虑：
+  <p><strong>
+
+正确答案: 在设计iOS金融类应用的安全架构时，需要从以下几个方面进行综合考虑：
 
 1. 数据存储安全：
 - 使用iOS的Keychain存储敏感信息（如用户凭证、加密密钥），利用其系统级别的加密和访问控制。
@@ -3892,7 +4181,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用Keychain存储敏感信息，并结合数据加密和访问控制策略。 解释：Keychain是iOS系统提供的安全存储机制，专门用于保存敏感数据如密码和令牌。结合加密和访问控制策略，可以有效防止数据泄露。选项A直接使用NSUserDefaults存储敏感数据是不安全的，选项C单靠沙盒不足以防止数据被恶意访问，选项D硬编码密钥容易被反编译获取，均不符合安全策略要求。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用Keychain存储敏感信息，并结合数据加密和访问控制策略。 解释：Keychain是iOS系统提供的安全存储机制，专门用于保存敏感数据如密码和令牌。结合加密和访问控制策略，可以有效防止数据泄露。选项A直接使用NSUserDefaults存储敏感数据是不安全的，选项C单靠沙盒不足以防止数据被恶意访问，选项D硬编码密钥容易被反编译获取，均不符合安全策略要求。</strong></p>
 </details>
 
 **问题 2:**
@@ -3907,7 +4198,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 数据存储和传输的安全措施：
+  <p><strong>
+
+正确答案: 1. 数据存储和传输的安全措施：
 - 在本地存储敏感数据时，优先使用iOS的Keychain服务，确保数据加密和系统级保护；避免将敏感信息直接存储在UserDefaults或未加密的文件中。
 - 对于必须存储在文件系统中的数据，使用iOS的Data Protection API（如NSFileProtectionComplete）进行加密保护。
 - 网络传输时，强制使用HTTPS（TLS 1.2及以上），并结合证书钉扎（Certificate Pinning）防止中间人攻击。
@@ -3946,7 +4239,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 启用代码签名和完整性验证机制，结合Runtime完整性检测与防篡改措施。iOS平台依赖代码签名来保证应用的完整性，防止恶意动态注入和篡改。结合运行时完整性检测（如检测函数劫持、内存篡改）是防御动态攻击的核心技术手段。选项A虽是安全最佳实践，但侧重通信安全，非针对动态注入；选项C侧重数据保护，不能防止代码篡改；选项D主要针对性能优化，与安全防护无关。</strong></p>
+  <p><strong>
+
+正确答案: B. 启用代码签名和完整性验证机制，结合Runtime完整性检测与防篡改措施。iOS平台依赖代码签名来保证应用的完整性，防止恶意动态注入和篡改。结合运行时完整性检测（如检测函数劫持、内存篡改）是防御动态攻击的核心技术手段。选项A虽是安全最佳实践，但侧重通信安全，非针对动态注入；选项C侧重数据保护，不能防止代码篡改；选项D主要针对性能优化，与安全防护无关。</strong></p>
 </details>
 
 **问题 2:**
@@ -3955,7 +4250,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在金融类iOS应用中，面对动态调试、代码注入和逆向工程等高强度攻击，创新的安全防护方案应包括以下几个方面：
+  <p><strong>
+
+正确答案: 在金融类iOS应用中，面对动态调试、代码注入和逆向工程等高强度攻击，创新的安全防护方案应包括以下几个方面：
 
 1. 代码保护
 - 使用LLVM混淆技术对关键代码进行混淆，增加逆向难度。
@@ -4007,7 +4304,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. MVVM 中，ViewModel 负责处理视图逻辑，并通过数据绑定自动更新 View。这是 MVVM 的核心优势之一，它使得视图和数据逻辑分离，提高了代码的可维护性和测试性。</strong></p>
+  <p><strong>
+
+正确答案: B. MVVM 中，ViewModel 负责处理视图逻辑，并通过数据绑定自动更新 View。这是 MVVM 的核心优势之一，它使得视图和数据逻辑分离，提高了代码的可维护性和测试性。</strong></p>
 </details>
 
 **问题 2:**
@@ -4016,7 +4315,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 MVC 模式中，View 负责展示界面元素，Controller 处理用户交互和业务逻辑，Model 管理数据。用户登录界面中，View 展示输入框和按钮，Controller 监听输入和按钮点击，调用 Model 进行身份验证并更新界面。
+  <p><strong>
+
+正确答案: 在 MVC 模式中，View 负责展示界面元素，Controller 处理用户交互和业务逻辑，Model 管理数据。用户登录界面中，View 展示输入框和按钮，Controller 监听输入和按钮点击，调用 Model 进行身份验证并更新界面。
 
 在 MVVM 模式中，View 依然负责界面展示，ViewModel 负责处理展示逻辑和数据绑定，Model 负责数据管理。View 通过数据绑定自动更新界面，ViewModel 接收用户输入，调用 Model 完成登录逻辑。
 
@@ -4052,7 +4353,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 增加代码的复用性和可维护性，通过将应用拆分成独立且功能明确的模块，降低耦合度。 模块化设计旨在通过拆分应用为独立的功能模块，提升代码复用性和维护性，同时降低模块间耦合，便于团队协作和后期扩展。选项B、C和D均忽视了模块化设计中降低耦合和功能明确的核心原则。</strong></p>
+  <p><strong>
+
+正确答案: A. 增加代码的复用性和可维护性，通过将应用拆分成独立且功能明确的模块，降低耦合度。 模块化设计旨在通过拆分应用为独立的功能模块，提升代码复用性和维护性，同时降低模块间耦合，便于团队协作和后期扩展。选项B、C和D均忽视了模块化设计中降低耦合和功能明确的核心原则。</strong></p>
 </details>
 
 **问题 2:**
@@ -4061,7 +4364,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在电商App中，商品展示和购物车功能可以划分为两个独立模块：ProductModule和CartModule。这样划分有利于职责分明，便于团队并行开发和维护。
+  <p><strong>
+
+正确答案: 在电商App中，商品展示和购物车功能可以划分为两个独立模块：ProductModule和CartModule。这样划分有利于职责分明，便于团队并行开发和维护。
 
 1. 模块划分设计：
 - ProductModule负责商品的展示、筛选和详情页。
@@ -4102,7 +4407,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 解耦组件之间的依赖关系，提高代码的可测试性和可维护性。依赖注入通过将对象的依赖从内部创建转变为外部提供，使得组件之间耦合度降低，便于替换和单元测试。选项A描述的是内存管理，C和D分别涉及UI性能和网络性能，与依赖注入的核心目的不符。</strong></p>
+  <p><strong>
+
+正确答案: B. 解耦组件之间的依赖关系，提高代码的可测试性和可维护性。依赖注入通过将对象的依赖从内部创建转变为外部提供，使得组件之间耦合度降低，便于替换和单元测试。选项A描述的是内存管理，C和D分别涉及UI性能和网络性能，与依赖注入的核心目的不符。</strong></p>
 </details>
 
 **问题 2:**
@@ -4111,7 +4418,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在这个场景中，可以通过依赖注入将 NetworkService 传递给 ViewController，而不是在 ViewController 内部直接创建 NetworkService 实例。具体设计如下：
+  <p><strong>
+
+正确答案: 在这个场景中，可以通过依赖注入将 NetworkService 传递给 ViewController，而不是在 ViewController 内部直接创建 NetworkService 实例。具体设计如下：
 
 1. 构造器注入（推荐方式）：
    - 在 ViewController 中添加一个接收 NetworkService 的初始化构造器参数。
@@ -4176,7 +4485,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 响应式编程通过将数据流和变化传播抽象为异步事件流，实现自动数据绑定和变化响应。——这是响应式编程的核心理念，它利用事件流处理和订阅机制，实现了数据状态变化的自动传播和UI更新，减少了手动状态管理和复杂的回调逻辑。</strong></p>
+  <p><strong>
+
+正确答案: B. 响应式编程通过将数据流和变化传播抽象为异步事件流，实现自动数据绑定和变化响应。——这是响应式编程的核心理念，它利用事件流处理和订阅机制，实现了数据状态变化的自动传播和UI更新，减少了手动状态管理和复杂的回调逻辑。</strong></p>
 </details>
 
 **问题 2:**
@@ -4187,7 +4498,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在该场景中，响应式编程的核心是将用户输入事件流转化为数据流，结合网络请求和界面更新的异步操作，实现数据的自动绑定和状态管理。
+  <p><strong>
+
+正确答案: 在该场景中，响应式编程的核心是将用户输入事件流转化为数据流，结合网络请求和界面更新的异步操作，实现数据的自动绑定和状态管理。
 
 1. 事件流管理：使用RxSwift（或Combine）监听搜索栏的文本变化事件，将文本变成一个Observable序列。
 
@@ -4227,7 +4540,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 采用MVVM架构，将视图层与业务逻辑层分离，利用数据绑定减少代码耦合。理由：MVVM架构通过分离视图和业务逻辑，提升代码的模块化和职责单一，有助于代码的维护和扩展。选项A会导致ViewController臃肿，难以维护；选项C过度使用单例会增加全局状态依赖，降低灵活性；选项D将网络代码写在视图层，破坏了架构层次，增加耦合。</strong></p>
+  <p><strong>
+
+正确答案: B. 采用MVVM架构，将视图层与业务逻辑层分离，利用数据绑定减少代码耦合。理由：MVVM架构通过分离视图和业务逻辑，提升代码的模块化和职责单一，有助于代码的维护和扩展。选项A会导致ViewController臃肿，难以维护；选项C过度使用单例会增加全局状态依赖，降低灵活性；选项D将网络代码写在视图层，破坏了架构层次，增加耦合。</strong></p>
 </details>
 
 **问题 2:**
@@ -4236,7 +4551,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在接手一个采用混乱 MVC 架构的 iOS 应用时，首先需要分析现有代码的痛点，如视图控制器臃肿、业务逻辑分散、模块耦合度高等。针对这些问题，常见的重构方案是引入更清晰的架构模式，如 MVVM（Model-View-ViewModel）或 VIPER。
+  <p><strong>
+
+正确答案: 在接手一个采用混乱 MVC 架构的 iOS 应用时，首先需要分析现有代码的痛点，如视图控制器臃肿、业务逻辑分散、模块耦合度高等。针对这些问题，常见的重构方案是引入更清晰的架构模式，如 MVVM（Model-View-ViewModel）或 VIPER。
 
 1. 选择架构模式：
    - MVVM：将业务逻辑从视图控制器中抽离到 ViewModel，利用数据绑定减少视图更新的代码量，提升可测试性。
@@ -4277,7 +4594,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用MVVM架构，将共享的业务逻辑和数据层抽象成跨平台模块，UI层分别用原生代码实现。--这种设计充分利用了架构层次分明的优势，业务逻辑和数据层作为跨平台模块可以最大程度复用，而UI层使用原生代码保证了性能和用户体验，符合跨平台架构设计的最佳实践。选项A虽然代码复用高，但性能和原生体验通常不足；选项C代码复用差，不符合跨平台设计初衷；选项D代码库复杂度高且维护困难，且条件编译容易导致代码膨胀。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用MVVM架构，将共享的业务逻辑和数据层抽象成跨平台模块，UI层分别用原生代码实现。--这种设计充分利用了架构层次分明的优势，业务逻辑和数据层作为跨平台模块可以最大程度复用，而UI层使用原生代码保证了性能和用户体验，符合跨平台架构设计的最佳实践。选项A虽然代码复用高，但性能和原生体验通常不足；选项C代码复用差，不符合跨平台设计初衷；选项D代码库复杂度高且维护困难，且条件编译容易导致代码膨胀。</strong></p>
 </details>
 
 **问题 2:**
@@ -4291,7 +4610,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 技术栈选择：
+  <p><strong>
+
+正确答案: 1. 技术栈选择：
    - 根据项目需求选择合适的跨平台框架。例如，Flutter能提供接近原生的性能和高度一致的UI表现，适合对UI体验要求高的项目；Kotlin Multiplatform适合共享业务逻辑，保持各平台原生UI，适合需要高度平台定制的场景；React Native适合快速迭代和Web技术栈团队。
 
 2. 分层架构设计：
@@ -4327,7 +4648,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -4336,7 +4659,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 制定企业级iOS架构规范时，首先需明确应用的整体业务目标和技术需求，确保架构设计能够支撑高并发、多模块协作和快速迭代。
+  <p><strong>
+
+正确答案: 制定企业级iOS架构规范时，首先需明确应用的整体业务目标和技术需求，确保架构设计能够支撑高并发、多模块协作和快速迭代。
 
 1. 模块划分：根据业务领域（如用户管理、支付、消息推送等）进行清晰的模块划分，采用模块化设计，保证模块间低耦合高内聚。每个模块应有明确的职责边界和接口定义，便于多个团队并行开发和测试。
 
@@ -4378,7 +4703,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 Xcode 的 Scheme 和 Build Configuration 来分别设置不同的环境配置。这样可以清晰地管理和切换不同环境的构建参数，避免手动修改带来的错误和重复工作，是 Xcode 推荐的最佳实践方法。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 Xcode 的 Scheme 和 Build Configuration 来分别设置不同的环境配置。这样可以清晰地管理和切换不同环境的构建参数，避免手动修改带来的错误和重复工作，是 Xcode 推荐的最佳实践方法。</strong></p>
 </details>
 
 **问题 2:**
@@ -4387,7 +4714,9 @@ iOS实现时需要注意的安全要点：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Xcode中，可以通过创建不同的Build Configuration（例如Debug、Release、Staging）来针对不同环境设置不同的编译参数和资源。每个Build Configuration可以配置不同的编译选项，如优化等级、预处理宏等。通过Scheme，可以选择指定的Build Configuration进行构建，Scheme中可以设置使用哪个Build Configuration来运行、测试或归档。这样，在开发或测试不同环境时，可以切换Scheme以使用对应的配置。
+  <p><strong>
+
+正确答案: 在Xcode中，可以通过创建不同的Build Configuration（例如Debug、Release、Staging）来针对不同环境设置不同的编译参数和资源。每个Build Configuration可以配置不同的编译选项，如优化等级、预处理宏等。通过Scheme，可以选择指定的Build Configuration进行构建，Scheme中可以设置使用哪个Build Configuration来运行、测试或归档。这样，在开发或测试不同环境时，可以切换Scheme以使用对应的配置。
 
 在持续集成（CI）环境中，通常通过命令行工具xcodebuild进行构建。为了确保使用正确的Build Configuration，需要在构建脚本中明确指定-scheme和-configuration参数，例如：
 
@@ -4418,7 +4747,9 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 使用fastlane的`pilot`工具来上传构建产物和管理TestFlight测试。`pilot`是Fastlane中专门用于自动上传构建产物到App Store Connect，并管理TestFlight测试的工具，能够自动化发布流程中的关键环节，区别于其他工具如`sigh`管理证书、`gym`负责打包、`scan`执行测试。</strong></p>
+  <p><strong>
+
+正确答案: C. 使用fastlane的`pilot`工具来上传构建产物和管理TestFlight测试。`pilot`是Fastlane中专门用于自动上传构建产物到App Store Connect，并管理TestFlight测试的工具，能够自动化发布流程中的关键环节，区别于其他工具如`sigh`管理证书、`gym`负责打包、`scan`执行测试。</strong></p>
 </details>
 
 **问题 2:**
@@ -4427,7 +4758,9 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能导致构建时间过长和构建失败的原因包括：
+  <p><strong>
+
+正确答案: 可能导致构建时间过长和构建失败的原因包括：
 1. 构建脚本中存在冗余或重复的任务，导致构建步骤繁琐。
 2. 依赖管理不合理，如频繁下载依赖或依赖版本冲突。
 3. 测试用例数量庞大且未区分优先级，导致测试阶段耗时过长。
@@ -4462,7 +4795,9 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在每次代码提交后触发自动化测试，确保代码质量及时反馈。持续集成的核心理念是频繁集成并快速反馈，自动化测试应在每次代码提交后自动触发，以及时发现和修复缺陷，提升代码质量和开发效率。选项A和C是手动且不及时的做法，无法发挥CI的优势；选项D依赖本地环境，缺乏统一和自动化，容易导致测试不一致。</strong></p>
+  <p><strong>
+
+正确答案: B. 在每次代码提交后触发自动化测试，确保代码质量及时反馈。持续集成的核心理念是频繁集成并快速反馈，自动化测试应在每次代码提交后自动触发，以及时发现和修复缺陷，提升代码质量和开发效率。选项A和C是手动且不及时的做法，无法发挥CI的优势；选项D依赖本地环境，缺乏统一和自动化，容易导致测试不一致。</strong></p>
 </details>
 
 **问题 2:**
@@ -4475,7 +4810,9 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 设计CI流程时，我会选择一个支持iOS构建的CI平台（如GitHub Actions, Jenkins, GitLab CI, Bitrise等），配置自动触发机制（如代码push或PR创建时自动触发）。流程中包含以下关键步骤：
+  <p><strong>
+
+正确答案: 1. 设计CI流程时，我会选择一个支持iOS构建的CI平台（如GitHub Actions, Jenkins, GitLab CI, Bitrise等），配置自动触发机制（如代码push或PR创建时自动触发）。流程中包含以下关键步骤：
    - 拉取最新代码
    - 安装依赖（CocoaPods/Carthage/Swift Package Manager）
    - 编译项目
@@ -4517,7 +4854,9 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在Xcode中构建应用，上传到App Store Connect，填写应用信息，提交审核。这个选项正确描述了App Store发布流程的关键步骤：先在Xcode中构建并归档应用，然后上传到App Store Connect，填写相应的应用元数据和截图，最后提交给苹果进行审核。选项B错误，App Store Connect不接受源代码上传；选项C混淆了TestFlight和正式发布流程；选项D忽略了App Store的审核机制。</strong></p>
+  <p><strong>
+
+正确答案: A. 在Xcode中构建应用，上传到App Store Connect，填写应用信息，提交审核。这个选项正确描述了App Store发布流程的关键步骤：先在Xcode中构建并归档应用，然后上传到App Store Connect，填写相应的应用元数据和截图，最后提交给苹果进行审核。选项B错误，App Store Connect不接受源代码上传；选项C混淆了TestFlight和正式发布流程；选项D忽略了App Store的审核机制。</strong></p>
 </details>
 
 **问题 2:**
@@ -4526,7 +4865,9 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 关键步骤包括：
+  <p><strong>
+
+正确答案: 关键步骤包括：
 1. 准备应用：确保应用功能完整且通过测试，设置好版本号和构建号。
 2. 配置App Store Connect：创建应用记录，填写应用信息（描述、截图、关键词等）。
 3. 代码签名和打包：使用合适的证书和描述文件进行代码签名，生成IPA包。
@@ -4561,7 +4902,9 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用Git Flow策略，开发新功能在feature分支，发布版本在release分支，修复bug在hotfix分支。该策略通过明确的分支角色和流程，支持并行开发、持续集成和稳定的版本发布，适合iOS客户端多版本管理和快速迭代。选项A忽略了分支管理带来的风险，选项C缺乏分支隔离导致风险大，选项D无法集中管理发布版本。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用Git Flow策略，开发新功能在feature分支，发布版本在release分支，修复bug在hotfix分支。该策略通过明确的分支角色和流程，支持并行开发、持续集成和稳定的版本发布，适合iOS客户端多版本管理和快速迭代。选项A忽略了分支管理带来的风险，选项C缺乏分支隔离导致风险大，选项D无法集中管理发布版本。</strong></p>
 </details>
 
 **问题 2:**
@@ -4570,7 +4913,9 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在大型iOS客户端开发项目中，合理的分支策略对于保证代码质量和发布效率至关重要。常见的分支策略可以参考Git Flow模型，具体设计如下：
+  <p><strong>
+
+正确答案: 在大型iOS客户端开发项目中，合理的分支策略对于保证代码质量和发布效率至关重要。常见的分支策略可以参考Git Flow模型，具体设计如下：
 
 1. **主分支（main/master）**：始终保持稳定，用于发布生产环境的代码。
 
@@ -4606,7 +4951,9 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 集成自动化性能测试工具（如Xcode Instruments）于持续集成管道中，自动捕获关键性能指标并生成报告。 解释：在持续集成和发布流程中，自动化地捕获和分析性能指标是发布性能监控的核心，能够及时发现性能回退和瓶颈，确保应用质量。选项A忽视了自动化的优势，选项C过于片面，选项D则忽略了集成性能测试的必要性。</strong></p>
+  <p><strong>
+
+正确答案: B. 集成自动化性能测试工具（如Xcode Instruments）于持续集成管道中，自动捕获关键性能指标并生成报告。 解释：在持续集成和发布流程中，自动化地捕获和分析性能指标是发布性能监控的核心，能够及时发现性能回退和瓶颈，确保应用质量。选项A忽视了自动化的优势，选项C过于片面，选项D则忽略了集成性能测试的必要性。</strong></p>
 </details>
 
 **问题 2:**
@@ -4615,7 +4962,9 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在iOS应用的持续集成与发布流程中，设计发布性能监控的关键是确保新版本不会引入性能回退，保障用户体验。以“用户首次启动时间异常增加”为例，可以从以下几个方面进行监控和分析：
+  <p><strong>
+
+正确答案: 在iOS应用的持续集成与发布流程中，设计发布性能监控的关键是确保新版本不会引入性能回退，保障用户体验。以“用户首次启动时间异常增加”为例，可以从以下几个方面进行监控和分析：
 
 1. 监控指标：
    - 应用冷启动时间（从点击图标到主界面可交互的时间）
@@ -4660,7 +5009,9 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在发布时逐步增加用户比例，同时监控关键指标，若发现异常则立即停止发布并回退到上一版本。 解释：灰度发布的核心在于分阶段小范围推送新版本，通过监控关键指标及时发现问题，支持快速停止发布和自动回滚，保证整体用户体验和稳定性。选项B忽视了灰度发布的分阶段原则，C缺少数据监控，D依赖用户手动操作，均不符合高效回滚策略。</strong></p>
+  <p><strong>
+
+正确答案: A. 在发布时逐步增加用户比例，同时监控关键指标，若发现异常则立即停止发布并回退到上一版本。 解释：灰度发布的核心在于分阶段小范围推送新版本，通过监控关键指标及时发现问题，支持快速停止发布和自动回滚，保证整体用户体验和稳定性。选项B忽视了灰度发布的分阶段原则，C缺少数据监控，D依赖用户手动操作，均不符合高效回滚策略。</strong></p>
 </details>
 
 **问题 2:**
@@ -4674,7 +5025,9 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 灰度发布策略设计与实现：
+  <p><strong>
+
+正确答案: 1. 灰度发布策略设计与实现：
 - 用户分组：通过用户ID、设备信息或地理位置等维度，将用户划分为多个分组。
 - 版本控制：服务端配置策略控制不同分组用户获取不同的版本特性，如通过远程配置（Remote Config）或功能开关（Feature Flags）实现功能的开启/关闭。
 - 渐进曝光：初期只向小比例用户推送新版本或新功能，监控关键指标和错误日志，逐步扩大覆盖范围。
@@ -4710,7 +5063,9 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在Xcode项目中为每个渠道创建不同的Target，并通过Target的配置文件分别管理渠道资源和参数。 解析：多渠道发布管理中，为了清晰且高效地管理不同渠道的配置和资源，通常采用为每个渠道创建独立的Target方法。这样可以利用Xcode的Target机制，针对不同渠道设置专属的配置文件、资源和编译参数，确保发布的应用版本精准符合各渠道要求。其他选项存在运行时判断资源或共享Target带来的管理混乱和发布风险，不利于持续集成与稳定发布。</strong></p>
+  <p><strong>
+
+正确答案: A. 在Xcode项目中为每个渠道创建不同的Target，并通过Target的配置文件分别管理渠道资源和参数。 解析：多渠道发布管理中，为了清晰且高效地管理不同渠道的配置和资源，通常采用为每个渠道创建独立的Target方法。这样可以利用Xcode的Target机制，针对不同渠道设置专属的配置文件、资源和编译参数，确保发布的应用版本精准符合各渠道要求。其他选项存在运行时判断资源或共享Target带来的管理混乱和发布风险，不利于持续集成与稳定发布。</strong></p>
 </details>
 
 **问题 2:**
@@ -4719,7 +5074,9 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计多渠道发布管理流程时，可以从以下几个方面入手：
+  <p><strong>
+
+正确答案: 在设计多渠道发布管理流程时，可以从以下几个方面入手：
 
 1. 配置管理
 - 使用Xcode的多目标（Targets）或配置文件（xcconfig）来管理不同渠道的证书、描述文件和环境变量，确保每个渠道有独立且正确的签名和配置。
@@ -4762,7 +5119,9 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 采用Git Flow工作流，结合自动化构建和测试，确保开发、测试和发布阶段有明确分支策略和持续验证。 解释：Git Flow是一种成熟的分支管理策略，适合企业级多团队协作，通过明确的分支职责（如feature、develop、release、hotfix分支）和自动化测试，能有效保证代码质量和版本稳定性，支持高效发布。选项A虽然隔离团队，但手动合并易出错且效率低；选项C缺乏分支管理，风险高；选项D限制开发团队灵活性，且发布集中管理可能成为瓶颈。</strong></p>
+  <p><strong>
+
+正确答案: B. 采用Git Flow工作流，结合自动化构建和测试，确保开发、测试和发布阶段有明确分支策略和持续验证。 解释：Git Flow是一种成熟的分支管理策略，适合企业级多团队协作，通过明确的分支职责（如feature、develop、release、hotfix分支）和自动化测试，能有效保证代码质量和版本稳定性，支持高效发布。选项A虽然隔离团队，但手动合并易出错且效率低；选项C缺乏分支管理，风险高；选项D限制开发团队灵活性，且发布集中管理可能成为瓶颈。</strong></p>
 </details>
 
 **问题 2:**
@@ -4771,7 +5130,9 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 版本管理：采用语义化版本控制（SemVer），结合Git分支策略（如GitFlow），区分开发分支、预发布分支和生产分支。每个环境对应特定分支，确保代码变更有序推进。
+  <p><strong>
+
+正确答案: 1. 版本管理：采用语义化版本控制（SemVer），结合Git分支策略（如GitFlow），区分开发分支、预发布分支和生产分支。每个环境对应特定分支，确保代码变更有序推进。
 
 2. 自动化构建：搭建CI/CD流水线（如Jenkins、GitHub Actions、GitLab CI），自动完成代码拉取、依赖安装、单元测试、UI测试和打包。通过Fastlane集成自动化操作，提升发布效率。
 
@@ -4800,120 +5161,235 @@ xcodebuild -scheme MyAppScheme -configuration Staging
 ## 旧的问题列表
 
 
-- [1. 为什么Swift语言被命名为Swift？](#1-为什么swift语言被命名为swift)
-- [2. 应该学习Swift还是Objective-C？](#2-应该学习swift还是objective-c)
-- [3. Swift容易掌握吗？](#3-swift容易掌握吗)
-- [4. Swift的运行速度表现如何？](#4-swift的运行速度表现如何)
-- [5. 苹果为何要创建Swift新语言？](#5-苹果为何要创建swift新语言)
-- [6. 能用Swift开发并上架App Store吗？](#6-能用swift开发并上架app-store吗)
-- [7. 为何需要从Objective-C转向Swift？](#7-为何需要从objective-c转向swift)
-- [8. Swift的稳定性如何？](#8-swift的稳定性如何)
-- [9. Swift与哪些语言相似？](#9-swift与哪些语言相似)
-- [10. Swift与Objective-C如何实现互操作？](#10-swift与objective-c如何实现互操作)
-- [11. dynamic关键字有什么作用？](#11-dynamic关键字有什么作用)
-- [12. 为何dynamic只能修饰类成员？](#12-为何dynamic只能修饰类成员)
-- [13. 何时应该使用动态派发（Dynamic Dispatch）？](#13-何时应该使用动态派发dynamic-dispatch)
-- [14. 分析以下 Swift 数组代码的运行结果](#14-分析以下-swift-数组代码的运行结果)
-- [15. 找出以下类型转换代码的错误并修正](#15-找出以下类型转换代码的错误并修正)
-- [16. 找出以下 NSUserDefaults 代码的潜在崩溃风险](#16-找出以下-nsuserdefaults-代码的潜在崩溃风险)
-- [17. Swift 中 countElements 函数处理字符串的时间复杂度](#17-swift-中-countelements-函数处理字符串的时间复杂度)
-- [18. 区分 Swift 枚举的原始值（Raw Values）与关联值（Associated Values）](#18-区分-swift-枚举的原始值raw-values与关联值associated-values)
-- [19. 解释 Swift 中值类型能被添加到 AnyObject 数组的现象](#19-解释-swift-中值类型能被添加到-anyobject-数组的现象)
-- [20. 观察以下代码，指出其中的内存问题及其影响，并提出解决方案](#20-观察以下代码指出其中的内存问题及其影响并提出解决方案)
-- [21. 下列代码片段会导致编译错误，解释原因及修复方法](#21-下列代码片段会导致编译错误解释原因及修复方法)
-- [22. 给定以下代码，分析变量`x`的类型和值](#22-给定以下代码分析变量x的类型和值)
-- [23. 分析以下代码结果类型及其推算过程](#23-分析以下代码结果类型及其推算过程)
-- [24. 结构体与类的值传递差异分析](#24-结构体与类的值传递差异分析)
-- [25. `var`与`let`声明对引用类型的影响](#25-var与let声明对引用类型的影响)
-- [26. 请尽可能简化以下用于数组排序的闭包表达式](#26-请尽可能简化以下用于数组排序的闭包表达式)
-- [27. 修改人员地址后出现意外结果的原因分析及解决方案](#27-修改人员地址后出现意外结果的原因分析及解决方案)
-- [28. Optional 类型的核心作用及其解决的问题](#28-optional-类型的核心作用及其解决的问题)
-- [29. `UITableViewCell` 构造方法中的 `reuseIdentifier` 作用剖析](#29-uitableviewcell-构造方法中的-reuseidentifier-作用剖析)
-- [30. UIView 布局系统的多种实现方式对比](#30-uiview-布局系统的多种实现方式对比)
-- [31. atomic 与 nonatomic 属性的实现差异与适用场景](#31-atomic-与-nonatomic-属性的实现差异与适用场景)
-- [32. 全局变量初始化和 +initialize 方法的执行时序分析](#32-全局变量初始化和-initialize-方法的执行时序分析)
-- [33. 循环引用的典型场景与破解方法](#33-循环引用的典型场景与破解方法)
-- [34. 后台线程更新UI的正确实现方式](#34-后台线程更新ui的正确实现方式)
-- [35. Bundle ID 与 App ID 的关联与差异](#35-bundle-id-与-app-id-的关联与差异)
-- [36. Objective-C 内存管理中的强弱引用抉择](#36-objective-c-内存管理中的强弱引用抉择)
-- [37. NSManagedObjectContext 的多线程管理策略](#37-nsmanagedobjectcontext-的多线程管理策略)
-- [38. iOS并发编程的三层抽象比较](#38-ios并发编程的三层抽象比较)
-- [39. Objective-C 中比较 NSString 的运算符陷阱](#39-objective-c-中比较-nsstring-的运算符陷阱)
-- [40. iOS 应用状态转换图谱](#40-ios-应用状态转换图谱)
-- [41. 应用启动方法的区别与应用场景](#41-应用启动方法的区别与应用场景)
-- [42. JSONSerialization 的高级处理选项](#42-jsonserialization-的高级处理选项)
-- [43. Swift 值类型设计哲学与实践优势](#43-swift-值类型设计哲学与实践优势)
-- [44. Swift 中的 Optional（可选类型）是什么？其设计目的是什么？](#44-swift-中的-optional可选类型是什么其设计目的是什么)
-- [45. Swift 的 `guard` 语句适用场景？与 `if let` 的主要区别是什么？](#45-swift-的-guard-语句适用场景与-if-let-的主要区别是什么)
-- [46. Swift 的 `weak` 与 `unowned` 在内存管理中如何选择？请说明应用场景](#46-swift-的-weak-与-unowned-在内存管理中如何选择请说明应用场景)
-- [47. Objective-C 的快速枚举(Fast Enumeration)实现机制？相较传统遍历的优势](#47-objective-c-的快速枚举fast-enumeration实现机制相较传统遍历的优势)
-- [48. Objective-C 中 Category（分类）与 Extension（类扩展）的区别及限制](#48-objective-c-中-category分类与-extension类扩展的区别及限制)
-- [49. 在 Objective-C 属性声明中，`copy` 与 `strong`（`retain`）修饰符的选择依据](#49-在-objective-c-属性声明中copy-与-strongretain修饰符的选择依据)
-- [50. 比较NSOperation、GCD与NSThread的区别](#50-比较nsoperationgcd与nsthread的区别)
-- [51. 多线程编程中常见安全隐患及解决方案](#51-多线程编程中常见安全隐患及解决方案)
-- [52. 三种多线程技术（NSThread/NSOperation/GCD）的使用场景对比](#52-三种多线程技术nsthreadnsoperationgcd的使用场景对比)
-- [53. HTTP与HTTPS有什么区别？HTTP请求方法有哪些？](#53-http与https有什么区别http请求方法有哪些)
-- [54. GET与POST请求的核心区别是什么？](#54-get与post请求的核心区别是什么)
-- [55. 描述HTTP协议工作流程](#55-描述http协议工作流程)
-- [56. Charles如何抓取HTTPS包？基本原理是什么？](#56-charles如何抓取https包基本原理是什么)
-- [57. TCP三次握手过程及各次握手作用](#57-tcp三次握手过程及各次握手作用)
-- [58. TCP四次挥手过程及TIME_WAIT状态必要性](#58-tcp四次挥手过程及time_wait状态必要性)
-- [59. 解释TCP、UDP、Socket关系与差异](#59-解释tcpudpsocket关系与差异)
-- [60. 网络深度优化有哪些关键点？](#60-网络深度优化有哪些关键点)
-- [61. 请解释RunLoop（运行循环）、线程和自动释放池（Autorelease Pool）之间的关系，并说明RunLoop的主要作用是什么？](#61-请解释runloop运行循环线程和自动释放池autorelease-pool之间的关系并说明runloop的主要作用是什么)
-- [62. 请解释HTTPS的工作原理，说明对称加密与非对称加密的区别及应用场景](#62-请解释https的工作原理说明对称加密与非对称加密的区别及应用场景)
-- [63. NSURLSession与NSURLConnection的主要区别是什么？请结合场景说明各自的优劣势](#63-nsurlsession与nsurlconnection的主要区别是什么请结合场景说明各自的优劣势)
-- [64. 请详细解释dealloc方法的底层实现过程，包括与其相关的内存管理机制](#64-请详细解释dealloc方法的底层实现过程包括与其相关的内存管理机制)
-- [65. 请解释HTTP/1.1与HTTP/2的核心差异，并说明这些改进对移动端开发的影响](#65-请解释http1-1与http2的核心差异并说明这些改进对移动端开发的影响)
-- [66. 互斥锁（Mutex Lock）和自旋锁（Spin Lock）的本质区别](#66-互斥锁mutex-lock和自旋锁spin-lock的本质区别)
-- [67. NSObject 对象的内存布局流程](#67-nsobject-对象的内存布局流程)
-- [68. KVO 的底层实现原理](#68-kvo-的底层实现原理)
-- [69. 常用算法的实现与场景分析](#69-常用算法的实现与场景分析)
-- [70. iOS 对象的继承体系](#70-ios-对象的继承体系)
-- [71. 通知、代理、KVO 的优劣对比与适用场景](#71-通知代理kvo-的优劣对比与适用场景)
-- [72. Block的原理是什么？它在内存管理上有哪些特点？](#72-block的原理是什么它在内存管理上有哪些特点)
-- [73. Block内部如何修改外部变量的值？内存地址如何变化？](#73-block内部如何修改外部变量的值内存地址如何变化)
-- [74. 在ARC与MRC环境下，Block的内存管理有何差异？](#74-在arc与mrc环境下block的内存管理有何差异)
-- [75. __block与__weak修饰符的区别是什么？](#75-__block与__weak修饰符的区别是什么)
-- [76. Swift中的逃逸闭包与非逃逸闭包有什么区别？对内存管理有什么影响？](#76-swift中的逃逸闭包与非逃逸闭包有什么区别对内存管理有什么影响)
-- [77. 为什么NSString属性常用copy修饰？使用strong可能带来什么问题？](#77-为什么nsstring属性常用copy修饰使用strong可能带来什么问题)
-- [78. 关于iOS中copy修饰符的规则，具体有哪些需要注意的要点？](#78-关于ios中copy修饰符的规则具体有哪些需要注意的要点)
-- [79. iOS内存管理的核心原则是什么？哪些场景必须手动释放对象？如何结合property特性避免泄漏？](#79-ios内存管理的核心原则是什么哪些场景必须手动释放对象如何结合property特性避免泄漏)
-- [80. iOS中创建线程的主要方式有哪些？如何确保代码在主线程执行？列举延时执行的常用方法](#80-ios中创建线程的主要方式有哪些如何确保代码在主线程执行列举延时执行的常用方法)
-- [81. 分析UITableView出现卡顿的根源原因及优化策略？](#81-分析uitableview出现卡顿的根源原因及优化策略)
-- [82. iOS离屏渲染的产生原理与栅格化的实际作用？](#82-ios离屏渲染的产生原理与栅格化的实际作用)
-- [83. 如何有效监控UITableView滚动时的卡顿现象？](#83-如何有效监控uitableview滚动时的卡顿现象)
-- [84. UIView 和 CALayer 的区别与联系](#84-uiview-和-calayer-的区别与联系)
-- [85. iOS数据持久化的主要方式与安全考量](#85-ios数据持久化的主要方式与安全考量)
-- [86. instance/class/meta-class三者的内存结构差异](#86-instanceclassmeta-class三者的内存结构差异)
-- [87. App瘦身与启动优化的核心策略](#87-app瘦身与启动优化的核心策略)
-- [88. iOS系统架构层级划分](#88-ios系统架构层级划分)
-- [89. iOS控件主要事件响应类型](#89-ios控件主要事件响应类型)
-- [90. 请解释分类(category)、继承(inheritance)和扩展(extension)的区别，并回答以下子问题：Objective-C是否支持多重继承？如何实现多个接口？重写类时使用继承好还是分类好？为什么？](#90-请解释分类category继承inheritance和扩展extension的区别并回答以下子问题objective-c是否支持多重继承如何实现多个接口重写类时使用继承好还是分类好为什么)
-- [91. 解释frame和bounds的区别，修改bounds的size是否会影响frame？](#91-解释frame和bounds的区别修改bounds的size是否会影响frame)
-- [92. id声明的对象有什么特性？](#92-id声明的对象有什么特性)
-- [93. atomic与nonatomic属性的本质区别是什么？](#93-atomic与nonatomic属性的本质区别是什么)
-- [94. 线程与进程的主要区别有哪些？](#94-线程与进程的主要区别有哪些)
-- [95. 原生与H5交互的常用方案有哪些？](#95-原生与h5交互的常用方案有哪些)
-- [96. Swift中struct和class应如何选择？](#96-swift中struct和class应如何选择)
-- [97. NSCache与NSDictionary的核心区别是什么？YYModel为何选用NSCache？](#97-nscache与nsdictionary的核心区别是什么yymodel为何选用nscache)
-- [98. HashMap的实现原理及其与链表的区别？](#98-hashmap的实现原理及其与链表的区别)
-- [99. dispatch_once 内部执行流程是怎样的？存在哪些需要注意的问题？](#99-dispatch_once-内部执行流程是怎样的存在哪些需要注意的问题)
-- [100. 请解释 UIView、UIWindow、UIViewController、UINavigationController 的层级关系，并设计一个始终置顶的全局悬浮窗？](#100-请解释-uiviewuiwindowuiviewcontrolleruinavigationcontroller-的层级关系并设计一个始终置顶的全局悬浮窗)
-- [101. iOS 卡顿监测方案中如何捕获线程堆栈信息？其核心原理是什么？](#101-ios-卡顿监测方案中如何捕获线程堆栈信息其核心原理是什么)
-- [102. Quartz 2D 绘图系统的三大核心概念及其作用？](#102-quartz-2d-绘图系统的三大核心概念及其作用)
-- [103. iOS 系统提供的音频播放方案有哪些？各自适用场景是？](#103-ios-系统提供的音频播放方案有哪些各自适用场景是)
-- [104. 如何追踪并解决 iOS App 的线上崩溃问题？](#104-如何追踪并解决-ios-app-的线上崩溃问题)
-- [105. iOS 事件响应链的工作机制是怎样的？点击屏幕时的传递路径如何？](#105-ios-事件响应链的工作机制是怎样的点击屏幕时的传递路径如何)
-- [106. 如何在 iOS 应用中实现退入后台后接收到支付通知时主动播放到账金额？](#106-如何在-ios-应用中实现退入后台后接收到支付通知时主动播放到账金额)
-- [107. 分析 static、const 和 sizeof 三个关键字的作用与差异](#107-分析-staticconst-和-sizeof-三个关键字的作用与差异)
-- [108. 对比 iOS 开发中的 MVC、MVP、MVVM 架构模式](#108-对比-ios-开发中的-mvcmvpmvvm-架构模式)
-- [109. 在 64位/32位架构下，long 和 char* 类型的字节占用差异](#109-在-64位32位架构下long-和-char-类型的字节占用差异)
-- [110. NSTimer的循环引用问题是如何产生的？请结合代码示例说明常见内存泄漏场景](#110-nstimer的循环引用问题是如何产生的请结合代码示例说明常见内存泄漏场景)
-- [111. 使用__weak修饰self能否解决NSTimer的循环引用？为什么？](#111-使用__weak修饰self能否解决nstimer的循环引用为什么)
-- [112. 如何通过消息转发机制实现NSTimer循环引用的解决方案？](#112-如何通过消息转发机制实现nstimer循环引用的解决方案)
-- [113. iOS中常见的应用导航模式有哪些？请举例说明具体实现方式](#113-ios中常见的应用导航模式有哪些请举例说明具体实现方式)
-- [114. 堆（Heap）与栈（Stack）在内存管理上有哪些核心区别？](#114-堆heap与栈stack在内存管理上有哪些核心区别)
+- [面试题集: 客户端开发-iOS](#面试题集-客户端开发-ios)
+  - [技能概览](#技能概览)
+    - [Swift语言](#swift语言)
+    - [UIKit框架](#uikit框架)
+    - [SwiftUI框架](#swiftui框架)
+    - [网络通信](#网络通信)
+    - [数据存储](#数据存储)
+    - [多线程与并发](#多线程与并发)
+    - [测试与调试](#测试与调试)
+    - [安全与权限](#安全与权限)
+    - [架构设计与模式](#架构设计与模式)
+    - [持续集成与发布](#持续集成与发布)
+  - [详细题目列表](#详细题目列表)
+    - [Swift语言](#swift语言-1)
+      - [Swift语法基础](#swift语法基础)
+      - [面向对象编程](#面向对象编程)
+      - [协议与扩展](#协议与扩展)
+      - [错误处理机制](#错误处理机制)
+      - [泛型编程](#泛型编程)
+      - [内存管理与ARC](#内存管理与arc)
+      - [Swift异步编程（async/await）](#swift异步编程asyncawait)
+      - [Swift性能优化](#swift性能优化)
+      - [Swift源码阅读与定制](#swift源码阅读与定制)
+      - [Swift编译器原理与优化](#swift编译器原理与优化)
+    - [UIKit框架](#uikit框架-1)
+      - [视图与视图控制器基础](#视图与视图控制器基础)
+      - [自动布局（Auto Layout）](#自动布局auto-layout)
+      - [事件响应链](#事件响应链)
+      - [动画与过渡](#动画与过渡)
+      - [自定义控件开发](#自定义控件开发)
+      - [多屏适配与分辨率处理](#多屏适配与分辨率处理)
+      - [性能调优与内存管理](#性能调优与内存管理)
+      - [复杂界面架构设计](#复杂界面架构设计)
+      - [UIKit源码分析与定制](#uikit源码分析与定制)
+      - [UIKit框架架构设计](#uikit框架架构设计)
+    - [SwiftUI框架](#swiftui框架-1)
+      - [SwiftUI基础视图与布局](#swiftui基础视图与布局)
+      - [数据绑定与状态管理](#数据绑定与状态管理)
+      - [视图生命周期管理](#视图生命周期管理)
+      - [动画与手势处理](#动画与手势处理)
+      - [自定义组件开发](#自定义组件开发)
+      - [与UIKit集成](#与uikit集成)
+      - [性能优化与调试](#性能优化与调试)
+      - [复杂界面设计与架构](#复杂界面设计与架构)
+      - [SwiftUI源码分析](#swiftui源码分析)
+      - [SwiftUI框架设计与扩展](#swiftui框架设计与扩展)
+    - [网络通信](#网络通信-1)
+      - [URLSession基础使用](#urlsession基础使用)
+      - [HTTP协议理解](#http协议理解)
+      - [JSON解析与编码](#json解析与编码)
+      - [网络请求优化与缓存](#网络请求优化与缓存)
+      - [WebSocket与实时通信](#websocket与实时通信)
+      - [网络安全与证书管理](#网络安全与证书管理)
+      - [网络层架构设计](#网络层架构设计)
+      - [自定义网络协议实现](#自定义网络协议实现)
+      - [高性能网络通信优化](#高性能网络通信优化)
+    - [数据存储](#数据存储-1)
+      - [UserDefaults使用](#userdefaults使用)
+      - [文件系统操作](#文件系统操作)
+      - [Core Data基础](#core-data基础)
+      - [SQLite数据库操作](#sqlite数据库操作)
+      - [数据加密与安全存储](#数据加密与安全存储)
+      - [多线程数据访问与同步](#多线程数据访问与同步)
+      - [复杂数据模型设计](#复杂数据模型设计)
+      - [数据存储性能优化](#数据存储性能优化)
+      - [自定义存储引擎设计](#自定义存储引擎设计)
+    - [多线程与并发](#多线程与并发-1)
+      - [GCD基础](#gcd基础)
+      - [NSOperation与OperationQueue](#nsoperation与operationqueue)
+      - [线程安全与同步机制](#线程安全与同步机制)
+      - [异步编程模式](#异步编程模式)
+      - [并发性能调优](#并发性能调优)
+      - [死锁检测与排查](#死锁检测与排查)
+      - [高并发架构设计](#高并发架构设计)
+      - [底层线程调度与优化](#底层线程调度与优化)
+    - [优化策略及说明：](#优化策略及说明)
+    - [测试与调试](#测试与调试-1)
+      - [Xcode调试工具使用](#xcode调试工具使用)
+      - [单元测试基础](#单元测试基础)
+      - [UI测试基础](#ui测试基础)
+      - [性能分析工具（Instruments）](#性能分析工具instruments)
+      - [自动化测试框架](#自动化测试框架)
+      - [测试覆盖率与质量保障](#测试覆盖率与质量保障)
+      - [复杂场景测试设计](#复杂场景测试设计)
+      - [调试复杂问题与崩溃分析](#调试复杂问题与崩溃分析)
+      - [测试框架设计与优化](#测试框架设计与优化)
+    - [安全与权限](#安全与权限-1)
+      - [iOS权限模型理解](#ios权限模型理解)
+      - [数据加密基础](#数据加密基础)
+      - [Keychain使用](#keychain使用)
+      - [应用沙盒机制](#应用沙盒机制)
+      - [安全漏洞与防护](#安全漏洞与防护)
+      - [安全通信实现](#安全通信实现)
+      - [安全架构设计](#安全架构设计)
+      - [安全策略与合规管理](#安全策略与合规管理)
+      - [安全技术创新与攻防](#安全技术创新与攻防)
+    - [架构设计与模式](#架构设计与模式-1)
+      - [常用设计模式（MVC、MVVM等）](#常用设计模式mvcmvvm等)
+      - [模块化设计](#模块化设计)
+      - [依赖注入](#依赖注入)
+      - [响应式编程](#响应式编程)
+      - [架构重构与优化](#架构重构与优化)
+      - [跨平台架构设计](#跨平台架构设计)
+      - [企业级架构规范制定](#企业级架构规范制定)
+    - [持续集成与发布](#持续集成与发布-1)
+      - [Xcode构建与配置](#xcode构建与配置)
+      - [自动化构建流程](#自动化构建流程)
+      - [测试集成与持续集成](#测试集成与持续集成)
+      - [App Store发布流程](#app-store发布流程)
+      - [版本管理与分支策略](#版本管理与分支策略)
+      - [发布性能监控](#发布性能监控)
+      - [灰度发布与回滚策略](#灰度发布与回滚策略)
+      - [多渠道发布管理](#多渠道发布管理)
+      - [企业级发布体系设计](#企业级发布体系设计)
+  - [旧的问题列表](#旧的问题列表)
+    - [1. 为什么Swift语言被命名为Swift？](#1-为什么swift语言被命名为swift)
+    - [2. 应该学习Swift还是Objective-C？](#2-应该学习swift还是objective-c)
+    - [3. Swift容易掌握吗？](#3-swift容易掌握吗)
+    - [4. Swift的运行速度表现如何？](#4-swift的运行速度表现如何)
+    - [5. 苹果为何要创建Swift新语言？](#5-苹果为何要创建swift新语言)
+    - [6. 能用Swift开发并上架App Store吗？](#6-能用swift开发并上架app-store吗)
+    - [7. 为何需要从Objective-C转向Swift？](#7-为何需要从objective-c转向swift)
+    - [8. Swift的稳定性如何？](#8-swift的稳定性如何)
+    - [9. Swift与哪些语言相似？](#9-swift与哪些语言相似)
+    - [10. Swift与Objective-C如何实现互操作？](#10-swift与objective-c如何实现互操作)
+    - [11. dynamic关键字有什么作用？](#11-dynamic关键字有什么作用)
+    - [12. 为何dynamic只能修饰类成员？](#12-为何dynamic只能修饰类成员)
+    - [13. 何时应该使用动态派发（Dynamic Dispatch）？](#13-何时应该使用动态派发dynamic-dispatch)
+    - [14. 分析以下 Swift 数组代码的运行结果](#14-分析以下-swift-数组代码的运行结果)
+    - [15. 找出以下类型转换代码的错误并修正](#15-找出以下类型转换代码的错误并修正)
+    - [16. 找出以下 NSUserDefaults 代码的潜在崩溃风险](#16-找出以下-nsuserdefaults-代码的潜在崩溃风险)
+    - [17. Swift 中 countElements 函数处理字符串的时间复杂度](#17-swift-中-countelements-函数处理字符串的时间复杂度)
+    - [18. 区分 Swift 枚举的原始值（Raw Values）与关联值（Associated Values）](#18-区分-swift-枚举的原始值raw-values与关联值associated-values)
+    - [19. 解释 Swift 中值类型能被添加到 AnyObject 数组的现象](#19-解释-swift-中值类型能被添加到-anyobject-数组的现象)
+    - [20. 观察以下代码，指出其中的内存问题及其影响，并提出解决方案](#20-观察以下代码指出其中的内存问题及其影响并提出解决方案)
+    - [21. 下列代码片段会导致编译错误，解释原因及修复方法](#21-下列代码片段会导致编译错误解释原因及修复方法)
+    - [22. 给定以下代码，分析变量`x`的类型和值](#22-给定以下代码分析变量x的类型和值)
+    - [23. 分析以下代码结果类型及其推算过程](#23-分析以下代码结果类型及其推算过程)
+    - [24. 结构体与类的值传递差异分析](#24-结构体与类的值传递差异分析)
+    - [25. `var`与`let`声明对引用类型的影响](#25-var与let声明对引用类型的影响)
+    - [26. 请尽可能简化以下用于数组排序的闭包表达式](#26-请尽可能简化以下用于数组排序的闭包表达式)
+    - [27. 修改人员地址后出现意外结果的原因分析及解决方案](#27-修改人员地址后出现意外结果的原因分析及解决方案)
+    - [28. Optional 类型的核心作用及其解决的问题](#28-optional-类型的核心作用及其解决的问题)
+    - [29. `UITableViewCell` 构造方法中的 `reuseIdentifier` 作用剖析](#29-uitableviewcell-构造方法中的-reuseidentifier-作用剖析)
+    - [30. UIView 布局系统的多种实现方式对比](#30-uiview-布局系统的多种实现方式对比)
+    - [31. atomic 与 nonatomic 属性的实现差异与适用场景](#31-atomic-与-nonatomic-属性的实现差异与适用场景)
+    - [32. 全局变量初始化和 +initialize 方法的执行时序分析](#32-全局变量初始化和-initialize-方法的执行时序分析)
+    - [33. 循环引用的典型场景与破解方法](#33-循环引用的典型场景与破解方法)
+    - [34. 后台线程更新UI的正确实现方式](#34-后台线程更新ui的正确实现方式)
+    - [35. Bundle ID 与 App ID 的关联与差异](#35-bundle-id-与-app-id-的关联与差异)
+    - [36. Objective-C 内存管理中的强弱引用抉择](#36-objective-c-内存管理中的强弱引用抉择)
+    - [37. NSManagedObjectContext 的多线程管理策略](#37-nsmanagedobjectcontext-的多线程管理策略)
+    - [38. iOS并发编程的三层抽象比较](#38-ios并发编程的三层抽象比较)
+    - [39. Objective-C 中比较 NSString 的运算符陷阱](#39-objective-c-中比较-nsstring-的运算符陷阱)
+    - [40. iOS 应用状态转换图谱](#40-ios-应用状态转换图谱)
+    - [41. 应用启动方法的区别与应用场景](#41-应用启动方法的区别与应用场景)
+    - [42. JSONSerialization 的高级处理选项](#42-jsonserialization-的高级处理选项)
+    - [43. Swift 值类型设计哲学与实践优势](#43-swift-值类型设计哲学与实践优势)
+    - [44. Swift 中的 Optional（可选类型）是什么？其设计目的是什么？](#44-swift-中的-optional可选类型是什么其设计目的是什么)
+    - [45. Swift 的 `guard` 语句适用场景？与 `if let` 的主要区别是什么？](#45-swift-的-guard-语句适用场景与-if-let-的主要区别是什么)
+    - [46. Swift 的 `weak` 与 `unowned` 在内存管理中如何选择？请说明应用场景](#46-swift-的-weak-与-unowned-在内存管理中如何选择请说明应用场景)
+    - [47. Objective-C 的快速枚举(Fast Enumeration)实现机制？相较传统遍历的优势](#47-objective-c-的快速枚举fast-enumeration实现机制相较传统遍历的优势)
+    - [48. Objective-C 中 Category（分类）与 Extension（类扩展）的区别及限制](#48-objective-c-中-category分类与-extension类扩展的区别及限制)
+    - [49. 在 Objective-C 属性声明中，`copy` 与 `strong`（`retain`）修饰符的选择依据](#49-在-objective-c-属性声明中copy-与-strongretain修饰符的选择依据)
+    - [50. 比较NSOperation、GCD与NSThread的区别](#50-比较nsoperationgcd与nsthread的区别)
+    - [51. 多线程编程中常见安全隐患及解决方案](#51-多线程编程中常见安全隐患及解决方案)
+    - [52. 三种多线程技术（NSThread/NSOperation/GCD）的使用场景对比](#52-三种多线程技术nsthreadnsoperationgcd的使用场景对比)
+    - [53. HTTP与HTTPS有什么区别？HTTP请求方法有哪些？](#53-http与https有什么区别http请求方法有哪些)
+    - [54. GET与POST请求的核心区别是什么？](#54-get与post请求的核心区别是什么)
+    - [55. 描述HTTP协议工作流程](#55-描述http协议工作流程)
+    - [56. Charles如何抓取HTTPS包？基本原理是什么？](#56-charles如何抓取https包基本原理是什么)
+    - [57. TCP三次握手过程及各次握手作用](#57-tcp三次握手过程及各次握手作用)
+    - [58. TCP四次挥手过程及TIME\_WAIT状态必要性](#58-tcp四次挥手过程及time_wait状态必要性)
+    - [59. 解释TCP、UDP、Socket关系与差异](#59-解释tcpudpsocket关系与差异)
+    - [60. 网络深度优化有哪些关键点？](#60-网络深度优化有哪些关键点)
+    - [61. 请解释RunLoop（运行循环）、线程和自动释放池（Autorelease Pool）之间的关系，并说明RunLoop的主要作用是什么？](#61-请解释runloop运行循环线程和自动释放池autorelease-pool之间的关系并说明runloop的主要作用是什么)
+    - [62. 请解释HTTPS的工作原理，说明对称加密与非对称加密的区别及应用场景](#62-请解释https的工作原理说明对称加密与非对称加密的区别及应用场景)
+    - [63. NSURLSession与NSURLConnection的主要区别是什么？请结合场景说明各自的优劣势](#63-nsurlsession与nsurlconnection的主要区别是什么请结合场景说明各自的优劣势)
+    - [64. 请详细解释dealloc方法的底层实现过程，包括与其相关的内存管理机制](#64-请详细解释dealloc方法的底层实现过程包括与其相关的内存管理机制)
+    - [65. 请解释HTTP/1.1与HTTP/2的核心差异，并说明这些改进对移动端开发的影响](#65-请解释http11与http2的核心差异并说明这些改进对移动端开发的影响)
+    - [66. 互斥锁（Mutex Lock）和自旋锁（Spin Lock）的本质区别](#66-互斥锁mutex-lock和自旋锁spin-lock的本质区别)
+    - [67. NSObject 对象的内存布局流程](#67-nsobject-对象的内存布局流程)
+    - [68. KVO 的底层实现原理](#68-kvo-的底层实现原理)
+    - [69. 常用算法的实现与场景分析](#69-常用算法的实现与场景分析)
+    - [70. iOS 对象的继承体系](#70-ios-对象的继承体系)
+    - [71. 通知、代理、KVO 的优劣对比与适用场景](#71-通知代理kvo-的优劣对比与适用场景)
+    - [72. Block的原理是什么？它在内存管理上有哪些特点？](#72-block的原理是什么它在内存管理上有哪些特点)
+    - [73. Block内部如何修改外部变量的值？内存地址如何变化？](#73-block内部如何修改外部变量的值内存地址如何变化)
+    - [74. 在ARC与MRC环境下，Block的内存管理有何差异？](#74-在arc与mrc环境下block的内存管理有何差异)
+    - [75. \_\_block与\_\_weak修饰符的区别是什么？](#75-__block与__weak修饰符的区别是什么)
+    - [76. Swift中的逃逸闭包与非逃逸闭包有什么区别？对内存管理有什么影响？](#76-swift中的逃逸闭包与非逃逸闭包有什么区别对内存管理有什么影响)
+    - [77. 为什么NSString属性常用copy修饰？使用strong可能带来什么问题？](#77-为什么nsstring属性常用copy修饰使用strong可能带来什么问题)
+    - [78. 关于iOS中copy修饰符的规则，具体有哪些需要注意的要点？](#78-关于ios中copy修饰符的规则具体有哪些需要注意的要点)
+    - [79. iOS内存管理的核心原则是什么？哪些场景必须手动释放对象？如何结合property特性避免泄漏？](#79-ios内存管理的核心原则是什么哪些场景必须手动释放对象如何结合property特性避免泄漏)
+    - [80. iOS中创建线程的主要方式有哪些？如何确保代码在主线程执行？列举延时执行的常用方法](#80-ios中创建线程的主要方式有哪些如何确保代码在主线程执行列举延时执行的常用方法)
+    - [81. 分析UITableView出现卡顿的根源原因及优化策略？](#81-分析uitableview出现卡顿的根源原因及优化策略)
+    - [82. iOS离屏渲染的产生原理与栅格化的实际作用？](#82-ios离屏渲染的产生原理与栅格化的实际作用)
+    - [83. 如何有效监控UITableView滚动时的卡顿现象？](#83-如何有效监控uitableview滚动时的卡顿现象)
+    - [84. UIView 和 CALayer 的区别与联系](#84-uiview-和-calayer-的区别与联系)
+    - [85. iOS数据持久化的主要方式与安全考量](#85-ios数据持久化的主要方式与安全考量)
+    - [86. instance/class/meta-class三者的内存结构差异](#86-instanceclassmeta-class三者的内存结构差异)
+    - [87. App瘦身与启动优化的核心策略](#87-app瘦身与启动优化的核心策略)
+    - [88. iOS系统架构层级划分](#88-ios系统架构层级划分)
+    - [89. iOS控件主要事件响应类型](#89-ios控件主要事件响应类型)
+    - [90. 请解释分类(category)、继承(inheritance)和扩展(extension)的区别，并回答以下子问题：Objective-C是否支持多重继承？如何实现多个接口？重写类时使用继承好还是分类好？为什么？](#90-请解释分类category继承inheritance和扩展extension的区别并回答以下子问题objective-c是否支持多重继承如何实现多个接口重写类时使用继承好还是分类好为什么)
+    - [91. 解释frame和bounds的区别，修改bounds的size是否会影响frame？](#91-解释frame和bounds的区别修改bounds的size是否会影响frame)
+    - [92. id声明的对象有什么特性？](#92-id声明的对象有什么特性)
+    - [93. atomic与nonatomic属性的本质区别是什么？](#93-atomic与nonatomic属性的本质区别是什么)
+    - [94. 线程与进程的主要区别有哪些？](#94-线程与进程的主要区别有哪些)
+    - [95. 原生与H5交互的常用方案有哪些？](#95-原生与h5交互的常用方案有哪些)
+    - [96. Swift中struct和class应如何选择？](#96-swift中struct和class应如何选择)
+    - [97. NSCache与NSDictionary的核心区别是什么？YYModel为何选用NSCache？](#97-nscache与nsdictionary的核心区别是什么yymodel为何选用nscache)
+    - [98. HashMap的实现原理及其与链表的区别？](#98-hashmap的实现原理及其与链表的区别)
+    - [99. dispatch\_once 内部执行流程是怎样的？存在哪些需要注意的问题？](#99-dispatch_once-内部执行流程是怎样的存在哪些需要注意的问题)
+    - [100. 请解释 UIView、UIWindow、UIViewController、UINavigationController 的层级关系，并设计一个始终置顶的全局悬浮窗？](#100-请解释-uiviewuiwindowuiviewcontrolleruinavigationcontroller-的层级关系并设计一个始终置顶的全局悬浮窗)
+    - [101. iOS 卡顿监测方案中如何捕获线程堆栈信息？其核心原理是什么？](#101-ios-卡顿监测方案中如何捕获线程堆栈信息其核心原理是什么)
+    - [102. Quartz 2D 绘图系统的三大核心概念及其作用？](#102-quartz-2d-绘图系统的三大核心概念及其作用)
+    - [103. iOS 系统提供的音频播放方案有哪些？各自适用场景是？](#103-ios-系统提供的音频播放方案有哪些各自适用场景是)
+    - [104. 如何追踪并解决 iOS App 的线上崩溃问题？](#104-如何追踪并解决-ios-app-的线上崩溃问题)
+    - [105. iOS 事件响应链的工作机制是怎样的？点击屏幕时的传递路径如何？](#105-ios-事件响应链的工作机制是怎样的点击屏幕时的传递路径如何)
+    - [106. 如何在 iOS 应用中实现退入后台后接收到支付通知时主动播放到账金额？](#106-如何在-ios-应用中实现退入后台后接收到支付通知时主动播放到账金额)
+    - [107. 分析 static、const 和 sizeof 三个关键字的作用与差异](#107-分析-staticconst-和-sizeof-三个关键字的作用与差异)
+    - [108. 对比 iOS 开发中的 MVC、MVP、MVVM 架构模式](#108-对比-ios-开发中的-mvcmvpmvvm-架构模式)
+    - [109. 在 64位/32位架构下，long 和 char\* 类型的字节占用差异](#109-在-64位32位架构下long-和-char-类型的字节占用差异)
+    - [110. NSTimer的循环引用问题是如何产生的？请结合代码示例说明常见内存泄漏场景](#110-nstimer的循环引用问题是如何产生的请结合代码示例说明常见内存泄漏场景)
+    - [111. 使用\_\_weak修饰self能否解决NSTimer的循环引用？为什么？](#111-使用__weak修饰self能否解决nstimer的循环引用为什么)
+    - [112. 如何通过消息转发机制实现NSTimer循环引用的解决方案？](#112-如何通过消息转发机制实现nstimer循环引用的解决方案)
+    - [113. iOS中常见的应用导航模式有哪些？请举例说明具体实现方式](#113-ios中常见的应用导航模式有哪些请举例说明具体实现方式)
+    - [114. 堆（Heap）与栈（Stack）在内存管理上有哪些核心区别？](#114-堆heap与栈stack在内存管理上有哪些核心区别)
 
 <a id='1-为什么swift语言被命名为swift'></a>
 ### 1. 为什么Swift语言被命名为Swift？

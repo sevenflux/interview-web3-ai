@@ -109,7 +109,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. Contract - 因为 Contract 模块是 ethers.js 中专门用于连接和交互智能合约的模块，允许调用合约方法和监听事件。utils 模块主要包含工具函数，providers 负责与区块链节点通信，Wallet 主要管理私钥和签名功能。</strong></p>
+  <p><strong>
+
+正确答案: C. Contract - 因为 Contract 模块是 ethers.js 中专门用于连接和交互智能合约的模块，允许调用合约方法和监听事件。utils 模块主要包含工具函数，providers 负责与区块链节点通信，Wallet 主要管理私钥和签名功能。</strong></p>
 </details>
 
 **问题 2:**
@@ -118,7 +120,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: ethers.js 是一个模块化设计的库，主要划分为几个核心模块：
+  <p><strong>
+
+正确答案: ethers.js 是一个模块化设计的库，主要划分为几个核心模块：
 
 1. **providers**：负责与以太坊节点通信，提供链上数据的读取功能，例如连接 Infura、Alchemy 或本地节点。
 2. **signers**：管理钱包签名操作，包括私钥管理和交易签名。
@@ -146,7 +150,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Provider 负责与区块链节点通信，提供只读访问；Signer 具备私钥，能够对交易进行签名和发送。 解释：Provider 是连接区块链的接口，主要提供只读数据查询功能，而 Signer 拥有私钥，可以对交易进行签名并发送交易，因此两者在功能和权限上有明显区别。</strong></p>
+  <p><strong>
+
+正确答案: B. Provider 负责与区块链节点通信，提供只读访问；Signer 具备私钥，能够对交易进行签名和发送。 解释：Provider 是连接区块链的接口，主要提供只读数据查询功能，而 Signer 拥有私钥，可以对交易进行签名并发送交易，因此两者在功能和权限上有明显区别。</strong></p>
 </details>
 
 **问题 2:**
@@ -155,7 +161,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Provider是ethers.js中用于与区块链节点交互的对象，主要负责读取区块链上的数据，如查询账户余额、读取智能合约状态等，但它不能发起需要用户签名的交易。Signer则代表一个拥有私钥的账户，能够对交易进行签名，从而发起状态变更操作，如转账或调用智能合约的写操作。在具体场景中，比如用户调用合约的转账方法，Provider用于查询用户的当前余额或合约状态，而Signer用于对转账交易进行签名并发送交易到区块链网络，确保交易被正确授权和执行。</strong></p>
+  <p><strong>
+
+正确答案: Provider是ethers.js中用于与区块链节点交互的对象，主要负责读取区块链上的数据，如查询账户余额、读取智能合约状态等，但它不能发起需要用户签名的交易。Signer则代表一个拥有私钥的账户，能够对交易进行签名，从而发起状态变更操作，如转账或调用智能合约的写操作。在具体场景中，比如用户调用合约的转账方法，Provider用于查询用户的当前余额或合约状态，而Signer用于对转账交易进行签名并发送交易到区块链网络，确保交易被正确授权和执行。</strong></p>
 </details>
 
 ---
@@ -176,7 +184,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 创建 Provider，连接钱包获取 Signer，实例化合约对象，调用合约方法。 — 这是与智能合约交互的标准流程。首先需要通过 Provider 连接到以太坊网络，然后通过钱包连接获取 Signer（用于签名交易），接着用合约地址和 ABI 实例化合约对象，最后调用合约方法。其他选项中步骤顺序错误或遗漏关键环节。</strong></p>
+  <p><strong>
+
+正确答案: B. 创建 Provider，连接钱包获取 Signer，实例化合约对象，调用合约方法。 — 这是与智能合约交互的标准流程。首先需要通过 Provider 连接到以太坊网络，然后通过钱包连接获取 Signer（用于签名交易），接着用合约地址和 ABI 实例化合约对象，最后调用合约方法。其他选项中步骤顺序错误或遗漏关键环节。</strong></p>
 </details>
 
 **问题 2:**
@@ -185,7 +195,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 与智能合约交互的基本流程通常包括以下几个步骤：
+  <p><strong>
+
+正确答案: 与智能合约交互的基本流程通常包括以下几个步骤：
 
 1. **连接以太坊提供者（Provider）**：通过 ethers.js 连接到以太坊网络（如主网、测试网或本地节点）。Provider 用于读取链上数据。
 
@@ -249,7 +261,9 @@ await tx.wait();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. ABI 用于定义合约的函数和事件的规范，Interface 是 ethers.js 中用于解析和编码这些函数调用和事件的工具。ABI 是智能合约的标准描述，定义了函数和事件的签名；Interface 是 ethers.js 提供的类，用于根据 ABI 解析、编码合约函数调用及事件，方便前端与合约交互。</strong></p>
+  <p><strong>
+
+正确答案: B. ABI 用于定义合约的函数和事件的规范，Interface 是 ethers.js 中用于解析和编码这些函数调用和事件的工具。ABI 是智能合约的标准描述，定义了函数和事件的签名；Interface 是 ethers.js 提供的类，用于根据 ABI 解析、编码合约函数调用及事件，方便前端与合约交互。</strong></p>
 </details>
 
 **问题 2:**
@@ -258,7 +272,9 @@ await tx.wait();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: ABI（Application Binary Interface）是智能合约的二进制接口描述，定义了合约中函数和事件的签名，前端通过ABI知道如何编码函数调用和解码返回数据。Interface 是ethers.js中封装ABI的工具类，提供了更友好的方法来解析和编码数据。
+  <p><strong>
+
+正确答案: ABI（Application Binary Interface）是智能合约的二进制接口描述，定义了合约中函数和事件的签名，前端通过ABI知道如何编码函数调用和解码返回数据。Interface 是ethers.js中封装ABI的工具类，提供了更友好的方法来解析和编码数据。
 
 具体场景：假设你有一个代币合约，需要调用其`balanceOf(address)`函数查询某个地址的余额。
 
@@ -306,7 +322,9 @@ const data = iface.encodeFunctionData("balanceOf", ["0x1234...abcd"]);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. BigNumber 实例可以通过调用 toString() 方法转换为字符串。 ethers.js 中的 BigNumber 提供了 toString() 方法用于将大数转换成字符串，方便显示和进一步处理。选项 A 错误，因为 BigNumber 不能用普通的加法符号操作，必须使用其内置的加法方法 add()。选项 C 错误，BigNumber 主要用于表示大整数，不支持小数。选项 D 错误，BigNumber 可以通过字符串、十六进制等多种形式初始化，且直接用 Number 类型可能导致精度丢失。</strong></p>
+  <p><strong>
+
+正确答案: B. BigNumber 实例可以通过调用 toString() 方法转换为字符串。 ethers.js 中的 BigNumber 提供了 toString() 方法用于将大数转换成字符串，方便显示和进一步处理。选项 A 错误，因为 BigNumber 不能用普通的加法符号操作，必须使用其内置的加法方法 add()。选项 C 错误，BigNumber 主要用于表示大整数，不支持小数。选项 D 错误，BigNumber 可以通过字符串、十六进制等多种形式初始化，且直接用 Number 类型可能导致精度丢失。</strong></p>
 </details>
 
 **问题 2:**
@@ -315,7 +333,9 @@ const data = iface.encodeFunctionData("balanceOf", ["0x1234...abcd"]);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: JavaScript的Number类型是基于IEEE 754双精度浮点数，最大安全整数为2^53-1（约为9,007,199,254,740,991）。而以太坊中的代币余额通常是一个非常大的整数，超过这个范围后，使用Number类型会导致精度丢失和计算错误。
+  <p><strong>
+
+正确答案: JavaScript的Number类型是基于IEEE 754双精度浮点数，最大安全整数为2^53-1（约为9,007,199,254,740,991）。而以太坊中的代币余额通常是一个非常大的整数，超过这个范围后，使用Number类型会导致精度丢失和计算错误。
 
 因此，ethers.js提供了BigNumber类型来安全地处理大整数。BigNumber可以表示任意大小的整数，避免了精度和溢出问题。
 
@@ -365,7 +385,9 @@ console.log(finalBalance.toString());
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用过滤器（filters）对象，调用 contract.filters.事件名(参数1, 参数2, ...)，传入期望过滤的参数值。ethers.js 提供了 filters 机制，可以在订阅事件时直接限定参数条件，避免接收不必要的事件，提高监听效率。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用过滤器（filters）对象，调用 contract.filters.事件名(参数1, 参数2, ...)，传入期望过滤的参数值。ethers.js 提供了 filters 机制，可以在订阅事件时直接限定参数条件，避免接收不必要的事件，提高监听效率。</strong></p>
 </details>
 
 **问题 2:**
@@ -374,7 +396,9 @@ console.log(finalBalance.toString());
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 ethers.js 中，可以通过创建事件过滤器（Filter）来指定监听条件，例如只监听特定地址作为发送者的 `Transfer` 事件。具体步骤如下：
+  <p><strong>
+
+正确答案: 在 ethers.js 中，可以通过创建事件过滤器（Filter）来指定监听条件，例如只监听特定地址作为发送者的 `Transfer` 事件。具体步骤如下：
 
 1. 创建合约实例：
 ```javascript
@@ -428,7 +452,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用Infura或Alchemy等第三方服务提供的RPC URL。这个选项是正确的，因为Infura和Alchemy提供了可靠的第三方RPC服务，允许开发者无需自己搭建节点即可访问以太坊主网。选项A是合理的连接方式但需要自行运行节点，不符合“无需搭建”的要求。选项C错误，ethers.js没有自带默认节点，需要指定Provider。选项D描述的WebSocket只是连接方式之一，也需要节点地址，且“任意节点”不一定可用。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用Infura或Alchemy等第三方服务提供的RPC URL。这个选项是正确的，因为Infura和Alchemy提供了可靠的第三方RPC服务，允许开发者无需自己搭建节点即可访问以太坊主网。选项A是合理的连接方式但需要自行运行节点，不符合“无需搭建”的要求。选项C错误，ethers.js没有自带默认节点，需要指定Provider。选项D描述的WebSocket只是连接方式之一，也需要节点地址，且“任意节点”不一定可用。</strong></p>
 </details>
 
 **问题 2:**
@@ -437,7 +463,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. JSON-RPC 连接（自建节点）：
+  <p><strong>
+
+正确答案: 1. JSON-RPC 连接（自建节点）：
    - 优点：完全控制节点，数据隐私性高，节点可定制，避免依赖第三方。
    - 缺点：部署和维护成本高，资源消耗大，节点同步时间长。
    - 适用场景：对数据隐私和节点控制要求高的项目，或需要定制节点功能时。
@@ -479,7 +507,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. JsonRpcProvider 是基于本地节点的连接，适合需要完全控制节点的情况；AlchemyProvider 和 InfuraProvider 是公共服务，适合快速集成且不需维护节点。——正确答案是 A，因为 JsonRpcProvider 通常用于连接自托管的节点（如本地 geth 或 parity 节点），可以完全控制和定制节点行为；而 AlchemyProvider 和 InfuraProvider 是知名的公共区块链节点服务商，提供稳定的 API 访问，适合不想维护节点的开发者。选项 B 错误，因为这些 Provider 都支持主网和测试网；选项 C 错误，Provider 不依赖私钥配置，私钥用于钱包签名；选项 D 错误，三者在实现和使用场景上有明显区别。</strong></p>
+  <p><strong>
+
+正确答案: A. JsonRpcProvider 是基于本地节点的连接，适合需要完全控制节点的情况；AlchemyProvider 和 InfuraProvider 是公共服务，适合快速集成且不需维护节点。——正确答案是 A，因为 JsonRpcProvider 通常用于连接自托管的节点（如本地 geth 或 parity 节点），可以完全控制和定制节点行为；而 AlchemyProvider 和 InfuraProvider 是知名的公共区块链节点服务商，提供稳定的 API 访问，适合不想维护节点的开发者。选项 B 错误，因为这些 Provider 都支持主网和测试网；选项 C 错误，Provider 不依赖私钥配置，私钥用于钱包签名；选项 D 错误，三者在实现和使用场景上有明显区别。</strong></p>
 </details>
 
 **问题 2:**
@@ -488,7 +518,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在高频交易的前端应用中，实时性和连接稳定性非常关键。针对 Provider 的选择策略可以考虑以下几点：
+  <p><strong>
+
+正确答案: 在高频交易的前端应用中，实时性和连接稳定性非常关键。针对 Provider 的选择策略可以考虑以下几点：
 
 1. WebSocketProvider：优先使用 WebSocketProvider，因为它支持订阅事件，能够实时接收区块和交易的更新，满足高实时性的需求。
 
@@ -522,7 +554,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 直接调用 provider.send('wallet_switchEthereumChain', [{ chainId: '0x3' }])，并在切换失败时捕获错误。 解释：在以太坊的前端开发中，切换网络通常通过调用钱包的 RPC 方法 wallet_switchEthereumChain 实现，链 ID 需以十六进制字符串形式传入。ethers.js 本身提供的 provider 是只读的，不支持直接修改 network.chainId，也不会自动切换网络，需要调用底层钱包的接口。重新实例化 provider 只是创建新的连接，但如果使用的是钱包（如 MetaMask），需要先切换钱包网络。调用 getNetwork() 只是获取当前网络信息，不会触发切换。</strong></p>
+  <p><strong>
+
+正确答案: A. 直接调用 provider.send('wallet_switchEthereumChain', [{ chainId: '0x3' }])，并在切换失败时捕获错误。 解释：在以太坊的前端开发中，切换网络通常通过调用钱包的 RPC 方法 wallet_switchEthereumChain 实现，链 ID 需以十六进制字符串形式传入。ethers.js 本身提供的 provider 是只读的，不支持直接修改 network.chainId，也不会自动切换网络，需要调用底层钱包的接口。重新实例化 provider 只是创建新的连接，但如果使用的是钱包（如 MetaMask），需要先切换钱包网络。调用 getNetwork() 只是获取当前网络信息，不会触发切换。</strong></p>
 </details>
 
 **问题 2:**
@@ -531,7 +565,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 检测当前链ID：
+  <p><strong>
+
+正确答案: 1. 检测当前链ID：
    - 使用 ethers.js 中的 provider.getNetwork() 方法可以获取当前连接的网络信息，其中包含 chainId。
 
 2. 监听网络切换事件：
@@ -574,7 +610,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 ethers.js 的内置重试功能，并结合指数退避（exponential backoff）策略来控制重试频率和次数。 解释：ethers.js 本身不强制实现重试机制，开发者应结合自定义逻辑实现重试。采用指数退避策略可以有效避免请求过于频繁导致网络拥堵，同时限制最大重试次数可防止无限循环，确保应用稳定性。这种方式是处理网络异常时的最佳实践。选项A缺少重试次数和间隔控制，容易导致请求风暴；选项C刷新页面过于激进，用户体验差；选项D忽略异常可能导致数据不一致或失败无法察觉。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 ethers.js 的内置重试功能，并结合指数退避（exponential backoff）策略来控制重试频率和次数。 解释：ethers.js 本身不强制实现重试机制，开发者应结合自定义逻辑实现重试。采用指数退避策略可以有效避免请求过于频繁导致网络拥堵，同时限制最大重试次数可防止无限循环，确保应用稳定性。这种方式是处理网络异常时的最佳实践。选项A缺少重试次数和间隔控制，容易导致请求风暴；选项C刷新页面过于激进，用户体验差；选项D忽略异常可能导致数据不一致或失败无法察觉。</strong></p>
 </details>
 
 **问题 2:**
@@ -590,7 +628,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 错误类型区分：
+  <p><strong>
+
+正确答案: 1. 错误类型区分：
    - 适合重试的错误包括网络超时、连接中断、临时的 RPC 节点不可用等临时性错误。
    - 不适合重试的错误包括无效的交易参数、签名错误、权限不足等业务逻辑错误，这些重试无效且浪费资源。
 
@@ -630,7 +670,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 为每个目标网络分别创建独立的 Provider 实例，根据需要动态切换使用对应的 Provider。 解释：ethers.js 的 Provider 实例是不可变的，不能通过修改配置或调用 connect 方法切换网络。最好的做法是在多网络环境下为每个网络创建独立 Provider 实例，确保网络连接明确且稳定，便于管理和调试。选项 A 和 C 描述的方法在 ethers.js 中并不可行，选项 D 虽然方便，但不能保证针对特定网络的精细控制。</strong></p>
+  <p><strong>
+
+正确答案: B. 为每个目标网络分别创建独立的 Provider 实例，根据需要动态切换使用对应的 Provider。 解释：ethers.js 的 Provider 实例是不可变的，不能通过修改配置或调用 connect 方法切换网络。最好的做法是在多网络环境下为每个网络创建独立 Provider 实例，确保网络连接明确且稳定，便于管理和调试。选项 A 和 C 描述的方法在 ethers.js 中并不可行，选项 D 虽然方便，但不能保证针对特定网络的精细控制。</strong></p>
 </details>
 
 **问题 2:**
@@ -644,7 +686,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. Provider 的初始化和切换逻辑：
+  <p><strong>
+
+正确答案: 1. Provider 的初始化和切换逻辑：
 - 为每个支持的网络（Ethereum 主网、Polygon、BSC）预先初始化对应的 Provider，通常使用 ethers.providers.JsonRpcProvider 或 ethers.providers.InfuraProvider 等。
 - 维护一个映射表，如 { '1': ethProvider, '137': polygonProvider, '56': bscProvider }，根据用户选择的网络 ID 动态切换当前活跃的 Provider。
 - 切换时更新全局状态或上下文中的 Provider 实例，确保后续调用使用正确的 Provider。
@@ -686,7 +730,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 合约部署需要先创建一个 ContractFactory，传入合约的 ABI、字节码和签名者，然后调用 deploy() 并传入构造函数参数（如果有的话）。
+  <p><strong>
+
+正确答案: B. 合约部署需要先创建一个 ContractFactory，传入合约的 ABI、字节码和签名者，然后调用 deploy() 并传入构造函数参数（如果有的话）。
 
 解释：部署合约的标准流程是在 ethers.js 中先创建 ContractFactory 实例，传入合约 ABI、字节码和签名者（Signer），然后调用 deploy() 方法，且部署时构造函数参数需要作为 deploy() 的参数传入。选项 A 错误，因为构造函数参数如果存在必须传入；选项 C 错误，provider 没有 deploy() 方法；选项 D 错误，deploy() 方法可以直接接收多个构造函数参数，而不是必须数组形式。</strong></p>
 </details>
@@ -701,7 +747,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 部署合约的基本流程包括以下几个步骤：
+  <p><strong>
+
+正确答案: 部署合约的基本流程包括以下几个步骤：
 
 1. 获取合约的 ABI 和字节码（bytecode）。
 2. 使用 ethers.js 中的 `ethers.ContractFactory` 创建合约工厂，传入 ABI、字节码和签名者（Signer）。
@@ -741,7 +789,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 调用合约写方法时，需要先获取签名者（signer），然后通过签名者连接合约，再调用写方法。
+  <p><strong>
+
+正确答案: B. 调用合约写方法时，需要先获取签名者（signer），然后通过签名者连接合约，再调用写方法。
 
 解释：写操作需要发送交易，因此必须通过拥有私钥的签名者发送交易。通常做法是先通过 provider 获取 signer，然后用 signer 连接合约实例，最后调用写方法。选项 A 错误，因为直接调用合约方法没有签名者，不能发送交易；选项 C 错误，callStatic 仅用于模拟调用，不会发送交易；选项 D 错误，签名者用于写操作，读取操作通常用 provider 即可。</strong></p>
 </details>
@@ -757,7 +807,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 调用 `getBalance` 方法（只读方法）：
+  <p><strong>
+
+正确答案: 1. 调用 `getBalance` 方法（只读方法）：
 - 通过 ethers.js 创建一个合约实例，使用提供的合约地址和 ABI。
 - 调用合约实例的 `getBalance` 方法，传入目标地址作为参数。
 - 该调用是只读的，不会发起区块链交易，因此不需要签名或支付手续费。
@@ -811,7 +863,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用合约实例的 `on` 方法，并传入事件名称和回调函数。ethers.js 中，合约实例的 `on` 方法是用于订阅事件的标准方式，传入事件名和回调函数即可实现对事件的监听和处理。选项 B 错误，因为 `call` 是用于调用合约的只读方法，不用于事件监听；选项 C 错误，ethers.js 的 Provider 并没有 `listenEvent` 方法；选项 D 错误，`emit` 是合约内部触发事件的方法，不用于前端事件订阅。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用合约实例的 `on` 方法，并传入事件名称和回调函数。ethers.js 中，合约实例的 `on` 方法是用于订阅事件的标准方式，传入事件名和回调函数即可实现对事件的监听和处理。选项 B 错误，因为 `call` 是用于调用合约的只读方法，不用于事件监听；选项 C 错误，ethers.js 的 Provider 并没有 `listenEvent` 方法；选项 D 错误，`emit` 是合约内部触发事件的方法，不用于前端事件订阅。</strong></p>
 </details>
 
 **问题 2:**
@@ -828,7 +882,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 事件订阅的基本实现方式：
+  <p><strong>
+
+正确答案: 1. 事件订阅的基本实现方式：
    使用 ethers.js 的合约实例调用 `contract.on('Transfer', (from, to, amount, event) => { ... })` 来订阅事件。例如：
    ```js
    contract.on('Transfer', (from, to, amount, event) => {
@@ -871,7 +927,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在发送交易前使用 provider.estimateGas() 来估算 Gas 用量，并在交易中设置稍高于估算值的 gasLimit。
+  <p><strong>
+
+正确答案: A. 在发送交易前使用 provider.estimateGas() 来估算 Gas 用量，并在交易中设置稍高于估算值的 gasLimit。
 
 解释：estimateGas() 方法能够模拟交易执行，给出一个合理的 Gas 估算值，帮助避免因 gasLimit 设置过低导致交易失败。适当加高一点 gasLimit 可以保证交易顺利执行且避免浪费。选项 B 错误，因为极低 gasPrice 会导致交易长时间未被处理。选项 C 中 callStatic 返回的是执行结果而非直接的 Gas 估算，不能直接用作 gasLimit。选项 D 依赖节点自动设置 gasLimit，可能导致估算不准确，风险较高。</strong></p>
 </details>
@@ -884,7 +942,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在前端使用ethers.js调用复杂智能合约函数时，优化Gas费用和准确估算Gas Limit可以从以下几个方面入手：
+  <p><strong>
+
+正确答案: 在前端使用ethers.js调用复杂智能合约函数时，优化Gas费用和准确估算Gas Limit可以从以下几个方面入手：
 
 1. 交易Gas优化：
   - 减少不必要的状态变量修改：在合约设计和调用时，尽量合并状态变量的修改操作，避免重复写入。
@@ -942,7 +1002,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -951,7 +1013,9 @@ contract.on(filter, (from, to, amount, event) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 ethers.js 中，合约调用失败时通常会抛出异常，前端代码应使用 try-catch 语句捕获这些错误。错误处理的第一步是分析错误类型，例如网络错误（如连接超时）、交易被拒绝（如 gas 不足）或节点返回的其他错误。对于网络波动引起的临时失败，可以设计自动重试机制。具体做法包括：
+  <p><strong>
+
+正确答案: 在 ethers.js 中，合约调用失败时通常会抛出异常，前端代码应使用 try-catch 语句捕获这些错误。错误处理的第一步是分析错误类型，例如网络错误（如连接超时）、交易被拒绝（如 gas 不足）或节点返回的其他错误。对于网络波动引起的临时失败，可以设计自动重试机制。具体做法包括：
 
 1. 使用一个递归或循环结构实现重试逻辑，每次调用合约函数时放在 try 块中。
 2. 在 catch 块中判断错误类型，只有在网络相关错误时触发重试。
@@ -1002,7 +1066,9 @@ async function callContractWithRetry(contractFunc, args, maxRetries = 3, delay =
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 利用 TypeChain 工具根据合约 ABI 自动生成 TypeScript 类型定义文件，再在项目中引入这些类型文件进行类型安全的合约调用。 — 该方法通过自动生成强类型定义，确保了合约接口的调用在编译阶段即可发现类型错误，极大提升了类型安全性和开发效率。其他选项要么依赖 any 类型导致类型安全缺失，要么需要手动编写类型断言或检查，容易出错且维护成本高。</strong></p>
+  <p><strong>
+
+正确答案: C. 利用 TypeChain 工具根据合约 ABI 自动生成 TypeScript 类型定义文件，再在项目中引入这些类型文件进行类型安全的合约调用。 — 该方法通过自动生成强类型定义，确保了合约接口的调用在编译阶段即可发现类型错误，极大提升了类型安全性和开发效率。其他选项要么依赖 any 类型导致类型安全缺失，要么需要手动编写类型断言或检查，容易出错且维护成本高。</strong></p>
 </details>
 
 **问题 2:**
@@ -1011,7 +1077,9 @@ async function callContractWithRetry(contractFunc, args, maxRetries = 3, delay =
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在ethers.js中，可以通过动态传入ABI和合约地址实例化Contract对象，从而实现合约接口的动态生成。具体做法是：
+  <p><strong>
+
+正确答案: 在ethers.js中，可以通过动态传入ABI和合约地址实例化Contract对象，从而实现合约接口的动态生成。具体做法是：
 
 1. 使用`new ethers.Contract(address, abi, providerOrSigner)`动态创建合约实例，其中abi来自后端或配置文件，支持多版本。
 
@@ -1049,7 +1117,9 @@ async function callContractWithRetry(contractFunc, args, maxRetries = 3, delay =
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 `new ethers.Wallet(privateKey)` 构造函数。因为 `new ethers.Wallet(privateKey)` 是 ethers.js 中用来从私钥字符串创建钱包实例的标准方式，而 `createRandom()` 用于随机生成钱包，`fromMnemonic()` 是从助记词而非私钥生成，`getDefaultProvider()` 是获取以太坊网络提供者，与钱包创建无关。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 `new ethers.Wallet(privateKey)` 构造函数。因为 `new ethers.Wallet(privateKey)` 是 ethers.js 中用来从私钥字符串创建钱包实例的标准方式，而 `createRandom()` 用于随机生成钱包，`fromMnemonic()` 是从助记词而非私钥生成，`getDefaultProvider()` 是获取以太坊网络提供者，与钱包创建无关。</strong></p>
 </details>
 
 **问题 2:**
@@ -1058,7 +1128,9 @@ async function callContractWithRetry(contractFunc, args, maxRetries = 3, delay =
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 使用 ethers.js，可以通过 Wallet.fromMnemonic(mnemonic) 方法基于用户输入的助记词创建一个钱包实例。例如：
+  <p><strong>
+
+正确答案: 使用 ethers.js，可以通过 Wallet.fromMnemonic(mnemonic) 方法基于用户输入的助记词创建一个钱包实例。例如：
 
 ```javascript
 const { Wallet } = require('ethers');
@@ -1096,7 +1168,9 @@ const wallet = Wallet.fromMnemonic(userInputMnemonic);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用硬件钱包或安全的密钥库，并避免将私钥或助记词暴露给前端代码。 私钥和助记词是控制资产安全的关键，直接存储在 localStorage 或云端都会增加被攻击的风险，尤其是前端环境容易被恶意脚本窃取。硬件钱包或专门的安全密钥库（如 MetaMask、Ledger 等）能有效保护密钥，避免私钥暴露，是最佳实践。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用硬件钱包或安全的密钥库，并避免将私钥或助记词暴露给前端代码。 私钥和助记词是控制资产安全的关键，直接存储在 localStorage 或云端都会增加被攻击的风险，尤其是前端环境容易被恶意脚本窃取。硬件钱包或专门的安全密钥库（如 MetaMask、Ledger 等）能有效保护密钥，避免私钥暴露，是最佳实践。</strong></p>
 </details>
 
 **问题 2:**
@@ -1105,7 +1179,9 @@ const wallet = Wallet.fromMnemonic(userInputMnemonic);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在前端钱包开发中，私钥和助记词的安全存储与使用至关重要。首先，私钥和助记词不应直接存储在本地存储（localStorage/sessionStorage）或未加密的 Cookie 中，因为这些存储方式容易被 XSS 攻击窃取。常见的安全做法包括：
+  <p><strong>
+
+正确答案: 在前端钱包开发中，私钥和助记词的安全存储与使用至关重要。首先，私钥和助记词不应直接存储在本地存储（localStorage/sessionStorage）或未加密的 Cookie 中，因为这些存储方式容易被 XSS 攻击窃取。常见的安全做法包括：
 
 1. 使用内存存储：在用户会话期间，将私钥/助记词保存在内存中（如 React 状态或变量），避免持久化存储。关闭页面或刷新后清除。
 
@@ -1140,7 +1216,9 @@ const wallet = Wallet.fromMnemonic(userInputMnemonic);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 通过调用 provider.getSigner(index) 获取指定账户的 signer 来切换。因为 ethers.js 的 provider 对象支持通过 getSigner(index) 方法获取指定账户的 signer，从而实现账户切换。A 选项错误，因为 provider 对象的 signer 不是直接修改的属性；C 选项是创建新钱包而非切换现有账户；D 选项中 ethers.js 不支持自动切换多个 signer，需要手动指定。</strong></p>
+  <p><strong>
+
+正确答案: B. 通过调用 provider.getSigner(index) 获取指定账户的 signer 来切换。因为 ethers.js 的 provider 对象支持通过 getSigner(index) 方法获取指定账户的 signer，从而实现账户切换。A 选项错误，因为 provider 对象的 signer 不是直接修改的属性；C 选项是创建新钱包而非切换现有账户；D 选项中 ethers.js 不支持自动切换多个 signer，需要手动指定。</strong></p>
 </details>
 
 **问题 2:**
@@ -1149,7 +1227,9 @@ const wallet = Wallet.fromMnemonic(userInputMnemonic);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，可以通过 ethers.js 连接到以太坊提供者（例如 MetaMask）并调用 `provider.listAccounts()` 来获取用户当前连接的所有账户列表。前端应将这些账户信息存储在状态管理（如 React 的 state 或 Redux）中，方便展示给用户选择。切换账户时，可以更新当前活动账户的私钥或签名者（signer），通常通过 `provider.getSigner(accountAddress)` 来获取对应账户的签名者。
+  <p><strong>
+
+正确答案: 首先，可以通过 ethers.js 连接到以太坊提供者（例如 MetaMask）并调用 `provider.listAccounts()` 来获取用户当前连接的所有账户列表。前端应将这些账户信息存储在状态管理（如 React 的 state 或 Redux）中，方便展示给用户选择。切换账户时，可以更新当前活动账户的私钥或签名者（signer），通常通过 `provider.getSigner(accountAddress)` 来获取对应账户的签名者。
 
 业务场景：例如，一个多签钱包应用，用户需要在多个账户间切换以执行不同权限的操作。用户在界面选择另一个账户后，前端调用 `getSigner` 切换签名者，确保后续的合约调用和交易都是以当前活动账户身份发起。
 
@@ -1179,7 +1259,9 @@ const wallet = Wallet.fromMnemonic(userInputMnemonic);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 需要使用专门的硬件钱包桥接库（如 @ledgerhq/hw-transport-webusb 或 @trezor/connect）来建立与硬件设备的通信，然后将签名请求发送给设备。 解释：ethers.js 本身不直接管理硬件钱包的底层通信，需要借助专门的硬件钱包桥接库（比如 Ledger 的 hw-transport-webusb 或 Trezor 的 trezor-connect）与设备通信，完成交易签名请求的发送和用户确认。选项A错误，因为 Wallet.createRandom() 是生成软件钱包，不能用于硬件钱包。选项C错误，硬件钱包的私钥不导出且需用户确认。选项D错误，ethers.js 需要配合外部库完成硬件钱包集成。</strong></p>
+  <p><strong>
+
+正确答案: B. 需要使用专门的硬件钱包桥接库（如 @ledgerhq/hw-transport-webusb 或 @trezor/connect）来建立与硬件设备的通信，然后将签名请求发送给设备。 解释：ethers.js 本身不直接管理硬件钱包的底层通信，需要借助专门的硬件钱包桥接库（比如 Ledger 的 hw-transport-webusb 或 Trezor 的 trezor-connect）与设备通信，完成交易签名请求的发送和用户确认。选项A错误，因为 Wallet.createRandom() 是生成软件钱包，不能用于硬件钱包。选项C错误，硬件钱包的私钥不导出且需用户确认。选项D错误，ethers.js 需要配合外部库完成硬件钱包集成。</strong></p>
 </details>
 
 **问题 2:**
@@ -1194,7 +1276,9 @@ const wallet = Wallet.fromMnemonic(userInputMnemonic);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 检测和连接硬件钱包：
+  <p><strong>
+
+正确答案: 1. 检测和连接硬件钱包：
 - 对于Ledger，通常使用@ledgerhq/hw-transport-webusb或@ledgerhq/hw-transport-u2f等库，检测设备连接并建立通信。
 - 对于Trezor，可以使用@trezor/connect库，该库提供了与Trezor设备交互的API。
 - 在前端应用中，通过监听USB设备连接事件或调用相应库的初始化方法，检测设备状态。
@@ -1233,7 +1317,9 @@ const wallet = Wallet.fromMnemonic(userInputMnemonic);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在连接钱包时监听账户变化事件，并在断开时清理相关事件监听和状态。此做法能确保应用实时响应账户变化，避免内存泄漏，同时保证断开后状态清晰，提升用户体验和安全性。A 选项限制了用户操作自由，C 选项的刷新方法较粗暴且影响体验，D 选项错误，因为 ethers.js 的 provider 通常不具备直接断开方法。</strong></p>
+  <p><strong>
+
+正确答案: B. 在连接钱包时监听账户变化事件，并在断开时清理相关事件监听和状态。此做法能确保应用实时响应账户变化，避免内存泄漏，同时保证断开后状态清晰，提升用户体验和安全性。A 选项限制了用户操作自由，C 选项的刷新方法较粗暴且影响体验，D 选项错误，因为 ethers.js 的 provider 通常不具备直接断开方法。</strong></p>
 </details>
 
 **问题 2:**
@@ -1242,7 +1328,9 @@ const wallet = Wallet.fromMnemonic(userInputMnemonic);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在DApp中使用ethers.js管理钱包连接与断开，流程控制方案一般包括以下步骤：
+  <p><strong>
+
+正确答案: 在DApp中使用ethers.js管理钱包连接与断开，流程控制方案一般包括以下步骤：
 
 1. 钱包连接：
    - 使用`window.ethereum.request({ method: 'eth_requestAccounts' })`请求用户授权连接钱包。
@@ -1282,7 +1370,9 @@ const wallet = Wallet.fromMnemonic(userInputMnemonic);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C。正确答案是 C，wallet._signTypedData() 用于对结构化的 EIP-712 类型化数据进行签名，这种签名方式可以防止重放攻击和消息被误解为交易数据的问题。选项 A 和 D 虽然可以签名消息，但没有结构化数据的保护，容易导致链上验证误解。选项 B 是用于签名交易，而非普通消息签名。</strong></p>
+  <p><strong>
+
+正确答案: C。正确答案是 C，wallet._signTypedData() 用于对结构化的 EIP-712 类型化数据进行签名，这种签名方式可以防止重放攻击和消息被误解为交易数据的问题。选项 A 和 D 虽然可以签名消息，但没有结构化数据的保护，容易导致链上验证误解。选项 B 是用于签名交易，而非普通消息签名。</strong></p>
 </details>
 
 **问题 2:**
@@ -1291,7 +1381,9 @@ const wallet = Wallet.fromMnemonic(userInputMnemonic);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 签名消息的实现步骤：
+  <p><strong>
+
+正确答案: 1. 签名消息的实现步骤：
 - 使用ethers.js中的`Signer`对象调用`signMessage(message)`方法，传入需要签名的字符串消息。
 - 该方法会调用钱包（如MetaMask）弹出签名请求，用户确认后返回签名字符串。
 
@@ -1348,7 +1440,9 @@ console.log("Transaction sent and confirmed.");
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用私钥对交易对象进行签名，生成签名后的交易数据。因为在ethers.js中，调用`provider.sendTransaction`方法时需要传入签名后的交易数据（通常是通过`wallet.signTransaction(tx)`生成的），否则无法广播交易。选项A不正确，因为交易对象中不需要手动设置`blockNumber`，区块高度由网络决定；选项C错误，`provider.sendTransaction`不能自动签名交易，签名必须先完成；选项D错误，nonce应设置为正确的账户交易计数，不能随意设为0，否则会导致交易失败。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用私钥对交易对象进行签名，生成签名后的交易数据。因为在ethers.js中，调用`provider.sendTransaction`方法时需要传入签名后的交易数据（通常是通过`wallet.signTransaction(tx)`生成的），否则无法广播交易。选项A不正确，因为交易对象中不需要手动设置`blockNumber`，区块高度由网络决定；选项C错误，`provider.sendTransaction`不能自动签名交易，签名必须先完成；选项D错误，nonce应设置为正确的账户交易计数，不能随意设为0，否则会导致交易失败。</strong></p>
 </details>
 
 **问题 2:**
@@ -1357,7 +1451,9 @@ console.log("Transaction sent and confirmed.");
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 交易构造流程：
+  <p><strong>
+
+正确答案: 1. 交易构造流程：
 - 获取用户钱包地址和nonce（交易计数），确保交易顺序正确。
 - 设置交易参数，包括to（接收地址）、value（发送的以太币数量）、data（调用合约时的编码数据）、gasLimit（最大消耗的gas）、gasPrice或maxFeePerGas和maxPriorityFeePerGas（手续费相关参数）等。
 - 使用ethers.js的Signer对象对交易进行签名。
@@ -1402,7 +1498,9 @@ console.log("Transaction sent and confirmed.");
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 签名后的交易数据可以通过任何支持以太坊 JSON-RPC 的节点广播，无需私钥。因为离线签名的本质是先使用私钥生成签名的交易数据，该数据包含了所有必要信息，广播时仅需要将其发送到网络，不再需要私钥，且可以通过任意支持 JSON-RPC 的节点广播，保证交易有效性且安全。</strong></p>
+  <p><strong>
+
+正确答案: B. 签名后的交易数据可以通过任何支持以太坊 JSON-RPC 的节点广播，无需私钥。因为离线签名的本质是先使用私钥生成签名的交易数据，该数据包含了所有必要信息，广播时仅需要将其发送到网络，不再需要私钥，且可以通过任意支持 JSON-RPC 的节点广播，保证交易有效性且安全。</strong></p>
 </details>
 
 **问题 2:**
@@ -1418,7 +1516,9 @@ console.log("Transaction sent and confirmed.");
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 离线签名的关键步骤和 ethers.js 中相关函数：
+  <p><strong>
+
+正确答案: 1. 离线签名的关键步骤和 ethers.js 中相关函数：
 - 在离线环境中，使用 `Wallet` 对象并加载用户的私钥。
 - 构造交易请求对象（如 `to`, `value`, `nonce`, `gasLimit`, `gasPrice` 等）。
 - 调用 `wallet.signTransaction(transaction)` 方法对交易进行签名，生成签名后的交易数据（raw transaction）。
@@ -1498,7 +1598,9 @@ async function broadcastTransaction(signedTx) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 通过 provider.waitForTransaction(txHash, confirmations) 方法，等待交易达到指定的区块确认数后才执行后续逻辑。——该方法会等待交易被打包并且经过指定数量的区块确认，确保交易的最终性。A 选项虽然监听了交易哈希，但只表示交易被广播，不代表已被确认。C 选项是签名操作，与交易确认无关。D 选项监听的是待处理交易池，无法判断交易是否已经被矿工打包确认。</strong></p>
+  <p><strong>
+
+正确答案: B. 通过 provider.waitForTransaction(txHash, confirmations) 方法，等待交易达到指定的区块确认数后才执行后续逻辑。——该方法会等待交易被打包并且经过指定数量的区块确认，确保交易的最终性。A 选项虽然监听了交易哈希，但只表示交易被广播，不代表已被确认。C 选项是签名操作，与交易确认无关。D 选项监听的是待处理交易池，无法判断交易是否已经被矿工打包确认。</strong></p>
 </details>
 
 **问题 2:**
@@ -1507,7 +1609,9 @@ async function broadcastTransaction(signedTx) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 使用 ethers.js 发送交易后，获取交易响应对象（TransactionResponse），其中包含交易哈希（hash）。
+  <p><strong>
+
+正确答案: 1. 使用 ethers.js 发送交易后，获取交易响应对象（TransactionResponse），其中包含交易哈希（hash）。
 
 2. 使用 provider.waitForTransaction(txHash) 方法监听交易被区块链确认。该方法返回一个 Promise，直到交易达到指定的确认数（默认为1）才会resolve。
 
@@ -1542,7 +1646,9 @@ async function broadcastTransaction(signedTx) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 try-catch 捕获 sendTransaction 调用中的异常，并结合 wait() 方法确认交易是否成功或回滚。 解析：ethers.js 中，发送交易时 sendTransaction 返回的是一个 TransactionResponse 对象，真正的交易结果（成功或失败）需要通过调用 wait() 方法等待交易被矿工打包并执行。交易回滚时，wait() 会抛出异常，因此必须用 try-catch 结合 wait() 来捕获回滚。选项A错误，因为收到 transactionHash 并不代表交易成功，只是交易已被广播。选项C错误，estimateGas() 只是估算Gas消耗，不保证交易一定不会回滚。选项D错误，交易被打包进区块但执行失败（回滚）时，交易状态为失败，不应认为成功。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 try-catch 捕获 sendTransaction 调用中的异常，并结合 wait() 方法确认交易是否成功或回滚。 解析：ethers.js 中，发送交易时 sendTransaction 返回的是一个 TransactionResponse 对象，真正的交易结果（成功或失败）需要通过调用 wait() 方法等待交易被矿工打包并执行。交易回滚时，wait() 会抛出异常，因此必须用 try-catch 结合 wait() 来捕获回滚。选项A错误，因为收到 transactionHash 并不代表交易成功，只是交易已被广播。选项C错误，estimateGas() 只是估算Gas消耗，不保证交易一定不会回滚。选项D错误，交易被打包进区块但执行失败（回滚）时，交易状态为失败，不应认为成功。</strong></p>
 </details>
 
 **问题 2:**
@@ -1551,7 +1657,9 @@ async function broadcastTransaction(signedTx) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在使用 ethers.js 发送交易时，可以通过 try-catch 结构捕获交易发送过程中抛出的异常，比如 Gas 不足或合约 revert 导致的失败。具体步骤如下：
+  <p><strong>
+
+正确答案: 在使用 ethers.js 发送交易时，可以通过 try-catch 结构捕获交易发送过程中抛出的异常，比如 Gas 不足或合约 revert 导致的失败。具体步骤如下：
 
 1. **发送交易并捕获异常**：
 ```javascript
@@ -1604,7 +1712,9 @@ ethers.js 抛出的错误对象通常包含详细的信息，如 revert 原因�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 多签钱包交易通常需要收集多个不同签名者的签名，之后将签名数据合并成一个交易数据，再通过 ethers.js 发送该交易。——这是多签钱包的核心机制，多个签名者独立签名后需聚合签名数据，才能有效执行交易。A选项错误，因为多签交易必须满足阈值签名数才能执行；B选项错误，ethers.js 并未内置自动多签聚合签名功能，通常需要自定义逻辑；D选项错误，多签钱包中每个签名者都必须参与签名，不存在仅作为见证者的情况。</strong></p>
+  <p><strong>
+
+正确答案: C. 多签钱包交易通常需要收集多个不同签名者的签名，之后将签名数据合并成一个交易数据，再通过 ethers.js 发送该交易。——这是多签钱包的核心机制，多个签名者独立签名后需聚合签名数据，才能有效执行交易。A选项错误，因为多签交易必须满足阈值签名数才能执行；B选项错误，ethers.js 并未内置自动多签聚合签名功能，通常需要自定义逻辑；D选项错误，多签钱包中每个签名者都必须参与签名，不存在仅作为见证者的情况。</strong></p>
 </details>
 
 **问题 2:**
@@ -1619,7 +1729,9 @@ ethers.js 抛出的错误对象通常包含详细的信息，如 revert 原因�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 管理多个签名者的私钥或签名请求：
+  <p><strong>
+
+正确答案: 1. 管理多个签名者的私钥或签名请求：
    - 由于安全原因，前端通常不会直接管理多个私钥，而是通过调用每个签名者各自的钱包（如MetaMask、硬件钱包）进行签名。
    - 使用ethers.js的`Signer`实例来发起签名请求，如`signer.signMessage()`或`signer._signTypedData()`，针对每个签名者分别发起。
    - 可以设计一个UI流程，逐一请求各签名者签名，或者通过多设备协同完成。
@@ -1666,7 +1778,9 @@ ethers.js 抛出的错误对象通常包含详细的信息，如 revert 原因�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在签名的消息中包含唯一的 nonce 或时间戳，并在验证时确保该 nonce 之前未被使用。这是防止重放攻击的关键措施，因为它确保每条签名消息都是唯一的，攻击者无法重复使用同一签名进行恶意操作。</strong></p>
+  <p><strong>
+
+正确答案: B. 在签名的消息中包含唯一的 nonce 或时间戳，并在验证时确保该 nonce 之前未被使用。这是防止重放攻击的关键措施，因为它确保每条签名消息都是唯一的，攻击者无法重复使用同一签名进行恶意操作。</strong></p>
 </details>
 
 **问题 2:**
@@ -1681,7 +1795,9 @@ ethers.js 抛出的错误对象通常包含详细的信息，如 revert 原因�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 重放攻击是指攻击者截获合法用户的签名消息后，反复使用该签名进行非法操作；签名伪造是指攻击者伪造签名使其看似来自合法用户，进而执行未授权操作。
+  <p><strong>
+
+正确答案: 1. 重放攻击是指攻击者截获合法用户的签名消息后，反复使用该签名进行非法操作；签名伪造是指攻击者伪造签名使其看似来自合法用户，进而执行未授权操作。
 
 2. 防止重放攻击的常用方法是引入 nonce（唯一序号）机制。每次签名请求都带有一个唯一的 nonce，智能合约验证时检查该 nonce 是否已使用，确保同一签名不能重复执行。例如，用户签名消息中包含 nonce 字段，智能合约维护每个用户的 nonce 状态。
 
@@ -1740,7 +1856,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用环境变量或安全的后端服务存储私钥，并通过安全接口调用，避免私钥直接暴露在前端。 私钥是极其敏感的信息，暴露在前端（如硬编码或localStorage）会大大增加被盗风险。最佳实践是将私钥保存在安全的后端环境或者使用安全的密钥管理服务，前端通过安全接口与后端交互，确保私钥不被泄露。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用环境变量或安全的后端服务存储私钥，并通过安全接口调用，避免私钥直接暴露在前端。 私钥是极其敏感的信息，暴露在前端（如硬编码或localStorage）会大大增加被盗风险。最佳实践是将私钥保存在安全的后端环境或者使用安全的密钥管理服务，前端通过安全接口与后端交互，确保私钥不被泄露。</strong></p>
 </details>
 
 **问题 2:**
@@ -1749,7 +1867,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在前端管理用户私钥时，应遵循以下最佳实践：
+  <p><strong>
+
+正确答案: 在前端管理用户私钥时，应遵循以下最佳实践：
 
 1. **避免直接存储私钥**：不要将私钥明文存储在本地存储、IndexedDB、Cookie等容易被攻击者访问的位置。
 
@@ -1791,7 +1911,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 try-catch 捕获调用异常，并在 catch 中记录错误日志，同时在调用前使用 callStatic 进行调用模拟。 解析：使用 try-catch 可以捕获调用过程中可能抛出的异常，避免前端逻辑崩溃。同时，callStatic 方法可以模拟调用结果，提前判断调用是否会失败，帮助前端做出相应处理。A 选项忽视了异常处理，风险较大；C 选项的 estimateGas 不能完全保证调用成功，因为估算 Gas 失败不一定代表调用失败，且可能有误差；D 选项不进行异常处理容易导致前端状态不同步，影响用户体验。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 try-catch 捕获调用异常，并在 catch 中记录错误日志，同时在调用前使用 callStatic 进行调用模拟。 解析：使用 try-catch 可以捕获调用过程中可能抛出的异常，避免前端逻辑崩溃。同时，callStatic 方法可以模拟调用结果，提前判断调用是否会失败，帮助前端做出相应处理。A 选项忽视了异常处理，风险较大；C 选项的 estimateGas 不能完全保证调用成功，因为估算 Gas 失败不一定代表调用失败，且可能有误差；D 选项不进行异常处理容易导致前端状态不同步，影响用户体验。</strong></p>
 </details>
 
 **问题 2:**
@@ -1800,7 +1922,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在调用用户提供的智能合约地址时，需要进行以下安全检查：
+  <p><strong>
+
+正确答案: 在调用用户提供的智能合约地址时，需要进行以下安全检查：
 
 1. **地址有效性验证**：使用 ethers.js 的 `ethers.utils.isAddress(address)` 方法来验证地址格式是否正确，防止无效地址调用导致错误。
 
@@ -1838,7 +1962,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在发送交易时，确保每笔交易使用唯一的nonce值。因为nonce是以太坊交易的唯一标识，确保每笔交易的nonce唯一可以有效防止重放攻击，避免相同交易被重复执行。选项A虽然提到缓存交易数据，但这并不能从根本上防止重放攻击；选项C是地址校验，主要防止地址错误，并不直接防止重放攻击；选项D虽然是安全措施，但私钥加密并不直接防止重放攻击。</strong></p>
+  <p><strong>
+
+正确答案: B. 在发送交易时，确保每笔交易使用唯一的nonce值。因为nonce是以太坊交易的唯一标识，确保每笔交易的nonce唯一可以有效防止重放攻击，避免相同交易被重复执行。选项A虽然提到缓存交易数据，但这并不能从根本上防止重放攻击；选项C是地址校验，主要防止地址错误，并不直接防止重放攻击；选项D虽然是安全措施，但私钥加密并不直接防止重放攻击。</strong></p>
 </details>
 
 **问题 2:**
@@ -1847,7 +1973,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 防止重放攻击：
+  <p><strong>
+
+正确答案: 1. 防止重放攻击：
    - 使用ethers.js时，确保每笔交易包含唯一的nonce值。ethers.js默认会帮助管理nonce，但前端应避免手动设置错误nonce，导致交易被重放。
    - 在合约设计上，结合链上机制（如EIP-155）防止跨链重放攻击。
 
@@ -1884,7 +2012,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -1893,7 +2023,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 设计安全审计流程：
+  <p><strong>
+
+正确答案: 1. 设计安全审计流程：
  - 需求分析阶段：明确DApp的安全需求，识别关键交互点（如交易签名、合约调用）。
  - 代码审查阶段：对前端代码（尤其是使用ethers.js的部分）进行静态分析，检查潜在的安全漏洞，如不安全的签名请求、敏感信息泄露。
  - 合约审计阶段：结合专业智能合约审计工具（如 MythX、Slither）进行合约安全扫描。
@@ -1938,7 +2070,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 复用相同的 Provider 实例，避免重复创建连接，减少资源消耗。 复用 Provider 实例能够避免多次初始化带来的开销，减少网络连接数和资源消耗，从而提升性能和降低延迟。选项A可能导致过度轮询，增加网络负载；选项B虽然能提高准确性，但会增加复杂度和开销；选项D频繁创建实例会严重影响性能。</strong></p>
+  <p><strong>
+
+正确答案: C. 复用相同的 Provider 实例，避免重复创建连接，减少资源消耗。 复用 Provider 实例能够避免多次初始化带来的开销，减少网络连接数和资源消耗，从而提升性能和降低延迟。选项A可能导致过度轮询，增加网络负载；选项B虽然能提高准确性，但会增加复杂度和开销；选项D频繁创建实例会严重影响性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -1947,7 +2081,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在实际项目中，使用ethers.js的Provider连接主网时，如果遇到响应缓慢问题，可以通过以下性能调优策略来优化：
+  <p><strong>
+
+正确答案: 在实际项目中，使用ethers.js的Provider连接主网时，如果遇到响应缓慢问题，可以通过以下性能调优策略来优化：
 
 1. **合理选择Provider类型**：优先使用具备缓存和负载均衡能力的Provider，如Infura或者Alchemy，避免直接连接公共RPC节点。
 
@@ -1987,7 +2123,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用区块链浏览器（如 Etherscan）查看交易的区块确认时间和 Gas 使用情况。 这是因为性能瓶颈通常与链上交易的确认时间和消耗的 Gas 量密切相关，深入分析这些指标可以帮助准确定位瓶颈点。选项 A 虽然有助于观察事件，但不能精准反映调用性能；选项 C 可能带来并发问题；选项 D 对调用速度影响有限，且 ABI 结构不直接影响链上执行效率。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用区块链浏览器（如 Etherscan）查看交易的区块确认时间和 Gas 使用情况。 这是因为性能瓶颈通常与链上交易的确认时间和消耗的 Gas 量密切相关，深入分析这些指标可以帮助准确定位瓶颈点。选项 A 虽然有助于观察事件，但不能精准反映调用性能；选项 C 可能带来并发问题；选项 D 对调用速度影响有限，且 ABI 结构不直接影响链上执行效率。</strong></p>
 </details>
 
 **问题 2:**
@@ -1996,7 +2134,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能导致性能瓶颈的原因包括：
+  <p><strong>
+
+正确答案: 可能导致性能瓶颈的原因包括：
 
 1. **合约方法的计算复杂度高**：某些合约方法内部执行了大量逻辑或循环，导致执行时间长。
 2. **频繁发起链上调用**：大量连续或并发的链上调用，网络延迟和节点处理能力成为瓶颈。
@@ -2035,7 +2175,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C。因为在 ethers.js 中，持续监听事件时，如果不及时移除无用的监听器，会导致内存泄漏和性能下降。通过调用 removeListener 或 off 方法可以有效释放资源，保证监听的高效和稳定。选项 A 会造成监听器无限累积，选项 B 适用于只需监听一次的场景但不适合持续监听，选项 D 会增加事件处理复杂度且未必提升性能。</strong></p>
+  <p><strong>
+
+正确答案: C。因为在 ethers.js 中，持续监听事件时，如果不及时移除无用的监听器，会导致内存泄漏和性能下降。通过调用 removeListener 或 off 方法可以有效释放资源，保证监听的高效和稳定。选项 A 会造成监听器无限累积，选项 B 适用于只需监听一次的场景但不适合持续监听，选项 D 会增加事件处理复杂度且未必提升性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -2044,19 +2186,21 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. **使用过滤器（Filters）精准监听事件**：通过设置事件过滤器（如特定地址、交易对或事件参数）减少不必要的事件通知，降低前端处理压力。
+  <p><strong>
+  
+  正确答案: 1. **使用过滤器（Filters）精准监听事件**：通过设置事件过滤器（如特定地址、交易对或事件参数）减少不必要的事件通知，降低前端处理压力。
 
-2. **合理使用一次性监听（once）和移除监听（removeListener）**：对于只需响应一次的事件，使用 `once` 方法；对于不再需要监听的事件，及时调用 `removeListener` 或 `off` 移除监听器，避免内存泄漏。
+1. **合理使用一次性监听（once）和移除监听（removeListener）**：对于只需响应一次的事件，使用 `once` 方法；对于不再需要监听的事件，及时调用 `removeListener` 或 `off` 移除监听器，避免内存泄漏。
 
-3. **事件去重处理**：由于区块链事件可能因重组等原因触发多次，前端应维护事件唯一标识（如交易哈希+日志索引）集合，过滤重复事件。
+2. **事件去重处理**：由于区块链事件可能因重组等原因触发多次，前端应维护事件唯一标识（如交易哈希+日志索引）集合，过滤重复事件。
 
-4. **批量处理事件**：如果事件触发频率很高，可以设计事件缓存机制，定时批量处理事件，减少 UI 更新频率，优化渲染性能。
+3. **批量处理事件**：如果事件触发频率很高，可以设计事件缓存机制，定时批量处理事件，减少 UI 更新频率，优化渲染性能。
 
-5. **合理设置轮询或 WebSocket 连接**：优先使用 WebSocket Provider 进行实时事件订阅，避免频繁轮询。若使用轮询，需合理设置间隔时间，避免网络和计算资源浪费。
+4. **合理设置轮询或 WebSocket 连接**：优先使用 WebSocket Provider 进行实时事件订阅，避免频繁轮询。若使用轮询，需合理设置间隔时间，避免网络和计算资源浪费。
 
-6. **错误和断线重连处理**：实现 WebSocket 断线重连机制，确保事件监听的稳定性。
+5. **错误和断线重连处理**：实现 WebSocket 断线重连机制，确保事件监听的稳定性。
 
-7. **性能监控和调试**：通过性能监控工具检测事件监听对前端性能的影响，及时调整监听策略。
+6. **性能监控和调试**：通过性能监控工具检测事件监听对前端性能的影响，及时调整监听策略。
 
 综合以上措施，能够有效提升 ethers.js 事件监听的性能和稳定性，保证前端用户体验。</strong></p>
 </details>
@@ -2082,7 +2226,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用ethers.js的事件监听功能结合自定义日志处理，筛选和格式化重要事件以便调试。——这是正确答案，因为在ethers.js中，通过监听合约事件并结合自定义日志处理可以高效地管理和调试日志，避免大量无用日志干扰，有助于定位问题和优化性能。选项A会导致生产环境日志冗余且影响性能，选项C忽略了前端日志管理的重要性，选项D描述错误，ethers.js不自动生成默认日志文件。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用ethers.js的事件监听功能结合自定义日志处理，筛选和格式化重要事件以便调试。——这是正确答案，因为在ethers.js中，通过监听合约事件并结合自定义日志处理可以高效地管理和调试日志，避免大量无用日志干扰，有助于定位问题和优化性能。选项A会导致生产环境日志冗余且影响性能，选项C忽略了前端日志管理的重要性，选项D描述错误，ethers.js不自动生成默认日志文件。</strong></p>
 </details>
 
 **问题 2:**
@@ -2093,7 +2239,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在调试 ethers.js 中智能合约调用失败的问题时，可以采取以下步骤和工具：
+  <p><strong>
+
+正确答案: 在调试 ethers.js 中智能合约调用失败的问题时，可以采取以下步骤和工具：
 
 1. **使用浏览器开发者工具（DevTools）**
    - 查看控制台（Console）日志，捕获错误信息。
@@ -2135,7 +2283,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -2144,7 +2294,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 源码级调试定位性能瓶颈步骤：
+  <p><strong>
+
+正确答案: 1. 源码级调试定位性能瓶颈步骤：
   - 获取 ethers.js 源码，阅读相关模块如 Provider、Contract 的异步请求和事件监听部分，理解其调用链和异步流程。
   - 使用调试工具（如 VSCode 调试器、Chrome DevTools、Node.js 内置的调试器）对项目进行断点调试，重点监控异步调用和事件回调的执行时间。
   - 利用性能分析工具（如 Node.js 的 --inspect、Chrome 性能分析面板、Profiler）采集调用栈信息，识别耗时函数。
@@ -2184,7 +2336,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用轮询（Round-Robin）机制在多个Provider间均匀分配请求，同时对失败请求进行重试。因为轮询策略能够有效分散请求负载，避免单点压力，同时对失败请求重试增加了系统的容错能力，提升整体稳定性和可用性。A选项忽略了单点故障风险，C选项可能导致部分Provider过载，D选项缺乏负载均衡的合理性，容易导致性能瓶颈。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用轮询（Round-Robin）机制在多个Provider间均匀分配请求，同时对失败请求进行重试。因为轮询策略能够有效分散请求负载，避免单点压力，同时对失败请求重试增加了系统的容错能力，提升整体稳定性和可用性。A选项忽略了单点故障风险，C选项可能导致部分Provider过载，D选项缺乏负载均衡的合理性，容易导致性能瓶颈。</strong></p>
 </details>
 
 **问题 2:**
@@ -2199,7 +2353,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计一个多Provider架构时，目标是提升系统的可用性和响应速度，同时保障数据的准确性。以下为设计思路及重点实现点：
+  <p><strong>
+
+正确答案: 设计一个多Provider架构时，目标是提升系统的可用性和响应速度，同时保障数据的准确性。以下为设计思路及重点实现点：
 
 1. 健康检查与故障切换：
 - 定期对每个Provider发送简单请求（如eth_blockNumber）来检测其状态。
@@ -2240,7 +2396,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用 ethers.js 的 Provider 和 Signer 抽象，结合配置文件动态加载不同链的 RPC 和合约地址，实现链的动态切换。解释：ethers.js 的 Provider 和 Signer 是核心抽象，用于管理链连接和签名操作。结合配置文件动态管理多链的 RPC 和合约地址，可以有效支持多链环境下的灵活切换和调用，避免硬编码带来的维护困难。选项A虽然可行，但缺乏灵活性，难以维护。选项C忽略了直接多链交互的需求，依赖桥接可能带来额外复杂度和安全隐患。选项D混淆了多签钱包和多链管理的概念，ethers.js 本身不提供自动多链合约调用的功能。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用 ethers.js 的 Provider 和 Signer 抽象，结合配置文件动态加载不同链的 RPC 和合约地址，实现链的动态切换。解释：ethers.js 的 Provider 和 Signer 是核心抽象，用于管理链连接和签名操作。结合配置文件动态管理多链的 RPC 和合约地址，可以有效支持多链环境下的灵活切换和调用，避免硬编码带来的维护困难。选项A虽然可行，但缺乏灵活性，难以维护。选项C忽略了直接多链交互的需求，依赖桥接可能带来额外复杂度和安全隐患。选项D混淆了多签钱包和多链管理的概念，ethers.js 本身不提供自动多链合约调用的功能。</strong></p>
 </details>
 
 **问题 2:**
@@ -2249,7 +2407,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 多链支持架构设计：
+  <p><strong>
+
+正确答案: 1. 多链支持架构设计：
 - Provider和Signer管理：为每个链初始化独立的ethers.js Provider实例，例如通过Infura或Alchemy提供的RPC URL分别连接以太坊和BSC。
 - Signer一般通过MetaMask或WalletConnect等钱包注入，需根据当前用户选择的链动态切换对应的Provider和Signer，确保交易发送至正确的网络。
 - 维护一个链ID和Provider/Signer的映射，方便根据链ID快速获取对应实例。
@@ -2294,7 +2454,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 自定义 Provider 可以不继承任何 ethers.js 现有 Provider 类，只要实现 send 方法即可正常工作；自定义 Signer 需要实现 connect 方法以支持关联不同的 Provider 实例。因为 ethers.js 的设计允许完全自定义 Provider，只要满足底层 send 请求接口即可工作，同时 Signer 的 connect 方法是切换 Provider 的关键实现，必须提供以实现灵活的签名者绑定。</strong></p>
+  <p><strong>
+
+正确答案: C. 自定义 Provider 可以不继承任何 ethers.js 现有 Provider 类，只要实现 send 方法即可正常工作；自定义 Signer 需要实现 connect 方法以支持关联不同的 Provider 实例。因为 ethers.js 的设计允许完全自定义 Provider，只要满足底层 send 请求接口即可工作，同时 Signer 的 connect 方法是切换 Provider 的关键实现，必须提供以实现灵活的签名者绑定。</strong></p>
 </details>
 
 **问题 2:**
@@ -2310,7 +2472,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 自定义Provider设计要点与实现思路：
+  <p><strong>
+
+正确答案: 1. 自定义Provider设计要点与实现思路：
 - 继承或实现ethers.js的Provider接口，重写核心方法如 send、call、getBlockNumber 等。
 - 设计请求路由机制，根据链ID或请求参数，将请求分发到不同链的节点，实现多链请求聚合。
 - 对请求进行缓存和重试机制以提升性能和可靠性。
@@ -2352,7 +2516,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 React Context 或自定义 Hook 封装 ethers.js 实例，集中管理 Provider 和 Contract，避免重复创建。 解析：使用 React Context 或自定义 Hook 来封装 ethers.js 实例能集中管理区块链连接和合约实例，避免在多个组件中重复创建相同的 Provider 和 Contract，从而提升性能和代码可维护性。选项 A 会导致资源浪费和状态混乱；选项 C 会频繁发起网络请求，影响性能；选项 D 使用全局变量不利于组件解耦和测试。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 React Context 或自定义 Hook 封装 ethers.js 实例，集中管理 Provider 和 Contract，避免重复创建。 解析：使用 React Context 或自定义 Hook 来封装 ethers.js 实例能集中管理区块链连接和合约实例，避免在多个组件中重复创建相同的 Provider 和 Contract，从而提升性能和代码可维护性。选项 A 会导致资源浪费和状态混乱；选项 C 会频繁发起网络请求，影响性能；选项 D 使用全局变量不利于组件解耦和测试。</strong></p>
 </details>
 
 **问题 2:**
@@ -2361,7 +2527,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在React中集成ethers.js的最佳实践通常包括以下几个方面：
+  <p><strong>
+
+正确答案: 在React中集成ethers.js的最佳实践通常包括以下几个方面：
 
 1. **封装Provider和Signer逻辑**：
    - 创建一个自定义的React Context Provider（例如EthersProvider），在该Provider中初始化ethers.js的Provider和Signer，负责与以太坊节点或钱包进行连接。
@@ -2418,7 +2586,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 采用分层架构，将智能合约交互封装在独立的服务模块中，组件通过接口调用，并统一管理合约地址和ABI，配合严格的TypeScript类型定义。 这种设计符合企业级应用的架构要求，能够提高代码的可维护性、复用性和团队协作效率，同时利用TypeScript提升类型安全，避免硬编码和重复代码，是最佳实践。</strong></p>
+  <p><strong>
+
+正确答案: B. 采用分层架构，将智能合约交互封装在独立的服务模块中，组件通过接口调用，并统一管理合约地址和ABI，配合严格的TypeScript类型定义。 这种设计符合企业级应用的架构要求，能够提高代码的可维护性、复用性和团队协作效率，同时利用TypeScript提升类型安全，避免硬编码和重复代码，是最佳实践。</strong></p>
 </details>
 
 **问题 2:**
@@ -2434,7 +2604,9 @@ const signature = await signer._signTypedData(domain, types, value);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 多环境配置管理策略：
+  <p><strong>
+
+正确答案: 1. 多环境配置管理策略：
 - 使用环境变量（如 .env 文件）分离不同环境的 RPC 节点地址、合约地址和密钥管理。
 - 封装配置管理模块，根据环境动态加载不同配置，避免硬编码。
 

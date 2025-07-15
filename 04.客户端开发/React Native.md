@@ -159,7 +159,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Bridge桥接层。React Native中的Bridge桥接层负责连接JavaScript代码和原生平台，传递命令和数据，实现JavaScript调用原生组件，从而完成跨平台渲染。JavaScript虚拟机仅负责执行JS代码，原生模块是原生功能的接口，JSX解析器不是React Native架构中的独立组件。</strong></p>
+  <p><strong>
+
+正确答案: B. Bridge桥接层。React Native中的Bridge桥接层负责连接JavaScript代码和原生平台，传递命令和数据，实现JavaScript调用原生组件，从而完成跨平台渲染。JavaScript虚拟机仅负责执行JS代码，原生模块是原生功能的接口，JSX解析器不是React Native架构中的独立组件。</strong></p>
 </details>
 
 **问题 2:**
@@ -168,7 +170,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: React Native采用了JavaScript线程、原生线程和桥接机制三者协作的架构。JavaScript线程负责执行业务逻辑和界面更新的JavaScript代码，原生线程（UI线程）负责渲染界面，桥接机制（Bridge）则作为两者通信的通道，传递异步消息。
+  <p><strong>
+
+正确答案: React Native采用了JavaScript线程、原生线程和桥接机制三者协作的架构。JavaScript线程负责执行业务逻辑和界面更新的JavaScript代码，原生线程（UI线程）负责渲染界面，桥接机制（Bridge）则作为两者通信的通道，传递异步消息。
 
 优势：
 - 异步通信避免了阻塞UI线程，提高界面流畅度。
@@ -208,7 +212,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 在JSX中，可以用大括号{}包裹JavaScript表达式来动态渲染内容。解释：JSX允许在标签内通过大括号包裹JavaScript表达式，实现动态渲染。选项A错误，因为虽然不能直接写if-else语句，但可以用三元表达式或逻辑运算符替代。选项B错误，组件名称必须以大写字母开头。选项D错误，React Native支持函数组件和类组件两种形式。</strong></p>
+  <p><strong>
+
+正确答案: C. 在JSX中，可以用大括号{}包裹JavaScript表达式来动态渲染内容。解释：JSX允许在标签内通过大括号包裹JavaScript表达式，实现动态渲染。选项A错误，因为虽然不能直接写if-else语句，但可以用三元表达式或逻辑运算符替代。选项B错误，组件名称必须以大写字母开头。选项D错误，React Native支持函数组件和类组件两种形式。</strong></p>
 </details>
 
 **问题 2:**
@@ -217,7 +223,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以使用函数组件的方式实现`UserProfile`组件，示例如下：
+  <p><strong>
+
+正确答案: 你可以使用函数组件的方式实现`UserProfile`组件，示例如下：
 
 ```jsx
 function UserProfile({ user }) {
@@ -254,7 +262,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 通过在内存中维护 UI 的轻量级副本，减少与原生层的直接交互。虚拟 DOM 是 React Native 用来优化渲染过程的一种机制，它在内存中保持 UI 的轻量级副本，计算出最小的更新差异，从而减少与原生层的直接沟通，提升性能。选项 A 错误，因为虚拟 DOM 并不直接操作原生组件，而是先操作虚拟树；选项 C 错误，虚拟 DOM 与 JavaScript 引擎无关；选项 D 错误，React Native 通过差异算法避免了完整重新渲染。</strong></p>
+  <p><strong>
+
+正确答案: B. 通过在内存中维护 UI 的轻量级副本，减少与原生层的直接交互。虚拟 DOM 是 React Native 用来优化渲染过程的一种机制，它在内存中保持 UI 的轻量级副本，计算出最小的更新差异，从而减少与原生层的直接沟通，提升性能。选项 A 错误，因为虚拟 DOM 并不直接操作原生组件，而是先操作虚拟树；选项 C 错误，虚拟 DOM 与 JavaScript 引擎无关；选项 D 错误，React Native 通过差异算法避免了完整重新渲染。</strong></p>
 </details>
 
 **问题 2:**
@@ -263,7 +273,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 虚拟DOM是React Native中用于提升渲染性能的重要机制。它通过在内存中维护一个与真实DOM结构相似的虚拟表示，首先对数据变更进行差异计算（diffing），然后只将变化的部分高效地更新到真实DOM（或Native UI组件）中。具体到列表频繁更新的场景，虚拟DOM避免了每次数据变化都重新渲染整个列表，而是仅更新发生变化的列表项，从而减少了不必要的UI操作和性能开销。如果没有虚拟DOM，每次数据更新都会导致整个UI树的重绘和重排，造成大量计算和渲染资源浪费，影响应用的流畅性和响应速度。</strong></p>
+  <p><strong>
+
+正确答案: 虚拟DOM是React Native中用于提升渲染性能的重要机制。它通过在内存中维护一个与真实DOM结构相似的虚拟表示，首先对数据变更进行差异计算（diffing），然后只将变化的部分高效地更新到真实DOM（或Native UI组件）中。具体到列表频繁更新的场景，虚拟DOM避免了每次数据变化都重新渲染整个列表，而是仅更新发生变化的列表项，从而减少了不必要的UI操作和性能开销。如果没有虚拟DOM，每次数据更新都会导致整个UI树的重绘和重排，造成大量计算和渲染资源浪费，影响应用的流畅性和响应速度。</strong></p>
 </details>
 
 ---
@@ -284,7 +296,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用Platform模块条件渲染不同平台的组件和样式，针对每个平台单独优化关键界面。理由是：Platform模块允许开发者在保证大部分代码复用的基础上，根据不同平台的具体需求调整界面和交互，兼顾了代码维护性和用户体验。选项B忽略了平台差异可能导致用户体验下降；选项C虽然体验好，但会增加大量重复代码和维护成本；选项D依赖第三方库不一定能满足所有自定义需求，且可能引入额外问题。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用Platform模块条件渲染不同平台的组件和样式，针对每个平台单独优化关键界面。理由是：Platform模块允许开发者在保证大部分代码复用的基础上，根据不同平台的具体需求调整界面和交互，兼顾了代码维护性和用户体验。选项B忽略了平台差异可能导致用户体验下降；选项C虽然体验好，但会增加大量重复代码和维护成本；选项D依赖第三方库不一定能满足所有自定义需求，且可能引入额外问题。</strong></p>
 </details>
 
 **问题 2:**
@@ -293,7 +307,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在React Native中，针对iOS和Android的跨平台差异，常见策略包括：
+  <p><strong>
+
+正确答案: 在React Native中，针对iOS和Android的跨平台差异，常见策略包括：
 
 1. **使用Platform模块进行条件渲染**：通过`Platform.OS`判断当前运行平台，在代码中有针对性地调整组件样式或逻辑。例如，iOS采用`SafeAreaView`处理刘海屏适配，Android则可能需要额外处理状态栏高度。
 
@@ -330,7 +346,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 允许JavaScript线程和原生线程通过异步消息传递进行通信。——React Native的桥接机制是一个异步的通信通道，负责在JavaScript线程和原生线程之间传递消息，确保两者能协同工作，而不是直接编译或同步调用。</strong></p>
+  <p><strong>
+
+正确答案: B. 允许JavaScript线程和原生线程通过异步消息传递进行通信。——React Native的桥接机制是一个异步的通信通道，负责在JavaScript线程和原生线程之间传递消息，确保两者能协同工作，而不是直接编译或同步调用。</strong></p>
 </details>
 
 **问题 2:**
@@ -339,7 +357,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: React Native桥接机制是JS线程与原生线程之间通信的中介，基于异步消息队列来传递指令和数据。
+  <p><strong>
+
+正确答案: React Native桥接机制是JS线程与原生线程之间通信的中介，基于异步消息队列来传递指令和数据。
 
 工作原理：
 - JS线程通过桥接发送JSON格式的消息到原生模块。
@@ -378,7 +398,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 创建一个原生 UI 组件管理器（ViewManager），通过 requireNativeComponent 方法导出该组件，再在 JavaScript 中引用。 解释：在 React Native 中，集成原生 UI 组件通常需要在原生端创建一个 ViewManager 来管理该组件，然后通过 requireNativeComponent 方法将其导出为 JavaScript 组件，这样才能在 React Native 中像使用普通组件一样使用原生组件。选项A错误，因为不能直接导入原生类名。选项B描述的是调用原生模块的方式，不适用于 UI 组件的集成。选项D混淆了样式定义与组件集成的概念，样式无法实现组件的导入与绑定。</strong></p>
+  <p><strong>
+
+正确答案: C. 创建一个原生 UI 组件管理器（ViewManager），通过 requireNativeComponent 方法导出该组件，再在 JavaScript 中引用。 解释：在 React Native 中，集成原生 UI 组件通常需要在原生端创建一个 ViewManager 来管理该组件，然后通过 requireNativeComponent 方法将其导出为 JavaScript 组件，这样才能在 React Native 中像使用普通组件一样使用原生组件。选项A错误，因为不能直接导入原生类名。选项B描述的是调用原生模块的方式，不适用于 UI 组件的集成。选项D混淆了样式定义与组件集成的概念，样式无法实现组件的导入与绑定。</strong></p>
 </details>
 
 **问题 2:**
@@ -387,7 +409,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 要实现定制的原生地图UI组件和原生定位模块在React Native中的集成，设计思路如下：
+  <p><strong>
+
+正确答案: 要实现定制的原生地图UI组件和原生定位模块在React Native中的集成，设计思路如下：
 
 1. 原生UI组件集成：
    - 在Android中，创建一个继承自View的自定义地图组件（如MapView），并通过ReactPackage注册该组件。
@@ -434,7 +458,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C</strong></p>
+  <p><strong>
+
+正确答案: C</strong></p>
 </details>
 
 **问题 2:**
@@ -443,7 +469,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Fabric架构是React Native的新渲染引擎，旨在解决传统渲染流程中的性能瓶颈和UI更新延迟问题。其核心改进包括：
+  <p><strong>
+
+正确答案: Fabric架构是React Native的新渲染引擎，旨在解决传统渲染流程中的性能瓶颈和UI更新延迟问题。其核心改进包括：
 
 1. **多线程模型**：Fabric将UI渲染过程拆分为多个线程，主要包括JavaScript线程、UI线程和新的渲染线程。其中，Fabric引入了同步机制使JavaScript线程与UI线程之间可以并行处理任务，减少了阻塞和等待时间。
 
@@ -475,7 +503,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. JavaScript 运行时（如 Hermes）、原生桥接 (Bridge)、UI 管理器 (UIManager)、以及跨平台的网络模块。因为 React Native 的核心模块包括了 JavaScript 运行时环境（如 Hermes 引擎），负责执行 JS 代码；桥接模块负责 JS 与原生代码的通信；UI 管理器负责管理原生视图组件的生命周期和渲染；网络模块则支持跨平台的网络请求，是实现 React Native 跨平台能力的基础。选项 B 错误在于忽略了原生代码部分，C 错误在于忽略了 JavaScript 层，D 错误在于忽略了核心执行和渲染模块，仅关注调试工具。</strong></p>
+  <p><strong>
+
+正确答案: A. JavaScript 运行时（如 Hermes）、原生桥接 (Bridge)、UI 管理器 (UIManager)、以及跨平台的网络模块。因为 React Native 的核心模块包括了 JavaScript 运行时环境（如 Hermes 引擎），负责执行 JS 代码；桥接模块负责 JS 与原生代码的通信；UI 管理器负责管理原生视图组件的生命周期和渲染；网络模块则支持跨平台的网络请求，是实现 React Native 跨平台能力的基础。选项 B 错误在于忽略了原生代码部分，C 错误在于忽略了 JavaScript 层，D 错误在于忽略了核心执行和渲染模块，仅关注调试工具。</strong></p>
 </details>
 
 **问题 2:**
@@ -484,7 +514,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: React Native的源码主要分为三个部分：
+  <p><strong>
+
+正确答案: React Native的源码主要分为三个部分：
 
 1. **React部分（react）**：负责声明式UI的构建，包含React核心库。
 2. **Native部分（ReactAndroid、ReactCommon、ReactWindows等）**：提供跨平台的原生功能支持。
@@ -534,7 +566,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 新架构中引入了Fabric渲染系统和TurboModules，旨在提升UI渲染性能和模块加载效率。 解析：React Native的新架构引入了Fabric（新的渲染系统）和TurboModules（新的原生模块系统），这两个核心组件的设计目的是提升UI的渲染性能和模块加载效率，而非完全废弃JavaScript或者移除JS线程。选项A和C描述错误，选项D也与React Native跨平台战略相悖。</strong></p>
+  <p><strong>
+
+正确答案: B. 新架构中引入了Fabric渲染系统和TurboModules，旨在提升UI渲染性能和模块加载效率。 解析：React Native的新架构引入了Fabric（新的渲染系统）和TurboModules（新的原生模块系统），这两个核心组件的设计目的是提升UI的渲染性能和模块加载效率，而非完全废弃JavaScript或者移除JS线程。选项A和C描述错误，选项D也与React Native跨平台战略相悖。</strong></p>
 </details>
 
 **问题 2:**
@@ -543,7 +577,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: React Native传统Bridge架构通过异步消息传递连接JavaScript和原生模块，但存在通信延迟和性能瓶颈，尤其在复杂交互和高频更新场景中表现不佳。
+  <p><strong>
+
+正确答案: React Native传统Bridge架构通过异步消息传递连接JavaScript和原生模块，但存在通信延迟和性能瓶颈，尤其在复杂交互和高频更新场景中表现不佳。
 
 新版架构引入了Fabric和TurboModules：
 
@@ -594,7 +630,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Text 组件可以嵌套其他 Text 组件，但不能包含 View 组件。解释：在 React Native 中，Text 组件支持嵌套其他 Text 组件以实现文本样式的局部应用，但不能包含非文本组件如 View。选项 A 错误，因为 View 组件可以包含其他 View 或 Text 组件。选项 C 错误，Image 组件不必必须放在 View 内部，可以直接使用。选项 D 错误，虽然 Text 和 Image 组件可以作为根组件使用，但 Image 作为根组件时需要特别注意样式设置，否则可能无法正确显示。</strong></p>
+  <p><strong>
+
+正确答案: B. Text 组件可以嵌套其他 Text 组件，但不能包含 View 组件。解释：在 React Native 中，Text 组件支持嵌套其他 Text 组件以实现文本样式的局部应用，但不能包含非文本组件如 View。选项 A 错误，因为 View 组件可以包含其他 View 或 Text 组件。选项 C 错误，Image 组件不必必须放在 View 内部，可以直接使用。选项 D 错误，虽然 Text 和 Image 组件可以作为根组件使用，但 Image 作为根组件时需要特别注意样式设置，否则可能无法正确显示。</strong></p>
 </details>
 
 **问题 2:**
@@ -605,7 +643,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以使用一个View作为卡片的容器，设置其背景色和边距样式。头像使用Image组件，显示用户的头像图片。用户名和简介使用Text组件显示文本内容。具体实现时，View组件负责整体布局和样式，Image负责图片展示，Text负责文本显示。通过给View设置padding或margin属性实现边距，通过backgroundColor属性设置背景色。这样使用基础组件既简单又符合React Native的设计理念。</strong></p>
+  <p><strong>
+
+正确答案: 你可以使用一个View作为卡片的容器，设置其背景色和边距样式。头像使用Image组件，显示用户的头像图片。用户名和简介使用Text组件显示文本内容。具体实现时，View组件负责整体布局和样式，Image负责图片展示，Text负责文本显示。通过给View设置padding或margin属性实现边距，通过backgroundColor属性设置背景色。这样使用基础组件既简单又符合React Native的设计理念。</strong></p>
 </details>
 
 ---
@@ -634,7 +674,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用类组件时，必须在构造函数中调用 super(props)，才能在 render 方法中通过 this.props 访问属性。——这是 React 中类组件的规范写法，调用 super(props) 是为了让父类的构造函数接收 props，从而在组件实例中可以通过 this.props 使用传递的属性。选项 A 错误，因为函数组件必须将 props 作为参数传入才能访问。选项 C 错误，props 是只读的，不应该被修改。选项 D 错误，自定义组件不一定要继承 React.PureComponent，普通 Component 也可以正确接收和渲染属性。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用类组件时，必须在构造函数中调用 super(props)，才能在 render 方法中通过 this.props 访问属性。——这是 React 中类组件的规范写法，调用 super(props) 是为了让父类的构造函数接收 props，从而在组件实例中可以通过 this.props 使用传递的属性。选项 A 错误，因为函数组件必须将 props 作为参数传入才能访问。选项 C 错误，props 是只读的，不应该被修改。选项 D 错误，自定义组件不一定要继承 React.PureComponent，普通 Component 也可以正确接收和渲染属性。</strong></p>
 </details>
 
 **问题 2:**
@@ -643,7 +685,9 @@ function UserProfile({ user }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 组件设计和props：
+  <p><strong>
+
+正确答案: 1. 组件设计和props：
 - ProductCard组件应接收以下主要props：
   - imageUrl（字符串）：产品图片URL
   - productName（字符串）：产品名称
@@ -693,7 +737,9 @@ const ProductCard = ({ imageUrl, productName, price, onPress }) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. state 是组件内部管理的状态，可以通过 this.setState 来更新。 —— 这是正确的，因为 state 是组件自身管理的可变状态，必须通过 setState 方法来更新以触发组件重新渲染。A 选项错误，props 是不可变的由父组件传递的数据；B 选项错误，state 是组件自身管理的，不是由父组件传递；D 选项错误，props 不能直接修改，state 应使用 setState 更新。</strong></p>
+  <p><strong>
+
+正确答案: C. state 是组件内部管理的状态，可以通过 this.setState 来更新。 —— 这是正确的，因为 state 是组件自身管理的可变状态，必须通过 setState 方法来更新以触发组件重新渲染。A 选项错误，props 是不可变的由父组件传递的数据；B 选项错误，state 是组件自身管理的，不是由父组件传递；D 选项错误，props 不能直接修改，state 应使用 setState 更新。</strong></p>
 </details>
 
 **问题 2:**
@@ -702,7 +748,9 @@ const ProductCard = ({ imageUrl, productName, price, onPress }) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在React Native中，props用于父组件向子组件传递数据，适合管理那些由父组件控制且子组件无需修改的数据。state则用于组件自身管理和维护的状态，通常是组件内部需要动态改变的数据，如用户输入。
+  <p><strong>
+
+正确答案: 在React Native中，props用于父组件向子组件传递数据，适合管理那些由父组件控制且子组件无需修改的数据。state则用于组件自身管理和维护的状态，通常是组件内部需要动态改变的数据，如用户输入。
 
 在该场景下，父组件通过props将数据传递给子组件，子组件内部通过state管理用户输入的临时数据。若父组件需要根据子组件的输入更新状态，推荐采用“提升状态（Lifting State Up）”的设计模式：将需要共享的状态提升到父组件，由父组件管理state，并通过props传递给子组件。子组件通过回调函数（props传递的函数）将用户输入传递给父组件，父组件更新状态后再通过props通知子组件，实现数据同步。
 
@@ -730,7 +778,9 @@ const ProductCard = ({ imageUrl, productName, price, onPress }) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. useEffect(() => { /* 副作用代码 */ }, []); 解释：在 React 和 React Native 中，useEffect 的第二个参数是依赖数组，传入空数组意味着该副作用函数只会在组件首次挂载时执行一次，之后不会因为任何状态或属性改变而重新执行。选项A没有依赖数组，副作用会在每次渲染后执行；选项C依赖props变化，副作用会在props变化时执行；选项D传入null不是有效的依赖数组，会导致错误或不符合预期。</strong></p>
+  <p><strong>
+
+正确答案: B. useEffect(() => { /* 副作用代码 */ }, []); 解释：在 React 和 React Native 中，useEffect 的第二个参数是依赖数组，传入空数组意味着该副作用函数只会在组件首次挂载时执行一次，之后不会因为任何状态或属性改变而重新执行。选项A没有依赖数组，副作用会在每次渲染后执行；选项C依赖props变化，副作用会在props变化时执行；选项D传入null不是有效的依赖数组，会导致错误或不符合预期。</strong></p>
 </details>
 
 **问题 2:**
@@ -739,7 +789,9 @@ const ProductCard = ({ imageUrl, productName, price, onPress }) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在函数组件中，可以使用useEffect Hook来模拟组件的生命周期行为。具体实现步骤如下：
+  <p><strong>
+
+正确答案: 在函数组件中，可以使用useEffect Hook来模拟组件的生命周期行为。具体实现步骤如下：
 
 1. 使用useEffect来执行副作用代码。在useEffect中，执行API请求以加载数据。
 2. 通过定义useEffect的清理函数（return一个函数）来处理组件卸载时的操作。
@@ -803,7 +855,9 @@ function DataLoader() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 高阶组件通过接受组件作为参数并返回一个增强的组件实现逻辑复用，而Render Props通过将一个函数作为子组件传递来动态决定渲染内容。 解析：高阶组件（HOC）是一种函数，接受一个组件并返回一个新的增强组件，用于逻辑复用。Render Props是一种通过将函数作为子组件传递，实现动态渲染和共享组件逻辑的模式。选项B错误，因为HOC和Render Props都可以用于类组件和函数组件。选项C错误，因为Render Props不会直接修改组件状态，而是通过函数参数传递数据。选项D错误，React没有内置HOC或Render Props API，这两者都是设计模式，需要开发者自定义实现。</strong></p>
+  <p><strong>
+
+正确答案: A. 高阶组件通过接受组件作为参数并返回一个增强的组件实现逻辑复用，而Render Props通过将一个函数作为子组件传递来动态决定渲染内容。 解析：高阶组件（HOC）是一种函数，接受一个组件并返回一个新的增强组件，用于逻辑复用。Render Props是一种通过将函数作为子组件传递，实现动态渲染和共享组件逻辑的模式。选项B错误，因为HOC和Render Props都可以用于类组件和函数组件。选项C错误，因为Render Props不会直接修改组件状态，而是通过函数参数传递数据。选项D错误，React没有内置HOC或Render Props API，这两者都是设计模式，需要开发者自定义实现。</strong></p>
 </details>
 
 **问题 2:**
@@ -812,7 +866,9 @@ function DataLoader() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 使用高阶组件（HOC）实现：
+  <p><strong>
+
+正确答案: 1. 使用高阶组件（HOC）实现：
 - 创建一个 HOC，比如 `withNetworkStatus`，它内部订阅网络状态变化，并将当前网络状态作为 prop 传递给包裹的组件。
 - 需要网络状态的组件通过调用 `withNetworkStatus(MyComponent)` 获得增强后的组件。
 
@@ -864,7 +920,9 @@ function DataLoader() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 `React.memo` 包裹函数组件，并确保传入的 props 是纯数据或经过浅比较的对象。 这是因为 `React.memo` 通过浅比较 props 来决定是否重新渲染组件，能够有效减少不必要的渲染，提高性能。选项 B 中使用 `useState` 并不能避免父组件传递的 props 导致重新渲染，且会增加组件复杂度；选项 C 虽然类组件可以使用 `shouldComponentUpdate`，但不符合函数组件的优化主题；选项 D 的 `useEffect` 主要用于副作用处理，不适合缓存渲染结果。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 `React.memo` 包裹函数组件，并确保传入的 props 是纯数据或经过浅比较的对象。 这是因为 `React.memo` 通过浅比较 props 来决定是否重新渲染组件，能够有效减少不必要的渲染，提高性能。选项 B 中使用 `useState` 并不能避免父组件传递的 props 导致重新渲染，且会增加组件复杂度；选项 C 虽然类组件可以使用 `shouldComponentUpdate`，但不符合函数组件的优化主题；选项 D 的 `useEffect` 主要用于副作用处理，不适合缓存渲染结果。</strong></p>
 </details>
 
 **问题 2:**
@@ -875,7 +933,9 @@ function DataLoader() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 为了优化函数组件性能，避免不必要的重新渲染，可以采用以下方法：
+  <p><strong>
+
+正确答案: 为了优化函数组件性能，避免不必要的重新渲染，可以采用以下方法：
 
 1. React.memo：
 - 作用：对函数组件进行包裹，只有当props发生变化时才重新渲染。
@@ -923,7 +983,9 @@ function DataLoader() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -932,7 +994,9 @@ function DataLoader() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计一个高复用且抽象良好的按钮组件，可以从以下几个方面着手：
+  <p><strong>
+
+正确答案: 设计一个高复用且抽象良好的按钮组件，可以从以下几个方面着手：
 
 1. **组件接口设计**：
    - 使用props传递不同的样式类型，如`type`（'primary', 'secondary', 'danger'）来控制按钮的视觉表现。
@@ -987,7 +1051,9 @@ const Button = ({ type = 'primary', title, icon, onPress, style }) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B。通过配置属性（props）控制组件行为，同时避免在组件内部写死业务逻辑，可以使组件更通用、更易于复用和维护。A选项的写死样式降低了样式的灵活性；C选项引入业务层状态会导致组件耦合度过高，不利于复用；D选项中函数组件配合Hooks通常更简洁和高效，且更符合现代React Native开发趋势。</strong></p>
+  <p><strong>
+
+正确答案: B。通过配置属性（props）控制组件行为，同时避免在组件内部写死业务逻辑，可以使组件更通用、更易于复用和维护。A选项的写死样式降低了样式的灵活性；C选项引入业务层状态会导致组件耦合度过高，不利于复用；D选项中函数组件配合Hooks通常更简洁和高效，且更符合现代React Native开发趋势。</strong></p>
 </details>
 
 **问题 2:**
@@ -996,7 +1062,9 @@ const Button = ({ type = 'primary', title, icon, onPress, style }) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计多平台、多主题的 React Native 组件库时，我会从以下几个方面入手：
+  <p><strong>
+
+正确答案: 设计多平台、多主题的 React Native 组件库时，我会从以下几个方面入手：
 
 1. 目录结构设计
 - 按功能模块划分文件夹，如 Button、Input、Modal 等，每个文件夹包含组件实现、样式文件和测试文件。
@@ -1054,7 +1122,9 @@ const Button = ({ type = 'primary', title, icon, onPress, style }) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 阅读组件的源码注释和文档，理解当前实现和设计理念，同时遵循项目的贡献指南，包括代码规范和测试覆盖要求。因为只有深入理解组件的设计思想和遵守社区的贡献流程，才能保证代码质量和兼容性，进而被主流项目接受。</strong></p>
+  <p><strong>
+
+正确答案: B. 阅读组件的源码注释和文档，理解当前实现和设计理念，同时遵循项目的贡献指南，包括代码规范和测试覆盖要求。因为只有深入理解组件的设计思想和遵守社区的贡献流程，才能保证代码质量和兼容性，进而被主流项目接受。</strong></p>
 </details>
 
 **问题 2:**
@@ -1063,7 +1133,9 @@ const Button = ({ type = 'primary', title, icon, onPress, style }) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 源码阅读与性能分析步骤：
+  <p><strong>
+
+正确答案: 1. 源码阅读与性能分析步骤：
 - 克隆并搭建组件源码环境，确保可以调试和运行组件。
 - 理解组件结构和生命周期，重点关注渲染逻辑和状态管理。
 - 利用性能分析工具（如React DevTools Profiler、Flipper等）定位性能瓶颈。
@@ -1107,7 +1179,9 @@ const Button = ({ type = 'primary', title, icon, onPress, style }) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. useReducer可以让状态更新逻辑集中在一个地方，适合复杂状态管理。——因为useReducer通过集中定义reducer函数管理状态更新，适合复杂的状态和多种更新逻辑，而useState更适合简单状态的管理。</strong></p>
+  <p><strong>
+
+正确答案: B. useReducer可以让状态更新逻辑集中在一个地方，适合复杂状态管理。——因为useReducer通过集中定义reducer函数管理状态更新，适合复杂的状态和多种更新逻辑，而useState更适合简单状态的管理。</strong></p>
 </details>
 
 **问题 2:**
@@ -1116,7 +1190,9 @@ const Button = ({ type = 'primary', title, icon, onPress, style }) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在该购物车管理场景中，使用`useState`可以通过多个状态变量分别管理商品列表和其他相关状态，但当状态逻辑复杂（如添加、移除、清空操作涉及多个状态更新和逻辑判断）时，代码可能变得冗长且难以维护。
+  <p><strong>
+
+正确答案: 在该购物车管理场景中，使用`useState`可以通过多个状态变量分别管理商品列表和其他相关状态，但当状态逻辑复杂（如添加、移除、清空操作涉及多个状态更新和逻辑判断）时，代码可能变得冗长且难以维护。
 
 而`useReducer`则适合管理具有复杂状态逻辑的场景。它通过定义一个reducer函数来集中处理所有状态变更操作（添加商品、移除商品、清空购物车），使状态管理更清晰、结构化。
 
@@ -1145,7 +1221,9 @@ const Button = ({ type = 'primary', title, icon, onPress, style }) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. Context API 适合传递全局状态，但频繁更新的状态可能导致所有使用该 Context 的组件重新渲染，影响性能。 解释：Context API 允许在函数组件中通过 useContext 钩子访问，且通过 Provider 传递的状态是单向的，子组件可以访问但不能直接修改 Context 的值。频繁更新 Context 会触发所有使用该 Context 的组件重新渲染，可能影响性能，需要结合其他状态管理手段优化。选项 A 错误，因为函数组件可以使用 useContext。选项 B 错误，子组件无法直接修改 Context 值，只能通过 Provider 的状态更新方法。选项 D 错误，React 自动管理 Context 的订阅和更新，无需手动订阅或取消订阅。</strong></p>
+  <p><strong>
+
+正确答案: C. Context API 适合传递全局状态，但频繁更新的状态可能导致所有使用该 Context 的组件重新渲染，影响性能。 解释：Context API 允许在函数组件中通过 useContext 钩子访问，且通过 Provider 传递的状态是单向的，子组件可以访问但不能直接修改 Context 的值。频繁更新 Context 会触发所有使用该 Context 的组件重新渲染，可能影响性能，需要结合其他状态管理手段优化。选项 A 错误，因为函数组件可以使用 useContext。选项 B 错误，子组件无法直接修改 Context 值，只能通过 Provider 的状态更新方法。选项 D 错误，React 自动管理 Context 的订阅和更新，无需手动订阅或取消订阅。</strong></p>
 </details>
 
 **问题 2:**
@@ -1156,7 +1234,9 @@ const Button = ({ type = 'primary', title, icon, onPress, style }) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 使用Context API实现用户登录状态共享的步骤：
+  <p><strong>
+
+正确答案: 1. 使用Context API实现用户登录状态共享的步骤：
 - 创建Context：通过React.createContext()创建一个Context对象。
 - 提供Provider：在应用的顶层或合适的父组件中使用Context.Provider，传入用户登录状态作为value。
 - 消费Context：在需要使用登录状态的子组件中，使用useContext钩子或Context.Consumer来获取共享的状态。
@@ -1197,7 +1277,9 @@ Context API通过Provider和Consumer机制实现跨组件传递数据。Provider
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 增强 store 的 dispatch 方法以支持异步操作或日志记录。中间件的主要功能是拦截并增强 dispatch 行为，比如支持异步操作（如 Redux Thunk）或实现日志、错误报告等功能，而不是直接更新状态或替代 reducer。</strong></p>
+  <p><strong>
+
+正确答案: B. 增强 store 的 dispatch 方法以支持异步操作或日志记录。中间件的主要功能是拦截并增强 dispatch 行为，比如支持异步操作（如 Redux Thunk）或实现日志、错误报告等功能，而不是直接更新状态或替代 reducer。</strong></p>
 </details>
 
 **问题 2:**
@@ -1206,7 +1288,9 @@ Context API通过Provider和Consumer机制实现跨组件传递数据。Provider
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Redux中间件是介于dispatch动作和reducer之间的扩展机制，可以用来拦截、修改或延迟动作的派发，处理异步逻辑或副作用。
+  <p><strong>
+
+正确答案: Redux中间件是介于dispatch动作和reducer之间的扩展机制，可以用来拦截、修改或延迟动作的派发，处理异步逻辑或副作用。
 
 对于异步API请求，Redux本身是同步的，无法直接处理异步操作，因此我们引入中间件如Redux Thunk或Redux Saga。
 
@@ -1244,7 +1328,9 @@ Context API通过Provider和Consumer机制实现跨组件传递数据。Provider
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Redux Saga 使用 Generator 函数处理异步流程，能够更好地控制复杂的副作用流程；而 Redux Thunk 是通过 action creator 返回函数来处理异步操作。 解析：Redux Thunk 允许 action creator 返回一个函数（thunk），该函数可以延迟 dispatch action 或进行异步操作。而 Redux Saga 使用 Generator 函数来管理复杂的异步副作用流程，支持更强的控制流能力和测试友好性。选项 A 错误地混淆了两者实现机制，选项 C 对两者能力描述不准确，选项 D 错误理解了 Redux Saga 的工作方式。</strong></p>
+  <p><strong>
+
+正确答案: B. Redux Saga 使用 Generator 函数处理异步流程，能够更好地控制复杂的副作用流程；而 Redux Thunk 是通过 action creator 返回函数来处理异步操作。 解析：Redux Thunk 允许 action creator 返回一个函数（thunk），该函数可以延迟 dispatch action 或进行异步操作。而 Redux Saga 使用 Generator 函数来管理复杂的异步副作用流程，支持更强的控制流能力和测试友好性。选项 A 错误地混淆了两者实现机制，选项 C 对两者能力描述不准确，选项 D 错误理解了 Redux Saga 的工作方式。</strong></p>
 </details>
 
 **问题 2:**
@@ -1253,7 +1339,9 @@ Context API通过Provider和Consumer机制实现跨组件传递数据。Provider
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. Redux Thunk实现流程：
+  <p><strong>
+
+正确答案: 1. Redux Thunk实现流程：
 - Thunk是Redux的中间件，允许action creator返回一个函数而不是普通对象。
 - 在这个函数中可以执行异步请求，如fetch用户数据。
 - 请求开始时派发一个同步action（如FETCH_USER_REQUEST），
@@ -1331,7 +1419,9 @@ function* watchFetchUser() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. @observable用于声明可被追踪的状态，@computed用于声明基于其他observable状态自动计算且缓存的派生值。正确答案是B，因为@observable修饰的属性是可被MobX追踪的可变状态，而@computed用于定义基于observable状态的衍生数据，且computed的值会被缓存直到依赖的observable发生变化，避免不必要的重新计算。</strong></p>
+  <p><strong>
+
+正确答案: B. @observable用于声明可被追踪的状态，@computed用于声明基于其他observable状态自动计算且缓存的派生值。正确答案是B，因为@observable修饰的属性是可被MobX追踪的可变状态，而@computed用于定义基于observable状态的衍生数据，且computed的值会被缓存直到依赖的observable发生变化，避免不必要的重新计算。</strong></p>
 </details>
 
 **问题 2:**
@@ -1340,7 +1430,9 @@ function* watchFetchUser() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 设计购物车的MobX store：
+  <p><strong>
+
+正确答案: 1. 设计购物车的MobX store：
 - 使用`observable`定义购物车商品列表，如数组，每个商品包含id、名称、数量、价格等属性。
 - 使用`action`定义添加商品、删除商品和修改商品数量的方法。
 - 使用`computed`定义计算总价的属性，它根据商品列表中商品的价格和数量动态计算总价。
@@ -1377,7 +1469,9 @@ function* watchFetchUser() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 将全局状态拆分为更小的切片，并利用选择器（selector）只订阅必要的状态部分。这种做法可以确保组件只在真正依赖的状态发生变化时重新渲染，从而有效减少不必要的重新渲染，提高性能。</strong></p>
+  <p><strong>
+
+正确答案: B. 将全局状态拆分为更小的切片，并利用选择器（selector）只订阅必要的状态部分。这种做法可以确保组件只在真正依赖的状态发生变化时重新渲染，从而有效减少不必要的重新渲染，提高性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -1386,7 +1480,9 @@ function* watchFetchUser() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在这种复杂状态管理场景下，性能优化可以从以下几个方面入手：
+  <p><strong>
+
+正确答案: 在这种复杂状态管理场景下，性能优化可以从以下几个方面入手：
 
 1. **拆分状态和细粒度订阅**：将状态划分为多个独立模块（如用户信息、购物车、商品列表），避免不相关的组件因状态更新而重新渲染。利用React的Context或第三方库（如Redux、MobX、Recoil）支持的选择性订阅，确保组件只关注必要的状态片段。
 
@@ -1429,7 +1525,9 @@ function* watchFetchUser() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用多层嵌套的 Context 结合 useReducer 来管理不同模块的局部状态，同时通过自定义 hooks 统一访问接口。这种方法能够模块化管理复杂状态，提升代码的可维护性和复用性，同时避免单一全局状态树的臃肿和难以维护问题。选项A虽然集中管理但容易导致状态树臃肿且难以维护；选项C分散管理会导致状态不同步和难以协调；选项D虽然有助于处理异步逻辑，但将所有状态和网络请求混在一起会导致代码复杂且难以扩展。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用多层嵌套的 Context 结合 useReducer 来管理不同模块的局部状态，同时通过自定义 hooks 统一访问接口。这种方法能够模块化管理复杂状态，提升代码的可维护性和复用性，同时避免单一全局状态树的臃肿和难以维护问题。选项A虽然集中管理但容易导致状态树臃肿且难以维护；选项C分散管理会导致状态不同步和难以协调；选项D虽然有助于处理异步逻辑，但将所有状态和网络请求混在一起会导致代码复杂且难以扩展。</strong></p>
 </details>
 
 **问题 2:**
@@ -1440,7 +1538,9 @@ function* watchFetchUser() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在复杂的 React Native 应用中设计状态管理架构时，首先需要区分全局状态和局部状态。全局状态涉及跨模块共享的数据，如用户信息、购物车内容和实时消息等，适合放入集中式状态管理库（例如 Redux 或 MobX）。局部状态则为组件内部或模块内部独立使用的状态，可以使用 React 自带的 useState 或 useReducer。
+  <p><strong>
+
+正确答案: 在复杂的 React Native 应用中设计状态管理架构时，首先需要区分全局状态和局部状态。全局状态涉及跨模块共享的数据，如用户信息、购物车内容和实时消息等，适合放入集中式状态管理库（例如 Redux 或 MobX）。局部状态则为组件内部或模块内部独立使用的状态，可以使用 React 自带的 useState 或 useReducer。
 
 选择状态管理库时，Redux 是较为成熟且生态完善的选择，适合大型应用，支持中间件（如 redux-thunk 或 redux-saga）来处理异步操作和副作用，保证流程可控和可测试。MobX 适合更灵活响应式需求，减少样板代码，但可能在大型项目中难以保证可预测性。Recoil 则提供细粒度状态管理，方便局部状态共享。
 
@@ -1474,7 +1574,9 @@ function* watchFetchUser() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用 Redux 或 MobX 这类集中式状态管理库，结合中间件（如 redux-logger）实现状态同步与日志调试。理由：集中式状态管理库（如 Redux、MobX）提供统一的状态存储和更新机制，确保跨模块状态一致性。结合中间件（如 redux-logger）可以实时记录状态变化，极大方便调试。选项 A 虽有调试工具但缺乏集中管理，难以保证跨模块同步；选项 C 依赖事件总线，易导致状态不一致且调试复杂；选项 D 由于 AsyncStorage 是异步且持久化存储，实时同步和调试效率低，且不适合频繁状态变更。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用 Redux 或 MobX 这类集中式状态管理库，结合中间件（如 redux-logger）实现状态同步与日志调试。理由：集中式状态管理库（如 Redux、MobX）提供统一的状态存储和更新机制，确保跨模块状态一致性。结合中间件（如 redux-logger）可以实时记录状态变化，极大方便调试。选项 A 虽有调试工具但缺乏集中管理，难以保证跨模块同步；选项 C 依赖事件总线，易导致状态不一致且调试复杂；选项 D 由于 AsyncStorage 是异步且持久化存储，实时同步和调试效率低，且不适合频繁状态变更。</strong></p>
 </details>
 
 **问题 2:**
@@ -1483,7 +1585,9 @@ function* watchFetchUser() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在大型React Native项目中，跨模块状态同步的设计通常会采用集中式状态管理工具，如Redux、MobX或者基于Context的状态管理。
+  <p><strong>
+
+正确答案: 在大型React Native项目中，跨模块状态同步的设计通常会采用集中式状态管理工具，如Redux、MobX或者基于Context的状态管理。
 
 1. 状态设计与同步方案：
 - 统一状态存储：将用户登录状态及用户信息存放在全局状态管理中，如Redux Store，确保所有模块都能访问和订阅该状态。
@@ -1523,7 +1627,9 @@ function* watchFetchUser() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用纯函数（reducer）处理状态变更，保证状态不可变并通过浅比较优化组件重渲染。 解析：设计自定义状态管理库时，确保状态不可变是实现状态更新可预测性的关键，有助于避免副作用和难以调试的问题。使用纯函数（如 reducer）来处理状态变更，可以保证每次状态更新都是新状态对象，从而利用浅比较来判断是否需要重新渲染组件，提升性能和一致性。选项A中的可变状态会导致状态不可预测且难以追踪；选项C虽然简化了局部状态管理，但不适用于全局状态共享；选项D允许异步直接修改状态会破坏状态管理的一致性和可预测性。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用纯函数（reducer）处理状态变更，保证状态不可变并通过浅比较优化组件重渲染。 解析：设计自定义状态管理库时，确保状态不可变是实现状态更新可预测性的关键，有助于避免副作用和难以调试的问题。使用纯函数（如 reducer）来处理状态变更，可以保证每次状态更新都是新状态对象，从而利用浅比较来判断是否需要重新渲染组件，提升性能和一致性。选项A中的可变状态会导致状态不可预测且难以追踪；选项C虽然简化了局部状态管理，但不适用于全局状态共享；选项D允许异步直接修改状态会破坏状态管理的一致性和可预测性。</strong></p>
 </details>
 
 **问题 2:**
@@ -1532,7 +1638,9 @@ function* watchFetchUser() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计自定义状态管理库时，针对电商购物车复杂场景，方案设计可以包括以下几个关键部分：
+  <p><strong>
+
+正确答案: 在设计自定义状态管理库时，针对电商购物车复杂场景，方案设计可以包括以下几个关键部分：
 
 1. 状态存储：使用一个全局的不可变状态树（类似Redux），状态以对象形式存储，包含购物车商品列表、商品数量、库存状态、用户优惠信息等。
 
@@ -1572,7 +1680,9 @@ function* watchFetchUser() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. this.props.navigation.navigate('Profile')。这是React Navigation中在类组件中导航到另一个屏幕的标准用法。this.props.navigation对象由导航库自动注入，而navigate方法用于跳转到指定的屏幕名称。A选项中push方法存在，但通常navigate更常用且通用；B选项中缺少props导致无法访问navigation；D选项缺少上下文，无法直接调用navigate函数。</strong></p>
+  <p><strong>
+
+正确答案: C. this.props.navigation.navigate('Profile')。这是React Navigation中在类组件中导航到另一个屏幕的标准用法。this.props.navigation对象由导航库自动注入，而navigate方法用于跳转到指定的屏幕名称。A选项中push方法存在，但通常navigate更常用且通用；B选项中缺少props导致无法访问navigation；D选项缺少上下文，无法直接调用navigate函数。</strong></p>
 </details>
 
 **问题 2:**
@@ -1581,7 +1691,9 @@ function* watchFetchUser() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 安装并配置React Navigation及其依赖包，比如 @react-navigation/native 和 @react-navigation/stack。
+  <p><strong>
+
+正确答案: 1. 安装并配置React Navigation及其依赖包，比如 @react-navigation/native 和 @react-navigation/stack。
 2. 创建一个Stack Navigator，将Home和Profile两个页面注册到导航栈中。
 3. 在Home页面中，通过navigation对象调用navigate方法跳转到Profile页面，并传递参数，例如：
 
@@ -1616,7 +1728,9 @@ const { username } = route.params;
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. Stack导航（Stack Navigator）——用于管理页面的堆栈，支持页面的入栈和出栈操作。Stack导航是React Native中用于实现层级导航的主要方式，支持前进和后退操作，适合多层页面的流程管理。Tab导航和Drawer导航更适合顶层的页面切换和全局导航，而Modal导航主要用于临时弹出的页面，不适合作为层级导航的主要手段。</strong></p>
+  <p><strong>
+
+正确答案: C. Stack导航（Stack Navigator）——用于管理页面的堆栈，支持页面的入栈和出栈操作。Stack导航是React Native中用于实现层级导航的主要方式，支持前进和后退操作，适合多层页面的流程管理。Tab导航和Drawer导航更适合顶层的页面切换和全局导航，而Modal导航主要用于临时弹出的页面，不适合作为层级导航的主要手段。</strong></p>
 </details>
 
 **问题 2:**
@@ -1625,7 +1739,9 @@ const { username } = route.params;
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在该电商App中，可以采用以下导航结构：
+  <p><strong>
+
+正确答案: 在该电商App中，可以采用以下导航结构：
 
 1. Tab导航：作为主导航，底部显示“首页”、“购物车”和“我的账户”三个标签页，用户可以快速切换这三个主要模块。
 
@@ -1662,7 +1778,9 @@ const { username } = route.params;
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 当页面已加载后，直接修改传入的导航参数不会触发组件重新渲染，需要使用监听事件或状态管理来响应参数变化。因为 React Navigation 传递的参数是通过 route.params 提供的普通对象，参数变化本身不会自动触发生命周期方法或重新渲染，开发者需要额外处理参数变化的响应逻辑。</strong></p>
+  <p><strong>
+
+正确答案: B. 当页面已加载后，直接修改传入的导航参数不会触发组件重新渲染，需要使用监听事件或状态管理来响应参数变化。因为 React Navigation 传递的参数是通过 route.params 提供的普通对象，参数变化本身不会自动触发生命周期方法或重新渲染，开发者需要额外处理参数变化的响应逻辑。</strong></p>
 </details>
 
 **问题 2:**
@@ -1678,7 +1796,9 @@ const { username } = route.params;
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 传递参数：在导航到商品详情页面时，可以通过`navigation.navigate('ProductDetail', { productId: 123 })`来传递参数，其中第二个参数是一个包含要传递数据的对象。
+  <p><strong>
+
+正确答案: 1. 传递参数：在导航到商品详情页面时，可以通过`navigation.navigate('ProductDetail', { productId: 123 })`来传递参数，其中第二个参数是一个包含要传递数据的对象。
 
 2. 获取参数：在商品详情页面组件中，可以通过`route.params.productId`访问传递过来的商品ID。
 
@@ -1729,7 +1849,9 @@ function ProductDetail({ route }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在应用入口处使用 Linking.getInitialURL() 获取初始 URL，然后结合 React Navigation 的导航方法进行页面跳转。 解释：React Native 中处理深度链接时，必须在应用启动时获取初始 URL（冷启动场景），这可以通过 Linking.getInitialURL() 实现。随后结合导航库（如 React Navigation）进行动态路由跳转。选项 B 中的配置并不能替代初始 URL 的获取，选项 C 使用 AsyncStorage 不是标准做法且可能导致同步问题，选项 D 只能处理应用已启动后的 URL 事件，不能处理冷启动时的 URL。</strong></p>
+  <p><strong>
+
+正确答案: A. 在应用入口处使用 Linking.getInitialURL() 获取初始 URL，然后结合 React Navigation 的导航方法进行页面跳转。 解释：React Native 中处理深度链接时，必须在应用启动时获取初始 URL（冷启动场景），这可以通过 Linking.getInitialURL() 实现。随后结合导航库（如 React Navigation）进行动态路由跳转。选项 B 中的配置并不能替代初始 URL 的获取，选项 C 使用 AsyncStorage 不是标准做法且可能导致同步问题，选项 D 只能处理应用已启动后的 URL 事件，不能处理冷启动时的 URL。</strong></p>
 </details>
 
 **问题 2:**
@@ -1738,7 +1860,9 @@ function ProductDetail({ route }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 配置深度链接（Deep Linking）：
+  <p><strong>
+
+正确答案: 1. 配置深度链接（Deep Linking）：
    - 在React Navigation中，使用`linking`配置对象，定义路由路径和参数。例如：
      ```js
      const linking = {
@@ -1807,7 +1931,9 @@ function ProductDetail({ route }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 React Navigation 的 `lazy` 配置只加载当前激活的页面，延迟加载未激活的页面，从而减少初始渲染成本。——这是 React Navigation 内置的懒加载机制，能够有效减少初始渲染的性能开销，提升导航性能。选项A虽然可以避免重复渲染，但不能替代懒加载；选项C会增加初始加载时间，降低性能；选项D 是不合理的实现方式，可能导致页面显示延迟和用户体验下降。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 React Navigation 的 `lazy` 配置只加载当前激活的页面，延迟加载未激活的页面，从而减少初始渲染成本。——这是 React Navigation 内置的懒加载机制，能够有效减少初始渲染的性能开销，提升导航性能。选项A虽然可以避免重复渲染，但不能替代懒加载；选项C会增加初始加载时间，降低性能；选项D 是不合理的实现方式，可能导致页面显示延迟和用户体验下降。</strong></p>
 </details>
 
 **问题 2:**
@@ -1816,7 +1942,9 @@ function ProductDetail({ route }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在大型 React Native 应用中，导航性能下降主要是由于所有屏幕组件一开始全部加载，导致内存占用高和渲染阻塞。为了优化导航性能，可以采取以下策略：
+  <p><strong>
+
+正确答案: 在大型 React Native 应用中，导航性能下降主要是由于所有屏幕组件一开始全部加载，导致内存占用高和渲染阻塞。为了优化导航性能，可以采取以下策略：
 
 1. **懒加载（Lazy Loading）屏幕组件**：通过动态导入（dynamic import）方式，只有用户实际导航到某个屏幕时，才加载该屏幕的代码和资源，从而减少初始包体积和内存使用。
 
@@ -1874,7 +2002,9 @@ function ProductDetail({ route }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 React Context 来共享导航状态，并在自定义导航组件中通过 useContext 访问和更新状态。——这是确保多个自定义导航组件之间导航状态同步的推荐方法，因为 React Context 设计用于跨组件共享状态，避免了状态不一致和繁琐的 props 传递。选项 B 由于需要手动传递状态，容易出错且维护复杂；选项 C 虽然可行，但增加了不必要的复杂度，通常不适合只为导航状态使用全局状态管理；选项 D 直接操作内部路由对象是反模式，可能导致不可预测的行为。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 React Context 来共享导航状态，并在自定义导航组件中通过 useContext 访问和更新状态。——这是确保多个自定义导航组件之间导航状态同步的推荐方法，因为 React Context 设计用于跨组件共享状态，避免了状态不一致和繁琐的 props 传递。选项 B 由于需要手动传递状态，容易出错且维护复杂；选项 C 虽然可行，但增加了不必要的复杂度，通常不适合只为导航状态使用全局状态管理；选项 D 直接操作内部路由对象是反模式，可能导致不可预测的行为。</strong></p>
 </details>
 
 **问题 2:**
@@ -1883,7 +2013,9 @@ function ProductDetail({ route }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计自定义导航组件的架构时，首先需要明确核心功能：导航栈管理、页面切换动画和硬件返回按钮处理。
+  <p><strong>
+
+正确答案: 设计自定义导航组件的架构时，首先需要明确核心功能：导航栈管理、页面切换动画和硬件返回按钮处理。
 
 1. 状态管理与导航栈维护：
 - 使用React的状态管理（如useState或useReducer）来维护一个页面栈（数组），每个元素代表一个页面及其参数。
@@ -1925,7 +2057,9 @@ function ProductDetail({ route }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用 React Navigation 的 `addListener` 监听导航事件，结合 `getState` 方法查看当前导航状态。该方法能够实时监听导航状态的变化，结合 `getState` 获取完整的导航状态树，有助于开发者准确定位导航流程中的问题。选项 A 虽然可以打印日志，但不够全面；选项 C 关注组件生命周期，不能反映导航状态；选项 D 重置状态虽然避免状态混乱，但不是调试手段，反而可能丢失状态信息。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用 React Navigation 的 `addListener` 监听导航事件，结合 `getState` 方法查看当前导航状态。该方法能够实时监听导航状态的变化，结合 `getState` 获取完整的导航状态树，有助于开发者准确定位导航流程中的问题。选项 A 虽然可以打印日志，但不够全面；选项 C 关注组件生命周期，不能反映导航状态；选项 D 重置状态虽然避免状态混乱，但不是调试手段，反而可能丢失状态信息。</strong></p>
 </details>
 
 **问题 2:**
@@ -1934,7 +2068,9 @@ function ProductDetail({ route }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，定位导航状态异常问题时，可以使用 React Navigation 提供的 `navigation` 对象的 `getState()` 方法来获取当前导航状态树，结合控制台日志打印，查看多层嵌套导航器的状态变化是否符合预期。其次，启用 React Navigation 的 `onStateChange` 回调函数，监听导航状态的变化，打印详细的状态信息帮助追踪导航的历史堆栈。为了更直观地调试，可以集成 React Developer Tools，观察导航相关的组件状态和 props。同时，使用 `React Navigation Devtools` 插件，它允许可视化导航状态树，方便发现状态同步异常。 
+  <p><strong>
+
+正确答案: 首先，定位导航状态异常问题时，可以使用 React Navigation 提供的 `navigation` 对象的 `getState()` 方法来获取当前导航状态树，结合控制台日志打印，查看多层嵌套导航器的状态变化是否符合预期。其次，启用 React Navigation 的 `onStateChange` 回调函数，监听导航状态的变化，打印详细的状态信息帮助追踪导航的历史堆栈。为了更直观地调试，可以集成 React Developer Tools，观察导航相关的组件状态和 props。同时，使用 `React Navigation Devtools` 插件，它允许可视化导航状态树，方便发现状态同步异常。 
 
 针对状态同步异常，常见原因包括：
 1. 导航器嵌套结构设计不合理，导致状态管理混乱。
@@ -1971,7 +2107,9 @@ function ProductDetail({ route }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: D. 使用React Navigation作为主导航管理，结合Context或Redux管理导航状态，实现跨平台状态共享和导航同步。——这种设计既利用了React Navigation跨平台的优势，又通过状态管理工具实现了导航状态的统一管理和同步，提升了代码复用性和维护性。A选项过于简单，忽略了复杂需求；B选项虽然灵活但增加了复杂度和维护成本；C选项则完全放弃了跨平台优势，导致代码分裂。</strong></p>
+  <p><strong>
+
+正确答案: D. 使用React Navigation作为主导航管理，结合Context或Redux管理导航状态，实现跨平台状态共享和导航同步。——这种设计既利用了React Navigation跨平台的优势，又通过状态管理工具实现了导航状态的统一管理和同步，提升了代码复用性和维护性。A选项过于简单，忽略了复杂需求；B选项虽然灵活但增加了复杂度和维护成本；C选项则完全放弃了跨平台优势，导致代码分裂。</strong></p>
 </details>
 
 **问题 2:**
@@ -1988,7 +2126,9 @@ function ProductDetail({ route }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计跨平台导航架构时，需综合考虑以下几个关键点：
+  <p><strong>
+
+正确答案: 设计跨平台导航架构时，需综合考虑以下几个关键点：
 
 1. 导航库选择：推荐使用支持多平台的导航库，如React Navigation，因其具备良好的社区支持和跨平台特性，能统一管理iOS、Android和Web的导航逻辑。此外，结合React Navigation的不同导航器（Stack、Tab、Drawer）满足复杂多层级导航需求。
 
@@ -2033,7 +2173,9 @@ function ProductDetail({ route }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Axios默认会将响应数据封装在data属性中，而Fetch API需要手动调用response.json()来解析响应体。
+  <p><strong>
+
+正确答案: B. Axios默认会将响应数据封装在data属性中，而Fetch API需要手动调用response.json()来解析响应体。
 
 解释：
 Axios在响应时会自动解析JSON，并将结果放在response.data中；而Fetch API的响应需要调用response.json()方法来手动解析响应体为JSON格式。选项A错误，因为Fetch不会自动解析JSON；选项C错误，实际上Fetch API本身不支持超时，需要额外封装，而Axios内置支持超时配置；选项D错误，两者的请求配置存在差异，不能完全互换。</strong></p>
@@ -2047,7 +2189,9 @@ Axios在响应时会自动解析JSON，并将结果放在response.data中；而F
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Fetch API是浏览器和React Native内置的原生接口，用于发起网络请求，语法简单且轻量，但原生Fetch不支持请求取消，错误处理需要手动判断HTTP状态码。
+  <p><strong>
+
+正确答案: Fetch API是浏览器和React Native内置的原生接口，用于发起网络请求，语法简单且轻量，但原生Fetch不支持请求取消，错误处理需要手动判断HTTP状态码。
 
 Axios是基于Promise的第三方库，封装了更多功能，如自动转换JSON数据、请求和响应拦截器、更友好的错误处理以及支持请求取消（通过CancelToken）。
 
@@ -2073,7 +2217,9 @@ Axios是基于Promise的第三方库，封装了更多功能，如自动转换JS
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: D. PATCH - 因为PATCH方法专门设计用于对资源的部分内容进行修改，而不是替换整个资源。相比PUT，PATCH更适合部分更新操作，符合RESTful接口设计规范。</strong></p>
+  <p><strong>
+
+正确答案: D. PATCH - 因为PATCH方法专门设计用于对资源的部分内容进行修改，而不是替换整个资源。相比PUT，PATCH更适合部分更新操作，符合RESTful接口设计规范。</strong></p>
 </details>
 
 **问题 2:**
@@ -2082,7 +2228,9 @@ Axios是基于Promise的第三方库，封装了更多功能，如自动转换JS
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. RESTful接口设计示例：
+  <p><strong>
+
+正确答案: 1. RESTful接口设计示例：
 - 获取任务列表：GET /tasks
 - 创建新任务：POST /tasks
 - 更新任务状态：PUT /tasks/{taskId}
@@ -2119,7 +2267,9 @@ Axios是基于Promise的第三方库，封装了更多功能，如自动转换JS
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. GraphQL允许客户端指定所需的数据字段，从而避免了过多或过少的数据传输，而REST API通常返回固定结构的数据。 解释：GraphQL的核心优势之一是客户端可以精确指定需要哪些字段的数据，避免了传统REST API中可能出现的数据过载或不足问题。选项A错误，因为GraphQL可以获取多个资源；选项C错误，GraphQL支持参数化查询；选项D错误，GraphQL查询既可以通过POST也可以通过GET发送，REST API也支持多种HTTP方法。</strong></p>
+  <p><strong>
+
+正确答案: B. GraphQL允许客户端指定所需的数据字段，从而避免了过多或过少的数据传输，而REST API通常返回固定结构的数据。 解释：GraphQL的核心优势之一是客户端可以精确指定需要哪些字段的数据，避免了传统REST API中可能出现的数据过载或不足问题。选项A错误，因为GraphQL可以获取多个资源；选项C错误，GraphQL支持参数化查询；选项D错误，GraphQL查询既可以通过POST也可以通过GET发送，REST API也支持多种HTTP方法。</strong></p>
 </details>
 
 **问题 2:**
@@ -2128,7 +2278,9 @@ Axios是基于Promise的第三方库，封装了更多功能，如自动转换JS
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 为了避免过多的网络请求并保证数据的实时性，可以采用以下策略：
+  <p><strong>
+
+正确答案: 为了避免过多的网络请求并保证数据的实时性，可以采用以下策略：
 
 1. **合理设计GraphQL查询**：利用GraphQL的查询灵活性，在一次请求中获取所需的所有字段，避免多次请求不同的资源。可以通过嵌套查询获取商品列表及对应详情，减少请求次数。
 
@@ -2164,7 +2316,9 @@ Axios是基于Promise的第三方库，封装了更多功能，如自动转换JS
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. WebSocket 的 onmessage 事件处理函数用于接收服务器推送的消息，而 send() 方法只能在连接建立后调用，否则会抛出错误。因为 WebSocket 必须先建立连接（open 事件触发后）才能调用 send() 发送消息，否则会报错。onmessage 用于监听服务器推送的数据，是实时通信的关键机制。</strong></p>
+  <p><strong>
+
+正确答案: B. WebSocket 的 onmessage 事件处理函数用于接收服务器推送的消息，而 send() 方法只能在连接建立后调用，否则会抛出错误。因为 WebSocket 必须先建立连接（open 事件触发后）才能调用 send() 发送消息，否则会报错。onmessage 用于监听服务器推送的数据，是实时通信的关键机制。</strong></p>
 </details>
 
 **问题 2:**
@@ -2173,7 +2327,9 @@ Axios是基于Promise的第三方库，封装了更多功能，如自动转换JS
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 连接建立：
+  <p><strong>
+
+正确答案: 1. 连接建立：
 在React Native中，可以使用内置的WebSocket API来创建连接，例如：
 ```javascript
 const ws = new WebSocket('wss://example.com/socket');
@@ -2218,7 +2374,9 @@ const ws = new WebSocket('wss://example.com/socket');
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 HTTP 缓存头（如 ETag 或 Cache-Control）结合本地缓存策略，减少不必要的网络请求。 解析：利用 HTTP 协议的缓存机制（如 ETag 和 Cache-Control）可以有效地让服务器告知客户端数据是否更新，从而避免重复请求完整数据。结合本地缓存策略，React Native 应用可以显著减少网络请求次数，提升性能，同时保证数据的时效性。选项 A 忽略了缓存带来的性能提升，选项 C 可能导致请求超载和响应延迟，选项 D 可能导致数据过时，缺乏动态更新。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 HTTP 缓存头（如 ETag 或 Cache-Control）结合本地缓存策略，减少不必要的网络请求。 解析：利用 HTTP 协议的缓存机制（如 ETag 和 Cache-Control）可以有效地让服务器告知客户端数据是否更新，从而避免重复请求完整数据。结合本地缓存策略，React Native 应用可以显著减少网络请求次数，提升性能，同时保证数据的时效性。选项 A 忽略了缓存带来的性能提升，选项 C 可能导致请求超载和响应延迟，选项 D 可能导致数据过时，缺乏动态更新。</strong></p>
 </details>
 
 **问题 2:**
@@ -2227,7 +2385,9 @@ const ws = new WebSocket('wss://example.com/socket');
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计电商应用的产品列表页面数据获取方案时，可以采取以下优化措施：
+  <p><strong>
+
+正确答案: 在设计电商应用的产品列表页面数据获取方案时，可以采取以下优化措施：
 
 1. 缓存类型：
 - 使用本地存储（如 AsyncStorage 或 SQLite）缓存最近获取的商品数据，支持离线访问和快速页面加载。
@@ -2272,7 +2432,9 @@ const ws = new WebSocket('wss://example.com/socket');
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 使用基于操作的冲突解决（Operational Transformation 或 CRDT）来合并用户的离线更改，允许多端同时修改。——这是因为基于操作的冲突解决策略（如 OT 或 CRDT）能够有效地合并多端的离线更改，保证最终数据一致性，避免数据丢失。相比于单纯依赖时间戳或强制覆盖，这种方法更适合复杂的离线同步场景。</strong></p>
+  <p><strong>
+
+正确答案: C. 使用基于操作的冲突解决（Operational Transformation 或 CRDT）来合并用户的离线更改，允许多端同时修改。——这是因为基于操作的冲突解决策略（如 OT 或 CRDT）能够有效地合并多端的离线更改，保证最终数据一致性，避免数据丢失。相比于单纯依赖时间戳或强制覆盖，这种方法更适合复杂的离线同步场景。</strong></p>
 </details>
 
 **问题 2:**
@@ -2288,7 +2450,9 @@ const ws = new WebSocket('wss://example.com/socket');
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 同步策略：
+  <p><strong>
+
+正确答案: 1. 同步策略：
 我会采用乐观并发控制策略。因为移动端用户经常处于离线状态，悲观锁会导致用户体验差且锁管理复杂。乐观并发允许用户自由编辑数据，冲突只在同步时检测和处理，适合移动应用的离线场景。
 
 2. 冲突检测与解决：
@@ -2322,7 +2486,9 @@ const ws = new WebSocket('wss://example.com/socket');
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用Redux或MobX这类专门的状态管理库，通过全局store集中管理复杂数据流。解释：
+  <p><strong>
+
+正确答案: B. 使用Redux或MobX这类专门的状态管理库，通过全局store集中管理复杂数据流。解释：
 在复杂数据流设计与管理中，尤其是涉及跨多个组件共享和同步状态时，使用专门的状态管理库（如Redux或MobX）能够提供更清晰、可预测和高效的状态管理方案。它们支持中间件、时间旅行调试和更好的状态组织，避免了Context API在大规模状态更新时性能瓶颈和逐层传递props的冗余。
 
 其他选项的迷惑点：
@@ -2337,7 +2503,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 针对该复杂数据流设计，我会采取以下方案：
+  <p><strong>
+
+正确答案: 针对该复杂数据流设计，我会采取以下方案：
 
 1. 状态管理方案选择：
    - 由于数据来源多且复杂，涉及多组件共享和异步更新，推荐使用 Redux（配合 Redux Toolkit）或者 Recoil。Redux 提供了明确的状态管理和中间件支持（如 redux-thunk 或 redux-saga）便于处理异步逻辑；Recoil 则支持更细粒度的状态分割和依赖追踪，适合性能优化。
@@ -2383,7 +2551,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用统一的请求封装模块，集中管理请求配置、错误处理和拦截器。 解析：选项B体现了良好的自定义网络层设计理念，通过统一封装网络请求，能够集中处理请求配置、错误管理和拦截器逻辑，有助于提升代码的可维护性和扩展性。选项A将请求逻辑分散在组件中，降低复用性且不利于维护；选项C使用多种HTTP客户端库反而增加复杂度和维护成本；选项D忽略拦截器设计，容易导致错误无法统一处理，降低代码健壮性。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用统一的请求封装模块，集中管理请求配置、错误处理和拦截器。 解析：选项B体现了良好的自定义网络层设计理念，通过统一封装网络请求，能够集中处理请求配置、错误管理和拦截器逻辑，有助于提升代码的可维护性和扩展性。选项A将请求逻辑分散在组件中，降低复用性且不利于维护；选项C使用多种HTTP客户端库反而增加复杂度和维护成本；选项D忽略拦截器设计，容易导致错误无法统一处理，降低代码健壮性。</strong></p>
 </details>
 
 **问题 2:**
@@ -2392,7 +2562,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计自定义网络层的核心目标是统一管理网络请求，提高代码复用性，便于维护和扩展。具体设计思路如下：
+  <p><strong>
+
+正确答案: 设计自定义网络层的核心目标是统一管理网络请求，提高代码复用性，便于维护和扩展。具体设计思路如下：
 
 1. 请求封装：
 - 使用一个单独的模块或类封装所有请求逻辑。
@@ -2452,7 +2624,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 使用React Native的内置Profiler以及Flipper的React DevTools插件进行性能监控。因为React Native的内置Profiler和Flipper的React DevTools插件专门针对React Native环境设计，能够准确捕获JavaScript线程的性能瓶颈，提供组件渲染时间、交互响应时间等详细指标，帮助开发者定位性能问题。选项A虽然可以用于网页性能分析，但并不是专门针对React Native的JavaScript线程。选项B中的Xcode Instruments主要用于Native层性能分析，不直接适用于JavaScript线程。选项D依赖手动日志，效率低且不准确，不能有效监控性能瓶颈。</strong></p>
+  <p><strong>
+
+正确答案: C. 使用React Native的内置Profiler以及Flipper的React DevTools插件进行性能监控。因为React Native的内置Profiler和Flipper的React DevTools插件专门针对React Native环境设计，能够准确捕获JavaScript线程的性能瓶颈，提供组件渲染时间、交互响应时间等详细指标，帮助开发者定位性能问题。选项A虽然可以用于网页性能分析，但并不是专门针对React Native的JavaScript线程。选项B中的Xcode Instruments主要用于Native层性能分析，不直接适用于JavaScript线程。选项D依赖手动日志，效率低且不准确，不能有效监控性能瓶颈。</strong></p>
 </details>
 
 **问题 2:**
@@ -2461,7 +2635,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 要定位React Native应用启动时间长的问题，可以使用性能监控与分析工具如React Native自带的Performance Monitor、Flipper以及第三方工具如React DevTools Profiler和Android Studio Profiler/iOS Instruments等。具体步骤如下：
+  <p><strong>
+
+正确答案: 要定位React Native应用启动时间长的问题，可以使用性能监控与分析工具如React Native自带的Performance Monitor、Flipper以及第三方工具如React DevTools Profiler和Android Studio Profiler/iOS Instruments等。具体步骤如下：
 
 1. **启用性能监控工具**：启动React Native的Performance Monitor（通过开发者菜单开启），观察FPS、JS线程和主线程的负载情况。
 
@@ -2494,7 +2670,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 React.memo 来包裹函数组件，并确保传入的 props 是不可变的。React.memo 通过浅比较 props 来决定是否重新渲染组件，配合不可变的数据结构使用，可以有效避免不必要的渲染和重绘，从而提升性能。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 React.memo 来包裹函数组件，并确保传入的 props 是不可变的。React.memo 通过浅比较 props 来决定是否重新渲染组件，配合不可变的数据结构使用，可以有效避免不必要的渲染和重绘，从而提升性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -2503,7 +2681,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 导致整个列表重新渲染的主要原因是React的默认行为：当父组件的状态或props变化时，所有子组件都会重新执行渲染过程，即使子组件的props并未发生变化。对于FlatList中的复杂组件，频繁的重新渲染会影响性能。\n\n优化策略包括：\n1. 使用React.memo包裹列表项组件，确保只有当组件的props真正发生变化时才重新渲染。\n2. 在FlatList中为每个列表项提供唯一且稳定的key，帮助React正确识别组件。\n3. 使用FlatList的getItemLayout属性，减少布局计算。\n4. 避免在父组件中直接传递匿名函数或对象作为props，因为它们每次渲染都会变化，导致子组件重新渲染。可以使用useCallback或useMemo缓存函数和对象。\n5. 使用shouldComponentUpdate或PureComponent（类组件场景）来控制组件更新。\n通过以上方法，可以有效减少不必要的渲染和重绘，提高应用性能。</strong></p>
+  <p><strong>
+
+正确答案: 导致整个列表重新渲染的主要原因是React的默认行为：当父组件的状态或props变化时，所有子组件都会重新执行渲染过程，即使子组件的props并未发生变化。对于FlatList中的复杂组件，频繁的重新渲染会影响性能。优化策略包括：1. 使用React.memo包裹列表项组件，确保只有当组件的props真正发生变化时才重新渲染。2. 在FlatList中为每个列表项提供唯一且稳定的key，帮助React正确识别组件。3. 使用FlatList的getItemLayout属性，减少布局计算。4. 避免在父组件中直接传递匿名函数或对象作为props，因为它们每次渲染都会变化，导致子组件重新渲染。可以使用useCallback或useMemo缓存函数和对象。5. 使用shouldComponentUpdate或PureComponent（类组件场景）来控制组件更新。通过以上方法，可以有效减少不必要的渲染和重绘，提高应用性能。</strong></p>
 </details>
 
 ---
@@ -2527,7 +2707,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 setInterval 或 setTimeout 定时器时，确保在组件卸载时清除它们，以避免引用未释放。——因为定时器会持续引用回调函数和相关上下文，如果不清除，在组件卸载后仍然存在引用，导致内存无法释放，进而引发内存泄漏。B 选项中的频繁调用 forceUpdate() 会增加渲染负担，不是防止内存泄漏的手段。C 选项中 useEffect 是 React Hooks 的核心机制，正确使用不会导致内存泄漏。D 选项使用全局变量可能导致内存无法及时释放，反而更容易引发内存泄漏。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 setInterval 或 setTimeout 定时器时，确保在组件卸载时清除它们，以避免引用未释放。——因为定时器会持续引用回调函数和相关上下文，如果不清除，在组件卸载后仍然存在引用，导致内存无法释放，进而引发内存泄漏。B 选项中的频繁调用 forceUpdate() 会增加渲染负担，不是防止内存泄漏的手段。C 选项中 useEffect 是 React Hooks 的核心机制，正确使用不会导致内存泄漏。D 选项使用全局变量可能导致内存无法及时释放，反而更容易引发内存泄漏。</strong></p>
 </details>
 
 **问题 2:**
@@ -2536,7 +2718,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 定位和排查步骤：
+  <p><strong>
+
+正确答案: 1. 定位和排查步骤：
    - 使用 React Native 自带的开发者工具（如 Flipper）或第三方内存分析工具（如 Xcode Instruments 的 Allocations 和 Leaks）监控内存使用情况。
    - 通过快照（heap snapshot）比较不同时间点的内存状态，寻找持续增长的对象。
    - 分析持续存在的未释放对象，结合代码排查可能的引用。
@@ -2577,7 +2761,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 Animated 库的 `Animated.timing` 配合 `useNativeDriver: true`，将动画逻辑尽可能在原生线程执行。因为使用 `useNativeDriver: true` 可以将动画计算和渲染逻辑移到原生线程，避免 JS 线程阻塞，从而大幅提升动画性能和流畅度。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 Animated 库的 `Animated.timing` 配合 `useNativeDriver: true`，将动画逻辑尽可能在原生线程执行。因为使用 `useNativeDriver: true` 可以将动画计算和渲染逻辑移到原生线程，避免 JS 线程阻塞，从而大幅提升动画性能和流畅度。</strong></p>
 </details>
 
 **问题 2:**
@@ -2586,7 +2772,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在React Native中优化复杂动画性能时，可以采取以下策略：
+  <p><strong>
+
+正确答案: 在React Native中优化复杂动画性能时，可以采取以下策略：
 
 1. 使用原生驱动动画（Native Driver）：
    - 通过将动画逻辑交由原生层处理，减少JS线程负担，避免动画因JS线程阻塞而卡顿。
@@ -2634,7 +2822,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用InteractionManager来延迟执行非紧急任务，从而避免阻塞UI渲染。——InteractionManager允许将复杂或非紧急的任务推迟到当前交互完成后执行，有效避免主线程阻塞，提升界面响应速度。选项A错误，因为主线程执行计算密集型任务会导致界面卡顿。选项C的setTimeout并不是真正的多线程，无法解决主线程阻塞问题。选项D虽然异步函数有助于异步处理，但无法完全避免主线程资源竞争，需要配合多线程优化手段。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用InteractionManager来延迟执行非紧急任务，从而避免阻塞UI渲染。——InteractionManager允许将复杂或非紧急的任务推迟到当前交互完成后执行，有效避免主线程阻塞，提升界面响应速度。选项A错误，因为主线程执行计算密集型任务会导致界面卡顿。选项C的setTimeout并不是真正的多线程，无法解决主线程阻塞问题。选项D虽然异步函数有助于异步处理，但无法完全避免主线程资源竞争，需要配合多线程优化手段。</strong></p>
 </details>
 
 **问题 2:**
@@ -2648,7 +2838,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. React Native的多线程模型中，JavaScript代码运行在单独的JavaScript线程上，UI渲染和事件处理通常在主线程（原生线程）进行。网络请求和其他异步操作虽然不会阻塞JS线程，但如果JS线程处理大量计算，仍会导致界面卡顿。
+  <p><strong>
+
+正确答案: 1. React Native的多线程模型中，JavaScript代码运行在单独的JavaScript线程上，UI渲染和事件处理通常在主线程（原生线程）进行。网络请求和其他异步操作虽然不会阻塞JS线程，但如果JS线程处理大量计算，仍会导致界面卡顿。
 
 2. 优化设计中，应将网络请求和图片加载的耗时任务尽量放在后台线程或利用原生模块处理，减少JS线程的负担。用户行为埋点应异步批量上报，避免频繁写操作阻塞线程。可以通过使用InteractionManager延迟低优先级任务，或使用Web Workers（如react-native-workers）实现多线程计算任务，确保UI线程流畅。
 
@@ -2678,7 +2870,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用"RAM Bundle"格式分割JavaScript代码，使应用能够按需加载代码片段。解释：RAM Bundle能将JavaScript代码拆分成多个模块，应用启动时只加载必要的模块，从而显著减少初始加载时间和内存占用，达到加速冷启动的目的。选项A虽然减少了网络请求但bundle体积过大，反而增加加载时间；选项C预加载所有库会加重启动负担；选项D增加初始渲染层级可能导致启动更慢，影响启动时间。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用"RAM Bundle"格式分割JavaScript代码，使应用能够按需加载代码片段。解释：RAM Bundle能将JavaScript代码拆分成多个模块，应用启动时只加载必要的模块，从而显著减少初始加载时间和内存占用，达到加速冷启动的目的。选项A虽然减少了网络请求但bundle体积过大，反而增加加载时间；选项C预加载所有库会加重启动负担；选项D增加初始渲染层级可能导致启动更慢，影响启动时间。</strong></p>
 </details>
 
 **问题 2:**
@@ -2687,7 +2881,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. **分析启动时间瓶颈**：
+  <p><strong>
+
+正确答案: 1. **分析启动时间瓶颈**：
 - 利用性能分析工具（如Flipper、Android Profiler、Xcode Instruments）监测应用启动流程，识别耗时环节。
 - 关注JS Bundle加载、Native模块初始化、第三方库加载和首次渲染时间。
 
@@ -2728,7 +2924,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 利用 Fabric 架构中的同步渲染机制，减少桥接调用并允许直接访问原生视图层级。Fabric 是 React Native 的新渲染架构，它通过同步渲染和更细粒度的原生视图管理，极大地减少了 JS 与原生桥接的通信开销，从而提升渲染性能。相比之下，虽然 B 选项中的 shouldComponentUpdate 和 React.memo 可以减少组件渲染次数，但并不能根本减少桥接通信；A 选项的延迟渲染有助于性能但不直接优化底层渲染流程；D 选项将复杂 UI 逻辑放在主线程反而可能导致主线程阻塞，降低性能。</strong></p>
+  <p><strong>
+
+正确答案: C. 利用 Fabric 架构中的同步渲染机制，减少桥接调用并允许直接访问原生视图层级。Fabric 是 React Native 的新渲染架构，它通过同步渲染和更细粒度的原生视图管理，极大地减少了 JS 与原生桥接的通信开销，从而提升渲染性能。相比之下，虽然 B 选项中的 shouldComponentUpdate 和 React.memo 可以减少组件渲染次数，但并不能根本减少桥接通信；A 选项的延迟渲染有助于性能但不直接优化底层渲染流程；D 选项将复杂 UI 逻辑放在主线程反而可能导致主线程阻塞，降低性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -2737,7 +2935,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: React Native的渲染流程主要涉及JS线程、Native主线程（UI线程）和Shadow线程的协作。在大量动态数据更新时，性能瓶颈通常出现在JS线程频繁计算与更新UI状态，以及JS线程与UI线程之间的通信开销过大。
+  <p><strong>
+
+正确答案: React Native的渲染流程主要涉及JS线程、Native主线程（UI线程）和Shadow线程的协作。在大量动态数据更新时，性能瓶颈通常出现在JS线程频繁计算与更新UI状态，以及JS线程与UI线程之间的通信开销过大。
 
 关键瓶颈包括：
 1. 大量不必要的JS到Native的桥接调用（Bridge Overhead），导致通信阻塞。
@@ -2791,7 +2991,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Flipper 支持通过插件扩展功能，能调试网络请求、数据库和性能，而 Chrome Debugger 主要用于调试 JavaScript 代码。 解释：Flipper 是一个功能丰富的调试平台，支持多种插件，包括网络请求、数据库、性能监控等，且支持 iOS 和 Android 平台。而 Chrome Debugger 主要用于调试 JavaScript 代码，不支持原生代码或 UI 组件树的调试。</strong></p>
+  <p><strong>
+
+正确答案: B. Flipper 支持通过插件扩展功能，能调试网络请求、数据库和性能，而 Chrome Debugger 主要用于调试 JavaScript 代码。 解释：Flipper 是一个功能丰富的调试平台，支持多种插件，包括网络请求、数据库、性能监控等，且支持 iOS 和 Android 平台。而 Chrome Debugger 主要用于调试 JavaScript 代码，不支持原生代码或 UI 组件树的调试。</strong></p>
 </details>
 
 **问题 2:**
@@ -2800,7 +3002,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 使用Chrome Debugger：
+  <p><strong>
+
+正确答案: 1. 使用Chrome Debugger：
 - 连接设备或模拟器并开启调试模式。
 - 在Chrome浏览器中打开React Native调试器（通过摇晃设备或快捷键打开开发者菜单，选择"Debug JS Remotely"）。
 - 利用Chrome DevTools的Console查看错误日志，检查是否有异常或警告信息。
@@ -2838,7 +3042,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 jest.fn() 并直接返回异步函数的返回值（如 Promise.resolve(value)）——因为在测试异步函数时，使用 jest.fn() 并返回一个已解析的 Promise，可以有效模拟异步行为，确保测试代码能够正常等待异步结果，而不是调用真实函数或不返回预期的异步结构。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 jest.fn() 并直接返回异步函数的返回值（如 Promise.resolve(value)）——因为在测试异步函数时，使用 jest.fn() 并返回一个已解析的 Promise，可以有效模拟异步行为，确保测试代码能够正常等待异步结果，而不是调用真实函数或不返回预期的异步结构。</strong></p>
 </details>
 
 **问题 2:**
@@ -2847,7 +3053,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，编写测试用例时需要考虑函数的正常输入和输出，确保它能正确计算商品价格数组的总和。可以设计一个测试用例，传入一个包含多个价格的数组，断言返回值等于这些价格的和。其次，要考虑边界情况，比如传入空数组时，预期返回0。最后，需要测试异常输入，如传入非数字类型的元素，测试用例应验证函数是否正确处理这些情况（例如抛出错误或忽略无效输入）。在 Jest 中，可以使用 `test` 或 `it` 创建测试块，利用 `expect` 断言函数返回值，如 `expect(calculateTotal([10, 20, 30])).toBe(60)`。通过覆盖这些场景，可以确保 `calculateTotal` 函数的健壮性和正确性。</strong></p>
+  <p><strong>
+
+正确答案: 首先，编写测试用例时需要考虑函数的正常输入和输出，确保它能正确计算商品价格数组的总和。可以设计一个测试用例，传入一个包含多个价格的数组，断言返回值等于这些价格的和。其次，要考虑边界情况，比如传入空数组时，预期返回0。最后，需要测试异常输入，如传入非数字类型的元素，测试用例应验证函数是否正确处理这些情况（例如抛出错误或忽略无效输入）。在 Jest 中，可以使用 `test` 或 `it` 创建测试块，利用 `expect` 断言函数返回值，如 `expect(calculateTotal([10, 20, 30])).toBe(60)`。通过覆盖这些场景，可以确保 `calculateTotal` 函数的健壮性和正确性。</strong></p>
 </details>
 
 ---
@@ -2871,7 +3079,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. Detox 支持在测试中执行异步操作，并且能够自动等待 React Native 应用的状态稳定后再继续执行测试步骤。——正确答案。Detox 的一个核心优势是它内置了同步机制，能够自动等待 JavaScript 线程和 UI 线程空闲，从而确保测试步骤执行时应用处于稳定状态，避免了手动添加等待时间的问题。</strong></p>
+  <p><strong>
+
+正确答案: C. Detox 支持在测试中执行异步操作，并且能够自动等待 React Native 应用的状态稳定后再继续执行测试步骤。——正确答案。Detox 的一个核心优势是它内置了同步机制，能够自动等待 JavaScript 线程和 UI 线程空闲，从而确保测试步骤执行时应用处于稳定状态，避免了手动添加等待时间的问题。</strong></p>
 </details>
 
 **问题 2:**
@@ -2880,7 +3090,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在使用Detox编写React Native应用的端到端测试时，针对用户登录功能，可以按以下步骤设计测试：
+  <p><strong>
+
+正确答案: 在使用Detox编写React Native应用的端到端测试时，针对用户登录功能，可以按以下步骤设计测试：
 
 1. 初始化测试环境：
    - 在`beforeAll`或`beforeEach`钩子中使用`device.launchApp()`启动应用，确保每次测试都从干净状态开始。
@@ -2919,7 +3131,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -2928,7 +3142,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 设计性能和压力测试方案：
+  <p><strong>
+
+正确答案: 1. 设计性能和压力测试方案：
    - 模拟真实用户行为，包括浏览商品、加入购物车、下单等关键操作。
    - 制定不同级别的并发用户数，逐步增加压力，观察应用响应。
 
@@ -2976,7 +3192,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用页面对象模式（Page Object Model）来封装页面元素和操作。该模式通过抽象页面元素和操作，降低测试代码重复，提高测试用例的可读性和维护性，同时便于扩展和修改。选项A将所有测试写在一个文件中会导致代码臃肿且难以维护；选项C固然保证了真实性，但忽略了测试的稳定性和可控性；选项D虽然有助于隔离测试，但不能代替良好的框架设计。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用页面对象模式（Page Object Model）来封装页面元素和操作。该模式通过抽象页面元素和操作，降低测试代码重复，提高测试用例的可读性和维护性，同时便于扩展和修改。选项A将所有测试写在一个文件中会导致代码臃肿且难以维护；选项C固然保证了真实性，但忽略了测试的稳定性和可控性；选项D虽然有助于隔离测试，但不能代替良好的框架设计。</strong></p>
 </details>
 
 **问题 2:**
@@ -2991,7 +3209,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计思路如下：
+  <p><strong>
+
+正确答案: 设计思路如下：
 
 1. 测试框架结构设计：
   - 采用分层架构，将测试用例、测试数据、测试驱动和测试报告分开管理。
@@ -3042,7 +3262,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 结合单元测试和端到端测试的覆盖率，同时关注关键业务路径和异常处理的测试覆盖情况。 解释：单纯依赖单元测试覆盖率不足以保证整体质量，端到端测试能够覆盖用户实际操作路径，结合两者并关注关键业务和异常逻辑的测试覆盖，才能更全面地保障代码质量。选项A忽视了集成和端到端测试，选项C错误地认为覆盖率百分百即代表质量高，选项D忽视了自动化测试的重要性。</strong></p>
+  <p><strong>
+
+正确答案: B. 结合单元测试和端到端测试的覆盖率，同时关注关键业务路径和异常处理的测试覆盖情况。 解释：单纯依赖单元测试覆盖率不足以保证整体质量，端到端测试能够覆盖用户实际操作路径，结合两者并关注关键业务和异常逻辑的测试覆盖，才能更全面地保障代码质量。选项A忽视了集成和端到端测试，选项C错误地认为覆盖率百分百即代表质量高，选项D忽视了自动化测试的重要性。</strong></p>
 </details>
 
 **问题 2:**
@@ -3051,7 +3273,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在这种场景下，我会从以下几个方面设计和实施测试策略：
+  <p><strong>
+
+正确答案: 在这种场景下，我会从以下几个方面设计和实施测试策略：
 
 1. 测试覆盖率指标的定义与监控：
   - 代码覆盖率（Code Coverage）：包括语句覆盖率、分支覆盖率和函数覆盖率，确保关键业务逻辑路径都有自动化测试覆盖，目标通常设定在80%以上。
@@ -3102,7 +3326,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 先编写一个失败的测试用例，接着编写实现代码使测试通过，最后重构代码以保持代码整洁。 这是 TDD 的核心流程，即“红-绿-重构”循环。首先编写一个会失败的测试（红），然后编写最简实现代码使测试通过（绿），最后重构代码以提升质量且不破坏测试（重构）。选项 A、C 忽略了先写测试的重要步骤，选项 D 完全误解了测试代码的作用。</strong></p>
+  <p><strong>
+
+正确答案: B. 先编写一个失败的测试用例，接着编写实现代码使测试通过，最后重构代码以保持代码整洁。 这是 TDD 的核心流程，即“红-绿-重构”循环。首先编写一个会失败的测试（红），然后编写最简实现代码使测试通过（绿），最后重构代码以提升质量且不破坏测试（重构）。选项 A、C 忽略了先写测试的重要步骤，选项 D 完全误解了测试代码的作用。</strong></p>
 </details>
 
 **问题 2:**
@@ -3111,7 +3337,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在使用 TDD 开发购物车组件时，首先根据需求编写测试用例。具体步骤如下：
+  <p><strong>
+
+正确答案: 在使用 TDD 开发购物车组件时，首先根据需求编写测试用例。具体步骤如下：
 
 1. 编写测试用例：
    - 添加商品的测试：测试添加商品后，购物车中商品数量是否正确，商品信息是否准确。
@@ -3152,7 +3380,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用框架提供的扩展接口或 API，定义一个符合规范的匹配器函数，然后通过注册方法将其注入测试环境中使用。 解析：React Native 常用的测试框架（如 Jest）通常支持通过提供的扩展接口来添加自定义匹配器，这种方式不需要修改核心源码，也避免了直接覆盖全局 expect 对象带来的潜在风险。通过注册自定义匹配器，可以优雅且安全地扩展测试表达能力。选项 A 过于激进且不推荐，C 可能导致全局污染和维护困难，D 误解了配置文件的作用，框架不会自动加载未注册的匹配器代码。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用框架提供的扩展接口或 API，定义一个符合规范的匹配器函数，然后通过注册方法将其注入测试环境中使用。 解析：React Native 常用的测试框架（如 Jest）通常支持通过提供的扩展接口来添加自定义匹配器，这种方式不需要修改核心源码，也避免了直接覆盖全局 expect 对象带来的潜在风险。通过注册自定义匹配器，可以优雅且安全地扩展测试表达能力。选项 A 过于激进且不推荐，C 可能导致全局污染和维护困难，D 误解了配置文件的作用，框架不会自动加载未注册的匹配器代码。</strong></p>
 </details>
 
 **问题 2:**
@@ -3161,7 +3391,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Jest 的测试环境管理主要集中在其核心模块中，尤其是 `jest-environment` 相关代码。Jest 通过 `testEnvironment` 配置项指定测试环境，默认是 `jsdom` 或 `node` 环境。源码中，`jest-environment` 包负责封装不同的测试环境实现，提供统一的生命周期钩子如 `setup()`、`teardown()`，用于环境的初始化和清理。
+  <p><strong>
+
+正确答案: Jest 的测试环境管理主要集中在其核心模块中，尤其是 `jest-environment` 相关代码。Jest 通过 `testEnvironment` 配置项指定测试环境，默认是 `jsdom` 或 `node` 环境。源码中，`jest-environment` 包负责封装不同的测试环境实现，提供统一的生命周期钩子如 `setup()`、`teardown()`，用于环境的初始化和清理。
 
 在源码层面，Jest 通过 `jest-runtime` 调用 `TestEnvironment` 类实现测试环境的实例化和管理。扩展自定义测试环境时，需要继承 `jest-environment-node` 或 `jest-environment-jsdom`，重写关键生命周期方法，注入自定义模拟逻辑或性能监控代码。
 
@@ -3199,7 +3431,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. iOS原生模块通常使用Objective-C或Swift编写，且需要创建桥接头文件以供React Native调用。因为React Native通过桥接机制与原生代码交互，iOS端如果使用Swift，需要通过桥接头文件（Bridging Header）连接Objective-C代码和React Native，确保模块能被正确调用。</strong></p>
+  <p><strong>
+
+正确答案: B. iOS原生模块通常使用Objective-C或Swift编写，且需要创建桥接头文件以供React Native调用。因为React Native通过桥接机制与原生代码交互，iOS端如果使用Swift，需要通过桥接头文件（Bridging Header）连接Objective-C代码和React Native，确保模块能被正确调用。</strong></p>
 </details>
 
 **问题 2:**
@@ -3208,7 +3442,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Android平台：
+  <p><strong>
+
+正确答案: 在Android平台：
 1. 权限申请：需要在AndroidManifest.xml中声明摄像头权限（android.permission.CAMERA），并且从Android 6.0（API 23）开始，必须在运行时动态申请权限，通常通过ActivityCompat.requestPermissions方法实现。
 2. 调用摄像头：通过Camera API或者Camera2 API来打开摄像头设备，获取预览数据或拍照。
 
@@ -3242,7 +3478,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在原生代码中通过继承ReactContextBaseJavaModule（Android）或RCTBridgeModule（iOS）来创建模块类，并在注册时将模块名暴露给JavaScript。正确。React Native自定义原生模块需要在原生代码中继承对应基类，并通过注册将模块名暴露给JavaScript，才能让JS端调用。选项B错误，因为仅导入JavaScript接口文件不能调用原生功能；选项C错误，React Native不会自动扫描注册原生模块，必须手动注册；选项D错误，ViewManager用于创建UI组件模块，而非通用原生模块。</strong></p>
+  <p><strong>
+
+正确答案: A. 在原生代码中通过继承ReactContextBaseJavaModule（Android）或RCTBridgeModule（iOS）来创建模块类，并在注册时将模块名暴露给JavaScript。正确。React Native自定义原生模块需要在原生代码中继承对应基类，并通过注册将模块名暴露给JavaScript，才能让JS端调用。选项B错误，因为仅导入JavaScript接口文件不能调用原生功能；选项C错误，React Native不会自动扫描注册原生模块，必须手动注册；选项D错误，ViewManager用于创建UI组件模块，而非通用原生模块。</strong></p>
 </details>
 
 **问题 2:**
@@ -3251,7 +3489,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 设计与实现步骤：
+  <p><strong>
+
+正确答案: 1. 设计与实现步骤：
 - 在Android项目的`android/app/src/main/java`路径下创建一个新的Java类，继承`ReactContextBaseJavaModule`。
 - 在该类中实现加密算法的业务逻辑，并暴露相应的方法给JavaScript调用，方法需使用`@ReactMethod`注解。
 - 创建一个继承`ReactPackage`的类，将原生模块注册到React Native。
@@ -3288,7 +3528,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 在原生代码中继承 ViewManager 或 RCTViewManager，并在 JS 端通过 requireNativeComponent 引入组件。
+  <p><strong>
+
+正确答案: C. 在原生代码中继承 ViewManager 或 RCTViewManager，并在 JS 端通过 requireNativeComponent 引入组件。
 
 解析：
 封装原生 UI 组件时，必须在原生层实现对应的 ViewManager（Android 中继承 ViewManager，iOS 中继承 RCTViewManager），以管理原生视图的生命周期和属性。然后在 JS 端通过 requireNativeComponent 引入该组件，才能在 React Native 中使用。其他选项中 A 是暴露原生模块的方法，适用于非 UI 模块；B 的描述错误，NativeModules 用于原生模块调用，不直接注册 UI 组件；D 错误，原生组件必须有对应原生代码实现支持。</strong></p>
@@ -3306,7 +3548,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 原生侧封装：
+  <p><strong>
+
+正确答案: 1. 原生侧封装：
 - Android：通过继承View或ViewGroup创建自定义组件，使用ReactPackage注册组件，并通过ReactContext暴露给React Native。
 - iOS：继承UIView创建自定义组件，使用RCTViewManager管理组件，并注册给React Native。
 - 通过@ReactProp注解(Android)或RCT_EXPORT_VIEW_PROPERTY(iOS)暴露可配置属性。
@@ -3345,7 +3589,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 通过事件桥（Bridge）进行异步消息传递。正确答案是 B，因为 React Native 使用事件桥（Bridge）机制实现原生代码与 JavaScript 之间的异步通信，这种机制保证了两端的解耦和性能优化。选项 A 错误，因为调用原生模块是异步的，不能直接同步调用；选项 C 错误，React Native 并不使用共享内存区来传递数据；选项 D 错误，HTTP 请求不是原生与 JS 通信的常用机制。</strong></p>
+  <p><strong>
+
+正确答案: B. 通过事件桥（Bridge）进行异步消息传递。正确答案是 B，因为 React Native 使用事件桥（Bridge）机制实现原生代码与 JavaScript 之间的异步通信，这种机制保证了两端的解耦和性能优化。选项 A 错误，因为调用原生模块是异步的，不能直接同步调用；选项 C 错误，React Native 并不使用共享内存区来传递数据；选项 D 错误，HTTP 请求不是原生与 JS 通信的常用机制。</strong></p>
 </details>
 
 **问题 2:**
@@ -3354,7 +3600,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在React Native中，原生层（如Android）与JS层之间的交互主要通过桥（Bridge）进行通信，支持双向异步消息传递。针对该场景，通常采用事件发送机制，即原生层发送事件，JS层监听并响应。
+  <p><strong>
+
+正确答案: 在React Native中，原生层（如Android）与JS层之间的交互主要通过桥（Bridge）进行通信，支持双向异步消息传递。针对该场景，通常采用事件发送机制，即原生层发送事件，JS层监听并响应。
 
 1. 事件发送流程：
    - 原生Android代码中使用ReactContext或ReactApplicationContext获取DeviceEventManagerModule。
@@ -3406,7 +3654,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用原生模块时，通过减少跨桥调用次数和批量传递数据来降低性能开销。解释：React Native 中原生模块与 JavaScript 线程通过桥（Bridge）通信，频繁跨桥调用会带来性能损失。通过减少调用次数和批量传递数据，可以显著降低通信开销和内存使用，从而提升性能。选项 A 反而会增加内存负担；选项 C 过度依赖原生层不一定带来性能提升，且可能增加复杂度；选项 D 禁用内存管理工具会使调试和优化变得困难，且不会提升性能。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用原生模块时，通过减少跨桥调用次数和批量传递数据来降低性能开销。解释：React Native 中原生模块与 JavaScript 线程通过桥（Bridge）通信，频繁跨桥调用会带来性能损失。通过减少调用次数和批量传递数据，可以显著降低通信开销和内存使用，从而提升性能。选项 A 反而会增加内存负担；选项 C 过度依赖原生层不一定带来性能提升，且可能增加复杂度；选项 D 禁用内存管理工具会使调试和优化变得困难，且不会提升性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -3422,7 +3672,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 可能的性能瓶颈和内存泄漏点：
+  <p><strong>
+
+正确答案: 1. 可能的性能瓶颈和内存泄漏点：
 - 图片资源未合理压缩或未使用合适的缓存策略，导致内存占用过高。
 - React Native 层频繁渲染大量图片组件，触发过多的 JS 与原生桥通信，造成性能瓶颈。
 - 原生层对图片资源管理不当，如未及时释放Bitmap，导致内存泄漏。
@@ -3463,7 +3715,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -3472,7 +3726,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 代码组织与模块划分：
+  <p><strong>
+
+正确答案: 1. 代码组织与模块划分：
 - 采用模块化设计，将多媒体功能拆分为多个子模块，如视频播放模块、滤镜处理模块和录制模块。
 - 每个模块在iOS和Android平台分别实现对应的原生代码，保持接口一致，方便JavaScript层调用。
 
@@ -3522,7 +3778,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在Java模块中继承ReactContextBaseJavaModule，并实现getName()方法返回模块名。 这是确保原生模块能被React Native框架识别和注册的关键步骤，getName()方法的返回值作为JavaScript调用时的模块标识。B选项错误，因为原生模块不需要在AndroidManifest.xml声明权限，除非模块本身需要特殊权限。C选项错误，JavaScript不能直接实例化Java类，必须通过React Native的桥接机制调用。D选项部分正确，虽然build.gradle中配置依赖是必要的，但模块的注册必须在Java代码中完成，不能仅依赖自动注册。</strong></p>
+  <p><strong>
+
+正确答案: A. 在Java模块中继承ReactContextBaseJavaModule，并实现getName()方法返回模块名。 这是确保原生模块能被React Native框架识别和注册的关键步骤，getName()方法的返回值作为JavaScript调用时的模块标识。B选项错误，因为原生模块不需要在AndroidManifest.xml声明权限，除非模块本身需要特殊权限。C选项错误，JavaScript不能直接实例化Java类，必须通过React Native的桥接机制调用。D选项部分正确，虽然build.gradle中配置依赖是必要的，但模块的注册必须在Java代码中完成，不能仅依赖自动注册。</strong></p>
 </details>
 
 **问题 2:**
@@ -3533,7 +3791,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 定位性能问题的步骤：
+  <p><strong>
+
+正确答案: 1. 定位性能问题的步骤：
 - 克隆并搭建 React Native 的 Android 原生模块源码环境，确保能在本地调试。
 - 使用 Android Studio 的 Profiler 工具进行性能分析，重点关注 CPU 使用率、内存占用和主线程阻塞情况。
 - 结合日志输出和断点调试，定位具体代码段（如某个耗时的 JNI 调用或 UI 更新逻辑）。
@@ -3575,7 +3835,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 签名保证应用的完整性和来源真实性，防止被篡改。 签名的主要作用是确认应用的发布者身份以及保护应用内容不被非法篡改，确保用户下载和安装的是官方发布的版本。</strong></p>
+  <p><strong>
+
+正确答案: B. 签名保证应用的完整性和来源真实性，防止被篡改。 签名的主要作用是确认应用的发布者身份以及保护应用内容不被非法篡改，确保用户下载和安装的是官方发布的版本。</strong></p>
 </details>
 
 **问题 2:**
@@ -3586,7 +3848,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 应用签名的目的是确保应用的完整性和身份验证，使操作系统和应用商店能够确认应用是由合法开发者发布且未被篡改的。签名证书是用来加密和验证应用的关键凭证。
+  <p><strong>
+
+正确答案: 应用签名的目的是确保应用的完整性和身份验证，使操作系统和应用商店能够确认应用是由合法开发者发布且未被篡改的。签名证书是用来加密和验证应用的关键凭证。
 
 在管理签名证书时，需要注意：
 1. 证书的安全存储，避免私钥泄露。
@@ -3617,7 +3881,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 Proguard 或 R8 对 Android 代码进行混淆。因为 React Native 应用中原生部分和打包的 JavaScript 都可能被逆向，Proguard 或 R8 能有效混淆和压缩 Android 原生代码，增加反编译难度，而仅压缩 JS 或删除日志并不能有效防止反编译。将 JS 代码写入原生中并非标准做法，也不保证安全。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 Proguard 或 R8 对 Android 代码进行混淆。因为 React Native 应用中原生部分和打包的 JavaScript 都可能被逆向，Proguard 或 R8 能有效混淆和压缩 Android 原生代码，增加反编译难度，而仅压缩 JS 或删除日志并不能有效防止反编译。将 JS 代码写入原生中并非标准做法，也不保证安全。</strong></p>
 </details>
 
 **问题 2:**
@@ -3626,7 +3892,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 代码混淆通过重命名变量、函数名以及改变代码结构，使得反编译后的代码难以理解，从而保护核心业务逻辑不被轻易破解。在 React Native 中，由于 JavaScript 代码是以明文形式打包在应用中，容易被反编译和分析，因此代码混淆尤为重要。
+  <p><strong>
+
+正确答案: 代码混淆通过重命名变量、函数名以及改变代码结构，使得反编译后的代码难以理解，从而保护核心业务逻辑不被轻易破解。在 React Native 中，由于 JavaScript 代码是以明文形式打包在应用中，容易被反编译和分析，因此代码混淆尤为重要。
 
 实现代码混淆时需要注意以下几点：
 1. 保证混淆后代码仍能正确运行，避免破坏 React Native 框架的正常功能。
@@ -3654,7 +3922,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用第三方库如 react-native-keychain 来存储敏感信息。因为 react-native-keychain 利用系统级别的安全存储（如 iOS 的 Keychain 和 Android 的 Keystore）来保护敏感数据，提供了更安全的存储机制。AsyncStorage 不适合存储敏感数据，即使加密后也容易受到攻击；本地文件系统存储加 Base64 编码无法保证安全；Redux 状态管理是内存中的数据存储，且 HTTPS 是传输加密，与本地存储安全无关。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用第三方库如 react-native-keychain 来存储敏感信息。因为 react-native-keychain 利用系统级别的安全存储（如 iOS 的 Keychain 和 Android 的 Keystore）来保护敏感数据，提供了更安全的存储机制。AsyncStorage 不适合存储敏感数据，即使加密后也容易受到攻击；本地文件系统存储加 Base64 编码无法保证安全；Redux 状态管理是内存中的数据存储，且 HTTPS 是传输加密，与本地存储安全无关。</strong></p>
 </details>
 
 **问题 2:**
@@ -3669,7 +3939,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 选择方案：
+  <p><strong>
+
+正确答案: 1. 选择方案：
 - 使用React Native社区推荐的安全存储库，如react-native-keychain或react-native-sensitive-info，这些库利用底层平台（iOS的Keychain，Android的EncryptedSharedPreferences或Keystore）进行加密存储。
 - 对于特别敏感的数据，可以在存储前使用AES等对称加密算法进行加密，密钥存储在安全容器中。
 
@@ -3704,7 +3976,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用iOS的Keychain和Android的Encrypted Shared Preferences来安全存储敏感数据。 解释：Keychain（iOS）和Encrypted Shared Preferences（Android）是操作系统提供的安全存储机制，能够加密保存敏感数据，防止未经授权的访问。相比之下，AsyncStorage不提供加密，使用Base64编码并不安全；本地文件系统存储即使设置只读权限，也容易被其他应用或用户访问；而仅在应用退出时清除数据无法防止运行时泄露。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用iOS的Keychain和Android的Encrypted Shared Preferences来安全存储敏感数据。 解释：Keychain（iOS）和Encrypted Shared Preferences（Android）是操作系统提供的安全存储机制，能够加密保存敏感数据，防止未经授权的访问。相比之下，AsyncStorage不提供加密，使用Base64编码并不安全；本地文件系统存储即使设置只读权限，也容易被其他应用或用户访问；而仅在应用退出时清除数据无法防止运行时泄露。</strong></p>
 </details>
 
 **问题 2:**
@@ -3713,7 +3987,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能导致安全漏洞的原因包括：
+  <p><strong>
+
+正确答案: 可能导致安全漏洞的原因包括：
 
 1. 明文存储敏感数据：开发者可能将敏感信息存储在 AsyncStorage 或其他不安全的存储中，导致数据易被恶意应用或用户访问。
 2. 缺少数据加密：传输和存储过程中未对敏感数据进行加密，导致数据在网络或设备上被窃取。
@@ -3751,7 +4027,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用代码混淆结合原生层的安全措施（如加密存储和安全通道） - 仅依赖JavaScript混淆（选项A）容易被反编译，HTTPS加密网络请求（选项C）主要保护传输数据，不能防止应用本身被篡改，且将敏感逻辑全部放在客户端（选项D）会增加被攻击风险。综合使用代码混淆和原生安全措施是目前较为有效的策略。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用代码混淆结合原生层的安全措施（如加密存储和安全通道） - 仅依赖JavaScript混淆（选项A）容易被反编译，HTTPS加密网络请求（选项C）主要保护传输数据，不能防止应用本身被篡改，且将敏感逻辑全部放在客户端（选项D）会增加被攻击风险。综合使用代码混淆和原生安全措施是目前较为有效的策略。</strong></p>
 </details>
 
 **问题 2:**
@@ -3760,7 +4038,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 React Native 应用中设计和实施安全策略时，应针对敏感数据泄露和逆向工程风险，采取以下措施：
+  <p><strong>
+
+正确答案: 在 React Native 应用中设计和实施安全策略时，应针对敏感数据泄露和逆向工程风险，采取以下措施：
 
 1. 数据存储
 - 使用加密存储：利用库如 react-native-keychain 或加密数据库（如 Realm 加密版）存储敏感数据，防止数据在设备被盗或备份时泄露。
@@ -3800,7 +4080,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在应用中集成第三方错误追踪工具（如Sentry）并配置性能监控，以捕获异常和关键性能指标。 解析：集成诸如Sentry这类专业的第三方错误追踪和性能监控工具，可以实时捕获运行时错误，并且提供详细的堆栈信息和性能指标，帮助开发者快速定位问题和优化应用。选项B错误，因为调试模式不应在发布版本开启且不能全面监控性能；选项C虽可辅助诊断，但手动日志难以覆盖所有问题且效率低；选项D忽略错误不利于安全和稳定性，不能作为有效监控手段。</strong></p>
+  <p><strong>
+
+正确答案: A. 在应用中集成第三方错误追踪工具（如Sentry）并配置性能监控，以捕获异常和关键性能指标。 解析：集成诸如Sentry这类专业的第三方错误追踪和性能监控工具，可以实时捕获运行时错误，并且提供详细的堆栈信息和性能指标，帮助开发者快速定位问题和优化应用。选项B错误，因为调试模式不应在发布版本开启且不能全面监控性能；选项C虽可辅助诊断，但手动日志难以覆盖所有问题且效率低；选项D忽略错误不利于安全和稳定性，不能作为有效监控手段。</strong></p>
 </details>
 
 **问题 2:**
@@ -3809,7 +4091,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 性能监控技术与方法：
+  <p><strong>
+
+正确答案: 1. 性能监控技术与方法：
 - 集成性能监控SDK，如React Native Performance Monitor、Firebase Performance Monitoring或Sentry Performance Monitoring。
 - 监控关键性能指标（KPI），如启动时间、界面响应时间、JS线程阻塞时间、内存使用、CPU负载等。
 - 利用React Native自带的Profiler工具分析渲染性能瓶颈。
@@ -3856,7 +4140,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 通过自动化脚本执行单元测试、代码签名、资源优化、生成发布包，并将构建产物上传到应用商店或分发平台。 解析：在React Native发布流程中，自动化构建系统的核心目的是提高发布效率和保证发布质量，必须涵盖代码签名以确保安全性，资源优化以提升性能，自动化测试以保证功能可靠性，以及自动生成发布包和自动上传到分发渠道。选项B完整且准确地描述了这些关键步骤。其他选项存在误导性，比如忽略代码混淆和资源优化（A），或只依赖手动签名（C），或者完全本地构建（D），都不能满足现代自动化发布的需求。</strong></p>
+  <p><strong>
+
+正确答案: B. 通过自动化脚本执行单元测试、代码签名、资源优化、生成发布包，并将构建产物上传到应用商店或分发平台。 解析：在React Native发布流程中，自动化构建系统的核心目的是提高发布效率和保证发布质量，必须涵盖代码签名以确保安全性，资源优化以提升性能，自动化测试以保证功能可靠性，以及自动生成发布包和自动上传到分发渠道。选项B完整且准确地描述了这些关键步骤。其他选项存在误导性，比如忽略代码混淆和资源优化（A），或只依赖手动签名（C），或者完全本地构建（D），都不能满足现代自动化发布的需求。</strong></p>
 </details>
 
 **问题 2:**
@@ -3865,7 +4151,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计React Native应用的自动化发布流程时，我会从以下几个方面考虑：
+  <p><strong>
+
+正确答案: 在设计React Native应用的自动化发布流程时，我会从以下几个方面考虑：
 
 1. 多环境配置管理：通过配置文件（如env文件或使用react-native-config）管理不同环境的API地址和参数，确保构建时自动切换。
 
@@ -3902,7 +4190,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 通过集成移动应用管理（MAM）解决方案，实现对应用数据的访问控制和远程擦除功能。——企业级安全规范强调不仅要保障数据传输的安全，更需对应用内部数据访问进行严格管理。MAM方案能提供细粒度的访问控制和远程擦除能力，是防止敏感数据泄露的关键措施。选项A虽重要但仅覆盖传输安全，B选项硬编码密钥会带来安全风险，D选项仅依赖客户端验证不足以防范复杂攻击。</strong></p>
+  <p><strong>
+
+正确答案: C. 通过集成移动应用管理（MAM）解决方案，实现对应用数据的访问控制和远程擦除功能。——企业级安全规范强调不仅要保障数据传输的安全，更需对应用内部数据访问进行严格管理。MAM方案能提供细粒度的访问控制和远程擦除能力，是防止敏感数据泄露的关键措施。选项A虽重要但仅覆盖传输安全，B选项硬编码密钥会带来安全风险，D选项仅依赖客户端验证不足以防范复杂攻击。</strong></p>
 </details>
 
 **问题 2:**
@@ -3911,7 +4201,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计和实现符合GDPR、PCI DSS等企业级安全规范的React Native应用时，应从以下几个关键方面入手：
+  <p><strong>
+
+正确答案: 在设计和实现符合GDPR、PCI DSS等企业级安全规范的React Native应用时，应从以下几个关键方面入手：
 
 1. 数据保护
 - **加密传输与存储**：所有敏感数据（如用户身份信息、支付信息）必须通过TLS加密传输。客户端本地存储应使用加密库（如react-native-encrypted-storage）对数据进行加密，防止数据泄露。
@@ -3960,7 +4252,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用Metro的 `cacheStores` 配置，自定义缓存存储路径以避免重复计算，提高缓存命中率。 解释：调整 `cacheStores` 可以有效利用缓存，避免重复计算和资源浪费，从而提升热重载速度。选项A错误，因为将 `maxWorkers` 设置过高可能导致资源竞争反而降低性能；选项C禁用代码压缩虽然能加快打包速度，但会影响开发体验且不是优化热重载的关键手段；选项D关闭 `watchFolders` 会导致部分文件变动无法被监控，影响热重载的准确性。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用Metro的 `cacheStores` 配置，自定义缓存存储路径以避免重复计算，提高缓存命中率。 解释：调整 `cacheStores` 可以有效利用缓存，避免重复计算和资源浪费，从而提升热重载速度。选项A错误，因为将 `maxWorkers` 设置过高可能导致资源竞争反而降低性能；选项C禁用代码压缩虽然能加快打包速度，但会影响开发体验且不是优化热重载的关键手段；选项D关闭 `watchFolders` 会导致部分文件变动无法被监控，影响热重载的准确性。</strong></p>
 </details>
 
 **问题 2:**
@@ -3969,7 +4263,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在遇到打包速度缓慢和运行时内存占用过高的问题时，可以从以下几个方面对Metro打包器进行诊断和优化：
+  <p><strong>
+
+正确答案: 在遇到打包速度缓慢和运行时内存占用过高的问题时，可以从以下几个方面对Metro打包器进行诊断和优化：
 
 1. **启用缓存机制**：通过配置`cacheStores`和`cacheVersion`，确保Metro能有效利用缓存，避免重复打包相同模块，从而提升打包速度。
 
@@ -4009,7 +4305,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -4018,7 +4316,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在React Native项目中管理多环境配置，可以通过以下步骤实现：
+  <p><strong>
+
+正确答案: 在React Native项目中管理多环境配置，可以通过以下步骤实现：
 
 1. 使用环境变量管理工具：
    - 使用`.env`文件配合`react-native-config`等库，分别创建`.env.development`、`.env.staging`、`.env.production`等文件，用于存放不同环境的配置。
@@ -4061,7 +4361,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 配置自动化构建脚本，完成代码编译、打包和签名过程。因为在CI/CD流程中，自动化构建脚本是核心环节，确保每次代码提交后能顺利完成编译和打包，生成可发布的应用包，是实现持续集成和持续交付的基础。</strong></p>
+  <p><strong>
+
+正确答案: B. 配置自动化构建脚本，完成代码编译、打包和签名过程。因为在CI/CD流程中，自动化构建脚本是核心环节，确保每次代码提交后能顺利完成编译和打包，生成可发布的应用包，是实现持续集成和持续交付的基础。</strong></p>
 </details>
 
 **问题 2:**
@@ -4070,7 +4372,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计React Native项目的CI/CD流程时，关键步骤包括：
+  <p><strong>
+
+正确答案: 设计React Native项目的CI/CD流程时，关键步骤包括：
 
 1. 代码提交触发构建：通过Git仓库的钩子（如GitHub Actions、GitLab CI等）触发构建流程，自动拉取最新代码。
 
@@ -4115,7 +4419,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -4124,7 +4430,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 定位问题版本：
+  <p><strong>
+
+正确答案: 1. 定位问题版本：
 - 使用版本控制系统（如 Git）管理代码，确保每次发布都有明确的版本标签。
 - 结合错误监控工具（如 Sentry）和用户反馈快速定位问题代码和具体版本。
 
@@ -4160,7 +4468,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在开发阶段启用Hermes引擎以提升构建速度和运行性能。Hermes是React Native官方支持的JavaScript引擎，能够显著减少应用启动时间和内存使用，同时通过更高效的字节码执行优化整体性能。这对于构建阶段和运行时性能都有积极提升。选项B中的Proguard主要用于代码混淆和压缩，虽可减小APK体积，但对构建速度提升有限；选项C禁用增量构建反而会使构建时间变长；选项D代码拆分主要优化运行时的加载性能，而非直接提升构建性能。</strong></p>
+  <p><strong>
+
+正确答案: A. 在开发阶段启用Hermes引擎以提升构建速度和运行性能。Hermes是React Native官方支持的JavaScript引擎，能够显著减少应用启动时间和内存使用，同时通过更高效的字节码执行优化整体性能。这对于构建阶段和运行时性能都有积极提升。选项B中的Proguard主要用于代码混淆和压缩，虽可减小APK体积，但对构建速度提升有限；选项C禁用增量构建反而会使构建时间变长；选项D代码拆分主要优化运行时的加载性能，而非直接提升构建性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -4169,7 +4479,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能导致React Native项目构建性能低下的原因包括：
+  <p><strong>
+
+正确答案: 可能导致React Native项目构建性能低下的原因包括：
 
 1. 依赖包过多或体积过大，导致打包时间延长。
 2. 未合理使用缓存机制，每次构建都进行全量构建。
@@ -4211,7 +4523,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 分别生成Android的APK/AAB和iOS的IPA包，并通过Google Play Console和Apple App Store Connect进行上传和审核。 这是多平台发布流程管理的核心步骤，因为Android和iOS有各自独立的应用包格式和发布渠道，必须分别打包和上传，确保符合各自平台的审核要求。选项A忽略了平台差异，选项C错误且不符合发布规范，选项D目前并不存在完全自动化的官方工具支持该流程。</strong></p>
+  <p><strong>
+
+正确答案: B. 分别生成Android的APK/AAB和iOS的IPA包，并通过Google Play Console和Apple App Store Connect进行上传和审核。 这是多平台发布流程管理的核心步骤，因为Android和iOS有各自独立的应用包格式和发布渠道，必须分别打包和上传，确保符合各自平台的审核要求。选项A忽略了平台差异，选项C错误且不符合发布规范，选项D目前并不存在完全自动化的官方工具支持该流程。</strong></p>
 </details>
 
 **问题 2:**
@@ -4220,7 +4534,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在多平台发布流程管理中，关键是设计一个高效且稳定的流程，保证iOS和Android版本的同步和质量。具体方案包括：
+  <p><strong>
+
+正确答案: 在多平台发布流程管理中，关键是设计一个高效且稳定的流程，保证iOS和Android版本的同步和质量。具体方案包括：
 
 1. 版本控制策略：
    - 使用Git分支策略（如Git Flow）区分开发、测试和发布分支。
@@ -4271,7 +4587,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用CI/CD流水线结合缓存机制和增量构建来加速构建过程，同时保证构建环境的一致性。 解释：企业级构建系统设计应注重构建效率和环境一致性。通过CI/CD流水线自动化构建过程，结合缓存和增量构建技术，可以有效提升构建速度并保证构建结果稳定。选项A硬编码依赖版本虽然能减少版本冲突，但不利于灵活升级和维护；选项C将构建配置混入源代码增加了维护难度和风险；选项D放弃第三方工具可能简化表面复杂性，但无法满足企业级需求的扩展性和自动化要求。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用CI/CD流水线结合缓存机制和增量构建来加速构建过程，同时保证构建环境的一致性。 解释：企业级构建系统设计应注重构建效率和环境一致性。通过CI/CD流水线自动化构建过程，结合缓存和增量构建技术，可以有效提升构建速度并保证构建结果稳定。选项A硬编码依赖版本虽然能减少版本冲突，但不利于灵活升级和维护；选项C将构建配置混入源代码增加了维护难度和风险；选项D放弃第三方工具可能简化表面复杂性，但无法满足企业级需求的扩展性和自动化要求。</strong></p>
 </details>
 
 **问题 2:**
@@ -4286,7 +4604,9 @@ D选项的props传递适合状态较简单的场合，复杂场景容易造成�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 多环境和多渠道构建配置管理：
+  <p><strong>
+
+正确答案: 1. 多环境和多渠道构建配置管理：
 - 使用环境变量和配置文件（如 .env 文件）分离不同环境的配置。
 - 利用React Native的flavor机制（Android的productFlavors和iOS的Scheme）来支持多渠道构建。
 - 在构建脚本（如Fastlane、Gradle脚本、Xcode配置）中根据环境自动切换配置。

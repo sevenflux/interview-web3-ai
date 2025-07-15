@@ -146,7 +146,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. View。View类是Android UI组件的基类，所有具体的UI控件（如Button、TextView等）都继承自View。ViewGroup是View的子类，主要用于容纳其他View。Activity和Context不是UI组件的基类。</strong></p>
+  <p><strong>
+
+正确答案: B. View。View类是Android UI组件的基类，所有具体的UI控件（如Button、TextView等）都继承自View。ViewGroup是View的子类，主要用于容纳其他View。Activity和Context不是UI组件的基类。</strong></p>
 </details>
 
 **问题 2:**
@@ -155,7 +157,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Android的View体系结构主要包括View和ViewGroup两个核心类。View是界面上的基本元素，负责自身的绘制和事件处理；而ViewGroup是View的容器，负责管理和布局子View。ViewGroup继承自View，扩展了对子View的管理能力。布局过程包括测量（measure）、布局（layout）和绘制（draw）三个步骤。测量阶段确定每个View的尺寸，布局阶段确定每个View的位置，绘制阶段负责渲染内容。在自定义复杂控件时，可以继承ViewGroup，通过重写onMeasure和onLayout方法来控制子View的尺寸和位置，同时通过重写onDraw方法实现自定义绘制。理解View与ViewGroup的职责划分，有助于合理组织自定义控件的结构和渲染流程。</strong></p>
+  <p><strong>
+
+正确答案: Android的View体系结构主要包括View和ViewGroup两个核心类。View是界面上的基本元素，负责自身的绘制和事件处理；而ViewGroup是View的容器，负责管理和布局子View。ViewGroup继承自View，扩展了对子View的管理能力。布局过程包括测量（measure）、布局（layout）和绘制（draw）三个步骤。测量阶段确定每个View的尺寸，布局阶段确定每个View的位置，绘制阶段负责渲染内容。在自定义复杂控件时，可以继承ViewGroup，通过重写onMeasure和onLayout方法来控制子View的尺寸和位置，同时通过重写onDraw方法实现自定义绘制。理解View与ViewGroup的职责划分，有助于合理组织自定义控件的结构和渲染流程。</strong></p>
 </details>
 
 ---
@@ -179,7 +183,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. StaggeredGridLayoutManager适用于实现瀑布流布局，能够灵活处理不同高度的列表项。因为StaggeredGridLayoutManager设计用于支持多列且高度不一的布局，比如瀑布流，能够有效地管理不规则尺寸的列表项，提升显示效果和性能。</strong></p>
+  <p><strong>
+
+正确答案: C. StaggeredGridLayoutManager适用于实现瀑布流布局，能够灵活处理不同高度的列表项。因为StaggeredGridLayoutManager设计用于支持多列且高度不一的布局，比如瀑布流，能够有效地管理不规则尺寸的列表项，提升显示效果和性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -188,7 +194,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 选择布局管理器时，通常根据列表的展示需求来决定：
+  <p><strong>
+
+正确答案: 选择布局管理器时，通常根据列表的展示需求来决定：
 - 如果消息是垂直列表，使用LinearLayoutManager（垂直方向）最合适，因为它内存占用低且滚动性能好。
 - 如果需要实现网格或瀑布流效果，可以考虑GridLayoutManager或StaggeredGridLayoutManager。
 
@@ -221,7 +229,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. onMeasure() -> onLayout() -> onDraw()
+  <p><strong>
+
+正确答案: B. onMeasure() -> onLayout() -> onDraw()
 
 解释：Android的自定义View绘制流程首先调用onMeasure()确定View的大小，接着调用onLayout()确定子View的位置和大小，最后调用onDraw()进行实际的绘制操作。顺序错误会导致布局和绘制异常，因此正确的流程是先测量，再布局，最后绘制。选项A和D将绘制提前，选项C将布局和测量顺序搞反，均不正确。</strong></p>
 </details>
@@ -232,7 +242,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在自定义View绘制流程中，主要涉及onMeasure、onLayout和onDraw三个关键步骤：
+  <p><strong>
+
+正确答案: 在自定义View绘制流程中，主要涉及onMeasure、onLayout和onDraw三个关键步骤：
 
 1. onMeasure：用于测量View的尺寸。自定义View需要重写onMeasure方法来计算并设置View的宽高，确保进度条有足够空间显示动画。如果不合理实现，比如不调用setMeasuredDimension，会导致View尺寸异常，进度条可能显示不全。
 
@@ -266,7 +278,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 ObjectAnimator 并结合 LayerType 设置为 LAYER_TYPE_HARDWARE ，以减少重绘开销。 解释：ObjectAnimator 可以对 View 属性进行高效动画处理，但在复杂动画时可能导致频繁重绘。通过设置 View 的 LayerType 为硬件加速层（LAYER_TYPE_HARDWARE），可以将动画渲染到 GPU 图层，减少过度绘制和提升性能。选项 A 虽然方便，但不一定自动避免过度绘制；选项 C 在每帧调用 invalidate() 会增加绘制负担；选项 D 的传统补间动画实际上是对绘制的变换，不影响 View 的属性，且不能有效避免重绘。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 ObjectAnimator 并结合 LayerType 设置为 LAYER_TYPE_HARDWARE ，以减少重绘开销。 解释：ObjectAnimator 可以对 View 属性进行高效动画处理，但在复杂动画时可能导致频繁重绘。通过设置 View 的 LayerType 为硬件加速层（LAYER_TYPE_HARDWARE），可以将动画渲染到 GPU 图层，减少过度绘制和提升性能。选项 A 虽然方便，但不一定自动避免过度绘制；选项 C 在每帧调用 invalidate() 会增加绘制负担；选项 D 的传统补间动画实际上是对绘制的变换，不影响 View 的属性，且不能有效避免重绘。</strong></p>
 </details>
 
 **问题 2:**
@@ -275,7 +289,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 动画框架选择：
+  <p><strong>
+
+正确答案: 1. 动画框架选择：
 - 推荐使用Property Animation（如ObjectAnimator或AnimatorSet），因为Property Animation能够直接操作View的属性（如translationX、alpha等），支持更复杂和灵活的动画效果，且与视图层次结构紧密结合，适合实现列表项的展开收缩。
 
 2. 优化措施：
@@ -309,7 +325,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: D. layout_constraintGuide_percent。该属性用于定义 Guideline 在父布局中的百分比位置，能动态调整控件相对于屏幕尺寸的位置，使布局更灵活适配不同屏幕大小和方向。其他选项中，layout_margin 是固定边距，layout_constraintDimensionRatio 用于控制宽高比，layout_width 和 layout_height 固定值无法适应不同屏幕，均不如百分比定位灵活。</strong></p>
+  <p><strong>
+
+正确答案: D. layout_constraintGuide_percent。该属性用于定义 Guideline 在父布局中的百分比位置，能动态调整控件相对于屏幕尺寸的位置，使布局更灵活适配不同屏幕大小和方向。其他选项中，layout_margin 是固定边距，layout_constraintDimensionRatio 用于控制宽高比，layout_width 和 layout_height 固定值无法适应不同屏幕，均不如百分比定位灵活。</strong></p>
 </details>
 
 **问题 2:**
@@ -318,7 +336,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 链（Chains）：链允许多个视图沿水平或垂直方向相互依赖，形成一个整体的布局单元。可以用链来均匀分配多个按钮的空间，保证它们在不同屏幕宽度下等间距排列。
+  <p><strong>
+
+正确答案: 1. 链（Chains）：链允许多个视图沿水平或垂直方向相互依赖，形成一个整体的布局单元。可以用链来均匀分配多个按钮的空间，保证它们在不同屏幕宽度下等间距排列。
 
 2. 分组（Group）：Group可以将多个视图作为一个整体进行显示或隐藏操作，方便管理视图的可见性。例如在某些状态下隐藏一组控件，避免手动逐个操作。
 
@@ -352,7 +372,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. `Text("Hello, Compose!")` 是在 Jetpack Compose 中创建文本组件的正确写法。A 选项是传统 Android View 中的写法，不适用于 Compose。C 选项中的小写 `text` 不是 Compose 的组件名称。D 选项的写法类似于 Lambda，但 Text 组件直接接收字符串参数，而非 Lambda。</strong></p>
+  <p><strong>
+
+正确答案: B. `Text("Hello, Compose!")` 是在 Jetpack Compose 中创建文本组件的正确写法。A 选项是传统 Android View 中的写法，不适用于 Compose。C 选项中的小写 `text` 不是 Compose 的组件名称。D 选项的写法类似于 Lambda，但 Text 组件直接接收字符串参数，而非 Lambda。</strong></p>
 </details>
 
 **问题 2:**
@@ -361,7 +383,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Jetpack Compose中，可以通过定义一个带有`@Composable`注解的函数来构建UI组件。例如，定义一个`NewsItem`函数，接收标题和内容作为参数：
+  <p><strong>
+
+正确答案: 在Jetpack Compose中，可以通过定义一个带有`@Composable`注解的函数来构建UI组件。例如，定义一个`NewsItem`函数，接收标题和内容作为参数：
 
 ```kotlin
 @Composable
@@ -405,7 +429,9 @@ Compose简化UI构建的原因包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 `remember` 和 `mutableStateOf` 来声明状态，这样状态会在组合函数重组时被保留并触发 UI 更新。
+  <p><strong>
+
+正确答案: B. 使用 `remember` 和 `mutableStateOf` 来声明状态，这样状态会在组合函数重组时被保留并触发 UI 更新。
 
 解释：在 Jetpack Compose 中，`remember` 结合 `mutableStateOf` 用于声明可变状态，可以在组合函数重组时保持状态的生命周期，并且状态变化会触发相关的 UI 重新组合。选项 A 由于直接使用变量，不会触发 UI 变化。选项 C 虽然 LiveData 可以与 Compose 集成，但直接在组合函数中使用 LiveData 不是最优的状态管理方式。选项 D 传递参数可变状态但直接修改参数并不能保证 Compose 正确处理状态变化。</strong></p>
 </details>
@@ -416,7 +442,9 @@ Compose简化UI构建的原因包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Jetpack Compose中管理商品数量的状态，通常可以使用`MutableState`或`State`来保存当前数量。推荐的做法是将状态提升（State Hoisting）到父组件或者ViewModel中，使状态与UI解耦。具体设计思路如下：
+  <p><strong>
+
+正确答案: 在Jetpack Compose中管理商品数量的状态，通常可以使用`MutableState`或`State`来保存当前数量。推荐的做法是将状态提升（State Hoisting）到父组件或者ViewModel中，使状态与UI解耦。具体设计思路如下：
 
 1. 在ViewModel中定义一个`MutableState<Int>`，用于保存商品数量，例如：`var quantity by mutableStateOf(1)`。
 2. ViewModel提供增加和减少数量的方法，确保数量不会小于1。
@@ -450,7 +478,9 @@ Compose简化UI构建的原因包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用key函数为列表项提供唯一标识，结合LazyColumn实现高效的列表重组。 解释：在Compose中，使用key为列表项提供唯一标识，可以让Compose准确识别哪些项发生了变化，从而避免整个列表的重组，提高性能。LazyColumn本身是为高效渲染长列表设计的，结合key使用可以进一步优化。选项A错误，因为remember是减少不必要重组的关键工具；选项C过度避免在Composable内部声明状态可能导致代码复杂且不一定减少重组；选项D误导性地认为所有变量都应包装为mutableStateOf，实际上应根据需要选择性使用，以避免过度重组。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用key函数为列表项提供唯一标识，结合LazyColumn实现高效的列表重组。 解释：在Compose中，使用key为列表项提供唯一标识，可以让Compose准确识别哪些项发生了变化，从而避免整个列表的重组，提高性能。LazyColumn本身是为高效渲染长列表设计的，结合key使用可以进一步优化。选项A错误，因为remember是减少不必要重组的关键工具；选项C过度避免在Composable内部声明状态可能导致代码复杂且不一定减少重组；选项D误导性地认为所有变量都应包装为mutableStateOf，实际上应根据需要选择性使用，以避免过度重组。</strong></p>
 </details>
 
 **问题 2:**
@@ -459,7 +489,9 @@ Compose简化UI构建的原因包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，分析性能瓶颈可以通过使用Android Studio的Layout Inspector和Profile工具，观察Compose的重组（recomposition）次数和帧率是否异常。其次，可以采用以下优化手段：
+  <p><strong>
+
+正确答案: 首先，分析性能瓶颈可以通过使用Android Studio的Layout Inspector和Profile工具，观察Compose的重组（recomposition）次数和帧率是否异常。其次，可以采用以下优化手段：
 
 1. 减少不必要的重组：通过使用`remember`和`derivedStateOf`缓存计算结果，避免不必要的状态变化触发重组。
 2. 合理拆分Composable：将复杂的UI拆分成更小的Composable，利用`key`优化列表项的标识，避免整个列表重组。
@@ -492,7 +524,9 @@ Compose简化UI构建的原因包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. onStart()。因为 onStart() 方法在 Activity 即将对用户可见之前调用，接下来才会调用 onResume() 方法使 Activity 进入前台并开始与用户交互。onCreate() 是初始化方法，而 onPause() 是 Activity 即将进入停止状态时调用的方法，不符合题意。</strong></p>
+  <p><strong>
+
+正确答案: A. onStart()。因为 onStart() 方法在 Activity 即将对用户可见之前调用，接下来才会调用 onResume() 方法使 Activity 进入前台并开始与用户交互。onCreate() 是初始化方法，而 onPause() 是 Activity 即将进入停止状态时调用的方法，不符合题意。</strong></p>
 </details>
 
 **问题 2:**
@@ -501,7 +535,9 @@ Compose简化UI构建的原因包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 当Activity A启动Activity B时，生命周期方法调用顺序如下：
+  <p><strong>
+
+正确答案: 当Activity A启动Activity B时，生命周期方法调用顺序如下：
 
 1. Activity A 的 onPause()：Activity A即将进入暂停状态，因为Activity B即将覆盖它。
 2. Activity B 的 onCreate()：Activity B被创建，用于初始化界面和数据。
@@ -530,7 +566,9 @@ Compose简化UI构建的原因包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. Fragment的onDestroyView()方法在Fragment视图被销毁时调用，但Fragment实例仍然存在。因为onDestroyView()是销毁Fragment的视图层，但Fragment对象本身仍然保留，可以在之后重新创建视图。</strong></p>
+  <p><strong>
+
+正确答案: C. Fragment的onDestroyView()方法在Fragment视图被销毁时调用，但Fragment实例仍然存在。因为onDestroyView()是销毁Fragment的视图层，但Fragment对象本身仍然保留，可以在之后重新创建视图。</strong></p>
 </details>
 
 **问题 2:**
@@ -539,7 +577,9 @@ Compose简化UI构建的原因包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 当用户在Activity中切换Fragment时，当前显示的Fragment通常会经历onPause()、onStop()等生命周期回调，而新的Fragment会经历onCreateView()、onStart()、onResume()等回调。这是因为Fragment的视图可能会被销毁以释放资源（如调用onDestroyView()），但Fragment实例本身可能仍然存在（未调用onDestroy()）。
+  <p><strong>
+
+正确答案: 当用户在Activity中切换Fragment时，当前显示的Fragment通常会经历onPause()、onStop()等生命周期回调，而新的Fragment会经历onCreateView()、onStart()、onResume()等回调。这是因为Fragment的视图可能会被销毁以释放资源（如调用onDestroyView()），但Fragment实例本身可能仍然存在（未调用onDestroy()）。
 
 合理管理Fragment生命周期的关键包括：
 
@@ -585,7 +625,9 @@ transaction.commit();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用Activity作为中介，通过接口回调让Fragment与Activity通信，然后Activity再传递数据给另一个Fragment。 解释：Fragment之间不建议直接相互通信，推荐通过宿主Activity作为中介进行通信，例如使用接口回调，使得各个Fragment解耦，代码结构更清晰。A选项虽然可行但会导致Fragment耦合度高，破坏封装性；C选项可能导致内存泄漏和状态管理问题；D选项广播通信适合系统范围的事件传递，不适用于Fragment间直接数据传递。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用Activity作为中介，通过接口回调让Fragment与Activity通信，然后Activity再传递数据给另一个Fragment。 解释：Fragment之间不建议直接相互通信，推荐通过宿主Activity作为中介进行通信，例如使用接口回调，使得各个Fragment解耦，代码结构更清晰。A选项虽然可行但会导致Fragment耦合度高，破坏封装性；C选项可能导致内存泄漏和状态管理问题；D选项广播通信适合系统范围的事件传递，不适用于Fragment间直接数据传递。</strong></p>
 </details>
 
 **问题 2:**
@@ -594,7 +636,9 @@ transaction.commit();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 使用Activity作为中介传递数据：
+  <p><strong>
+
+正确答案: 1. 使用Activity作为中介传递数据：
    - 实现方式：FragmentA通过接口回调或直接调用Activity中的公共方法，将数据传递给Activity，再由Activity调用FragmentB的公共方法传递数据。
    - 优点：结构清晰，符合Fragment与Activity的生命周期管理，通信逻辑集中在Activity中，易于维护。
    - 缺点：当Fragment数量多时，Activity可能变得臃肿，且Fragment与Activity耦合度较高。
@@ -626,7 +670,9 @@ transaction.commit();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在启动Intent中添加FLAG_ACTIVITY_NEW_TASK标志。这个标志会让系统在新的任务栈中启动Activity，而不是在当前任务栈顶部添加。其他选项中，FLAG_ACTIVITY_CLEAR_TOP用于清理当前任务栈顶部的Activity，FLAG_ACTIVITY_SINGLE_TOP避免重复创建Activity实例，FLAG_ACTIVITY_NO_HISTORY表示Activity不保留在任务栈中。</strong></p>
+  <p><strong>
+
+正确答案: A. 在启动Intent中添加FLAG_ACTIVITY_NEW_TASK标志。这个标志会让系统在新的任务栈中启动Activity，而不是在当前任务栈顶部添加。其他选项中，FLAG_ACTIVITY_CLEAR_TOP用于清理当前任务栈顶部的Activity，FLAG_ACTIVITY_SINGLE_TOP避免重复创建Activity实例，FLAG_ACTIVITY_NO_HISTORY表示Activity不保留在任务栈中。</strong></p>
 </details>
 
 **问题 2:**
@@ -639,7 +685,9 @@ transaction.commit();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Android中，默认情况下，Activity是按顺序压入任务栈的，返回按钮会逐层弹出Activity，用户从订单确认页（Activity C）返回时，会先回到商品详情页（Activity B）。
+  <p><strong>
+
+正确答案: 在Android中，默认情况下，Activity是按顺序压入任务栈的，返回按钮会逐层弹出Activity，用户从订单确认页（Activity C）返回时，会先回到商品详情页（Activity B）。
 
 要实现从订单确认页直接返回到商品列表页（Activity A），可以采用以下方法：
 
@@ -678,7 +726,9 @@ transaction.commit();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 指定从一个目的地导航到另一个目的地的路径和相关参数。导航操作（NavAction）在Navigation组件中用于定义从一个导航目的地（如Fragment）到另一个目的地的具体路径和携带的参数，它是实现界面跳转的核心机制。A选项错误，因为动画效果是通过NavOptions或自定义动画设置实现的；C选项错误，权限管理不属于导航组件的职责；D选项错误，Activity生命周期由系统管理，与导航无关。</strong></p>
+  <p><strong>
+
+正确答案: B. 指定从一个目的地导航到另一个目的地的路径和相关参数。导航操作（NavAction）在Navigation组件中用于定义从一个导航目的地（如Fragment）到另一个目的地的具体路径和携带的参数，它是实现界面跳转的核心机制。A选项错误，因为动画效果是通过NavOptions或自定义动画设置实现的；C选项错误，权限管理不属于导航组件的职责；D选项错误，Activity生命周期由系统管理，与导航无关。</strong></p>
 </details>
 
 **问题 2:**
@@ -687,7 +737,9 @@ transaction.commit();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 设置导航图(nav_graph.xml)：定义两个Fragment目的地（商品列表Fragment和商品详情Fragment），并在它们之间创建一个带有参数（商品ID）的动作（action）。
+  <p><strong>
+
+正确答案: 1. 设置导航图(nav_graph.xml)：定义两个Fragment目的地（商品列表Fragment和商品详情Fragment），并在它们之间创建一个带有参数（商品ID）的动作（action）。
 
 2. 传递参数：在商品列表Fragment中，通过NavController的navigate()方法，使用action的ID以及Bundle或Safe Args插件传递商品ID参数。
 
@@ -717,7 +769,9 @@ transaction.commit();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 避免在Fragment中频繁调用findViewById()，可以通过View Binding或持有View引用的方式减少视图查找开销。 解析：频繁调用findViewById()会带来性能开销，使用View Binding或持有View引用能有效降低视图查找的开销，从而提升界面响应速度。同时，避免不当持有上下文引用有助于减少内存泄漏。选项A虽然提到清理静态变量引用，但不应该仅限于onPause()且静态变量本身设计需谨慎；选项C频繁添加Fragment到返回栈会增加内存负担；选项D将耗时操作放在主线程会导致界面卡顿，反而降低性能。</strong></p>
+  <p><strong>
+
+正确答案: B. 避免在Fragment中频繁调用findViewById()，可以通过View Binding或持有View引用的方式减少视图查找开销。 解析：频繁调用findViewById()会带来性能开销，使用View Binding或持有View引用能有效降低视图查找的开销，从而提升界面响应速度。同时，避免不当持有上下文引用有助于减少内存泄漏。选项A虽然提到清理静态变量引用，但不应该仅限于onPause()且静态变量本身设计需谨慎；选项C频繁添加Fragment到返回栈会增加内存负担；选项D将耗时操作放在主线程会导致界面卡顿，反而降低性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -726,7 +780,9 @@ transaction.commit();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能导致性能问题的原因包括：
+  <p><strong>
+
+正确答案: 可能导致性能问题的原因包括：
 
 1. Fragment频繁创建和销毁，导致资源重复分配和释放，增加GC压力。
 2. Fragment切换时未正确管理Fragment的事务和状态，导致Fragment重叠或重复加载。
@@ -764,7 +820,9 @@ transaction.commit();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 apply() 方法提交数据
+  <p><strong>
+
+正确答案: A. 使用 apply() 方法提交数据
 
 解释：apply() 方法会异步地将数据写入 SharedPreferences，避免阻塞 UI 线程，而 commit() 是同步写入，可能会阻塞。选项 C 是错误的，因为不能直接修改 SharedPreferences 对象中的字段。选项 D 中的 save() 方法在 SharedPreferences API 中不存在。</strong></p>
 </details>
@@ -775,7 +833,9 @@ transaction.commit();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 获取SharedPreferences对象：通过`getSharedPreferences(String name, int mode)`方法获取SharedPreferences实例。
+  <p><strong>
+
+正确答案: 1. 获取SharedPreferences对象：通过`getSharedPreferences(String name, int mode)`方法获取SharedPreferences实例。
 
 2. 保存登录状态：使用`SharedPreferences.Editor`对象调用`putBoolean(String key, boolean value)`方法保存用户登录状态，如`editor.putBoolean("isLoggedIn", true)`。
 
@@ -804,7 +864,9 @@ transaction.commit();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用Context.getFilesDir()存储文件。因为Context.getFilesDir()返回的是应用的私有文件目录，只有该应用可以访问，其他应用无法读取这些文件，适合保存应用内部数据。选项A和C涉及的是公共存储，可能被其他应用访问，选项D是用于跨应用共享数据，不是私有存储。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用Context.getFilesDir()存储文件。因为Context.getFilesDir()返回的是应用的私有文件目录，只有该应用可以访问，其他应用无法读取这些文件，适合保存应用内部数据。选项A和C涉及的是公共存储，可能被其他应用访问，选项D是用于跨应用共享数据，不是私有存储。</strong></p>
 </details>
 
 **问题 2:**
@@ -813,7 +875,9 @@ transaction.commit();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在这种场景下，我会选择使用Android的内部存储（Internal Storage）来保存用户生成的文本文件。内部存储的文件默认是私有的，只有应用本身可以访问，这样可以保证文件的私密性。内部存储中的文件会随着应用的卸载而被删除，确保数据不会长期残留。
+  <p><strong>
+
+正确答案: 在这种场景下，我会选择使用Android的内部存储（Internal Storage）来保存用户生成的文本文件。内部存储的文件默认是私有的，只有应用本身可以访问，这样可以保证文件的私密性。内部存储中的文件会随着应用的卸载而被删除，确保数据不会长期残留。
 
 选择内部存储的理由包括：
 1. 数据安全性高，默认私有，无需额外加密即可防止其他应用访问。
@@ -846,7 +910,9 @@ transaction.commit();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. getWritableDatabase()。因为getWritableDatabase()方法返回一个可写的SQLiteDatabase对象，允许进行插入、更新和删除等写操作，而getReadableDatabase()则是返回一个只读的数据库对象，适用于只读查询操作。openOrCreateDatabase()是Context类的方法，用于打开或创建数据库，但不直接用于获取数据库操作对象。execSQL()是执行SQL语句的方法，不负责获取数据库对象。</strong></p>
+  <p><strong>
+
+正确答案: B. getWritableDatabase()。因为getWritableDatabase()方法返回一个可写的SQLiteDatabase对象，允许进行插入、更新和删除等写操作，而getReadableDatabase()则是返回一个只读的数据库对象，适用于只读查询操作。openOrCreateDatabase()是Context类的方法，用于打开或创建数据库，但不直接用于获取数据库操作对象。execSQL()是执行SQL语句的方法，不负责获取数据库对象。</strong></p>
 </details>
 
 **问题 2:**
@@ -855,7 +921,9 @@ transaction.commit();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 数据库表设计：
+  <p><strong>
+
+正确答案: 1. 数据库表设计：
    - 创建一个表（如user_login），包含字段user_name（TEXT类型）和login_time（INTEGER类型，用于存储时间戳）。
 
 2. 数据操作：
@@ -890,7 +958,9 @@ transaction.commit();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. @Dao
+  <p><strong>
+
+正确答案: C. @Dao
 
 解释：@Dao注解用于标记一个接口或抽象类为数据访问对象(DAO)，它定义了数据库操作的方法。@Entity用于定义数据库表，@Database用于标注数据库类，@Query是用来在DAO中定义具体的SQL查询语句的注解。</strong></p>
 </details>
@@ -901,7 +971,9 @@ transaction.commit();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 实体类定义：
+  <p><strong>
+
+正确答案: 1. 实体类定义：
 ```kotlin
 @Entity(tableName = "notes")
 data class Note(
@@ -951,7 +1023,9 @@ interface NoteDao {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 用于表示实体之间的一对多或多对多关系，并自动生成相应的查询。@Relation注解允许Room在实体类中定义实体之间的关系，如一对多或多对多，并自动为这些关系生成查询代码，简化了关联数据的访问。选项A是@PrimaryKey的作用，选项B描述的是DAO查询方法的功能，选项D描述的是@Index注解的功能，均与@Relation的作用不同。</strong></p>
+  <p><strong>
+
+正确答案: C. 用于表示实体之间的一对多或多对多关系，并自动生成相应的查询。@Relation注解允许Room在实体类中定义实体之间的关系，如一对多或多对多，并自动为这些关系生成查询代码，简化了关联数据的访问。选项A是@PrimaryKey的作用，选项B描述的是DAO查询方法的功能，选项D描述的是@Index注解的功能，均与@Relation的作用不同。</strong></p>
 </details>
 
 **问题 2:**
@@ -966,7 +1040,9 @@ interface NoteDao {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. **关系映射**：
+  <p><strong>
+
+正确答案: 1. **关系映射**：
    - 使用`@Relation`注解在数据类中定义实体间的关系，比如定义一个`UserWithOrders`数据类，包含`User`和其对应的`List<OrderWithProducts>`。其中`OrderWithProducts`也是一个数据类，包含`Order`和对应的`List<Product>`，通过`@Relation`注解建立一对多关系。
    - 通过定义带有`@Transaction`注解的DAO方法，查询时自动加载嵌套关系，避免多次查询。
 
@@ -1003,7 +1079,9 @@ interface NoteDao {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 当数据库结构发生变化时，必须提供一个 Migration 对象，定义从旧版本到新版本的迁移步骤，否则会导致应用崩溃。 解释：Room 不会自动处理结构变化引起的数据迁移，必须通过 Migration 对象明确指定迁移逻辑，否则在版本更新时会抛出异常，导致应用崩溃。选项A错误，Room 不会自动迁移数据；选项C错误，Migration 需要处理所有结构变化；选项D错误，fallbackToDestructiveMigration() 会删除所有旧数据，存在数据丢失风险。</strong></p>
+  <p><strong>
+
+正确答案: B. 当数据库结构发生变化时，必须提供一个 Migration 对象，定义从旧版本到新版本的迁移步骤，否则会导致应用崩溃。 解释：Room 不会自动处理结构变化引起的数据迁移，必须通过 Migration 对象明确指定迁移逻辑，否则在版本更新时会抛出异常，导致应用崩溃。选项A错误，Room 不会自动迁移数据；选项C错误，Migration 需要处理所有结构变化；选项D错误，fallbackToDestructiveMigration() 会删除所有旧数据，存在数据丢失风险。</strong></p>
 </details>
 
 **问题 2:**
@@ -1012,7 +1090,9 @@ interface NoteDao {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Room数据库中进行版本升级和数据迁移时，主要通过定义Migration对象来实现。具体步骤如下：
+  <p><strong>
+
+正确答案: 在Room数据库中进行版本升级和数据迁移时，主要通过定义Migration对象来实现。具体步骤如下：
 
 1. **更新数据库版本号**：在RoomDatabase的@Database注解中，将version从旧版本号增加到新版本号。
 
@@ -1052,7 +1132,9 @@ interface NoteDao {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用事务批量插入数据，减少数据库的写入次数。 —— 使用事务可以将多条插入操作封装为一个原子操作，显著减少磁盘写入次数，从而提高数据库的写入性能。B 选项关闭数据库连接反而增加开销；C 选项错误，合理使用索引能够大幅提升查询性能；D 选项错误，主线程执行数据库操作会导致界面卡顿。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用事务批量插入数据，减少数据库的写入次数。 —— 使用事务可以将多条插入操作封装为一个原子操作，显著减少磁盘写入次数，从而提高数据库的写入性能。B 选项关闭数据库连接反而增加开销；C 选项错误，合理使用索引能够大幅提升查询性能；D 选项错误，主线程执行数据库操作会导致界面卡顿。</strong></p>
 </details>
 
 **问题 2:**
@@ -1061,7 +1143,9 @@ interface NoteDao {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 使用索引（Indexing）：为查询频繁的字段创建索引，能够显著减少查询时的扫描行数，加快数据检索速度。适用于在WHERE条件、JOIN操作或排序中频繁使用的字段。
+  <p><strong>
+
+正确答案: 1. 使用索引（Indexing）：为查询频繁的字段创建索引，能够显著减少查询时的扫描行数，加快数据检索速度。适用于在WHERE条件、JOIN操作或排序中频繁使用的字段。
 
 2. 限制查询范围（分页查询）：通过LIMIT和OFFSET分批加载数据，避免一次性加载大量数据导致的内存和CPU压力过大。适用于数据量较大且需要分页展示的场景。
 
@@ -1097,7 +1181,9 @@ interface NoteDao {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. HTTP默认使用TCP协议作为传输层协议。 HTTP协议工作在应用层，默认使用TCP作为传输层协议，保证数据的可靠传输。选项A错误，HTTP是无状态协议，状态管理需要通过Cookies或Session实现。选项C错误，HTTP可以用于任何客户端与服务器的通信。选项D错误，GET请求通常不包含请求体，主要通过URL传递参数。</strong></p>
+  <p><strong>
+
+正确答案: B. HTTP默认使用TCP协议作为传输层协议。 HTTP协议工作在应用层，默认使用TCP作为传输层协议，保证数据的可靠传输。选项A错误，HTTP是无状态协议，状态管理需要通过Cookies或Session实现。选项C错误，HTTP可以用于任何客户端与服务器的通信。选项D错误，GET请求通常不包含请求体，主要通过URL传递参数。</strong></p>
 </details>
 
 **问题 2:**
@@ -1106,7 +1192,9 @@ interface NoteDao {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: HTTP请求方法决定了客户端与服务器之间交互的方式。GET方法通常用于请求数据，参数通过URL传递，适合请求不涉及敏感数据且对请求幂等性的场景。例如，用户登录页面的验证码请求可以使用GET，因为只需获取验证码图片。POST方法用于提交数据，数据放在请求体中，适合提交敏感数据或需要修改服务器状态的场景。例如，用户输入用户名和密码进行登录时，应使用POST方法，以避免敏感信息暴露在URL中，同时向服务器传递登录信息。了解这两种方法的区别有助于开发者选择合适的请求方式，保障数据安全和请求效率。</strong></p>
+  <p><strong>
+
+正确答案: HTTP请求方法决定了客户端与服务器之间交互的方式。GET方法通常用于请求数据，参数通过URL传递，适合请求不涉及敏感数据且对请求幂等性的场景。例如，用户登录页面的验证码请求可以使用GET，因为只需获取验证码图片。POST方法用于提交数据，数据放在请求体中，适合提交敏感数据或需要修改服务器状态的场景。例如，用户输入用户名和密码进行登录时，应使用POST方法，以避免敏感信息暴露在URL中，同时向服务器传递登录信息。了解这两种方法的区别有助于开发者选择合适的请求方式，保障数据安全和请求效率。</strong></p>
 </details>
 
 ---
@@ -1127,7 +1215,9 @@ interface NoteDao {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 OkHttpClient 的 newCall(request).execute() 方法同步执行请求。 解释：在 OkHttp 中，同步请求需要调用 Call 对象的 execute() 方法，该方法会在当前线程执行请求并返回 Response。enqueue() 是异步执行请求的方法，start() 和直接调用 execute(request) 并不存在于 OkHttpClient 类中。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 OkHttpClient 的 newCall(request).execute() 方法同步执行请求。 解释：在 OkHttp 中，同步请求需要调用 Call 对象的 execute() 方法，该方法会在当前线程执行请求并返回 Response。enqueue() 是异步执行请求的方法，start() 和直接调用 execute(request) 并不存在于 OkHttpClient 类中。</strong></p>
 </details>
 
 **问题 2:**
@@ -1136,7 +1226,9 @@ interface NoteDao {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 配置OkHttpClient：可以通过OkHttpClient.Builder来设置重试策略。OkHttpClient默认支持自动重试连接失败（如连接超时），但是对于请求失败后的重试需要自定义拦截器。
+  <p><strong>
+
+正确答案: 1. 配置OkHttpClient：可以通过OkHttpClient.Builder来设置重试策略。OkHttpClient默认支持自动重试连接失败（如连接超时），但是对于请求失败后的重试需要自定义拦截器。
 
 2. 自定义拦截器实现重试逻辑：编写一个拦截器，在请求失败时捕获异常或根据响应码判断是否需要重试，并进行最多两次重试。
 
@@ -1225,7 +1317,9 @@ Response response = client.newCall(request).execute();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Retrofit 支持通过注解 @Query 来动态添加 URL 查询参数。 解释：在 Retrofit 中，@GET、@POST 等注解必须用在接口的方法上，而不是类上；接口方法可以返回多种类型，通常是 Call<T> 或基于协程的 Deferred<T> 等；@Body 注解用于将对象序列化为请求体传递。因此，只有选项 B 正确地描述了 Retrofit 允许通过 @Query 动态添加查询参数的用法。</strong></p>
+  <p><strong>
+
+正确答案: B. Retrofit 支持通过注解 @Query 来动态添加 URL 查询参数。 解释：在 Retrofit 中，@GET、@POST 等注解必须用在接口的方法上，而不是类上；接口方法可以返回多种类型，通常是 Call<T> 或基于协程的 Deferred<T> 等；@Body 注解用于将对象序列化为请求体传递。因此，只有选项 B 正确地描述了 Retrofit 允许通过 @Query 动态添加查询参数的用法。</strong></p>
 </details>
 
 **问题 2:**
@@ -1234,7 +1328,9 @@ Response response = client.newCall(request).execute();
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 定义Retrofit接口：
+  <p><strong>
+
+正确答案: 1. 定义Retrofit接口：
 ```java
 public interface ApiService {
     @GET("users")
@@ -1296,7 +1392,9 @@ apiService.getUserList().enqueue(new Callback<List<User>>() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. WebSocket连接建立后，客户端和服务器之间可以进行全双工通信，允许同时发送和接收消息。 解释：WebSocket是一种建立在单个TCP连接上的全双工通信协议，允许客户端和服务器同时发送和接收数据，这使得实时通信更加高效。选项A错误，因为WebSocket连接是有状态的，连接建立后可以持续通信。选项C错误，WebSocket连接是通过HTTP/HTTPS协议的升级握手建立的，因此可以与HTTP共存。选项D错误，服务器也可以主动关闭WebSocket连接。</strong></p>
+  <p><strong>
+
+正确答案: B. WebSocket连接建立后，客户端和服务器之间可以进行全双工通信，允许同时发送和接收消息。 解释：WebSocket是一种建立在单个TCP连接上的全双工通信协议，允许客户端和服务器同时发送和接收数据，这使得实时通信更加高效。选项A错误，因为WebSocket连接是有状态的，连接建立后可以持续通信。选项C错误，WebSocket连接是通过HTTP/HTTPS协议的升级握手建立的，因此可以与HTTP共存。选项D错误，服务器也可以主动关闭WebSocket连接。</strong></p>
 </details>
 
 **问题 2:**
@@ -1305,7 +1403,9 @@ apiService.getUserList().enqueue(new Callback<List<User>>() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Android客户端实现WebSocket通信时，为保证连接的稳定性和消息的可靠传递，可以采取以下措施：
+  <p><strong>
+
+正确答案: 在Android客户端实现WebSocket通信时，为保证连接的稳定性和消息的可靠传递，可以采取以下措施：
 
 1. 连接管理与重连机制：
    - 监听网络状态变化，断网时停止连接，恢复网络后自动重连。
@@ -1352,7 +1452,9 @@ apiService.getUserList().enqueue(new Callback<List<User>>() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 如果服务器返回的响应头中包含 ETag，客户端可以通过 If-None-Match 请求头实现条件请求，从而验证缓存的有效性。 解析：ETag 是服务器生成的资源标识符，客户端保存该标识符后，可以在后续请求中通过 If-None-Match 头部字段发送给服务器，服务器据此判断资源是否变化，未变化时返回 304，节省流量和响应时间。A 选项错误，因为服务器的缓存策略响应头同样会影响客户端缓存行为；C 选项错误，OkHttp 默认启用缓存需开发者配置缓存目录，但其缓存机制本身是支持的；D 选项错误，Cache-Control: no-store 表示不缓存该响应数据，客户端不应缓存。</strong></p>
+  <p><strong>
+
+正确答案: B. 如果服务器返回的响应头中包含 ETag，客户端可以通过 If-None-Match 请求头实现条件请求，从而验证缓存的有效性。 解析：ETag 是服务器生成的资源标识符，客户端保存该标识符后，可以在后续请求中通过 If-None-Match 头部字段发送给服务器，服务器据此判断资源是否变化，未变化时返回 304，节省流量和响应时间。A 选项错误，因为服务器的缓存策略响应头同样会影响客户端缓存行为；C 选项错误，OkHttp 默认启用缓存需开发者配置缓存目录，但其缓存机制本身是支持的；D 选项错误，Cache-Control: no-store 表示不缓存该响应数据，客户端不应缓存。</strong></p>
 </details>
 
 **问题 2:**
@@ -1361,7 +1463,9 @@ apiService.getUserList().enqueue(new Callback<List<User>>() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在新闻类应用中，设计网络请求缓存机制时，可以采用基于缓存控制的策略，如HTTP缓存头（Cache-Control、Expires、ETag等）来控制缓存的有效期和验证。具体方案如下：
+  <p><strong>
+
+正确答案: 在新闻类应用中，设计网络请求缓存机制时，可以采用基于缓存控制的策略，如HTTP缓存头（Cache-Control、Expires、ETag等）来控制缓存的有效期和验证。具体方案如下：
 
 1. 缓存设计思路：
   - 利用HTTP缓存头，服务器返回响应时带上Cache-Control和ETag等字段，客户端根据这些字段决定是否使用缓存或重新请求。
@@ -1402,7 +1506,9 @@ apiService.getUserList().enqueue(new Callback<List<User>>() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 将服务器的公钥硬编码在客户端代码中，并在建立连接时验证服务器证书是否含有该公钥。证书锁定通常通过将服务器公钥或证书的哈希值硬编码在客户端，从而防止中间人攻击。相比直接比较完整证书内容，公钥锁定更灵活且易于管理。系统默认信任管理器无法防御恶意CA证书，客户端私钥用于客户端身份验证，与证书锁定无直接关系。</strong></p>
+  <p><strong>
+
+正确答案: A. 将服务器的公钥硬编码在客户端代码中，并在建立连接时验证服务器证书是否含有该公钥。证书锁定通常通过将服务器公钥或证书的哈希值硬编码在客户端，从而防止中间人攻击。相比直接比较完整证书内容，公钥锁定更灵活且易于管理。系统默认信任管理器无法防御恶意CA证书，客户端私钥用于客户端身份验证，与证书锁定无直接关系。</strong></p>
 </details>
 
 **问题 2:**
@@ -1417,7 +1523,9 @@ apiService.getUserList().enqueue(new Callback<List<User>>() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 证书固定（Certificate Pinning）是一种网络安全技术，用于防止中间人攻击（MITM）。其原理是在客户端预先存储服务器的公钥或证书信息，通信时只信任这些固定的证书，而不是系统默认的信任链。这样即使攻击者伪造了证书，也无法通过校验。
+  <p><strong>
+
+正确答案: 证书固定（Certificate Pinning）是一种网络安全技术，用于防止中间人攻击（MITM）。其原理是在客户端预先存储服务器的公钥或证书信息，通信时只信任这些固定的证书，而不是系统默认的信任链。这样即使攻击者伪造了证书，也无法通过校验。
 
 在Android中实现证书固定的一般步骤：
 1. **获取服务器证书或公钥的哈希值**，可以通过OpenSSL等工具提取。
@@ -1455,7 +1563,9 @@ apiService.getUserList().enqueue(new Callback<List<User>>() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用请求合并（Request Coalescing）策略，将重复请求合并为单个请求发送。该策略能够有效减少网络请求数量，避免因重复请求造成的资源浪费，同时提升响应速度和系统吞吐量。选项A虽然利用了多线程，但无控制地发起大量请求可能导致资源争抢和服务器压力过大。选项C增加超时时间可能导致请求长时间阻塞，影响用户体验。选项D禁用缓存会增加网络负担，不利于性能优化。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用请求合并（Request Coalescing）策略，将重复请求合并为单个请求发送。该策略能够有效减少网络请求数量，避免因重复请求造成的资源浪费，同时提升响应速度和系统吞吐量。选项A虽然利用了多线程，但无控制地发起大量请求可能导致资源争抢和服务器压力过大。选项C增加超时时间可能导致请求长时间阻塞，影响用户体验。选项D禁用缓存会增加网络负担，不利于性能优化。</strong></p>
 </details>
 
 **问题 2:**
@@ -1466,7 +1576,9 @@ apiService.getUserList().enqueue(new Callback<List<User>>() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Android客户端优化高并发网络请求，可以从以下几个方面入手：
+  <p><strong>
+
+正确答案: 在Android客户端优化高并发网络请求，可以从以下几个方面入手：
 
 1. 请求合并（Batching）：
    - 将多个小请求合并成一个大请求，减少网络连接次数，降低服务器压力。
@@ -1521,7 +1633,9 @@ apiService.getUserList().enqueue(new Callback<List<User>>() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 用于在多个线程之间传递消息和执行代码，通常与Looper配合使用，处理线程间的消息队列。 Handler是Android中实现线程间通信的机制，配合Looper和MessageQueue，能够将消息和Runnable对象投递到关联的线程消息队列中，保证代码在特定线程（通常是主线程）执行。选项B混淆了Handler和线程启动的概念，选项C描述的是线程池管理，选项D错误地认为Handler替代了主线程运行机制。</strong></p>
+  <p><strong>
+
+正确答案: A. 用于在多个线程之间传递消息和执行代码，通常与Looper配合使用，处理线程间的消息队列。 Handler是Android中实现线程间通信的机制，配合Looper和MessageQueue，能够将消息和Runnable对象投递到关联的线程消息队列中，保证代码在特定线程（通常是主线程）执行。选项B混淆了Handler和线程启动的概念，选项C描述的是线程池管理，选项D错误地认为Handler替代了主线程运行机制。</strong></p>
 </details>
 
 **问题 2:**
@@ -1530,7 +1644,9 @@ apiService.getUserList().enqueue(new Callback<List<User>>() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Android中，UI只能在主线程（UI线程）中更新，子线程直接更新UI会导致异常。为实现子线程完成耗时操作后更新UI，可以通过Handler机制：
+  <p><strong>
+
+正确答案: 在Android中，UI只能在主线程（UI线程）中更新，子线程直接更新UI会导致异常。为实现子线程完成耗时操作后更新UI，可以通过Handler机制：
 
 1. 在主线程中创建一个Handler实例，该Handler绑定主线程的Looper。
 2. 子线程执行耗时操作，完成后通过Handler发送Message或Runnable到主线程。
@@ -1557,7 +1673,9 @@ apiService.getUserList().enqueue(new Callback<List<User>>() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: D. AsyncTask 的 execute 方法必须在主线程调用，否则会抛出异常。AsyncTask 设计要求其 execute 方法在主线程调用以确保正确调度任务和回调，否则会出现异常或不正确的行为。选项 A 错误，因为 doInBackground 在后台线程执行，不能更新 UI；选项 B 错误，onPostExecute 在主线程执行，用于更新 UI；选项 C 错误，直接持有 Context 可能引起内存泄漏，通常建议使用弱引用。</strong></p>
+  <p><strong>
+
+正确答案: D. AsyncTask 的 execute 方法必须在主线程调用，否则会抛出异常。AsyncTask 设计要求其 execute 方法在主线程调用以确保正确调度任务和回调，否则会出现异常或不正确的行为。选项 A 错误，因为 doInBackground 在后台线程执行，不能更新 UI；选项 B 错误，onPostExecute 在主线程执行，用于更新 UI；选项 C 错误，直接持有 Context 可能引起内存泄漏，通常建议使用弱引用。</strong></p>
 </details>
 
 **问题 2:**
@@ -1566,7 +1684,9 @@ apiService.getUserList().enqueue(new Callback<List<User>>() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 使用AsyncTask完成从网络下载图片并显示的步骤如下：
+  <p><strong>
+
+正确答案: 使用AsyncTask完成从网络下载图片并显示的步骤如下：
 
 1. 创建一个继承自AsyncTask的内部类，泛型参数分别为<String, Void, Bitmap>，其中String代表传入的URL，Bitmap为返回的图片对象。
 
@@ -1603,7 +1723,9 @@ apiService.getUserList().enqueue(new Callback<List<User>>() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 线程池的maximumPoolSize表示线程池中线程的最大数量，包括核心线程和非核心线程。——这是正确的，因为maximumPoolSize是线程池中允许的最大线程数，包含所有线程，无论是核心线程还是非核心线程。</strong></p>
+  <p><strong>
+
+正确答案: B. 线程池的maximumPoolSize表示线程池中线程的最大数量，包括核心线程和非核心线程。——这是正确的，因为maximumPoolSize是线程池中允许的最大线程数，包含所有线程，无论是核心线程还是非核心线程。</strong></p>
 </details>
 
 **问题 2:**
@@ -1617,7 +1739,9 @@ apiService.getUserList().enqueue(new Callback<List<User>>() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 线程池的选择：
+  <p><strong>
+
+正确答案: 1. 线程池的选择：
 - 选择FixedThreadPool较为合适，因为下载文件属于I/O密集型任务，线程数可以根据设备的CPU核心数和网络状况合理配置，比如设置为核心数的2倍，以保持下载效率且避免线程频繁创建和销毁。
 
 2. 避免线程过多导致资源紧张：
@@ -1652,7 +1776,9 @@ apiService.getUserList().enqueue(new Callback<List<User>>() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. `launch` 启动一个新的协程并返回一个 `Job`，适合用于不需要返回结果的异步操作。 解释：`launch` 启动协程并返回一个 `Job`，用于控制协程的生命周期，但不返回结果，适合执行不需要结果的任务；而 `async` 启动协程并返回一个 `Deferred`，用于获取异步计算的结果，且不会阻塞线程。</strong></p>
+  <p><strong>
+
+正确答案: C. `launch` 启动一个新的协程并返回一个 `Job`，适合用于不需要返回结果的异步操作。 解释：`launch` 启动协程并返回一个 `Job`，用于控制协程的生命周期，但不返回结果，适合执行不需要结果的任务；而 `async` 启动协程并返回一个 `Deferred`，用于获取异步计算的结果，且不会阻塞线程。</strong></p>
 </details>
 
 **问题 2:**
@@ -1661,7 +1787,9 @@ apiService.getUserList().enqueue(new Callback<List<User>>() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Kotlin协程是一种轻量级的异步编程工具，它通过挂起函数（suspend functions）让异步代码写起来像同步代码，从而简化回调和线程管理。在Android中，网络请求通常需要在后台线程执行以避免阻塞主线程，而更新UI必须在主线程完成。协程通过调度器（Dispatcher）来管理线程切换。通常，使用`Dispatchers.IO`在后台线程执行网络请求，使用`Dispatchers.Main`在主线程更新UI。
+  <p><strong>
+
+正确答案: Kotlin协程是一种轻量级的异步编程工具，它通过挂起函数（suspend functions）让异步代码写起来像同步代码，从而简化回调和线程管理。在Android中，网络请求通常需要在后台线程执行以避免阻塞主线程，而更新UI必须在主线程完成。协程通过调度器（Dispatcher）来管理线程切换。通常，使用`Dispatchers.IO`在后台线程执行网络请求，使用`Dispatchers.Main`在主线程更新UI。
 
 示例：
 ```kotlin
@@ -1699,7 +1827,9 @@ fun fetchUserData() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 SupervisorJob 结合 CoroutineScope 启动子协程，利用 try-catch 捕获异常。解释：SupervisorJob 能够让子协程独立于其他子协程的异常，避免一个子协程异常导致整个协程作用域取消。结合 try-catch 捕获异常可以有效处理异常且不影响其他协程。A 选项虽然能捕获异常，但 GlobalScope 可能导致异常泄漏且不易管理；C 选项忽略了协程内部异常处理，可能导致异常未被捕获；D 选项 CoroutineExceptionHandler 只处理未捕获异常，且不适用于所有场景。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 SupervisorJob 结合 CoroutineScope 启动子协程，利用 try-catch 捕获异常。解释：SupervisorJob 能够让子协程独立于其他子协程的异常，避免一个子协程异常导致整个协程作用域取消。结合 try-catch 捕获异常可以有效处理异常且不影响其他协程。A 选项虽然能捕获异常，但 GlobalScope 可能导致异常泄漏且不易管理；C 选项忽略了协程内部异常处理，可能导致异常未被捕获；D 选项 CoroutineExceptionHandler 只处理未捕获异常，且不适用于所有场景。</strong></p>
 </details>
 
 **问题 2:**
@@ -1708,7 +1838,9 @@ fun fetchUserData() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Android中使用Kotlin协程处理多个独立的网络请求任务时，为了实现并发执行且保证一个任务异常不影响其他任务，可以使用SupervisorJob结合CoroutineScope来管理协程的生命周期。
+  <p><strong>
+
+正确答案: 在Android中使用Kotlin协程处理多个独立的网络请求任务时，为了实现并发执行且保证一个任务异常不影响其他任务，可以使用SupervisorJob结合CoroutineScope来管理协程的生命周期。
 
 1. **使用SupervisorJob**：
    - SupervisorJob是Job的一个特殊实现，允许其子协程独立运行，如果一个子协程失败，不会导致整个协程Scope取消，其他子协程可以继续执行。
@@ -1767,7 +1899,9 @@ fun fetchUserData() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. synchronized修饰实例方法时，锁住的是当前实例对象的锁。 解释：synchronized修饰实例方法时，锁的是当前实例对象(this)，保证同一实例的同步访问。A选项错误，静态方法锁的是类的Class对象。C选项错误，锁对象必须是引用类型。D选项错误，synchronized既保证了内存可见性，也保证了对锁保护代码块的原子性。</strong></p>
+  <p><strong>
+
+正确答案: B. synchronized修饰实例方法时，锁住的是当前实例对象的锁。 解释：synchronized修饰实例方法时，锁的是当前实例对象(this)，保证同一实例的同步访问。A选项错误，静态方法锁的是类的Class对象。C选项错误，锁对象必须是引用类型。D选项错误，synchronized既保证了内存可见性，也保证了对锁保护代码块的原子性。</strong></p>
 </details>
 
 **问题 2:**
@@ -1783,7 +1917,9 @@ fun fetchUserData() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 选择锁机制：
+  <p><strong>
+
+正确答案: 1. 选择锁机制：
 - 一般情况下，可以使用Java提供的`synchronized`关键字，因为它语法简洁且与Android平台兼容良好。
 - 如果需要更灵活的锁操作（如尝试加锁、可中断锁等），则可以选择`ReentrantLock`。
 
@@ -1831,7 +1967,9 @@ public class Counter {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用多个锁时，确保所有线程按照相同的顺序获取锁。 解释：死锁通常发生在多个线程彼此等待对方持有的锁时，保证线程获取锁的顺序一致可以预防循环等待条件，从根本上避免死锁。B选项中的嵌套锁反而可能加剧死锁风险。C选项的`Thread.sleep()`并不能有效避免死锁，反而可能延长锁的持有时间。D选项在UI线程中执行同步操作可能导致ANR（应用无响应），且无法解决多线程锁竞争问题。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用多个锁时，确保所有线程按照相同的顺序获取锁。 解释：死锁通常发生在多个线程彼此等待对方持有的锁时，保证线程获取锁的顺序一致可以预防循环等待条件，从根本上避免死锁。B选项中的嵌套锁反而可能加剧死锁风险。C选项的`Thread.sleep()`并不能有效避免死锁，反而可能延长锁的持有时间。D选项在UI线程中执行同步操作可能导致ANR（应用无响应），且无法解决多线程锁竞争问题。</strong></p>
 </details>
 
 **问题 2:**
@@ -1840,7 +1978,9 @@ public class Counter {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: ### 死锁排查思路：
+  <p><strong>
+
+正确答案: 死锁排查思路：
 1. **定位死锁场景**：通过Android Studio的线程分析工具（如Thread Dump、Systrace）查看线程状态，识别哪些线程处于阻塞等待状态。
 2. **分析锁竞争**：利用`adb shell dumpsys`命令获取线程堆栈信息，重点关注持有锁和等待锁的线程，判断是否存在循环等待。
 3. **代码审查**：检查涉及共享资源的同步代码块，确认锁的获取顺序是否一致，避免多个线程相互等待。
@@ -1874,7 +2014,9 @@ public class Counter {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 单例模式（Singleton Pattern） —— 单例模式确保类只有一个实例，并提供全局访问点，这非常适合管理全局资源如网络请求队列。观察者模式用于事件通知，工厂模式用于创建对象，代理模式用于控制对对象的访问，均不适合实现全局唯一实例。</strong></p>
+  <p><strong>
+
+正确答案: B. 单例模式（Singleton Pattern） —— 单例模式确保类只有一个实例，并提供全局访问点，这非常适合管理全局资源如网络请求队列。观察者模式用于事件通知，工厂模式用于创建对象，代理模式用于控制对对象的访问，均不适合实现全局唯一实例。</strong></p>
 </details>
 
 **问题 2:**
@@ -1883,7 +2025,9 @@ public class Counter {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在这种场景下，常用的设计模式是“观察者模式（Observer Pattern）”或“发布-订阅模式”。
+  <p><strong>
+
+正确答案: 在这种场景下，常用的设计模式是“观察者模式（Observer Pattern）”或“发布-订阅模式”。
 
 具体来说，可以使用观察者模式来实现数据的异步更新和界面刷新。例如，网络请求模块作为数据的发布者（被观察者），当数据获取完成后通知所有订阅了该数据的界面（观察者）进行更新。这样做的好处包括：
 
@@ -1912,7 +2056,9 @@ public class Counter {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. ViewModel
+  <p><strong>
+
+正确答案: B. ViewModel
 
 解释：在MVVM模式中，ViewModel负责作为View和Model之间的桥梁，处理视图逻辑和数据绑定，解耦UI层和数据层。Presenter是MVP模式中的组件，Controller通常出现在MVC模式中，Repository则用于数据访问层的抽象，虽然重要，但不是MVVM中解耦的核心组件。</strong></p>
 </details>
@@ -1923,7 +2069,9 @@ public class Counter {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在MVVM架构中，针对用户登录功能：
+  <p><strong>
+
+正确答案: 在MVVM架构中，针对用户登录功能：
 
 - Model负责处理业务逻辑和数据操作，比如验证用户输入、调用网络接口进行登录请求、处理响应数据等。
 
@@ -1952,7 +2100,9 @@ ViewModel通过将UI逻辑和业务逻辑分离，使得View无需直接依赖Mo
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 处理业务逻辑，作为View和Model之间的中介，协调数据交互和界面更新。解释：在MVP架构中，Presenter负责处理业务逻辑，是View和Model之间的桥梁。它接收View的用户操作请求，调用Model获取或处理数据，然后将结果返回给View更新UI。A选项错误，因为直接操作UI的是View；C选项错误，因为数据存储和网络请求属于Model职责；D选项错误，因为View负责界面渲染，Presenter处理业务逻辑。</strong></p>
+  <p><strong>
+
+正确答案: B. 处理业务逻辑，作为View和Model之间的中介，协调数据交互和界面更新。解释：在MVP架构中，Presenter负责处理业务逻辑，是View和Model之间的桥梁。它接收View的用户操作请求，调用Model获取或处理数据，然后将结果返回给View更新UI。A选项错误，因为直接操作UI的是View；C选项错误，因为数据存储和网络请求属于Model职责；D选项错误，因为View负责界面渲染，Presenter处理业务逻辑。</strong></p>
 </details>
 
 **问题 2:**
@@ -1961,7 +2111,9 @@ ViewModel通过将UI逻辑和业务逻辑分离，使得View无需直接依赖Mo
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在用户登录功能中：
+  <p><strong>
+
+正确答案: 在用户登录功能中：
 
 - Model：负责处理数据相关的操作，如验证用户输入的账号密码、与服务器进行网络请求、处理登录响应数据等。
 - View：通常是Activity或Fragment，负责展示登录界面，接收用户输入（用户名、密码），并将用户操作传递给Presenter，同时根据Presenter的指示更新UI（如显示加载状态或错误提示）。
@@ -1998,7 +2150,9 @@ MVP相比Activity直接处理业务逻辑的优势包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 域层（Domain Layer）包含业务规则，是整个架构的核心，其他层依赖于它，但它不依赖任何其他层。 解释：在Clean Architecture中，Domain Layer是核心，负责业务规则和用例，且不依赖于其他层，确保业务逻辑的独立性。数据层和展示层依赖于域层，而数据具体实现细节在数据层处理，展示层只负责界面逻辑，因此A、C、D选项描述均不符合Clean Architecture的原则。</strong></p>
+  <p><strong>
+
+正确答案: B. 域层（Domain Layer）包含业务规则，是整个架构的核心，其他层依赖于它，但它不依赖任何其他层。 解释：在Clean Architecture中，Domain Layer是核心，负责业务规则和用例，且不依赖于其他层，确保业务逻辑的独立性。数据层和展示层依赖于域层，而数据具体实现细节在数据层处理，展示层只负责界面逻辑，因此A、C、D选项描述均不符合Clean Architecture的原则。</strong></p>
 </details>
 
 **问题 2:**
@@ -2007,7 +2161,9 @@ MVP相比Activity直接处理业务逻辑的优势包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Clean Architecture中，应用被划分为多个层次，每层有明确的职责和依赖关系，依赖关系遵循依赖规则（依赖只能指向内层）。
+  <p><strong>
+
+正确答案: 在Clean Architecture中，应用被划分为多个层次，每层有明确的职责和依赖关系，依赖关系遵循依赖规则（依赖只能指向内层）。
 
 1. Entity层（Domain层）: 这里定义核心业务模型，比如User实体和相关业务规则。该层不依赖任何其他层，保持纯净，保证业务逻辑的独立性。
 
@@ -2045,7 +2201,9 @@ MVP相比Activity直接处理业务逻辑的优势包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 标记一个全应用范围内共享的依赖实例。
+  <p><strong>
+
+正确答案: B. 标记一个全应用范围内共享的依赖实例。
 
 解释：@Singleton注解表示该依赖的实例在整个应用程序范围内是单例的，即全应用范围内共享同一个实例。选项A描述的是Activity生命周期，应该使用@ActivityScoped而非@Singleton；选项C仅限ViewModel范围，通常用@ViewModelScoped；选项D描述的是每次注入新实例，应使用无作用域注解或@Reusable。</strong></p>
 </details>
@@ -2061,7 +2219,9 @@ MVP相比Activity直接处理业务逻辑的优势包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 使用Hilt的 `@Module` 和 `@Provides` 注解创建一个模块，分别为Debug和Release环境提供不同配置的 `OkHttpClient`。可以结合Gradle的构建变体（Build Variants）实现条件注入。示例如下：
+  <p><strong>
+
+正确答案: 1. 使用Hilt的 `@Module` 和 `@Provides` 注解创建一个模块，分别为Debug和Release环境提供不同配置的 `OkHttpClient`。可以结合Gradle的构建变体（Build Variants）实现条件注入。示例如下：
 
 ```kotlin
 // NetworkModule.kt
@@ -2141,7 +2301,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用懒加载（Lazy Initialization）技术，延迟初始化不立即需要的组件。——懒加载能够有效减少应用启动时的工作量，避免阻塞主线程，提高启动速度，是优化启动性能的常用且有效策略。选项A会导致启动时阻塞，降低启动速度；选项C违反了Android主线程模型，可能导致ANR；选项D滥用静态变量可能导致内存泄漏和状态不一致。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用懒加载（Lazy Initialization）技术，延迟初始化不立即需要的组件。——懒加载能够有效减少应用启动时的工作量，避免阻塞主线程，提高启动速度，是优化启动性能的常用且有效策略。选项A会导致启动时阻塞，降低启动速度；选项C违反了Android主线程模型，可能导致ANR；选项D滥用静态变量可能导致内存泄漏和状态不一致。</strong></p>
 </details>
 
 **问题 2:**
@@ -2150,7 +2312,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 要优化中大型Android应用的启动时间，可以从以下几个方面进行分析和优化：
+  <p><strong>
+
+正确答案: 要优化中大型Android应用的启动时间，可以从以下几个方面进行分析和优化：
 
 1. 架构设计优化：
   - 使用模块化架构（如Clean Architecture或MVVM），将初始化流程拆分，延迟非必要模块的初始化。
@@ -2197,7 +2361,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用接口或抽象类定义模块间的通信协议，并通过依赖注入或服务定位器进行调用。 解析：模块化设计的核心目的是降低模块间耦合度，使用接口或抽象类定义通信协议可以隐藏具体实现细节，依赖注入或服务定位器则实现模块间的解耦调用。A选项虽然简化了调用，但直接通过Intent容易导致耦合和维护难度增加；C选项虽然减少了代码重复，但过度共享公共模块会增加耦合；D选项不允许任何通信会导致模块间无法协作，实际应用中不现实。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用接口或抽象类定义模块间的通信协议，并通过依赖注入或服务定位器进行调用。 解析：模块化设计的核心目的是降低模块间耦合度，使用接口或抽象类定义通信协议可以隐藏具体实现细节，依赖注入或服务定位器则实现模块间的解耦调用。A选项虽然简化了调用，但直接通过Intent容易导致耦合和维护难度增加；C选项虽然减少了代码重复，但过度共享公共模块会增加耦合；D选项不允许任何通信会导致模块间无法协作，实际应用中不现实。</strong></p>
 </details>
 
 **问题 2:**
@@ -2214,7 +2380,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 模块划分的原则和依据：
+  <p><strong>
+
+正确答案: 1. 模块划分的原则和依据：
 - 按业务域（如用户管理、订单、支付等）进行划分，保证每个模块职责单一，功能明确。
 - 按功能层次（如UI层、数据层、网络层）划分，便于复用和维护。
 - 避免过度拆分，防止模块间通信复杂度升高。
@@ -2265,7 +2433,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: D. 通过AIDL传输数据时，所有传递的对象都需要实现Parcelable接口，以确保数据能够被正确序列化和反序列化。 解释：AIDL在跨进程通信时，数据需要被序列化传输，因此传递的自定义对象必须实现Parcelable接口。选项A错误，因为AIDL方法可以抛出RemoteException；选项B错误，Stub类由服务端实现，Proxy类由系统自动生成；选项C错误，AIDL不支持传递非Parcelable的自定义对象。</strong></p>
+  <p><strong>
+
+正确答案: D. 通过AIDL传输数据时，所有传递的对象都需要实现Parcelable接口，以确保数据能够被正确序列化和反序列化。 解释：AIDL在跨进程通信时，数据需要被序列化传输，因此传递的自定义对象必须实现Parcelable接口。选项A错误，因为AIDL方法可以抛出RemoteException；选项B错误，Stub类由服务端实现，Proxy类由系统自动生成；选项C错误，AIDL不支持传递非Parcelable的自定义对象。</strong></p>
 </details>
 
 **问题 2:**
@@ -2281,7 +2451,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. AIDL接口设计：
+  <p><strong>
+
+正确答案: 1. AIDL接口设计：
 - 定义一个AIDL文件，例如IMusicService.aidl，声明播放（play）、暂停（pause）和获取播放状态（isPlaying）的方法。
 - 其中，播放和暂停可以是无返回值的方法，获取播放状态可以返回boolean类型。
 - 通过AIDL，系统会自动生成对应的Stub和Proxy类，便于客户端和服务端跨进程调用。
@@ -2325,7 +2497,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 避免内存泄漏的关键是及时解除对不再需要对象的强引用，特别是在长生命周期的组件中。——这是正确的，因为Android的垃圾回收机制基于引用计数和标记清除，只有对象不再被强引用时才会被回收。及时解除对不再使用对象的强引用，尤其是在Activity、Service等长生命周期的组件中，能有效避免内存泄漏。</strong></p>
+  <p><strong>
+
+正确答案: B. 避免内存泄漏的关键是及时解除对不再需要对象的强引用，特别是在长生命周期的组件中。——这是正确的，因为Android的垃圾回收机制基于引用计数和标记清除，只有对象不再被强引用时才会被回收。及时解除对不再使用对象的强引用，尤其是在Activity、Service等长生命周期的组件中，能有效避免内存泄漏。</strong></p>
 </details>
 
 **问题 2:**
@@ -2334,7 +2508,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Android应用的内存管理依赖于Java虚拟机的垃圾回收机制（GC），GC负责回收无用的对象以释放内存。但如果存在对象的引用没有被及时清理，GC无法回收这些对象，就会导致内存泄漏。
+  <p><strong>
+
+正确答案: Android应用的内存管理依赖于Java虚拟机的垃圾回收机制（GC），GC负责回收无用的对象以释放内存。但如果存在对象的引用没有被及时清理，GC无法回收这些对象，就会导致内存泄漏。
 
 可能导致内存泄漏的原因包括：
 1. 非静态内部类或匿名类持有外部Activity的隐式引用，导致Activity无法被回收。
@@ -2370,7 +2546,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用静态内部类并通过弱引用（WeakReference）引用外部类实例。匿名内部类隐式持有外部类的引用，容易导致Activity无法被回收。将内部类声明为静态类并使用弱引用引用外部类实例，可以有效避免这种内存泄漏。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用静态内部类并通过弱引用（WeakReference）引用外部类实例。匿名内部类隐式持有外部类的引用，容易导致Activity无法被回收。将内部类声明为静态类并使用弱引用引用外部类实例，可以有效避免这种内存泄漏。</strong></p>
 </details>
 
 **问题 2:**
@@ -2379,7 +2557,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 导致Activity销毁后UI组件仍占用内存的常见原因包括：
+  <p><strong>
+
+正确答案: 导致Activity销毁后UI组件仍占用内存的常见原因包括：
 1. 长生命周期对象持有Activity或其View的引用，例如单例、静态变量或后台线程持有Activity的引用。
 2. Handler未正确移除消息或回调，导致Activity无法被GC。
 3. 注册的监听器、广播接收器未在Activity销毁时注销。
@@ -2415,7 +2595,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用延迟初始化（Lazy Initialization）技术，将非关键资源和服务推迟到应用启动后再加载。因为延迟初始化可以避免应用启动时加载过多资源导致冷启动时间过长，从而提升启动速度。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用延迟初始化（Lazy Initialization）技术，将非关键资源和服务推迟到应用启动后再加载。因为延迟初始化可以避免应用启动时加载过多资源导致冷启动时间过长，从而提升启动速度。</strong></p>
 </details>
 
 **问题 2:**
@@ -2424,7 +2606,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 启动慢的主要原因可能包括：
+  <p><strong>
+
+正确答案: 启动慢的主要原因可能包括：
 
 1. 应用初始化工作过重：如在Application的onCreate方法中初始化大量对象或执行耗时操作。
 2. 主线程阻塞：启动时进行网络请求、磁盘读写或复杂计算，导致UI线程阻塞。
@@ -2460,7 +2644,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Layout Inspector。Layout Inspector可以实时显示当前界面的布局层级结构以及每个视图的绘制时间，有助于开发者定位复杂布局导致的性能问题。其他选项中，CPU Profiler主要用于CPU使用率分析，Systrace用于系统级别的性能跟踪，Lint更多用于代码质量检查，均不专注于布局性能分析。</strong></p>
+  <p><strong>
+
+正确答案: B. Layout Inspector。Layout Inspector可以实时显示当前界面的布局层级结构以及每个视图的绘制时间，有助于开发者定位复杂布局导致的性能问题。其他选项中，CPU Profiler主要用于CPU使用率分析，Systrace用于系统级别的性能跟踪，Lint更多用于代码质量检查，均不专注于布局性能分析。</strong></p>
 </details>
 
 **问题 2:**
@@ -2469,7 +2655,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，我会使用Android Studio自带的Layout Inspector和Profile工具中的Layout Rendering和CPU Profiler来定位布局性能瓶颈。
+  <p><strong>
+
+正确答案: 首先，我会使用Android Studio自带的Layout Inspector和Profile工具中的Layout Rendering和CPU Profiler来定位布局性能瓶颈。
 
 1. 使用Layout Inspector查看当前页面的布局层级，关注布局层级的深度和View数量，层级过深或者嵌套过多会导致测量和绘制时间增加。
 
@@ -2509,7 +2697,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 利用JobScheduler或WorkManager调度后台任务，系统根据设备状态智能调度执行时间。 解析：JobScheduler和WorkManager是Android推荐的后台任务调度方案，它们能够根据设备的电量、网络状态和休眠状态智能调整任务执行时间，从而有效减少不必要的唤醒和功耗。选项A虽然保证任务持续执行，但会显著增加功耗；选项B的setExactAndAllowWhileIdle虽然能按时执行任务，但频繁使用会导致系统频繁唤醒，增加电量消耗；选项D频繁使用WakeLock会阻止设备进入低功耗休眠状态，极大地消耗电池电量。</strong></p>
+  <p><strong>
+
+正确答案: C. 利用JobScheduler或WorkManager调度后台任务，系统根据设备状态智能调度执行时间。 解析：JobScheduler和WorkManager是Android推荐的后台任务调度方案，它们能够根据设备的电量、网络状态和休眠状态智能调整任务执行时间，从而有效减少不必要的唤醒和功耗。选项A虽然保证任务持续执行，但会显著增加功耗；选项B的setExactAndAllowWhileIdle虽然能按时执行任务，但频繁使用会导致系统频繁唤醒，增加电量消耗；选项D频繁使用WakeLock会阻止设备进入低功耗休眠状态，极大地消耗电池电量。</strong></p>
 </details>
 
 **问题 2:**
@@ -2518,7 +2708,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 针对持续后台定位导致的电池快速耗尽问题，可以从以下几个方面进行分析和优化：
+  <p><strong>
+
+正确答案: 针对持续后台定位导致的电池快速耗尽问题，可以从以下几个方面进行分析和优化：
 
 1. 分析阶段：
 - 使用Android Profiler或Battery Historian等工具监测应用的电池使用情况，定位耗电热点。
@@ -2553,7 +2745,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 仅监控 CPU 使用率，而忽略内存分配情况。因为内存泄漏主要表现为内存分配和对象引用未被正确释放，如果只关注 CPU 使用率，无法发现持续增长的内存占用，导致内存泄漏被遗漏。</strong></p>
+  <p><strong>
+
+正确答案: A. 仅监控 CPU 使用率，而忽略内存分配情况。因为内存泄漏主要表现为内存分配和对象引用未被正确释放，如果只关注 CPU 使用率，无法发现持续增长的内存占用，导致内存泄漏被遗漏。</strong></p>
 </details>
 
 **问题 2:**
@@ -2562,7 +2756,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 工具选择与准备：
+  <p><strong>
+
+正确答案: 1. 工具选择与准备：
 - 使用Android Studio内置的Android Profiler进行实时性能监控，包括CPU、内存、网络和帧率。
 - 使用Systrace或Traceview进行更深入的调用栈和线程分析。
 
@@ -2606,7 +2802,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用Systrace分析系统调用和线程调度，定位性能瓶颈。 解析：Systrace是一种强大的性能分析工具，能够捕获系统调用、线程调度、CPU使用情况等低层次信息，帮助开发者精准定位UI卡顿和性能瓶颈问题。虽然StrictMode可以检测主线程违规操作，但对于复杂的线程调度和系统调用分析不够深入；Heap Dump主要用于内存泄漏检测；Lint工具侧重代码规范检查，不能直接定位UI卡顿。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用Systrace分析系统调用和线程调度，定位性能瓶颈。 解析：Systrace是一种强大的性能分析工具，能够捕获系统调用、线程调度、CPU使用情况等低层次信息，帮助开发者精准定位UI卡顿和性能瓶颈问题。虽然StrictMode可以检测主线程违规操作，但对于复杂的线程调度和系统调用分析不够深入；Heap Dump主要用于内存泄漏检测；Lint工具侧重代码规范检查，不能直接定位UI卡顿。</strong></p>
 </details>
 
 **问题 2:**
@@ -2619,7 +2817,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 工具和技术手段：
+  <p><strong>
+
+正确答案: 1. 工具和技术手段：
 - 使用Android Profiler（包括CPU Profiler、Memory Profiler和GPU Profiler）来采集性能数据，分析CPU占用、内存使用和渲染性能。
 - 使用Systrace捕获系统调用和线程调度，查看主线程的执行情况。
 - 使用Traceview或自定义Trace API定位具体函数的执行时间。
@@ -2666,7 +2866,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 危险权限（Dangerous Permissions） - 因为危险权限涉及用户隐私或设备安全，Android系统要求应用在运行时动态请求用户授权，而普通权限在安装时自动授予。签名权限和系统权限通常由系统或签名相同的应用授予，不需要用户动态确认。</strong></p>
+  <p><strong>
+
+正确答案: B. 危险权限（Dangerous Permissions） - 因为危险权限涉及用户隐私或设备安全，Android系统要求应用在运行时动态请求用户授权，而普通权限在安装时自动授予。签名权限和系统权限通常由系统或签名相同的应用授予，不需要用户动态确认。</strong></p>
 </details>
 
 **问题 2:**
@@ -2675,7 +2877,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Android权限模型中，权限被分为“正常权限”和“危险权限”。
+  <p><strong>
+
+正确答案: 在Android权限模型中，权限被分为“正常权限”和“危险权限”。
 
 - 正常权限：这些权限对用户隐私和设备安全影响较小，系统在安装应用时会自动授予，无需用户明确授权。例如访问网络状态。
 
@@ -2710,7 +2914,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 只有在Android 6.0及以上版本，才需要在运行时动态请求危险权限。 解释：从Android 6.0（API 23）开始，引入了运行时权限机制，开发者需要在代码中动态请求危险权限。其他选项错误：A错误，因为声明权限不代表自动授予；C错误，requestPermissions之前应该先检查权限状态；D错误，应用应优雅处理权限被拒绝的情况，而非直接终止。</strong></p>
+  <p><strong>
+
+正确答案: B. 只有在Android 6.0及以上版本，才需要在运行时动态请求危险权限。 解释：从Android 6.0（API 23）开始，引入了运行时权限机制，开发者需要在代码中动态请求危险权限。其他选项错误：A错误，因为声明权限不代表自动授予；C错误，requestPermissions之前应该先检查权限状态；D错误，应用应优雅处理权限被拒绝的情况，而非直接终止。</strong></p>
 </details>
 
 **问题 2:**
@@ -2719,7 +2925,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Android 6.0 及以上版本，访问敏感权限（如定位权限）需在运行时向用户申请。实现流程如下：
+  <p><strong>
+
+正确答案: 在 Android 6.0 及以上版本，访问敏感权限（如定位权限）需在运行时向用户申请。实现流程如下：
 
 1. 检查权限：使用 ContextCompat.checkSelfPermission() 检查是否已授权。
 2. 请求权限：如果未授权，调用 ActivityCompat.requestPermissions() 请求权限。
@@ -2763,7 +2971,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 对称加密算法通常比非对称加密算法速度更快，适合加密大量数据。因为对称加密使用单一密钥进行加密和解密，计算效率高，适合处理大量数据，故选择C。选项A错误：对称加密使用同一个密钥而非两个不同的密钥；选项B误导：非对称加密的安全性确实依赖于密钥长度和复杂度，但重要的是它使用一对公钥和私钥；选项D错误：非对称加密正是常用于数字签名来验证数据完整性和身份认证。</strong></p>
+  <p><strong>
+
+正确答案: C. 对称加密算法通常比非对称加密算法速度更快，适合加密大量数据。因为对称加密使用单一密钥进行加密和解密，计算效率高，适合处理大量数据，故选择C。选项A错误：对称加密使用同一个密钥而非两个不同的密钥；选项B误导：非对称加密的安全性确实依赖于密钥长度和复杂度，但重要的是它使用一对公钥和私钥；选项D错误：非对称加密正是常用于数字签名来验证数据完整性和身份认证。</strong></p>
 </details>
 
 **问题 2:**
@@ -2772,7 +2982,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在保护Android客户端本地存储的敏感数据时，通常选择对称加密方式，如AES，因为对称加密运算效率高，适合资源受限的移动设备。非对称加密虽然安全性高，但计算复杂度和资源消耗较大，不适合大量数据加密。
+  <p><strong>
+
+正确答案: 在保护Android客户端本地存储的敏感数据时，通常选择对称加密方式，如AES，因为对称加密运算效率高，适合资源受限的移动设备。非对称加密虽然安全性高，但计算复杂度和资源消耗较大，不适合大量数据加密。
 
 选择理由：
 1. 对称加密算法（如AES）速度快，适合对大量数据进行加密和解密。
@@ -2809,7 +3021,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用Android的Keystore系统生成密钥，并结合加密算法对数据进行加密后存储。 解析：Android Keystore系统提供硬件级别的密钥保护，可以生成和存储加密密钥，避免密钥被泄露。结合加密算法对敏感数据加密后存储，能够有效提升安全性。选项A的SharedPreferences默认不加密，容易被恶意程序读取；选项C的文件权限保护较弱，易被Root设备绕过；选项D的SQLite默认不加密，需要额外加密处理，数据库本身不保证数据加密安全。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用Android的Keystore系统生成密钥，并结合加密算法对数据进行加密后存储。 解析：Android Keystore系统提供硬件级别的密钥保护，可以生成和存储加密密钥，避免密钥被泄露。结合加密算法对敏感数据加密后存储，能够有效提升安全性。选项A的SharedPreferences默认不加密，容易被恶意程序读取；选项C的文件权限保护较弱，易被Root设备绕过；选项D的SQLite默认不加密，需要额外加密处理，数据库本身不保证数据加密安全。</strong></p>
 </details>
 
 **问题 2:**
@@ -2818,7 +3032,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计Android应用的安全存储方案时，可以采用以下方式：
+  <p><strong>
+
+正确答案: 在设计Android应用的安全存储方案时，可以采用以下方式：
 
 1. 使用Android Keystore系统存储加密密钥，保证密钥不会被导出到应用外部。
 2. 利用加密库（如Jetpack Security的EncryptedSharedPreferences或EncryptedFile）对敏感数据进行加密存储。
@@ -2860,7 +3076,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用ProGuard或R8混淆代码，减少反编译的可读性。 解释：ProGuard和R8是Android官方提供的代码混淆工具，可以有效混淆类名、方法名和字段名，增加反编译后的代码阅读难度，从而防止代码被轻易理解和篡改。其他选项如仅靠HTTPS保护通信、复杂UI逻辑或多线程技术并不能有效阻止代码的反编译和注入攻击。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用ProGuard或R8混淆代码，减少反编译的可读性。 解释：ProGuard和R8是Android官方提供的代码混淆工具，可以有效混淆类名、方法名和字段名，增加反编译后的代码阅读难度，从而防止代码被轻易理解和篡改。其他选项如仅靠HTTPS保护通信、复杂UI逻辑或多线程技术并不能有效阻止代码的反编译和注入攻击。</strong></p>
 </details>
 
 **问题 2:**
@@ -2869,7 +3087,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Android应用中防止代码注入和反编译，可以采取以下几种主要技术手段：
+  <p><strong>
+
+正确答案: 在Android应用中防止代码注入和反编译，可以采取以下几种主要技术手段：
 
 1. 代码混淆（ProGuard、R8）
    - 原理：通过重命名类、方法和字段名为无意义字符，删除未使用代码，重组代码结构，增加逆向难度。
@@ -2922,7 +3142,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 使用Android的Keystore系统存储加密密钥，对敏感数据进行加密后存储。 解释：直接使用Base64编码（选项A）只是简单编码，无法防止数据被解码泄露；设置数据库文件权限（选项B）虽然增加了安全性，但仍存在设备root或备份时的风险；将敏感数据存储在外部存储（选项D）安全性较差，易被恶意应用访问。使用Android Keystore系统（选项C）可以安全存储加密密钥，结合加密敏感数据存储，有效防止数据泄露，是推荐的安全做法。</strong></p>
+  <p><strong>
+
+正确答案: C. 使用Android的Keystore系统存储加密密钥，对敏感数据进行加密后存储。 解释：直接使用Base64编码（选项A）只是简单编码，无法防止数据被解码泄露；设置数据库文件权限（选项B）虽然增加了安全性，但仍存在设备root或备份时的风险；将敏感数据存储在外部存储（选项D）安全性较差，易被恶意应用访问。使用Android Keystore系统（选项C）可以安全存储加密密钥，结合加密敏感数据存储，有效防止数据泄露，是推荐的安全做法。</strong></p>
 </details>
 
 **问题 2:**
@@ -2935,7 +3157,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: ## 漏洞原因分析
+  <p><strong>
+
+正确答案: ## 漏洞原因分析
 1. **组件暴露不当**：应用的ContentProvider或其他组件（Activity、Service等）未正确设置`android:exported`属性或权限，导致外部应用可以直接访问敏感数据。
 2. **权限申请和校验不足**：应用未对敏感操作进行严格的权限检查，攻击者可以通过发送恶意Intent触发敏感操作。
 3. **数据传输加密不足**：上传的数据未加密，导致中间人攻击或数据泄露。
@@ -2980,7 +3204,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 利用 Android KeyStore 系统安全地存储加密密钥和凭证。Android KeyStore 提供了硬件级别的安全支持，确保密钥不会被导出或轻易访问，从根本上保护了敏感数据的安全。相比之下，选项A和B虽然有一定帮助，但不足以防止敏感数据被未授权访问；选项D主要保护数据传输过程，而非应用内存储安全。</strong></p>
+  <p><strong>
+
+正确答案: C. 利用 Android KeyStore 系统安全地存储加密密钥和凭证。Android KeyStore 提供了硬件级别的安全支持，确保密钥不会被导出或轻易访问，从根本上保护了敏感数据的安全。相比之下，选项A和B虽然有一定帮助，但不足以防止敏感数据被未授权访问；选项D主要保护数据传输过程，而非应用内存储安全。</strong></p>
 </details>
 
 **问题 2:**
@@ -2996,7 +3222,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 针对金融类Android客户端的安全架构设计，可以从以下几个方面进行详细规划：
+  <p><strong>
+
+正确答案: 针对金融类Android客户端的安全架构设计，可以从以下几个方面进行详细规划：
 
 1. 本地数据存储的安全策略
 - 使用Android Keystore系统生成和管理加密密钥，确保密钥不被导出。
@@ -3046,7 +3274,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. Log.d (Debug) —— Log.d是专门用于打印调试信息的日志级别，适合在开发阶段输出详细的调试信息，不会在正式发布时显示。其他选项如Log.e用于错误，Log.i用于普通信息，Log.w用于警告，均不适合打印详细调试信息。</strong></p>
+  <p><strong>
+
+正确答案: C. Log.d (Debug) —— Log.d是专门用于打印调试信息的日志级别，适合在开发阶段输出详细的调试信息，不会在正式发布时显示。其他选项如Log.e用于错误，Log.i用于普通信息，Log.w用于警告，均不适合打印详细调试信息。</strong></p>
 </details>
 
 **问题 2:**
@@ -3055,7 +3285,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 使用Logcat查看日志：首先通过Android Studio的Logcat工具，观察应用崩溃时的日志输出，特别关注异常堆栈信息（Stack Trace），定位崩溃发生的具体代码位置。
+  <p><strong>
+
+正确答案: 1. 使用Logcat查看日志：首先通过Android Studio的Logcat工具，观察应用崩溃时的日志输出，特别关注异常堆栈信息（Stack Trace），定位崩溃发生的具体代码位置。
 
 2. 设置合适的日志级别：在代码中添加详细的日志打印（如Log.d、Log.e等），尤其是在疑似出问题的代码路径上，以便捕捉更多上下文信息。
 
@@ -3088,7 +3320,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 单元测试应该尽量避免依赖外部资源，如网络或数据库，以保证测试的独立性和稳定性。 解释：单元测试的核心是测试代码的最小单位，并且应该保持独立和可重复，避免依赖外部资源以减少不确定性。选项A描述的是UI测试，C错误因为Android单元测试可以使用多种框架，D错误因为测试边界情况是保证代码质量的重要环节。</strong></p>
+  <p><strong>
+
+正确答案: B. 单元测试应该尽量避免依赖外部资源，如网络或数据库，以保证测试的独立性和稳定性。 解释：单元测试的核心是测试代码的最小单位，并且应该保持独立和可重复，避免依赖外部资源以减少不确定性。选项A描述的是UI测试，C错误因为Android单元测试可以使用多种框架，D错误因为测试边界情况是保证代码质量的重要环节。</strong></p>
 </details>
 
 **问题 2:**
@@ -3097,7 +3331,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 单元测试的目的是验证`DiscountCalculator`类中的业务逻辑是否正确，确保计算折扣的功能在各种输入条件下都能得到预期结果。设计测试用例时，应覆盖常见的折扣计算场景，如无折扣、固定折扣、按比例折扣以及异常输入（如负数或空值）。
+  <p><strong>
+
+正确答案: 单元测试的目的是验证`DiscountCalculator`类中的业务逻辑是否正确，确保计算折扣的功能在各种输入条件下都能得到预期结果。设计测试用例时，应覆盖常见的折扣计算场景，如无折扣、固定折扣、按比例折扣以及异常输入（如负数或空值）。
 
 在Android开发中，单元测试应尽量避免依赖网络请求或数据库访问，因为这些依赖会使测试变慢且不稳定。针对`DiscountCalculator`中的依赖，可以使用依赖注入（Dependency Injection）来传入接口或模拟对象（Mock），例如使用Mockito框架模拟网络或数据库的返回结果。这样，单元测试只关注逻辑本身，不受外部环境影响。
 
@@ -3132,7 +3368,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. onView(withId(R.id.some_view)).check(matches(isDisplayed()))  
+  <p><strong>
+
+正确答案: B. onView(withId(R.id.some_view)).check(matches(isDisplayed()))  
 
 解释：在 Espresso UI 自动化测试中，isDisplayed() 用于断言视图是否可见并显示在屏幕上，这是验证视图显示状态的标准方法。选项 A 的 isClickable() 检查的是视图是否可点击，不代表是否显示。选项 C 是执行点击操作，不是断言。选项 D 是滚动到视图位置，也不是断言显示状态。</strong></p>
 </details>
@@ -3143,7 +3381,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能导致UI自动化测试在不同设备上失败的原因包括：
+  <p><strong>
+
+正确答案: 可能导致UI自动化测试在不同设备上失败的原因包括：
 
 1. 设备差异：不同设备的屏幕尺寸、分辨率、性能和系统版本可能导致UI元素布局和响应不同。
 2. 元素定位不稳定：使用的定位方式（如基于坐标、文本、ID等）在不同设备上表现不一致。
@@ -3178,7 +3418,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 压力测试（Stress Testing）
+  <p><strong>
+
+正确答案: B. 压力测试（Stress Testing）
 
 解释：压力测试专门用于评估系统在超出正常负载范围时的表现，能有效检测应用在高并发用户访问下的稳定性和响应能力。单元测试关注代码逻辑正确性，功能测试关注功能实现，UI自动化测试关注界面交互，均不适合评估高并发性能。</strong></p>
 </details>
@@ -3189,7 +3431,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 为了定位和解决社交类Android应用的界面卡顿和响应迟缓问题，可以设计如下性能测试和压力测试方案：
+  <p><strong>
+
+正确答案: 为了定位和解决社交类Android应用的界面卡顿和响应迟缓问题，可以设计如下性能测试和压力测试方案：
 
 1. 性能测试设计：
   - 测试目标：评估应用在正常及高负载情况下的界面响应时间、帧率（FPS）、内存使用和CPU占用等指标。
@@ -3236,7 +3480,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 Memory Profiler 的堆快照（Heap Dump）功能，分析对象引用关系。因为堆快照可以帮助开发者查看内存中所有对象的引用和生命周期，从而定位可能的内存泄漏点。选项A和D主要关注网络调试，选项C则是CPU性能分析，不适合用于检测内存泄漏。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 Memory Profiler 的堆快照（Heap Dump）功能，分析对象引用关系。因为堆快照可以帮助开发者查看内存中所有对象的引用和生命周期，从而定位可能的内存泄漏点。选项A和D主要关注网络调试，选项C则是CPU性能分析，不适合用于检测内存泄漏。</strong></p>
 </details>
 
 **问题 2:**
@@ -3245,7 +3491,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 针对该问题，我会从以下几个方面进行调试和定位：
+  <p><strong>
+
+正确答案: 针对该问题，我会从以下几个方面进行调试和定位：
 
 1. 内存调试：
   - 使用Android Studio的Memory Profiler监控内存使用情况，观察内存增长趋势和具体的对象分配。
@@ -3288,7 +3536,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用模拟（Mock）和仿真（Stub）来隔离外部依赖，确保测试环境的一致性。 解析：在持续集成中，自动化测试的稳定性和可靠性非常关键。使用 Mock 和 Stub 可以有效隔离外部服务和依赖，避免因网络波动或第三方服务问题导致测试失败，从而保证测试环境的一致性和可重复性。选项 A 虽然减少了测试范围，但忽略 UI 测试会遗漏关键功能验证。选项 C 违背了持续集成的自动化和统一环境原则。选项 D 跳过失败测试会掩盖潜在缺陷，降低代码质量。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用模拟（Mock）和仿真（Stub）来隔离外部依赖，确保测试环境的一致性。 解析：在持续集成中，自动化测试的稳定性和可靠性非常关键。使用 Mock 和 Stub 可以有效隔离外部服务和依赖，避免因网络波动或第三方服务问题导致测试失败，从而保证测试环境的一致性和可重复性。选项 A 虽然减少了测试范围，但忽略 UI 测试会遗漏关键功能验证。选项 C 违背了持续集成的自动化和统一环境原则。选项 D 跳过失败测试会掩盖潜在缺陷，降低代码质量。</strong></p>
 </details>
 
 **问题 2:**
@@ -3297,7 +3547,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能导致关键业务流程Bug未被及时发现的原因包括：
+  <p><strong>
+
+正确答案: 可能导致关键业务流程Bug未被及时发现的原因包括：
 
 1. 测试用例设计不合理：测试用例虽然数量多，但未覆盖关键业务流程或边界条件。
 2. 自动化测试类型单一：依赖单一的单元测试，缺少集成测试、UI自动化测试等多层次测试。
@@ -3339,7 +3591,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 利用Android的gdbserver对系统服务进程附加调试，结合符号表进行断点调试。 解释：系统服务往往是以Native层进程运行，且涉及跨进程调用，使用gdbserver可以对Native层进程进行附加调试，结合符号表可以设置断点和单步调试，适合深入源码层的调试。A选项虽然简单，但不适合跨进程和实时调试；B选项的JDWP主要用于Java层调试，对Native系统服务支持有限；D选项是性能分析工具，不能满足断点和调用链跟踪需求。</strong></p>
+  <p><strong>
+
+正确答案: C. 利用Android的gdbserver对系统服务进程附加调试，结合符号表进行断点调试。 解释：系统服务往往是以Native层进程运行，且涉及跨进程调用，使用gdbserver可以对Native层进程进行附加调试，结合符号表可以设置断点和单步调试，适合深入源码层的调试。A选项虽然简单，但不适合跨进程和实时调试；B选项的JDWP主要用于Java层调试，对Native系统服务支持有限；D选项是性能分析工具，不能满足断点和调用链跟踪需求。</strong></p>
 </details>
 
 **问题 2:**
@@ -3356,7 +3610,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 面对Android UI渲染性能问题，首先，我会通过Android Studio的Profiler工具监控CPU、GPU的使用情况以及帧率，定位卡顿发生的时间点。利用Systrace进一步分析系统调用和渲染流程，找出具体的瓶颈环节。
+  <p><strong>
+
+正确答案: 面对Android UI渲染性能问题，首先，我会通过Android Studio的Profiler工具监控CPU、GPU的使用情况以及帧率，定位卡顿发生的时间点。利用Systrace进一步分析系统调用和渲染流程，找出具体的瓶颈环节。
 
 接着，在源码层面，我会下载对应版本的Android系统框架源码（如View、RenderThread相关代码），并将其导入Android Studio，配置符号表，实现源码级调试。
 
@@ -3390,7 +3646,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. build.gradle（模块级） — 模块级的build.gradle文件主要用于定义具体模块的构建配置，包括依赖、插件应用、构建类型和构建变体等。项目级的build.gradle则更多用于配置项目范围的设置，如仓库地址和插件版本管理。</strong></p>
+  <p><strong>
+
+正确答案: C. build.gradle（模块级） — 模块级的build.gradle文件主要用于定义具体模块的构建配置，包括依赖、插件应用、构建类型和构建变体等。项目级的build.gradle则更多用于配置项目范围的设置，如仓库地址和插件版本管理。</strong></p>
 </details>
 
 **问题 2:**
@@ -3399,7 +3657,9 @@ class NetworkClient @Inject constructor(private val okHttpClient: OkHttpClient) 
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Android项目的build.gradle文件中，可以通过定义不同的buildTypes来配置不同构建类型的属性。例如，可以在buildTypes中为debug和release分别配置versionCode、versionName以及签名配置。示例配置如下：
+  <p><strong>
+
+正确答案: 在Android项目的build.gradle文件中，可以通过定义不同的buildTypes来配置不同构建类型的属性。例如，可以在buildTypes中为debug和release分别配置versionCode、versionName以及签名配置。示例配置如下：
 
 ```gradle
 android {
@@ -3461,7 +3721,9 @@ android {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用Gradle的`signingConfigs`配置统一签名信息，并在多渠道打包时引用该配置。 答案解析：在多渠道打包中，通常会使用Gradle的`signingConfigs`来统一配置签名信息，这样所有渠道包都会使用相同的签名文件签名，确保应用的完整性和一致性。选项A错误，因为不同签名配置会导致签名不一致；选项C错误，手动重签名不利于自动化且易出错；选项D错误，`applicationId`与签名文件生成无直接关系。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用Gradle的`signingConfigs`配置统一签名信息，并在多渠道打包时引用该配置。 答案解析：在多渠道打包中，通常会使用Gradle的`signingConfigs`来统一配置签名信息，这样所有渠道包都会使用相同的签名文件签名，确保应用的完整性和一致性。选项A错误，因为不同签名配置会导致签名不一致；选项C错误，手动重签名不利于自动化且易出错；选项D错误，`applicationId`与签名文件生成无直接关系。</strong></p>
 </details>
 
 **问题 2:**
@@ -3470,7 +3732,9 @@ android {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 多渠道打包通常通过在构建过程中为每个渠道生成不同的渠道标识文件（如渠道配置文件或在APK中插入渠道信息）来实现。常用的方法有使用Gradle的productFlavors或借助第三方工具（如Walle、Meituan渠道打包工具）来注入渠道信息。签名方面，需要确保所有渠道包使用相同的签名证书，否则会导致安装冲突或无法升级。
+  <p><strong>
+
+正确答案: 多渠道打包通常通过在构建过程中为每个渠道生成不同的渠道标识文件（如渠道配置文件或在APK中插入渠道信息）来实现。常用的方法有使用Gradle的productFlavors或借助第三方工具（如Walle、Meituan渠道打包工具）来注入渠道信息。签名方面，需要确保所有渠道包使用相同的签名证书，否则会导致安装冲突或无法升级。
 
 关键问题及解决方案：
 1. 渠道标识持久性：渠道信息需写入APK的不可变区域或通过资源文件注入，避免被优化或混淆删除。
@@ -3497,7 +3761,9 @@ android {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用Gradle的构建缓存（Build Cache）来重用任务输出。Gradle的构建缓存能够保存和重用之前任务的输出，避免重复执行相同任务，从而显著提升增量构建性能。相比之下，禁用守护进程（A）会降低性能，频繁clean（C）会导致全量构建，增加编译器警告级别（D）与构建速度提升无直接关系。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用Gradle的构建缓存（Build Cache）来重用任务输出。Gradle的构建缓存能够保存和重用之前任务的输出，避免重复执行相同任务，从而显著提升增量构建性能。相比之下，禁用守护进程（A）会降低性能，频繁clean（C）会导致全量构建，增加编译器警告级别（D）与构建速度提升无直接关系。</strong></p>
 </details>
 
 **问题 2:**
@@ -3506,7 +3772,9 @@ android {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 常见导致构建性能下降的原因包括：
+  <p><strong>
+
+正确答案: 常见导致构建性能下降的原因包括：
 
 1. 过多的模块依赖和复杂的项目结构，导致构建时需要处理大量模块。
 2. 使用不合理的Gradle配置或插件，增加构建时间，比如不必要的全量构建任务。
@@ -3556,7 +3824,9 @@ android {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -3565,7 +3835,9 @@ android {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计Android客户端的CI/CD流水线时，可以按照以下步骤进行：
+  <p><strong>
+
+正确答案: 在设计Android客户端的CI/CD流水线时，可以按照以下步骤进行：
 
 1. 代码提交触发：使用Git仓库，提交代码后触发流水线（如使用Jenkins、GitLab CI、CircleCI等）。
 
@@ -3615,7 +3887,9 @@ android {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用版本管理系统与持续集成工具，保留每个发布版本的构建产物，配合远程配置或灰度发布实现快速回滚。正确答案是B，因为有效的版本管理和持续集成可以确保每个发布版本的构建产物被保存，配合远程配置和灰度发布可以实现快速且安全的回滚，保证用户体验和版本稳定性。选项A忽视了旧版本管理，不利于快速回滚；选项C依赖用户手动操作，效率低且不可靠；选项D虽然减少了回滚需求，但忽视了回滚的必要性和应急方案的设计。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用版本管理系统与持续集成工具，保留每个发布版本的构建产物，配合远程配置或灰度发布实现快速回滚。正确答案是B，因为有效的版本管理和持续集成可以确保每个发布版本的构建产物被保存，配合远程配置和灰度发布可以实现快速且安全的回滚，保证用户体验和版本稳定性。选项A忽视了旧版本管理，不利于快速回滚；选项C依赖用户手动操作，效率低且不可靠；选项D虽然减少了回滚需求，但忽视了回滚的必要性和应急方案的设计。</strong></p>
 </details>
 
 **问题 2:**
@@ -3624,7 +3898,9 @@ android {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 面对上线后应用崩溃的问题，首先应通过版本管理工具（如Git）快速确认当前发布的代码版本，结合崩溃日志和用户反馈定位引发问题的具体代码变更。技术手段上，应利用持续集成系统中的自动化测试和代码审查，确保问题能被重现和修复。
+  <p><strong>
+
+正确答案: 面对上线后应用崩溃的问题，首先应通过版本管理工具（如Git）快速确认当前发布的代码版本，结合崩溃日志和用户反馈定位引发问题的具体代码变更。技术手段上，应利用持续集成系统中的自动化测试和代码审查，确保问题能被重现和修复。
 
 实施回滚时，可以通过发布管理平台（如Google Play的应用版本管理）将应用回滚到上一稳定版本，或者使用灰度发布策略逐步减少新版本用户比例，避免全部用户受影响。
 
@@ -3659,7 +3935,9 @@ android {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用Git提交次数作为versionCode，并通过脚本自动生成versionName。 解释：使用Git提交次数自动生成versionCode可以保证版本号递增且自动化，避免手动错误。versionName通过脚本生成可以包含更多信息（如日期、分支名），提升自动化和版本管理效率。A选项手动更新容易出错且不自动化；C选项固定versionCode会导致版本冲突；D选项不设置versionCode不符合Android发布规范。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用Git提交次数作为versionCode，并通过脚本自动生成versionName。 解释：使用Git提交次数自动生成versionCode可以保证版本号递增且自动化，避免手动错误。versionName通过脚本生成可以包含更多信息（如日期、分支名），提升自动化和版本管理效率。A选项手动更新容易出错且不自动化；C选项固定versionCode会导致版本冲突；D选项不设置versionCode不符合Android发布规范。</strong></p>
 </details>
 
 **问题 2:**
@@ -3668,7 +3946,9 @@ android {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计自动化发布流程的关键步骤包括：
+  <p><strong>
+
+正确答案: 设计自动化发布流程的关键步骤包括：
 
 1. **代码管理与触发机制**：使用Git等版本控制系统，配置CI工具（如Jenkins、GitHub Actions、GitLab CI等）监听代码仓库的特定分支（如develop或release分支），实现代码提交后自动触发构建流程。
 

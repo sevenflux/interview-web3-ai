@@ -143,7 +143,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在Java内存模型中，主内存是所有线程共享的，线程对变量的操作必须先在工作内存中执行，之后再同步回主内存。 — 这是Java内存模型的核心机制，线程之间通过工作内存和主内存的交互来保证内存的可见性和一致性。A选项错误，因为JMM不保证所有操作都是原子性的，只有部分操作（如long和double的读写在某些情况下才有特殊保证）。C选项错误，volatile保证的是可见性和禁止指令重排，但不保证原子性。D选项错误，synchronized既保证了可见性，也保证了代码块的原子性执行。</strong></p>
+  <p><strong>
+
+正确答案: B. 在Java内存模型中，主内存是所有线程共享的，线程对变量的操作必须先在工作内存中执行，之后再同步回主内存。 — 这是Java内存模型的核心机制，线程之间通过工作内存和主内存的交互来保证内存的可见性和一致性。A选项错误，因为JMM不保证所有操作都是原子性的，只有部分操作（如long和double的读写在某些情况下才有特殊保证）。C选项错误，volatile保证的是可见性和禁止指令重排，但不保证原子性。D选项错误，synchronized既保证了可见性，也保证了代码块的原子性执行。</strong></p>
 </details>
 
 **问题 2:**
@@ -152,7 +154,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Java内存模型（JMM）定义了Java程序中线程如何与内存交互，特别是关于共享变量的可见性、有序性和原子性的规则。在多线程环境下，线程对共享变量的修改可能不会立即被其他线程看到，或者执行顺序可能被编译器和处理器重排序，导致数据不一致。
+  <p><strong>
+
+正确答案: Java内存模型（JMM）定义了Java程序中线程如何与内存交互，特别是关于共享变量的可见性、有序性和原子性的规则。在多线程环境下，线程对共享变量的修改可能不会立即被其他线程看到，或者执行顺序可能被编译器和处理器重排序，导致数据不一致。
 
 为了保证可见性，JMM引入了主内存（共享内存）和各个线程的工作内存（本地缓存）的概念。线程对变量的读写操作先在工作内存中进行，只有在必要时才与主内存同步。这样可能导致其他线程无法及时看到变量的最新值。
 
@@ -187,7 +191,9 @@ volatile关键字用于修饰共享变量，保证：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. -Xms。该参数用于设置JVM堆的初始大小，启动时堆内存即被分配到该值。-Xmx用于设置最大堆大小，-XX:PermSize是设置永久代大小，-XX:NewSize用于新生代大小。</strong></p>
+  <p><strong>
+
+正确答案: A. -Xms。该参数用于设置JVM堆的初始大小，启动时堆内存即被分配到该值。-Xmx用于设置最大堆大小，-XX:PermSize是设置永久代大小，-XX:NewSize用于新生代大小。</strong></p>
 </details>
 
 **问题 2:**
@@ -196,7 +202,9 @@ volatile关键字用于修饰共享变量，保证：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 面对线上Java应用响应变慢且出现Full GC的情况，可以按以下步骤进行分析和调优：
+  <p><strong>
+
+正确答案: 面对线上Java应用响应变慢且出现Full GC的情况，可以按以下步骤进行分析和调优：
 
 1. **问题分析**：
    - 使用监控工具（如JVisualVM、Java Mission Control、GC日志分析工具）查看GC频率和GC类型，确认Full GC是否频繁发生。
@@ -233,7 +241,9 @@ volatile关键字用于修饰共享变量，保证：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. synchronized关键字可以用来保护临界区，确保同一时刻只有一个线程执行该代码块。解释：synchronized用于同步代码块或方法，保证在同一时刻只有一个线程执行该代码，从而实现线程安全。选项A错误，volatile只能保证可见性，不能保证操作的原子性。选项C错误，start()方法会启动新线程并调用run()，而不是直接调用run()方法。选项D错误，AtomicInteger保证基本的原子操作，但不能解决所有线程安全问题。</strong></p>
+  <p><strong>
+
+正确答案: B. synchronized关键字可以用来保护临界区，确保同一时刻只有一个线程执行该代码块。解释：synchronized用于同步代码块或方法，保证在同一时刻只有一个线程执行该代码，从而实现线程安全。选项A错误，volatile只能保证可见性，不能保证操作的原子性。选项C错误，start()方法会启动新线程并调用run()，而不是直接调用run()方法。选项D错误，AtomicInteger保证基本的原子操作，但不能解决所有线程安全问题。</strong></p>
 </details>
 
 **问题 2:**
@@ -244,7 +254,9 @@ volatile关键字用于修饰共享变量，保证：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Java中，可以通过继承Thread类或实现Runnable接口来创建线程，推荐使用实现Runnable接口或使用线程池（如ExecutorService）来管理线程，提升资源利用率和性能。
+  <p><strong>
+
+正确答案: 在Java中，可以通过继承Thread类或实现Runnable接口来创建线程，推荐使用实现Runnable接口或使用线程池（如ExecutorService）来管理线程，提升资源利用率和性能。
 
 为了避免多线程环境下的数据不一致问题，需要注意共享资源的同步访问。可以使用synchronized关键字对临界区代码进行加锁，保证同一时间只有一个线程能访问共享资源；也可以使用java.util.concurrent包下的显式锁（如ReentrantLock）来控制访问；此外，使用线程安全的集合类（如ConcurrentHashMap）也能减少同步的复杂度。
 
@@ -272,7 +284,9 @@ volatile关键字用于修饰共享变量，保证：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. finally块中的代码无论是否发生异常都会执行。 解释：在Java中，finally块是用来执行清理代码的，无论try块是否抛出异常，finally块中的代码都会执行，确保资源释放等操作一定被执行。选项A错误，因为finally块始终执行；选项B错误，catch块可以捕获异常后抛出新的异常；选项D错误，try块可以只配合finally使用而不一定要有catch块。</strong></p>
+  <p><strong>
+
+正确答案: C. finally块中的代码无论是否发生异常都会执行。 解释：在Java中，finally块是用来执行清理代码的，无论try块是否抛出异常，finally块中的代码都会执行，确保资源释放等操作一定被执行。选项A错误，因为finally块始终执行；选项B错误，catch块可以捕获异常后抛出新的异常；选项D错误，try块可以只配合finally使用而不一定要有catch块。</strong></p>
 </details>
 
 **问题 2:**
@@ -281,7 +295,9 @@ volatile关键字用于修饰共享变量，保证：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Java异常处理机制是指程序在运行过程中遇到错误或异常情况时，通过try-catch-finally结构捕获并处理异常，以保证程序的健壮性和稳定性。异常分为checked异常（编译时必须处理，如IOException）和unchecked异常（运行时异常，如NullPointerException）。
+  <p><strong>
+
+正确答案: Java异常处理机制是指程序在运行过程中遇到错误或异常情况时，通过try-catch-finally结构捕获并处理异常，以保证程序的健壮性和稳定性。异常分为checked异常（编译时必须处理，如IOException）和unchecked异常（运行时异常，如NullPointerException）。
 
 在电商订单处理模块中，开发者可以针对不同异常类型使用try-catch语句块。例如，将支付失败、库存不足等预期的业务异常作为checked异常进行捕获和处理，提示用户相关信息或执行补偿逻辑；而对于网络超时等可能导致程序崩溃的异常，可以捕获后记录日志并进行重试或降级处理。
 
@@ -306,7 +322,9 @@ volatile关键字用于修饰共享变量，保证：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 反射机制可以在运行时动态加载类、获取类的信息以及操作对象的属性和方法。 解释：Java反射机制允许程序在运行时动态加载类，获取类的详细信息（如方法、字段、构造方法等），并能操作对象的属性和调用方法，包括私有成员（通过setAccessible(true)）。A选项错误，因为反射可访问私有成员；B选项错误，因为反射也可以调用带参构造函数；D选项错误，反射不修改字节码文件，只是在运行时操作类信息。</strong></p>
+  <p><strong>
+
+正确答案: C. 反射机制可以在运行时动态加载类、获取类的信息以及操作对象的属性和方法。 解释：Java反射机制允许程序在运行时动态加载类，获取类的详细信息（如方法、字段、构造方法等），并能操作对象的属性和调用方法，包括私有成员（通过setAccessible(true)）。A选项错误，因为反射可访问私有成员；B选项错误，因为反射也可以调用带参构造函数；D选项错误，反射不修改字节码文件，只是在运行时操作类信息。</strong></p>
 </details>
 
 **问题 2:**
@@ -315,7 +333,9 @@ volatile关键字用于修饰共享变量，保证：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Java反射机制允许程序在运行时加载类、创建对象、调用方法和访问字段，而不需要在编译时确定具体的类或方法。通过反射，应用可以动态加载不同版本的业务逻辑类，实例化对象，并执行对应的方法，从而实现灵活的业务逻辑切换和扩展。
+  <p><strong>
+
+正确答案: Java反射机制允许程序在运行时加载类、创建对象、调用方法和访问字段，而不需要在编译时确定具体的类或方法。通过反射，应用可以动态加载不同版本的业务逻辑类，实例化对象，并执行对应的方法，从而实现灵活的业务逻辑切换和扩展。
 
 使用反射时需要注意的两个问题：
 1. 性能开销：反射操作比直接代码调用慢，因为涉及动态类型检查和访问权限检查，频繁使用反射可能导致性能下降。
@@ -343,7 +363,9 @@ volatile关键字用于修饰共享变量，保证：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Java注解本质上是继承自java.lang.annotation.Annotation接口的特殊接口，且可以通过反射机制在运行时读取。 解释：Java注解在本质上是继承自java.lang.annotation.Annotation的接口，编译器和运行时环境会处理这些注解。注解的信息可以通过反射机制在运行时读取，前提是注解使用了适当的保留策略（RetentionPolicy.RUNTIME）。选项A错误，因为部分注解会保留到运行时；选项C错误，注解不依赖字节码增强技术来生成代码；选项D错误，注解不仅用于编译时检查，也常用于运行时逻辑处理。</strong></p>
+  <p><strong>
+
+正确答案: B. Java注解本质上是继承自java.lang.annotation.Annotation接口的特殊接口，且可以通过反射机制在运行时读取。 解释：Java注解在本质上是继承自java.lang.annotation.Annotation的接口，编译器和运行时环境会处理这些注解。注解的信息可以通过反射机制在运行时读取，前提是注解使用了适当的保留策略（RetentionPolicy.RUNTIME）。选项A错误，因为部分注解会保留到运行时；选项C错误，注解不依赖字节码增强技术来生成代码；选项D错误，注解不仅用于编译时检查，也常用于运行时逻辑处理。</strong></p>
 </details>
 
 **问题 2:**
@@ -352,7 +374,9 @@ volatile关键字用于修饰共享变量，保证：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 注解定义：
+  <p><strong>
+
+正确答案: 1. 注解定义：
    - 使用@interface关键字定义注解，可以包含属性（方法）。
    - 可以通过元注解（如@Retention、@Target）指定注解的生命周期和作用范围。
 
@@ -391,7 +415,9 @@ volatile关键字用于修饰共享变量，保证：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 单例模式的主要目的是确保一个类只有一个实例，并提供全局访问点，而工厂模式主要用于创建复杂对象，观察者模式则用于实现对象之间的一对多依赖关系。——此选项正确地描述了三种设计模式的主要目的和使用场景。</strong></p>
+  <p><strong>
+
+正确答案: A. 单例模式的主要目的是确保一个类只有一个实例，并提供全局访问点，而工厂模式主要用于创建复杂对象，观察者模式则用于实现对象之间的一对多依赖关系。——此选项正确地描述了三种设计模式的主要目的和使用场景。</strong></p>
 </details>
 
 **问题 2:**
@@ -406,7 +432,9 @@ volatile关键字用于修饰共享变量，保证：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 单例模式：
+  <p><strong>
+
+正确答案: 1. 单例模式：
    - 设计订单处理服务类，使其构造函数私有，并提供一个静态方法返回唯一实例，保证系统中只有一个订单处理服务实例，避免多实例带来的资源冲突。
 
 2. 工厂模式：
@@ -440,7 +468,9 @@ volatile关键字用于修饰共享变量，保证：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 泛型方法可以声明在非泛型类中，也可以声明在泛型类中。——这是正确的，因为泛型方法的定义和使用不依赖于类是否是泛型类，泛型方法可以独立于类的泛型参数存在。</strong></p>
+  <p><strong>
+
+正确答案: B. 泛型方法可以声明在非泛型类中，也可以声明在泛型类中。——这是正确的，因为泛型方法的定义和使用不依赖于类是否是泛型类，泛型方法可以独立于类的泛型参数存在。</strong></p>
 </details>
 
 **问题 2:**
@@ -449,7 +479,10 @@ volatile关键字用于修饰共享变量，保证：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可以通过定义一个泛型类Repository<T>来实现通用仓库，T代表仓库中存储的商品类型。这样，仓库类可以在实例化时指定具体的商品类型，保证类型安全和代码复用。例如：
+  <p><strong>
+
+正确答案: 可以通过定义一个泛型类Repository<T>来实现通用仓库，T代表仓库中存储的商品类型。这样，仓库类可以在实例化时指定具体的商品类型，保证类型安全和代码复用。例如：
+
 
 ```java
 public class Repository<T> {
@@ -468,6 +501,7 @@ public class Repository<T> {
 Repository<Book> bookRepository = new Repository<>();
 bookRepository.addItem(new Book());
 Book book = bookRepository.getItem(0);
+
 ```
 
 泛型的主要好处有：
@@ -494,7 +528,9 @@ Book book = bookRepository.getItem(0);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. HashMap中的元素是无序的，存储顺序不保证与插入顺序一致。 解释：HashMap不保证元素的顺序，键和值是无序存储的。选项A错误，因为HashMap允许一个null键；选项B错误，HashMap不是线程安全的；选项D错误，HashMap不实现SortedMap接口，TreeMap才实现了该接口。</strong></p>
+  <p><strong>
+
+正确答案: C. HashMap中的元素是无序的，存储顺序不保证与插入顺序一致。 解释：HashMap不保证元素的顺序，键和值是无序存储的。选项A错误，因为HashMap允许一个null键；选项B错误，HashMap不是线程安全的；选项D错误，HashMap不实现SortedMap接口，TreeMap才实现了该接口。</strong></p>
 </details>
 
 **问题 2:**
@@ -503,7 +539,9 @@ Book book = bookRepository.getItem(0);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 针对频繁查询和更新库存信息的场景，建议使用ConcurrentHashMap。原因如下：
+  <p><strong>
+
+正确答案: 针对频繁查询和更新库存信息的场景，建议使用ConcurrentHashMap。原因如下：
 
 1. **数据结构选择**：
    - 使用Map结构存储库存信息，键为产品ID，值为库存数量，便于根据产品ID快速查询和更新。
@@ -514,6 +552,7 @@ Book book = bookRepository.getItem(0);
    - 不需要对整个集合加锁，提高并发性能。
 
 3. **示例代码**：
+
 ```java
 ConcurrentHashMap<String, Integer> inventoryMap = new ConcurrentHashMap<>();
 
@@ -522,6 +561,7 @@ int stock = inventoryMap.getOrDefault(productId, 0);
 
 // 更新库存（例如减少库存）
 inventoryMap.computeIfPresent(productId, (k, v) -> v - quantitySold);
+
 ```
 
 总结：ConcurrentHashMap适合高并发环境下频繁的读写操作，保证线程安全且性能优越，非常适合电商系统中的库存管理。</strong></p>
@@ -548,7 +588,9 @@ inventoryMap.computeIfPresent(productId, (k, v) -> v - quantitySold);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 200 - 这是HTTP协议中表示请求成功并返回资源的标准状态码。301表示资源永久移动，404表示资源未找到，500表示服务器内部错误。</strong></p>
+  <p><strong>
+
+正确答案: A. 200 - 这是HTTP协议中表示请求成功并返回资源的标准状态码。301表示资源永久移动，404表示资源未找到，500表示服务器内部错误。</strong></p>
 </details>
 
 **问题 2:**
@@ -557,7 +599,9 @@ inventoryMap.computeIfPresent(productId, (k, v) -> v - quantitySold);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: HTTP请求的基本结构包括：
+  <p><strong>
+
+正确答案: HTTP请求的基本结构包括：
 1. 请求行：包含请求方法（如GET、POST）、请求的URL和HTTP版本。
 2. 请求头：包含请求的元信息，如Content-Type、Authorization等。
 3. 请求体（可选）：用于发送数据，如POST请求中的表单数据或JSON。
@@ -592,7 +636,9 @@ HTTP响应的基本结构包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 网络层。因为网络层负责为数据包提供逻辑寻址（如IP地址）和路由选择功能，确保数据包能够从源设备正确传输到目标设备。传输层主要负责端到端的通信和数据传输可靠性，数据链路层处理物理地址和局域网内的数据帧传输，应用层则处理应用程序之间的通信。</strong></p>
+  <p><strong>
+
+正确答案: B. 网络层。因为网络层负责为数据包提供逻辑寻址（如IP地址）和路由选择功能，确保数据包能够从源设备正确传输到目标设备。传输层主要负责端到端的通信和数据传输可靠性，数据链路层处理物理地址和局域网内的数据帧传输，应用层则处理应用程序之间的通信。</strong></p>
 </details>
 
 **问题 2:**
@@ -601,7 +647,9 @@ HTTP响应的基本结构包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能的原因是TCP连接的“半开”状态（Half-open connection）。当客户端异常断开（如网络故障或客户端进程崩溃）时，服务端可能未及时收到连接关闭的通知，导致服务端仍然认为连接是活跃的。
+  <p><strong>
+
+正确答案: 可能的原因是TCP连接的“半开”状态（Half-open connection）。当客户端异常断开（如网络故障或客户端进程崩溃）时，服务端可能未及时收到连接关闭的通知，导致服务端仍然认为连接是活跃的。
 
 解决方法包括：
 
@@ -637,7 +685,9 @@ HTTP响应的基本结构包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 通过Socket的getInputStream()和getOutputStream()方法可以获取输入输出流，用于数据的读写。正确。因为Socket通信是基于TCP的面向连接的通信，客户端和服务器必须先建立连接，之后通过Socket的输入输出流进行数据传输。选项A错误，应该先关闭流再关闭Socket。选项B错误，ServerSocket用于服务器端监听连接请求。选项D错误，Socket通信是有连接的。</strong></p>
+  <p><strong>
+
+正确答案: C. 通过Socket的getInputStream()和getOutputStream()方法可以获取输入输出流，用于数据的读写。正确。因为Socket通信是基于TCP的面向连接的通信，客户端和服务器必须先建立连接，之后通过Socket的输入输出流进行数据传输。选项A错误，应该先关闭流再关闭Socket。选项B错误，ServerSocket用于服务器端监听连接请求。选项D错误，Socket通信是有连接的。</strong></p>
 </details>
 
 **问题 2:**
@@ -649,7 +699,9 @@ HTTP响应的基本结构包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 在Java中，服务器端使用ServerSocket监听指定端口，调用accept()方法等待客户端连接；客户端使用Socket连接服务器的IP和端口。当accept()返回时，表示有客户端连接成功，服务器可以通过返回的Socket与客户端通信。
+  <p><strong>
+
+正确答案: 1. 在Java中，服务器端使用ServerSocket监听指定端口，调用accept()方法等待客户端连接；客户端使用Socket连接服务器的IP和端口。当accept()返回时，表示有客户端连接成功，服务器可以通过返回的Socket与客户端通信。
 
 2. 为了同时处理多个客户端，服务器端常用的设计是为每个客户端连接创建一个独立的线程，或者使用线程池来管理多个连接。具体方案是：服务器在主线程中循环调用accept()，每接收到一个连接，就分配一个新线程处理该客户端的读写操作。这样可以实现并发处理多个客户端请求，避免阻塞其他连接。理由是Java的Socket是阻塞IO，单线程无法同时处理多个客户端，使用多线程能提高服务器的并发能力和响应速度。</strong></p>
 </details>
@@ -672,7 +724,9 @@ HTTP响应的基本结构包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: D. PATCH。PATCH方法专为对资源进行部分更新设计，区别于PUT方法，PUT通常用于整体替换资源。GET用于获取资源，POST常用于创建资源，因此不适合部分更新。</strong></p>
+  <p><strong>
+
+正确答案: D. PATCH。PATCH方法专为对资源进行部分更新设计，区别于PUT方法，PUT通常用于整体替换资源。GET用于获取资源，POST常用于创建资源，因此不适合部分更新。</strong></p>
 </details>
 
 **问题 2:**
@@ -681,7 +735,9 @@ HTTP响应的基本结构包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在RESTful设计中，资源通过URL路径进行定位，操作通过HTTP方法来表达。对于图书资源（Books），常见设计如下：
+  <p><strong>
+
+正确答案: 在RESTful设计中，资源通过URL路径进行定位，操作通过HTTP方法来表达。对于图书资源（Books），常见设计如下：
 
 1. GET /books
    - 功能：获取所有图书列表。
@@ -732,7 +788,9 @@ HTTP响应的基本结构包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. WebSocket连接一旦建立，客户端和服务器之间可以进行全双工通信。 WebSocket协议的核心特点是建立后实现双向持续连接，支持客户端和服务器之间的实时、全双工通信，这区别于传统的HTTP单向请求-响应模式。</strong></p>
+  <p><strong>
+
+正确答案: B. WebSocket连接一旦建立，客户端和服务器之间可以进行全双工通信。 WebSocket协议的核心特点是建立后实现双向持续连接，支持客户端和服务器之间的实时、全双工通信，这区别于传统的HTTP单向请求-响应模式。</strong></p>
 </details>
 
 **问题 2:**
@@ -741,7 +799,9 @@ HTTP响应的基本结构包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: WebSocket协议是一种在单个TCP连接上进行全双工通信的协议，允许服务器和客户端之间实时双向数据传输。它通过一个初始的HTTP握手建立连接，握手成功后升级为WebSocket协议，随后数据通过帧（frame）格式进行交换。
+  <p><strong>
+
+正确答案: WebSocket协议是一种在单个TCP连接上进行全双工通信的协议，允许服务器和客户端之间实时双向数据传输。它通过一个初始的HTTP握手建立连接，握手成功后升级为WebSocket协议，随后数据通过帧（frame）格式进行交换。
 
 相比传统HTTP轮询，WebSocket的优势在于：
 1. 实时性更强：WebSocket保持连接持续开放，服务器可以即时推送数据，减少延迟。
@@ -775,7 +835,9 @@ HTTP响应的基本结构包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. HTTP/2引入了二进制帧传输，支持多路复用，而HTTP/3基于QUIC协议，使用UDP传输。 HTTP/2的主要改进包括二进制分帧和多路复用，提升了传输效率；HTTP/3则基于QUIC协议，使用UDP而非TCP，进一步减少了连接建立延迟和提高了传输性能。</strong></p>
+  <p><strong>
+
+正确答案: B. HTTP/2引入了二进制帧传输，支持多路复用，而HTTP/3基于QUIC协议，使用UDP传输。 HTTP/2的主要改进包括二进制分帧和多路复用，提升了传输效率；HTTP/3则基于QUIC协议，使用UDP而非TCP，进一步减少了连接建立延迟和提高了传输性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -784,7 +846,9 @@ HTTP响应的基本结构包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: HTTP/2相较于HTTP/1.1主要改进包括多路复用（允许多个请求/响应在一个TCP连接上并发进行）、头部压缩（HPACK减少冗余信息传输）和服务器推送（服务器主动推送资源）。这些改进显著减少了连接建立次数和请求延迟，提高了连接利用率。HTTP/3则基于QUIC协议，使用UDP而非TCP，解决了TCP的队头阻塞问题，并且集成了加密和更快的连接建立（0-RTT连接恢复）。
+  <p><strong>
+
+正确答案: HTTP/2相较于HTTP/1.1主要改进包括多路复用（允许多个请求/响应在一个TCP连接上并发进行）、头部压缩（HPACK减少冗余信息传输）和服务器推送（服务器主动推送资源）。这些改进显著减少了连接建立次数和请求延迟，提高了连接利用率。HTTP/3则基于QUIC协议，使用UDP而非TCP，解决了TCP的队头阻塞问题，并且集成了加密和更快的连接建立（0-RTT连接恢复）。
 
 在频繁RPC调用的微服务场景中，HTTP/2多路复用减少了连接数量和延迟，提升了传输效率。HTTP/3进一步通过QUIC的设计优化了延迟和丢包恢复，尤其在高丢包或移动网络环境下表现更佳。选择HTTP/3的优势包括更快速的连接建立、更好的丢包处理和更低的延迟，有助于提升微服务间调用的响应速度。
 
@@ -817,7 +881,9 @@ HTTP响应的基本结构包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 管理Bean的生命周期，包括实例化、配置和依赖注入。IoC容器的核心职责是通过控制反转（Inversion of Control）管理Bean的创建和依赖关系注入，从而降低组件间的耦合度。选项B描述的是Spring MVC的职责，选项C属于数据源管理，选项D虽然是Spring的功能之一，但不是IoC容器的主要职责。</strong></p>
+  <p><strong>
+
+正确答案: A. 管理Bean的生命周期，包括实例化、配置和依赖注入。IoC容器的核心职责是通过控制反转（Inversion of Control）管理Bean的创建和依赖关系注入，从而降低组件间的耦合度。选项B描述的是Spring MVC的职责，选项C属于数据源管理，选项D虽然是Spring的功能之一，但不是IoC容器的主要职责。</strong></p>
 </details>
 
 **问题 2:**
@@ -828,7 +894,9 @@ HTTP响应的基本结构包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Spring容器通过IoC（控制反转）实现依赖注入，其核心原理包括Bean的定义、实例化、属性注入和生命周期管理。具体流程如下：
+  <p><strong>
+
+正确答案: Spring容器通过IoC（控制反转）实现依赖注入，其核心原理包括Bean的定义、实例化、属性注入和生命周期管理。具体流程如下：
 
 1. **Bean定义加载**：Spring容器读取配置文件（XML、注解或Java配置类），解析Bean的定义信息，构建BeanDefinition对象。
 
@@ -864,7 +932,9 @@ HTTP响应的基本结构包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 @RequestMapping 注解，并将 method 属性设置为 RequestMethod.POST，同时使用 @RequestParam 注解接收表单参数。 解释：在Spring MVC中，处理POST请求的标准做法是使用 @RequestMapping(method = RequestMethod.POST) 或 @PostMapping 注解。为了接收表单提交的数据，通常使用 @RequestParam 注解绑定具体的表单字段。选项B错误，因为 @GetMapping 仅处理GET请求，不适用于表单POST提交。选项C错误，虽然 @PostMapping 可以简写，但没有使用 @RequestParam 或其他绑定注解，参数绑定不会自动生效。选项D错误，GET请求不适合接收表单数据，且 @RequestBody 用于接收请求体的JSON或XML，不适合传统表单数据。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 @RequestMapping 注解，并将 method 属性设置为 RequestMethod.POST，同时使用 @RequestParam 注解接收表单参数。 解释：在Spring MVC中，处理POST请求的标准做法是使用 @RequestMapping(method = RequestMethod.POST) 或 @PostMapping 注解。为了接收表单提交的数据，通常使用 @RequestParam 注解绑定具体的表单字段。选项B错误，因为 @GetMapping 仅处理GET请求，不适用于表单POST提交。选项C错误，虽然 @PostMapping 可以简写，但没有使用 @RequestParam 或其他绑定注解，参数绑定不会自动生效。选项D错误，GET请求不适合接收表单数据，且 @RequestBody 用于接收请求体的JSON或XML，不适合传统表单数据。</strong></p>
 </details>
 
 **问题 2:**
@@ -873,7 +943,9 @@ HTTP响应的基本结构包括：
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Spring MVC中，处理用户查询请求通常需要创建一个Controller类，并在其中定义处理请求的方法。
+  <p><strong>
+
+正确答案: 在Spring MVC中，处理用户查询请求通常需要创建一个Controller类，并在其中定义处理请求的方法。
 
 1. 使用@Controller注解标注该类，表示这是一个控制器组件，负责接收和处理请求。
 
@@ -886,6 +958,7 @@ HTTP响应的基本结构包括：
 5. 通过Model或ModelAndView将查询结果数据传递给视图层，视图层即可渲染出相应的页面。
 
 示例代码：
+
 ```java
 @Controller
 @RequestMapping("/books")
@@ -902,6 +975,7 @@ public class BookController {
         return "bookList"; // 返回视图名，视图解析器会解析到对应页面
     }
 }
+
 ```
 
 总结：
@@ -931,7 +1005,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 编写一个主类，并使用@SpringBootApplication注解，然后调用SpringApplication.run()方法启动应用。Spring Boot的快速开发核心是通过@SpringBootApplication注解简化配置，并且通过SpringApplication.run()方法快速启动整个应用，避免了手动加载配置和复杂的初始化过程。选项B和C描述的是传统Spring应用启动方式，选项D虽然是Spring Boot用于传统Servlet容器部署的方式，但并非最简便的启动方式。</strong></p>
+  <p><strong>
+
+正确答案: A. 编写一个主类，并使用@SpringBootApplication注解，然后调用SpringApplication.run()方法启动应用。Spring Boot的快速开发核心是通过@SpringBootApplication注解简化配置，并且通过SpringApplication.run()方法快速启动整个应用，避免了手动加载配置和复杂的初始化过程。选项B和C描述的是传统Spring应用启动方式，选项D虽然是Spring Boot用于传统Servlet容器部署的方式，但并非最简便的启动方式。</strong></p>
 </details>
 
 **问题 2:**
@@ -940,7 +1016,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 利用Spring Boot启动器（Starters）：
+  <p><strong>
+
+正确答案: 1. 利用Spring Boot启动器（Starters）：
 - 使用spring-boot-starter-web来快速搭建Web应用，包含了Tomcat服务器和Spring MVC等核心组件。
 
 2. 自动配置：
@@ -979,7 +1057,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 处理用户身份验证请求并决定认证是否成功。解释：AuthenticationManager 是 Spring Security 中负责处理身份验证逻辑的核心接口。它接收身份验证请求（Authentication 对象），通过调用相应的 AuthenticationProvider 来验证用户凭证，并决定认证是否成功。选项 A 描述的是 UserDetailsService 的职责，选项 C 与会话管理相关，选项 D 属于访问控制（授权）范畴，均不是 AuthenticationManager 的主要职责。</strong></p>
+  <p><strong>
+
+正确答案: B. 处理用户身份验证请求并决定认证是否成功。解释：AuthenticationManager 是 Spring Security 中负责处理身份验证逻辑的核心接口。它接收身份验证请求（Authentication 对象），通过调用相应的 AuthenticationProvider 来验证用户凭证，并决定认证是否成功。选项 A 描述的是 UserDetailsService 的职责，选项 C 与会话管理相关，选项 D 属于访问控制（授权）范畴，均不是 AuthenticationManager 的主要职责。</strong></p>
 </details>
 
 **问题 2:**
@@ -988,7 +1068,22 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Spring Security的核心流程包括认证(Authentication)和授权(Authorization)两个阶段。认证阶段负责验证用户身份，通常通过用户名和密码，认证成功后生成包含用户信息和权限的Authentication对象。授权阶段则根据Authentication对象中的权限信息决定用户是否有权访问特定资源。\n\n在基于角色的访问控制中，通常通过配置角色（如ROLE_ADMIN、ROLE_USER）来限制访问。可以在配置类中使用HttpSecurity的authorizeRequests方法，通过antMatchers指定URL路径并调用hasRole或hasAuthority方法限制访问。例如：\n```java\nhttp.authorizeRequests()\n    .antMatchers("/admin/**").hasRole("ADMIN")\n    .antMatchers("/user/**").hasRole("USER")\n    .anyRequest().authenticated();\n```\n\n常见问题包括：\n1. 角色前缀问题：Spring Security默认角色需要“ROLE_”前缀，配置时需注意角色名称是否匹配。\n2. 认证未配置成功导致所有请求被拒绝：需确保AuthenticationManager配置正确且用户详情服务正确加载用户信息。\n3. 过滤器链顺序不正确导致安全规则未生效：需检查Spring Security配置类及过滤器顺序。\n4. 静态资源被安全拦截：应在配置中排除静态资源路径。\n\n解决思路是仔细检查配置代码，利用调试和日志定位问题，确保角色名称一致，过滤器链正确，用户信息加载无误。</strong></p>
+  <p><strong>
+
+正确答案: Spring Security的核心流程包括认证(Authentication)和授权(Authorization)两个阶段。认证阶段负责验证用户身份，通常通过用户名和密码，认证成功后生成包含用户信息和权限的Authentication对象。授权阶段则根据Authentication对象中的权限信息决定用户是否有权访问特定资源。在基于角色的访问控制中，通常通过配置角色（如ROLE_ADMIN、ROLE_USER）来限制访问。可以在配置类中使用HttpSecurity的authorizeRequests方法，通过antMatchers指定URL路径并调用hasRole或hasAuthority方法限制访问。例如：
+
+```java
+http.authorizeRequests()
+    .antMatchers("/admin/**").hasRole("ADMIN")
+    .antMatchers("/user/**").hasRole("USER")
+    .anyRequest().authenticated();
+
+```
+常见问题包括：
+1. 角色前缀问题：Spring Security默认角色需要“ROLE_”前缀，配置时需注意角色名称是否匹配。
+2. 认证未配置成功导致所有请求被拒绝：需确保AuthenticationManager配置正确且用户详情服务正确加载用户信息。
+3. 过滤器链顺序不正确导致安全规则未生效：需检查Spring Security配置类及过滤器顺序。
+4. 静态资源被安全拦截：应在配置中排除静态资源路径。解决思路是仔细检查配置代码，利用调试和日志定位问题，确保角色名称一致，过滤器链正确，用户信息加载无误。</strong></p>
 </details>
 
 ---
@@ -1014,7 +1109,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在Mapper映射文件中，<resultMap>标签用于定义复杂的结果映射关系，可以替代简单的<resultType>属性。这个配置是正确的，因为resultMap允许开发者定义更灵活和复杂的映射关系，适用于多表关联或者字段映射不一致的情况，而resultType则用于简单的一对一映射。</strong></p>
+  <p><strong>
+
+正确答案: B. 在Mapper映射文件中，<resultMap>标签用于定义复杂的结果映射关系，可以替代简单的<resultType>属性。这个配置是正确的，因为resultMap允许开发者定义更灵活和复杂的映射关系，适用于多表关联或者字段映射不一致的情况，而resultType则用于简单的一对一映射。</strong></p>
 </details>
 
 **问题 2:**
@@ -1029,7 +1126,10 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 全局配置文件（mybatis-config.xml）配置示例：
+  <p><strong>
+
+正确答案: 1. 全局配置文件（mybatis-config.xml）配置示例：
+
 ```xml
 <configuration>
   <settings>
@@ -1041,9 +1141,11 @@ public class BookController {
     <plugin interceptor="com.github.pagehelper.PageInterceptor" />
   </plugins>
 </configuration>
+
 ```
 
 2. 映射文件中动态SQL示例（OrderMapper.xml）：
+
 ```xml
 <select id="selectOrders" resultType="Order">
   SELECT * FROM orders
@@ -1056,6 +1158,7 @@ public class BookController {
     </if>
   </where>
 </select>
+
 ```
 
 3. 说明：
@@ -1084,7 +1187,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. @Table注解可以用来指定实体类映射的数据库表名，如果不使用，默认表名为类名。因为JPA中实体类默认映射表名是类名，@Table注解是可选的，主要用于指定不同的表名。A项错误，@Entity注解标识实体类，但实现Serializable接口不是强制要求。B项错误，@Id注解标识主键，但主键是否自动增长需配合@GeneratedValue注解使用。D项错误，@Column的name属性是可选的，默认映射字段名为属性名，不配置不会报错。</strong></p>
+  <p><strong>
+
+正确答案: C. @Table注解可以用来指定实体类映射的数据库表名，如果不使用，默认表名为类名。因为JPA中实体类默认映射表名是类名，@Table注解是可选的，主要用于指定不同的表名。A项错误，@Entity注解标识实体类，但实现Serializable接口不是强制要求。B项错误，@Id注解标识主键，但主键是否自动增长需配合@GeneratedValue注解使用。D项错误，@Column的name属性是可选的，默认映射字段名为属性名，不配置不会报错。</strong></p>
 </details>
 
 **问题 2:**
@@ -1093,7 +1198,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. @Entity注解用于定义一个实体类，该类对应数据库中的一张表，是JPA管理的持久化对象。通过@Entity，JPA和Hibernate能识别该类并进行ORM映射。
+  <p><strong>
+
+正确答案: 1. @Entity注解用于定义一个实体类，该类对应数据库中的一张表，是JPA管理的持久化对象。通过@Entity，JPA和Hibernate能识别该类并进行ORM映射。
 
 2. EntityManager是JPA的核心接口，用于管理实体的生命周期，包括增删改查操作、事务管理等。它负责将实体对象的状态同步到数据库。
 
@@ -1129,7 +1236,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 服务注册中心（如Eureka）不仅负责服务实例注册，还能动态监控服务的健康状态。
+  <p><strong>
+
+正确答案: C. 服务注册中心（如Eureka）不仅负责服务实例注册，还能动态监控服务的健康状态。
 
 解释：Eureka不仅负责服务实例的注册，还会定期通过心跳机制监控服务的健康状态，能够及时剔除不可用的实例，保证服务调用的可靠性。选项A错误，Eureka客户端会定期发送心跳保持注册状态；选项B错误，Spring Cloud Gateway依赖服务注册中心获取路由信息；选项D错误，Spring Cloud支持多种服务注册中心，如Consul、Zookeeper等。</strong></p>
 </details>
@@ -1140,7 +1249,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Spring Cloud微服务架构中，服务注册与发现通常使用Eureka或Consul作为服务注册中心。每个微服务启动时都会向Eureka Server注册自己的实例信息，其他服务通过服务发现机制获取目标服务的地址。
+  <p><strong>
+
+正确答案: 在Spring Cloud微服务架构中，服务注册与发现通常使用Eureka或Consul作为服务注册中心。每个微服务启动时都会向Eureka Server注册自己的实例信息，其他服务通过服务发现机制获取目标服务的地址。
 
 负载均衡通常通过Spring Cloud LoadBalancer或Netflix Ribbon实现，客户端调用时会从服务注册中心获取多个服务实例列表，并根据负载均衡策略（如轮询、随机、权重等）选择具体实例。
 
@@ -1174,7 +1285,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. Dubbo支持多种注册中心实现，且允许配置多个注册中心以实现高可用。 解析：Dubbo并不限于使用Zookeeper作为注册中心，也支持如Nacos、Redis等多种注册中心实现，并且允许配置多个注册中心以提高系统的高可用性和容灾能力。选项A错误，因为Zookeeper不是唯一支持的注册中心；选项B描述不准确，消费者是从注册中心订阅服务，而非主动拉取；选项D错误，Dubbo的调用一般通过注册中心进行服务发现，直连仅为特殊配置。</strong></p>
+  <p><strong>
+
+正确答案: C. Dubbo支持多种注册中心实现，且允许配置多个注册中心以实现高可用。 解析：Dubbo并不限于使用Zookeeper作为注册中心，也支持如Nacos、Redis等多种注册中心实现，并且允许配置多个注册中心以提高系统的高可用性和容灾能力。选项A错误，因为Zookeeper不是唯一支持的注册中心；选项B描述不准确，消费者是从注册中心订阅服务，而非主动拉取；选项D错误，Dubbo的调用一般通过注册中心进行服务发现，直连仅为特殊配置。</strong></p>
 </details>
 
 **问题 2:**
@@ -1183,7 +1296,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Dubbo通过服务注册和发现实现服务治理。服务提供者启动时，将自身服务信息注册到注册中心（如Zookeeper），服务消费者从注册中心获取可用服务列表，实现服务发现。这样服务消费者无需关心具体服务实例地址，实现了服务的动态管理。
+  <p><strong>
+
+正确答案: Dubbo通过服务注册和发现实现服务治理。服务提供者启动时，将自身服务信息注册到注册中心（如Zookeeper），服务消费者从注册中心获取可用服务列表，实现服务发现。这样服务消费者无需关心具体服务实例地址，实现了服务的动态管理。
 
 在高并发场景下，Dubbo通过负载均衡策略（如随机、轮询、一致性哈希等）将请求分发到多个服务实例，避免单点压力过大，提升整体吞吐量。同时，Dubbo提供容错机制，包括失败重试、失败快速失败、失败转移等策略，保证在部分服务实例不可用时，服务调用仍能继续。
 
@@ -1214,7 +1329,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. Kafka通过提交offset实现消息确认，确保消息不会被重复消费。Kafka的消费者通过提交offset来告诉Broker该消息已被成功处理，这样可以避免消息重复消费。而选项A错误，因为Kafka的确认是通过offset提交而非显式ACK消息；选项B错误，RabbitMQ默认是自动确认消息，但如果消费者处理失败，消息会被重新投递；选项D错误，RabbitMQ支持消息确认机制，确保消息可靠传递。</strong></p>
+  <p><strong>
+
+正确答案: C. Kafka通过提交offset实现消息确认，确保消息不会被重复消费。Kafka的消费者通过提交offset来告诉Broker该消息已被成功处理，这样可以避免消息重复消费。而选项A错误，因为Kafka的确认是通过offset提交而非显式ACK消息；选项B错误，RabbitMQ默认是自动确认消息，但如果消费者处理失败，消息会被重新投递；选项D错误，RabbitMQ支持消息确认机制，确保消息可靠传递。</strong></p>
 </details>
 
 **问题 2:**
@@ -1223,7 +1340,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 基本流程：
+  <p><strong>
+
+正确答案: 1. 基本流程：
 - 订单服务在订单创建成功后，将订单信息封装成消息发送到消息队列（Kafka或RabbitMQ）。
 - 库存服务作为消费者，订阅对应的主题或队列，从消息队列中接收订单消息。
 - 库存服务根据收到的订单消息进行库存扣减处理。
@@ -1261,7 +1380,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 主键必须唯一且不能为空，因此不能有重复或NULL值。主键的核心作用是唯一标识表中的每条记录，因此它要求值唯一且不能为空，保证数据完整性和唯一性。</strong></p>
+  <p><strong>
+
+正确答案: B. 主键必须唯一且不能为空，因此不能有重复或NULL值。主键的核心作用是唯一标识表中的每条记录，因此它要求值唯一且不能为空，保证数据完整性和唯一性。</strong></p>
 </details>
 
 **问题 2:**
@@ -1270,7 +1391,13 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 外键是关系型数据库中用于维护两个表之间数据关联性的一种约束，它确保一个表中的字段值必须对应另一个表中的主键值，从而保证数据的参照完整性。\n\n在电商平台订单系统中，订单表（orders）通常会包含一个用户ID字段（user_id），该字段作为外键关联到用户表（users）的主键（user_id）。这样可以确保每个订单都关联到一个存在的用户，防止出现订单关联不存在用户的情况。\n\n如果MySQL中外键约束被禁用，可能导致订单表中出现无效的用户ID，造成数据不一致和孤立记录，这会影响业务逻辑的准确性和数据的可靠性。\n\n为了避免这些风险，可以通过以下方式：\n1. 保持外键约束启用，确保数据库层面强制数据完整性。\n2. 在应用层面增加数据校验，防止插入无效数据。\n3. 定期执行数据一致性检查和清理，发现并修复孤立记录。\n4. 设计合理的事务机制，确保数据操作的原子性和一致性。</strong></p>
+  <p><strong>
+
+正确答案: 外键是关系型数据库中用于维护两个表之间数据关联性的一种约束，它确保一个表中的字段值必须对应另一个表中的主键值，从而保证数据的参照完整性。在电商平台订单系统中，订单表（orders）通常会包含一个用户ID字段（user_id），该字段作为外键关联到用户表（users）的主键（user_id）。这样可以确保每个订单都关联到一个存在的用户，防止出现订单关联不存在用户的情况。如果MySQL中外键约束被禁用，可能导致订单表中出现无效的用户ID，造成数据不一致和孤立记录，这会影响业务逻辑的准确性和数据的可靠性。为了避免这些风险，可以通过以下方式：
+1. 保持外键约束启用，确保数据库层面强制数据完整性。
+2. 在应用层面增加数据校验，防止插入无效数据。
+3. 定期执行数据一致性检查和清理，发现并修复孤立记录。
+4. 设计合理的事务机制，确保数据操作的原子性和一致性。</strong></p>
 </details>
 
 ---
@@ -1291,7 +1418,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 避免在WHERE子句中对列进行函数操作，以便利用索引加速查询。因为在WHERE子句中对列进行函数操作会导致索引失效，数据库无法利用索引加速查询，进而影响性能。</strong></p>
+  <p><strong>
+
+正确答案: B. 避免在WHERE子句中对列进行函数操作，以便利用索引加速查询。因为在WHERE子句中对列进行函数操作会导致索引失效，数据库无法利用索引加速查询，进而影响性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -1302,7 +1431,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 查看执行计划（EXPLAIN）：通过EXPLAIN语句查看SQL的执行计划，分析是否存在全表扫描、索引未命中、连接顺序不合理等问题。
+  <p><strong>
+
+正确答案: 1. 查看执行计划（EXPLAIN）：通过EXPLAIN语句查看SQL的执行计划，分析是否存在全表扫描、索引未命中、连接顺序不合理等问题。
 
 2. 添加或优化索引：根据查询条件中的过滤字段和连接字段，添加合适的索引（如单列索引、联合索引）以加快数据检索速度，避免全表扫描。
 
@@ -1333,7 +1464,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 可重复读隔离级别可以防止脏读和不可重复读，但无法防止幻读。可重复读保证在同一个事务中多次读取同一数据时结果一致，避免了不可重复读，同时防止了脏读，但幻读仍可能发生，因为幻读涉及到新记录的插入，这通常需要更高级的可序列化隔离级别来处理。</strong></p>
+  <p><strong>
+
+正确答案: A. 可重复读隔离级别可以防止脏读和不可重复读，但无法防止幻读。可重复读保证在同一个事务中多次读取同一数据时结果一致，避免了不可重复读，同时防止了脏读，但幻读仍可能发生，因为幻读涉及到新记录的插入，这通常需要更高级的可序列化隔离级别来处理。</strong></p>
 </details>
 
 **问题 2:**
@@ -1344,7 +1477,9 @@ public class BookController {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在并发购买场景下，可能出现的事务并发问题包括：
+  <p><strong>
+
+正确答案: 在并发购买场景下，可能出现的事务并发问题包括：
 
 1. 脏读（Dirty Read）：一个事务读取到了另一个未提交事务的修改。
 2. 不可重复读（Non-repeatable Read）：同一事务中多次读取同一数据，结果不同。
@@ -1359,6 +1494,7 @@ public class BookController {
 
 在Java后端中，可以通过@Transactional注解的isolation属性设置事务隔离级别。例如：
 
+
 ```java
 @Transactional(isolation = Isolation.REPEATABLE_READ)
 public void purchaseProduct(Long productId, int quantity) {
@@ -1371,6 +1507,7 @@ public void purchaseProduct(Long productId, int quantity) {
         throw new InsufficientStockException();
     }
 }
+
 ```
 
 合理设置隔离级别时，需要根据业务需求权衡一致性与性能。对库存这种关键数据，通常采用REPEATABLE READ或SERIALIZABLE确保准确性，而对于读多写少的场景，可能选择较低隔离级别提高性能。同时可以结合乐观锁或悲观锁机制，进一步保证并发安全。</strong></p>
@@ -1397,7 +1534,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C。Redis通常用于缓存数据，因其支持丰富的数据结构和快速的内存存取。正确理解Redis的主要用途是关键，Redis是一个内存数据库，支持多种数据结构，主要用于快速缓存和实时数据处理。A选项错误，Redis不是文档数据库；B选项错误，Redis支持事务（MULTI/EXEC命令）；D选项错误，MongoDB是磁盘存储的文档数据库，数据不会因断电丢失。</strong></p>
+  <p><strong>
+
+正确答案: C。Redis通常用于缓存数据，因其支持丰富的数据结构和快速的内存存取。正确理解Redis的主要用途是关键，Redis是一个内存数据库，支持多种数据结构，主要用于快速缓存和实时数据处理。A选项错误，Redis不是文档数据库；B选项错误，Redis支持事务（MULTI/EXEC命令）；D选项错误，MongoDB是磁盘存储的文档数据库，数据不会因断电丢失。</strong></p>
 </details>
 
 **问题 2:**
@@ -1406,7 +1545,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在该场景下，可以使用Redis作为缓存层，MongoDB作为持久化数据库。具体设计如下：
+  <p><strong>
+
+正确答案: 在该场景下，可以使用Redis作为缓存层，MongoDB作为持久化数据库。具体设计如下：
 
 1. 使用Redis缓存商品详情，利用其快速读写性能提升响应速度。
 2. 设定合理的缓存过期时间（TTL），防止缓存雪崩。
@@ -1435,7 +1576,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 对查询结果为空的数据也进行缓存，并设置较短的过期时间。 解析：缓存穿透是指请求的数据在缓存和数据库中都不存在，导致请求直接穿透到数据库，可能造成数据库压力过大。通过缓存空结果（例如空的列表或null），并设置较短的过期时间，可以有效减少针对不存在数据的重复请求，保护数据库。选项A虽然避免了缓存穿透，但会导致大量请求直接打到数据库。选项C不缓存空结果，无法防止穿透。选项D忽略数据一致性问题，不是解决穿透的正确方法。</strong></p>
+  <p><strong>
+
+正确答案: B. 对查询结果为空的数据也进行缓存，并设置较短的过期时间。 解析：缓存穿透是指请求的数据在缓存和数据库中都不存在，导致请求直接穿透到数据库，可能造成数据库压力过大。通过缓存空结果（例如空的列表或null），并设置较短的过期时间，可以有效减少针对不存在数据的重复请求，保护数据库。选项A虽然避免了缓存穿透，但会导致大量请求直接打到数据库。选项C不缓存空结果，无法防止穿透。选项D忽略数据一致性问题，不是解决穿透的正确方法。</strong></p>
 </details>
 
 **问题 2:**
@@ -1444,7 +1587,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 缓存设计方案：
+  <p><strong>
+
+正确答案: 1. 缓存设计方案：
 - 将商品详情数据存储在分布式缓存中（如Redis），缓存的key一般设计为商品ID相关的唯一标识。
 - 设计合理的缓存过期时间，既保证数据的及时性，又减少频繁的缓存失效。
 - 使用合适的缓存更新策略，如写库同步更新缓存或异步更新。
@@ -1489,7 +1634,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 采用缓存一致性协议（如基于消息队列的更新通知）来同步各节点缓存数据。因为分布式缓存中各节点可能存储相同数据的副本，采用一致性协议可以确保当数据更新时，所有节点的缓存能够及时同步，保证缓存数据的一致性和系统的高可用性。选项A忽略了分布式环境下的多节点同步问题；选项B描述的是缓存穿透的场景，不能保证缓存一致性；选项D虽然简化了管理，但单点缓存服务器存在单点故障风险，不利于高可用性。</strong></p>
+  <p><strong>
+
+正确答案: C. 采用缓存一致性协议（如基于消息队列的更新通知）来同步各节点缓存数据。因为分布式缓存中各节点可能存储相同数据的副本，采用一致性协议可以确保当数据更新时，所有节点的缓存能够及时同步，保证缓存数据的一致性和系统的高可用性。选项A忽略了分布式环境下的多节点同步问题；选项B描述的是缓存穿透的场景，不能保证缓存一致性；选项D虽然简化了管理，但单点缓存服务器存在单点故障风险，不利于高可用性。</strong></p>
 </details>
 
 **问题 2:**
@@ -1498,7 +1645,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在高并发电商系统中使用分布式缓存时，保证缓存与数据库数据一致性是关键。常见的策略包括：
+  <p><strong>
+
+正确答案: 在高并发电商系统中使用分布式缓存时，保证缓存与数据库数据一致性是关键。常见的策略包括：
 
 1. **缓存失效（Cache Aside）策略**：
    - 应用先从缓存读取数据，缓存未命中时从数据库读取，并将数据写入缓存。
@@ -1548,7 +1697,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. JWT可以被用作访问令牌，以便资源服务器验证请求的合法性。 解释：JWT是一种自包含的令牌格式，通常用于作为OAuth2的访问令牌，资源服务器可以通过校验JWT的签名来验证请求的合法性。选项A错误，因为JWT使用的是签名（通常是对称或非对称签名），而非必须使用对称加密；选项B错误，JWT的payload部分是Base64编码的，不是加密的，任何人都可以解码查看；选项D错误，OAuth2并不强制访问令牌必须是JWT格式，访问令牌的格式是开放的。</strong></p>
+  <p><strong>
+
+正确答案: C. JWT可以被用作访问令牌，以便资源服务器验证请求的合法性。 解释：JWT是一种自包含的令牌格式，通常用于作为OAuth2的访问令牌，资源服务器可以通过校验JWT的签名来验证请求的合法性。选项A错误，因为JWT使用的是签名（通常是对称或非对称签名），而非必须使用对称加密；选项B错误，JWT的payload部分是Base64编码的，不是加密的，任何人都可以解码查看；选项D错误，OAuth2并不强制访问令牌必须是JWT格式，访问令牌的格式是开放的。</strong></p>
 </details>
 
 **问题 2:**
@@ -1563,7 +1714,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. OAuth2和JWT的作用和区别：
+  <p><strong>
+
+正确答案: 1. OAuth2和JWT的作用和区别：
 - OAuth2是一种授权框架，用于授权客户端访问用户的资源，定义了令牌的获取和使用流程；它关注的是授权流程和令牌的发放。
 - JWT是一种令牌格式，常用于OAuth2中作为访问令牌或身份令牌，包含用户身份和权限信息，易于传输和验证。
 
@@ -1603,7 +1756,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用PreparedStatement或参数化查询来执行SQL语句。使用PreparedStatement可以有效避免SQL注入，因为它将SQL语句与参数分开处理，防止恶意SQL代码被执行。选项A虽然对输入进行类型转换有助于减少错误，但不能完全防止SQL注入。选项C依赖前端校验，容易被绕过，不安全。选项D不切实际且会影响正常业务操作。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用PreparedStatement或参数化查询来执行SQL语句。使用PreparedStatement可以有效避免SQL注入，因为它将SQL语句与参数分开处理，防止恶意SQL代码被执行。选项A虽然对输入进行类型转换有助于减少错误，但不能完全防止SQL注入。选项C依赖前端校验，容易被绕过，不安全。选项D不切实际且会影响正常业务操作。</strong></p>
 </details>
 
 **问题 2:**
@@ -1617,7 +1772,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 漏洞产生原因：
+  <p><strong>
+
+正确答案: 1. 漏洞产生原因：
 - XSS（跨站脚本攻击）：用户提交的评论内容如果未经有效过滤或转义直接输出到网页，会导致恶意JavaScript代码执行，攻击者可以窃取用户Cookie、劫持会话等。
 - CSRF（跨站请求伪造）：攻击者诱导已登录用户浏览恶意网站，利用用户的登录状态发送伪造请求（如提交评论），导致用户在不知情的情况下执行了攻击者指定的操作。
 - SQL注入：如果评论内容直接拼接进SQL语句查询或插入，没有使用预编译语句或参数化查询，攻击者可以构造恶意SQL语句，破坏数据库完整性或窃取敏感数据。
@@ -1650,7 +1807,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 对称加密使用相同的密钥进行加密和解密，适合处理大数据量。——对称加密算法使用同一个密钥进行加密和解密，因其计算速度快，适合加密大量数据。选项A错误，对称加密不使用公钥和私钥；选项B错误，描述的是对称加密的特点；选项D错误，非对称加密支持数字签名，利用私钥签名、公钥验证。</strong></p>
+  <p><strong>
+
+正确答案: C. 对称加密使用相同的密钥进行加密和解密，适合处理大数据量。——对称加密算法使用同一个密钥进行加密和解密，因其计算速度快，适合加密大量数据。选项A错误，对称加密不使用公钥和私钥；选项B错误，描述的是对称加密的特点；选项D错误，非对称加密支持数字签名，利用私钥签名、公钥验证。</strong></p>
 </details>
 
 **问题 2:**
@@ -1664,7 +1823,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 对于服务端与客户端之间需要快速加密大量数据传输的场景，应该选择对称加密。原因是对称加密算法（如AES）加解密速度快，适合处理大量数据，且计算资源消耗较低。缺点是密钥管理较为复杂，双方需要安全地共享和存储同一密钥。
+  <p><strong>
+
+正确答案: 1. 对于服务端与客户端之间需要快速加密大量数据传输的场景，应该选择对称加密。原因是对称加密算法（如AES）加解密速度快，适合处理大量数据，且计算资源消耗较低。缺点是密钥管理较为复杂，双方需要安全地共享和存储同一密钥。
 
 2. 需要在服务端验证客户端身份，确保数据来源真实性的场景，应选择非对称加密。非对称加密（如RSA）使用公钥和私钥对，支持数字签名和身份验证。客户端可以使用私钥对数据签名，服务端用公钥验证签名，确保数据未被篡改且来源可信。但非对称加密运算较慢，不适合大量数据加密。
 
@@ -1693,7 +1854,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用@PreAuthorize注解结合Spring EL表达式进行权限判断
+  <p><strong>
+
+正确答案: A. 使用@PreAuthorize注解结合Spring EL表达式进行权限判断
 
 解释：@PreAuthorize注解允许在方法级别通过Spring EL表达式动态判断权限，适合复杂且细粒度的权限控制。选项B虽然可行，但不具备声明式和统一管理优势，且代码侵入性较强。选项C主要用于URL层面的权限配置，不适合动态方法级权限控制。选项D是用户认证相关，非权限校验方式。</strong></p>
 </details>
@@ -1704,7 +1867,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在多租户SaaS应用中使用Spring Security实现基于租户的权限控制，设计思路如下：
+  <p><strong>
+
+正确答案: 在多租户SaaS应用中使用Spring Security实现基于租户的权限控制，设计思路如下：
 
 1. 租户信息传递与解析：
    - 通常租户信息（如租户ID）可以通过请求头、URL路径或JWT Token携带。
@@ -1752,7 +1917,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. jmap —— 用于生成堆内存快照（heap dump）并分析对象分布。jmap工具能够生成堆快照，有助于详细分析堆内存中的对象分布及潜在的内存泄漏问题，而jstat主要用于监控内存和GC统计，jstack用于线程堆栈分析，jcmd VM.flags主要用于查看和修改JVM参数。</strong></p>
+  <p><strong>
+
+正确答案: B. jmap —— 用于生成堆内存快照（heap dump）并分析对象分布。jmap工具能够生成堆快照，有助于详细分析堆内存中的对象分布及潜在的内存泄漏问题，而jstat主要用于监控内存和GC统计，jstack用于线程堆栈分析，jcmd VM.flags主要用于查看和修改JVM参数。</strong></p>
 </details>
 
 **问题 2:**
@@ -1761,7 +1928,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，使用监控工具如jstat、jvisualvm、jconsole或Java Flight Recorder监控GC活动、堆内存使用情况和线程状态。重点关注Full GC的频率和持续时间，以及堆内存的使用趋势。通过GC日志（使用-XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:<file>）分析GC行为，确认是老年代频繁Full GC还是新生代内存不足。
+  <p><strong>
+
+正确答案: 首先，使用监控工具如jstat、jvisualvm、jconsole或Java Flight Recorder监控GC活动、堆内存使用情况和线程状态。重点关注Full GC的频率和持续时间，以及堆内存的使用趋势。通过GC日志（使用-XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:<file>）分析GC行为，确认是老年代频繁Full GC还是新生代内存不足。
 
 如果确认堆内存分配过高导致频繁Full GC，可以从以下方面调优：
 1. 调整堆内存大小（-Xms和-Xmx），确保堆大小合理，避免频繁GC。
@@ -1792,7 +1961,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用适当的索引，并根据查询频率和类型定期重建或优化索引。——合理使用索引可以显著提升查询效率，避免盲目创建过多索引导致写操作变慢和存储空间浪费。定期维护索引确保其高效。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用适当的索引，并根据查询频率和类型定期重建或优化索引。——合理使用索引可以显著提升查询效率，避免盲目创建过多索引导致写操作变慢和存储空间浪费。定期维护索引确保其高效。</strong></p>
 </details>
 
 **问题 2:**
@@ -1801,7 +1972,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在面对高并发导致的数据库性能下降时，可以从以下几个方面进行调优：
+  <p><strong>
+
+正确答案: 在面对高并发导致的数据库性能下降时，可以从以下几个方面进行调优：
 
 1. **分析慢查询日志**：开启MySQL的慢查询日志，定位执行时间较长的SQL语句。
 
@@ -1841,7 +2014,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 将循环不变的计算或对象创建移出循环体，避免重复执行。 解释：将循环中不变的计算或对象创建移出循环体，可以减少重复计算和对象创建，显著提升性能。选项A会导致大量对象创建增加GC压力；选项C中频繁使用"+"拼接字符串在循环中会产生大量临时对象，建议使用StringBuilder；选项D中同步方法会带来锁竞争，可能导致性能下降。</strong></p>
+  <p><strong>
+
+正确答案: B. 将循环不变的计算或对象创建移出循环体，避免重复执行。 解释：将循环中不变的计算或对象创建移出循环体，可以减少重复计算和对象创建，显著提升性能。选项A会导致大量对象创建增加GC压力；选项C中频繁使用"+"拼接字符串在循环中会产生大量临时对象，建议使用StringBuilder；选项D中同步方法会带来锁竞争，可能导致性能下降。</strong></p>
 </details>
 
 **问题 2:**
@@ -1850,7 +2025,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在优化订单查询接口的响应时间时，可以从以下几个方面入手：
+  <p><strong>
+
+正确答案: 在优化订单查询接口的响应时间时，可以从以下几个方面入手：
 
 1. 数据库访问优化
    - 使用合适的索引，减少全表扫描。
@@ -1896,7 +2073,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 选择合适的线程池类型（如FixedThreadPool、CachedThreadPool或ScheduledThreadPool），并根据任务特性调整线程池大小和队列类型。--正确答案是C，因为线程池的性能优化依赖于根据具体任务特性合理选择线程池类型及其参数配置。固定线程数不一定适合所有场景，过大线程数会导致上下文切换开销增加；无界队列可能导致内存溢出；而设置过大的核心线程数也会浪费资源。只有根据任务的性质（CPU密集型或IO密集型）调整线程池类型和参数，才能实现最佳性能和资源利用。</strong></p>
+  <p><strong>
+
+正确答案: C. 选择合适的线程池类型（如FixedThreadPool、CachedThreadPool或ScheduledThreadPool），并根据任务特性调整线程池大小和队列类型。--正确答案是C，因为线程池的性能优化依赖于根据具体任务特性合理选择线程池类型及其参数配置。固定线程数不一定适合所有场景，过大线程数会导致上下文切换开销增加；无界队列可能导致内存溢出；而设置过大的核心线程数也会浪费资源。只有根据任务的性质（CPU密集型或IO密集型）调整线程池类型和参数，才能实现最佳性能和资源利用。</strong></p>
 </details>
 
 **问题 2:**
@@ -1905,7 +2084,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在高并发场景下，优化异步编程和线程池主要从以下几个方面入手：
+  <p><strong>
+
+正确答案: 在高并发场景下，优化异步编程和线程池主要从以下几个方面入手：
 
 1. 线程池参数调整：
    - 核心线程数(corePoolSize)：根据服务器CPU核数和任务特性调整，通常设为CPU核数的1到2倍。
@@ -1944,7 +2125,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -1953,7 +2136,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在分布式系统中进行性能优化时，首先需要准确诊断性能瓶颈。常用的诊断手段包括：\n\n1. **分布式链路追踪**：利用如Zipkin、Jaeger等工具，追踪请求在各个服务之间的调用链，找出响应时间长的服务或调用环节。\n\n2. **监控与指标分析**：通过监控系统（如Prometheus+Grafana）收集CPU、内存、网络IO、数据库查询时间、服务调用次数等指标，分析异常点。\n\n3. **日志分析**：结合日志查看异常、错误和慢请求记录，辅助定位问题。\n\n针对订单服务响应时间长，可能的优化方向包括：\n\n- **服务拆分与资源隔离**：确认订单服务是否存在单点性能瓶颈，考虑拆分子服务或增加实例实现负载均衡。\n\n- **缓存优化**：对频繁访问的数据使用分布式缓存（如Redis）减少数据库访问压力。\n\n- **数据库优化**：检查SQL查询效率，添加适当索引，优化事务，或者采用读写分离、分库分表策略。\n\n- **异步处理**：对于非实时要求的操作（如发送通知、更新统计等）采用异步消息队列（如Kafka）减轻主流程压力。\n\n- **连接池与线程池调优**：合理配置数据库连接池和线程池，避免资源争抢或空闲浪费。\n\n- **网络和序列化优化**：减少网络调用次数，采用高效的序列化协议（如Protobuf），降低网络传输延迟。\n\n通过上述手段，结合具体场景和数据，逐步定位并解决性能瓶颈，提升系统响应性能和用户体验。</strong></p>
+  <p><strong>
+
+正确答案: 在分布式系统中进行性能优化时，首先需要准确诊断性能瓶颈。常用的诊断手段包括：1. **分布式链路追踪**：利用如Zipkin、Jaeger等工具，追踪请求在各个服务之间的调用链，找出响应时间长的服务或调用环节。2. **监控与指标分析**：通过监控系统（如Prometheus+Grafana）收集CPU、内存、网络IO、数据库查询时间、服务调用次数等指标，分析异常点。3. **日志分析**：结合日志查看异常、错误和慢请求记录，辅助定位问题。针对订单服务响应时间长，可能的优化方向包括：- **服务拆分与资源隔离**：确认订单服务是否存在单点性能瓶颈，考虑拆分子服务或增加实例实现负载均衡。- **缓存优化**：对频繁访问的数据使用分布式缓存（如Redis）减少数据库访问压力。- **数据库优化**：检查SQL查询效率，添加适当索引，优化事务，或者采用读写分离、分库分表策略。- **异步处理**：对于非实时要求的操作（如发送通知、更新统计等）采用异步消息队列（如Kafka）减轻主流程压力。- **连接池与线程池调优**：合理配置数据库连接池和线程池，避免资源争抢或空闲浪费。- **网络和序列化优化**：减少网络调用次数，采用高效的序列化协议（如Protobuf），降低网络传输延迟。通过上述手段，结合具体场景和数据，逐步定位并解决性能瓶颈，提升系统响应性能和用户体验。</strong></p>
 </details>
 
 ---
@@ -1977,7 +2162,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 一致性 (Consistency)、可用性 (Availability)、分区容忍性 (Partition Tolerance) — CAP定理是分布式系统设计的基本理论，指出系统在面对网络分区时，必须在保持一致性和可用性之间做权衡。选项B混淆了可扩展性，选项C引入了安全性，选项D中的可靠性不属于CAP定理的三大属性。</strong></p>
+  <p><strong>
+
+正确答案: A. 一致性 (Consistency)、可用性 (Availability)、分区容忍性 (Partition Tolerance) — CAP定理是分布式系统设计的基本理论，指出系统在面对网络分区时，必须在保持一致性和可用性之间做权衡。选项B混淆了可扩展性，选项C引入了安全性，选项D中的可靠性不属于CAP定理的三大属性。</strong></p>
 </details>
 
 **问题 2:**
@@ -1986,7 +2173,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在分布式系统中，数据不一致通常由网络分区、节点故障、消息延迟或重复、以及并发操作引起。具体原因包括网络分区导致节点间通信中断，节点宕机导致数据更新未同步，消息顺序错乱或丢失，以及多节点并发修改同一数据导致冲突。
+  <p><strong>
+
+正确答案: 在分布式系统中，数据不一致通常由网络分区、节点故障、消息延迟或重复、以及并发操作引起。具体原因包括网络分区导致节点间通信中断，节点宕机导致数据更新未同步，消息顺序错乱或丢失，以及多节点并发修改同一数据导致冲突。
 
 针对电商平台下单操作，保证高可用性和数据一致性，可以考虑以下基础概念和策略：
 
@@ -2023,7 +2212,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 将本地方法调用转换成网络请求，隐藏网络通信细节，使远程调用像本地调用一样透明。——RPC框架的核心在于屏蔽网络通信复杂性，使得远程调用对调用者来说类似本地调用，方便开发和维护。</strong></p>
+  <p><strong>
+
+正确答案: B. 将本地方法调用转换成网络请求，隐藏网络通信细节，使远程调用像本地调用一样透明。——RPC框架的核心在于屏蔽网络通信复杂性，使得远程调用对调用者来说类似本地调用，方便开发和维护。</strong></p>
 </details>
 
 **问题 2:**
@@ -2032,7 +2223,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在电商系统中，UserService调用OrderService时，可以通过Java的RPC框架实现远程方法调用，核心过程包括以下几个环节：
+  <p><strong>
+
+正确答案: 在电商系统中，UserService调用OrderService时，可以通过Java的RPC框架实现远程方法调用，核心过程包括以下几个环节：
 
 1. **服务发现**：UserService在调用OrderService前，需要知道OrderService的网络地址。RPC框架通常通过注册中心（如Zookeeper、Consul）实现服务发现，服务提供者启动时将自身地址注册到注册中心，消费者通过注册中心查询可用服务实例。
 
@@ -2063,7 +2256,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. Eureka客户端必须定期向Eureka服务器发送心跳，以维持服务实例的注册状态。 解释：Eureka客户端通过定期发送心跳（heartbeat）来告诉Eureka服务器该服务实例仍然可用，从而维持注册状态。如果心跳停止，Eureka服务器会将该实例标记为不可用。选项B错误，因为Eureka采用客户端拉取（pull）机制，而非服务器主动推送。选项C错误，Eureka支持跨数据中心的配置和服务发现。选项D错误，客户端并不直接访问数据库，而是通过Eureka服务器的REST API获取服务信息。</strong></p>
+  <p><strong>
+
+正确答案: A. Eureka客户端必须定期向Eureka服务器发送心跳，以维持服务实例的注册状态。 解释：Eureka客户端通过定期发送心跳（heartbeat）来告诉Eureka服务器该服务实例仍然可用，从而维持注册状态。如果心跳停止，Eureka服务器会将该实例标记为不可用。选项B错误，因为Eureka采用客户端拉取（pull）机制，而非服务器主动推送。选项C错误，Eureka支持跨数据中心的配置和服务发现。选项D错误，客户端并不直接访问数据库，而是通过Eureka服务器的REST API获取服务信息。</strong></p>
 </details>
 
 **问题 2:**
@@ -2072,7 +2267,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能原因分析：
+  <p><strong>
+
+正确答案: 可能原因分析：
 1. 心跳机制异常：Eureka客户端通过定时发送心跳向Eureka Server报告自身存活状态。如果心跳发送失败（例如网络抖动、客户端负载过高），Eureka会误判该实例为不可用，从而将其剔除。
 2. 网络分区或延迟：服务实例与Eureka Server之间的网络问题导致心跳丢失或延迟，也会造成实例被误判为下线。
 3. 服务实例自身异常：服务实例可能因资源耗尽、崩溃或应用异常导致无法正常发送心跳。
@@ -2105,7 +2302,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 加权轮询（Weighted Round Robin）——根据服务器性能分配权重，按权重比例分配请求。该策略适合处理后端服务器性能差异的情况，能够根据服务器能力合理分配请求，避免性能较弱的服务器过载。其他选项中，轮询和随机选择未考虑服务器性能差异，最少连接数虽能动态调整但对性能差异不敏感。</strong></p>
+  <p><strong>
+
+正确答案: B. 加权轮询（Weighted Round Robin）——根据服务器性能分配权重，按权重比例分配请求。该策略适合处理后端服务器性能差异的情况，能够根据服务器能力合理分配请求，避免性能较弱的服务器过载。其他选项中，轮询和随机选择未考虑服务器性能差异，最少连接数虽能动态调整但对性能差异不敏感。</strong></p>
 </details>
 
 **问题 2:**
@@ -2114,7 +2313,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在分布式电商系统中常见的负载均衡策略包括：
+  <p><strong>
+
+正确答案: 在分布式电商系统中常见的负载均衡策略包括：
 
 1. 轮询（Round Robin）
    - 适用场景：服务实例性能相近，负载均衡简单。
@@ -2163,7 +2364,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. TCC（Try-Confirm-Cancel）模式。TCC模式通过将事务拆分为Try、Confirm和Cancel三个阶段，允许资源在Try阶段预留但不长时间锁定，极大减少锁持有时间，适合高延迟和分布式环境下使用。相比之下，2PC和3PC需要长时间锁资源，容易导致阻塞和性能瓶颈；基于消息队列的最终一致性方案虽然提高了系统可用性，但无法保证强一致性。</strong></p>
+  <p><strong>
+
+正确答案: C. TCC（Try-Confirm-Cancel）模式。TCC模式通过将事务拆分为Try、Confirm和Cancel三个阶段，允许资源在Try阶段预留但不长时间锁定，极大减少锁持有时间，适合高延迟和分布式环境下使用。相比之下，2PC和3PC需要长时间锁资源，容易导致阻塞和性能瓶颈；基于消息队列的最终一致性方案虽然提高了系统可用性，但无法保证强一致性。</strong></p>
 </details>
 
 **问题 2:**
@@ -2172,7 +2375,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在分布式系统中，多个微服务完成一个业务操作时，由于各服务拥有独立的数据库，事务无法跨服务自动管理，导致数据一致性问题。为保证一致性，常用的分布式事务处理方案有两种：
+  <p><strong>
+
+正确答案: 在分布式系统中，多个微服务完成一个业务操作时，由于各服务拥有独立的数据库，事务无法跨服务自动管理，导致数据一致性问题。为保证一致性，常用的分布式事务处理方案有两种：
 
 1. 两阶段提交（2PC）
 - 过程：协调者先询问所有参与者是否准备提交（准备阶段），所有参与者同意后协调者发送提交命令（提交阶段），否则发送回滚命令。
@@ -2209,7 +2414,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 使用互斥锁（mutex）或分布式锁，确保同一时间只有一个请求能重建缓存。解析：缓存击穿指的是在缓存失效瞬间，大量请求同时访问数据库，导致数据库压力剧增。使用互斥锁或分布式锁可以避免多个请求同时去加载数据库和重建缓存，从而有效防止缓存击穿。选项A虽然是常用策略，但无法防止缓存击穿，反而可能导致大量请求直接打到数据库。选项B在高并发环境中难以保证原子性，可能出现数据不一致。选项D虽然减少了缓存失效次数，但不能根本解决缓存击穿问题。</strong></p>
+  <p><strong>
+
+正确答案: C. 使用互斥锁（mutex）或分布式锁，确保同一时间只有一个请求能重建缓存。解析：缓存击穿指的是在缓存失效瞬间，大量请求同时访问数据库，导致数据库压力剧增。使用互斥锁或分布式锁可以避免多个请求同时去加载数据库和重建缓存，从而有效防止缓存击穿。选项A虽然是常用策略，但无法防止缓存击穿，反而可能导致大量请求直接打到数据库。选项B在高并发环境中难以保证原子性，可能出现数据不一致。选项D虽然减少了缓存失效次数，但不能根本解决缓存击穿问题。</strong></p>
 </details>
 
 **问题 2:**
@@ -2224,7 +2431,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 保证缓存与数据库数据一致性的常见策略有：
+  <p><strong>
+
+正确答案: 1. 保证缓存与数据库数据一致性的常见策略有：
   - 缓存更新策略（Cache Aside）：应用先更新数据库，成功后删除缓存或更新缓存。读取时先查缓存，缓存未命中再查数据库并回填缓存。这种策略简单且常用，但存在短暂的缓存与数据库不一致窗口。
   - 读写双写策略（Write Through/Write Behind）：写操作同时更新数据库和缓存，或者先写缓存异步更新数据库。写穿策略保证缓存与数据库同步，但增加写延迟；写后策略异步更新数据库，有数据丢失风险。
 
@@ -2263,7 +2472,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 生产者端使用事务消息（Transactional Message）确保消息发送的原子性，同时消费者使用幂等性设计处理重复消息。 解析：事务消息可以确保消息发送与本地事务的原子性，避免消息发送失败导致数据不一致的问题；消费者通过幂等性设计能够安全处理重复投递的消息，综合保障“至少一次”投递语义和业务正确性。选项A虽然依赖重试但无法避免重复消费，选项C的顺序消费与重复消费无必然关系，选项D延迟消费不能根本解决重复消费问题，因此B是最优实践。</strong></p>
+  <p><strong>
+
+正确答案: B. 生产者端使用事务消息（Transactional Message）确保消息发送的原子性，同时消费者使用幂等性设计处理重复消息。 解析：事务消息可以确保消息发送与本地事务的原子性，避免消息发送失败导致数据不一致的问题；消费者通过幂等性设计能够安全处理重复投递的消息，综合保障“至少一次”投递语义和业务正确性。选项A虽然依赖重试但无法避免重复消费，选项C的顺序消费与重复消费无必然关系，选项D延迟消费不能根本解决重复消费问题，因此B是最优实践。</strong></p>
 </details>
 
 **问题 2:**
@@ -2278,7 +2489,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 针对该场景，设计思路如下：
+  <p><strong>
+
+正确答案: 针对该场景，设计思路如下：
 
 1. 消息顺序性保证：
    - 使用消息中间件的分区（Partition）或队列的概念，将同一用户的订单消息发送到同一个分区/队列。
@@ -2322,7 +2535,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. @BeforeEach注解的方法会在每个测试方法执行之前执行一次。 解释：@BeforeEach注解表示该方法会在每个@Test注解的方法执行之前运行，用于进行测试前的初始化操作，确保每个测试方法都在独立且已准备好的环境中执行。选项A描述的是@BeforeAll注解的行为，选项C描述的是@AfterEach注解的行为，选项D描述不正确。</strong></p>
+  <p><strong>
+
+正确答案: B. @BeforeEach注解的方法会在每个测试方法执行之前执行一次。 解释：@BeforeEach注解表示该方法会在每个@Test注解的方法执行之前运行，用于进行测试前的初始化操作，确保每个测试方法都在独立且已准备好的环境中执行。选项A描述的是@BeforeAll注解的行为，选项C描述的是@AfterEach注解的行为，选项D描述不正确。</strong></p>
 </details>
 
 **问题 2:**
@@ -2331,7 +2546,9 @@ public void purchaseProduct(Long productId, int quantity) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在这个场景中，使用 JUnit 编写单元测试的关键是模拟账户余额不足的情况，并验证 `withdraw` 方法是否抛出了预期的异常。测试用例设计的关键点包括：
+  <p><strong>
+
+正确答案: 在这个场景中，使用 JUnit 编写单元测试的关键是模拟账户余额不足的情况，并验证 `withdraw` 方法是否抛出了预期的异常。测试用例设计的关键点包括：
 
 1. **准备测试环境**：创建一个账户实例，并设置其余额为不足以支持提现的金额。
 2. **执行操作**：调用 `withdraw(amount)` 方法，传入大于当前余额的金额。
@@ -2339,6 +2556,7 @@ public void purchaseProduct(Long productId, int quantity) {
 4. **验证异常信息（可选）**：检查异常消息是否符合预期，确保异常的准确性。
 
 示例代码（JUnit 5）：
+
 ```java
 @Test
 void testWithdraw_InsufficientFunds_ShouldThrowException() {
@@ -2351,6 +2569,7 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
     assertEquals("Insufficient funds", exception.getMessage());
 }
+
 ```
 
 通过这种方式，可以确保当余额不足时，系统能正确处理异常情况，提高代码的健壮性和可靠性。</strong></p>
@@ -2377,7 +2596,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用Mock对象可以替代数据库连接，从而避免在集成测试中对真实数据库的依赖。 解释：集成测试通常涉及多个模块的协作，使用Mock对象可以有效隔离外部依赖如数据库，避免对真实环境的影响，提高测试的稳定性和效率。而选项A错误，因为集成测试关注的是多个模块的协作而非单个模块。选项C错误，Mock技术不仅适用于单元测试，也常用于集成测试中隔离外部依赖。选项D错误，过度模拟可能导致测试环境与生产环境不一致，降低测试的有效性。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用Mock对象可以替代数据库连接，从而避免在集成测试中对真实数据库的依赖。 解释：集成测试通常涉及多个模块的协作，使用Mock对象可以有效隔离外部依赖如数据库，避免对真实环境的影响，提高测试的稳定性和效率。而选项A错误，因为集成测试关注的是多个模块的协作而非单个模块。选项C错误，Mock技术不仅适用于单元测试，也常用于集成测试中隔离外部依赖。选项D错误，过度模拟可能导致测试环境与生产环境不一致，降低测试的有效性。</strong></p>
 </details>
 
 **问题 2:**
@@ -2386,7 +2607,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在该场景下，设计集成测试时需要保证订单处理模块的业务逻辑得到验证，同时避免因第三方支付服务的不稳定性影响测试结果。具体方案如下：
+  <p><strong>
+
+正确答案: 在该场景下，设计集成测试时需要保证订单处理模块的业务逻辑得到验证，同时避免因第三方支付服务的不稳定性影响测试结果。具体方案如下：
 
 1. **划分测试范围**：订单处理模块的集成测试应包括数据库、业务逻辑及调用第三方支付服务的接口集成。
 
@@ -2427,7 +2650,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 将代码变更自动构建、测试并部署到生产环境，无需人工干预
+  <p><strong>
+
+正确答案: B. 将代码变更自动构建、测试并部署到生产环境，无需人工干预
 
 解释：持续部署（Continuous Deployment）指的是代码变更经过自动化构建和测试后，能够自动部署到生产环境，整个流程无需人工干预。选项A描述的是持续集成中的自动测试环节，选项C涉及手动操作，违背了持续部署自动化的原则，选项D则是运维相关的备份操作，不属于持续部署的核心内容。</strong></p>
 </details>
@@ -2443,7 +2668,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 持续集成阶段：
+  <p><strong>
+
+正确答案: 1. 持续集成阶段：
 - 构建可靠性：采用Maven或Gradle进行依赖管理和构建，保证构建环境一致性；使用Docker容器隔离构建环境，避免“环境漂移”。
 - 测试覆盖面：除了单元测试，还应集成集成测试（例如使用Spring Boot Test进行服务间调用模拟测试），并可引入静态代码分析工具（如SonarQube）和代码覆盖率工具（如JaCoCo）确保代码质量。
 
@@ -2479,7 +2706,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 通过配置异步日志（AsyncAppender）来异步写日志，从而减少主线程的阻塞。 解释：异步日志可以将日志写入操作放在独立线程执行，避免主线程因IO阻塞而影响性能，是常见且有效的日志优化手段。A选项中的字符串拼接会增加不必要的性能开销，尤其是在日志级别不满足输出条件时。C选项DEBUG级别日志会产生大量日志，反而可能影响性能。D选项频繁打印异常堆栈会增加日志量和IO压力，不利于性能优化。</strong></p>
+  <p><strong>
+
+正确答案: B. 通过配置异步日志（AsyncAppender）来异步写日志，从而减少主线程的阻塞。 解释：异步日志可以将日志写入操作放在独立线程执行，避免主线程因IO阻塞而影响性能，是常见且有效的日志优化手段。A选项中的字符串拼接会增加不必要的性能开销，尤其是在日志级别不满足输出条件时。C选项DEBUG级别日志会产生大量日志，反而可能影响性能。D选项频繁打印异常堆栈会增加日志量和IO压力，不利于性能优化。</strong></p>
 </details>
 
 **问题 2:**
@@ -2488,7 +2717,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 异步日志写入：利用Log4j2的异步Appender（AsyncAppender）或Logback的异步日志功能，将日志写入操作放到独立线程中，减少主业务线程的阻塞，提高整体吞吐量。
+  <p><strong>
+
+正确答案: 1. 异步日志写入：利用Log4j2的异步Appender（AsyncAppender）或Logback的异步日志功能，将日志写入操作放到独立线程中，减少主业务线程的阻塞，提高整体吞吐量。
 
 2. 日志分割与归档：设置合理的日志文件大小和滚动策略（按时间或大小），避免单个日志文件过大导致读取缓慢，同时定期归档旧日志，减小活跃日志文件的体积。
 
@@ -2519,7 +2750,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用多阶段构建（Multi-stage Build）将编译与运行环境分离。原因是多阶段构建可以在构建过程中只保留最终运行所需的文件和依赖，避免将编译时产生的中间文件和不必要的工具包含进最终镜像，从而显著减少镜像体积。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用多阶段构建（Multi-stage Build）将编译与运行环境分离。原因是多阶段构建可以在构建过程中只保留最终运行所需的文件和依赖，避免将编译时产生的中间文件和不必要的工具包含进最终镜像，从而显著减少镜像体积。</strong></p>
 </details>
 
 **问题 2:**
@@ -2530,7 +2763,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 使用Dockerfile构建Java微服务应用镜像，确保包含所有运行依赖。
+  <p><strong>
+
+正确答案: 1. 使用Dockerfile构建Java微服务应用镜像，确保包含所有运行依赖。
 2. 使用官方MySQL镜像启动数据库容器，配置数据卷以保证数据持久化。
 3. 利用Docker网络（如自定义bridge网络）连接应用容器和数据库容器，确保它们能通过容器名称互相访问。
 4. 容器化优势包括环境一致性、快速部署和易于扩展。
@@ -2559,7 +2794,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用告警抑制（Suppression）机制，限制单位时间内相同告警的触发次数。 — 告警抑制机制可以有效防止因短时间内大量相同告警触发导致的告警风暴，从而避免运维人员被大量重复告警淹没，保证告警的有效性和响应效率。选项A会导致频繁告警，容易引发告警风暴。选项C忽略警告级别可能导致问题被延迟发现。选项D增加采集频率可能导致数据量和告警频率提升，加剧告警风暴。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用告警抑制（Suppression）机制，限制单位时间内相同告警的触发次数。 — 告警抑制机制可以有效防止因短时间内大量相同告警触发导致的告警风暴，从而避免运维人员被大量重复告警淹没，保证告警的有效性和响应效率。选项A会导致频繁告警，容易引发告警风暴。选项C忽略警告级别可能导致问题被延迟发现。选项D增加采集频率可能导致数据量和告警频率提升，加剧告警风暴。</strong></p>
 </details>
 
 **问题 2:**
@@ -2568,7 +2805,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 监控关键指标：
+  <p><strong>
+
+正确答案: 1. 监控关键指标：
 - 应用层指标：接口响应时间、错误率（如HTTP 5xx错误）、请求吞吐量。
 - JVM指标：内存使用率、GC频率与时间、线程池状态。
 - 系统指标：CPU使用率、磁盘IO、网络IO。
@@ -2613,7 +2852,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 一个类应该仅有一个引起它变化的原因，即一个类只负责一项职责。 解释：单一职责原则强调每个类应该只有一个职责，且该职责引起类变化的唯一原因，避免类承担过多职责导致代码难以维护。选项B描述的是里氏替换原则，选项C是接口隔离原则的部分内容，选项D是依赖倒置原则的核心思想。</strong></p>
+  <p><strong>
+
+正确答案: A. 一个类应该仅有一个引起它变化的原因，即一个类只负责一项职责。 解释：单一职责原则强调每个类应该只有一个职责，且该职责引起类变化的唯一原因，避免类承担过多职责导致代码难以维护。选项B描述的是里氏替换原则，选项C是接口隔离原则的部分内容，选项D是依赖倒置原则的核心思想。</strong></p>
 </details>
 
 **问题 2:**
@@ -2622,7 +2863,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 现有设计中，Order类职责过多，违反了单一职责原则（SRP），使得类的维护和扩展困难。例如，支付处理和通知发送应该是不同的职责。支付方式多样化时，直接在Order类中添加支付逻辑会导致类膨胀，违反开闭原则（OCP）。通知渠道多样也会导致类似问题。
+  <p><strong>
+
+正确答案: 现有设计中，Order类职责过多，违反了单一职责原则（SRP），使得类的维护和扩展困难。例如，支付处理和通知发送应该是不同的职责。支付方式多样化时，直接在Order类中添加支付逻辑会导致类膨胀，违反开闭原则（OCP）。通知渠道多样也会导致类似问题。
 
 重构建议：
 1. 将支付处理抽象成接口（如PaymentProcessor），不同支付方式实现该接口，Order类依赖接口而非具体实现，符合依赖倒置原则（DIP）。
@@ -2650,7 +2893,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 通过事件驱动架构（Event-Driven Architecture）实现最终一致性
+  <p><strong>
+
+正确答案: B. 通过事件驱动架构（Event-Driven Architecture）实现最终一致性
 
 解释：在微服务架构中，分布式事务通常会带来性能瓶颈和复杂性，因此不推荐使用强一致性的分布式事务机制。共享单一数据库违背了微服务的独立性原则。最终一致性通过事件驱动架构实现，能够在保证系统可扩展性和服务独立性的同时，解决数据同步问题。</strong></p>
 </details>
@@ -2661,7 +2906,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 服务边界划分：
+  <p><strong>
+
+正确答案: 1. 服务边界划分：
 - 用户管理服务：负责用户注册、认证、用户信息维护等功能，确保与其他服务解耦。
 - 商品管理服务：管理商品信息、库存状态，独立处理商品相关业务。
 - 订单处理服务：负责订单创建、订单状态管理，保持订单业务的完整性。
@@ -2699,7 +2946,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 聚合根是领域模型中的一个实体，负责唯一标识整个聚合，并且是外部对象访问聚合内部其他实体的唯一入口。——聚合根定义了聚合的边界，保证聚合内部的一致性，并且是外部访问聚合内部对象的唯一途径，这是DDD中聚合设计的核心要点。</strong></p>
+  <p><strong>
+
+正确答案: A. 聚合根是领域模型中的一个实体，负责唯一标识整个聚合，并且是外部对象访问聚合内部其他实体的唯一入口。——聚合根定义了聚合的边界，保证聚合内部的一致性，并且是外部访问聚合内部对象的唯一途径，这是DDD中聚合设计的核心要点。</strong></p>
 </details>
 
 **问题 2:**
@@ -2708,7 +2957,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在领域驱动设计（DDD）中：
+  <p><strong>
+
+正确答案: 在领域驱动设计（DDD）中：
 
 - 实体（Entity）是具有唯一标识且生命周期贯穿整个业务过程的对象。实体的身份比其属性更重要。
 - 值对象（Value Object）是没有唯一标识的对象，通过其属性来定义，通常是不可变的。
@@ -2741,7 +2992,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用事件总线或消息中间件进行事件的异步传递和解耦。解释：事件驱动架构的核心优势在于通过消息中间件或事件总线实现发布者与消费者的松耦合，支持异步处理和系统的高扩展性。选项A错误，因为同步调用会导致紧耦合；选项C错误，严格同步顺序处理限制了并发和性能；选项D错误，集中处理违背了分布式事件处理的理念。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用事件总线或消息中间件进行事件的异步传递和解耦。解释：事件驱动架构的核心优势在于通过消息中间件或事件总线实现发布者与消费者的松耦合，支持异步处理和系统的高扩展性。选项A错误，因为同步调用会导致紧耦合；选项C错误，严格同步顺序处理限制了并发和性能；选项D错误，集中处理违背了分布式事件处理的理念。</strong></p>
 </details>
 
 **问题 2:**
@@ -2750,7 +3003,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 事件定义与传递机制：
+  <p><strong>
+
+正确答案: 1. 事件定义与传递机制：
    - 设计明确的事件类型，如“订单创建事件”、“库存扣减事件”、“支付完成事件”、“发货通知事件”等。
    - 采用消息中间件（如Kafka、RabbitMQ）作为事件传递的基础设施，实现异步、解耦的事件发布与订阅。
    - 各业务模块作为事件的生产者和消费者，通过监听相关事件触发相应业务逻辑。
@@ -2788,7 +3043,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 通过分布式系统中的多节点副本来实现服务冗余。该方案通过在多个节点之间复制数据和服务实例，实现了故障自动转移和负载均衡，显著提升了系统的高可用性和容错能力。相比之下，选项A虽然有备份但不能实时容错，选项C会造成单点故障风险，选项D依赖人工干预，不能满足高可用的自动恢复需求。</strong></p>
+  <p><strong>
+
+正确答案: B. 通过分布式系统中的多节点副本来实现服务冗余。该方案通过在多个节点之间复制数据和服务实例，实现了故障自动转移和负载均衡，显著提升了系统的高可用性和容错能力。相比之下，选项A虽然有备份但不能实时容错，选项C会造成单点故障风险，选项D依赖人工干预，不能满足高可用的自动恢复需求。</strong></p>
 </details>
 
 **问题 2:**
@@ -2797,7 +3054,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计基于Java的电商订单处理系统时，实现高可用与容错可以从以下几个方面考虑：
+  <p><strong>
+
+正确答案: 在设计基于Java的电商订单处理系统时，实现高可用与容错可以从以下几个方面考虑：
 
 1. 数据可靠性保障
 - 使用分布式数据库或主从复制数据库，保证数据多副本存储，避免单点数据丢失。
@@ -2837,7 +3096,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 设计微服务架构，结合服务注册与发现，实现服务实例的动态扩展。 — 微服务架构允许系统拆分为多个独立服务，结合服务注册与发现机制，能够动态增加或减少服务实例，从而有效支持系统的横向扩展，适应业务量快速增长。相比之下，单体架构和单实例部署难以灵活扩展，单纯增加硬件资源也存在物理和成本瓶颈。数据库水平拆分虽有助于数据扩展，但若服务未能动态扩展，整体系统扩展性仍受限。</strong></p>
+  <p><strong>
+
+正确答案: C. 设计微服务架构，结合服务注册与发现，实现服务实例的动态扩展。 — 微服务架构允许系统拆分为多个独立服务，结合服务注册与发现机制，能够动态增加或减少服务实例，从而有效支持系统的横向扩展，适应业务量快速增长。相比之下，单体架构和单实例部署难以灵活扩展，单纯增加硬件资源也存在物理和成本瓶颈。数据库水平拆分虽有助于数据扩展，但若服务未能动态扩展，整体系统扩展性仍受限。</strong></p>
 </details>
 
 **问题 2:**
@@ -2846,7 +3107,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计订单处理系统以保证良好的扩展性时，通常会考虑以下几个方面：
+  <p><strong>
+
+正确答案: 在设计订单处理系统以保证良好的扩展性时，通常会考虑以下几个方面：
 
 1. **设计原则**：
    - 单一职责原则（SRP）：确保每个模块职责单一，便于独立扩展和维护。
@@ -2888,7 +3151,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. Event Sourcing通过将所有状态变更以事件的形式持久化，从而可以重建系统的当前状态。——答案A正确，因为Event Sourcing的核心思想是将系统中所有的状态变化以事件的形式保存下来，而不是仅保存当前状态，这样可以通过回放事件来重建任何时间点的系统状态。选项B描述的是CQRS的一部分，但并非Event Sourcing的核心；选项C错误，因为Event Sourcing允许最终一致性，不要求事件必须立即同步；选项D混淆了CQRS和Event Sourcing的关系，Event Sourcing不是CQRS的实现方式，而是两者可以结合使用的架构模式。</strong></p>
+  <p><strong>
+
+正确答案: A. Event Sourcing通过将所有状态变更以事件的形式持久化，从而可以重建系统的当前状态。——答案A正确，因为Event Sourcing的核心思想是将系统中所有的状态变化以事件的形式保存下来，而不是仅保存当前状态，这样可以通过回放事件来重建任何时间点的系统状态。选项B描述的是CQRS的一部分，但并非Event Sourcing的核心；选项C错误，因为Event Sourcing允许最终一致性，不要求事件必须立即同步；选项D混淆了CQRS和Event Sourcing的关系，Event Sourcing不是CQRS的实现方式，而是两者可以结合使用的架构模式。</strong></p>
 </details>
 
 **问题 2:**
@@ -2903,7 +3168,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. CQRS优势与实现方式：
+  <p><strong>
+
+正确答案: 1. CQRS优势与实现方式：
 - 优势：
   - 读写分离，优化读操作性能，适合订单读取频繁的场景。
   - 不同模型针对读写进行优化，提升系统扩展性和维护性。
@@ -2952,7 +3219,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 当HashMap中的元素个数超过当前数组长度的75%时，会触发扩容操作，数组长度翻倍。HashMap的扩容阈值是基于负载因子（默认0.75）计算的，超过这个阈值时数组长度会翻倍扩容。</strong></p>
+  <p><strong>
+
+正确答案: A. 当HashMap中的元素个数超过当前数组长度的75%时，会触发扩容操作，数组长度翻倍。HashMap的扩容阈值是基于负载因子（默认0.75）计算的，超过这个阈值时数组长度会翻倍扩容。</strong></p>
 </details>
 
 **问题 2:**
@@ -2966,7 +3235,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. HashMap的put操作核心流程：
+  <p><strong>
+
+正确答案: 1. HashMap的put操作核心流程：
 - 计算键的hash值，确定存储桶索引。
 - 如果该索引位置为空，直接插入新节点。
 - 如果不为空，遍历链表或红黑树查找相同key，存在则覆盖，不存在则追加。
@@ -3008,7 +3279,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 对象在年轻代经过多次垃圾回收后仍然存活，会被晋升到老年代。这是因为年轻代主要存放新创建的对象，经过多次GC存活的对象被认为生命周期较长，会被移动到老年代以减少GC频率，提高性能。</strong></p>
+  <p><strong>
+
+正确答案: C. 对象在年轻代经过多次垃圾回收后仍然存活，会被晋升到老年代。这是因为年轻代主要存放新创建的对象，经过多次GC存活的对象被认为生命周期较长，会被移动到老年代以减少GC频率，提高性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -3017,7 +3290,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 频繁的Full GC通常意味着老年代空间不足，触发了垃圾收集。可能原因包括：
+  <p><strong>
+
+正确答案: 频繁的Full GC通常意味着老年代空间不足，触发了垃圾收集。可能原因包括：
 
 1. 老年代对象过多或过大，导致内存压力大；
 2. 新生代晋升过快，老年代空间被迅速填满；
@@ -3057,7 +3332,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 类加载过程包括加载、验证、准备、解析和初始化五个阶段。——这是Java类加载机制的标准流程，清晰体现了类加载的各个阶段。其他选项中，A错误，因为类加载器不是一次性加载所有类，而是按需加载；B错误，双亲委派模型是父类加载器先尝试加载；D错误，类的初始化是在首次主动使用类时执行，而非加载时立即执行。</strong></p>
+  <p><strong>
+
+正确答案: C. 类加载过程包括加载、验证、准备、解析和初始化五个阶段。——这是Java类加载机制的标准流程，清晰体现了类加载的各个阶段。其他选项中，A错误，因为类加载器不是一次性加载所有类，而是按需加载；B错误，双亲委派模型是父类加载器先尝试加载；D错误，类的初始化是在首次主动使用类时执行，而非加载时立即执行。</strong></p>
 </details>
 
 **问题 2:**
@@ -3066,7 +3343,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 这种情况通常是由于Java的类加载器缓存机制导致的。Java类加载器在加载类时，会缓存已经加载的类，热部署时如果使用的是同一个类加载器，旧版本的类已经被加载并缓存，这样即使替换了类文件，类加载器仍然使用缓存的类，导致代码修改不生效。
+  <p><strong>
+
+正确答案: 这种情况通常是由于Java的类加载器缓存机制导致的。Java类加载器在加载类时，会缓存已经加载的类，热部署时如果使用的是同一个类加载器，旧版本的类已经被加载并缓存，这样即使替换了类文件，类加载器仍然使用缓存的类，导致代码修改不生效。
 
 原因分析：
 1. 类加载器的双亲委派机制：父类加载器优先加载，子类加载器不会重新加载已经由父加载器加载的类。
@@ -3102,7 +3381,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. ConcurrentHashMap将整个Map分成多个Segment，每个Segment维护一把独立的锁，写操作只锁定对应的Segment以减少锁竞争。——这是JDK7及以前版本ConcurrentHashMap的设计，分段锁机制通过把Map分割成多个Segment以细化锁粒度，提高并发性能。选项A错误，因为它不是使用全局锁；选项C错误，JDK8以后移除了Segment，采用Node数组和CAS及synchronized结合的方式；选项D错误，ConcurrentHashMap写操作并非完全依赖CAS，也结合了锁机制。</strong></p>
+  <p><strong>
+
+正确答案: B. ConcurrentHashMap将整个Map分成多个Segment，每个Segment维护一把独立的锁，写操作只锁定对应的Segment以减少锁竞争。——这是JDK7及以前版本ConcurrentHashMap的设计，分段锁机制通过把Map分割成多个Segment以细化锁粒度，提高并发性能。选项A错误，因为它不是使用全局锁；选项C错误，JDK8以后移除了Segment，采用Node数组和CAS及synchronized结合的方式；选项D错误，ConcurrentHashMap写操作并非完全依赖CAS，也结合了锁机制。</strong></p>
 </details>
 
 **问题 2:**
@@ -3113,7 +3394,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在该场景下，订单状态的更新需要保证线程安全且性能高效，通常可以选择以下Java并发包中的核心类及其源码实现原理：
+  <p><strong>
+
+正确答案: 在该场景下，订单状态的更新需要保证线程安全且性能高效，通常可以选择以下Java并发包中的核心类及其源码实现原理：
 
 1. ConcurrentHashMap：
 - 适用于存储和快速读取订单状态，支持高效的并发读写。
@@ -3165,7 +3448,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: D. 在自定义ClassLoader中重写findClass方法，并在loadClass中先调用super.loadClass，若抛出ClassNotFoundException，再调用findClass加载类。 解释：该选项符合双亲委派模型的典型实现思路，先尝试由父类加载器加载类，若失败才由当前加载器加载。A和C选项中不调用super.loadClass破坏了双亲委派模型，B选项虽然重写了findClass并调用super.loadClass，但没有处理父加载器加载失败的情况，不能保证自定义加载逻辑生效。</strong></p>
+  <p><strong>
+
+正确答案: D. 在自定义ClassLoader中重写findClass方法，并在loadClass中先调用super.loadClass，若抛出ClassNotFoundException，再调用findClass加载类。 解释：该选项符合双亲委派模型的典型实现思路，先尝试由父类加载器加载类，若失败才由当前加载器加载。A和C选项中不调用super.loadClass破坏了双亲委派模型，B选项虽然重写了findClass并调用super.loadClass，但没有处理父加载器加载失败的情况，不能保证自定义加载逻辑生效。</strong></p>
 </details>
 
 **问题 2:**
@@ -3174,7 +3459,9 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 自定义ClassLoader的关键实现点：
+  <p><strong>
+
+正确答案: 1. 自定义ClassLoader的关键实现点：
    - 重写findClass方法：从指定的租户插件路径加载对应版本的class字节码。
    - 按租户维护独立的ClassLoader实例：确保不同租户的插件类加载相互隔离。
    - 设计合理的类加载委托机制：通常先委托父加载器加载核心类，再加载插件类，避免核心类多次加载。
@@ -3201,203 +3488,291 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 ## 旧的问题列表
 
 
-- [1. `String`、`StringBuffer` 和 `StringBuilder` 之间的区别是什么？](#1-stringstringbuffer-和-stringbuilder-之间的区别是什么)
-- [2. 如何在命令行运行 Java 应用程序并设置包含多个 jar 的 `classpath`？](#2-如何在命令行运行-java-应用程序并设置包含多个-jar-的-classpath)
-- [3. `final`、`finalize` 和 `finally` 的区别是什么？](#3-finalfinalize-和-finally-的区别是什么)
-- [4. 垃圾回收（Garbage Collection）如何防止 Java 应用内存耗尽？](#4-垃圾回收garbage-collection如何防止-java-应用内存耗尽)
-- [5. `ClassNotFoundException` 和 `NoClassDefFoundError` 的区别是什么？](#5-classnotfoundexception-和-noclassdeffounderror-的区别是什么)
-- [6. 为什么 `String` 的 `.length()` 方法返回值不准确？](#6-为什么-string-的--length-方法返回值不准确)
-- [7. 为什么用 `d1 == d2` 判断两个双精度值相等不可靠？](#7-为什么用-d1--d2-判断两个双精度值相等不可靠)
-- [8. 这段代码存在什么问题？](#8-这段代码存在什么问题)
-- [9. JIT 是什么？](#9-jit-是什么)
-- [10. 如何让这段代码输出 `0.5` 而非 `0`？](#10-如何让这段代码输出-0-5-而非-0)
-- [11. 方法引用 `System.out::println` 的推断类型是什么？](#11-方法引用-system-outprintln-的推断类型是什么)
-- [12. 这段代码存在什么问题？](#12-这段代码存在什么问题)
-- [13. 执行操作后列表内容如何变化？为什么？](#13-执行操作后列表内容如何变化为什么)
-- [14. 编写检测两个字符串是否为变位词的函数（例如SAVE和VASE）](#14-编写检测两个字符串是否为变位词的函数例如save和vase)
-- [15. `equals`和`hashCode`方法有何契约关系？](#15-equals和hashcode方法有何契约关系)
-- [16. `enum`类型能否被继承？](#16-enum类型能否被继承)
-- [17. Java中`enum`的线程安全性如何？](#17-java中enum的线程安全性如何)
-- [18. JVM如何存储局部变量与对象？](#18-jvm如何存储局部变量与对象)
-- [19. 下面Java代码存在什么问题？](#19-下面java代码存在什么问题)
-- [20. 何时需要使用volatile变量？](#20-何时需要使用volatile变量)
-- [21. 为何需要使用同步方法或代码块？](#21-为何需要使用同步方法或代码块)
-- [22. `HashMap`与`ConcurrentHashMap`有何区别？](#22-hashmap与concurrenthashmap有何区别)
-- [23. 何时需要重写equals和hashCode方法？](#23-何时需要重写equals和hashcode方法)
-- [24. 什么是Service（服务）？](#24-什么是service服务)
-- [25. 何时适合调用System.gc()？](#25-何时适合调用system-gc)
-- [26. Java 中的标记接口（Marker Interface）是什么？](#26-java-中的标记接口marker-interface是什么)
-- [27. 为什么注解（Annotations）比标记接口更适合处理元数据？](#27-为什么注解annotations比标记接口更适合处理元数据)
-- [28. 什么是受检异常（checked）和非受检异常（unchecked）？分别的使用场景是？](#28-什么是受检异常checked和非受检异常unchecked分别的使用场景是)
-- [29. 为什么 `int a = 1L;` 编译报错，而 `int b = 0; b += 1L;` 却能正常编译？](#29-为什么-int-a--1l-编译报错而-int-b--0-b--1l-却能正常编译)
-- [30. Java 为何禁止多继承类但允许实现多个接口？](#30-java-为何禁止多继承类但允许实现多个接口)
-- [31. 下面的代码为何不抛出 `NullPointerException`？](#31-下面的代码为何不抛出-nullpointerexception)
-- [32. 下面的代码为何第二个输出是 `true` 而第一个是 `false`？](#32-下面的代码为何第二个输出是-true-而第一个是-false)
-- [33. 如何判断两个字符串是否为变位词（Anagram）？](#33-如何判断两个字符串是否为变位词anagram)
-- [34. 如何在不使用迭代或递归的情况下反转字符串？](#34-如何在不使用迭代或递归的情况下反转字符串)
-- [35. 在实际应用中如何选择 `ArrayList` 和 `LinkedList`？](#35-在实际应用中如何选择-arraylist-和-linkedlist)
-- [36. `Iterator` 和 `ListIterator` 的核心区别有哪些？](#36-iterator-和-listiterator-的核心区别有哪些)
-- [37. 泛型集合的主要优势是什么？](#37-泛型集合的主要优势是什么)
-- [38. 描述并对比 fail-fast 与 fail-safe 迭代器，给出示例](#38-描述并对比-fail-fast-与-fail-safe-迭代器给出示例)
-- [39. `ArrayList`、`LinkedList` 和 `Vector` 都是 `List` 接口的实现。它们在增删元素时的效率如何？请解释原因，并可补充其他替代方案的认知](#39-arraylistlinkedlist-和-vector-都是-list-接口的实现它们在增删元素时的效率如何请解释原因并可补充其他替代方案的认知)
-- [40. 为什么存储敏感数据（如密码、社保号等）时，使用字符数组比String更安全？](#40-为什么存储敏感数据如密码社保号等时使用字符数组比string更安全)
-- [41. 什么是`ThreadLocal`类？如何及为何要使用它？](#41-什么是threadlocal类如何及为何要使用它)
-- [42. 比较Java中`sleep()`和`wait()`方法的异同，说明适用场景](#42-比较java中sleep和wait方法的异同说明适用场景)
-- [43. 由于Java暂不支持尾递归优化，请描述如何将简单尾递归函数转换为循环结构，并说明两者优劣](#43-由于java暂不支持尾递归优化请描述如何将简单尾递归函数转换为循环结构并说明两者优劣)
-- [44. 如何在不使用临时变量的情况下交换两个数值变量的值？](#44-如何在不使用临时变量的情况下交换两个数值变量的值)
-- [45. 如何捕获 Java 中其他线程抛出的异常？](#45-如何捕获-java-中其他线程抛出的异常)
-- [46. Java 类加载器是什么？列举并解释三种类加载器的作用](#46-java-类加载器是什么列举并解释三种类加载器的作用)
-- [47. 当 try 块未含 catch 块且抛出异常时，finally 块会执行吗？何时执行？](#47-当-try-块未含-catch-块且抛出异常时finally-块会执行吗何时执行)
-- [48. 为何要避免在抽象类构造函数中调用抽象方法？](#48-为何要避免在抽象类构造函数中调用抽象方法)
-- [49. Java 泛型类型参数如何处理型变（Variance）？开发者如何控制？](#49-java-泛型类型参数如何处理型变variance开发者如何控制)
-- [50. 什么是静态初始化块（static initializer）？它们的使用场景是什么？](#50-什么是静态初始化块static-initializer它们的使用场景是什么)
-- [51. 当需要`Set`时，如何在`HashSet`和`TreeSet`之间选择？](#51-当需要set时如何在hashset和treeset之间选择)
-- [52. 什么是方法引用（method reference）？它们的优势是什么？](#52-什么是方法引用method-reference它们的优势是什么)
-- [53. Java枚举相比整数常量有何优势？如何利用这些能力？](#53-java枚举相比整数常量有何优势如何利用这些能力)
-- [54. 什么是集合的"被另一个集合支持(Backed by)"特性？请举例说明该特性的实用场景](#54-什么是集合的被另一个集合支持backed-by特性请举例说明该特性的实用场景)
-- [55. 什么是反射(Reflection)？请举例说明必须使用反射才能实现的功能](#55-什么是反射reflection请举例说明必须使用反射才能实现的功能)
-- [56. 静态嵌套类与内部类有哪些区别？如何选择？哪些场景必须使用静态嵌套类？](#56-静态嵌套类与内部类有哪些区别如何选择哪些场景必须使用静态嵌套类)
-- [57. `String s = "Test"`与`String s = new String("Test")`有何区别？哪种方式更好？](#57-string-s--test与string-s--new-stringtest有何区别哪种方式更好)
-- [58. 解释 JDK、JRE 和 JVM 之间的区别](#58-解释-jdkjre-和-jvm-之间的区别)
-- [59. 为什么说 Java 是平台无关的语言?](#59-为什么说-java-是平台无关的语言)
-- [60. 能否认为 Java 并非完全面向对象？为什么这样说？](#60-能否认为-java-并非完全面向对象为什么这样说)
-- [61. Java 中的构造函数是什么？](#61-java-中的构造函数是什么)
-- [62. 构造函数与方法的区别是什么？构造函数能否声明为 final？](#62-构造函数与方法的区别是什么构造函数能否声明为-final)
-- [63. 什么是包装类？](#63-什么是包装类)
-- [64. 多线程编程中同步（synchronization）的含义是什么？](#64-多线程编程中同步synchronization的含义是什么)
-- [65. 垃圾回收在 Java 中的作用是什么？何时触发？](#65-垃圾回收在-java-中的作用是什么何时触发)
-- [66. 实现线程有哪些不同方式？哪种更具优势？](#66-实现线程有哪些不同方式哪种更具优势)
-- [67. 若将 main() 方法设为 private 会怎样？如果去掉 static 修饰符呢？](#67-若将-main-方法设为-private-会怎样如果去掉-static-修饰符呢)
-- [68. main() 方法的字符串数组第一个参数是什么？](#68-main-方法的字符串数组第一个参数是什么)
-- [69. Java Servlet 是什么？](#69-java-servlet-是什么)
-- [70. Servlet 的生命周期阶段有哪些？](#70-servlet-的生命周期阶段有哪些)
-- [71. 解释 RequestDispatcher 的作用](#71-解释-requestdispatcher-的作用)
-- [72. 列出 Java 连接数据库的步骤**](#72-列出-java-连接数据库的步骤)
-- [73. 什么是 JDBC 驱动？有哪些类型？](#73-什么是-jdbc-驱动有哪些类型)
-- [74. transient 关键字的作用是什么？](#74-transient-关键字的作用是什么)
-- [75. 什么是方法重载？](#75-什么是方法重载)
-- [76. Core Java 中的方法重写（method overriding）是什么？](#76-core-java-中的方法重写method-overriding是什么)
-- [77. 在 Core Java 中，== 运算符用于对象比较时起到什么作用？](#77-在-core-java-中-运算符用于对象比较时起到什么作用)
-- [78. 解释 Core Java 中 try-with-resources 语句的核心概念](#78-解释-core-java-中-try-with-resources-语句的核心概念)
-- [79. Core Java 中的方法链（method chaining）是什么？](#79-core-java-中的方法链method-chaining是什么)
-- [80. Core Java 如何支持多重继承？](#80-core-java-如何支持多重继承)
-- [81. Core Java 中 hashCode() 方法的作用是什么？](#81-core-java-中-hashcode-方法的作用是什么)
-- [82. Comparable 和 Comparator 接口的核心区别是什么？](#82-comparable-和-comparator-接口的核心区别是什么)
-- [83. 泛型（Generics）在 Core Java 中的重要性体现在哪些方面？](#83-泛型generics在-core-java-中的重要性体现在哪些方面)
-- [84. JVM 内存区域主要分为哪些部分？](#84-jvm-内存区域主要分为哪些部分)
-- [85. 双检锁（Double-Checked Locking）模式在并发编程中如何工作？](#85-双检锁double-checked-locking模式在并发编程中如何工作)
-- [86. Java 9 模块系统（JPMS）带来了哪些重要改进？](#86-java-9-模块系统jpms带来了哪些重要改进)
-- [87. 如何在Core Java接口中使用default关键字？](#87-如何在core-java接口中使用default关键字)
-- [88. Stream API在并行操作中的优势有哪些？](#88-stream-api在并行操作中的优势有哪些)
-- [89. 什么是Core Java泛型中的类型擦除？](#89-什么是core-java泛型中的类型擦除)
-- [90. 如何避免Core Java中的内存泄漏？](#90-如何避免core-java中的内存泄漏)
-- [91. @FunctionalInterface注解的作用是什么？](#91-functionalinterface注解的作用是什么)
-- [92. @Override注解有何实际用途？](#92-override注解有何实际用途)
-- [93. 如何实现线程安全的单例模式？](#93-如何实现线程安全的单例模式)
-- [94. 受检异常与非受检异常的区别？](#94-受检异常与非受检异常的区别)
-- [95. Java如何解决菱形继承问题？](#95-java如何解决菱形继承问题)
-- [96. 何时适合使用assert关键字？](#96-何时适合使用assert关键字)
-- [97. Java 8方法引用的使用场景？](#97-java-8方法引用的使用场景)
-- [98. transient和volatile关键字在Core Java序列化中起什么作用？](#98-transient和volatile关键字在core-java序列化中起什么作用)
-- [99. 什么是Core Java中的NavigableSet接口？](#99-什么是core-java中的navigableset接口)
-- [100. Java 8的forEach方法如何改进集合处理？](#100-java-8的foreach方法如何改进集合处理)
-- [101. 如何区分Core Java中的static方法和实例(instance)方法？](#101-如何区分core-java中的static方法和实例instance方法)
-- [102. interface关键字在Core Java中有何重要意义？](#102-interface关键字在core-java中有何重要意义)
-- [103. 解释Core Java中super关键字的使用场景](#103-解释core-java中super关键字的使用场景)
-- [104. 能否修改Core Java中final变量的值？](#104-能否修改core-java中final变量的值)
-- [105. Core Java中的包(package)是什么？如何使用？](#105-core-java中的包package是什么如何使用)
-- [106. 解释public static void main(String[] args)方法的作用](#106-解释public-static-void-mainstring-args方法的作用)
-- [107. try-catch-finally块在Core Java中如何运作？](#107-try-catch-finally块在core-java中如何运作)
-- [108. ==和equals()在Core Java中的区别是什么？](#108-和equals在core-java中的区别是什么)
-- [109. 解释Core Java中的垃圾回收机制](#109-解释core-java中的垃圾回收机制)
-- [110. Core Java 中的包装类是什么？](#110-core-java-中的包装类是什么)
-- [111. 什么是 Core Java 中的 applet？](#111-什么是-core-java-中的-applet)
-- [112. 什么是数值提升（numeric promotion）？](#112-什么是数值提升numeric-promotion)
-- [113. 多线程环境下的虚假共享（false sharing）是什么？](#113-多线程环境下的虚假共享false-sharing是什么)
-- [114. HashMap 中如何实现对象作为键？](#114-hashmap-中如何实现对象作为键)
-- [115. 什么是不可变对象？](#115-什么是不可变对象)
-- [116. StringBuffer 和 StringBuilder 的区别？](#116-stringbuffer-和-stringbuilder-的区别)
-- [117. 工厂模式与抽象工厂模式的区别？](#117-工厂模式与抽象工厂模式的区别)
-- [118. JAR 和 WAR 文件的区别？](#118-jar-和-war-文件的区别)
-- [119. JIT 编译器的作用？](#119-jit-编译器的作用)
-- [120. Java 中的多重捕获块是什么？](#120-java-中的多重捕获块是什么)
-- [121. Java 包的作用？](#121-java-包的作用)
-- [122. final 关键字的不同用法？](#122-final-关键字的不同用法)
-- [123. Java 中的继承类型？](#123-java-中的继承类型)
-- [124. Java 8 最重要的特性？](#124-java-8-最重要的特性)
-- [125. PATH 和 CLASSPATH 的区别？](#125-path-和-classpath-的区别)
-- [126. 序列化与反序列化？](#126-序列化与反序列化)
-- [127. 什么是三元运算符（Ternary Operator）？](#127-什么是三元运算符ternary-operator)
-- [128. 什么是平台无关性（Platform Independence）？](#128-什么是平台无关性platform-independence)
-- [129. Core Java的最新版本是什么？](#129-core-java的最新版本是什么)
-- [130. C++与Core Java有何区别？](#130-c与core-java有何区别)
-- [131. Core Java编程语言有哪些主要特性？](#131-core-java编程语言有哪些主要特性)
-- [132. HashSet和TreeSet的区别是什么？](#132-hashset和treeset的区别是什么)
-- [133. Core Java中的包（Package）是什么？列出其主要优势](#133-core-java中的包package是什么列出其主要优势)
-- [134. 反射（Reflection）在Core Java中的重要性是什么？](#134-反射reflection在core-java中的重要性是什么)
-- [135. 什么是Java字符串池（String Pool）？](#135-什么是java字符串池string-pool)
-- [136. Java中的Map是什么？](#136-java中的map是什么)
-- [137. 为什么Core Java中使用继承（Inheritance）？](#137-为什么core-java中使用继承inheritance)
-- [138. 为什么说Core Java是动态的？](#138-为什么说core-java是动态的)
-- [139. 什么是JSP页面？](#139-什么是jsp页面)
-- [140. System.out、System.err和System.in的区别是什么？](#140-system-outsystem-err和system-in的区别是什么)
-- [141. 解释Java Servlet中的不同认证方式](#141-解释java-servlet中的不同认证方式)
-- [142. 解释Core Java中面向对象编程（OOP）的原则](#142-解释core-java中面向对象编程oop的原则)
-- [143. finalize()方法在Core Java中的用途是什么？](#143-finalize方法在core-java中的用途是什么)
-- [144. Core Java中的lambda表达式是什么？](#144-core-java中的lambda表达式是什么)
-- [145. 解释Java中的对象克隆概念](#145-解释java中的对象克隆概念)
-- [146. Java中的static关键字如何影响内存管理？](#146-java中的static关键字如何影响内存管理)
-- [147. 解释Java中的单例设计模式](#147-解释java中的单例设计模式)
-- [148. Java 8的Stream API在数据处理中的优势](#148-java-8的stream-api在数据处理中的优势)
-- [149. Optional类在Java中的作用](#149-optional类在java中的作用)
-- [150. Java应用中如何管理内存泄漏](#150-java应用中如何管理内存泄漏)
-- [151. ExecutorService与Fork/Join框架的异同](#151-executorservice与forkjoin框架的异同)
-- [152. volatile关键字如何保证多线程可见性](#152-volatile关键字如何保证多线程可见性)
-- [153. 如何在 Core Java 集合中确保线程安全？](#153-如何在-core-java-集合中确保线程安全)
-- [154. Core Java 的垃圾回收机制如何影响应用性能？](#154-core-java-的垃圾回收机制如何影响应用性能)
-- [155. 注解在 Core Java 中的具体应用场景是什么？](#155-注解在-core-java-中的具体应用场景是什么)
-- [156. 接口与抽象类的核心差异是什么？](#156-接口与抽象类的核心差异是什么)
-- [157. ThreadLocal 类在 Core Java 中解决了哪些典型问题？](#157-threadlocal-类在-core-java-中解决了哪些典型问题)
-- [158. 用示例说明 Java 枚举的核心工作机制](#158-用示例说明-java-枚举的核心工作机制)
-- [159. Java 堆内存的结构包含哪些核心区域？](#159-java-堆内存的结构包含哪些核心区域)
-- [160. Java 字符串池是如何工作的？为何 String 优于 StringBuffer？](#160-java-字符串池是如何工作的为何-string-优于-stringbuffer)
-- [161. 线程能否在不使用同步的情况下安全共享对象？](#161-线程能否在不使用同步的情况下安全共享对象)
-- [162. Java 异常处理的最佳实践有哪些？](#162-java-异常处理的最佳实践有哪些)
-- [163. Java 垃圾回收的运作机制及调优方向？](#163-java-垃圾回收的运作机制及调优方向)
-- [164. Java 中堆内存与栈内存的使用区别？](#164-java-中堆内存与栈内存的使用区别)
-- [165. 业界主流的 Java IDE 如何自动生成 Getter/Setter？](#165-业界主流的-java-ide-如何自动生成-gettersetter)
-- [166. Java 中的访问修饰符（access modifiers）有哪些？private 和 protected 访问权限有什么区别？](#166-java-中的访问修饰符access-modifiers有哪些private-和-protected-访问权限有什么区别)
-- [167. 在 Java 的 foreach 循环中如何跳过某次迭代？](#167-在-java-的-foreach-循环中如何跳过某次迭代)
-- [168. Java 反射（Reflection）API 是什么？有哪些典型应用场景？](#168-java-反射reflectionapi-是什么有哪些典型应用场景)
-- [169. Java 的 finalize() 方法可以抛出异常吗？](#169-java-的-finalize-方法可以抛出异常吗)
-- [170. Java 堆内存（Heap）与栈内存（Stack）的使用区别是什么？](#170-java-堆内存heap与栈内存stack的使用区别是什么)
-- [171. 如何初始化数组并避免 NullPointerException？](#171-如何初始化数组并避免-nullpointerexception)
-- [172. 什么是 Java API 规范？其标准架构由什么组织定义？](#172-什么是-java-api-规范其标准架构由什么组织定义)
-- [173. 对象的浅拷贝（Shallow Copy）与深拷贝（Deep Copy）有什么区别？](#173-对象的浅拷贝shallow-copy与深拷贝deep-copy有什么区别)
-- [174. Java 中的标记接口（Marker Interface）是什么？其作用是什么？](#174-java-中的标记接口marker-interface是什么其作用是什么)
-- [175. 密码字段为什么推荐用字符数组（char[]）而非 String？](#175-密码字段为什么推荐用字符数组char而非-string)
-- [176. ArrayList 与 Vector 的核心区别是什么？](#176-arraylist-与-vector-的核心区别是什么)
-- [177. 并发容器（如 CopyOnWriteArrayList）与同步包装集合有何区别？](#177-并发容器如-copyonwritearraylist与同步包装集合有何区别)
-- [178. Java 8 的 Instant 与 LocalDateTime 有什么区别？](#178-java-8-的-instant-与-localdatetime-有什么区别)
-- [179. try-catch 块中的 break 语句会如何执行？](#179-try-catch-块中的-break-语句会如何执行)
-- [180. 面向对象编程（OOP）的核心概念有哪些？](#180-面向对象编程oop的核心概念有哪些)
-- [181. 什么是数据封装？其优势是什么？](#181-什么是数据封装其优势是什么)
-- [182. 什么是多态？如何理解其应用？](#182-什么是多态如何理解其应用)
-- [183. 多态（Polymorphism）有哪些类型及其差异？](#183-多态polymorphism有哪些类型及其差异)
-- [184. Java中的构造器类型及其解释](#184-java中的构造器类型及其解释)
-- [185. 什么是内部类（Inner Class）？](#185-什么是内部类inner-class)
-- [186. 子类（Subclass）的定义与特性？](#186-子类subclass的定义与特性)
-- [187. Java中的包（Package）是什么？](#187-java中的包package是什么)
-- [188. 如何在Java中使用包？](#188-如何在java中使用包)
-- [189. Java包的优点有哪些？](#189-java包的优点有哪些)
-- [190. Java基本数据类型（Primitive Types）的定义与规格](#190-java基本数据类型primitive-types的定义与规格)
-- [191. 自动装箱（Autoboxing）与拆箱（Unboxing）的含义](#191-自动装箱autoboxing与拆箱unboxing的含义)
-- [192. Java的包装类（Wrapper Classes）是什么？](#192-java的包装类wrapper-classes是什么)
-- [193. 无限循环（Infinite Loop）的定义与中断方式](#193-无限循环infinite-loop的定义与中断方式)
-- [194. 如何声明无限循环？](#194-如何声明无限循环)
-- [195. continue与break语句的区别？](#195-continue与break语句的区别)
-- [196. Java中switch语句的作用与应用场景？](#196-java中switch语句的作用与应用场景)
-- [197. switch语句中的default作用？](#197-switch语句中的default作用)
+- [面试题集: 后端开发-Java](#面试题集-后端开发-java)
+  - [技能概览](#技能概览)
+    - [核心概念](#核心概念)
+    - [网络编程](#网络编程)
+    - [框架与技术栈](#框架与技术栈)
+    - [数据库与缓存](#数据库与缓存)
+    - [安全](#安全)
+    - [性能优化](#性能优化)
+    - [分布式系统](#分布式系统)
+    - [测试与运维](#测试与运维)
+    - [架构设计](#架构设计)
+    - [源码与底层](#源码与底层)
+  - [详细题目列表](#详细题目列表)
+    - [核心概念](#核心概念-1)
+      - [Java内存模型](#java内存模型)
+      - [JVM调优基础](#jvm调优基础)
+      - [多线程与并发基础](#多线程与并发基础)
+      - [Java异常处理机制](#java异常处理机制)
+      - [Java反射机制](#java反射机制)
+      - [Java注解原理](#java注解原理)
+      - [设计模式基础（单例、工厂、观察者）](#设计模式基础单例工厂观察者)
+      - [Java泛型使用](#java泛型使用)
+      - [Java集合框架](#java集合框架)
+    - [网络编程](#网络编程-1)
+      - [HTTP协议基础](#http协议基础)
+      - [TCP/IP协议基础](#tcpip协议基础)
+      - [Java网络编程（Socket）](#java网络编程socket)
+      - [RESTful API设计](#restful-api设计)
+      - [WebSocket基础](#websocket基础)
+      - [HTTP/2与HTTP/3理解](#http2与http3理解)
+    - [框架与技术栈](#框架与技术栈-1)
+      - [Spring核心原理](#spring核心原理)
+      - [Spring MVC使用](#spring-mvc使用)
+      - [Spring Boot快速开发](#spring-boot快速开发)
+      - [Spring Security基础](#spring-security基础)
+      - [MyBatis使用与配置](#mybatis使用与配置)
+      - [Hibernate与JPA基础](#hibernate与jpa基础)
+      - [Spring Cloud微服务架构](#spring-cloud微服务架构)
+      - [Dubbo分布式服务框架](#dubbo分布式服务框架)
+      - [消息队列（Kafka/RabbitMQ）基础](#消息队列kafkarabbitmq基础)
+    - [数据库与缓存](#数据库与缓存-1)
+      - [关系型数据库基础（MySQL/Oracle）](#关系型数据库基础mysqloracle)
+      - [SQL优化基础](#sql优化基础)
+      - [事务与隔离级别](#事务与隔离级别)
+      - [NoSQL数据库（Redis/MongoDB）](#nosql数据库redismongodb)
+      - [缓存设计与使用](#缓存设计与使用)
+      - [分布式缓存原理](#分布式缓存原理)
+    - [安全](#安全-1)
+      - [认证与授权基础（OAuth2/JWT）](#认证与授权基础oauth2jwt)
+      - [常见安全漏洞及防护（XSS、CSRF、SQL注入）](#常见安全漏洞及防护xsscsrfsql注入)
+      - [加密算法基础（对称、非对称）](#加密算法基础对称非对称)
+      - [安全框架使用（Spring Security进阶）](#安全框架使用spring-security进阶)
+    - [性能优化](#性能优化-1)
+      - [JVM性能监控与调优](#jvm性能监控与调优)
+      - [数据库性能调优](#数据库性能调优)
+      - [代码性能优化技巧](#代码性能优化技巧)
+      - [异步编程与线程池优化](#异步编程与线程池优化)
+      - [分布式系统性能优化](#分布式系统性能优化)
+    - [分布式系统](#分布式系统-1)
+      - [分布式系统基础概念](#分布式系统基础概念)
+      - [RPC框架原理与使用](#rpc框架原理与使用)
+      - [服务注册与发现（Eureka/Consul）](#服务注册与发现eurekaconsul)
+      - [负载均衡策略](#负载均衡策略)
+      - [分布式事务处理](#分布式事务处理)
+      - [分布式缓存与一致性](#分布式缓存与一致性)
+      - [消息中间件高级应用](#消息中间件高级应用)
+    - [测试与运维](#测试与运维-1)
+      - [单元测试框架（JUnit）](#单元测试框架junit)
+      - [集成测试与Mock技术](#集成测试与mock技术)
+      - [持续集成与持续部署（CI/CD）](#持续集成与持续部署cicd)
+      - [日志框架使用与优化](#日志框架使用与优化)
+      - [容器化基础（Docker）](#容器化基础docker)
+      - [监控与告警系统](#监控与告警系统)
+    - [架构设计](#架构设计-1)
+      - [面向对象设计原则（SOLID）](#面向对象设计原则solid)
+      - [微服务架构设计](#微服务架构设计)
+      - [领域驱动设计（DDD）基础](#领域驱动设计ddd基础)
+      - [事件驱动架构（EDA）](#事件驱动架构eda)
+      - [高可用与容错设计](#高可用与容错设计)
+      - [系统扩展性设计](#系统扩展性设计)
+      - [架构模式（CQRS、Event Sourcing）](#架构模式cqrsevent-sourcing)
+    - [源码与底层](#源码与底层-1)
+      - [JDK源码阅读与分析](#jdk源码阅读与分析)
+      - [JVM内存管理与垃圾回收机制](#jvm内存管理与垃圾回收机制)
+      - [Java类加载机制](#java类加载机制)
+      - [Java并发包源码分析](#java并发包源码分析)
+      - [自定义ClassLoader实现](#自定义classloader实现)
+  - [旧的问题列表](#旧的问题列表)
+    - [1. `String`、`StringBuffer` 和 `StringBuilder` 之间的区别是什么？](#1-stringstringbuffer-和-stringbuilder-之间的区别是什么)
+    - [2. 如何在命令行运行 Java 应用程序并设置包含多个 jar 的 `classpath`？](#2-如何在命令行运行-java-应用程序并设置包含多个-jar-的-classpath)
+    - [3. `final`、`finalize` 和 `finally` 的区别是什么？](#3-finalfinalize-和-finally-的区别是什么)
+    - [4. 垃圾回收（Garbage Collection）如何防止 Java 应用内存耗尽？](#4-垃圾回收garbage-collection如何防止-java-应用内存耗尽)
+    - [5. `ClassNotFoundException` 和 `NoClassDefFoundError` 的区别是什么？](#5-classnotfoundexception-和-noclassdeffounderror-的区别是什么)
+    - [6. 为什么 `String` 的 `.length()` 方法返回值不准确？](#6-为什么-string-的-length-方法返回值不准确)
+    - [7. 为什么用 `d1 == d2` 判断两个双精度值相等不可靠？](#7-为什么用-d1--d2-判断两个双精度值相等不可靠)
+    - [8. 这段代码存在什么问题？](#8-这段代码存在什么问题)
+    - [9. JIT 是什么？](#9-jit-是什么)
+    - [10. 如何让这段代码输出 `0.5` 而非 `0`？](#10-如何让这段代码输出-05-而非-0)
+    - [11. 方法引用 `System.out::println` 的推断类型是什么？](#11-方法引用-systemoutprintln-的推断类型是什么)
+    - [12. 这段代码存在什么问题？](#12-这段代码存在什么问题)
+    - [13. 执行操作后列表内容如何变化？为什么？](#13-执行操作后列表内容如何变化为什么)
+    - [14. 编写检测两个字符串是否为变位词的函数（例如SAVE和VASE）](#14-编写检测两个字符串是否为变位词的函数例如save和vase)
+    - [15. `equals`和`hashCode`方法有何契约关系？](#15-equals和hashcode方法有何契约关系)
+    - [16. `enum`类型能否被继承？](#16-enum类型能否被继承)
+    - [17. Java中`enum`的线程安全性如何？](#17-java中enum的线程安全性如何)
+    - [18. JVM如何存储局部变量与对象？](#18-jvm如何存储局部变量与对象)
+    - [19. 下面Java代码存在什么问题？](#19-下面java代码存在什么问题)
+    - [20. 何时需要使用volatile变量？](#20-何时需要使用volatile变量)
+    - [21. 为何需要使用同步方法或代码块？](#21-为何需要使用同步方法或代码块)
+    - [22. `HashMap`与`ConcurrentHashMap`有何区别？](#22-hashmap与concurrenthashmap有何区别)
+    - [23. 何时需要重写equals和hashCode方法？](#23-何时需要重写equals和hashcode方法)
+    - [24. 什么是Service（服务）？](#24-什么是service服务)
+    - [25. 何时适合调用System.gc()？](#25-何时适合调用systemgc)
+    - [26. Java 中的标记接口（Marker Interface）是什么？](#26-java-中的标记接口marker-interface是什么)
+    - [27. 为什么注解（Annotations）比标记接口更适合处理元数据？](#27-为什么注解annotations比标记接口更适合处理元数据)
+    - [28. 什么是受检异常（checked）和非受检异常（unchecked）？分别的使用场景是？](#28-什么是受检异常checked和非受检异常unchecked分别的使用场景是)
+    - [29. 为什么 `int a = 1L;` 编译报错，而 `int b = 0; b += 1L;` 却能正常编译？](#29-为什么-int-a--1l-编译报错而-int-b--0-b--1l-却能正常编译)
+    - [30. Java 为何禁止多继承类但允许实现多个接口？](#30-java-为何禁止多继承类但允许实现多个接口)
+    - [31. 下面的代码为何不抛出 `NullPointerException`？](#31-下面的代码为何不抛出-nullpointerexception)
+    - [32. 下面的代码为何第二个输出是 `true` 而第一个是 `false`？](#32-下面的代码为何第二个输出是-true-而第一个是-false)
+    - [33. 如何判断两个字符串是否为变位词（Anagram）？](#33-如何判断两个字符串是否为变位词anagram)
+    - [34. 如何在不使用迭代或递归的情况下反转字符串？](#34-如何在不使用迭代或递归的情况下反转字符串)
+    - [35. 在实际应用中如何选择 `ArrayList` 和 `LinkedList`？](#35-在实际应用中如何选择-arraylist-和-linkedlist)
+    - [36. `Iterator` 和 `ListIterator` 的核心区别有哪些？](#36-iterator-和-listiterator-的核心区别有哪些)
+    - [37. 泛型集合的主要优势是什么？](#37-泛型集合的主要优势是什么)
+    - [38. 描述并对比 fail-fast 与 fail-safe 迭代器，给出示例](#38-描述并对比-fail-fast-与-fail-safe-迭代器给出示例)
+    - [39. `ArrayList`、`LinkedList` 和 `Vector` 都是 `List` 接口的实现。它们在增删元素时的效率如何？请解释原因，并可补充其他替代方案的认知](#39-arraylistlinkedlist-和-vector-都是-list-接口的实现它们在增删元素时的效率如何请解释原因并可补充其他替代方案的认知)
+    - [40. 为什么存储敏感数据（如密码、社保号等）时，使用字符数组比String更安全？](#40-为什么存储敏感数据如密码社保号等时使用字符数组比string更安全)
+    - [41. 什么是`ThreadLocal`类？如何及为何要使用它？](#41-什么是threadlocal类如何及为何要使用它)
+    - [42. 比较Java中`sleep()`和`wait()`方法的异同，说明适用场景](#42-比较java中sleep和wait方法的异同说明适用场景)
+    - [43. 由于Java暂不支持尾递归优化，请描述如何将简单尾递归函数转换为循环结构，并说明两者优劣](#43-由于java暂不支持尾递归优化请描述如何将简单尾递归函数转换为循环结构并说明两者优劣)
+    - [44. 如何在不使用临时变量的情况下交换两个数值变量的值？](#44-如何在不使用临时变量的情况下交换两个数值变量的值)
+    - [45. 如何捕获 Java 中其他线程抛出的异常？](#45-如何捕获-java-中其他线程抛出的异常)
+    - [46. Java 类加载器是什么？列举并解释三种类加载器的作用](#46-java-类加载器是什么列举并解释三种类加载器的作用)
+    - [47. 当 try 块未含 catch 块且抛出异常时，finally 块会执行吗？何时执行？](#47-当-try-块未含-catch-块且抛出异常时finally-块会执行吗何时执行)
+    - [48. 为何要避免在抽象类构造函数中调用抽象方法？](#48-为何要避免在抽象类构造函数中调用抽象方法)
+    - [49. Java 泛型类型参数如何处理型变（Variance）？开发者如何控制？](#49-java-泛型类型参数如何处理型变variance开发者如何控制)
+    - [50. 什么是静态初始化块（static initializer）？它们的使用场景是什么？](#50-什么是静态初始化块static-initializer它们的使用场景是什么)
+    - [51. 当需要`Set`时，如何在`HashSet`和`TreeSet`之间选择？](#51-当需要set时如何在hashset和treeset之间选择)
+    - [52. 什么是方法引用（method reference）？它们的优势是什么？](#52-什么是方法引用method-reference它们的优势是什么)
+    - [53. Java枚举相比整数常量有何优势？如何利用这些能力？](#53-java枚举相比整数常量有何优势如何利用这些能力)
+    - [54. 什么是集合的"被另一个集合支持(Backed by)"特性？请举例说明该特性的实用场景](#54-什么是集合的被另一个集合支持backed-by特性请举例说明该特性的实用场景)
+    - [55. 什么是反射(Reflection)？请举例说明必须使用反射才能实现的功能](#55-什么是反射reflection请举例说明必须使用反射才能实现的功能)
+    - [56. 静态嵌套类与内部类有哪些区别？如何选择？哪些场景必须使用静态嵌套类？](#56-静态嵌套类与内部类有哪些区别如何选择哪些场景必须使用静态嵌套类)
+    - [57. `String s = "Test"`与`String s = new String("Test")`有何区别？哪种方式更好？](#57-string-s--test与string-s--new-stringtest有何区别哪种方式更好)
+    - [58. 解释 JDK、JRE 和 JVM 之间的区别](#58-解释-jdkjre-和-jvm-之间的区别)
+    - [59. 为什么说 Java 是平台无关的语言?](#59-为什么说-java-是平台无关的语言)
+    - [60. 能否认为 Java 并非完全面向对象？为什么这样说？](#60-能否认为-java-并非完全面向对象为什么这样说)
+    - [61. Java 中的构造函数是什么？](#61-java-中的构造函数是什么)
+    - [62. 构造函数与方法的区别是什么？构造函数能否声明为 final？](#62-构造函数与方法的区别是什么构造函数能否声明为-final)
+    - [63. 什么是包装类？](#63-什么是包装类)
+    - [64. 多线程编程中同步（synchronization）的含义是什么？](#64-多线程编程中同步synchronization的含义是什么)
+    - [65. 垃圾回收在 Java 中的作用是什么？何时触发？](#65-垃圾回收在-java-中的作用是什么何时触发)
+    - [66. 实现线程有哪些不同方式？哪种更具优势？](#66-实现线程有哪些不同方式哪种更具优势)
+    - [67. 若将 main() 方法设为 private 会怎样？如果去掉 static 修饰符呢？](#67-若将-main-方法设为-private-会怎样如果去掉-static-修饰符呢)
+    - [68. main() 方法的字符串数组第一个参数是什么？](#68-main-方法的字符串数组第一个参数是什么)
+    - [69. Java Servlet 是什么？](#69-java-servlet-是什么)
+    - [70. Servlet 的生命周期阶段有哪些？](#70-servlet-的生命周期阶段有哪些)
+    - [71. 解释 RequestDispatcher 的作用](#71-解释-requestdispatcher-的作用)
+    - [72. 列出 Java 连接数据库的步骤\*\*](#72-列出-java-连接数据库的步骤)
+    - [73. 什么是 JDBC 驱动？有哪些类型？](#73-什么是-jdbc-驱动有哪些类型)
+    - [74. transient 关键字的作用是什么？](#74-transient-关键字的作用是什么)
+    - [75. 什么是方法重载？](#75-什么是方法重载)
+    - [76. Core Java 中的方法重写（method overriding）是什么？](#76-core-java-中的方法重写method-overriding是什么)
+    - [77. 在 Core Java 中，== 运算符用于对象比较时起到什么作用？](#77-在-core-java-中-运算符用于对象比较时起到什么作用)
+    - [78. 解释 Core Java 中 try-with-resources 语句的核心概念](#78-解释-core-java-中-try-with-resources-语句的核心概念)
+    - [79. Core Java 中的方法链（method chaining）是什么？](#79-core-java-中的方法链method-chaining是什么)
+    - [80. Core Java 如何支持多重继承？](#80-core-java-如何支持多重继承)
+    - [81. Core Java 中 hashCode() 方法的作用是什么？](#81-core-java-中-hashcode-方法的作用是什么)
+    - [82. Comparable 和 Comparator 接口的核心区别是什么？](#82-comparable-和-comparator-接口的核心区别是什么)
+    - [83. 泛型（Generics）在 Core Java 中的重要性体现在哪些方面？](#83-泛型generics在-core-java-中的重要性体现在哪些方面)
+    - [84. JVM 内存区域主要分为哪些部分？](#84-jvm-内存区域主要分为哪些部分)
+    - [85. 双检锁（Double-Checked Locking）模式在并发编程中如何工作？](#85-双检锁double-checked-locking模式在并发编程中如何工作)
+    - [86. Java 9 模块系统（JPMS）带来了哪些重要改进？](#86-java-9-模块系统jpms带来了哪些重要改进)
+    - [87. 如何在Core Java接口中使用default关键字？](#87-如何在core-java接口中使用default关键字)
+    - [88. Stream API在并行操作中的优势有哪些？](#88-stream-api在并行操作中的优势有哪些)
+    - [89. 什么是Core Java泛型中的类型擦除？](#89-什么是core-java泛型中的类型擦除)
+    - [90. 如何避免Core Java中的内存泄漏？](#90-如何避免core-java中的内存泄漏)
+    - [91. @FunctionalInterface注解的作用是什么？](#91-functionalinterface注解的作用是什么)
+    - [92. @Override注解有何实际用途？](#92-override注解有何实际用途)
+    - [93. 如何实现线程安全的单例模式？](#93-如何实现线程安全的单例模式)
+    - [94. 受检异常与非受检异常的区别？](#94-受检异常与非受检异常的区别)
+    - [95. Java如何解决菱形继承问题？](#95-java如何解决菱形继承问题)
+    - [96. 何时适合使用assert关键字？](#96-何时适合使用assert关键字)
+    - [97. Java 8方法引用的使用场景？](#97-java-8方法引用的使用场景)
+    - [98. transient和volatile关键字在Core Java序列化中起什么作用？](#98-transient和volatile关键字在core-java序列化中起什么作用)
+    - [99. 什么是Core Java中的NavigableSet接口？](#99-什么是core-java中的navigableset接口)
+    - [100. Java 8的forEach方法如何改进集合处理？](#100-java-8的foreach方法如何改进集合处理)
+    - [101. 如何区分Core Java中的static方法和实例(instance)方法？](#101-如何区分core-java中的static方法和实例instance方法)
+    - [102. interface关键字在Core Java中有何重要意义？](#102-interface关键字在core-java中有何重要意义)
+    - [103. 解释Core Java中super关键字的使用场景](#103-解释core-java中super关键字的使用场景)
+    - [104. 能否修改Core Java中final变量的值？](#104-能否修改core-java中final变量的值)
+    - [105. Core Java中的包(package)是什么？如何使用？](#105-core-java中的包package是什么如何使用)
+    - [106. 解释public static void main(String\[\] args)方法的作用](#106-解释public-static-void-mainstring-args方法的作用)
+    - [107. try-catch-finally块在Core Java中如何运作？](#107-try-catch-finally块在core-java中如何运作)
+    - [108. ==和equals()在Core Java中的区别是什么？](#108-和equals在core-java中的区别是什么)
+    - [109. 解释Core Java中的垃圾回收机制](#109-解释core-java中的垃圾回收机制)
+    - [110. Core Java 中的包装类是什么？](#110-core-java-中的包装类是什么)
+    - [111. 什么是 Core Java 中的 applet？](#111-什么是-core-java-中的-applet)
+    - [112. 什么是数值提升（numeric promotion）？](#112-什么是数值提升numeric-promotion)
+    - [113. 多线程环境下的虚假共享（false sharing）是什么？](#113-多线程环境下的虚假共享false-sharing是什么)
+    - [114. HashMap 中如何实现对象作为键？](#114-hashmap-中如何实现对象作为键)
+    - [115. 什么是不可变对象？](#115-什么是不可变对象)
+    - [116. StringBuffer 和 StringBuilder 的区别？](#116-stringbuffer-和-stringbuilder-的区别)
+    - [117. 工厂模式与抽象工厂模式的区别？](#117-工厂模式与抽象工厂模式的区别)
+    - [118. JAR 和 WAR 文件的区别？](#118-jar-和-war-文件的区别)
+    - [119. JIT 编译器的作用？](#119-jit-编译器的作用)
+    - [120. Java 中的多重捕获块是什么？](#120-java-中的多重捕获块是什么)
+    - [121. Java 包的作用？](#121-java-包的作用)
+    - [122. final 关键字的不同用法？](#122-final-关键字的不同用法)
+    - [123. Java 中的继承类型？](#123-java-中的继承类型)
+    - [124. Java 8 最重要的特性？](#124-java-8-最重要的特性)
+    - [125. PATH 和 CLASSPATH 的区别？](#125-path-和-classpath-的区别)
+    - [126. 序列化与反序列化？](#126-序列化与反序列化)
+    - [127. 什么是三元运算符（Ternary Operator）？](#127-什么是三元运算符ternary-operator)
+    - [128. 什么是平台无关性（Platform Independence）？](#128-什么是平台无关性platform-independence)
+    - [129. Core Java的最新版本是什么？](#129-core-java的最新版本是什么)
+    - [130. C++与Core Java有何区别？](#130-c与core-java有何区别)
+    - [131. Core Java编程语言有哪些主要特性？](#131-core-java编程语言有哪些主要特性)
+    - [132. HashSet和TreeSet的区别是什么？](#132-hashset和treeset的区别是什么)
+    - [133. Core Java中的包（Package）是什么？列出其主要优势](#133-core-java中的包package是什么列出其主要优势)
+    - [134. 反射（Reflection）在Core Java中的重要性是什么？](#134-反射reflection在core-java中的重要性是什么)
+    - [135. 什么是Java字符串池（String Pool）？](#135-什么是java字符串池string-pool)
+    - [136. Java中的Map是什么？](#136-java中的map是什么)
+    - [137. 为什么Core Java中使用继承（Inheritance）？](#137-为什么core-java中使用继承inheritance)
+    - [138. 为什么说Core Java是动态的？](#138-为什么说core-java是动态的)
+    - [139. 什么是JSP页面？](#139-什么是jsp页面)
+    - [140. System.out、System.err和System.in的区别是什么？](#140-systemoutsystemerr和systemin的区别是什么)
+    - [141. 解释Java Servlet中的不同认证方式](#141-解释java-servlet中的不同认证方式)
+    - [142. 解释Core Java中面向对象编程（OOP）的原则](#142-解释core-java中面向对象编程oop的原则)
+    - [143. finalize()方法在Core Java中的用途是什么？](#143-finalize方法在core-java中的用途是什么)
+    - [144. Core Java中的lambda表达式是什么？](#144-core-java中的lambda表达式是什么)
+    - [145. 解释Java中的对象克隆概念](#145-解释java中的对象克隆概念)
+    - [146. Java中的static关键字如何影响内存管理？](#146-java中的static关键字如何影响内存管理)
+    - [147. 解释Java中的单例设计模式](#147-解释java中的单例设计模式)
+    - [148. Java 8的Stream API在数据处理中的优势](#148-java-8的stream-api在数据处理中的优势)
+    - [149. Optional类在Java中的作用](#149-optional类在java中的作用)
+    - [150. Java应用中如何管理内存泄漏](#150-java应用中如何管理内存泄漏)
+    - [151. ExecutorService与Fork/Join框架的异同](#151-executorservice与forkjoin框架的异同)
+    - [152. volatile关键字如何保证多线程可见性](#152-volatile关键字如何保证多线程可见性)
+    - [153. 如何在 Core Java 集合中确保线程安全？](#153-如何在-core-java-集合中确保线程安全)
+    - [154. Core Java 的垃圾回收机制如何影响应用性能？](#154-core-java-的垃圾回收机制如何影响应用性能)
+    - [155. 注解在 Core Java 中的具体应用场景是什么？](#155-注解在-core-java-中的具体应用场景是什么)
+    - [156. 接口与抽象类的核心差异是什么？](#156-接口与抽象类的核心差异是什么)
+    - [157. ThreadLocal 类在 Core Java 中解决了哪些典型问题？](#157-threadlocal-类在-core-java-中解决了哪些典型问题)
+    - [158. 用示例说明 Java 枚举的核心工作机制](#158-用示例说明-java-枚举的核心工作机制)
+    - [159. Java 堆内存的结构包含哪些核心区域？](#159-java-堆内存的结构包含哪些核心区域)
+    - [160. Java 字符串池是如何工作的？为何 String 优于 StringBuffer？](#160-java-字符串池是如何工作的为何-string-优于-stringbuffer)
+    - [161. 线程能否在不使用同步的情况下安全共享对象？](#161-线程能否在不使用同步的情况下安全共享对象)
+    - [162. Java 异常处理的最佳实践有哪些？](#162-java-异常处理的最佳实践有哪些)
+    - [163. Java 垃圾回收的运作机制及调优方向？](#163-java-垃圾回收的运作机制及调优方向)
+    - [164. Java 中堆内存与栈内存的使用区别？](#164-java-中堆内存与栈内存的使用区别)
+    - [165. 业界主流的 Java IDE 如何自动生成 Getter/Setter？](#165-业界主流的-java-ide-如何自动生成-gettersetter)
+    - [166. Java 中的访问修饰符（access modifiers）有哪些？private 和 protected 访问权限有什么区别？](#166-java-中的访问修饰符access-modifiers有哪些private-和-protected-访问权限有什么区别)
+    - [167. 在 Java 的 foreach 循环中如何跳过某次迭代？](#167-在-java-的-foreach-循环中如何跳过某次迭代)
+    - [168. Java 反射（Reflection）API 是什么？有哪些典型应用场景？](#168-java-反射reflectionapi-是什么有哪些典型应用场景)
+    - [169. Java 的 finalize() 方法可以抛出异常吗？](#169-java-的-finalize-方法可以抛出异常吗)
+    - [170. Java 堆内存（Heap）与栈内存（Stack）的使用区别是什么？](#170-java-堆内存heap与栈内存stack的使用区别是什么)
+    - [171. 如何初始化数组并避免 NullPointerException？](#171-如何初始化数组并避免-nullpointerexception)
+    - [172. 什么是 Java API 规范？其标准架构由什么组织定义？](#172-什么是-java-api-规范其标准架构由什么组织定义)
+    - [173. 对象的浅拷贝（Shallow Copy）与深拷贝（Deep Copy）有什么区别？](#173-对象的浅拷贝shallow-copy与深拷贝deep-copy有什么区别)
+    - [174. Java 中的标记接口（Marker Interface）是什么？其作用是什么？](#174-java-中的标记接口marker-interface是什么其作用是什么)
+    - [175. 密码字段为什么推荐用字符数组（char\[\]）而非 String？](#175-密码字段为什么推荐用字符数组char而非-string)
+    - [176. ArrayList 与 Vector 的核心区别是什么？](#176-arraylist-与-vector-的核心区别是什么)
+    - [177. 并发容器（如 CopyOnWriteArrayList）与同步包装集合有何区别？](#177-并发容器如-copyonwritearraylist与同步包装集合有何区别)
+    - [178. Java 8 的 Instant 与 LocalDateTime 有什么区别？](#178-java-8-的-instant-与-localdatetime-有什么区别)
+    - [179. try-catch 块中的 break 语句会如何执行？](#179-try-catch-块中的-break-语句会如何执行)
+    - [180. 面向对象编程（OOP）的核心概念有哪些？](#180-面向对象编程oop的核心概念有哪些)
+    - [181. 什么是数据封装？其优势是什么？](#181-什么是数据封装其优势是什么)
+    - [182. 什么是多态？如何理解其应用？](#182-什么是多态如何理解其应用)
+    - [183. 多态（Polymorphism）有哪些类型及其差异？](#183-多态polymorphism有哪些类型及其差异)
+    - [184. Java中的构造器类型及其解释](#184-java中的构造器类型及其解释)
+    - [185. 什么是内部类（Inner Class）？](#185-什么是内部类inner-class)
+    - [186. 子类（Subclass）的定义与特性？](#186-子类subclass的定义与特性)
+    - [187. Java中的包（Package）是什么？](#187-java中的包package是什么)
+    - [188. 如何在Java中使用包？](#188-如何在java中使用包)
+    - [189. Java包的优点有哪些？](#189-java包的优点有哪些)
+    - [190. Java基本数据类型（Primitive Types）的定义与规格](#190-java基本数据类型primitive-types的定义与规格)
+    - [191. 自动装箱（Autoboxing）与拆箱（Unboxing）的含义](#191-自动装箱autoboxing与拆箱unboxing的含义)
+    - [192. Java的包装类（Wrapper Classes）是什么？](#192-java的包装类wrapper-classes是什么)
+    - [193. 无限循环（Infinite Loop）的定义与中断方式](#193-无限循环infinite-loop的定义与中断方式)
+    - [194. 如何声明无限循环？](#194-如何声明无限循环)
+    - [195. continue与break语句的区别？](#195-continue与break语句的区别)
+    - [196. Java中switch语句的作用与应用场景？](#196-java中switch语句的作用与应用场景)
+    - [197. switch语句中的default作用？](#197-switch语句中的default作用)
 
 <a id='1-stringstringbuffer-和-stringbuilder-之间的区别是什么'></a>
 ### 1. `String`、`StringBuffer` 和 `StringBuilder` 之间的区别是什么？
@@ -3411,8 +3786,10 @@ void testWithdraw_InsufficientFunds_ShouldThrowException() {
 
 这是一个看似基础但容易遗忘的问题：
 
+
 ```java
 java -cp /dev/myapp.jar:/dev/mydependency.jar com.arc.MyApp
+
 ```
 
 > [技术细节] Windows 系统使用分号 `;` 作为路径分隔符，而 Linux/macOS 使用冒号 `:`。该命令通过 `-cp` 参数指定类路径，多个 jar 文件以分隔符连接。
@@ -3443,12 +3820,14 @@ java -cp /dev/myapp.jar:/dev/mydependency.jar com.arc.MyApp
 
 正确统计字符数的两种方式：
 
+
 ```java
 // Java 1.5+
 someString.codePointCount(0, someString.length());
 
 // Java 8+
 someString.codePoints().count();
+
 ```
 
 > [历史背景] Java 早期采用 UTF-16 时 Unicode 尚未定义 BMP 外的字符，导致此历史遗留问题。
@@ -3458,29 +3837,37 @@ someString.codePoints().count();
 
 因存在 `Double.NaN` 的特殊情况：
 
+
 ```java
 final double d1 = Double.NaN;
 final double d2 = Double.NaN;
 System.out.println(d1 == d2); // 输出 false
+
 ```
 
 可靠方法是使用 `Double.compare()`：
 
+
 ```java
 System.out.println(Double.compare(d1, d2) == 0); // 正确处理 NaN 情况
+
 ```
 
 <a id='8-这段代码存在什么问题'></a>
 ### 8. 这段代码存在什么问题？
 
+
 ```java
 final byte[] bytes = someString.getBytes();
+
 ```
 
 双重问题：依赖 JVM 默认字符集编码；假设默认字符集能处理所有字符。不同系统的默认字符集不同（如 Windows 常用 CP1252，Linux 常用 UTF-8），可能导致结果不一致。正确方式应显式指定字符集：
 
+
 ```java
 final byte[] bytes = someString.getBytes(StandardCharsets.UTF_8);
+
 ```
 
 > [陷阱提示] 类似代码审计问题常考察字符编码意识，此类问题也可能出现在文件读写或网络传输场景。
@@ -3490,11 +3877,13 @@ final byte[] bytes = someString.getBytes(StandardCharsets.UTF_8);
 
 JIT（即时编译器）是 JVM 的运行时优化机制，主要功能包括代码内联、锁消除、逃逸分析等。它动态将高频执行的字节码编译为本地机器码，显著提升性能。例如：
 
+
 ```java
 // 经过 JIT 优化后可能被替换为更高效的指令
 for (int i = 0; i < 100000; i++) {
     // 热点代码
 }
+
 ```
 
 > [延伸理解] JIT 的存在使得 Java 性能测试变得复杂，这也是 JMH 等专业基准测试框架出现的原因。
@@ -3504,16 +3893,20 @@ for (int i = 0; i < 100000; i++) {
 
 原代码的问题在于整数除法：
 
+
 ```java
 final double d = 1 / 2; // 整数运算结果为 0
+
 ```
 
 需将至少一个操作数转为浮点类型：
+
 
 ```java
 final double d = 1.0 / 2;    // 方案一
 final double d = 1 / 2.0;    // 方案二
 final double d = 1d / 2;     // 方案三（类型后缀）
+
 ```
 
 <a id='11-方法引用-system-outprintln-的推断类型是什么'></a>
@@ -3521,8 +3914,10 @@ final double d = 1d / 2;     // 方案三（类型后缀）
 
 在以下代码中：
 
+
 ```java
 IntStream.range(0, 10).forEach(System.out::println);
+
 ```
 
 方法引用类型为 `IntConsumer`。`IntStream.forEach()` 要求参数实现 `accept(int)` 方法，而 `PrintStream.println(int)` 方法签名匹配该函数式接口。
@@ -3532,14 +3927,17 @@ IntStream.range(0, 10).forEach(System.out::println);
 <a id='12-这段代码存在什么问题'></a>
 ### 12. 这段代码存在什么问题？
 
+
 ```java
 final Path path = Paths.get(...);
 
 Files.lines(path).forEach(System.out::println);
+
 ```
 
 答案段落：
 > [问题根源] `Files.lines()`返回的流（Stream）未正确关闭。正确的处理方式是使用以下带资源管理的try语句：
+
 
 ```java
 try (
@@ -3547,6 +3945,7 @@ try (
 ) {
     stream.forEach(System.out::println);
 }
+
 ```
 
 由于`Stream`继承自`BaseStream`（基础流），而`BaseStream`实现了`AutoCloseable`（自动关闭接口）。虽然从集合获取的流不受影响，但`Files.lines()`生成的I/O绑定流若不关闭，在流处理过程中发生错误时可能导致资源泄漏（resource leak）。
@@ -3556,6 +3955,7 @@ try (
 
 给定代码：
 
+
 ```java
 final List<Integer> list = new ArrayList<>();
 
@@ -3564,13 +3964,16 @@ list.add(2);
 list.add(3);
 
 list.remove(2);
+
 ```
 
 答案段落：
 最终列表内容为`[1, 2]`。关键在于`List`的两个重载方法：`remove(int index)`和`remove(Object obj)`。此处传入int类型参数时，JVM会选择最具体的重载方法（即按索引删除），移除索引2的元素（第三个元素）。若要删除值2，需使用：
 
+
 ```java
 list.remove(Integer.valueOf(2));
+
 ```
 
 <a id='14-编写检测两个字符串是否为变位词的函数例如save和vase'></a>
@@ -3580,6 +3983,7 @@ list.remove(Integer.valueOf(2));
 > [考察要点] 此题重点考察对问题的拆解能力，需要考虑字符串长度比对、字符频率统计以及特殊场景（如重复字符）处理。两种典型实现方式：
 
 **哈希统计法：**
+
 
 ```java
 public static boolean isAnagram(String a, String b) {
@@ -3599,9 +4003,11 @@ public static boolean isAnagram(String a, String b) {
     // 检查所有计数器归零
     return counts.values().stream().allMatch(v -> v == 0);
 }
+
 ```
 
 **排序对比法（更简洁）：**
+
 
 ```java
 public static boolean isAnagramSorted(String a, String b) {
@@ -3612,6 +4018,7 @@ public static boolean isAnagramSorted(String a, String b) {
     Arrays.sort(bChars);
     return Arrays.equals(aChars, bChars);
 }
+
 ```
 
 <a id='15-equals和hashcode方法有何契约关系'></a>
@@ -3638,14 +4045,17 @@ public static boolean isAnagramSorted(String a, String b) {
 答案段落：
 局部变量及其基本类型值存储在栈（Stack）内存中。对象实例存储在堆（Heap）内存，变量持有的是对象引用（reference）。例如：
 
+
 ```java
 String str = "Hello";  // 引用变量str存储在栈，实际字符串数据在堆
+
 ```
 
 <a id='19-下面java代码存在什么问题'></a>
 ### 19. 下面Java代码存在什么问题？
 
 代码示例：
+
 
 ```java
 public class Bar extends Foo {
@@ -3654,6 +4064,7 @@ public class Bar extends Foo {
         new Zoom(this);  // 传递未完全构造的实例
     }
 }
+
 ```
 
 答案段落：
@@ -3671,11 +4082,13 @@ public class Bar extends Foo {
 答案段落：
 通过`synchronized`关键字确保同一时刻仅有一个线程执行临界区代码，预防多线程并发修改共享数据导致的竞态条件（race condition）。例如对共享计数器的自增操作：
 
+
 ```java
 // 无同步会导致计数错误
 public synchronized void increment() { 
     count++; 
 }
+
 ```
 
 <a id='22-hashmap与concurrenthashmap有何区别'></a>
@@ -3722,6 +4135,7 @@ public synchronized void increment() {
 
 注解通过 `@interface` 关键字定义元数据，不需要为每个元数据类型创建接口，从而减少了类型系统的冗余声明。注解支持更细粒度的元数据绑定（如参数、返回值等），且能携带复杂参数结构，例如：
 
+
 ```java
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
@@ -3729,6 +4143,7 @@ public @interface Loggable {
     String category() default "DEBUG";
     boolean traceTime() default true;
 }
+
 ```
 
 > [深入理解] 编译器对注解的处理能力更灵活（如编译时检查、APT 代码生成），同时避免了「类型污染」问题——即不需要让类继承无意义的接口。
@@ -3747,16 +4162,19 @@ public @interface Loggable {
 
 > [代码示例]
 
+
 ```java
 int b = 10;
 b += 20L; // 等效于 b = (int)(b + 20L)
 // 而 long c = b + 20L; 此时自动提升为 long 类型
+
 ```
 
 <a id='30-java-为何禁止多继承类但允许实现多个接口'></a>
 ### 30. Java 为何禁止多继承类但允许实现多个接口？
 
 多继承类会导致「菱形继承」问题——当父类存在同名方法或字段时，子类无法确定继承路径。接口仅定义抽象方法和常量，不存在实现冲突（Java 8 后接口允许默认方法，但需主动解决冲突）。例如：
+
 
 ```java
 interface A { default void foo() { System.out.println("A"); } }
@@ -3765,16 +4183,19 @@ class C implements A, B {
     @Override
     public void foo() { A.super.foo(); } // 必须显式选择实现
 }
+
 ```
 
 <a id='31-下面的代码为何不抛出-nullpointerexception'></a>
 ### 31. 下面的代码为何不抛出 `NullPointerException`？
+
 
 ```java
 Test t = null;
 t.someMethod();
 
 public static void someMethod() { ... }
+
 ```
 
 静态方法属于类级别，调用时不需要实例。`t.someMethod()` 实际被编译为 `Test.someMethod()`，即使 `t` 是 `null` 也不影响方法查找。不过这种写法在 IDE 中通常会产生警告，建议使用类名调用静态方法以避免混淆。
@@ -3782,11 +4203,13 @@ public static void someMethod() { ... }
 <a id='32-下面的代码为何第二个输出是-true-而第一个是-false'></a>
 ### 32. 下面的代码为何第二个输出是 `true` 而第一个是 `false`？
 
+
 ```java
 Integer a = 1000, b = 1000;
 System.out.println(a == b); // false
 Integer c = 100, d = 100;
 System.out.println(c == d); // true
+
 ```
 
 Java 对 `Integer` 类型缓存了 -128 到 127 范围内的值，通过 `Integer.valueOf()` 自动装箱时会复用缓存对象。当数值超过此范围时，每次装箱都会创建新对象。代码中 `1000` 触发新建对象导致 `==` 比较引用地址不同，而 `100` 落于缓存区间，引用相同。
@@ -3798,6 +4221,7 @@ Java 对 `Integer` 类型缓存了 -128 到 127 范围内的值，通过 `Intege
 
 通过排序字符数组后比较字符串是否相等：
 
+
 ```java
 public boolean isAnagram(String s1, String s2) {
     if (s1.length() != s2.length()) return false;
@@ -3808,6 +4232,7 @@ public boolean isAnagram(String s1, String s2) {
     return Arrays.equals(arr1, arr2);
 }
 // 注意：原答案中的示例有误，因为 Arrays.sort 返回 void，需修正为使用字符数组排序后比较
+
 ```
 
 > [注意事项] 也可用字符计数法优化时间复杂度（O(n) 时间 + O(1) 空间），例如使用固定长度的计数数组统计每个字符出现频次。
@@ -3817,9 +4242,11 @@ public boolean isAnagram(String s1, String s2) {
 
 利用 `StringBuilder` 的 `reverse()` 方法：
 
+
 ```java
 String reversed = new StringBuilder("Java Programming").reverse().toString();
 // reverse() 内部使用数组交换算法，时间复杂度 O(n/2)
+
 ```
 
 <a id='35-在实际应用中如何选择-arraylist-和-linkedlist'></a>
@@ -3841,12 +4268,14 @@ String reversed = new StringBuilder("Java Programming").reverse().toString();
 
 示例：
 
+
 ```java
 List<String> list = new ArrayList<>(Arrays.asList("A", "B", "C"));
 ListIterator<String> it = list.listIterator();
 it.next(); // 移到第一个元素
 it.add("X"); // 在 "A" 后插入 "X"
 // 此时列表变为 ["A", "X", "B", "C"]
+
 ```
 
 <a id='37-泛型集合的主要优势是什么'></a>
@@ -3854,11 +4283,13 @@ it.add("X"); // 在 "A" 后插入 "X"
 
 泛型在编译时强制执行类型安全检查，避免运行时因类型转换导致的 `ClassCastException`。例如：
 
+
 ```java
 List<String> list = new ArrayList<>();
 list.add("text");
 // list.add(123); // 编译报错
 String s = list.get(0); // 无需强制转换
+
 ```
 
 泛型擦除（Type Erasure）机制使得运行时不会保留类型参数，但编译时生成的强制转换代码确保了类型安全。
@@ -3870,6 +4301,7 @@ String s = list.get(0); // 无需强制转换
 
 **fail-safe** 迭代器通过操作集合的拷贝（如 `CopyOnWriteArrayList`）或使用并发数据结构（如 `ConcurrentHashMap`），允许在迭代时修改集合。例如：
 
+
 ```java
 List<String> list = new CopyOnWriteArrayList<>(Arrays.asList("A", "B"));
 Iterator<String> it = list.iterator();
@@ -3877,6 +4309,7 @@ list.add("C");
 while(it.hasNext()) {
     System.out.println(it.next()); // 输出 A 和 B，忽略新增的 C
 }
+
 ```
 
 > [注意点] fail-safe 的缺点是可能读取到过时的数据，且内存消耗较高（拷贝数据集）。
@@ -3898,17 +4331,21 @@ while(it.hasNext()) {
 
 String在Java中具有不可变性（immutable）且驻留于字符串常量池。这意味着敏感数据在不再使用后仍可能长时间存在于内存中，直到被垃圾回收——这段时间内通过内存转储可能被恶意读取
 
+
 ```java
 // 不安全示例：
 String password = "s3cret";
 // 使用后password引用仍指向内存中的"..."，直到GC回收
+
 ```
 
 字符数组的优势在于可以主动清除数据：
 
+
 ```java
 char[] password = new char[]{'s','3','c','r','e'};
 Arrays.fill(password, (char)0); // 立即置空内存中的数据
+
 ```
 
 > [深入理解] 字符串常量池的驻留机制和不可变性既是优势也是安全隐患，这里关键考察候选人对内存数据管理细节的掌控
@@ -3917,6 +4354,7 @@ Arrays.fill(password, (char)0); // 立即置空内存中的数据
 ### 41. 什么是`ThreadLocal`类？如何及为何要使用它？
 
 [`ThreadLocal`](http://docs.oracle.com/javase/7/docs/api/java/lang/ThreadLocal.html)允许每个线程独立存储和访问变量的副本。其典型使用场景是将线程相关的状态（如用户ID、事务ID）与类实例解耦：
+
 
 ```java
 public class ThreadId {
@@ -3928,6 +4366,7 @@ public class ThreadId {
     }
 }
 // 每个线程首次调用get()时获得独立ID
+
 ```
 
 > [设计模式] 通常将ThreadLocal变量声明为private static，避免因实例化多次导致数据混乱。线程终止后，其对应的thread-local变量副本会被自动回收
@@ -3939,6 +4378,7 @@ public class ThreadId {
 
 - `Thread.sleep(long)`：保持当前持有的对象锁（monitor），阻塞指定时间
 - `Object.wait(long)`：立即释放对象锁，允许其他线程获取该锁，直到超时或被唤醒（通过notify/notifyAll）
+
 
 ```java
 // 典型sleep用法：定时轮询
@@ -3954,6 +4394,7 @@ synchronized(lock) {
     }
     // 条件满足后的处理
 }
+
 ```
 
 > [并发要点] wait()必须处于同步块中否则抛出IllegalMonitorStateException，sleep()则可在任意上下文调用
@@ -3965,6 +4406,7 @@ synchronized(lock) {
 
 原始递归：
 
+
 ```java
 public int sum(int n) {
     return (n <= 0) ? 0 : n + sum(n-1); // 非尾递归
@@ -3974,9 +4416,11 @@ public int sum(int n) {
 private int tailSum(int n, int acc) {
     return (n == 0) ? acc : tailSum(n-1, acc + n);
 }
+
 ```
 
 转换为迭代：
+
 
 ```java
 public int iterativeSum(int n) {
@@ -3986,6 +4430,7 @@ public int iterativeSum(int n) {
     }
     return acc;
 }
+
 ```
 
 > [语言特性] 函数式语言(如Scala)可通过@tailrec实现编译期优化，而Java更推荐迭代方式避免栈溢出风险
@@ -3995,11 +4440,13 @@ public int iterativeSum(int n) {
 
 通过算数运算（加减法）实现变量值交换：
 
+
 ```java
 int a = 5, b = 3;
 a = a + b;  // a=8
 b = a - b;  // b=5 (原a值)
 a = a - b;  // a=3 (原b值)
+
 ```
 
 > [注意] 此方法可能引发整型溢出，实际工程中更推荐使用临时变量或异或操作（但同样存在可读性问题）
@@ -4015,6 +4462,7 @@ a = a - b;  // a=3 (原b值)
 3. 当目标线程抛出未捕获异常时自动触发回调
 
 >[代码示例原理] 核心实现逻辑在异常处理器的回调方法中处理具体异常：
+
 
 ```java
 // 创建自定义异常处理器
@@ -4040,6 +4488,7 @@ Thread otherThread = new Thread() {
 
 otherThread.setUncaughtExceptionHandler(handler);
 otherThread.start();
+
 ```
 
 >[潜在陷阱] 需注意：主线程无法直接通过`try-catch`捕获其他线程的异常，必须通过注册异常处理器实现。该方法适用于所有未显式处理（未被catch块捕获）的异常。
@@ -4082,6 +4531,7 @@ otherThread.start();
 
 >[典型示例] 验证 finally 块执行顺序：
 
+
 ```java
 public class FinallyDemo {
  public static void main(String[] args) {
@@ -4101,9 +4551,11 @@ public class FinallyDemo {
   }
  }
 }
+
 ```
 
 >[执行结果分析] 可能的两种输出顺序：
+
 
 ```java
 // 异常打印可能在 finally 语句之后
@@ -4115,6 +4567,7 @@ Exception in thread "main" java.lang.ArithmeticException...
 Exception in thread "main" java.lang.ArithmeticException...
 divide 的 finally
 main 的 finally
+
 ```
 
 >[底层机制] finally 语句会在方法返回前（包括异常抛出时）执行。JVM 通过复制 finally 代码到所有可能的退出路径来实现该机制。
@@ -4126,6 +4579,7 @@ main 的 finally
 >[关键问题] 抽象方法的实现类初始化顺序问题。具体表现为父类构造函数执行时子类字段尚未初始化，导致抽象方法返回错误数据。
 
 >[反例分析] 以下 Widget 抽象类存在设计缺陷：
+
 
 ```java
 public abstract class Widget {
@@ -4152,6 +4606,7 @@ public class SquareWidget extends Widget {
     @Override
     protected int width() { return size; } // 此时 size=0
 }
+
 ```
 
 >[问题定位] SquareWidget 实例化时执行顺序：
@@ -4173,8 +4628,10 @@ public class SquareWidget extends Widget {
 
 >[代码示例] 以下赋值会导致编译错误：
 
+
 ```java
 List<Object> objectList = new ArrayList<String>(); // 编译失败
+
 ```
 
 >[控制手段] Java 通过「使用点型变（Use-site variance）」提供灵活性：
@@ -4182,21 +4639,25 @@ List<Object> objectList = new ArrayList<String>(); // 编译失败
 1. **协变（Covariance）**：`? extends T`  
 允许接受 T 及其子类型的集合：
 
+
 ```java
 // 可接收 List<Integer>, List<Double> 等
 double sum(List<? extends Number> numbers) { 
     return numbers.stream().mapToDouble(Number::doubleValue).sum();
 }
+
 ```
 
 2. **逆变（Contravariance）**：`? super T`  
 允许接受 T 及其父类型的集合：
+
 
 ```java
 // 可接收 Consumer<Number>, Consumer<Object> 
 void processNumbers(List<? super Integer> consumer) {
     consumer.add(42); // 安全写入
 }
+
 ```
 
 >[设计要点] 遵循 PECS 原则（Producer-Extends, Consumer-Super）：
@@ -4214,6 +4675,7 @@ void processNumbers(List<? super Integer> consumer) {
 
 > [使用场景] 常用于初始化复杂的静态对象或在静态注册表中注册类型（如JDBC驱动）。例如创建不可变静态`Map`时，可用静态初始化块替代单行初始化：
 
+
 ```java
 public static final Map<String, Boolean> FEATURE_FLAGS;
 static {
@@ -4222,6 +4684,7 @@ static {
     flags.put("reticulate-splines", true);
     FEATURE_FLAGS = Collections.unmodifiableMap(flags);
 }
+
 ```
 
 同类中可声明多个静态字段并立即初始化，因为允许存在多个静态初始化块。
@@ -4232,6 +4695,7 @@ static {
 乍看之下`HashSet`在几乎所有场景都更优：`add`、`remove`和`contains`时间复杂度为O(1)，而`TreeSet`为O(log(N))。
 
 > [关键区别] 当需要维护元素顺序或按范围查询时，必须使用`TreeSet`。例如存储带时间戳的`Event`对象集合，使用`TreeSet`可以通过`tailSet`快速获取当日事件：
+
 
 ```java
 public class Event implements Comparable<Event> {
@@ -4245,14 +4709,17 @@ public class Event implements Comparable<Event> {
 SortedSet<Event> events = new TreeSet<>();
 long midnightToday = ...;
 events.tailSet(new Event(midnightToday));
+
 ```
 
 > [自定义排序] 若类未实现`Comparable`接口，可通过`Comparator`(比较器)构造`TreeSet`：
+
 
 ```java
 SortedSet<Event> events = new TreeSet<>(
     (left, right) -> Long.compare(left.timestamp, right.timestamp)
 );
+
 ```
 
 总体而言，当元素顺序敏感且读操作频繁时`TreeSet`是更好选择。
@@ -4263,6 +4730,7 @@ SortedSet<Event> events = new TreeSet<>(
 方法引用是Java 8引入的语法，允许将构造函数或方法作为lambda表达式使用。当方法签名与目标函数式接口匹配时，可简化lambda的模板代码。
 
 > [示例对比] 以下代码展示传统匿名类到方法引用的演进：
+
 
 ```java
 // Java 8之前
@@ -4275,15 +4743,18 @@ onShutdown(() -> service.stop());
 
 // 方法引用终极简化
 onShutdown(service::stop);
+
 ```
 
 > [流式操作] 在`Stream`中可结合类方法使用，增强可读性：
+
 
 ```java
 List<String> names = people.stream()
     .map(Person::getName)
     .map(String::toLowerCase)
     .collect(toList());
+
 ```
 
 方法引用通过将复杂逻辑移至独立方法，不仅提升代码简洁性，还增强可测试性和复用性。
@@ -4294,6 +4765,7 @@ List<String> names = people.stream()
 枚举本质上是实例数量固定的final类，可实现接口但不能继承其他类。
 
 > [高阶应用] 可用于策略模式实现。例如联系人方式枚举的案例：
+
 
 ```java
 public enum ContactMethod {
@@ -4316,6 +4788,7 @@ public enum ContactMethod {
 // 使用时直接调用枚举行为
 ContactMethod method = user.getPrimaryContactMethod();
 method.initiate(user);
+
 ```
 
 > [核心优势] 枚举通过强类型和内置方法消除`switch`语句，提升安全性和可维护性。建议优先使用枚举而非整数常量，抽象方法的灵活运用可彻底避免条件分支。
@@ -4325,12 +4798,14 @@ method.initiate(user);
 
 当某个集合被另一个集合支持时，意味着二者的修改操作会互相影响。举例来说，`Map.keySet`返回的键集合与原始映射(map)具有这种关联性。例如需要实现白名单功能过滤非法键时，这种特性会非常有用：
 
+
 ```java
         public static <K, V> Map<K, V> whitelist(Map<K, V> map, K... allowedKeys) {
             Map<K, V> copy = new HashMap<>(map);
             copy.keySet().retainAll(asList(allowedKeys));
             return copy;
         }
+
 ```
 
 > [考察内容] 此处需要展示如何通过修改键集合来反向影响底层映射。`retainAll`方法会直接作用于原始映射，省去了遍历检查每个键的步骤。
@@ -4349,6 +4824,7 @@ method.initiate(user);
 
 以下是反射实现的简单对象属性收集：
 
+
 ```java
         Person person = new Person("Doug", "Sparling", 31);
 
@@ -4356,6 +4832,7 @@ method.initiate(user);
         for (Field field : person.getClass().getDeclaredFields()) {
             values.put(field.getName(), field.get(person));
         }
+
 ```
 
 > [核心应用] 这种机制对通用工具库开发至关重要，但直接使用反射的场景较少。需权衡反射带来的灵活性与其可能导致的运行时错误风险。
@@ -4367,6 +4844,7 @@ method.initiate(user);
 
 内存敏感的工厂模式实现应当使用静态嵌套类：
 
+
 ```java
         public class WidgetParserFactory {
             ...
@@ -4376,6 +4854,7 @@ method.initiate(user);
             }
             // 正确做法应改为静态嵌套类
         }
+
 ```
 
 > [内存考量] 当嵌套类实例可能比外部类存活更久时，必须使用静态嵌套类避免内存泄漏。此外在反射操作（如序列化）时，内部类隐含的外部类引用可能造成意外问题。设计原则是优先选择静态嵌套类，除非必须访问外部类实例成员。
@@ -4387,6 +4866,7 @@ method.initiate(user);
 
 以下代码说明差异：
 
+
 ```java
 String s1 = "Test";        // 使用常量池
 String s2 = "Test";        // 复用s1的引用
@@ -4395,6 +4875,7 @@ String s4 = new String("Test");// 再建新对象
 
 System.out.println(s1==s2); // true
 System.out.println(s3==s4); // false
+
 ```
 
 > [最佳实践] 只有需要强制创建新实例的特殊场景才会使用构造方法，常规情况都推荐字面量方式。前者可能导致不必要的内存消耗，尤其在大规模字符串处理时影响显著。
@@ -4423,12 +4904,14 @@ JDK（Java Development Kit，Java 开发工具包）是用于编译、打包和�
 
 构造函数是用于初始化对象的特殊代码块，与类名严格一致且无返回类型声明。当通过 `new` 操作符创建对象时，会隐式自动调用构造函数。例如：
 
+
 ```java
 public class User {
     public User() { // 无参构造器
         // 初始化逻辑
     }
 }
+
 ```
 
 > [注意事项] 如果不显式定义构造器，编译器会生成默认无参构造器；一旦自定义构造器存在，默认构造器不再自动生成。
@@ -4443,8 +4926,10 @@ public class User {
 
 包装类（Wrapper Class）将基本数据类型封装为对象，实现面向对象操作。例如 `Integer` 对应 `int`，`Character` 对应 `char`。这种封装允许在需要对象的场景（如集合类）使用基础类型值，例如：
 
+
 ```java
 List<Integer> numbers = new ArrayList<>(); // 使用 Integer 而非 int
+
 ```
 
 自动装箱（Autoboxing）和拆箱（Unboxing）机制简化了基本类型与包装类的转换过程。
@@ -4454,10 +4939,12 @@ List<Integer> numbers = new ArrayList<>(); // 使用 Integer 而非 int
 
 同步机制用于协调多线程对共享资源的访问，防止竞态条件（race condition）。核心手段是通过 `synchronized` 关键字或显式锁实现的互斥访问。例如：
 
+
 ```java
 public synchronized void updateCounter() {
     // 临界区代码
 }
+
 ```
 
 当线程 A 执行同步方法时，其他线程必须等待其释放对象锁。这种机制确保共享变量变更的可见性（visibility）和原子性（atomicity），避免数据不一致问题。
@@ -4492,12 +4979,14 @@ Java 的 `main` 方法参数 `String[] args` 不同于 C/C++，不包含程序�
 
 Servlet 是服务器端技术，用于扩展 Web 服务器的动态内容处理能力。它运行在 Servlet 容器（如 Tomcat）中，处理 HTTP 请求并生成响应，支持会话管理、过滤器链等功能。例如典型的 servlet 结构：
 
+
 ```java
 public class MyServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
         // 处理 GET 请求
     }
 }
+
 ```
 
 <a id='70-servlet-的生命周期阶段有哪些'></a>
@@ -4522,9 +5011,11 @@ public class MyServlet extends HttpServlet {
 
 使用场景示例：
 
+
 ```java
 RequestDispatcher dispatcher = request.getRequestDispatcher("/result.jsp");
 dispatcher.forward(request, response); // 将请求转交给 JSP 页面
+
 ```
 
 <a id='72-列出-java-连接数据库的步骤'></a>
@@ -4557,10 +5048,12 @@ JDBC 驱动是连接 Java 应用和数据库的中介组件，分为四类：
 
 该关键字标记字段不被序列化。例如用户密码字段：
 
+
 ```java
 public class User implements Serializable {
     private transient String password; // 不会被持久化
 }
+
 ```
 
 当对象序列化为字节流时，`transient` 字段保持默认值（null、0 等）。适用于敏感数据或临时状态字段，可减少存储开销和保护隐私。
@@ -4572,11 +5065,13 @@ public class User implements Serializable {
 
 方法重载（Method Overloading）允许同一类中存在多个同名方法，但参数列表必须不同（类型、顺序或数量）。例如：
 
+
 ```java
 public class Calculator {
     public int add(int a, int b) { return a + b; }
     public double add(double a, double b) { return a + b; } // 重载方法
 }
+
 ```
 
 编译时通过方法签名（方法名+参数类型）确定调用版本，与返回类型无关。常用于提供多种参数组合的便捷调用方式。
@@ -4598,10 +5093,12 @@ public class Calculator {
 
 主要用来简化资源管理流程，可自动关闭实现了`AutoCloseable`接口的资源（如文件流、数据库连接等）。其工作原理是在代码块执行完毕后自动调用资源的`close()`方法，极大减少资源泄漏风险。例如：
 
+
 ```java
 try (FileInputStream fis = new FileInputStream("file.txt")) {
     // 使用资源操作
 } // 此处自动关闭
+
 ```
 
 <a id='79-core-java-中的方法链method-chaining是什么'></a>
@@ -4609,8 +5106,10 @@ try (FileInputStream fis = new FileInputStream("file.txt")) {
 
 通过每个方法返回当前对象实例（通常用`return this`），实现连续调用多个方法的编码风格。例如构建器模式中的典型应用：
 
+
 ```java
 new StringBuilder().append("A").append("B").toString();
+
 ```  
 
 > [设计意义] 这种模式通过减少中间变量使代码更紧凑，常见于流畅接口（fluent interface）设计中。
@@ -4620,10 +5119,12 @@ new StringBuilder().append("A").append("B").toString();
 
 通过接口机制实现：类的单继承限制导致无法从多个父类继承，但可以实现多个接口。接口中的默认方法（default method）为这一机制提供了具体行为复用的能力。例如：
 
+
 ```java
 class Bird implements Flyable, Singable { 
     // 实现多个接口方法
 }
+
 ```
 
 <a id='81-core-java-中-hashcode-方法的作用是什么'></a>
@@ -4638,9 +5139,11 @@ class Bird implements Flyable, Singable {
 - **Comparable**：通过对象自身的`compareTo()`定义自然排序规则，例如`String`类的字母顺序。需要修改对象类代码。
 - **Comparator**：外部定义比较逻辑，允许为同一对象类型创造多种排序策略。例如对同一批学生数据分别按年龄和成绩排序：
 
+
 ```java
 Comparator<Student> byAge = Comparator.comparingInt(Student::getAge);
 Comparator<Student> byScore = Comparator.comparingDouble(Student::getScore);
+
 ```  
 
 > [场景选择] 需要扩展多种排序方式时优选Comparator，避免污染对象类。
@@ -4670,6 +5173,7 @@ Comparator<Student> byScore = Comparator.comparingDouble(Student::getScore);
 
 通过两次检查降低同步锁的开销，典型应用于单例模式的线程安全实现。关键点在于使用`volatile`修饰实例变量以保证可见性和禁止指令重排：
 
+
 ```java
 public class Singleton {
     private volatile static Singleton instance;
@@ -4685,6 +5189,7 @@ public class Singleton {
         return instance;
     }
 }
+
 ```  
 
 > [历史问题] Java 5 之前的 JMM（Java 内存模型）可能存在指令重排序导致的问题，volatile 关键字可修复此隐患。
@@ -4708,6 +5213,7 @@ public class Singleton {
 
 保留原始技术术语示例：假设需要在接口中添加遍历方法可这样写
 
+
 ```java
 interface Collection {
     default void forEach(Consumer action) {
@@ -4715,6 +5221,7 @@ interface Collection {
             action.accept(o);
     }
 }
+
 ```
 
 这种方式确保所有老版本实现类自动获得新方法而无需修改源码，极大降低了系统升级成本。
@@ -4726,10 +5233,12 @@ Stream API通过`parallelStream()`方法在保持原有代码结构的同时轻�
 
 > [深入理解] `parallelStream()`底层使用Fork-Join框架实现任务分割，开发者无需直接操作线程池。但需要注意共享变量线程安全问题，非原子性操作可能导致数据竞争。
 
+
 ```java
 List<Integer> numbers = Arrays.asList(1,2,3,4);
 int sum = numbers.parallelStream()
                 .reduce(0, Integer::sum); 
+
 ```
 
 上述代码自动将加法运算分解到多个线程执行，结果由框架合并。但在高竞争场景中，这种方式的性能提升可能受限。
@@ -4741,6 +5250,7 @@ int sum = numbers.parallelStream()
 
 实际案例：
 
+
 ```java
 // 编译前
 List<String> list = new ArrayList<>();
@@ -4751,6 +5261,7 @@ String s = list.get(0);
 List list = new ArrayList();
 list.add("test");
 String s = (String) list.get(0); 
+
 ```
 
 这种机制保证了与JDK 1.5前版本的二进制兼容性，但也导致运行时无法获取泛型类型参数。
@@ -4766,6 +5277,7 @@ String s = (String) list.get(0);
 
 示例问题代码：
 
+
 ```java
 public class LeakDemo {
     private static final Set<Object> cache = new HashSet<>();
@@ -4775,6 +5287,7 @@ public class LeakDemo {
         // 添加后不删除，静态集合会阻止GC回收
     }
 }
+
 ```
 
 解决方法是对缓存使用WeakHashMap或定期清理机制。
@@ -4786,6 +5299,7 @@ public class LeakDemo {
 
 典型应用场景：
 
+
 ```java
 @FunctionalInterface
 interface StringProcessor {
@@ -4795,6 +5309,7 @@ interface StringProcessor {
         System.out.println("Processing string");
     }
 }
+
 ```
 
 若添加第二个抽象方法会导致编译错误，这有助于保持Lambda表达式转换的一致性。
@@ -4806,6 +5321,7 @@ interface StringProcessor {
 
 错误示例：
 
+
 ```java
 class Parent {
     public void execute(String param) {}
@@ -4815,6 +5331,7 @@ class Child extends Parent {
     @Override
     public void execute(int param) {} // 编译错误：参数类型不匹配
 }
+
 ```
 
 现代IDE会在缺失@Override时提示潜在的拼写错误问题，强制使用该注解有利于提高代码可靠性。
@@ -4826,6 +5343,7 @@ class Child extends Parent {
 
 1. **枚举单例**（JVM保证单例性和线程安全）:
 
+
 ```java
 public enum Singleton {
     INSTANCE;
@@ -4834,9 +5352,11 @@ public enum Singleton {
         // 业务逻辑
     }
 }
+
 ```
 
 2. **静态内部类模式**（Bill Pugh方案）:
+
 
 ```java
 public class Singleton {
@@ -4850,6 +5370,7 @@ public class Singleton {
         return Holder.INSTANCE;
     }
 }
+
 ```
 
 枚举方式天然防反射攻击，而静态内部类实现延迟加载且无需同步锁。两种方案都在类加载时保证线程安全。
@@ -4864,6 +5385,7 @@ public class Singleton {
 
 处理原则：
 
+
 ```java
 // 必须处理受检异常
 try {
@@ -4874,6 +5396,7 @@ try {
 
 // 非受检异常通常不强制处理
 Double.parseDouble("text"); // 可能抛出NumberFormatException
+
 ```
 
 正确区分二者有助于构建健壮的异常处理策略，避免过度捕获导致的代码冗余。
@@ -4882,6 +5405,7 @@ Double.parseDouble("text"); // 可能抛出NumberFormatException
 ### 95. Java如何解决菱形继承问题？
 
 通过接口默认方法的冲突解决机制处理。当类实现多个包含相同默认方法的接口时，必须显式重写方法：
+
 
 ```java
 interface Alpha {
@@ -4898,6 +5422,7 @@ class Gamma implements Alpha, Beta {
         Alpha.super.reset(); // 显式选择实现
     }
 }
+
 ```
 
 这种设计避免了传统多继承的歧义问题，同时保持了接口的可扩展性。类必须自行解决冲突的规则确保了行为的确定性。
@@ -4907,11 +5432,13 @@ class Gamma implements Alpha, Beta {
 
 assert适用于验证程序内部的不变量（如算法中间状态），在开发阶段暴露假设条件失败案例。典型应用模式：
 
+
 ```java
 public double calculateSpeed(double distance, double time) {
     assert time > 0 : "时间必须大于零";
     return distance / time;
 }
+
 ```
 
 注意事项：
@@ -4927,27 +5454,35 @@ public double calculateSpeed(double distance, double time) {
 
 1. **静态方法引用**：
 
+
 ```java
 Arrays.asList(1,2,3).forEach(System.out::println);
+
 ```
 
 2. **实例方法引用**：
 
+
 ```java
 String str = "demo";
 Supplier<Integer> lenSupplier = str::length; 
+
 ```
 
 3. **构造器引用**：
 
+
 ```java
 Supplier<List<String>> listFactory = ArrayList::new;
+
 ```
 
 4. **任意对象方法引用**：
 
+
 ```java
 Arrays.sort(stringArray, String::compareToIgnoreCase);
+
 ```
 
 这种语法糖提升了集合操作等函数式编程场景的代码可读性，但需注意方法签名匹配规则。
@@ -4967,8 +5502,10 @@ NavigableSet接口扩展了SortedSet接口，提供了基于元素位置的导�
 
 Java 8引入的forEach方法通过lambda表达式或方法引用（method reference）提供了更简洁的集合遍历方式。它定义在Iterable接口中，允许所有集合类使用函数式风格操作元素。例如：  
 
+
 ```java
 list.forEach(item -> System.out.println(item));
+
 ```  
 
 [代码注意] > 这种写法比传统迭代器更直观，但需注意其内部实现本质仍是迭代器模式  
@@ -4978,6 +5515,7 @@ list.forEach(item -> System.out.println(item));
 
 静态(static)方法属于类本身，无需实例即可调用，且只能访问静态成员；实例方法必须通过对象调用，能访问实例成员和静态成员。例如：  
 
+
 ```java
 class Test {
     static void staticMethod() {}
@@ -4986,6 +5524,7 @@ class Test {
 // 调用方式：
 Test.staticMethod(); 
 new Test().instanceMethod();
+
 ```  
 
 [设计原则] > 静态方法常用于工具类，而实例方法用于对象状态相关的操作  
@@ -5010,6 +5549,7 @@ super主要用于子类中：
 - 访问父类被隐藏的字段  
 示例：  
 
+
 ```java
 class Parent { int x = 10; }
 class Child extends Parent {
@@ -5017,6 +5557,7 @@ class Child extends Parent {
         System.out.println(super.x); // 明确访问父类字段
     }
 }
+
 ```  
 
 > [易错点] 在静态上下文中使用super会导致编译错误  
@@ -5026,9 +5567,11 @@ class Child extends Parent {
 
 final变量只能赋值一次，声明时或构造函数中可以初始化，后续修改会编译报错。例如：  
 
+
 ```java
 final int MAX = 100;
 MAX = 200; // 编译错误
+
 ```  
 
 [线程安全] > final变量的不可变性使其成为实现线程安全的重要工具  
@@ -5064,9 +5607,11 @@ MAX = 200; // 编译错误
 3. finally块总会执行（常用于资源释放）  
 [注意] 若try或catch中有return语句，finally仍会在返回前执行：  
 
+
 ```java
 try { return 1; } 
 finally { System.out.println("执行"); } // 输出后返回1
+
 ```  
 
 <a id='108-和equals在core-java中的区别是什么'></a>
@@ -5076,11 +5621,13 @@ finally { System.out.println("执行"); } // 输出后返回1
 - `equals()`默认与`==`相同，但可被重写为值比较（如String类）  
 示例：  
 
+
 ```java
 String s1 = new String("text");
 String s2 = new String("text");
 s1 == s2;       // false
 s1.equals(s2);  // true
+
 ```  
 
 [最佳实践] 比较对象内容时务必优先使用正确重写的equals方法  
@@ -5117,11 +5664,13 @@ Applet 是设计用于通过互联网传输 Java 代码的特殊程序，由支�
 
 在多核系统中的缓存行（Cache Line）共享导致的性能损耗。当不同处理器上的线程修改同一缓存行中的不同变量时，即使变量彼此无关，也会引发整个缓存行的同步。例如：
 
+
 ```java
 class Data {
     volatile long x; // 与 y 可能处于同一缓存行
     volatile long y;
 }
+
 ```
 
 > [深入理解] 可使用字段填充（Padding）或 `@Contended` 注解（Java 8+）来避免。这种情况在高度优化代码中尤为隐蔽。
@@ -5155,12 +5704,14 @@ class Data {
 
 > [示例代码]
 
+
 ```java
 StringBuffer buffer = new StringBuffer(); // 多线程环境使用
 buffer.append("thread-safe");
 
 StringBuilder builder = new StringBuilder(); // 单线程使用
 builder.append("faster");
+
 ```
 
 <a id='117-工厂模式与抽象工厂模式的区别'></a>
@@ -5173,10 +5724,12 @@ builder.append("faster");
 
 抽象工厂模式示意图：  
 
+
 ```
 AbstractFactory
 ├── CarFactory → Engine + Tire
 └── ComputerFactory → CPU + Motherboard
+
 ```
 
 <a id='118-jar-和-war-文件的区别'></a>
@@ -5187,6 +5740,7 @@ AbstractFactory
 
 典型目录结构对比：  
 
+
 ```
 JAR: myapp.jar
     └─ com/example/MyClass.class
@@ -5194,6 +5748,7 @@ JAR: myapp.jar
 WAR: myapp.war
     ├─ WEB-INF/web.xml
     └─ index.jsp
+
 ```
 
 <a id='119-jit-编译器的作用'></a>
@@ -5212,12 +5767,14 @@ WAR: myapp.war
 
 通过单 catch 块捕获多个异常类型，语法示例：  
 
+
 ```java
 try {
     // 可能抛出 IOException 或 SQLException 的代码
 } catch (IOException | SQLException ex) {
     // 异常处理逻辑
 }
+
 ```
 
 特点：异常变量隐式为 final，不能重新赋值。JDK 7 开始支持。
@@ -5233,8 +5790,10 @@ try {
 
 典型包声明：  
 
+
 ```java
 package com.example.util;
+
 ```
 
 <a id='122-final-关键字的不同用法'></a>
@@ -5248,11 +5807,13 @@ package com.example.util;
 
 示例：
 
+
 ```java
 final class Immutable { // 不可继承
     final int MAX_VALUE = 100; // 常量
     final void log(){} // 不可重写
 }
+
 ```
 
 <a id='123-java-中的继承类型'></a>
@@ -5279,11 +5840,13 @@ final class Immutable { // 不可继承
 
 典型函数式接口示例：  
 
+
 ```java
 @FunctionalInterface
 interface Converter<F, T> {
     T convert(F from);
 }
+
 ```
 
 <a id='125-path-和-classpath-的区别'></a>
@@ -5294,12 +5857,14 @@ interface Converter<F, T> {
 
 设置示例：
 
+
 ```bash
 set PATH=%PATH%;C:\Java\bin
 set CLASSPATH=.;C:\lib\mylib.jar
 
 export PATH=$PATH:/opt/java/bin
 export CLASSPATH=.:/home/user/lib/*
+
 ```
 
 <a id='126-序列化与反序列化'></a>
@@ -5313,6 +5878,7 @@ export CLASSPATH=.:/home/user/lib/*
 
 示例：
 
+
 ```java
 // 序列化
 try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("data.obj"))){
@@ -5323,6 +5889,7 @@ try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("data.o
 try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream("data.obj"))){
     MyClass obj = (MyClass) ois.readObject();
 }
+
 ```
 
 <a id='127-什么是三元运算符ternary-operator'></a>
@@ -5465,6 +6032,7 @@ static关键字将变量或方法声明为类层级成员，无需实例即可�
 
 双重校验锁（Double-Checked Locking）是实现线程安全单例的典型方式：
 
+
 ```java
 public class Singleton {
     private static volatile Singleton instance;
@@ -5480,6 +6048,7 @@ public class Singleton {
         return instance;
     }
 }
+
 ```
 
 <a id='148-java-8的stream-api在数据处理中的优势'></a>
@@ -5545,6 +6114,7 @@ volatile通过两个机制保证内存可见性：
 
 这解决了多线程环境下的“可见性问题”，即一个线程修改的变量值对其他线程立即可见。例如：
 
+
 ```java
 volatile boolean flag = false;
 
@@ -5553,6 +6123,7 @@ flag = true;
 
 // 线程2
 while(!flag) { /* 立即可见flag变化 */ }
+
 ```
 
 > [局限说明] volatile只能保证单操作的原子性，复合操作（如i++）仍需synchronized或Atomic类来保证原子性。
@@ -5588,12 +6159,14 @@ while(!flag) { /* 立即可见flag变化 */ }
 - 代码生成（Lombok 的 `@Getter` 自动生成 getter）  
 开发自定义注解时需搭配处理器使用：  
 
+
 ```java
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface Benchmark {
     int iterations() default 1000;
 }
+
 ```
 
 > [框架应用] 现代 Java 框架广泛采用注解取代 XML 配置，提升开发效率和代码可读性。
@@ -5626,6 +6199,7 @@ public @interface Benchmark {
 
 枚举通过类型安全的方式定义常量集合：
 
+
 ```java
 public enum HttpStatus {
     OK(200), NOT_FOUND(404), SERVER_ERROR(500);
@@ -5642,6 +6216,7 @@ public enum HttpStatus {
 // 使用示例
 HttpStatus status = HttpStatus.OK;
 System.out.println(status.getCode());  // 输出 200
+
 ```
 
 > [深度优势] 枚举实例是单例且线程安全的，可用在 switch 语句中，编译器会检查类型有效性避免错误。
@@ -5662,9 +6237,11 @@ System.out.println(status.getCode());  // 输出 200
 
 字符串池缓存字面量字符串实现重用：
 
+
 ```java
 String s1 = "text";  // 使用池中对象
 String s2 = new String("text");  // 创建新对象
+
 ```
 
 String 的不可变性保证线程安全且减少内存占用，而 StringBuffer 的同步操作在单线程场景会造成性能损耗。Java 5 后推荐 `StringBuilder` 替代 StringBuffer。
@@ -5692,6 +6269,7 @@ String 的不可变性保证线程安全且减少内存占用，而 StringBuffer
 - 采用 try-with-resources 自动关闭资源  
 日志记录时应包含诊断信息：
 
+
 ```java
 try {
     processRequest();
@@ -5699,6 +6277,7 @@ try {
     log.error("请求ID:{} 处理失败，错误码:{}", requestId, e.getCode(), e);
     throw e;
 }
+
 ```
 
 <a id='163-java-垃圾回收的运作机制及调优方向'></a>
@@ -5736,12 +6315,14 @@ IntelliJ IDEA 操作步骤：
 3. 勾选需要生成方法的字段  
 使用 Lombok 可简化代码：
 
+
 ```java
 @Data  // 自动生成 getter/setter/toString 等
 public class User {
     private String name;
     private int age;
 }
+
 ```
 
 > [最佳实践] 避免手动维护样板代码，优先使用自动生成工具提升开发效率。
@@ -5765,11 +6346,13 @@ Java 的访问修饰符用于控制类、构造器、变量和方法的访问范
 
 foreach 循环的语法设计隐藏了迭代器（Iterator）的直接访问，因此常规手段无法直接调用`remove()`方法。条件性跳过迭代的标准做法是通过 continue 语句实现：
 
+
 ```java
 for(Temperature temp : temperatures) {
   if(temp.getValue() < 20) continue; // 跳过温度低于 20 的条目
   processCriticalValue(temp);
 }
+
 ```
 
 > [代码实践] 注意使用 continue 时需避免复杂的嵌套判断逻辑，当过滤条件较多时推荐改用传统 for 循环。例如数据清洗场景可能需要多级条件筛选，此时 foreach 的简洁性可能成为限制。
@@ -5786,9 +6369,11 @@ for(Temperature temp : temperatures) {
 
 例如，创建 Spring Bean 时通过反射调用无参构造器：
 
+
 ```java
 Class<?> clazz = Class.forName("com.example.MyBean");
 Object instance = clazz.newInstance();
+
 ```
 
 <a id='169-java-的-finalize-方法可以抛出异常吗'></a>
@@ -5801,6 +6386,7 @@ Object instance = clazz.newInstance();
 
 建议通过 try-finally 块确保资源释放的可靠性，而非依赖 finalize：
 
+
 ```java
 public void close() {
     try {
@@ -5809,6 +6395,7 @@ public void close() {
         // 强制清理
     }
 }
+
 ```
 
 <a id='170-java-堆内存heap与栈内存stack的使用区别是什么'></a>
@@ -5827,9 +6414,11 @@ public void close() {
 
 数组初始化可采用主动填充默认值策略：
 
+
 ```java
 String[] teams = new String[10];
 Arrays.fill(teams, "Unknown"); // 避免空指针
+
 ```
 
 对于原始类型数组可省略此步骤（如 int 数组默认值为 0），但对象数组必须手动初始化。特殊场景下可使用以下替代方案：
@@ -5852,14 +6441,17 @@ Java API 规范定义了核心类库的功能接口与行为约定，确保不�
 
 浅拷贝通过复制对象引用实现快速克隆：
 
+
 ```java
 class Person {
     String name;
     Address address; // 两个实例共享相同地址对象
 }
+
 ```
 
 深拷贝需要递归复制所有关联对象：
+
 
 ```java
 class Person implements Cloneable {
@@ -5869,6 +6461,7 @@ class Person implements Cloneable {
         return copy;
     }
 }
+
 ```
 
 > [实践建议] 不可变对象（如 String）可安全共享，但可变对象（如 StringBuilder）必须深拷贝以避免状态污染。
@@ -5894,9 +6487,11 @@ class Person implements Cloneable {
 
 字符数组可及时擦除痕迹：
 
+
 ```java
 char[] password = getPassword();
 Arrays.fill(password, (char)0); // 立即清空内存
+
 ```
 
 <a id='176-arraylist-与-vector-的核心区别是什么'></a>
@@ -5904,12 +6499,14 @@ Arrays.fill(password, (char)0); // 立即清空内存
 
 `Vector` 通过方法级同步实现线程安全，但引发性能损耗：
 
+
 ```java
 public synchronized boolean add(E e) { // Vector 方法加锁
     modCount++;
     add(e, elementData, elementCount);
     return true;
 }
+
 ```
 
 `ArrayList` 非线程安全但性能优异，推荐通过 `Collections.synchronizedList` 实现同步控制。在单线程模型（如 Android 主线程）中优先选择 ArrayList。
@@ -5918,6 +6515,7 @@ public synchronized boolean add(E e) { // Vector 方法加锁
 ### 177. 并发容器（如 CopyOnWriteArrayList）与同步包装集合有何区别？
 
 CopyOnWriteArrayList 采用写时复制（Copy-On-Write）策略保证线程安全：
+
 
 ```java
 public boolean add(E e) {
@@ -5929,6 +6527,7 @@ public boolean add(E e) {
         return true;
     }
 }
+
 ```
 
 与 `Collections.synchronizedList` 的全方法锁不同，这种方法允许多线程并发读取，适用于读多写少的场景（如事件监听器列表）。
@@ -5945,6 +6544,7 @@ public boolean add(E e) {
 
 break 会立即终止最近的循环结构，且跳过 finally 块的执行。示例：
 
+
 ```java
 while (condition) {
     try {
@@ -5953,6 +6553,7 @@ while (condition) {
         cleanup(); // 即使 break 也会执行
     }
 }
+
 ```
 
 若 break 出现在 finally 块中，则会在完整体执行 finally 后跳出循环。
@@ -5973,6 +6574,7 @@ while (condition) {
 
 数据封装通过将数据字段设为 private 并提供公共访问方法（getter/setter），实现两大优势：
 
+
 ```java
 public class BankAccount {
     private double balance; // 隐藏实现细节
@@ -5981,6 +6583,7 @@ public class BankAccount {
         if (amount > 0) balance += amount; // 封装资金校验逻辑
     }
 }
+
 ```
 
 1. **安全性**：防止非法状态修改（如负存款）
@@ -5995,18 +6598,22 @@ public class BankAccount {
 
 - **编译时多态**：方法重载（参数类型不同）
 
+
 ```java
 void print(int num) { ... }
 void print(String text) { ... } 
+
 ```
 
 - **运行时多态**：方法重写（子类覆盖父类实现）
+
 
 ```java
 class Animal { void sound() { ... } }
 class Dog extends Animal { 
     @Override void sound() { System.out.println("Woof"); }
 }
+
 ```
 
 通过 `Animal a = new Dog(); a.sound();` 可触发动态绑定机制，执行 Dog 类的具体实现。
@@ -6043,12 +6650,14 @@ Java有两种构造器类型：
 
 内部类是声明在另一个类内部的类，持有对外部类（outer class）成员的完全访问权限。典型应用场景包括事件处理器（event handlers）或需要封装辅助逻辑的场景：
 
+
 ```java
 class OuterClass {
     class InnerClass {
         // 可直接访问外部类的私有成员
     }
 }
+
 ```
 
 <a id='186-子类subclass的定义与特性'></a>
@@ -6111,10 +6720,12 @@ class OuterClass {
 
 为8种基本类型提供的对象封装类：
 
+
 ```java
 int -> Integer
 double -> Double
 // 其他类似...
+
 ```
 
 核心作用：
@@ -6137,6 +6748,7 @@ double -> Double
 
 经典实现方式：
 
+
 ```java
 // for循环实现
 for (;;) {
@@ -6147,6 +6759,7 @@ for (;;) {
 while (true) {
     if (exitCondition) break;
 }
+
 ```
 
 <a id='195-continue与break语句的区别'></a>
@@ -6164,12 +6777,14 @@ while (true) {
 
 示例：
 
+
 ```java
 for (int i=0; i<10; i++) {
     if (i == 5) break; // 循环在i=5时终止
     if (i%2 ==0) continue; // 跳过偶数处理
     System.out.println(i); 
 }
+
 ```
 
 <a id='196-java中switch语句的作用与应用场景'></a>
@@ -6192,10 +6807,12 @@ switch用于多分支条件判断，相比if-else链的优势：
 - 类似于if-else中的else分支
 - 放置位置不影响执行逻辑（一般作为最后选项）
 
+
 ```java
 switch (day) {
     case 1 -> System.out.println("Mon");
     // 其他case...
     default -> System.out.println("Invalid");
 }
+
 ```
