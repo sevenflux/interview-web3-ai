@@ -130,7 +130,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Uniapp 采用 Vue.js 作为核心框架，支持多端统一开发。 解释：Uniapp 基于 Vue.js 框架，提供统一的开发体验，并通过底层抽象实现多端编译，支持包括微信小程序、App、H5等多个平台。选项 A 错误，因为 Uniapp 依赖平台原生渲染；选项 C 错误，Uniapp 支持多平台；选项 D 错误，Uniapp 提供抽象层，减少原生代码管理。</strong></p>
+  <p><strong>
+
+正确答案: B. Uniapp 采用 Vue.js 作为核心框架，支持多端统一开发。 解释：Uniapp 基于 Vue.js 框架，提供统一的开发体验，并通过底层抽象实现多端编译，支持包括微信小程序、App、H5等多个平台。选项 A 错误，因为 Uniapp 依赖平台原生渲染；选项 C 错误，Uniapp 支持多平台；选项 D 错误，Uniapp 提供抽象层，减少原生代码管理。</strong></p>
 </details>
 
 **问题 2:**
@@ -139,7 +141,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Uniapp框架采用了“Vue.js + 跨平台编译”的架构设计。它基于Vue的组件化开发模式，开发者用Vue语法书写代码，框架通过HBuilderX或cli工具将代码编译成对应平台（如微信小程序、App、Web等）的原生代码。Uniapp的核心架构包括：
+  <p><strong>
+
+正确答案: Uniapp框架采用了“Vue.js + 跨平台编译”的架构设计。它基于Vue的组件化开发模式，开发者用Vue语法书写代码，框架通过HBuilderX或cli工具将代码编译成对应平台（如微信小程序、App、Web等）的原生代码。Uniapp的核心架构包括：
 
 1. **Vue层**：开发者编写的Vue单文件组件（.vue文件），负责页面和逻辑。
 2. **编译层**：将Vue代码转换成各平台支持的代码格式，如微信小程序的wxml、app的native代码等。
@@ -169,7 +173,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 编写一次代码后，通过框架将代码转换为各个平台的原生代码或兼容代码以实现多端适配。因为Uniapp的跨平台原理是通过框架层统一编写代码，再编译转换成不同平台可执行的代码，从而实现一次开发，多端运行。</strong></p>
+  <p><strong>
+
+正确答案: B. 编写一次代码后，通过框架将代码转换为各个平台的原生代码或兼容代码以实现多端适配。因为Uniapp的跨平台原理是通过框架层统一编写代码，再编译转换成不同平台可执行的代码，从而实现一次开发，多端运行。</strong></p>
 </details>
 
 **问题 2:**
@@ -178,7 +184,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Uniapp 实现跨平台的原理主要基于“编译+转换”的机制。开发者用 Vue.js 语法编写统一的代码，Uniapp 编译器会将这些代码转换成各个平台（如 iOS 的原生代码、Android 的原生代码、以及 Web 的 HTML/CSS/JavaScript）所能识别和运行的格式。关键机制包括：
+  <p><strong>
+
+正确答案: Uniapp 实现跨平台的原理主要基于“编译+转换”的机制。开发者用 Vue.js 语法编写统一的代码，Uniapp 编译器会将这些代码转换成各个平台（如 iOS 的原生代码、Android 的原生代码、以及 Web 的 HTML/CSS/JavaScript）所能识别和运行的格式。关键机制包括：
 
 1. **统一的 Vue 语法和组件库**：开发者只需用一种语法编写，减少平台差异。
 2. **条件编译**：在代码中通过条件编译指令，实现针对不同平台的代码差异处理。
@@ -206,7 +214,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. onShow
+  <p><strong>
+
+正确答案: C. onShow
 
 解释：onShow 是页面每次显示时都会被调用的生命周期函数，适合用于刷新页面数据等操作。onLoad 只在页面首次加载时调用，onReady 在页面首次渲染完成后调用，onUnload 在页面卸载时调用。</strong></p>
 </details>
@@ -217,7 +227,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Uniapp的页面生命周期函数主要包括onLoad、onShow、onReady、onHide和onUnload。onLoad在页面加载时触发，适合初始化数据；onShow在页面每次显示时触发，适合刷新数据；onReady在页面初次渲染完成时触发；onHide和onUnload分别在页面隐藏和卸载时触发。
+  <p><strong>
+
+正确答案: Uniapp的页面生命周期函数主要包括onLoad、onShow、onReady、onHide和onUnload。onLoad在页面加载时触发，适合初始化数据；onShow在页面每次显示时触发，适合刷新数据；onReady在页面初次渲染完成时触发；onHide和onUnload分别在页面隐藏和卸载时触发。
 
 在该购物车页面场景中，避免每次切换页面都请求接口，可以将商品列表的接口请求放在onLoad中，确保页面首次加载时获取数据；而在onShow中可以根据实际需求判断是否需要刷新数据（例如设置一个标志位或对比数据更新时间），只有当数据可能发生变化时才请求接口。这样可以减少不必要的网络请求，提高性能和用户体验。</strong></p>
 </details>
@@ -240,7 +252,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 使用 `uni.redirectTo` 路由跳转时，目标页面会替换当前页面，且不能返回上一页。该选项描述了 `uni.redirectTo` 的正确行为，即跳转后不能返回上一页，区别于 `uni.navigateTo` 的保留历史栈的特性。</strong></p>
+  <p><strong>
+
+正确答案: C. 使用 `uni.redirectTo` 路由跳转时，目标页面会替换当前页面，且不能返回上一页。该选项描述了 `uni.redirectTo` 的正确行为，即跳转后不能返回上一页，区别于 `uni.navigateTo` 的保留历史栈的特性。</strong></p>
 </details>
 
 **问题 2:**
@@ -249,7 +263,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Uniapp的页面路由机制基于各平台的原生路由封装，主要通过pages.json配置页面路径和导航栏属性，使用API如uni.navigateTo、uni.redirectTo、uni.switchTab等实现页面跳转。默认情况下，navigateTo跳转会保留当前页面的状态，因为它是将新页面压入栈中，而返回时可以恢复上一个页面的状态。要实现从首页跳转到详情页，并在返回时保留首页状态，通常使用uni.navigateTo跳转详情页，用户返回时会回到保留状态的首页。
+  <p><strong>
+
+正确答案: Uniapp的页面路由机制基于各平台的原生路由封装，主要通过pages.json配置页面路径和导航栏属性，使用API如uni.navigateTo、uni.redirectTo、uni.switchTab等实现页面跳转。默认情况下，navigateTo跳转会保留当前页面的状态，因为它是将新页面压入栈中，而返回时可以恢复上一个页面的状态。要实现从首页跳转到详情页，并在返回时保留首页状态，通常使用uni.navigateTo跳转详情页，用户返回时会回到保留状态的首页。
 
 具体步骤：
 1. 在pages.json中配置首页和详情页路径。
@@ -278,7 +294,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 封装可复用的UI和逻辑，提升开发效率和代码维护性。 解释：组件化开发的核心理念是将界面和功能封装成可复用的模块（组件），这样不仅提高了代码复用率，还方便维护和管理。选项A错误，因为组件不是页面拆分，页面和组件是不同概念；选项C错误，Uniapp中不直接操作DOM；选项D描述过于绝对，虽然组件内可以写样式，但并非强制所有样式都必须写在组件内。</strong></p>
+  <p><strong>
+
+正确答案: B. 封装可复用的UI和逻辑，提升开发效率和代码维护性。 解释：组件化开发的核心理念是将界面和功能封装成可复用的模块（组件），这样不仅提高了代码复用率，还方便维护和管理。选项A错误，因为组件不是页面拆分，页面和组件是不同概念；选项C错误，Uniapp中不直接操作DOM；选项D描述过于绝对，虽然组件内可以写样式，但并非强制所有样式都必须写在组件内。</strong></p>
 </details>
 
 **问题 2:**
@@ -287,7 +305,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Uniapp中开发商品展示页面时，基于组件化开发理念，可以将页面拆分成多个独立、可复用的组件，例如：
+  <p><strong>
+
+正确答案: 在Uniapp中开发商品展示页面时，基于组件化开发理念，可以将页面拆分成多个独立、可复用的组件，例如：
 
 1. 商品列表组件（ProductList）：负责展示所有商品的列表。
 2. 商品项组件（ProductItem）：负责展示单个商品的详细信息，如图片、名称、价格等。
@@ -321,7 +341,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用<view>标签可以创建一个块级容器，用于布局和包裹其他元素。 —— <view>是Uniapp中最常用的布局容器，类似于HTML中的div，具有块级特性，适合用来包裹和布局其他元素。B选项错误，<scroll-view>是可滚动的容器。C选项错误，Uniapp允许多个根节点。D选项错误，<text>主要用于文本显示，不适合作为布局容器。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用<view>标签可以创建一个块级容器，用于布局和包裹其他元素。 —— <view>是Uniapp中最常用的布局容器，类似于HTML中的div，具有块级特性，适合用来包裹和布局其他元素。B选项错误，<scroll-view>是可滚动的容器。C选项错误，Uniapp允许多个根节点。D选项错误，<text>主要用于文本显示，不适合作为布局容器。</strong></p>
 </details>
 
 **问题 2:**
@@ -330,7 +352,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计商品详情页时，可以采用如下结构：
+  <p><strong>
+
+正确答案: 在设计商品详情页时，可以采用如下结构：
 
 1. 使用<scroll-view>作为最外层容器，确保页面内容可以垂直滚动，适合商品详情页信息较多的场景。
 2. 商品图片部分使用<view>包裹，内部可以使用轮播组件<swiper>展示多张图片。
@@ -363,7 +387,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. <scroll-view> 解释：<scroll-view> 组件用于创建可滚动的区域，支持纵向和横向滚动，适合内容超出容器尺寸时使用。<view> 是基础容器，不支持滚动；<swiper> 用于滑块视图，通常用于轮播图；<movable-view> 用于可拖动视图。</strong></p>
+  <p><strong>
+
+正确答案: B. <scroll-view> 解释：<scroll-view> 组件用于创建可滚动的区域，支持纵向和横向滚动，适合内容超出容器尺寸时使用。<view> 是基础容器，不支持滚动；<swiper> 用于滑块视图，通常用于轮播图；<movable-view> 用于可拖动视图。</strong></p>
 </details>
 
 **问题 2:**
@@ -372,7 +398,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以使用以下Uniapp内置组件实现该功能：
+  <p><strong>
+
+正确答案: 你可以使用以下Uniapp内置组件实现该功能：
 
 1. <image> 组件：用于展示用户头像。它支持图片显示，并且可以设置圆角等样式。
 2. <text> 组件：用于展示用户名，简单的文本显示组件。
@@ -404,7 +432,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 组件的props必须在script标签内通过export default声明，并且必须使用props属性来定义。-- 在Uniapp中，自定义组件的props需要在script标签中的export default对象里通过props属性来声明，这是标准且唯一正确的写法。选项B错误，style标签加scoped是支持的且常用以限制样式范围；选项C错误，template、script、style三个标签不是强制必须同时存在，某些简单组件可以不写全部；选项D错误，props声明只有一种标准写法，即props属性，不存在props字段的区别。</strong></p>
+  <p><strong>
+
+正确答案: A. 组件的props必须在script标签内通过export default声明，并且必须使用props属性来定义。-- 在Uniapp中，自定义组件的props需要在script标签中的export default对象里通过props属性来声明，这是标准且唯一正确的写法。选项B错误，style标签加scoped是支持的且常用以限制样式范围；选项C错误，template、script、style三个标签不是强制必须同时存在，某些简单组件可以不写全部；选项D错误，props声明只有一种标准写法，即props属性，不存在props字段的区别。</strong></p>
 </details>
 
 **问题 2:**
@@ -413,7 +443,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 组件设计：
+  <p><strong>
+
+正确答案: 1. 组件设计：
 - 组件结构包括商品图片、名称、价格和“加入购物车”按钮。
 
 2. 接收数据：
@@ -449,7 +481,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 props 属性传递数据
+  <p><strong>
+
+正确答案: A. 使用 props 属性传递数据
 
 解释：在 Uniapp 中，父组件向子组件传递数据的标准且推荐方式是通过 props 属性。props 是 Vue 体系中定义组件接口的主要途径，能够清晰地传递父组件的数据到子组件。选项 B 是子组件向父组件传递数据的方式，选项 C 不建议直接修改子组件数据，且 Vuex 更多用于跨组件状态管理，而非直接传递；选项 D 虽然可以实现通信，但不适合父传子，且可能导致代码难以维护。</strong></p>
 </details>
@@ -460,7 +494,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Uniapp中，父子组件通信常用的方式有以下几种：
+  <p><strong>
+
+正确答案: 在Uniapp中，父子组件通信常用的方式有以下几种：
 
 1. **props（属性传递）**
    - 说明：父组件通过props向子组件传递数据。
@@ -514,7 +550,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 Vue 的 `components` 选项引入并注册组件，然后在模板中使用组件标签。 这是 Uniapp 组件复用与封装的标准做法，利用组件注册机制实现复用，避免代码重复。选项 A 违反了复用原则；选项 C 直接调用内部方法破坏了组件封装性；选项 D 动态修改模板字符串并非推荐做法且实现复杂。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 Vue 的 `components` 选项引入并注册组件，然后在模板中使用组件标签。 这是 Uniapp 组件复用与封装的标准做法，利用组件注册机制实现复用，避免代码重复。选项 A 违反了复用原则；选项 C 直接调用内部方法破坏了组件封装性；选项 D 动态修改模板字符串并非推荐做法且实现复杂。</strong></p>
 </details>
 
 **问题 2:**
@@ -523,7 +561,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 组件封装步骤：
+  <p><strong>
+
+正确答案: 1. 组件封装步骤：
 - 创建一个新的自定义组件（如 UserCard），将用户头像、用户名和简介的展示代码写在该组件中。
 - 通过 props 传递用户数据，使组件具有良好的数据输入接口。
 - 在组件中使用 slot 或命名 slot 实现内容的灵活扩展（例如添加按钮或额外信息）。
@@ -569,7 +609,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在 data 中定义样式对象，并在模板中通过绑定对象的方式传递，例如：
+  <p><strong>
+
+正确答案: B. 在 data 中定义样式对象，并在模板中通过绑定对象的方式传递，例如：
   data() {
     return { styleObj: { color: 'red' } }
   }
@@ -585,7 +627,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Uniapp中实现根据设备屏幕宽度动态调整按钮样式，并兼顾横竖屏切换的响应式设计，可以通过以下方法：
+  <p><strong>
+
+正确答案: 在Uniapp中实现根据设备屏幕宽度动态调整按钮样式，并兼顾横竖屏切换的响应式设计，可以通过以下方法：
 
 1. 使用 `uni.getSystemInfoSync()` 或 `uni.getSystemInfo()` 获取设备屏幕宽度和高度，判断横竖屏状态。
 
@@ -627,7 +671,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. `uni.createAnimation` 创建的是一个动画实例，必须通过 `export()` 方法导出动画数据后才能赋值给组件的动画属性。 解析：在 Uniapp 中，调用 `uni.createAnimation` 会创建一个动画实例，动画的所有动作需要通过 `step()` 方法来描述，最后通过 `export()` 方法导出动画数据，赋值给组件的动画属性实现动画效果。A 选项错误，因为调用 `step()` 并不会立即执行动画，而是标记动画动作。C 选项错误，因为动画参数可以在 `step()` 中传入。D 选项错误，因为不能直接修改组件样式来实现动画，必须通过动画实例导出的动画数据绑定。确保理解动画实例的使用流程是实现复杂动画的关键。</strong></p>
+  <p><strong>
+
+正确答案: B. `uni.createAnimation` 创建的是一个动画实例，必须通过 `export()` 方法导出动画数据后才能赋值给组件的动画属性。 解析：在 Uniapp 中，调用 `uni.createAnimation` 会创建一个动画实例，动画的所有动作需要通过 `step()` 方法来描述，最后通过 `export()` 方法导出动画数据，赋值给组件的动画属性实现动画效果。A 选项错误，因为调用 `step()` 并不会立即执行动画，而是标记动画动作。C 选项错误，因为动画参数可以在 `step()` 中传入。D 选项错误，因为不能直接修改组件样式来实现动画，必须通过动画实例导出的动画数据绑定。确保理解动画实例的使用流程是实现复杂动画的关键。</strong></p>
 </details>
 
 **问题 2:**
@@ -638,7 +684,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Uniapp中实现“添加到购物车”按钮的点击动画，可以通过以下步骤设计和实现：
+  <p><strong>
+
+正确答案: 在Uniapp中实现“添加到购物车”按钮的点击动画，可以通过以下步骤设计和实现：
 
 1. 动画触发时机：
    - 动画应在用户点击按钮时触发，给予即时反馈。
@@ -689,7 +737,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 通过v-bind指令绑定的数据只能单向绑定，即数据只能从JavaScript传到视图。 解释：v-bind指令用于单向绑定，数据从JavaScript传递到视图，视图的变化不会影响JavaScript中的数据。而双向绑定（如v-model）才实现视图和数据的同步更新。选项A错误，因为双向绑定会影响JavaScript数据；C错误，Uniapp默认数据绑定是单向的，双向绑定需要使用v-model；D错误，数据变化会自动触发视图更新。</strong></p>
+  <p><strong>
+
+正确答案: B. 通过v-bind指令绑定的数据只能单向绑定，即数据只能从JavaScript传到视图。 解释：v-bind指令用于单向绑定，数据从JavaScript传递到视图，视图的变化不会影响JavaScript中的数据。而双向绑定（如v-model）才实现视图和数据的同步更新。选项A错误，因为双向绑定会影响JavaScript数据；C错误，Uniapp默认数据绑定是单向的，双向绑定需要使用v-model；D错误，数据变化会自动触发视图更新。</strong></p>
 </details>
 
 **问题 2:**
@@ -698,7 +748,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Uniapp的数据绑定机制基于MVVM模式，通过双向绑定实现视图与数据的同步更新。页面上的视图元素通过绑定数据对象的属性，数据变化时，框架会自动更新视图，反之用户操作视图时也可以更新数据。
+  <p><strong>
+
+正确答案: Uniapp的数据绑定机制基于MVVM模式，通过双向绑定实现视图与数据的同步更新。页面上的视图元素通过绑定数据对象的属性，数据变化时，框架会自动更新视图，反之用户操作视图时也可以更新数据。
 
 具体来说，当页面中的数据（data）发生变化时，Uniapp的响应式系统会检测到数据的变化，并自动触发视图的重新渲染，从而实现数据驱动视图更新。
 
@@ -729,7 +781,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. Vuex 的 state 是只读的，组件应该通过 mutations 来修改 state。Vuex 的设计原则之一是 state 是响应式且只读的，组件不能直接修改 state，而应通过 mutations 来进行同步修改。actions 用于处理异步操作并提交 mutations，getters 可以基于 state 计算派生状态。</strong></p>
+  <p><strong>
+
+正确答案: A. Vuex 的 state 是只读的，组件应该通过 mutations 来修改 state。Vuex 的设计原则之一是 state 是响应式且只读的，组件不能直接修改 state，而应通过 mutations 来进行同步修改。actions 用于处理异步操作并提交 mutations，getters 可以基于 state 计算派生状态。</strong></p>
 </details>
 
 **问题 2:**
@@ -738,7 +792,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 使用Vuex管理购物车状态时，可以在store中定义一个state，包含购物车商品列表、商品数量和总价等信息。通过mutations定义修改购物车状态的方法，如添加商品、删除商品和更新数量等；通过actions处理异步操作或复杂逻辑，调用mutations修改状态；组件通过mapState或this.$store.state访问购物车数据，通过mapMutations或dispatch调用方法修改状态。选择Vuex而非组件内data或props传递的原因是购物车状态需要被多个页面共享且实时同步，props传递只能实现父子组件间的单向数据流，而data局限于单个组件，难以保持状态一致性和响应性，Vuex作为集中式状态管理工具，能有效解决跨组件状态共享和管理问题，提高代码的维护性和可扩展性。</strong></p>
+  <p><strong>
+
+正确答案: 使用Vuex管理购物车状态时，可以在store中定义一个state，包含购物车商品列表、商品数量和总价等信息。通过mutations定义修改购物车状态的方法，如添加商品、删除商品和更新数量等；通过actions处理异步操作或复杂逻辑，调用mutations修改状态；组件通过mapState或this.$store.state访问购物车数据，通过mapMutations或dispatch调用方法修改状态。选择Vuex而非组件内data或props传递的原因是购物车状态需要被多个页面共享且实时同步，props传递只能实现父子组件间的单向数据流，而data局限于单个组件，难以保持状态一致性和响应性，Vuex作为集中式状态管理工具，能有效解决跨组件状态共享和管理问题，提高代码的维护性和可扩展性。</strong></p>
 </details>
 
 ---
@@ -762,7 +818,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 每个模块可以拥有自己的state、mutations、actions和getters，从而实现状态的局部管理。——这是模块化状态管理的核心思想，模块可以封装自己的状态和相关方法，便于管理和维护。其他选项描述均有误，A错误，模块可以在创建Vuex实例时声明；C错误，模块有各自独立的state；D错误，开启命名空间(namespace)是推荐做法，方便区分模块。</strong></p>
+  <p><strong>
+
+正确答案: B. 每个模块可以拥有自己的state、mutations、actions和getters，从而实现状态的局部管理。——这是模块化状态管理的核心思想，模块可以封装自己的状态和相关方法，便于管理和维护。其他选项描述均有误，A错误，模块可以在创建Vuex实例时声明；C错误，模块有各自独立的state；D错误，开启命名空间(namespace)是推荐做法，方便区分模块。</strong></p>
 </details>
 
 **问题 2:**
@@ -771,7 +829,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Uniapp 应用中，可以将用户信息、购物车和订单状态分别设计成独立的状态模块，例如 userModule、cartModule 和 orderModule。每个模块包含自己的 state、mutations、actions 和 getters，负责管理对应的业务数据。这样做的优点包括：
+  <p><strong>
+
+正确答案: 在 Uniapp 应用中，可以将用户信息、购物车和订单状态分别设计成独立的状态模块，例如 userModule、cartModule 和 orderModule。每个模块包含自己的 state、mutations、actions 和 getters，负责管理对应的业务数据。这样做的优点包括：
 
 1. 代码结构清晰，职责分明，便于维护和扩展。
 2. 避免了单一大型 store 的臃肿，提升开发效率。
@@ -807,7 +867,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 Vuex 存储状态，并结合 uni.setStorageSync 将状态序列化保存到本地存储。因为Vuex便于管理复杂状态，结合本地存储可以实现状态持久化，同时支持多页面共享。选项B虽然可以持久化，但缺少状态集中管理，容易导致数据一致性问题。选项C组件data不可持久化且页面卸载后状态丢失，选项D使用全局变量无法保证状态持久化，也不利于状态管理。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 Vuex 存储状态，并结合 uni.setStorageSync 将状态序列化保存到本地存储。因为Vuex便于管理复杂状态，结合本地存储可以实现状态持久化，同时支持多页面共享。选项B虽然可以持久化，但缺少状态集中管理，容易导致数据一致性问题。选项C组件data不可持久化且页面卸载后状态丢失，选项D使用全局变量无法保证状态持久化，也不利于状态管理。</strong></p>
 </details>
 
 **问题 2:**
@@ -816,7 +878,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在该场景下，推荐使用Uniapp提供的本地存储API（如uni.setStorageSync和uni.getStorageSync）来实现状态持久化。具体方案如下：
+  <p><strong>
+
+正确答案: 在该场景下，推荐使用Uniapp提供的本地存储API（如uni.setStorageSync和uni.getStorageSync）来实现状态持久化。具体方案如下：
 
 1. 持久化方式：使用本地存储同步保存购物车数据，确保数据在应用关闭或切换后台时被保存。
 
@@ -851,7 +915,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用Vuex模块化管理状态，结合mapState和mapGetters精细化绑定组件所需状态，避免无关状态变化导致的组件更新。 解析：选项B通过模块化管理和精细化状态绑定，有效控制组件只响应相关状态变化，避免了不必要的重复渲染，是复杂状态管理优化的最佳实践。选项A会导致所有组件在任一状态变化时都更新，性能较差。选项C虽然保证了响应式，但动态添加状态字段可能导致维护困难且不利于优化。选项D适用于简单状态管理，不适合复杂状态场景，且会导致状态无法共享和管理混乱。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用Vuex模块化管理状态，结合mapState和mapGetters精细化绑定组件所需状态，避免无关状态变化导致的组件更新。 解析：选项B通过模块化管理和精细化状态绑定，有效控制组件只响应相关状态变化，避免了不必要的重复渲染，是复杂状态管理优化的最佳实践。选项A会导致所有组件在任一状态变化时都更新，性能较差。选项C虽然保证了响应式，但动态添加状态字段可能导致维护困难且不利于优化。选项D适用于简单状态管理，不适合复杂状态场景，且会导致状态无法共享和管理混乱。</strong></p>
 </details>
 
 **问题 2:**
@@ -860,7 +926,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在复杂状态管理优化时，可以采取以下策略：
+  <p><strong>
+
+正确答案: 在复杂状态管理优化时，可以采取以下策略：
 
 1. 状态拆分与模块化管理：将Vuex状态拆分成多个模块，每个模块负责管理特定业务域（如购物车模块、用户信息模块）。这样可以降低单一状态树的复杂度，便于维护和调试。
 
@@ -898,7 +966,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用参数method，并设置为字符串，如"GET"或"POST"。 解析：在uni-app中，发送请求时指定HTTP方法应通过method参数，且方法名通常为大写字符串，如"GET"、"POST"。其他选项中的参数名和格式均不符合官方uni.request的要求。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用参数method，并设置为字符串，如"GET"或"POST"。 解析：在uni-app中，发送请求时指定HTTP方法应通过method参数，且方法名通常为大写字符串，如"GET"、"POST"。其他选项中的参数名和格式均不符合官方uni.request的要求。</strong></p>
 </details>
 
 **问题 2:**
@@ -907,7 +977,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 使用Uniapp的`uni.request`方法进行GET请求的基本步骤如下：
+  <p><strong>
+
+正确答案: 使用Uniapp的`uni.request`方法进行GET请求的基本步骤如下：
 
 1. 调用`uni.request`，设置请求的URL为商品列表API地址。
 2. 设置请求方法为GET（默认即为GET）。
@@ -957,7 +1029,9 @@ uni.request({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用uni.addInterceptor方法对uni.request进行拦截，统一添加请求头和处理错误响应。正确答案是B，因为uniapp提供的uni.addInterceptor方法可以对网络请求进行统一拦截，方便开发者集中管理请求头的添加和错误响应的处理。选项A虽然可行但不够统一和高效，选项C是错误的配置方式，选项D通过生命周期函数管理请求头和错误处理不具备统一拦截的优势，且不符合最佳实践。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用uni.addInterceptor方法对uni.request进行拦截，统一添加请求头和处理错误响应。正确答案是B，因为uniapp提供的uni.addInterceptor方法可以对网络请求进行统一拦截，方便开发者集中管理请求头的添加和错误响应的处理。选项A虽然可行但不够统一和高效，选项C是错误的配置方式，选项D通过生命周期函数管理请求头和错误处理不具备统一拦截的优势，且不符合最佳实践。</strong></p>
 </details>
 
 **问题 2:**
@@ -966,7 +1040,9 @@ uni.request({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Uniapp中，可以通过配置请求拦截器来统一处理所有请求的身份验证和错误处理。具体设计思路如下：
+  <p><strong>
+
+正确答案: 在Uniapp中，可以通过配置请求拦截器来统一处理所有请求的身份验证和错误处理。具体设计思路如下：
 
 1. 请求拦截器中添加Token验证逻辑：
    - 在请求发送前，从本地存储获取Token，添加到请求头中。
@@ -1027,7 +1103,9 @@ uni.addInterceptor('request', {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -1036,7 +1114,9 @@ uni.addInterceptor('request', {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Uniapp项目中，为了支持开发环境、测试环境和生产环境的接口地址管理，常用做法是通过配置文件或环境变量来区分不同环境的基础URL。
+  <p><strong>
+
+正确答案: 在Uniapp项目中，为了支持开发环境、测试环境和生产环境的接口地址管理，常用做法是通过配置文件或环境变量来区分不同环境的基础URL。
 
 1. **设计思路**：
    - 创建一个统一的接口管理模块，比如 `api.js`，在该模块中根据当前环境变量，动态设置接口的基础地址（baseURL）。
@@ -1097,7 +1177,9 @@ uni.addInterceptor('request', {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. Uniapp中通过uni.connectSocket创建WebSocket连接后，应监听onOpen事件来确认连接已成功建立。 解析：在Uniapp中，调用uni.connectSocket创建WebSocket连接是异步操作，连接建立成功后会触发onOpen事件，只有在该事件触发后，才能安全地发送消息。选项A错误，连接建立后无需每次发送前重新连接；选项B错误，连接关闭后socketTask不可用，需重新连接；选项D错误，虽然发送消息用uni.sendSocketMessage接口，但应监听相关事件（如onError）来确认通信状态。</strong></p>
+  <p><strong>
+
+正确答案: C. Uniapp中通过uni.connectSocket创建WebSocket连接后，应监听onOpen事件来确认连接已成功建立。 解析：在Uniapp中，调用uni.connectSocket创建WebSocket连接是异步操作，连接建立成功后会触发onOpen事件，只有在该事件触发后，才能安全地发送消息。选项A错误，连接建立后无需每次发送前重新连接；选项B错误，连接关闭后socketTask不可用，需重新连接；选项D错误，虽然发送消息用uni.sendSocketMessage接口，但应监听相关事件（如onError）来确认通信状态。</strong></p>
 </details>
 
 **问题 2:**
@@ -1106,7 +1188,9 @@ uni.addInterceptor('request', {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 建立WebSocket连接：
+  <p><strong>
+
+正确答案: 1. 建立WebSocket连接：
 在Uniapp中，可以使用`uni.connectSocket`方法建立WebSocket连接，示例代码如下：
 ```javascript
 const socketTask = uni.connectSocket({
@@ -1172,7 +1256,9 @@ socketTask.onError((error) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用接口缓存机制，避免重复请求相同数据。因为接口缓存能够减少重复请求，降低服务器负载和网络延迟，从而提高性能。A选项同步请求会阻塞执行，影响用户体验；C选项频繁刷新会增加负载；D选项增加字段不一定减少请求，反而可能增加数据传输量。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用接口缓存机制，避免重复请求相同数据。因为接口缓存能够减少重复请求，降低服务器负载和网络延迟，从而提高性能。A选项同步请求会阻塞执行，影响用户体验；C选项频繁刷新会增加负载；D选项增加字段不一定减少请求，反而可能增加数据传输量。</strong></p>
 </details>
 
 **问题 2:**
@@ -1181,7 +1267,9 @@ socketTask.onError((error) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能导致接口性能瓶颈的原因包括：
+  <p><strong>
+
+正确答案: 可能导致接口性能瓶颈的原因包括：
 1. 接口数据量过大，导致传输时间长和客户端解析压力大。
 2. 频繁无差别的接口调用，增加了网络请求负担。
 3. 后端接口处理效率低，例如数据库查询慢或接口逻辑复杂。
@@ -1232,7 +1320,9 @@ socketTask.onError((error) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. uni.setStorageSync(key, data) 这是用来同步存储数据到本地的接口，能将数据以键值对形式保存。选项B是获取数据，选项C是删除某个键对应的数据，选项D是清空所有本地存储，均不是用于存储数据的API。</strong></p>
+  <p><strong>
+
+正确答案: A. uni.setStorageSync(key, data) 这是用来同步存储数据到本地的接口，能将数据以键值对形式保存。选项B是获取数据，选项C是删除某个键对应的数据，选项D是清空所有本地存储，均不是用于存储数据的API。</strong></p>
 </details>
 
 **问题 2:**
@@ -1241,7 +1331,9 @@ socketTask.onError((error) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以使用Uniapp的`uni.setStorageSync`和`uni.getStorageSync`接口来实现本地存储。具体步骤如下：
+  <p><strong>
+
+正确答案: 你可以使用Uniapp的`uni.setStorageSync`和`uni.getStorageSync`接口来实现本地存储。具体步骤如下：
 
 1. 当用户浏览一个商品时，先从本地读取最近浏览商品ID列表（例如使用`uni.getStorageSync('recentViews')`）。
 2. 判断当前商品ID是否已存在于列表中，如果存在，则将其移除并重新添加到列表头部；如果不存在，则直接添加到列表头部。
@@ -1272,7 +1364,9 @@ socketTask.onError((error) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用带有过期时间的缓存机制，定期清理过期数据并根据需求更新缓存。该策略能够平衡缓存的时效性与性能，避免数据长期失效带来的错误，同时减少不必要的频繁读写操作，是设计合理缓存策略的最佳实践。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用带有过期时间的缓存机制，定期清理过期数据并根据需求更新缓存。该策略能够平衡缓存的时效性与性能，避免数据长期失效带来的错误，同时减少不必要的频繁读写操作，是设计合理缓存策略的最佳实践。</strong></p>
 </details>
 
 **问题 2:**
@@ -1281,7 +1375,9 @@ socketTask.onError((error) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 缓存数据类型：缓存商品详情的JSON数据，包括商品名称、价格、库存、图片等信息。
+  <p><strong>
+
+正确答案: 1. 缓存数据类型：缓存商品详情的JSON数据，包括商品名称、价格、库存、图片等信息。
 
 2. 缓存时长：根据商品信息的更新频率设置合理的缓存时间，比如1小时；对于促销活动等可能频繁变动的信息，可以设置更短的缓存时间。
 
@@ -1310,7 +1406,9 @@ socketTask.onError((error) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在存储前使用对称加密算法（如AES）对数据加密，再调用uni.setStorage存储加密后的数据。—— 因为uni.setStorage和类似的本地存储API本身不提供加密功能，直接存储敏感数据存在风险。使用对称加密（如AES）对数据加密是常用且有效的安全措施，能防止数据被未授权访问。A选项错误，uni.setStorage不自带加密；C选项Base64仅是编码，不是加密，无法保证安全；D选项虽然能提升安全性，但不属于本地存储的加密方案，且云端存储需结合其他安全措施。</strong></p>
+  <p><strong>
+
+正确答案: B. 在存储前使用对称加密算法（如AES）对数据加密，再调用uni.setStorage存储加密后的数据。—— 因为uni.setStorage和类似的本地存储API本身不提供加密功能，直接存储敏感数据存在风险。使用对称加密（如AES）对数据加密是常用且有效的安全措施，能防止数据被未授权访问。A选项错误，uni.setStorage不自带加密；C选项Base64仅是编码，不是加密，无法保证安全；D选项虽然能提升安全性，但不属于本地存储的加密方案，且云端存储需结合其他安全措施。</strong></p>
 </details>
 
 **问题 2:**
@@ -1323,7 +1421,9 @@ socketTask.onError((error) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 仅依赖uni.setStorage或uni.setStorageSync存储数据时，数据是以明文形式存在本地，容易被其他应用或有权限的用户通过设备的存储访问工具读取，存在数据泄露风险。
+  <p><strong>
+
+正确答案: 1. 仅依赖uni.setStorage或uni.setStorageSync存储数据时，数据是以明文形式存在本地，容易被其他应用或有权限的用户通过设备的存储访问工具读取，存在数据泄露风险。
 
 2. 可以采用对称加密算法（如AES）对敏感数据进行加密。AES通过使用一个密钥对数据进行加密和解密，只有拥有密钥的人才能还原数据，保障数据在本地存储时的机密性。
 
@@ -1354,7 +1454,9 @@ socketTask.onError((error) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -1363,7 +1465,9 @@ socketTask.onError((error) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 本地存储方案：
+  <p><strong>
+
+正确答案: 1. 本地存储方案：
 - 使用Uniapp提供的本地存储API（如uni.setStorage、uni.getStorage）或者更适合结构化数据的IndexedDB（H5环境）或小程序的本地数据库（如微信小程序的wx.cloud.database）存储用户离线操作的数据。
 - 设计数据结构时应包含数据的唯一标识符、时间戳、操作类型（新增、修改、删除）等信息，便于后续同步和冲突处理。
 
@@ -1406,7 +1510,9 @@ socketTask.onError((error) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 不同平台的渲染性能和支持的原生能力可能不同，因此需要针对特定平台做适配。 解释：Uniapp虽然支持多端开发，但由于各个平台的运行环境和原生能力不同，部分API或组件在不同平台上的表现和支持程度会有所差异，因此开发时需要根据目标平台做差异化适配，保证体验和功能的兼容性。选项A过于绝对，忽略了多端差异；选项C错误，Uniapp能兼容部分小程序组件；选项D错误，Uniapp强调代码复用，多端共享代码是其核心优势。</strong></p>
+  <p><strong>
+
+正确答案: B. 不同平台的渲染性能和支持的原生能力可能不同，因此需要针对特定平台做适配。 解释：Uniapp虽然支持多端开发，但由于各个平台的运行环境和原生能力不同，部分API或组件在不同平台上的表现和支持程度会有所差异，因此开发时需要根据目标平台做差异化适配，保证体验和功能的兼容性。选项A过于绝对，忽略了多端差异；选项C错误，Uniapp能兼容部分小程序组件；选项D错误，Uniapp强调代码复用，多端共享代码是其核心优势。</strong></p>
 </details>
 
 **问题 2:**
@@ -1415,7 +1521,9 @@ socketTask.onError((error) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，分析多端差异的原因可能包括微信小程序的渲染能力、API支持和性能限制不同于H5端。微信小程序对动画和复杂的DOM操作支持较弱，可能导致动画不流畅。处理方法包括：
+  <p><strong>
+
+正确答案: 首先，分析多端差异的原因可能包括微信小程序的渲染能力、API支持和性能限制不同于H5端。微信小程序对动画和复杂的DOM操作支持较弱，可能导致动画不流畅。处理方法包括：
 
 1. 使用Uniapp提供的条件编译功能（如 #ifdef MP-WEIXIN）针对微信小程序端优化动画实现，简化动画效果或使用小程序原生支持的动画API。
 2. 检查使用的动画是否依赖于H5特有的CSS属性或JavaScript方法，针对微信小程序做替代。
@@ -1447,7 +1555,9 @@ socketTask.onError((error) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用条件编译标签，如 /* #ifdef MP-WEIXIN */ 和 /* #endif */ 包裹特定平台代码。 解释：Uniapp 中的条件编译需要使用特殊的注释形式（即 /* #ifdef 平台标识 */ 和 /* #endif */），这是其官方规定的写法，可以正确区分不同平台并在编译时生效。选项 A 是错误的，因为 #ifdef 不支持直接使用，必须放在注释内。选项 C 是动态判断，不属于条件编译范畴。选项 D 错误地限制了条件编译只能用于 H5 平台，实际上支持多平台。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用条件编译标签，如 /* #ifdef MP-WEIXIN */ 和 /* #endif */ 包裹特定平台代码。 解释：Uniapp 中的条件编译需要使用特殊的注释形式（即 /* #ifdef 平台标识 */ 和 /* #endif */），这是其官方规定的写法，可以正确区分不同平台并在编译时生效。选项 A 是错误的，因为 #ifdef 不支持直接使用，必须放在注释内。选项 C 是动态判断，不属于条件编译范畴。选项 D 错误地限制了条件编译只能用于 H5 平台，实际上支持多平台。</strong></p>
 </details>
 
 **问题 2:**
@@ -1456,7 +1566,9 @@ socketTask.onError((error) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Uniapp提供了条件编译功能，允许开发者针对不同平台编写不同的代码，从而解决平台API差异的问题。条件编译通过预编译阶段根据目标平台选择性地编译对应代码，避免运行时判断，提高性能。
+  <p><strong>
+
+正确答案: Uniapp提供了条件编译功能，允许开发者针对不同平台编写不同的代码，从而解决平台API差异的问题。条件编译通过预编译阶段根据目标平台选择性地编译对应代码，避免运行时判断，提高性能。
 
 具体做法是使用条件编译指令，如：
 
@@ -1501,7 +1613,9 @@ window.location.href = '/h5page.html';
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用Uniapp提供的uni.chooseImage接口，因为它封装了调用原生摄像头的能力。Uniapp为调用原生摄像头提供了封装好的API如uni.chooseImage，能够跨多个平台兼容调用原生摄像头功能，避免了直接调用原生SDK或标准Web API带来的兼容性和权限问题。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用Uniapp提供的uni.chooseImage接口，因为它封装了调用原生摄像头的能力。Uniapp为调用原生摄像头提供了封装好的API如uni.chooseImage，能够跨多个平台兼容调用原生摄像头功能，避免了直接调用原生SDK或标准Web API带来的兼容性和权限问题。</strong></p>
 </details>
 
 **问题 2:**
@@ -1510,7 +1624,9 @@ window.location.href = '/h5page.html';
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Uniapp中调用原生摄像头功能扫描二维码，通常可以通过uni.scanCode接口实现，该接口封装了对不同平台原生摄像头API的调用，简化了跨平台调用。
+  <p><strong>
+
+正确答案: 在Uniapp中调用原生摄像头功能扫描二维码，通常可以通过uni.scanCode接口实现，该接口封装了对不同平台原生摄像头API的调用，简化了跨平台调用。
 
 具体实现步骤：
 1. 使用uni.scanCode方法启动扫码功能，例如：
@@ -1556,7 +1672,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A。正确做法是在manifest.json的“app-plus”节点中进行插件路径和名称的配置，Uniapp通过uni.requireNativePlugin方法加载插件，确保插件被正确识别和调用。选项B错误，因为原生插件不能仅通过import引入且不能随意放置根目录；选项C错误，pages.json用于页面配置，不负责插件注册；选项D错误，插件加载需要manifest.json配置，单纯在main.js注册无法生效。</strong></p>
+  <p><strong>
+
+正确答案: A。正确做法是在manifest.json的“app-plus”节点中进行插件路径和名称的配置，Uniapp通过uni.requireNativePlugin方法加载插件，确保插件被正确识别和调用。选项B错误，因为原生插件不能仅通过import引入且不能随意放置根目录；选项C错误，pages.json用于页面配置，不负责插件注册；选项D错误，插件加载需要manifest.json配置，单纯在main.js注册无法生效。</strong></p>
 </details>
 
 **问题 2:**
@@ -1565,7 +1683,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 插件设计与开发：
+  <p><strong>
+
+正确答案: 1. 插件设计与开发：
 - 确定功能需求及对应平台（如iOS的Objective-C/Swift，Android的Java/Kotlin）
 - 在各平台创建原生模块，封装高级图像处理的SDK接口
 - 设计统一的接口规范，保证跨平台调用的一致性
@@ -1609,7 +1729,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用原生插件进行性能关键模块开发，避免过度依赖JS层处理。 解释：Uniapp在跨平台开发中，JS层与原生层通信存在一定的性能开销。对性能敏感的功能模块，使用原生插件开发能够大幅提升性能，避免JS层的性能瓶颈。选项A虽然能增加复用性，但大量自定义组件未必带来性能提升，反而可能增加渲染负担；选项C全局状态管理有助于状态统一，但过度使用可能导致性能下降；选项D中scroll-view本身是为滚动优化设计的，使用view替代反而会降低性能。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用原生插件进行性能关键模块开发，避免过度依赖JS层处理。 解释：Uniapp在跨平台开发中，JS层与原生层通信存在一定的性能开销。对性能敏感的功能模块，使用原生插件开发能够大幅提升性能，避免JS层的性能瓶颈。选项A虽然能增加复用性，但大量自定义组件未必带来性能提升，反而可能增加渲染负担；选项C全局状态管理有助于状态统一，但过度使用可能导致性能下降；选项D中scroll-view本身是为滚动优化设计的，使用view替代反而会降低性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -1618,7 +1740,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能导致性能问题的原因包括：
+  <p><strong>
+
+正确答案: 可能导致性能问题的原因包括：
 
 1. 页面渲染复杂，组件层级深，导致JS线程和渲染线程负载过重。
 2. 大量数据绑定和频繁的视图更新，导致页面重绘和回流。
@@ -1663,7 +1787,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -1672,7 +1798,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能导致页面首次渲染缓慢的原因包括：
+  <p><strong>
+
+正确答案: 可能导致页面首次渲染缓慢的原因包括：
 1. 页面中渲染了大量的商品数据，导致视图层负担过重。
 2. 使用了复杂的组件嵌套和不必要的重复渲染。
 3. 图片资源未进行懒加载，首次加载全部图片。
@@ -1706,7 +1834,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在页面的onLoad钩子中注册事件监听，但未在onUnload钩子中移除该监听器。 解释：在Uniapp中，如果在页面或组件的生命周期函数中注册了事件监听器（如全局事件或自定义事件），而没有在对应的生命周期结束时（如onUnload）移除监听器，会导致这些监听器持续存在，无法被垃圾回收，从而引发内存泄漏。选项B虽然会影响性能，但不会直接引起内存泄漏；选项C是网络请求设置问题，不属于内存泄漏范畴；选项D是正常的数据更新操作，也不会导致内存泄漏。</strong></p>
+  <p><strong>
+
+正确答案: A. 在页面的onLoad钩子中注册事件监听，但未在onUnload钩子中移除该监听器。 解释：在Uniapp中，如果在页面或组件的生命周期函数中注册了事件监听器（如全局事件或自定义事件），而没有在对应的生命周期结束时（如onUnload）移除监听器，会导致这些监听器持续存在，无法被垃圾回收，从而引发内存泄漏。选项B虽然会影响性能，但不会直接引起内存泄漏；选项C是网络请求设置问题，不属于内存泄漏范畴；选项D是正常的数据更新操作，也不会导致内存泄漏。</strong></p>
 </details>
 
 **问题 2:**
@@ -1715,7 +1845,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，需要理解Uniapp基于Vue.js和小程序框架的内存管理特点，页面和组件的生命周期管理对内存释放至关重要。排查内存泄漏时，可以从以下几个方面入手：
+  <p><strong>
+
+正确答案: 首先，需要理解Uniapp基于Vue.js和小程序框架的内存管理特点，页面和组件的生命周期管理对内存释放至关重要。排查内存泄漏时，可以从以下几个方面入手：
 
 1. **利用调试工具监控内存**：通过H5调试工具（如Chrome DevTools）或小程序开发者工具的内存快照，监控内存使用情况和快照差异，定位持续增长的对象。
 
@@ -1759,7 +1891,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用异步加载（懒加载）技术，按需加载页面和资源，减少启动时的加载压力。 解析：启动速度优化的关键在于减少启动时需要加载的资源和代码量。通过异步加载（懒加载），只有在真正需要时才加载相应页面和资源，从而显著缩短启动时间。选项A中提前加载所有内容会增加启动负担，反而降低启动速度；选项C预加载所有插件会增加启动时的资源消耗；选项D将样式写在style标签中对启动速度提升有限，且可能导致样式维护困难。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用异步加载（懒加载）技术，按需加载页面和资源，减少启动时的加载压力。 解析：启动速度优化的关键在于减少启动时需要加载的资源和代码量。通过异步加载（懒加载），只有在真正需要时才加载相应页面和资源，从而显著缩短启动时间。选项A中提前加载所有内容会增加启动负担，反而降低启动速度；选项C预加载所有插件会增加启动时的资源消耗；选项D将样式写在style标签中对启动速度提升有限，且可能导致样式维护困难。</strong></p>
 </details>
 
 **问题 2:**
@@ -1768,7 +1902,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: ### 可能导致启动慢的原因：
+  <p><strong>
+
+正确答案: 可能导致启动慢的原因：
 1. 页面和资源预加载过多，导致首屏渲染时间延长。
 2. 业务逻辑初始化复杂，如大量同步请求或重计算。
 3. 使用了体积较大的第三方库，增加包体积，影响加载速度。
@@ -1813,7 +1949,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用CSS硬件加速（如使用transform和opacity属性）减少重绘和重排。因为transform和opacity这类属性能够触发GPU加速，避免触发浏览器的重排(reflow)和重绘(repaint)，从而显著提升动画性能，减少卡顿。选项A的setInterval频繁执行JavaScript代码反而增加CPU负担，选项C的v-if切换会频繁销毁和创建DOM，影响性能，选项D使用复杂计算会增加CPU负载，降低动画流畅度。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用CSS硬件加速（如使用transform和opacity属性）减少重绘和重排。因为transform和opacity这类属性能够触发GPU加速，避免触发浏览器的重排(reflow)和重绘(repaint)，从而显著提升动画性能，减少卡顿。选项A的setInterval频繁执行JavaScript代码反而增加CPU负担，选项C的v-if切换会频繁销毁和创建DOM，影响性能，选项D使用复杂计算会增加CPU负载，降低动画流畅度。</strong></p>
 </details>
 
 **问题 2:**
@@ -1822,7 +1960,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 性能分析：
+  <p><strong>
+
+正确答案: 1. 性能分析：
    - 使用调试工具（如Chrome DevTools的Performance面板、HBuilderX的性能分析工具）监测动画的帧率、渲染时间和JS主线程占用，定位瓶颈是在哪个环节（JS计算、样式计算、布局、绘制或合成）。
    - 观察是否存在频繁的重排（reflow）和重绘（repaint），这是导致卡顿的常见原因。
 
@@ -1866,7 +2006,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用Chrome DevTools的Timeline（性能分析）工具，结合Uniapp的性能监控API分析帧率和CPU占用。因为极限性能调试主要关注渲染性能和主线程负载，通过Timeline可以详细分析帧率、JS执行时间和重绘重排等关键指标，结合Uniapp性能监控API能精准定位瓶颈，其他选项如大量日志输出或单纯观察网络请求不能准确反映渲染和计算性能瓶颈。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用Chrome DevTools的Timeline（性能分析）工具，结合Uniapp的性能监控API分析帧率和CPU占用。因为极限性能调试主要关注渲染性能和主线程负载，通过Timeline可以详细分析帧率、JS执行时间和重绘重排等关键指标，结合Uniapp性能监控API能精准定位瓶颈，其他选项如大量日志输出或单纯观察网络请求不能准确反映渲染和计算性能瓶颈。</strong></p>
 </details>
 
 **问题 2:**
@@ -1881,7 +2023,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 定位和分析极限性能问题的步骤：
+  <p><strong>
+
+正确答案: 1. 定位和分析极限性能问题的步骤：
   - 收集用户反馈和复现场景，明确问题出现的具体条件。
   - 使用Uniapp提供的性能分析工具（如HBuilderX的性能面板）监控页面渲染时间、JS执行时间、内存占用、网络请求等指标。
   - 利用Chrome DevTools远程调试小程序或App端，查看性能面板中的帧率、CPU使用率和内存快照，找出卡顿和白屏时的瓶颈代码。
@@ -1927,7 +2071,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: D. 动态权限申请可以通过调用 uni.authorize 接口实现，用户拒绝后应用应合理提示并处理。——这是正确的做法，Uniapp 中动态权限申请通常通过 uni.authorize 实现，且需要考虑用户拒绝权限时的处理逻辑。</strong></p>
+  <p><strong>
+
+正确答案: D. 动态权限申请可以通过调用 uni.authorize 接口实现，用户拒绝后应用应合理提示并处理。——这是正确的做法，Uniapp 中动态权限申请通常通过 uni.authorize 实现，且需要考虑用户拒绝权限时的处理逻辑。</strong></p>
 </details>
 
 **问题 2:**
@@ -1936,7 +2082,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Uniapp中设计权限申请机制时，首先需要识别应用访问的敏感权限，比如地理位置。设计步骤包括：
+  <p><strong>
+
+正确答案: 在Uniapp中设计权限申请机制时，首先需要识别应用访问的敏感权限，比如地理位置。设计步骤包括：
 
 1. **检测权限状态**：在访问地理位置功能前，先调用API检测当前权限是否已被授权。
 
@@ -1969,7 +2117,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用加密技术对敏感数据进行加密存储和传输。因为加密是保障数据安全的基础手段，能有效防止敏感数据被未授权访问，既保护数据在存储时的安全，也保证数据在网络传输中的安全性，而其他选项要么安全性不足，要么依赖单一侧安全措施，存在风险。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用加密技术对敏感数据进行加密存储和传输。因为加密是保障数据安全的基础手段，能有效防止敏感数据被未授权访问，既保护数据在存储时的安全，也保证数据在网络传输中的安全性，而其他选项要么安全性不足，要么依赖单一侧安全措施，存在风险。</strong></p>
 </details>
 
 **问题 2:**
@@ -1978,7 +2128,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 数据加密存储：使用对称或非对称加密算法对敏感数据进行加密，确保即使数据被非法读取也无法直接使用。优点是安全性高；缺点是增加开发复杂度和性能开销。
+  <p><strong>
+
+正确答案: 1. 数据加密存储：使用对称或非对称加密算法对敏感数据进行加密，确保即使数据被非法读取也无法直接使用。优点是安全性高；缺点是增加开发复杂度和性能开销。
 
 2. 使用安全存储API：Uniapp中可以调用平台提供的安全存储接口（如iOS的Keychain或Android的Keystore）存储敏感信息，这些接口对数据有系统级保护。优点是安全性强且易用；缺点是跨平台兼容性和使用限制。
 
@@ -2005,7 +2157,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在客户端存储敏感数据时，使用加密存储并配合权限控制。因为仅依赖前端加密传输（A）是不安全的，HTTPS是必须的；直接使用localStorage存储敏感信息（C）容易被恶意脚本窃取；而服务器端权限验证虽重要，但客户端权限校验同样不可忽视（D），二者应结合使用。</strong></p>
+  <p><strong>
+
+正确答案: B. 在客户端存储敏感数据时，使用加密存储并配合权限控制。因为仅依赖前端加密传输（A）是不安全的，HTTPS是必须的；直接使用localStorage存储敏感信息（C）容易被恶意脚本窃取；而服务器端权限验证虽重要，但客户端权限校验同样不可忽视（D），二者应结合使用。</strong></p>
 </details>
 
 **问题 2:**
@@ -2014,7 +2168,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Uniapp开发中，为防止安全漏洞，可以采取以下措施：
+  <p><strong>
+
+正确答案: 在Uniapp开发中，为防止安全漏洞，可以采取以下措施：
 
 1. 输入验证和过滤：对用户输入进行严格验证，避免恶意脚本注入，防止XSS攻击。例如，在页面渲染用户输入内容时，使用Uniapp的内置方法或第三方库对输入进行编码处理，禁止直接插入HTML。
 
@@ -2053,7 +2209,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 对称加密算法（如AES）
+  <p><strong>
+
+正确答案: A. 对称加密算法（如AES）
 
 解释：
 对于Uniapp客户端本地存储敏感数据，使用对称加密算法如AES更为合适，因为它在性能和安全性之间有较好的平衡，且加密解密速度快，便于处理大量数据。非对称加密（如RSA）通常用于数据传输中的密钥交换，计算资源消耗较大，不适合频繁本地加解密。哈希算法（如MD5）是单向的，不可逆，不能用于数据加密解密。Base64只是编码方式，不具备加密功能，安全性不足。</strong></p>
@@ -2065,7 +2223,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在这种场景下，通常选择对称加密算法（如AES）来加密用户的敏感信息。理由是对称加密算法加密和解密速度快，性能开销较小，适合在客户端进行数据加密。
+  <p><strong>
+
+正确答案: 在这种场景下，通常选择对称加密算法（如AES）来加密用户的敏感信息。理由是对称加密算法加密和解密速度快，性能开销较小，适合在客户端进行数据加密。
 
 非对称加密算法（如RSA）通常用于密钥交换或数字签名，性能开销较大，不适合大量数据的加密。
 
@@ -2096,7 +2256,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用Uniapp的native插件功能，将敏感数据存储在原生安全存储（如iOS的Keychain或Android的Keystore）中。此选项是最安全的做法，因为原生安全存储提供了硬件级别的安全保护，能够有效防止敏感数据被非法访问。选项A虽然加密了数据，但localStorage本身不安全，容易被XSS攻击访问；选项C的Base64只是编码，不是加密，安全性极低；选项D中HttpOnly cookie不能用于所有类型的客户端存储，且Uniapp跨平台支持有限，不能完全依赖。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用Uniapp的native插件功能，将敏感数据存储在原生安全存储（如iOS的Keychain或Android的Keystore）中。此选项是最安全的做法，因为原生安全存储提供了硬件级别的安全保护，能够有效防止敏感数据被非法访问。选项A虽然加密了数据，但localStorage本身不安全，容易被XSS攻击访问；选项C的Base64只是编码，不是加密，安全性极低；选项D中HttpOnly cookie不能用于所有类型的客户端存储，且Uniapp跨平台支持有限，不能完全依赖。</strong></p>
 </details>
 
 **问题 2:**
@@ -2105,7 +2267,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 数据存储安全：
+  <p><strong>
+
+正确答案: 1. 数据存储安全：
 - 使用加密存储，如AES加密，将敏感数据加密后存入本地存储（uni.setStorageSync等）。
 - 避免明文存储敏感信息，结合Uniapp的`uni.getStorageSync`和`uni.setStorageSync`接口进行加密操作。
 
@@ -2153,7 +2317,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 使用微信开发者工具的调试面板查看日志和断点 —— 微信开发者工具专为小程序开发设计，提供了日志查看、断点调试、性能分析等功能，能够有效调试 Uniapp 编译生成的小程序代码。浏览器开发者工具虽能查看部分日志，但无法完整调试小程序；alert() 调试方式笨拙且不适合复杂问题；手机系统日志不易直接定位小程序代码错误。</strong></p>
+  <p><strong>
+
+正确答案: C. 使用微信开发者工具的调试面板查看日志和断点 —— 微信开发者工具专为小程序开发设计，提供了日志查看、断点调试、性能分析等功能，能够有效调试 Uniapp 编译生成的小程序代码。浏览器开发者工具虽能查看部分日志，但无法完整调试小程序；alert() 调试方式笨拙且不适合复杂问题；手机系统日志不易直接定位小程序代码错误。</strong></p>
 </details>
 
 **问题 2:**
@@ -2162,7 +2328,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，我会使用HBuilderX自带的调试工具，打开“调试”面板，利用断点调试功能，在按钮点击事件的代码处设置断点，逐步执行代码，观察事件是否被触发以及执行流程是否正确。这样可以精确定位代码逻辑问题。其次，我会使用控制台（console）输出调试信息，比如打印事件绑定状态、变量值等，帮助快速了解程序状态。第三，如果问题涉及页面渲染或样式，我会使用Chrome DevTools的远程调试功能，通过HBuilderX连接真机或模拟器，检查DOM结构和样式，确认是否有样式或布局问题影响按钮响应。最后，如果是跨平台兼容问题，可以使用各平台的调试工具（如微信开发者工具）模拟运行，排查平台差异导致的问题。通过这些工具和方法结合使用，可以快速定位和解决按钮点击事件不触发的问题。</strong></p>
+  <p><strong>
+
+正确答案: 首先，我会使用HBuilderX自带的调试工具，打开“调试”面板，利用断点调试功能，在按钮点击事件的代码处设置断点，逐步执行代码，观察事件是否被触发以及执行流程是否正确。这样可以精确定位代码逻辑问题。其次，我会使用控制台（console）输出调试信息，比如打印事件绑定状态、变量值等，帮助快速了解程序状态。第三，如果问题涉及页面渲染或样式，我会使用Chrome DevTools的远程调试功能，通过HBuilderX连接真机或模拟器，检查DOM结构和样式，确认是否有样式或布局问题影响按钮响应。最后，如果是跨平台兼容问题，可以使用各平台的调试工具（如微信开发者工具）模拟运行，排查平台差异导致的问题。通过这些工具和方法结合使用，可以快速定位和解决按钮点击事件不触发的问题。</strong></p>
 </details>
 
 ---
@@ -2186,7 +2354,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 单元测试是指对应用中的最小可测试单元进行验证，通常是函数或方法。 解释：单元测试的核心是验证代码中最小的功能单元（如函数或方法）是否按预期工作，区别于整体的集成测试或UI测试。选项A描述的是UI测试，C错误地忽略了对依赖的模拟，D错误地将单元测试限定在发布后。</strong></p>
+  <p><strong>
+
+正确答案: B. 单元测试是指对应用中的最小可测试单元进行验证，通常是函数或方法。 解释：单元测试的核心是验证代码中最小的功能单元（如函数或方法）是否按预期工作，区别于整体的集成测试或UI测试。选项A描述的是UI测试，C错误地忽略了对依赖的模拟，D错误地将单元测试限定在发布后。</strong></p>
 </details>
 
 **问题 2:**
@@ -2195,7 +2365,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 编写该计数器组件的单元测试用例主要包括以下步骤：
+  <p><strong>
+
+正确答案: 编写该计数器组件的单元测试用例主要包括以下步骤：
 
 1. **初始化组件实例**：在测试环境中创建计数器组件的实例，确保测试从初始状态开始。
 2. **模拟用户交互**：模拟点击按钮的操作，触发组件内增加计数的逻辑。
@@ -2225,7 +2397,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 uniapp 提供的 HBuilderX 内置测试工具，结合 CI 工具（如 Jenkins）自动执行测试脚本。 解释：Uniapp 的 HBuilderX 内置了测试支持，结合持续集成（CI）工具自动执行测试脚本，可以实现自动化测试的集成和持续执行，提升测试效率和可靠性。选项 A 手动运行测试无法满足自动化需求；选项 C 依赖手动操作不符合自动化的原则；选项 D 手动测试虽然真实但不适合自动化和持续集成环境。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 uniapp 提供的 HBuilderX 内置测试工具，结合 CI 工具（如 Jenkins）自动执行测试脚本。 解释：Uniapp 的 HBuilderX 内置了测试支持，结合持续集成（CI）工具自动执行测试脚本，可以实现自动化测试的集成和持续执行，提升测试效率和可靠性。选项 A 手动运行测试无法满足自动化需求；选项 C 依赖手动操作不符合自动化的原则；选项 D 手动测试虽然真实但不适合自动化和持续集成环境。</strong></p>
 </details>
 
 **问题 2:**
@@ -2234,7 +2408,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 测试框架选择：
+  <p><strong>
+
+正确答案: 1. 测试框架选择：
 - 对于Uniapp项目，可以选择支持多端的自动化测试框架，如使用基于JavaScript的测试框架（如Mocha、Jest）结合Uniapp的HBuilderX提供的DCloud自动化测试工具，或者使用Appium进行端到端测试。
 
 2. 集成到持续集成（CI）流程：
@@ -2272,7 +2448,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用Uniapp内置的性能面板（如HBuilderX的性能分析工具）进行实时监测和详细分析。因为Uniapp内置的性能分析工具能够实时捕获应用的CPU、内存使用情况及各个函数的执行时间，帮助开发者精准定位性能瓶颈，而console.log输出容易影响性能，增加网络请求次数主要测试服务器端，用户反馈虽重要但不具备实时和精准分析能力。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用Uniapp内置的性能面板（如HBuilderX的性能分析工具）进行实时监测和详细分析。因为Uniapp内置的性能分析工具能够实时捕获应用的CPU、内存使用情况及各个函数的执行时间，帮助开发者精准定位性能瓶颈，而console.log输出容易影响性能，增加网络请求次数主要测试服务器端，用户反馈虽重要但不具备实时和精准分析能力。</strong></p>
 </details>
 
 **问题 2:**
@@ -2281,7 +2459,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Uniapp开发的移动端电商应用中，针对页面加载缓慢的问题，可以按照以下步骤进行性能测试与分析：
+  <p><strong>
+
+正确答案: 在Uniapp开发的移动端电商应用中，针对页面加载缓慢的问题，可以按照以下步骤进行性能测试与分析：
 
 1. **准备测试环境**
    - 确保测试环境与生产环境相似，避免环境差异影响性能表现。
@@ -2329,7 +2509,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用HBuilderX的真机调试功能，结合断点调试和网络请求监控，针对不同平台分别进行调试。 解释：该方法利用Uniapp官方推荐的HBuilderX调试工具，能够在真机环境下准确模拟不同平台的运行环境，通过断点调试可精准定位代码执行流程，通过网络请求监控可以分析数据交互问题，针对不同平台分别调试能够有效发现平台差异导致的问题。其他选项如单纯依赖console.log（A）虽然有用，但难以系统定位复杂问题；修改样式（C）和清缓存（D）更多是尝试手段，不能系统定位问题根源。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用HBuilderX的真机调试功能，结合断点调试和网络请求监控，针对不同平台分别进行调试。 解释：该方法利用Uniapp官方推荐的HBuilderX调试工具，能够在真机环境下准确模拟不同平台的运行环境，通过断点调试可精准定位代码执行流程，通过网络请求监控可以分析数据交互问题，针对不同平台分别调试能够有效发现平台差异导致的问题。其他选项如单纯依赖console.log（A）虽然有用，但难以系统定位复杂问题；修改样式（C）和清缓存（D）更多是尝试手段，不能系统定位问题根源。</strong></p>
 </details>
 
 **问题 2:**
@@ -2344,7 +2526,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 收集和分析问题信息：
+  <p><strong>
+
+正确答案: 1. 收集和分析问题信息：
 - 使用Uniapp的调试工具（如HBuilderX的调试模式）和Chrome DevTools的远程调试功能，连接Android设备查看控制台日志和网络请求。
 - 利用日志打印（console.log）和错误捕获（try-catch）收集异常信息。
 - 通过真机测试和模拟器对比，确认问题的复现环境。
@@ -2384,7 +2568,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. manifest.json  
+  <p><strong>
+
+正确答案: B. manifest.json  
 解释：manifest.json 是 Uniapp 项目中用于配置应用的全局信息和平台相关设置的主要文件，包含应用名称、版本、权限声明等信息。package.json 主要用于管理依赖和脚本，uni.scss 用于全局样式变量管理，main.js 是入口脚本文件。</strong></p>
 </details>
 
@@ -2394,7 +2580,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Uniapp项目中，可以通过以下方式设计和管理多环境配置：
+  <p><strong>
+
+正确答案: 在Uniapp项目中，可以通过以下方式设计和管理多环境配置：
 
 1. 使用环境变量（如通过vue.config.js或者直接在manifest.json和pages.json中引用环境变量）来区分不同的环境配置。
 2. 将公共配置和环境特定配置分开管理，比如建立config目录，分别存放dev.js、test.js、prod.js等配置文件。
@@ -2427,7 +2615,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 先修改manifest.json配置，再运行不同平台的命令进行打包和发布。 解释：manifest.json是Uniapp项目中配置各个平台参数的关键文件，必须正确配置后才能进行多端打包发布。B项错误，因为不配置manifest.json无法完成所有平台发布，C项错误，pages.json仅配置页面路由，影响页面结构，不负责平台参数配置，D项错误，多个端需要分别打包，无法自动同步。</strong></p>
+  <p><strong>
+
+正确答案: A. 先修改manifest.json配置，再运行不同平台的命令进行打包和发布。 解释：manifest.json是Uniapp项目中配置各个平台参数的关键文件，必须正确配置后才能进行多端打包发布。B项错误，因为不配置manifest.json无法完成所有平台发布，C项错误，pages.json仅配置页面路由，影响页面结构，不负责平台参数配置，D项错误，多个端需要分别打包，无法自动同步。</strong></p>
 </details>
 
 **问题 2:**
@@ -2436,7 +2626,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在多端发布流程中，首先需要明确各个平台的发布要求和流程。微信小程序发布需要通过微信公众平台进行代码上传和审核，注意小程序的代码包大小限制和接口权限。iOS发布需要在Apple Developer后台注册证书，使用Xcode或云打包服务生成ipa包，上传到App Store Connect进行审核，需关注苹果的审核指南和证书管理。Android发布则通常通过生成apk或aab包，上传到各大应用市场或Google Play，需注意签名配置和版本号管理。
+  <p><strong>
+
+正确答案: 在多端发布流程中，首先需要明确各个平台的发布要求和流程。微信小程序发布需要通过微信公众平台进行代码上传和审核，注意小程序的代码包大小限制和接口权限。iOS发布需要在Apple Developer后台注册证书，使用Xcode或云打包服务生成ipa包，上传到App Store Connect进行审核，需关注苹果的审核指南和证书管理。Android发布则通常通过生成apk或aab包，上传到各大应用市场或Google Play，需注意签名配置和版本号管理。
 
 执行流程一般包括：
 1. 统一代码管理，确保多端兼容和代码质量。
@@ -2474,7 +2666,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 Git 的分支管理，将稳定版本打标签，遇到问题时切换回对应标签的版本并重新构建发布。因为在项目版本控制中，使用 Git 标签标记稳定版本是一种规范且高效的回滚方法。这能确保回滚操作的准确性和可追溯性，而不是直接修改代码文件或仅靠版本号更改。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 Git 的分支管理，将稳定版本打标签，遇到问题时切换回对应标签的版本并重新构建发布。因为在项目版本控制中，使用 Git 标签标记稳定版本是一种规范且高效的回滚方法。这能确保回滚操作的准确性和可追溯性，而不是直接修改代码文件或仅靠版本号更改。</strong></p>
 </details>
 
 **问题 2:**
@@ -2483,7 +2677,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 利用版本控制系统定位问题：
+  <p><strong>
+
+正确答案: 1. 利用版本控制系统定位问题：
 - 查看提交历史（git log）找出最近的提交记录，确定引入问题的代码变更。
 - 使用git bisect命令在多个提交之间进行二分查找，快速定位导致崩溃的具体提交。
 - 检查相关分支和标签，确认当前发布版本对应的代码状态。
@@ -2522,7 +2718,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 通过配置CI工具自动执行uni build命令，可以实现代码提交后自动构建和发布，节省手动操作时间。因为持续集成与自动化发布的核心就是通过CI/CD工具自动化触发构建流程（如执行uni build）并完成后续的发布步骤，从而提高发布效率和减少人为错误。选项B错误，因为自动化发布流程仍需将构建产物上传到应用市场或分发平台；选项C错误，持续集成涵盖代码合并、构建和测试多个环节；选项D错误，Uniapp的自动化发布支持多种CI/CD工具，不局限于官方云服务。</strong></p>
+  <p><strong>
+
+正确答案: A. 通过配置CI工具自动执行uni build命令，可以实现代码提交后自动构建和发布，节省手动操作时间。因为持续集成与自动化发布的核心就是通过CI/CD工具自动化触发构建流程（如执行uni build）并完成后续的发布步骤，从而提高发布效率和减少人为错误。选项B错误，因为自动化发布流程仍需将构建产物上传到应用市场或分发平台；选项C错误，持续集成涵盖代码合并、构建和测试多个环节；选项D错误，Uniapp的自动化发布支持多种CI/CD工具，不局限于官方云服务。</strong></p>
 </details>
 
 **问题 2:**
@@ -2531,7 +2729,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 设计自动化CI/CD流水线的关键步骤：
+  <p><strong>
+
+正确答案: 1. 设计自动化CI/CD流水线的关键步骤：
 - 代码推送触发流水线：利用Git仓库的Webhook或CI工具（如Jenkins、GitLab CI、GitHub Actions）在代码推送时触发流水线。
 - 自动构建：配置Uniapp项目的构建脚本，分别针对不同平台（H5、Android、iOS）进行自动构建。
 - 自动化测试：集成单元测试、端到端测试，确保代码质量，构建失败时中断流程。
@@ -2576,7 +2776,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 集成第三方错误监控服务，如Sentry或Bugly，以实时收集崩溃和异常信息，同时配合内置反馈功能收集用户意见。 解析：发布后监控与反馈机制需要实时且自动化地收集应用运行时错误和用户反馈，第三方监控工具可以高效捕获崩溃和异常数据，而内置反馈功能则方便用户直接提交意见，二者结合形成闭环管理。选项A和D依赖人工且反馈延迟较大，选项C缺乏实时性和主动性，不利于快速响应和修复。</strong></p>
+  <p><strong>
+
+正确答案: B. 集成第三方错误监控服务，如Sentry或Bugly，以实时收集崩溃和异常信息，同时配合内置反馈功能收集用户意见。 解析：发布后监控与反馈机制需要实时且自动化地收集应用运行时错误和用户反馈，第三方监控工具可以高效捕获崩溃和异常数据，而内置反馈功能则方便用户直接提交意见，二者结合形成闭环管理。选项A和D依赖人工且反馈延迟较大，选项C缺乏实时性和主动性，不利于快速响应和修复。</strong></p>
 </details>
 
 **问题 2:**
@@ -2585,7 +2787,9 @@ uni.scanCode({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Uniapp应用发布后，设计发布后监控与反馈机制的方案应包括以下几个方面：
+  <p><strong>
+
+正确答案: 在Uniapp应用发布后，设计发布后监控与反馈机制的方案应包括以下几个方面：
 
 1. 监控工具的集成：
    - 集成性能监控工具（如Sentry、Bugly、友盟+等）收集崩溃日志、异常信息和性能指标（启动时间、卡顿率等）。

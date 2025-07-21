@@ -146,7 +146,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. const element = <div className="container">Hello World</div>; 解释：在JSX中，使用className而不是class来指定CSS类名，因为class是JavaScript的保留字。选项A和D错误地使用了class，选项C中class没有用引号包裹，且缺少引号会导致语法错误。</strong></p>
+  <p><strong>
+
+正确答案: B. const element = <div className="container">Hello World</div>; 解释：在JSX中，使用className而不是class来指定CSS类名，因为class是JavaScript的保留字。选项A和D错误地使用了class，选项C中class没有用引号包裹，且缺少引号会导致语法错误。</strong></p>
 </details>
 
 **问题 2:**
@@ -155,7 +157,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以定义一个函数组件，使用JSX语法返回包含用户名和用户描述的结构。例如：
+  <p><strong>
+
+正确答案: 你可以定义一个函数组件，使用JSX语法返回包含用户名和用户描述的结构。例如：
 
 ```tsx
 function UserCard(props: { name: string; description: string }) {
@@ -189,7 +193,9 @@ function UserCard(props: { name: string; description: string }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. componentDidMount
+  <p><strong>
+
+正确答案: B. componentDidMount
 
 解释：componentDidMount 是在组件被挂载到 DOM 后立即调用的生命周期方法，常用于初始化 DOM 操作或网络请求。componentWillMount 已废弃且在挂载前调用，componentDidUpdate 在组件更新后调用，componentWillUnmount 在组件卸载前调用。</strong></p>
 </details>
@@ -200,7 +206,9 @@ function UserCard(props: { name: string; description: string }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以使用以下生命周期钩子：
+  <p><strong>
+
+正确答案: 你可以使用以下生命周期钩子：
 
 1. **componentDidMount（类组件）或 useEffect 的初始化函数（函数组件）**：
    - 作用：组件挂载完成后执行，适合启动计时器。
@@ -229,7 +237,9 @@ function UserCard(props: { name: string; description: string }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 函数组件不能使用生命周期方法，而类组件可以使用完整的生命周期方法。——这是函数组件和类组件最明显的区别之一，虽然函数组件现在可以通过Hooks使用类似生命周期的功能，但传统上只有类组件支持完整生命周期方法。选项B错误，因为两者都必须返回React元素。选项C错误，函数组件可以通过Hooks使用状态。选项D错误，函数组件可以有状态（通过Hooks），类组件也可以无状态。</strong></p>
+  <p><strong>
+
+正确答案: A. 函数组件不能使用生命周期方法，而类组件可以使用完整的生命周期方法。——这是函数组件和类组件最明显的区别之一，虽然函数组件现在可以通过Hooks使用类似生命周期的功能，但传统上只有类组件支持完整生命周期方法。选项B错误，因为两者都必须返回React元素。选项C错误，函数组件可以通过Hooks使用状态。选项D错误，函数组件可以有状态（通过Hooks），类组件也可以无状态。</strong></p>
 </details>
 
 **问题 2:**
@@ -238,7 +248,9 @@ function UserCard(props: { name: string; description: string }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 状态管理和生命周期：
+  <p><strong>
+
+正确答案: 1. 状态管理和生命周期：
 - 类组件通过 this.state 和 this.setState 管理状态，生命周期通过生命周期方法（如 componentDidMount、componentDidUpdate、componentWillUnmount）来处理。
 - 函数组件使用 React Hooks（如 useState 管理状态，useEffect 处理副作用和生命周期逻辑），使得状态和副作用的管理更加灵活和简洁。
 
@@ -270,7 +282,9 @@ function UserCard(props: { name: string; description: string }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. useState 返回一个包含当前状态和一个用于更新状态的函数的数组。这个返回值格式是固定的，通常使用数组解构赋值来获取状态值和更新函数；直接修改状态变量不会触发重新渲染，useState 的初始状态可以是任何类型，而更新状态时传入的是新的状态值或函数，不要求必须是纯函数。</strong></p>
+  <p><strong>
+
+正确答案: A. useState 返回一个包含当前状态和一个用于更新状态的函数的数组。这个返回值格式是固定的，通常使用数组解构赋值来获取状态值和更新函数；直接修改状态变量不会触发重新渲染，useState 的初始状态可以是任何类型，而更新状态时传入的是新的状态值或函数，不要求必须是纯函数。</strong></p>
 </details>
 
 **问题 2:**
@@ -279,7 +293,9 @@ function UserCard(props: { name: string; description: string }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以通过`useState`来声明一个状态变量和对应的更新函数，例如：
+  <p><strong>
+
+正确答案: 你可以通过`useState`来声明一个状态变量和对应的更新函数，例如：
 
 ```tsx
 const [count, setCount] = useState(0);
@@ -311,7 +327,9 @@ const [count, setCount] = useState(0);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. useEffect 的清理函数会在组件卸载时执行，也会在下一次执行副作用之前执行。此选项正确描述了 useEffect 的清理机制，确保副作用不会造成内存泄漏或重复执行错误。其他选项中，A 错误因为 useEffect 会在依赖变化时重新执行；C 错误因为空依赖数组意味着只在首次渲染时执行；D 错误因为 useEffect 不能直接返回 Promise，异步操作应在副作用内部处理。</strong></p>
+  <p><strong>
+
+正确答案: B. useEffect 的清理函数会在组件卸载时执行，也会在下一次执行副作用之前执行。此选项正确描述了 useEffect 的清理机制，确保副作用不会造成内存泄漏或重复执行错误。其他选项中，A 错误因为 useEffect 会在依赖变化时重新执行；C 错误因为空依赖数组意味着只在首次渲染时执行；D 错误因为 useEffect 不能直接返回 Promise，异步操作应在副作用内部处理。</strong></p>
 </details>
 
 **问题 2:**
@@ -320,7 +338,9 @@ const [count, setCount] = useState(0);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 要监听窗口大小的变化，可以在 useEffect 中添加一个事件监听器，例如监听 'resize' 事件。示例代码如下：
+  <p><strong>
+
+正确答案: 要监听窗口大小的变化，可以在 useEffect 中添加一个事件监听器，例如监听 'resize' 事件。示例代码如下：
 
 ```tsx
 useEffect(() => {
@@ -367,7 +387,9 @@ useEffect(() => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. React使用合成事件（SyntheticEvent）来封装浏览器原生事件，保证跨浏览器行为一致。 解释：React通过合成事件(SyntheticEvent)封装了浏览器的原生事件，使得事件行为在不同浏览器间保持一致，同时也实现了事件池机制以优化性能。选项A错误，React事件处理函数中的this默认指向undefined（严格模式下），通常需要手动绑定或使用箭头函数。选项C错误，事件处理函数不一定必须是箭头函数，但使用箭头函数可以避免this绑定问题。选项D错误，React事件机制默认基于事件冒泡阶段，而非捕获阶段。</strong></p>
+  <p><strong>
+
+正确答案: B. React使用合成事件（SyntheticEvent）来封装浏览器原生事件，保证跨浏览器行为一致。 解释：React通过合成事件(SyntheticEvent)封装了浏览器的原生事件，使得事件行为在不同浏览器间保持一致，同时也实现了事件池机制以优化性能。选项A错误，React事件处理函数中的this默认指向undefined（严格模式下），通常需要手动绑定或使用箭头函数。选项C错误，事件处理函数不一定必须是箭头函数，但使用箭头函数可以避免this绑定问题。选项D错误，React事件机制默认基于事件冒泡阶段，而非捕获阶段。</strong></p>
 </details>
 
 **问题 2:**
@@ -376,7 +398,9 @@ useEffect(() => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: React使用合成事件（SyntheticEvent）系统来管理事件，这是一套跨浏览器的事件封装机制。它通过事件委托，将所有事件统一绑定在根DOM节点上，而不是每个元素单独绑定，从而提升性能和减少内存消耗。具体来说，当用户点击一个按钮时，事件会先被React的合成事件系统捕获，然后按照React的事件传播机制触发对应的事件处理函数。
+  <p><strong>
+
+正确答案: React使用合成事件（SyntheticEvent）系统来管理事件，这是一套跨浏览器的事件封装机制。它通过事件委托，将所有事件统一绑定在根DOM节点上，而不是每个元素单独绑定，从而提升性能和减少内存消耗。具体来说，当用户点击一个按钮时，事件会先被React的合成事件系统捕获，然后按照React的事件传播机制触发对应的事件处理函数。
 
 与原生DOM事件不同，React的合成事件是跨浏览器兼容的，并且事件对象会被池化以减少内存开销，这意味着事件对象在事件回调执行结束后其属性会被重置，所以如果需要异步访问事件属性，需要调用event.persist()方法。
 
@@ -406,7 +430,9 @@ useEffect(() => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在使用map函数渲染列表时，应该为每个子元素提供一个唯一的key属性，以便React高效更新列表。 解释：React中使用map渲染列表时，key属性是必须的，用于帮助React识别哪些元素发生了变化，从而高效更新UI。选项A错误，三元运算符不需要额外包一层<div>，只要返回合法的JSX即可。选项C错误，条件渲染可以用if语句，也可以用逻辑与（&&）操作符。选项D错误，缺少key会导致性能下降和渲染错误。</strong></p>
+  <p><strong>
+
+正确答案: B. 在使用map函数渲染列表时，应该为每个子元素提供一个唯一的key属性，以便React高效更新列表。 解释：React中使用map渲染列表时，key属性是必须的，用于帮助React识别哪些元素发生了变化，从而高效更新UI。选项A错误，三元运算符不需要额外包一层<div>，只要返回合法的JSX即可。选项C错误，条件渲染可以用if语句，也可以用逻辑与（&&）操作符。选项D错误，缺少key会导致性能下降和渲染错误。</strong></p>
 </details>
 
 **问题 2:**
@@ -420,7 +446,9 @@ useEffect(() => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在React+TypeScript中，可以通过结合条件渲染和列表渲染来实现上述需求。步骤如下：
+  <p><strong>
+
+正确答案: 在React+TypeScript中，可以通过结合条件渲染和列表渲染来实现上述需求。步骤如下：
 
 1. **状态管理**：假设通过一个布尔类型的状态`isLoggedIn`来表示用户登录状态。
 
@@ -490,7 +518,9 @@ const ProductList: React.FC<Props> = ({ isLoggedIn, products }) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 使用组合多个小型独立组件，通过 props 传递数据和回调实现复杂 UI。解释：React 推荐通过组合多个小型、独立的组件来构建复杂的 UI，这样可以提高代码的可复用性和维护性，避免了继承带来的复杂性和局限性。选项 A 是一种复用方式，但高阶组件属于组合模式的变体，而题目最直接体现“组合优于继承”的是组合多个组件。选项 B 使用继承，违背了 React 的设计理念。选项 D 直接操作 DOM，不符合 React 的声明式思想。</strong></p>
+  <p><strong>
+
+正确答案: C. 使用组合多个小型独立组件，通过 props 传递数据和回调实现复杂 UI。解释：React 推荐通过组合多个小型、独立的组件来构建复杂的 UI，这样可以提高代码的可复用性和维护性，避免了继承带来的复杂性和局限性。选项 A 是一种复用方式，但高阶组件属于组合模式的变体，而题目最直接体现“组合优于继承”的是组合多个组件。选项 B 使用继承，违背了 React 的设计理念。选项 D 直接操作 DOM，不符合 React 的声明式思想。</strong></p>
 </details>
 
 **问题 2:**
@@ -499,7 +529,9 @@ const ProductList: React.FC<Props> = ({ isLoggedIn, products }) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 为了实现高复用性和良好的组合性，我会将“商品卡片”设计为一个基础的无状态函数组件，只负责展示商品的核心信息（如图片、名称、价格）。这个组件接收props来灵活控制显示内容。为了支持组合，可以使用React的“children”或“组合模式”让外层组件注入额外内容，比如商品详情。
+  <p><strong>
+
+正确答案: 为了实现高复用性和良好的组合性，我会将“商品卡片”设计为一个基础的无状态函数组件，只负责展示商品的核心信息（如图片、名称、价格）。这个组件接收props来灵活控制显示内容。为了支持组合，可以使用React的“children”或“组合模式”让外层组件注入额外内容，比如商品详情。
 
 具体做法包括：
 
@@ -565,7 +597,9 @@ const ProductCardWithDetail = () => (
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 每个 Context 都有一个对应的 Provider，通过它可以向其子组件提供共享的值。Context API 的核心是通过 Provider 组件向其子树中所有组件共享数据，Consumer 组件或 useContext 钩子可以访问该数据。这是 Context API 的基本用法，其他选项均为误解或错误用法。</strong></p>
+  <p><strong>
+
+正确答案: C. 每个 Context 都有一个对应的 Provider，通过它可以向其子组件提供共享的值。Context API 的核心是通过 Provider 组件向其子树中所有组件共享数据，Consumer 组件或 useContext 钩子可以访问该数据。这是 Context API 的基本用法，其他选项均为误解或错误用法。</strong></p>
 </details>
 
 **问题 2:**
@@ -574,7 +608,9 @@ const ProductCardWithDetail = () => (
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可以通过创建一个 LanguageContext 来管理当前语言状态。首先，定义一个包含语言状态和更新函数的 Context 类型，并使用 React.createContext 初始化。然后，在应用的顶层组件中使用 LanguageProvider 包装，内部通过 useState 管理语言状态，并将状态和切换语言的函数作为 Context 的 value 提供给下层组件。这样，任何需要访问或修改语言的组件都可以通过 useContext(LanguageContext) 来获取当前语言和更新函数。性能优化方面，应注意避免 Context value 频繁变化导致的所有消费者重新渲染。可以通过将 value 对象用 useMemo 包裹，或者拆分 Context，减少不必要的组件更新。此外，避免在 Context 中存放频繁变化的大对象，必要时可以用局部状态或其他状态管理方案配合使用。</strong></p>
+  <p><strong>
+
+正确答案: 可以通过创建一个 LanguageContext 来管理当前语言状态。首先，定义一个包含语言状态和更新函数的 Context 类型，并使用 React.createContext 初始化。然后，在应用的顶层组件中使用 LanguageProvider 包装，内部通过 useState 管理语言状态，并将状态和切换语言的函数作为 Context 的 value 提供给下层组件。这样，任何需要访问或修改语言的组件都可以通过 useContext(LanguageContext) 来获取当前语言和更新函数。性能优化方面，应注意避免 Context value 频繁变化导致的所有消费者重新渲染。可以通过将 value 对象用 useMemo 包裹，或者拆分 Context，减少不必要的组件更新。此外，避免在 Context 中存放频繁变化的大对象，必要时可以用局部状态或其他状态管理方案配合使用。</strong></p>
 </details>
 
 ---
@@ -598,7 +634,9 @@ const ProductCardWithDetail = () => (
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 React.createRef 创建的 ref 对象，其 current 属性会始终指向最新的 DOM 元素实例。 解析：React.createRef 创建的 ref 对象的 current 属性在组件挂载时会被赋值为对应的 DOM 元素实例，并且在 DOM 更新时会自动更新指向最新的元素，方便开发者操作真实 DOM。选项 B 错误，因为字符串 ref 已被弃用且不推荐使用；选项 C 错误，函数组件中可以通过 useRef 来创建 refs 访问 DOM；选项 D 错误，useRef 创建的 ref 可以直接用于获取和操作 DOM 元素。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 React.createRef 创建的 ref 对象，其 current 属性会始终指向最新的 DOM 元素实例。 解析：React.createRef 创建的 ref 对象的 current 属性在组件挂载时会被赋值为对应的 DOM 元素实例，并且在 DOM 更新时会自动更新指向最新的元素，方便开发者操作真实 DOM。选项 B 错误，因为字符串 ref 已被弃用且不推荐使用；选项 C 错误，函数组件中可以通过 useRef 来创建 refs 访问 DOM；选项 D 错误，useRef 创建的 ref 可以直接用于获取和操作 DOM 元素。</strong></p>
 </details>
 
 **问题 2:**
@@ -609,7 +647,9 @@ const ProductCardWithDetail = () => (
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 要实现点击按钮时让输入框获得焦点，可以通过React的Refs来直接访问输入框的DOM节点。示例代码如下：
+  <p><strong>
+
+正确答案: 要实现点击按钮时让输入框获得焦点，可以通过React的Refs来直接访问输入框的DOM节点。示例代码如下：
 
 ```tsx
 import React, { useRef } from 'react';
@@ -663,7 +703,9 @@ export default FocusInput;
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 捕获其子组件树中的渲染、生命周期方法和构造函数中的JavaScript错误，并展示备用UI。错误边界是React中一种特殊的组件，用于捕获其子组件树在渲染、生命周期方法和构造函数中发生的错误，并防止整个应用崩溃。它们不能捕获异步代码（如setTimeout、Promise）或事件处理函数中的错误，因此选项B和D是错误的。选项C描述的行为与错误边界不符，错误边界不会捕获父组件中的错误，也不会自动重新渲染子组件。</strong></p>
+  <p><strong>
+
+正确答案: A. 捕获其子组件树中的渲染、生命周期方法和构造函数中的JavaScript错误，并展示备用UI。错误边界是React中一种特殊的组件，用于捕获其子组件树在渲染、生命周期方法和构造函数中发生的错误，并防止整个应用崩溃。它们不能捕获异步代码（如setTimeout、Promise）或事件处理函数中的错误，因此选项B和D是错误的。选项C描述的行为与错误边界不符，错误边界不会捕获父组件中的错误，也不会自动重新渲染子组件。</strong></p>
 </details>
 
 **问题 2:**
@@ -672,7 +714,9 @@ export default FocusInput;
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 错误边界是React提供的一种机制，用于捕获其子组件树中的JavaScript错误，防止错误扩散导致整个应用崩溃。它通过实现生命周期方法`static getDerivedStateFromError(error)`和`componentDidCatch(error, info)`来捕获并处理错误。
+  <p><strong>
+
+正确答案: 错误边界是React提供的一种机制，用于捕获其子组件树中的JavaScript错误，防止错误扩散导致整个应用崩溃。它通过实现生命周期方法`static getDerivedStateFromError(error)`和`componentDidCatch(error, info)`来捕获并处理错误。
 
 在TypeScript中，可以定义一个错误边界组件如下：
 
@@ -743,7 +787,9 @@ class ErrorBoundary extends React.Component<{}, ErrorBoundaryState> {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. useMemo 返回一个 memoized 的值，useCallback 返回一个 memoized 的函数，React.memo 用于缓存整个组件的渲染结果。
+  <p><strong>
+
+正确答案: B. useMemo 返回一个 memoized 的值，useCallback 返回一个 memoized 的函数，React.memo 用于缓存整个组件的渲染结果。
 
 解释：
 - React.memo 是高阶组件，用于缓存函数组件的渲染结果，避免在 props 不变时重复渲染。
@@ -760,7 +806,9 @@ class ErrorBoundary extends React.Component<{}, ErrorBoundaryState> {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在该场景中，性能问题主要是由于父组件状态更新导致传递给子组件的props（包括回调函数和计算结果）在每次渲染时都发生了变化，进而触发子组件的重新渲染。
+  <p><strong>
+
+正确答案: 在该场景中，性能问题主要是由于父组件状态更新导致传递给子组件的props（包括回调函数和计算结果）在每次渲染时都发生了变化，进而触发子组件的重新渲染。
 
 1. memo：用于包裹子组件，避免子组件在props未变化时重新渲染。使用React.memo包裹子组件后，只有当子组件接收到的props发生浅比较变化时，子组件才会重新渲染。
 
@@ -798,7 +846,9 @@ class ErrorBoundary extends React.Component<{}, ErrorBoundaryState> {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 自定义Hook的名字必须以"use"开头，以便React能识别它是一个Hook。React依赖Hook的命名规则来检测和管理Hook调用，确保Hooks的调用顺序一致，从而避免渲染错误。选项A中在条件语句中调用Hook违反了Hook的调用规则，选项C中普通函数调用Hook会导致Hook规则被破坏，选项D中自定义Hook通常就是通过调用其他Hooks来组合逻辑的，选项D描述错误。</strong></p>
+  <p><strong>
+
+正确答案: B. 自定义Hook的名字必须以"use"开头，以便React能识别它是一个Hook。React依赖Hook的命名规则来检测和管理Hook调用，确保Hooks的调用顺序一致，从而避免渲染错误。选项A中在条件语句中调用Hook违反了Hook的调用规则，选项C中普通函数调用Hook会导致Hook规则被破坏，选项D中自定义Hook通常就是通过调用其他Hooks来组合逻辑的，选项D描述错误。</strong></p>
 </details>
 
 **问题 2:**
@@ -807,7 +857,9 @@ class ErrorBoundary extends React.Component<{}, ErrorBoundaryState> {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在实现自定义 Hook 时，需要遵守以下 React Hooks 规则：
+  <p><strong>
+
+正确答案: 在实现自定义 Hook 时，需要遵守以下 React Hooks 规则：
 
 1. **只能在函数组件或自定义 Hook 中调用 Hook**：自定义 Hook 本质是一个函数，其名称必须以 "use" 开头，只能在 React 函数组件或其他自定义 Hook 中调用，不能在普通函数、条件语句或循环中调用。
 
@@ -843,7 +895,9 @@ class ErrorBoundary extends React.Component<{}, ErrorBoundaryState> {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Suspense 组件必须包裹所有使用 React.lazy 加载的组件，否则懒加载会失败。——这是因为 React.lazy 返回的是一个动态导入的组件，需要 Suspense 组件作为边界来处理加载状态，否则 React 不知道何时显示加载中的 UI。</strong></p>
+  <p><strong>
+
+正确答案: B. Suspense 组件必须包裹所有使用 React.lazy 加载的组件，否则懒加载会失败。——这是因为 React.lazy 返回的是一个动态导入的组件，需要 Suspense 组件作为边界来处理加载状态，否则 React 不知道何时显示加载中的 UI。</strong></p>
 </details>
 
 **问题 2:**
@@ -852,7 +906,9 @@ class ErrorBoundary extends React.Component<{}, ErrorBoundaryState> {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: React的懒加载（React.lazy）允许开发者按需加载组件，只有当组件真正需要渲染时才去加载对应的代码，这样可以减少初始包的大小，提升页面加载性能。React Suspense则是一个用于处理异步加载状态的组件，它可以包裹懒加载组件，在组件加载过程中显示一个fallback（如加载指示器），提升用户体验。
+  <p><strong>
+
+正确答案: React的懒加载（React.lazy）允许开发者按需加载组件，只有当组件真正需要渲染时才去加载对应的代码，这样可以减少初始包的大小，提升页面加载性能。React Suspense则是一个用于处理异步加载状态的组件，它可以包裹懒加载组件，在组件加载过程中显示一个fallback（如加载指示器），提升用户体验。
 
 在上述电商平台场景中，使用React.lazy对商品详情、用户评论和推荐商品等复杂组件进行懒加载，可以有效减少首页的加载体积。通过Suspense包裹这些懒加载组件，可以在加载过程中显示占位UI，避免界面空白。
 
@@ -886,7 +942,9 @@ class ErrorBoundary extends React.Component<{}, ErrorBoundaryState> {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Fiber是一种链表结构，用于增量地协调和渲染React组件树，支持中断和优先级调度。——React Fiber架构核心是通过链表结构的Fiber节点来表示组件树，实现了增量渲染和任务调度的能力，支持中断和优先级管理，从而提升渲染的响应性和性能。其他选项描述的功能与Fiber架构的核心职责不符。</strong></p>
+  <p><strong>
+
+正确答案: B. Fiber是一种链表结构，用于增量地协调和渲染React组件树，支持中断和优先级调度。——React Fiber架构核心是通过链表结构的Fiber节点来表示组件树，实现了增量渲染和任务调度的能力，支持中断和优先级管理，从而提升渲染的响应性和性能。其他选项描述的功能与Fiber架构的核心职责不符。</strong></p>
 </details>
 
 **问题 2:**
@@ -902,7 +960,9 @@ class ErrorBoundary extends React.Component<{}, ErrorBoundaryState> {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. Fiber节点及其数据结构特点：
+  <p><strong>
+
+正确答案: 1. Fiber节点及其数据结构特点：
 React Fiber将每个React元素对应的工作单元抽象成Fiber节点，这些节点组成一棵链表结构的树。每个Fiber节点包含组件的类型、状态、更新队列、子节点和兄弟节点等信息。Fiber节点的设计允许React在渲染过程中能够暂停、恢复和中断工作，从而支持增量渲染。
 
 2. 任务分割和优先级调度：
@@ -936,7 +996,9 @@ Fiber架构将渲染任务拆分成多个小的单位（Fiber单元），React�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. `beginWork` 负责遍历 Fiber 树的子节点，生成新的子 Fiber 对象，并准备更新的工作。 解释：`beginWork` 是 React Fiber 架构中的核心函数，负责递归遍历当前 Fiber 的子节点，创建和更新子 Fiber 对象，准备后续的协调和渲染工作。它不涉及 DOM 的提交（这是 `commitWork` 阶段的任务），也不是生命周期钩子函数，并且在初次渲染和更新阶段都会调用。</strong></p>
+  <p><strong>
+
+正确答案: A. `beginWork` 负责遍历 Fiber 树的子节点，生成新的子 Fiber 对象，并准备更新的工作。 解释：`beginWork` 是 React Fiber 架构中的核心函数，负责递归遍历当前 Fiber 的子节点，创建和更新子 Fiber 对象，准备后续的协调和渲染工作。它不涉及 DOM 的提交（这是 `commitWork` 阶段的任务），也不是生命周期钩子函数，并且在初次渲染和更新阶段都会调用。</strong></p>
 </details>
 
 **问题 2:**
@@ -945,7 +1007,9 @@ Fiber架构将渲染任务拆分成多个小的单位（Fiber单元），React�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，我会重点关注 React Fiber 架构中的调度和更新机制。具体包括：
+  <p><strong>
+
+正确答案: 首先，我会重点关注 React Fiber 架构中的调度和更新机制。具体包括：
 
 1. Fiber 节点的状态更新流程：关注 `beginWork`、`completeWork` 和 `commitWork` 等函数，这些函数负责协调和提交更新。查看状态更新是否正确触发了调度。
 
@@ -988,7 +1052,9 @@ Fiber架构将渲染任务拆分成多个小的单位（Fiber单元），React�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用容器组件（Container Components）负责数据获取和状态管理，展示组件（Presentational Components）专注于UI渲染。 这是React架构设计中的经典最佳实践，有助于分离关注点，提升代码可维护性和复用性。选项A过度集中状态管理，导致组件臃肿且难以维护；选项C忽视了Context API在避免props钻取中的优势；选项D则违背了单一职责原则，使组件职责不清晰。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用容器组件（Container Components）负责数据获取和状态管理，展示组件（Presentational Components）专注于UI渲染。 这是React架构设计中的经典最佳实践，有助于分离关注点，提升代码可维护性和复用性。选项A过度集中状态管理，导致组件臃肿且难以维护；选项C忽视了Context API在避免props钻取中的优势；选项D则违背了单一职责原则，使组件职责不清晰。</strong></p>
 </details>
 
 **问题 2:**
@@ -997,7 +1063,9 @@ Fiber架构将渲染任务拆分成多个小的单位（Fiber单元），React�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计大型企业级React+TypeScript项目的架构时，我会考虑以下几个关键方面：
+  <p><strong>
+
+正确答案: 在设计大型企业级React+TypeScript项目的架构时，我会考虑以下几个关键方面：
 
 1. 组件划分与设计原则：
    - 采用“原子设计”理念，将UI拆分为原子组件（按钮、输入框）、分子组件（表单、列表项）和有机组件（复杂业务模块）。
@@ -1049,7 +1117,9 @@ Fiber架构将渲染任务拆分成多个小的单位（Fiber单元），React�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. let name: string = "Alice"; 这是正确的类型注解用法，声明了变量 name 只能是字符串类型。A 选项赋值了错误的类型（数字），B 选项虽然使用了类型断言但不推荐用来声明变量类型，D 选项使用了 any 类型，失去了类型注解的约束效果。</strong></p>
+  <p><strong>
+
+正确答案: C. let name: string = "Alice"; 这是正确的类型注解用法，声明了变量 name 只能是字符串类型。A 选项赋值了错误的类型（数字），B 选项虽然使用了类型断言但不推荐用来声明变量类型，D 选项使用了 any 类型，失去了类型注解的约束效果。</strong></p>
 </details>
 
 **问题 2:**
@@ -1058,7 +1128,9 @@ Fiber架构将渲染任务拆分成多个小的单位（Fiber单元），React�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可以使用 TypeScript 的接口（interface）或类型别名（type）来定义用户对象的类型注解。例如：
+  <p><strong>
+
+正确答案: 可以使用 TypeScript 的接口（interface）或类型别名（type）来定义用户对象的类型注解。例如：
 
 ```typescript
 interface User {
@@ -1094,7 +1166,9 @@ function UserCard(props: { user: User }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 接口支持声明合并（declaration merging），而类型别名不支持。
+  <p><strong>
+
+正确答案: B. 接口支持声明合并（declaration merging），而类型别名不支持。
 
 解释：
 接口（interface）支持声明合并，即可以多次声明同名接口，这些声明会自动合并。而类型别名（type）不支持声明合并，重复定义会导致错误。选项A错误，因为类型别名可以用来声明联合类型，但接口不能直接声明联合类型；选项C错误，类型别名不仅可以定义基本类型，也可以定义复杂类型；选项D错误，接口可以继承类型别名定义的类型。</strong></p>
@@ -1106,7 +1180,9 @@ function UserCard(props: { user: User }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 接口（interface）和类型别名（type alias）都可以用来定义对象的形状，但它们有一些区别：
+  <p><strong>
+
+正确答案: 接口（interface）和类型别名（type alias）都可以用来定义对象的形状，但它们有一些区别：
 
 1. 扩展性：接口支持声明合并（Declaration Merging），即可以多次声明同名接口，TypeScript 会自动合并它们；类型别名不支持声明合并，必须一次性完整定义。
 
@@ -1138,7 +1214,9 @@ function UserCard(props: { user: User }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. function identity<T>(arg: T): T { return arg; }
+  <p><strong>
+
+正确答案: A. function identity<T>(arg: T): T { return arg; }
 
 解释：选项 A 正确地使用了泛型参数 T，函数参数和返回值都使用了这个泛型类型，保证了输入输出类型一致。选项 B 虽然可以接受任意类型，但没有使用泛型，丢失了类型信息。选项 C 返回类型为 any，丢失了泛型约束。选项 D 中泛型参数 T 未声明，导致语法错误。</strong></p>
 </details>
@@ -1149,7 +1227,9 @@ function UserCard(props: { user: User }) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以定义一个泛型函数 `updateState`，使用泛型参数表示状态的类型，例如：
+  <p><strong>
+
+正确答案: 你可以定义一个泛型函数 `updateState`，使用泛型参数表示状态的类型，例如：
 
 ```typescript
 function updateState<T>(state: T, updater: (prevState: T) => T): T {
@@ -1188,7 +1268,9 @@ function updateState<T>(state: T, updater: (prevState: T) => T): T {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 联合类型表示一个值可以是多种类型中的任意一种，而交叉类型表示一个值同时拥有多个类型的所有属性。
+  <p><strong>
+
+正确答案: A. 联合类型表示一个值可以是多种类型中的任意一种，而交叉类型表示一个值同时拥有多个类型的所有属性。
 
 解析：联合类型（union）用 "|" 表示，表示变量可以是多种类型中的任意一种。例如：type A = string | number，表示 A 可以是 string 或 number。交叉类型（intersection）用 "&" 表示，表示变量必须同时满足多个类型的所有属性。例如：type B = {name: string} & {age: number}，表示 B 变量同时有 name 和 age 属性。选项 B 描述反了，C 选项错误理解了属性访问，D 选项说法完全错误。</strong></p>
 </details>
@@ -1216,7 +1298,9 @@ function updateState<T>(state: T, updater: (prevState: T) => T): T {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在此场景中，应使用联合类型 (`User | Admin`) 来定义函数参数，因为参数可能是普通用户也可能是管理员，两者是互斥的角色，不能同时具备管理员的权限属性。
+  <p><strong>
+
+正确答案: 在此场景中，应使用联合类型 (`User | Admin`) 来定义函数参数，因为参数可能是普通用户也可能是管理员，两者是互斥的角色，不能同时具备管理员的权限属性。
 
 - 联合类型表示参数可以是 `User` 或 `Admin` 中的任意一种，适合表示“或者”的关系。
 - 交叉类型 (`User & Admin`) 表示参数同时具有两者的所有属性，适合表示“并且”的关系，但在该场景下不符合业务需求，因为用户不可能同时是管理员。
@@ -1259,7 +1343,9 @@ function handleUser(user: User | Admin) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用类型守卫 (Type Guard) 通过条件语句检查变量的类型，例如 `if (typeof value === 'string')`。 类型守卫是运行时的类型检查，能让编译器在条件分支中推断出更具体的类型，保证类型安全。类型断言只是告诉编译器“相信我”，不会进行实际的类型检查，可能导致类型错误。选项 C 是错误用法，会丢失类型信息；选项 D 与类型缩小无关。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用类型守卫 (Type Guard) 通过条件语句检查变量的类型，例如 `if (typeof value === 'string')`。 类型守卫是运行时的类型检查，能让编译器在条件分支中推断出更具体的类型，保证类型安全。类型断言只是告诉编译器“相信我”，不会进行实际的类型检查，可能导致类型错误。选项 C 是错误用法，会丢失类型信息；选项 D 与类型缩小无关。</strong></p>
 </details>
 
 **问题 2:**
@@ -1272,7 +1358,9 @@ function handleUser(user: User | Admin) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 React + TypeScript 中，参数 `content` 可能是字符串或 React 节点。要正确渲染，需区分这两种类型。
+  <p><strong>
+
+正确答案: 在 React + TypeScript 中，参数 `content` 可能是字符串或 React 节点。要正确渲染，需区分这两种类型。
 
 1. 使用类型守卫：
 ```tsx
@@ -1327,7 +1415,9 @@ function renderContent(content: string | React.ReactNode) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 字面量类型可以用来限制变量只能赋特定的字符串或数字值。解释：字面量类型允许将变量限制为特定的字符串或数字值，如 'red' | 'green' | 'blue'，用于细化类型；而枚举类型（enum）可以包含数字和字符串成员，并且会在运行时生成一个实际的对象。选项 A 错误，因为枚举可以包含字符串成员；选项 C 错误，枚举在运行时会生成对象；选项 D 错误，字面量类型是类型层面的约束，枚举同时涉及类型和运行时值，二者不完全等价。</strong></p>
+  <p><strong>
+
+正确答案: B. 字面量类型可以用来限制变量只能赋特定的字符串或数字值。解释：字面量类型允许将变量限制为特定的字符串或数字值，如 'red' | 'green' | 'blue'，用于细化类型；而枚举类型（enum）可以包含数字和字符串成员，并且会在运行时生成一个实际的对象。选项 A 错误，因为枚举可以包含字符串成员；选项 C 错误，枚举在运行时会生成对象；选项 D 错误，字面量类型是类型层面的约束，枚举同时涉及类型和运行时值，二者不完全等价。</strong></p>
 </details>
 
 **问题 2:**
@@ -1340,7 +1430,9 @@ function renderContent(content: string | React.ReactNode) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在管理用户权限状态时，枚举类型和字面量类型各有优缺点：
+  <p><strong>
+
+正确答案: 在管理用户权限状态时，枚举类型和字面量类型各有优缺点：
 
 1. 枚举类型（enum）：
    - 优点：
@@ -1411,7 +1503,9 @@ function checkAccessLiteral(role: UserRoleLiteral) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 条件类型是对类型进行条件判断并返回不同类型的机制，而映射类型用于遍历联合类型中的每个成员并生成对应的类型。这个选项准确描述了条件类型和映射类型的核心区别。条件类型允许根据类型条件选择返回类型，而映射类型用于对对象类型的属性进行遍历和转换，二者是TypeScript高级类型系统中的不同概念。</strong></p>
+  <p><strong>
+
+正确答案: A. 条件类型是对类型进行条件判断并返回不同类型的机制，而映射类型用于遍历联合类型中的每个成员并生成对应的类型。这个选项准确描述了条件类型和映射类型的核心区别。条件类型允许根据类型条件选择返回类型，而映射类型用于对对象类型的属性进行遍历和转换，二者是TypeScript高级类型系统中的不同概念。</strong></p>
 </details>
 
 **问题 2:**
@@ -1420,7 +1514,9 @@ function checkAccessLiteral(role: UserRoleLiteral) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以定义一个映射类型结合条件类型来实现这个需求。示例如下：
+  <p><strong>
+
+正确答案: 你可以定义一个映射类型结合条件类型来实现这个需求。示例如下：
 
 ```typescript
 type ReadonlyOptionalString<T> = {
@@ -1476,7 +1572,9 @@ type ReadonlyOptionalString<T> = {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 类装饰器接收的参数是类的构造函数，可以返回一个新的构造函数以替代原有类定义。此选项正确，因为TypeScript中的类装饰器确实接收构造函数作为参数，并且可以返回一个新的构造函数来替代原有类，从而实现增强或修改类的行为。选项A错误，因为类装饰器可以影响静态属性；选项C错误，类装饰器是在类定义阶段执行，能够访问类本身；选项D错误，装饰器是在运行时执行，而非编译时。</strong></p>
+  <p><strong>
+
+正确答案: B. 类装饰器接收的参数是类的构造函数，可以返回一个新的构造函数以替代原有类定义。此选项正确，因为TypeScript中的类装饰器确实接收构造函数作为参数，并且可以返回一个新的构造函数来替代原有类，从而实现增强或修改类的行为。选项A错误，因为类装饰器可以影响静态属性；选项C错误，类装饰器是在类定义阶段执行，能够访问类本身；选项D错误，装饰器是在运行时执行，而非编译时。</strong></p>
 </details>
 
 **问题 2:**
@@ -1485,7 +1583,9 @@ type ReadonlyOptionalString<T> = {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以使用类装饰器或方法装饰器来增强组件的生命周期方法，实现自动的日志记录。
+  <p><strong>
+
+正确答案: 你可以使用类装饰器或方法装饰器来增强组件的生命周期方法，实现自动的日志记录。
 
 示例设计思路：
 
@@ -1557,7 +1657,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 加快后续的编译速度，通过存储增量编译信息实现。启用 "incremental" 选项会让 TypeScript 在首次完整编译后生成一个增量编译信息文件（.tsbuildinfo），后续编译时只重新编译发生改变的文件，从而提高编译效率。A选项与体积无关，C选项是严格模式的作用，D选项不是 TypeScript 的功能。</strong></p>
+  <p><strong>
+
+正确答案: B. 加快后续的编译速度，通过存储增量编译信息实现。启用 "incremental" 选项会让 TypeScript 在首次完整编译后生成一个增量编译信息文件（.tsbuildinfo），后续编译时只重新编译发生改变的文件，从而提高编译效率。A选项与体积无关，C选项是严格模式的作用，D选项不是 TypeScript 的功能。</strong></p>
 </details>
 
 **问题 2:**
@@ -1566,7 +1668,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在大型React+TypeScript项目中，为了优化编译速度和提升开发体验，可以从以下几个tsconfig.json配置项入手：
+  <p><strong>
+
+正确答案: 在大型React+TypeScript项目中，为了优化编译速度和提升开发体验，可以从以下几个tsconfig.json配置项入手：
 
 1. `incremental`: 开启增量编译功能，TypeScript会保存上一次编译信息，下一次编译时只处理变更部分，从而显著加快编译速度。
 
@@ -1602,7 +1706,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 当函数有多个返回分支时，TypeScript 会将所有分支返回值的类型合并为一个联合类型作为推断的返回类型。 解释：TypeScript 在推断函数返回类型时，会分析所有可能的返回路径，将它们的类型合并成一个联合类型，以确保类型的准确性和安全性。选项 A 错误，因为 TypeScript 会推断最具体的类型而非最宽松类型；选项 C 错误，空数组默认推断为 never[]；选项 D 错误，对象字面量默认属性不是只读，除非使用 readonly 修饰。</strong></p>
+  <p><strong>
+
+正确答案: B. 当函数有多个返回分支时，TypeScript 会将所有分支返回值的类型合并为一个联合类型作为推断的返回类型。 解释：TypeScript 在推断函数返回类型时，会分析所有可能的返回路径，将它们的类型合并成一个联合类型，以确保类型的准确性和安全性。选项 A 错误，因为 TypeScript 会推断最具体的类型而非最宽松类型；选项 C 错误，空数组默认推断为 never[]；选项 D 错误，对象字面量默认属性不是只读，除非使用 readonly 修饰。</strong></p>
 </details>
 
 **问题 2:**
@@ -1630,7 +1736,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. **类型推断过程**：`withExtraProps` 是一个泛型函数，接收一个组件 `WrappedComponent`，其 props 类型为泛型参数 `P`。返回的函数组件接受 `props: P`，并将其与额外的 `extraProp` 合并传入 `WrappedComponent`。
+  <p><strong>
+
+正确答案: 1. **类型推断过程**：`withExtraProps` 是一个泛型函数，接收一个组件 `WrappedComponent`，其 props 类型为泛型参数 `P`。返回的函数组件接受 `props: P`，并将其与额外的 `extraProp` 合并传入 `WrappedComponent`。
 
    TypeScript 通过 `Button` 组件的声明，推断出 `P` 为 `{ label: string; extraProp?: string }`。因此，`EnhancedButton` 的 props 类型即为 `P`，即 `{ label: string; extraProp?: string }`。
 
@@ -1681,7 +1789,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 使用TypeScript的Partial和Required工具类型结合默认props类型和必需props类型来设计组件props类型。 解析：通过Partial和Required工具类型，可以灵活地设计组件的props类型，确保默认props可以被正确推断为可选，同时必需props保持强制类型检查。选项A忽略了类型安全，选项B依赖类型断言容易导致类型不安全，选项D虽然在老版本React中可用，但在Function组件和TypeScript中不推荐使用defaultProps作为类型安全方案。</strong></p>
+  <p><strong>
+
+正确答案: C. 使用TypeScript的Partial和Required工具类型结合默认props类型和必需props类型来设计组件props类型。 解析：通过Partial和Required工具类型，可以灵活地设计组件的props类型，确保默认props可以被正确推断为可选，同时必需props保持强制类型检查。选项A忽略了类型安全，选项B依赖类型断言容易导致类型不安全，选项D虽然在老版本React中可用，但在Function组件和TypeScript中不推荐使用defaultProps作为类型安全方案。</strong></p>
 </details>
 
 **问题 2:**
@@ -1690,7 +1800,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 实现一个通用的`Form<T>`组件，关键是利用TypeScript的泛型和映射类型来确保表单字段和验证的类型安全。具体设计思路如下：
+  <p><strong>
+
+正确答案: 实现一个通用的`Form<T>`组件，关键是利用TypeScript的泛型和映射类型来确保表单字段和验证的类型安全。具体设计思路如下：
 
 1. 泛型约束表单数据结构：
    - 使用泛型`T`表示表单的整体数据结构，每个键对应一个字段。
@@ -1737,7 +1849,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. checker.ts —— 负责类型推断和类型兼容性检查。解释：在 TypeScript 的源码结构中，checker.ts 是类型检查的核心文件，包含了类型推断、类型兼容性判断、错误检测等关键逻辑。binder.ts 主要负责符号绑定和作用域解析，parser.ts 负责语法解析生成 AST，emitter.ts 负责生成最终的 JavaScript 代码，但都不直接承担类型检查的职责。</strong></p>
+  <p><strong>
+
+正确答案: B. checker.ts —— 负责类型推断和类型兼容性检查。解释：在 TypeScript 的源码结构中，checker.ts 是类型检查的核心文件，包含了类型推断、类型兼容性判断、错误检测等关键逻辑。binder.ts 主要负责符号绑定和作用域解析，parser.ts 负责语法解析生成 AST，emitter.ts 负责生成最终的 JavaScript 代码，但都不直接承担类型检查的职责。</strong></p>
 </details>
 
 **问题 2:**
@@ -1753,7 +1867,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. **条件类型对应的核心模块**
+  <p><strong>
+
+正确答案: 1. **条件类型对应的核心模块**
    TypeScript的条件类型主要在`checker.ts`模块内实现，尤其是处理类型推断、类型分支时的核心逻辑。`checker.ts`是类型检查的核心文件，负责解析和验证复杂的类型表达式。
 
 2. **条件类型推导路径**
@@ -1791,7 +1907,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 使用严格的 TypeScript 配置（如开启 strict 模式），并结合统一的类型定义文件和分模块管理，保证类型的准确性和模块的解耦。这种做法能够最大化利用 TypeScript 的类型检查能力，提高代码的可靠性和可维护性，同时分模块管理有助于团队协作与代码组织。</strong></p>
+  <p><strong>
+
+正确答案: C. 使用严格的 TypeScript 配置（如开启 strict 模式），并结合统一的类型定义文件和分模块管理，保证类型的准确性和模块的解耦。这种做法能够最大化利用 TypeScript 的类型检查能力，提高代码的可靠性和可维护性，同时分模块管理有助于团队协作与代码组织。</strong></p>
 </details>
 
 **问题 2:**
@@ -1809,7 +1927,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计中大型React+TypeScript项目的架构与规范时，需综合考虑团队规模、成员能力、代码维护性和扩展性。具体设计思路如下：
+  <p><strong>
+
+正确答案: 在设计中大型React+TypeScript项目的架构与规范时，需综合考虑团队规模、成员能力、代码维护性和扩展性。具体设计思路如下：
 
 1. 项目架构设计
 - 采用模块化架构，将业务功能拆分为独立模块，每个模块包含自身的组件、类型定义、服务和样式。
@@ -1873,7 +1993,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. useReducer接收一个reducer函数和一个初始状态，返回当前状态和一个dispatch函数，用于分发action来更新状态。 解释：useReducer的正确用法是接收一个纯函数(reducer)和初始状态，返回当前状态和dispatch函数。dispatch传入action触发reducer更新状态。B选项错误，因为useReducer也适合简单状态管理；C选项错误，dispatch可以是异步调用；D选项错误，reducer函数必须是纯函数，不可直接修改state，而应返回新状态。</strong></p>
+  <p><strong>
+
+正确答案: A. useReducer接收一个reducer函数和一个初始状态，返回当前状态和一个dispatch函数，用于分发action来更新状态。 解释：useReducer的正确用法是接收一个纯函数(reducer)和初始状态，返回当前状态和dispatch函数。dispatch传入action触发reducer更新状态。B选项错误，因为useReducer也适合简单状态管理；C选项错误，dispatch可以是异步调用；D选项错误，reducer函数必须是纯函数，不可直接修改state，而应返回新状态。</strong></p>
 </details>
 
 **问题 2:**
@@ -1882,7 +2004,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在购物车组件中，useState 适合管理简单的独立状态，例如单个商品数量的变化；它使用方便，语法简单，适合状态逻辑不复杂的场景。useReducer 更适合管理复杂的状态逻辑，比如购物车中多种操作（添加商品、删除商品、更新数量）且状态结构较复杂的情况。useReducer 通过定义 reducer 函数明确状态变化逻辑，便于维护和扩展。
+  <p><strong>
+
+正确答案: 在购物车组件中，useState 适合管理简单的独立状态，例如单个商品数量的变化；它使用方便，语法简单，适合状态逻辑不复杂的场景。useReducer 更适合管理复杂的状态逻辑，比如购物车中多种操作（添加商品、删除商品、更新数量）且状态结构较复杂的情况。useReducer 通过定义 reducer 函数明确状态变化逻辑，便于维护和扩展。
 
 如果购物车状态较为简单，仅涉及单一状态变量，使用 useState 即可；但当状态涉及多个字段且多个操作时，useReducer 能带来更清晰的状态管理和更好的状态变更追踪。因此，在该场景下，推荐使用 useReducer 来处理购物车的复杂状态更新，以提高代码的可维护性和可读性。</strong></p>
 </details>
@@ -1908,7 +2032,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 Context.Provider 包裹需要共享状态的组件树，并通过 value 属性传递共享状态。 Context 的核心用法是通过 Provider 包裹组件树并传递 value 来实现状态共享，其他选项存在误解：A 错误因为每次都创建新 Context 会导致状态无法共享；C 错误因为 Context 可用于动态状态；D 错误因为 useContext 是访问 Context 的推荐 Hook。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 Context.Provider 包裹需要共享状态的组件树，并通过 value 属性传递共享状态。 Context 的核心用法是通过 Provider 包裹组件树并传递 value 来实现状态共享，其他选项存在误解：A 错误因为每次都创建新 Context 会导致状态无法共享；C 错误因为 Context 可用于动态状态；D 错误因为 useContext 是访问 Context 的推荐 Hook。</strong></p>
 </details>
 
 **问题 2:**
@@ -1917,7 +2043,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 利用React Context实现状态共享的步骤：
+  <p><strong>
+
+正确答案: 1. 利用React Context实现状态共享的步骤：
 - 创建Context：使用React.createContext创建一个包含用户登录状态和主题偏好的Context。
 - 提供Context：在应用的较高层组件（如App组件）中通过Context.Provider包裹子组件，并将状态和值作为value传递。
 - 消费Context：在需要访问这些状态的子组件中，使用useContext钩子获取Context中的值。
@@ -1948,7 +2076,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. reducer是一个纯函数，根据当前状态和动作返回新的状态。Redux中reducer必须是纯函数，接收当前状态和动作作为参数，返回一个新的状态对象，而不直接修改原状态或执行副作用操作。</strong></p>
+  <p><strong>
+
+正确答案: B. reducer是一个纯函数，根据当前状态和动作返回新的状态。Redux中reducer必须是纯函数，接收当前状态和动作作为参数，返回一个新的状态对象，而不直接修改原状态或执行副作用操作。</strong></p>
 </details>
 
 **问题 2:**
@@ -1962,7 +2092,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 对于需要严格的状态变更流程和良好调试支持的场景，推荐使用Redux。Redux通过纯函数的reducer管理状态，保证状态变更的可预测性和可追踪性，并且拥有强大的中间件和开发者工具（如Redux DevTools）支持，有助于调试和维护复杂状态。
+  <p><strong>
+
+正确答案: 1. 对于需要严格的状态变更流程和良好调试支持的场景，推荐使用Redux。Redux通过纯函数的reducer管理状态，保证状态变更的可预测性和可追踪性，并且拥有强大的中间件和开发者工具（如Redux DevTools）支持，有助于调试和维护复杂状态。
 
 2. 对于状态复杂且响应式需求强，且希望代码简洁的场景，MobX是更合适的选择。MobX采用透明响应式编程模型，自动追踪依赖，减少样板代码，使得状态管理更直观和灵活，适合快速开发和维护。
 
@@ -1989,7 +2121,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Redux Thunk 允许你在 action creators 中直接返回函数以进行异步处理，而 Redux Saga 使用 Generator 函数来管理异步流程。Redux Thunk 通过在 action creator 返回函数实现异步逻辑，利用中间件拦截函数并执行异步代码；而 Redux Saga 则基于 Generator 函数，通过监听特定的 action 来管理复杂的异步流程和副作用。</strong></p>
+  <p><strong>
+
+正确答案: B. Redux Thunk 允许你在 action creators 中直接返回函数以进行异步处理，而 Redux Saga 使用 Generator 函数来管理异步流程。Redux Thunk 通过在 action creator 返回函数实现异步逻辑，利用中间件拦截函数并执行异步代码；而 Redux Saga 则基于 Generator 函数，通过监听特定的 action 来管理复杂的异步流程和副作用。</strong></p>
 </details>
 
 **问题 2:**
@@ -1998,7 +2132,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. Redux Thunk处理异步操作：
+  <p><strong>
+
+正确答案: 1. Redux Thunk处理异步操作：
 - 通过返回一个函数（thunk）来延迟dispatch动作，函数内部可以执行异步请求（如fetch API）。
 - 代码通常直接写在action creator中，比较直观。
 - 错误处理通常在thunk函数中使用try/catch或者Promise的catch。
@@ -2033,7 +2169,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 React.memo 包裹子组件，并确保传递给子组件的 props 是稳定且不可变的
+  <p><strong>
+
+正确答案: B. 使用 React.memo 包裹子组件，并确保传递给子组件的 props 是稳定且不可变的
 
 解释：React.memo 可以避免子组件在 props 未发生变化时不必要的重新渲染，从而提升性能。但要注意传递给子组件的 props 必须是稳定的（例如使用 useCallback 和 useMemo 产生的缓存函数和数据），否则 React.memo 的效果会大打折扣。选项 A 虽然集中管理状态，但会导致状态变化时整个组件树重新渲染；选项 C 的局部状态管理虽然有优势，但不能完全避免父组件传递的 props 变化；选项 D 强制刷新组件会降低性能，且不推荐使用。</strong></p>
 </details>
@@ -2050,7 +2188,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 造成性能瓶颈的可能原因包括：
+  <p><strong>
+
+正确答案: 1. 造成性能瓶颈的可能原因包括：
 - 过度共享的全局状态，导致每次状态更新触发大量组件重新渲染。
 - 状态更新不够细粒度，单次更新包含大量无关数据，造成无关组件重新渲染。
 - 组件未使用 React.memo 或 useMemo 等优化手段，导致不必要的渲染。
@@ -2094,7 +2234,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 将状态按模块划分，使用局部的useState或useReducer管理局部状态，复杂共享状态则通过Redux或Recoil等全局状态管理库处理。 解释：在大型React应用中，合理的状态管理架构需要兼顾局部状态和全局共享状态的需求。局部状态用useState或useReducer管理，可以保持组件的内聚性和解耦性，而对于跨多个组件共享的复杂状态，使用Redux或Recoil等全局状态管理库则能更好地维护状态一致性和可预测性。选项A过度集中所有状态容易导致store臃肿和性能问题，选项C忽略了全局状态的需求，选项D引入事件总线会破坏React的数据流和可维护性。</strong></p>
+  <p><strong>
+
+正确答案: B. 将状态按模块划分，使用局部的useState或useReducer管理局部状态，复杂共享状态则通过Redux或Recoil等全局状态管理库处理。 解释：在大型React应用中，合理的状态管理架构需要兼顾局部状态和全局共享状态的需求。局部状态用useState或useReducer管理，可以保持组件的内聚性和解耦性，而对于跨多个组件共享的复杂状态，使用Redux或Recoil等全局状态管理库则能更好地维护状态一致性和可预测性。选项A过度集中所有状态容易导致store臃肿和性能问题，选项C忽略了全局状态的需求，选项D引入事件总线会破坏React的数据流和可维护性。</strong></p>
 </details>
 
 **问题 2:**
@@ -2110,7 +2252,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在中大型React+TypeScript项目中设计状态管理架构时，需综合考虑状态的边界划分、选型和类型安全等多个方面：
+  <p><strong>
+
+正确答案: 在中大型React+TypeScript项目中设计状态管理架构时，需综合考虑状态的边界划分、选型和类型安全等多个方面：
 
 1. 状态边界划分：
 - 局部UI状态（如模态框开关、表单输入等）应尽量放在组件内部或使用React Context进行局部共享，避免过度耦合。
@@ -2158,7 +2302,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用订阅-发布模式，每个组件只订阅它关心的状态片段，状态更新时只通知相关订阅者进行重新渲染。 解析：订阅-发布模式是现代状态管理库常用的设计，能够确保只有真正依赖于某部分状态的组件才会更新，从而提高性能。选项A的全局事件广播容易导致大量不必要的组件更新；选项C的强制更新会导致所有组件无差别渲染，效率低下；选项D的轮询机制则带来性能浪费和响应延迟。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用订阅-发布模式，每个组件只订阅它关心的状态片段，状态更新时只通知相关订阅者进行重新渲染。 解析：订阅-发布模式是现代状态管理库常用的设计，能够确保只有真正依赖于某部分状态的组件才会更新，从而提高性能。选项A的全局事件广播容易导致大量不必要的组件更新；选项C的强制更新会导致所有组件无差别渲染，效率低下；选项D的轮询机制则带来性能浪费和响应延迟。</strong></p>
 </details>
 
 **问题 2:**
@@ -2173,7 +2319,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. **状态更新的不可变性实现**
+  <p><strong>
+
+正确答案: 1. **状态更新的不可变性实现**
    - 库通常采用浅拷贝或结构共享的方式实现状态更新，比如使用对象扩展运算符（{...state, updatedField: newValue}）或类似 Immer 这样的库来保证状态不可变。
    - 具体源码中，会在调用更新函数时，返回一个新的状态对象，而非直接修改原状态。
    - 优势在于能方便地进行状态比较（浅比较即可判断是否更新），避免副作用，提高可预测性。
@@ -2212,7 +2360,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用不可变数据结构管理状态，配合细粒度的订阅机制，只触发依赖该状态的组件重新渲染。 解析：选项B体现了自定义状态管理设计中核心的最佳实践：使用不可变数据结构方便状态的变更检测，细粒度的订阅机制确保只有依赖该状态的组件重新渲染，从而提升性能和可维护性。A选项虽然简单，但将所有状态放在单一Context会导致大量不必要的组件重新渲染。C选项虽然避免Context，但会引起props层层传递，导致代码臃肿且不利于状态共享。D选项使用setTimeout/setInterval异步更新状态不但复杂且容易引发状态竞争和难以调试的问题，不符合设计最佳实践。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用不可变数据结构管理状态，配合细粒度的订阅机制，只触发依赖该状态的组件重新渲染。 解析：选项B体现了自定义状态管理设计中核心的最佳实践：使用不可变数据结构方便状态的变更检测，细粒度的订阅机制确保只有依赖该状态的组件重新渲染，从而提升性能和可维护性。A选项虽然简单，但将所有状态放在单一Context会导致大量不必要的组件重新渲染。C选项虽然避免Context，但会引起props层层传递，导致代码臃肿且不利于状态共享。D选项使用setTimeout/setInterval异步更新状态不但复杂且容易引发状态竞争和难以调试的问题，不符合设计最佳实践。</strong></p>
 </details>
 
 **问题 2:**
@@ -2236,7 +2386,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 状态存储结构设计理念：
+  <p><strong>
+
+正确答案: 1. 状态存储结构设计理念：
 - 使用一个全局的状态树（如单一状态对象）或按模块划分多个状态片段，保证状态结构清晰且便于维护。
 - 利用 TypeScript 的接口和类型定义状态结构，确保类型安全。
 
@@ -2287,7 +2439,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. <Route path="/home" element={<Home />} /> 是正确的写法。React Router v6 及以后版本中，Route 组件使用 element 属性来指定要渲染的组件，而不是 component 或 render 属性。选项 A 和 C 是 React Router 早期版本的写法，D 选项的 children 属性用于嵌套路由，不适合直接这样使用。</strong></p>
+  <p><strong>
+
+正确答案: B. <Route path="/home" element={<Home />} /> 是正确的写法。React Router v6 及以后版本中，Route 组件使用 element 属性来指定要渲染的组件，而不是 component 或 render 属性。选项 A 和 C 是 React Router 早期版本的写法，D 选项的 children 属性用于嵌套路由，不适合直接这样使用。</strong></p>
 </details>
 
 **问题 2:**
@@ -2296,7 +2450,9 @@ class MyComponent extends React.Component {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 配置路由：
+  <p><strong>
+
+正确答案: 1. 配置路由：
    - 使用 <BrowserRouter> 作为路由上下文的包裹组件。
    - 使用 <Routes> 包含所有的 <Route>。
    - 定义三个路由路径：
@@ -2369,7 +2525,9 @@ function PostDetail() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 嵌套路由可以通过在父路由组件中渲染 <Outlet /> 来显示子路由内容，动态路由参数通过 useParams 获取。 动态路由中的参数可以通过 React Router 提供的 useParams 钩子获取，而嵌套路由的子路由内容通过在父组件中渲染 <Outlet /> 来展示，这种设计使得路由结构清晰且易于维护。</strong></p>
+  <p><strong>
+
+正确答案: B. 嵌套路由可以通过在父路由组件中渲染 <Outlet /> 来显示子路由内容，动态路由参数通过 useParams 获取。 动态路由中的参数可以通过 React Router 提供的 useParams 钩子获取，而嵌套路由的子路由内容通过在父组件中渲染 <Outlet /> 来展示，这种设计使得路由结构清晰且易于维护。</strong></p>
 </details>
 
 **问题 2:**
@@ -2383,7 +2541,9 @@ function PostDetail() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 实现思路：
+  <p><strong>
+
+正确答案: 实现思路：
 
 1. 动态路由：
 - 使用 React Router 的参数化路由（例如路径 '/orders/:orderId'）来动态匹配订单详情页。
@@ -2423,7 +2583,9 @@ function PostDetail() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在路由组件外层包裹一个高阶组件（HOC），在其中检查用户权限，未授权时跳转登录页。 这是最常用且清晰的实现方式，可以集中管理权限逻辑，避免在每个页面重复代码，同时保证未授权用户被正确重定向。选项 B 由于依赖 useEffect，可能导致页面闪烁，用户体验差。选项 C 渲染空白组件不友好且不明确。选项 D 虽然利用 Context 管理权限状态，但路由配置不变无法阻止未授权访问。</strong></p>
+  <p><strong>
+
+正确答案: A. 在路由组件外层包裹一个高阶组件（HOC），在其中检查用户权限，未授权时跳转登录页。 这是最常用且清晰的实现方式，可以集中管理权限逻辑，避免在每个页面重复代码，同时保证未授权用户被正确重定向。选项 B 由于依赖 useEffect，可能导致页面闪烁，用户体验差。选项 C 渲染空白组件不友好且不明确。选项 D 虽然利用 Context 管理权限状态，但路由配置不变无法阻止未授权访问。</strong></p>
 </details>
 
 **问题 2:**
@@ -2432,7 +2594,9 @@ function PostDetail() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 权限数据管理：
+  <p><strong>
+
+正确答案: 1. 权限数据管理：
 - 在全局状态（如 Redux、Context）中维护当前用户的角色和权限信息。
 
 2. 路由配置设计：
@@ -2476,7 +2640,9 @@ function PostDetail() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 React.lazy 和 Suspense 对路由组件进行按需加载，减少初始加载体积。 解释：按需加载路由组件（代码分割）能显著减少初始加载资源，提高页面加载速度，提升用户体验。选项A虽然避免了动态加载的延迟，但会导致初始包体积过大，反而降低性能。选项C会导致页面刷新，破坏 SPA 性能优势。选项D主要是路由管理的组织方式，对性能提升作用有限。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 React.lazy 和 Suspense 对路由组件进行按需加载，减少初始加载体积。 解释：按需加载路由组件（代码分割）能显著减少初始加载资源，提高页面加载速度，提升用户体验。选项A虽然避免了动态加载的延迟，但会导致初始包体积过大，反而降低性能。选项C会导致页面刷新，破坏 SPA 性能优势。选项D主要是路由管理的组织方式，对性能提升作用有限。</strong></p>
 </details>
 
 **问题 2:**
@@ -2485,7 +2651,9 @@ function PostDetail() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 针对大型React应用中路由性能优化的常见做法包括：
+  <p><strong>
+
+正确答案: 针对大型React应用中路由性能优化的常见做法包括：
 
 1. **路由懒加载（Code Splitting）**
    - 使用React的`React.lazy`和`Suspense`或`loadable-components`等库，将路由组件按需加载，避免一次性加载所有路由对应的代码。
@@ -2529,7 +2697,9 @@ function PostDetail() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 react-router-redux 或 connected-react-router 这类库，将路由状态作为一部分存储在 Redux 中，并通过中间件自动同步路由和 Redux 状态。这种方式能够有效避免手动同步可能引起的无限循环问题，同时保持路由和状态的一致性。
+  <p><strong>
+
+正确答案: B. 使用 react-router-redux 或 connected-react-router 这类库，将路由状态作为一部分存储在 Redux 中，并通过中间件自动同步路由和 Redux 状态。这种方式能够有效避免手动同步可能引起的无限循环问题，同时保持路由和状态的一致性。
 
 选项 A 会导致路由和 Redux 状态互相触发更新，容易产生无限循环。选项 C 是错误的，因为 reducer 应该是纯函数，不能执行副作用操作。选项 D 虽然避免了同步，但无法保证路由状态和 Redux 状态之间的一致性，降低应用的可维护性。</strong></p>
 </details>
@@ -2546,7 +2716,9 @@ function PostDetail() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 设计路由状态与组件状态同步机制：
+  <p><strong>
+
+正确答案: 1. 设计路由状态与组件状态同步机制：
 - 可以将关键的表单进度和必要的表单数据（或其标识）编码到 URL 的查询参数或路径参数中。例如，URL 可以包含当前步骤编号和已填写的部分数据。
 - 组件在初始化时从 URL 解析状态，设置内部状态（如 React 的 useState 或 useReducer）。
 - 组件状态变化时，通过 React Router 的导航方法（如 useNavigate）更新 URL，确保 URL 始终反映当前状态。
@@ -2585,7 +2757,9 @@ function PostDetail() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 根据业务模块拆分路由配置文件，采用动态导入（code-splitting）和懒加载，提高首屏性能。 解析：选项B符合大型React应用路由设计的最佳实践。模块化拆分路由配置便于维护和扩展，动态导入配合懒加载优化加载性能，有助于提升用户体验。选项A虽便于统一管理，但单文件路由配置在大型项目中难以维护且不利于性能优化。选项C的硬编码路径会导致路由和组件耦合度过高，不利于维护和复用。选项D错误，React Router的Outlet是嵌套路由的核心机制，避免使用反而增加实现复杂度。</strong></p>
+  <p><strong>
+
+正确答案: B. 根据业务模块拆分路由配置文件，采用动态导入（code-splitting）和懒加载，提高首屏性能。 解析：选项B符合大型React应用路由设计的最佳实践。模块化拆分路由配置便于维护和扩展，动态导入配合懒加载优化加载性能，有助于提升用户体验。选项A虽便于统一管理，但单文件路由配置在大型项目中难以维护且不利于性能优化。选项C的硬编码路径会导致路由和组件耦合度过高，不利于维护和复用。选项D错误，React Router的Outlet是嵌套路由的核心机制，避免使用反而增加实现复杂度。</strong></p>
 </details>
 
 **问题 2:**
@@ -2602,7 +2776,9 @@ function PostDetail() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计该路由架构的思路如下：
+  <p><strong>
+
+正确答案: 设计该路由架构的思路如下：
 
 1. 模块化管理：
    - 将路由配置拆分为多个独立模块（例如按业务域划分），每个模块维护自己的路由数组。
@@ -2659,7 +2835,9 @@ function PostDetail() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 路由渲染时，路由组件会利用 React 的 Context 机制传递当前匹配的路由信息，保证嵌套路由可以正确获取父路由状态。 解释：React 路由库（如 react-router）源码设计中，采用 React Context 实现路由状态的传递，使得嵌套路由组件能够共享父路由的匹配信息和路由状态，避免手动传递props，这也是其核心设计之一。A选项错误，因为路由匹配支持部分匹配和多个路由匹配，而非仅仅第一个完全匹配。B选项错误，react-router 支持多种路由模式（history、hash等），不仅限于 hash。D选项错误，路由状态不是依赖全局状态管理库，而是内部维护和 Context 传递。</strong></p>
+  <p><strong>
+
+正确答案: C. 路由渲染时，路由组件会利用 React 的 Context 机制传递当前匹配的路由信息，保证嵌套路由可以正确获取父路由状态。 解释：React 路由库（如 react-router）源码设计中，采用 React Context 实现路由状态的传递，使得嵌套路由组件能够共享父路由的匹配信息和路由状态，避免手动传递props，这也是其核心设计之一。A选项错误，因为路由匹配支持部分匹配和多个路由匹配，而非仅仅第一个完全匹配。B选项错误，react-router 支持多种路由模式（history、hash等），不仅限于 hash。D选项错误，路由状态不是依赖全局状态管理库，而是内部维护和 Context 传递。</strong></p>
 </details>
 
 **问题 2:**
@@ -2676,7 +2854,9 @@ function PostDetail() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 路由匹配机制：
+  <p><strong>
+
+正确答案: 1. 路由匹配机制：
 - 核心算法通常基于路径模式匹配（如使用正则表达式或字符串分割匹配）。
 - 源码中会将路由路径拆分成路径段数组，通过逐段匹配判断是否符合当前 URL。
 - 动态路由参数使用冒号标记（如 /user/:id），匹配时提取对应位置的参数值，存入参数对象。
@@ -2718,7 +2898,9 @@ function PostDetail() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在组件中使用 React.memo 来缓存组件，避免相同 props 导致的重复渲染
+  <p><strong>
+
+正确答案: A. 在组件中使用 React.memo 来缓存组件，避免相同 props 导致的重复渲染
 
 解释：React.memo 是 React 提供的高阶组件，用于缓存函数组件的渲染结果，只有当 props 发生变化时才会重新渲染，这样可以有效避免不必要的渲染。选项 B 是错误的，直接修改状态不会触发组件更新；选项 C 是错误的，useCallback 主要用于避免函数重新创建，有助于减少子组件不必要的渲染；选项 D 并不一定避免渲染，反而可能导致父组件频繁渲染影响性能。</strong></p>
 </details>
@@ -2729,7 +2911,9 @@ function PostDetail() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 为了避免子组件的无谓重复渲染，可以采取以下几个措施：
+  <p><strong>
+
+正确答案: 为了避免子组件的无谓重复渲染，可以采取以下几个措施：
 
 1. 使用React.memo包裹纯展示型子组件，避免其在父组件状态更新时无差别重新渲染。
 2. 通过useCallback或useMemo缓存函数和计算结果，避免传递给子组件的props变化导致重新渲染。
@@ -2781,7 +2965,9 @@ const ParentComponent = () => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B。仅对路由层级的组件进行懒加载，确保非初始渲染的组件才被异步加载。这样做可以有效减少初始打包体积，提升首屏加载性能。选项A错误，因为对所有组件都使用React.lazy会导致初始渲染也需要等待懒加载完成，反而可能影响性能。选项C混淆了性能优化手段，React.memo是用于避免不必要的重新渲染，不是实现懒加载的工具。选项D也不合理，因为工具函数一般体积小且被多处使用，动态import反而可能增加复杂度和额外请求。</strong></p>
+  <p><strong>
+
+正确答案: B。仅对路由层级的组件进行懒加载，确保非初始渲染的组件才被异步加载。这样做可以有效减少初始打包体积，提升首屏加载性能。选项A错误，因为对所有组件都使用React.lazy会导致初始渲染也需要等待懒加载完成，反而可能影响性能。选项C混淆了性能优化手段，React.memo是用于避免不必要的重新渲染，不是实现懒加载的工具。选项D也不合理，因为工具函数一般体积小且被多处使用，动态import反而可能增加复杂度和额外请求。</strong></p>
 </details>
 
 **问题 2:**
@@ -2795,7 +2981,9 @@ const ParentComponent = () => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 核心概念：
+  <p><strong>
+
+正确答案: 1. 核心概念：
 - 代码分割（Code Splitting）是将应用的代码拆分成多个较小的块（chunk），按需加载，减少初始加载体积，提高加载速度。
 - 懒加载（Lazy Loading）是指延迟加载非首屏需要的资源（如组件、模块等），只有在需要时才加载，避免一次性加载所有代码。
 
@@ -2845,7 +3033,9 @@ function App() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 仅渲染当前可视区域内的列表项，并动态更新渲染内容以响应滚动事件。 解释：虚拟化列表的核心思想是只渲染可视区域内的列表项，减少 DOM 节点数量，从而显著提升渲染性能。选项 A 会导致性能下降，因为预渲染全部项会增加初始渲染负担。选项 C 虽然可以避免部分不必要渲染，但不能替代虚拟化的效果。选项 D 由于每项都独立监听滚动事件，反而会带来性能开销。</strong></p>
+  <p><strong>
+
+正确答案: B. 仅渲染当前可视区域内的列表项，并动态更新渲染内容以响应滚动事件。 解释：虚拟化列表的核心思想是只渲染可视区域内的列表项，减少 DOM 节点数量，从而显著提升渲染性能。选项 A 会导致性能下降，因为预渲染全部项会增加初始渲染负担。选项 C 虽然可以避免部分不必要渲染，但不能替代虚拟化的效果。选项 D 由于每项都独立监听滚动事件，反而会带来性能开销。</strong></p>
 </details>
 
 **问题 2:**
@@ -2859,7 +3049,9 @@ function App() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 虚拟化列表的核心原理是只渲染视口范围内可见的列表项，而不是一次性渲染整个大列表，从而减少DOM节点数量，降低渲染和更新开销，提高页面性能。
+  <p><strong>
+
+正确答案: 1. 虚拟化列表的核心原理是只渲染视口范围内可见的列表项，而不是一次性渲染整个大列表，从而减少DOM节点数量，降低渲染和更新开销，提高页面性能。
 
 2. 关键实现逻辑包括：
   - 计算当前滚动位置和视口高度，确定可见区域的起始和结束索引。
@@ -2897,7 +3089,9 @@ function App() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用React Profiler组件来收集和分析组件渲染时间和频率。React Profiler是专门为React设计的性能分析工具，能够详细记录每个组件的渲染时间和触发原因，帮助开发者定位性能瓶颈。其他选项虽然有其用途，但并不适合用于分析React组件的渲染性能。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用React Profiler组件来收集和分析组件渲染时间和频率。React Profiler是专门为React设计的性能分析工具，能够详细记录每个组件的渲染时间和触发原因，帮助开发者定位性能瓶颈。其他选项虽然有其用途，但并不适合用于分析React组件的渲染性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -2906,7 +3100,9 @@ function App() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 使用 React Profiler：
+  <p><strong>
+
+正确答案: 1. 使用 React Profiler：
    - 在 React DevTools 中启用 Profiler，录制用户操作期间的渲染性能。
    - 关注组件的渲染次数和渲染时间，识别频繁且耗时的组件。
    - 结合组件树，判断是否存在不必要的重复渲染。
@@ -2950,7 +3146,9 @@ function App() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. React通过浅比较props和state来决定组件是否需要重新渲染，使用PureComponent或React.memo可以避免不必要的渲染。 解释：React在决定组件是否重新渲染时，默认会重新执行函数组件或类组件的render方法，但不会自动做深度比较。通过PureComponent或React.memo，React会对props和state做浅比较，从而跳过不必要的渲染，提升性能。选项A错误，因为React.memo和PureComponent可以阻止无变化的子组件重新渲染；选项C错误，因为React不会重新渲染整个组件树，而是只渲染受影响的组件；选项D错误，因为React的渲染过程可以是异步的，尤其在Concurrent Mode中。</strong></p>
+  <p><strong>
+
+正确答案: B. React通过浅比较props和state来决定组件是否需要重新渲染，使用PureComponent或React.memo可以避免不必要的渲染。 解释：React在决定组件是否重新渲染时，默认会重新执行函数组件或类组件的render方法，但不会自动做深度比较。通过PureComponent或React.memo，React会对props和state做浅比较，从而跳过不必要的渲染，提升性能。选项A错误，因为React.memo和PureComponent可以阻止无变化的子组件重新渲染；选项C错误，因为React不会重新渲染整个组件树，而是只渲染受影响的组件；选项D错误，因为React的渲染过程可以是异步的，尤其在Concurrent Mode中。</strong></p>
 </details>
 
 **问题 2:**
@@ -2959,7 +3157,9 @@ function App() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 频繁不必要的重新渲染通常由以下几个原因导致：
+  <p><strong>
+
+正确答案: 频繁不必要的重新渲染通常由以下几个原因导致：
 
 1. **状态或属性频繁变化**：当父组件的状态或props变化时，React默认会重新渲染该组件及其所有子组件，哪怕子组件的props没有实际变化。
 
@@ -3001,7 +3201,9 @@ function App() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用 React.memo 包裹函数组件，并结合自定义的比较函数（areEqual）来精准判断是否重新渲染。——这是实现自定义渲染优化的推荐方法。React.memo 默认是浅比较props，但当组件的props是复杂对象时，使用自定义比较函数可以更细粒度地控制组件是否重新渲染，从而提升性能。</strong></p>
+  <p><strong>
+
+正确答案: B. 利用 React.memo 包裹函数组件，并结合自定义的比较函数（areEqual）来精准判断是否重新渲染。——这是实现自定义渲染优化的推荐方法。React.memo 默认是浅比较props，但当组件的props是复杂对象时，使用自定义比较函数可以更细粒度地控制组件是否重新渲染，从而提升性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -3010,7 +3212,9 @@ function App() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，我会通过React Profiler和浏览器性能工具确认频繁渲染的组件及其渲染原因。针对商品列表组件频繁重渲染的问题，通常是因为父组件传入的新引用props导致子组件无差别地重新渲染。
+  <p><strong>
+
+正确答案: 首先，我会通过React Profiler和浏览器性能工具确认频繁渲染的组件及其渲染原因。针对商品列表组件频繁重渲染的问题，通常是因为父组件传入的新引用props导致子组件无差别地重新渲染。
 
 1. 使用React.memo包裹商品列表组件，默认的浅比较可以避免部分无谓渲染。
 
@@ -3066,7 +3270,9 @@ const ProductList = React.memo(ProductListComponent, areEqual);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: D. 手动控制 setState 调用次数，尽量合并多次状态更新，配合 React 的批量更新机制和 Fiber 的优先级调度实现最高性能。因为 React 的 Fiber 架构实现了任务优先级调度和批量更新机制，合理合并多次状态更新能减少渲染次数和调度开销，最大化性能提升。A 选项虽然能减少渲染，但 useCallback 和 useMemo 过度使用可能反而增加内存和 CPU 负担。B 选项主要解决加载时机问题，非直接减少渲染次数。C 选项的浅比较局限性较大，且 shouldComponentUpdate 在函数组件中不可用，React.PureComponent 也不能完全防止浅比较失效导致的多余渲染。</strong></p>
+  <p><strong>
+
+正确答案: D. 手动控制 setState 调用次数，尽量合并多次状态更新，配合 React 的批量更新机制和 Fiber 的优先级调度实现最高性能。因为 React 的 Fiber 架构实现了任务优先级调度和批量更新机制，合理合并多次状态更新能减少渲染次数和调度开销，最大化性能提升。A 选项虽然能减少渲染，但 useCallback 和 useMemo 过度使用可能反而增加内存和 CPU 负担。B 选项主要解决加载时机问题，非直接减少渲染次数。C 选项的浅比较局限性较大，且 shouldComponentUpdate 在函数组件中不可用，React.PureComponent 也不能完全防止浅比较失效导致的多余渲染。</strong></p>
 </details>
 
 **问题 2:**
@@ -3075,7 +3281,9 @@ const ProductList = React.memo(ProductListComponent, areEqual);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: **性能瓶颈分析**：
+  <p><strong>
+
+正确答案: **性能瓶颈分析**：
 
 1. **React Fiber架构与调和算法**：
    - Fiber允许将渲染工作拆分为多个小任务，分批执行以避免长时间阻塞主线程。
@@ -3139,7 +3347,9 @@ const ProductList = React.memo(ProductListComponent, areEqual);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. expect(component).toHaveTextContent('预期文本')  
+  <p><strong>
+
+正确答案: C. expect(component).toHaveTextContent('预期文本')  
 解释：在使用 Jest 配合 React Testing Library 或类似工具测试组件渲染内容时，toHaveTextContent 是专门用来断言元素包含特定文本的匹配器。A 选项的 text() 方法是 Enzyme 库中的，且是方法调用形式；B 选项的 toContain 是用于数组或字符串的断言，不适用于组件对象；D 选项的 toBe 用于严格相等比较，不适合检查文本内容。</strong></p>
 </details>
 
@@ -3149,7 +3359,9 @@ const ProductList = React.memo(ProductListComponent, areEqual);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 引入必要的测试工具，例如`@testing-library/react`和Jest。
+  <p><strong>
+
+正确答案: 1. 引入必要的测试工具，例如`@testing-library/react`和Jest。
 2. 使用`render`函数渲染该组件，并传入不同的`count`值。
 3. 通过查询方法（如`getAllByRole('button')`）获取渲染出的按钮元素列表。
 4. 断言获取到的按钮数量是否等于传入的`count`值。
@@ -3182,7 +3394,9 @@ const ProductList = React.memo(ProductListComponent, areEqual);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 `getByRole` 来定位元素，因为它基于元素的语义角色，符合用户交互习惯。React Testing Library 推荐优先使用基于语义的查询方法（如 getByRole、getByLabelText、getByText 等），以更贴近用户实际操作，提升测试的可靠性和可维护性。虽然 getByTestId 也可用，但应作为最后手段。container.querySelector 和 getByClassName 并非官方推荐的查询方法。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 `getByRole` 来定位元素，因为它基于元素的语义角色，符合用户交互习惯。React Testing Library 推荐优先使用基于语义的查询方法（如 getByRole、getByLabelText、getByText 等），以更贴近用户实际操作，提升测试的可靠性和可维护性。虽然 getByTestId 也可用，但应作为最后手段。container.querySelector 和 getByClassName 并非官方推荐的查询方法。</strong></p>
 </details>
 
 **问题 2:**
@@ -3196,7 +3410,9 @@ const ProductList = React.memo(ProductListComponent, areEqual);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在测试异步数据加载的组件时，关键是要确保测试能够等待异步请求完成，然后再断言组件的渲染结果。使用 React Testing Library，可以通过以下步骤设计测试：
+  <p><strong>
+
+正确答案: 在测试异步数据加载的组件时，关键是要确保测试能够等待异步请求完成，然后再断言组件的渲染结果。使用 React Testing Library，可以通过以下步骤设计测试：
 
 1. 使用 `render` 渲染组件。
 2. 使用 `findBy` 系列查询方法（如 `findByText` 或 `findByRole`），这些方法会返回一个 Promise，等待元素出现，自动处理等待异步加载完成的过程。
@@ -3243,7 +3459,9 @@ test('异步数据加载后正确渲染列表', async () => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 命令链式调用与自动重试机制。Cypress 通过命令链式调用确保测试步骤按顺序执行，并且自动重试失败的断言，这极大提升了测试的稳定性和可靠性。选项 A 和 D 是不推荐的实践，因为固定等待时间可能导致测试不稳定。选项 C 描述的手动控制流程不符合 Cypress 的设计理念。</strong></p>
+  <p><strong>
+
+正确答案: B. 命令链式调用与自动重试机制。Cypress 通过命令链式调用确保测试步骤按顺序执行，并且自动重试失败的断言，这极大提升了测试的稳定性和可靠性。选项 A 和 D 是不推荐的实践，因为固定等待时间可能导致测试不稳定。选项 C 描述的手动控制流程不符合 Cypress 的设计理念。</strong></p>
 </details>
 
 **问题 2:**
@@ -3252,7 +3470,9 @@ test('异步数据加载后正确渲染列表', async () => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计这条Cypress端到端测试用例时，可以按以下思路进行：
+  <p><strong>
+
+正确答案: 设计这条Cypress端到端测试用例时，可以按以下思路进行：
 
 1. **测试准备**：
 - 确保测试环境是可控和干净的，比如使用测试账号登录，或者在测试前重置应用状态。
@@ -3295,7 +3515,9 @@ test('异步数据加载后正确渲染列表', async () => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 测试策略应结合单元测试、集成测试和端到端测试，以全面覆盖不同层级的功能和交互。——这是正确答案，因为良好的测试策略应采用多层次的测试方法，既测试单个组件的行为，也测试组件之间的集成，以及用户实际操作流程，保证测试覆盖面和质量。选项A误导在于覆盖率高不代表测试完善；选项B忽略了状态和副作用的测试；选项D错误地认为自动化测试可以完全替代手动测试。</strong></p>
+  <p><strong>
+
+正确答案: C. 测试策略应结合单元测试、集成测试和端到端测试，以全面覆盖不同层级的功能和交互。——这是正确答案，因为良好的测试策略应采用多层次的测试方法，既测试单个组件的行为，也测试组件之间的集成，以及用户实际操作流程，保证测试覆盖面和质量。选项A误导在于覆盖率高不代表测试完善；选项B忽略了状态和副作用的测试；选项D错误地认为自动化测试可以完全替代手动测试。</strong></p>
 </details>
 
 **问题 2:**
@@ -3309,7 +3531,9 @@ test('异步数据加载后正确渲染列表', async () => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 测试策略设计：
+  <p><strong>
+
+正确答案: 1. 测试策略设计：
 - 单元测试主要针对React组件的逻辑和交互行为，使用Jest和React Testing Library进行，覆盖组件的渲染、状态变化和事件处理。
 - 集成测试关注组件之间及与API的交互，确保数据流和业务流程的正确性，可以通过模拟API和上下文环境来实现。
 - 端到端测试负责模拟用户真实操作路径，验证整体功能是否符合预期，常用工具有Cypress或Playwright。
@@ -3344,7 +3568,9 @@ test('异步数据加载后正确渲染列表', async () => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 Mock 技术替代真实的 API 调用，并在测试运行前将 Mock 数据缓存以减少重复初始化。 解释：使用 Mock 技术可以避免依赖真实网络请求，提高测试的稳定性和速度；同时缓存 Mock 数据减少重复初始化，进一步优化性能。选项 A 会导致测试速度慢且不稳定，选项 C 会增加测试复杂度且不符合单元测试的隔离原则，选项 D 虽然使用快照测试，但不能完全替代接口调用的 Mock，且不一定提升性能。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 Mock 技术替代真实的 API 调用，并在测试运行前将 Mock 数据缓存以减少重复初始化。 解释：使用 Mock 技术可以避免依赖真实网络请求，提高测试的稳定性和速度；同时缓存 Mock 数据减少重复初始化，进一步优化性能。选项 A 会导致测试速度慢且不稳定，选项 C 会增加测试复杂度且不符合单元测试的隔离原则，选项 D 虽然使用快照测试，但不能完全替代接口调用的 Mock，且不一定提升性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -3358,7 +3584,9 @@ test('异步数据加载后正确渲染列表', async () => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 利用 Mock 技术解决外部依赖不稳定问题：
+  <p><strong>
+
+正确答案: 1. 利用 Mock 技术解决外部依赖不稳定问题：
 - 使用 Mock 服务或 Mock 库（如 MSW）模拟外部 API 响应，确保测试环境的独立性和稳定性。
 - 根据不同测试场景设计多种 Mock 数据，覆盖正常及异常情况，避免因真实 API 不稳定导致测试失败。
 
@@ -3396,7 +3624,9 @@ test('异步数据加载后正确渲染列表', async () => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在 CI 流水线中，先执行单元测试，再执行端到端测试，并且测试结果必须作为流水线失败的依据。 解析：该做法符合测试架构设计与持续集成的最佳实践，保证了测试的全面性和及时反馈，单元测试和端到端测试的顺序执行能够快速定位问题，且测试结果直接影响流水线状态，确保代码质量。其他选项存在人工触发不稳定（A）、测试执行不全面或不及时（C、D）等问题。</strong></p>
+  <p><strong>
+
+正确答案: B. 在 CI 流水线中，先执行单元测试，再执行端到端测试，并且测试结果必须作为流水线失败的依据。 解析：该做法符合测试架构设计与持续集成的最佳实践，保证了测试的全面性和及时反馈，单元测试和端到端测试的顺序执行能够快速定位问题，且测试结果直接影响流水线状态，确保代码质量。其他选项存在人工触发不稳定（A）、测试执行不全面或不及时（C、D）等问题。</strong></p>
 </details>
 
 **问题 2:**
@@ -3405,7 +3635,9 @@ test('异步数据加载后正确渲染列表', async () => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计前端测试架构时，应结合项目规模和业务复杂度，合理划分测试类型：
+  <p><strong>
+
+正确答案: 设计前端测试架构时，应结合项目规模和业务复杂度，合理划分测试类型：
 
 1. 单元测试：使用Jest和React Testing Library覆盖组件逻辑和UI渲染，保证核心功能的正确性。单元测试要覆盖关键业务逻辑和边界条件。
 
@@ -3450,7 +3682,9 @@ test('异步数据加载后正确渲染列表', async () => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用 React Testing Library 提供的 `buildQueries` API 创建自定义查询函数，并通过导出封装的工具函数供测试用例调用。
+  <p><strong>
+
+正确答案: B. 利用 React Testing Library 提供的 `buildQueries` API 创建自定义查询函数，并通过导出封装的工具函数供测试用例调用。
 
 解释：React Testing Library 提供了 `buildQueries` API，允许开发者在不修改库源码的情况下，基于已有查询构建自定义查询方法，这种方式既保证了库的稳定性，又方便扩展和复用。选项 A 虽然可行，但直接修改源码会导致维护困难且不推荐。选项 C 虽然常见，但不涉及源码层面的扩展。选项 D 利用 `spyOn` 动态替换查询行为的做法不稳定且难以维护，不是官方推荐的扩展方式。</strong></p>
 </details>
@@ -3468,7 +3702,9 @@ test('异步数据加载后正确渲染列表', async () => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 源码分析步骤：
+  <p><strong>
+
+正确答案: 1. 源码分析步骤：
 - 阅读React Testing Library中与Hooks相关的API实现，如`renderHook`，理解其如何通过React的`act`函数包裹异步操作，确保状态更新被正确捕获。
 - 关注其异步处理机制，查看如何利用`waitFor`、`waitForNextUpdate`等API来等待异步状态。
 - 理解测试工具内部如何维护Hook的调用栈和状态快照，尤其是如何管理Hooks的生命周期。
@@ -3536,7 +3772,9 @@ function expectHookToHaveEffect(hookInstance, effectIdentifier) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 运行 `npx create-react-app my-app --template typescript` 命令可以生成一个带有 TypeScript 配置的 React 项目。这个命令通过内置模板自动配置了 TypeScript 环境，无需额外手动安装或配置。选项A错误，因为默认的 CRA 项目是 JavaScript，TypeScript 需要指定模板；选项C错误，CRA 默认不包含 Redux 和 React Router；选项D错误，CRA 内置 Webpack 和 Babel 配置，用户无需手动配置。</strong></p>
+  <p><strong>
+
+正确答案: B. 运行 `npx create-react-app my-app --template typescript` 命令可以生成一个带有 TypeScript 配置的 React 项目。这个命令通过内置模板自动配置了 TypeScript 环境，无需额外手动安装或配置。选项A错误，因为默认的 CRA 项目是 JavaScript，TypeScript 需要指定模板；选项C错误，CRA 默认不包含 Redux 和 React Router；选项D错误，CRA 内置 Webpack 和 Babel 配置，用户无需手动配置。</strong></p>
 </details>
 
 **问题 2:**
@@ -3545,7 +3783,9 @@ function expectHookToHaveEffect(hookInstance, effectIdentifier) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 添加自定义环境变量：
+  <p><strong>
+
+正确答案: 1. 添加自定义环境变量：
    - 在项目根目录下创建或修改 `.env` 文件，例如 `.env.development` 或 `.env.production`。
    - 在 `.env` 文件中添加环境变量，变量名必须以 `REACT_APP_` 开头，例如：
      ```
@@ -3597,7 +3837,9 @@ function expectHookToHaveEffect(hookInstance, effectIdentifier) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在 vite.config.ts 中使用 `resolve.alias` 指定路径映射，例如：
+  <p><strong>
+
+正确答案: A. 在 vite.config.ts 中使用 `resolve.alias` 指定路径映射，例如：
 ```ts
 resolve: {
   alias: {
@@ -3615,7 +3857,9 @@ resolve: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Vite 中，可以通过配置 `build.rollupOptions.output.manualChunks` 来实现按需加载第三方库。例如，在 `vite.config.ts` 中添加如下配置：
+  <p><strong>
+
+正确答案: 在 Vite 中，可以通过配置 `build.rollupOptions.output.manualChunks` 来实现按需加载第三方库。例如，在 `vite.config.ts` 中添加如下配置：
 
 ```ts
 import { defineConfig } from 'vite';
@@ -3663,7 +3907,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 "parser": "@typescript-eslint/parser"，并在 "extends" 中包含 "plugin:@typescript-eslint/recommended"。 这是因为 @typescript-eslint/parser 是专门为 ESLint 解析 TypeScript 代码设计的解析器，配合推荐配置插件可以确保 ESLint 正确识别和检查 TypeScript 语法和规则。选项 A 中的 babel-eslint 不支持完整的 TypeScript 语法，选项 C 错误因为 ESLint 默认不支持 TypeScript，选项 D 禁用类型规则会导致无法有效利用 ESLint 进行类型相关代码规范检查。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 "parser": "@typescript-eslint/parser"，并在 "extends" 中包含 "plugin:@typescript-eslint/recommended"。 这是因为 @typescript-eslint/parser 是专门为 ESLint 解析 TypeScript 代码设计的解析器，配合推荐配置插件可以确保 ESLint 正确识别和检查 TypeScript 语法和规则。选项 A 中的 babel-eslint 不支持完整的 TypeScript 语法，选项 C 错误因为 ESLint 默认不支持 TypeScript，选项 D 禁用类型规则会导致无法有效利用 ESLint 进行类型相关代码规范检查。</strong></p>
 </details>
 
 **问题 2:**
@@ -3677,7 +3923,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. ESLint的作用和优势：
+  <p><strong>
+
+正确答案: 1. ESLint的作用和优势：
 - ESLint是一个静态代码分析工具，可以自动检测代码中的语法错误、不规范写法和潜在问题，帮助团队保持代码质量。
 - 它支持自定义规则和插件，能够根据团队需求灵活配置，保证代码风格统一。
 
@@ -3691,7 +3939,7 @@ export default defineConfig({
 - 配合Prettier等格式化工具实现代码自动格式化。
 - 在CI/CD流水线中集成ESLint检查，确保提交的代码符合规范。
 - 鼓励团队成员在开发阶段通过编辑器插件实时修复和提示，提高开发体验。
-- 定期评审和更新规则，适应业务和技术变化，保持代码质量。\n
+- 定期评审和更新规则，适应业务和技术变化，保持代码质量。
 通过以上措施，ESLint可以有效帮助团队维护代码规范，减少错误，提高协作效率。</strong></p>
 </details>
 
@@ -3714,7 +3962,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在项目根目录添加 .prettierrc 文件，并在 VSCode 设置中启用 "Format On Save"。 解析：Prettier 的标准做法是在项目根目录添加配置文件（如 .prettierrc）以统一团队代码风格，同时在编辑器（如 VSCode）中启用 "Format On Save" 功能，确保保存时自动格式化代码。选项 B 错误，因为仅配置 prettier 字段且不配置编辑器，无法自动格式化。选项 C 错误，Prettier 不依赖文件顶部注释来识别格式化。选项 D 错误，虽然 ESLint 可以检查代码风格，但通常与 Prettier 配合使用，而非替代。</strong></p>
+  <p><strong>
+
+正确答案: A. 在项目根目录添加 .prettierrc 文件，并在 VSCode 设置中启用 "Format On Save"。 解析：Prettier 的标准做法是在项目根目录添加配置文件（如 .prettierrc）以统一团队代码风格，同时在编辑器（如 VSCode）中启用 "Format On Save" 功能，确保保存时自动格式化代码。选项 B 错误，因为仅配置 prettier 字段且不配置编辑器，无法自动格式化。选项 C 错误，Prettier 不依赖文件顶部注释来识别格式化。选项 D 错误，虽然 ESLint 可以检查代码风格，但通常与 Prettier 配合使用，而非替代。</strong></p>
 </details>
 
 **问题 2:**
@@ -3727,7 +3977,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. Prettier的主要作用是自动格式化代码，统一代码风格，减少代码审查中因格式问题产生的争议，提高代码可读性和维护性。
+  <p><strong>
+
+正确答案: 1. Prettier的主要作用是自动格式化代码，统一代码风格，减少代码审查中因格式问题产生的争议，提高代码可读性和维护性。
 
 2. 在React+TypeScript项目中，可以通过以下步骤配置Prettier：
    - 安装Prettier及相关依赖（如`prettier`、`@typescript-eslint/parser`等）。
@@ -3757,7 +4009,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在 "Components" 标签页中选中组件后，可以查看该组件的状态和属性。 解释：React DevTools 的 "Components" 标签页允许开发者查看选中组件的状态（state）、属性（props）以及钩子（hooks）等信息，是调试和理解组件行为的重要工具。"Profiler" 标签页主要用于性能分析，而浏览器控制台无法直接通过组件名称查看 React 组件的状态和属性，且 React DevTools 不仅能查看组件树，也能查看状态和属性。</strong></p>
+  <p><strong>
+
+正确答案: B. 在 "Components" 标签页中选中组件后，可以查看该组件的状态和属性。 解释：React DevTools 的 "Components" 标签页允许开发者查看选中组件的状态（state）、属性（props）以及钩子（hooks）等信息，是调试和理解组件行为的重要工具。"Profiler" 标签页主要用于性能分析，而浏览器控制台无法直接通过组件名称查看 React 组件的状态和属性，且 React DevTools 不仅能查看组件树，也能查看状态和属性。</strong></p>
 </details>
 
 **问题 2:**
@@ -3766,7 +4020,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，使用React DevTools的“组件”面板，找到有问题的组件。通过观察组件的props和state，确认状态是否确实已经更新。如果状态未更新，可能是setState调用未成功或被覆盖。其次，检查组件树和父子组件的关系，确认是否有不正确的props传递或组件未重新渲染。可以使用高亮更新功能（Highlight Updates）观察组件渲染情况，判断渲染是否被跳过。最后，利用Profiler面板分析渲染性能，查看组件是否被频繁渲染或被跳过渲染，帮助定位渲染逻辑问题。整体过程中重点关注state和props的变化、渲染高亮以及Profiler数据，这些信息能帮助分析状态更新失败的根本原因。</strong></p>
+  <p><strong>
+
+正确答案: 首先，使用React DevTools的“组件”面板，找到有问题的组件。通过观察组件的props和state，确认状态是否确实已经更新。如果状态未更新，可能是setState调用未成功或被覆盖。其次，检查组件树和父子组件的关系，确认是否有不正确的props传递或组件未重新渲染。可以使用高亮更新功能（Highlight Updates）观察组件渲染情况，判断渲染是否被跳过。最后，利用Profiler面板分析渲染性能，查看组件是否被频繁渲染或被跳过渲染，帮助定位渲染逻辑问题。整体过程中重点关注state和props的变化、渲染高亮以及Profiler数据，这些信息能帮助分析状态更新失败的根本原因。</strong></p>
 </details>
 
 ---
@@ -3790,7 +4046,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. commit phase 是 React 将更新应用到真实 DOM 的过程，Profiler 主要测量这一阶段的时间消耗。因为 Profiler 主要关注的是 React 将变更提交到真实 DOM 的过程，也就是 commit phase，这阶段的性能消耗对于优化渲染非常关键。选项 A 错误在于渲染虚拟 DOM 属于 render phase；选项 C 错误因为生命周期方法调用属于 commit phase；选项 D 错误，setState 后的等待时间不是 commit phase 的定义。</strong></p>
+  <p><strong>
+
+正确答案: B. commit phase 是 React 将更新应用到真实 DOM 的过程，Profiler 主要测量这一阶段的时间消耗。因为 Profiler 主要关注的是 React 将变更提交到真实 DOM 的过程，也就是 commit phase，这阶段的性能消耗对于优化渲染非常关键。选项 A 错误在于渲染虚拟 DOM 属于 render phase；选项 C 错误因为生命周期方法调用属于 commit phase；选项 D 错误，setState 后的等待时间不是 commit phase 的定义。</strong></p>
 </details>
 
 **问题 2:**
@@ -3806,7 +4064,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. React Profiler 的基本工作原理：Profiler 是 React 内置的性能分析工具，它通过记录组件渲染的时间和次数，帮助开发者了解哪些组件渲染耗时较长或频繁重新渲染，从而定位性能瓶颈。
+  <p><strong>
+
+正确答案: 1. React Profiler 的基本工作原理：Profiler 是 React 内置的性能分析工具，它通过记录组件渲染的时间和次数，帮助开发者了解哪些组件渲染耗时较长或频繁重新渲染，从而定位性能瓶颈。
 
 2. 关键指标：
 - 渲染时间（Render Duration）：每个组件渲染所花费的时间。
@@ -3840,7 +4100,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 通过 `splitChunks` 配置将公共依赖分离成独立的代码块，实现代码复用和缓存优化
+  <p><strong>
+
+正确答案: C. 通过 `splitChunks` 配置将公共依赖分离成独立的代码块，实现代码复用和缓存优化
 
 解释：
 `splitChunks` 是 Webpack 提供的代码分割功能，能够将多个入口共享的依赖提取成独立的代码块，从而避免重复打包，提高缓存利用率，显著减少最终包体积并提升加载性能。A 选项虽能保证兼容性，但对第三方库转译会增加打包时间且不一定减少体积；B 选项用于环境变量管理，虽有用但不是直接的体积优化手段；D 选项适合开发环境提升构建速度，但关闭 source-map 并不会减少生产环境的包体积，且不建议生产环境关闭 source-map，因为它有助于调试。</strong></p>
@@ -3852,7 +4114,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在中大型 React + TypeScript 项目中，Webpack 配置优化主要可以从开发体验和生产环境两方面入手：
+  <p><strong>
+
+正确答案: 在中大型 React + TypeScript 项目中，Webpack 配置优化主要可以从开发体验和生产环境两方面入手：
 
 1. 开发环境优化：
 - 使用 `webpack-dev-server` 或 `webpack-dev-middleware` 开启热模块替换（HMR），提升开发时的反馈速度。
@@ -3889,7 +4153,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 实现一个visitor对象，用于定义对抽象语法树(AST)中不同节点的访问和转换逻辑。——Babel插件的核心是通过visitor对象遍历和转换AST节点，直接修改源代码字符串或调用React生命周期函数不是Babel插件的正确做法，webpack打包虽常用但不是必须实现的核心功能。</strong></p>
+  <p><strong>
+
+正确答案: A. 实现一个visitor对象，用于定义对抽象语法树(AST)中不同节点的访问和转换逻辑。——Babel插件的核心是通过visitor对象遍历和转换AST节点，直接修改源代码字符串或调用React生命周期函数不是Babel插件的正确做法，webpack打包虽常用但不是必须实现的核心功能。</strong></p>
 </details>
 
 **问题 2:**
@@ -3904,7 +4170,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 利用Babel的AST解析和遍历功能定位带有注释的代码节点：
+  <p><strong>
+
+正确答案: 1. 利用Babel的AST解析和遍历功能定位带有注释的代码节点：
 - Babel插件中可以通过访问`path.node.leadingComments`或`path.node.innerComments`来获取节点的注释信息。
 - 在插件的`visitor`方法中，遍历相关节点（如函数体、表达式语句等），检查其注释中是否包含`@log`标记。
 
@@ -3943,7 +4211,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用模板引擎（如 EJS 或 Handlebars）结合配置文件动态渲染项目模板，这样能够让脚手架根据不同需求灵活生成符合项目要求的代码结构，是实现模板复用和个性化定制的关键做法。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用模板引擎（如 EJS 或 Handlebars）结合配置文件动态渲染项目模板，这样能够让脚手架根据不同需求灵活生成符合项目要求的代码结构，是实现模板复用和个性化定制的关键做法。</strong></p>
 </details>
 
 **问题 2:**
@@ -3960,7 +4230,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计和实现一个自定义React+TypeScript脚手架时，我会从以下几个关键方面入手：
+  <p><strong>
+
+正确答案: 设计和实现一个自定义React+TypeScript脚手架时，我会从以下几个关键方面入手：
 
 1. 核心功能和模块划分：
 - 项目初始化模块：负责根据用户选择（如项目类型、模板）生成基础项目结构。
@@ -4009,7 +4281,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. HMR 利用 Webpack 的 runtime 代码在模块更新时只替换变更的模块，并保持应用的运行状态不变。——正确答案是 B，因为 Webpack 的热模块替换机制通过其 runtime 逻辑实现对单个模块的替换，而不需要刷新整个页面，从而保持应用状态，提升开发体验。选项 A 错误，因为 HMR 不会自动刷新整个页面；选项 C 错误，HMR 不推送完整 bundle，而是增量更新模块；选项 D 错误，HMR 是构建工具层面的机制，不依赖于 React 组件的生命周期钩子。</strong></p>
+  <p><strong>
+
+正确答案: B. HMR 利用 Webpack 的 runtime 代码在模块更新时只替换变更的模块，并保持应用的运行状态不变。——正确答案是 B，因为 Webpack 的热模块替换机制通过其 runtime 逻辑实现对单个模块的替换，而不需要刷新整个页面，从而保持应用状态，提升开发体验。选项 A 错误，因为 HMR 不会自动刷新整个页面；选项 C 错误，HMR 不推送完整 bundle，而是增量更新模块；选项 D 错误，HMR 是构建工具层面的机制，不依赖于 React 组件的生命周期钩子。</strong></p>
 </details>
 
 **问题 2:**
@@ -4020,7 +4294,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 要系统分析并优化构建工具源码，首先需要理解构建工具的整体架构和核心流程。
+  <p><strong>
+
+正确答案: 要系统分析并优化构建工具源码，首先需要理解构建工具的整体架构和核心流程。
 
 1. **核心模块分析**：
   - **模块解析（Module Resolution）**：分析源码中如何解析文件路径、支持的文件类型及解析顺序。比如 Webpack 的 `NormalModuleFactory` 如何处理不同类型的模块。
@@ -4060,7 +4336,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用模块化设计，将功能拆分成独立的包（如 Monorepo + Lerna/Yarn Workspaces），并通过统一的接口进行依赖管理。 解析：模块化设计和基于 Monorepo 的代码拆分能够有效提高大型项目的代码复用性和维护性，方便团队协作与版本管理。选项A容易导致代码臃肿和难以维护，选项C虽然简化了组件结构，但过度依赖全局状态会增加调试难度和耦合，选项D虽然简化依赖但可能无法满足复杂状态管理需求。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用模块化设计，将功能拆分成独立的包（如 Monorepo + Lerna/Yarn Workspaces），并通过统一的接口进行依赖管理。 解析：模块化设计和基于 Monorepo 的代码拆分能够有效提高大型项目的代码复用性和维护性，方便团队协作与版本管理。选项A容易导致代码臃肿和难以维护，选项C虽然简化了组件结构，但过度依赖全局状态会增加调试难度和耦合，选项D虽然简化依赖但可能无法满足复杂状态管理需求。</strong></p>
 </details>
 
 **问题 2:**
@@ -4078,7 +4356,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 针对大型企业级React+TypeScript项目的前端工程化架构设计，可以从以下几个方面考虑：
+  <p><strong>
+
+正确答案: 针对大型企业级React+TypeScript项目的前端工程化架构设计，可以从以下几个方面考虑：
 
 1. 代码质量与开发效率：
 - 使用TypeScript保证类型安全，减少运行时错误。
@@ -4127,7 +4407,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 通过 React 自动的 JSX 转义机制，避免直接操作 DOM，尽量不使用 `dangerouslySetInnerHTML`。 解释：React 默认会对 JSX 中的内容进行转义，防止注入恶意脚本，从而有效防范 XSS 攻击。使用 `dangerouslySetInnerHTML` 需要非常谨慎，必须确保内容完全可信且已被严格清理，否则可能引入安全风险。选项 A 中手动清理 HTML 容易出错且不可靠，选项 C 没有转义处理会导致 XSS，选项 D 禁用 CSP 是错误做法，会增加安全风险。</strong></p>
+  <p><strong>
+
+正确答案: B. 通过 React 自动的 JSX 转义机制，避免直接操作 DOM，尽量不使用 `dangerouslySetInnerHTML`。 解释：React 默认会对 JSX 中的内容进行转义，防止注入恶意脚本，从而有效防范 XSS 攻击。使用 `dangerouslySetInnerHTML` 需要非常谨慎，必须确保内容完全可信且已被严格清理，否则可能引入安全风险。选项 A 中手动清理 HTML 容易出错且不可靠，选项 C 没有转义处理会导致 XSS，选项 D 禁用 CSP 是错误做法，会增加安全风险。</strong></p>
 </details>
 
 **问题 2:**
@@ -4136,7 +4418,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在React中，默认情况下，JSX会对插入的内容进行转义，防止HTML标签被解析，从而有效防止XSS攻击。因此，直接在组件中使用如 {comment} 的方式渲染用户评论是安全的。
+  <p><strong>
+
+正确答案: 在React中，默认情况下，JSX会对插入的内容进行转义，防止HTML标签被解析，从而有效防止XSS攻击。因此，直接在组件中使用如 {comment} 的方式渲染用户评论是安全的。
 
 风险点：如果使用了 dangerouslySetInnerHTML 来插入用户提交的HTML内容，可能会导致XSS攻击，因为这个属性会直接将HTML字符串渲染到页面，不进行任何转义。
 
@@ -4166,7 +4450,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: D. 通过限制Cookie的SameSite属性为"Strict"或"Lax"来防止跨站请求携带Cookie。 这是防止CSRF攻击的有效手段，因为CSRF攻击依赖浏览器自动携带用户的Cookie。设置SameSite属性能够限制Cookie在跨站请求中被发送，从而减少CSRF攻击风险。选项A虽然通过自定义头部验证请求，但这通常需要客户端和服务器的配合，并且不保证所有请求都能正确设置。选项B单纯限制请求方法不能完全防止CSRF。选项C使用localStorage存储认证信息反而增加了XSS攻击风险，且localStorage不会自动随请求发送，无法替代CSRF防护。</strong></p>
+  <p><strong>
+
+正确答案: D. 通过限制Cookie的SameSite属性为"Strict"或"Lax"来防止跨站请求携带Cookie。 这是防止CSRF攻击的有效手段，因为CSRF攻击依赖浏览器自动携带用户的Cookie。设置SameSite属性能够限制Cookie在跨站请求中被发送，从而减少CSRF攻击风险。选项A虽然通过自定义头部验证请求，但这通常需要客户端和服务器的配合，并且不保证所有请求都能正确设置。选项B单纯限制请求方法不能完全防止CSRF。选项C使用localStorage存储认证信息反而增加了XSS攻击风险，且localStorage不会自动随请求发送，无法替代CSRF防护。</strong></p>
 </details>
 
 **问题 2:**
@@ -4175,7 +4461,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: CSRF（跨站请求伪造）攻击是指攻击者通过诱导已登录的用户浏览恶意网站，利用用户浏览器自动携带的Cookie发起未授权请求，从而执行对用户有害的操作。
+  <p><strong>
+
+正确答案: CSRF（跨站请求伪造）攻击是指攻击者通过诱导已登录的用户浏览恶意网站，利用用户浏览器自动携带的Cookie发起未授权请求，从而执行对用户有害的操作。
 
 在React+TypeScript单页应用中，后台API如果使用Cookie进行身份验证，浏览器会自动携带Cookie发送请求，容易受到CSRF攻击。
 
@@ -4218,7 +4506,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 始终避免使用 `dangerouslySetInnerHTML`，并通过 React 的 JSX 自动转义机制渲染用户输入。 解释：React 的 JSX 会对插值内容自动进行转义，避免恶意脚本被执行，因此应优先使用 JSX 渲染用户输入，避免使用 `dangerouslySetInnerHTML`，除非经过严格的安全处理。选项 A 的正则过滤不够安全且容易遗漏，选项 B 没有对用户输入做任何转义处理，存在安全风险，选项 D 使用 Base64 编码不能防止 XSS，反而可能引入新的问题。</strong></p>
+  <p><strong>
+
+正确答案: C. 始终避免使用 `dangerouslySetInnerHTML`，并通过 React 的 JSX 自动转义机制渲染用户输入。 解释：React 的 JSX 会对插值内容自动进行转义，避免恶意脚本被执行，因此应优先使用 JSX 渲染用户输入，避免使用 `dangerouslySetInnerHTML`，除非经过严格的安全处理。选项 A 的正则过滤不够安全且容易遗漏，选项 B 没有对用户输入做任何转义处理，存在安全风险，选项 D 使用 Base64 编码不能防止 XSS，反而可能引入新的问题。</strong></p>
 </details>
 
 **问题 2:**
@@ -4227,7 +4517,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在该电商项目的评论表单场景中，为防止XSS攻击和保护应用安全，前端应遵循以下安全编码规范：
+  <p><strong>
+
+正确答案: 在该电商项目的评论表单场景中，为防止XSS攻击和保护应用安全，前端应遵循以下安全编码规范：
 
 1. 输入校验与清洗：对用户输入进行严格的类型检查和格式验证，避免非法字符或脚本被提交。可以使用库（如 DOMPurify）对输入内容进行消毒，去除潜在的恶意代码。
 
@@ -4263,7 +4555,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 避免使用 `dangerouslySetInnerHTML`，而是通过组件状态和 props 进行数据绑定，虽然性能相对略低，但能有效防止 XSS 攻击。——该选项在性能和安全之间做出了合理权衡，优先保证安全性，避免使用高风险的 `dangerouslySetInnerHTML`，同时利用 React 的数据绑定特性保持良好性能。</strong></p>
+  <p><strong>
+
+正确答案: B. 避免使用 `dangerouslySetInnerHTML`，而是通过组件状态和 props 进行数据绑定，虽然性能相对略低，但能有效防止 XSS 攻击。——该选项在性能和安全之间做出了合理权衡，优先保证安全性，避免使用高风险的 `dangerouslySetInnerHTML`，同时利用 React 的数据绑定特性保持良好性能。</strong></p>
 </details>
 
 **问题 2:**
@@ -4272,7 +4566,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在企业级管理系统中，防止 XSS 攻击通常需要对用户输入进行严格的校验和转义，这些安全措施会带来额外的性能开销。为了实现性能与安全的平衡，可以从以下几个方面入手：
+  <p><strong>
+
+正确答案: 在企业级管理系统中，防止 XSS 攻击通常需要对用户输入进行严格的校验和转义，这些安全措施会带来额外的性能开销。为了实现性能与安全的平衡，可以从以下几个方面入手：
 
 1. **输入校验与转义的位置选择**：
    - 优先在后端进行严格校验和转义，前端做基本的快速校验（如格式校验），减少前端负担，提升响应速度。
@@ -4313,7 +4609,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 避免使用 dangerouslySetInnerHTML，直接通过 JSX 渲染变量内容。 解释：React 默认通过 JSX 渲染变量时会自动对内容进行转义，从而有效防止 XSS 攻击。使用 dangerouslySetInnerHTML 会绕过这一防护机制，除非对内容进行严格清洗，否则容易引入安全风险。选项 A 虽然提到转义，但使用 dangerouslySetInnerHTML 本身就是危险操作；选项 C 中使用 eval() 非但不能防止 XSS，反而极易引发安全问题；选项 D 仅通过 HTTPS 保障传输安全，无法防止客户端的 XSS 攻击。</strong></p>
+  <p><strong>
+
+正确答案: B. 避免使用 dangerouslySetInnerHTML，直接通过 JSX 渲染变量内容。 解释：React 默认通过 JSX 渲染变量时会自动对内容进行转义，从而有效防止 XSS 攻击。使用 dangerouslySetInnerHTML 会绕过这一防护机制，除非对内容进行严格清洗，否则容易引入安全风险。选项 A 虽然提到转义，但使用 dangerouslySetInnerHTML 本身就是危险操作；选项 C 中使用 eval() 非但不能防止 XSS，反而极易引发安全问题；选项 D 仅通过 HTTPS 保障传输安全，无法防止客户端的 XSS 攻击。</strong></p>
 </details>
 
 **问题 2:**
@@ -4322,7 +4620,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 排查步骤：
+  <p><strong>
+
+正确答案: 排查步骤：
 1. 复现问题：在商品详情页的输入框输入反馈中提到的特定字符，观察页面行为和控制台错误。
 2. 审查代码：重点检查该输入值如何被处理和渲染，是否存在直接将用户输入插入到HTML或使用`dangerouslySetInnerHTML`的情况。
 3. 分析数据流：追踪用户输入从接收、存储到显示的整个流程，确认是否存在未进行安全过滤或转义的环节。
@@ -4357,7 +4657,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在所有用户输入中使用React的默认HTML转义机制，避免直接使用`dangerouslySetInnerHTML`。 解释：React默认会对插入的内容进行HTML转义，防止用户输入中的恶意脚本被执行，从而有效防止XSS攻击。虽然Content-Security-Policy（B选项）是重要的安全策略，但禁止所有外部脚本加载是不现实的，且无法完全防止XSS。TypeScript类型系统（C选项）主要用于类型检查，不能防止XSS。客户端正则校验（D选项）容易出错且难以覆盖所有攻击面，因此不够可靠。</strong></p>
+  <p><strong>
+
+正确答案: A. 在所有用户输入中使用React的默认HTML转义机制，避免直接使用`dangerouslySetInnerHTML`。 解释：React默认会对插入的内容进行HTML转义，防止用户输入中的恶意脚本被执行，从而有效防止XSS攻击。虽然Content-Security-Policy（B选项）是重要的安全策略，但禁止所有外部脚本加载是不现实的，且无法完全防止XSS。TypeScript类型系统（C选项）主要用于类型检查，不能防止XSS。客户端正则校验（D选项）容易出错且难以覆盖所有攻击面，因此不够可靠。</strong></p>
 </details>
 
 **问题 2:**
@@ -4366,7 +4668,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. React组件层安全措施：
+  <p><strong>
+
+正确答案: 1. React组件层安全措施：
 - 使用严格的类型检查（TypeScript）减少类型相关漏洞。
 - 避免直接使用`dangerouslySetInnerHTML`，防止XSS攻击。
 - 对用户输入进行严格校验和转义，防止注入攻击。
@@ -4417,7 +4721,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 统一采用TypeScript的严格模式和React的受控组件模式，结合代码审查和静态代码分析工具，防止不安全的代码提交。 解释：选项B综合了静态类型检查、React组件设计规范和团队治理手段（代码审查与静态分析），这能够在开发阶段及时发现和防止潜在的安全问题，是建立前端安全策略和团队治理的最佳实践。A选项中`dangerouslySetInnerHTML`本身是极易引发XSS的风险，不应强制使用。C选项虽然CSP是重要的补充，但单靠它无法覆盖所有安全风险。D选项忽视了前端在安全防护中的重要角色，责任不应完全推给后端。</strong></p>
+  <p><strong>
+
+正确答案: B. 统一采用TypeScript的严格模式和React的受控组件模式，结合代码审查和静态代码分析工具，防止不安全的代码提交。 解释：选项B综合了静态类型检查、React组件设计规范和团队治理手段（代码审查与静态分析），这能够在开发阶段及时发现和防止潜在的安全问题，是建立前端安全策略和团队治理的最佳实践。A选项中`dangerouslySetInnerHTML`本身是极易引发XSS的风险，不应强制使用。C选项虽然CSP是重要的补充，但单靠它无法覆盖所有安全风险。D选项忽视了前端在安全防护中的重要角色，责任不应完全推给后端。</strong></p>
 </details>
 
 **问题 2:**
@@ -4426,7 +4732,9 @@ export default defineConfig({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 技术措施：
+  <p><strong>
+
+正确答案: 1. 技术措施：
 - 使用React的安全特性，如避免使用`dangerouslySetInnerHTML`，必要时进行严格的输入过滤和转义。
 - 统一使用TypeScript严格类型检查，减少类型相关的安全漏洞。
 - 引入自动化安全扫描工具（如ESLint安全规则、静态代码分析工具）来发现潜在的安全问题。
@@ -4461,80 +4769,177 @@ export default defineConfig({
 ## 旧的问题列表
 
 
-- [1. React 组件会经历哪四个生命周期阶段？](#1-react-组件会经历哪四个生命周期阶段)
-- [2. 什么是 React？它与其他 JavaScript 框架有何不同？](#2-什么是-react它与其他-javascript-框架有何不同)
-- [3. 什么是无状态组件？](#3-什么是无状态组件)
-- [4. 如何在 React 循环中创建元素？](#4-如何在-react-循环中创建元素)
-- [5. 如何更新 React 中的 state 对象？](#5-如何更新-react-中的-state-对象)
-- [6. 什么是高阶组件？](#6-什么是高阶组件)
-- [7. 什么是 Render Props？](#7-什么是-render-props)
-- [8. React Portals 是什么？](#8-react-portals-是什么)
-- [9. React Profiler 的作用是什么？](#9-react-profiler-的作用是什么)
-- [10. React 中的 StrictMode 是什么？](#10-react-中的-strictmode-是什么)
-- [11. React Fragments 的作用是什么？](#11-react-fragments-的作用是什么)
-- [12. 调用 setState 时会发生什么？](#12-调用-setstate-时会发生什么)
-- [13. React 元素（Element）和组件（Component）有何区别？](#13-react-元素element和组件component有何区别)
-- [14. 何时应选择类组件（Class Component）而非函数组件（Functional Component）？](#14-何时应选择类组件class-component而非函数组件functional-component)
-- [15. React 中如何创建组件？](#15-react-中如何创建组件)
-- [16. React 中的 props 是什么？](#16-react-中的-props-是什么)
-- [17. React 中的 state 是什么？](#17-react-中的-state-是什么)
-- [18. React 中的 context 是什么？](#18-react-中的-context-是什么)
-- [19. 如何实现条件渲染？](#19-如何实现条件渲染)
-- [20. 如何在 JSX 回调中绑定方法或事件处理程序？](#20-如何在-jsx-回调中绑定方法或事件处理程序)
-- [21. 如何条件式应用 CSS 类属性？](#21-如何条件式应用-css-类属性)
-- [22. 什么是 React Refs？为什么它们很重要？](#22-什么是-react-refs为什么它们很重要)
-- [23. 什么是 React Keys？为什么它们很重要？](#23-什么是-react-keys为什么它们很重要)
-- [24. 受控组件与非受控组件有何区别？](#24-受控组件与非受控组件有何区别)
-- [25. 在 Class 组件中应该在哪个生命周期方法发起 AJAX 请求？](#25-在-class-组件中应该在哪个生命周期方法发起-ajax-请求)
-- [26. shouldComponentUpdate 的作用及其重要性是什么？](#26-shouldcomponentupdate-的作用及其重要性是什么)
-- [27. 如何设置 React 生产环境构建？会产生哪些影响？](#27-如何设置-react-生产环境构建会产生哪些影响)
-- [28. React 事件处理机制是如何工作的？](#28-react-事件处理机制是如何工作的)
-- [29. createElement 与 cloneElement 的核心区别是什么？](#29-createelement-与-cloneelement-的核心区别是什么)
-- [30. setState 方法的第二个可选参数是什么？其作用如何？](#30-setstate-方法的第二个可选参数是什么其作用如何)
-- [31. 什么是状态突变？如何有效预防？](#31-什么是状态突变如何有效预防)
-- [32. 单元测试中浅渲染的优缺点分析？](#32-单元测试中浅渲染的优缺点分析)
-- [33. 如何诊断优化 React 应用的渲染性能问题？](#33-如何诊断优化-react-应用的渲染性能问题)
-- [34. 什么是虚拟DOM（VDOM）？React如何利用它进行DOM渲染？](#34-什么是虚拟domvdomreact如何利用它进行dom渲染)
-- [35. 什么是prop drilling？如何避免？](#35-什么是prop-drilling如何避免)
-- [36. React（库）与Angular（框架）的核心架构差异是什么？这对项目技术选型有何影响？](#36-react库与angular框架的核心架构差异是什么这对项目技术选型有何影响)
-- [37. React组件命名有哪些例外情况？](#37-react组件命名有哪些例外情况)
-- [38. 常用的React动画库有哪些？](#38-常用的react动画库有哪些)
-- [39. 什么是React Router？](#39-什么是react-router)
-- [40. React Router v6中的Router组件有哪些？](#40-react-router-v6中的router组件有哪些)
-- [41. history对象中push()和replace()方法的作用？](#41-history对象中push和replace方法的作用)
-- [42. 如何实现404页面？](#42-如何实现404页面)
-- [43. 哪些场景下错误边界无法捕获异常？](#43-哪些场景下错误边界无法捕获异常)
-- [44. Next.js是什么？它的核心特性有哪些？](#44-next-js是什么它的核心特性有哪些)
-- [45. 如何防止函数被高频调用？](#45-如何防止函数被高频调用)
-- [46. JSX 如何防止注入攻击？](#46-jsx-如何防止注入攻击)
-- [47. 表单处理的主流选择是什么？](#47-表单处理的主流选择是什么)
-- [48. Formik 相比 Redux Form 有何优势？](#48-formik-相比-redux-form-有何优势)
-- [49. 为何不推荐使用继承机制？](#49-为何不推荐使用继承机制)
-- [50. 推荐哪些数组操作进行状态更新？](#50-推荐哪些数组操作进行状态更新)
-- [51. 如何定义嵌套函数组件？](#51-如何定义嵌套函数组件)
-- [52. key 能用于非列表元素吗？](#52-key-能用于非列表元素吗)
-- [53. getDerivedStateFromError 的作用是什么？](#53-getderivedstatefromerror-的作用是什么)
-- [54. 组件重渲染时的生命周期顺序？](#54-组件重渲染时的生命周期顺序)
-- [55. 错误处理会触发哪些方法？](#55-错误处理会触发哪些方法)
-- [56. unmountComponentAtNode 的用途？](#56-unmountcomponentatnode-的用途)
-- [57. 如何阻止组件渲染？](#57-如何阻止组件渲染)
-- [58. 举例说明如何使用Context（上下文）？](#58-举例说明如何使用context上下文)
-- [59. 如何使用contextType属性？](#59-如何使用contexttype属性)
-- [60. 什么是Consumer？](#60-什么是consumer)
-- [61. 如何解决使用Context时的性能问题？](#61-如何解决使用context时的性能问题)
-- [62. HOC中forwardRef的作用是什么？](#62-hoc中forwardref的作用是什么)
-- [63. ref参数是否对所有函数/类组件可用？](#63-ref参数是否对所有函数类组件可用)
-- [64. 使用forwardRef时为何要特别注意组件库开发？](#64-使用forwardref时为何要特别注意组件库开发)
-- [65. 如何在不使用 ES6 的情况下创建 React 类组件？](#65-如何在不使用-es6-的情况下创建-react-类组件)
-- [66. 什么是 TypeScript？](#66-什么是-typescript)
-- [67. TypeScript 中的泛型是什么？](#67-typescript-中的泛型是什么)
-- [68. TypeScript 的内置（原始）类型有哪些？](#68-typescript-的内置原始类型有哪些)
-- [69. TypeScript 中的模块是什么？](#69-typescript-中的模块是什么)
-- [70. TypeScript 中的接口是什么？](#70-typescript-中的接口是什么)
-- [71. 如何将多个 TypeScript 文件编译为单个文件？](#71-如何将多个-typescript-文件编译为单个文件)
-- [72. 如何在 TS 子类中调用基类构造方法？](#72-如何在-ts-子类中调用基类构造方法)
-- [73. TypeScript 中的命名空间是什么？如何声明？](#73-typescript-中的命名空间是什么如何声明)
-- [74. TypeScript 中的鸭子类型是什么？](#74-typescript-中的鸭子类型是什么)
+- [面试题集: 前端开发-React+TypeScript](#面试题集-前端开发-reacttypescript)
+  - [技能概览](#技能概览)
+    - [React核心概念](#react核心概念)
+    - [TypeScript核心概念](#typescript核心概念)
+    - [React状态管理](#react状态管理)
+    - [React路由管理](#react路由管理)
+    - [React性能优化](#react性能优化)
+    - [React测试](#react测试)
+    - [React生态与工具链](#react生态与工具链)
+    - [React安全与最佳实践](#react安全与最佳实践)
+  - [详细题目列表](#详细题目列表)
+    - [React核心概念](#react核心概念-1)
+      - [JSX语法基础](#jsx语法基础)
+      - [组件生命周期](#组件生命周期)
+      - [函数组件与类组件区别](#函数组件与类组件区别)
+      - [状态管理基础（useState）](#状态管理基础usestate)
+      - [副作用管理（useEffect）](#副作用管理useeffect)
+      - [事件处理机制](#事件处理机制)
+      - [条件渲染与列表渲染](#条件渲染与列表渲染)
+      - [组件复用与组合](#组件复用与组合)
+      - [Context API使用](#context-api使用)
+      - [Refs与DOM操作](#refs与dom操作)
+      - [错误边界(Error Boundaries)](#错误边界error-boundaries)
+      - [React性能优化基础（memo, useMemo, useCallback）](#react性能优化基础memo-usememo-usecallback)
+      - [Hooks自定义与规则](#hooks自定义与规则)
+      - [React Suspense与懒加载](#react-suspense与懒加载)
+      - [React Fiber架构理解](#react-fiber架构理解)
+      - [React源码阅读与调试](#react源码阅读与调试)
+      - [React架构设计与最佳实践](#react架构设计与最佳实践)
+    - [TypeScript核心概念](#typescript核心概念-1)
+      - [基本类型与类型注解](#基本类型与类型注解)
+      - [接口(interface)与类型别名(type)](#接口interface与类型别名type)
+      - [函数类型与泛型](#函数类型与泛型)
+      - [联合类型与交叉类型](#联合类型与交叉类型)
+      - [类型守卫与类型断言](#类型守卫与类型断言)
+      - [枚举类型与字面量类型](#枚举类型与字面量类型)
+      - [高级类型（映射类型、条件类型）](#高级类型映射类型条件类型)
+      - [装饰器与元编程基础](#装饰器与元编程基础)
+      - [TypeScript配置与编译优化](#typescript配置与编译优化)
+      - [类型推断机制深入](#类型推断机制深入)
+      - [TypeScript与React集成类型设计](#typescript与react集成类型设计)
+      - [TypeScript源码分析](#typescript源码分析)
+      - [TypeScript项目架构与规范制定](#typescript项目架构与规范制定)
+    - [React状态管理](#react状态管理-1)
+      - [本地状态管理（useState, useReducer）](#本地状态管理usestate-usereducer)
+      - [Context与状态共享](#context与状态共享)
+      - [第三方状态管理库基础（Redux, MobX）](#第三方状态管理库基础redux-mobx)
+      - [Redux中间件与异步处理（Thunk, Saga）](#redux中间件与异步处理thunk-saga)
+      - [状态管理性能优化](#状态管理性能优化)
+      - [状态管理架构设计](#状态管理架构设计)
+      - [状态管理库源码分析](#状态管理库源码分析)
+      - [自定义状态管理方案设计](#自定义状态管理方案设计)
+    - [React路由管理](#react路由管理-1)
+      - [React Router基础使用](#react-router基础使用)
+      - [动态路由与嵌套路由](#动态路由与嵌套路由)
+      - [路由守卫与权限控制](#路由守卫与权限控制)
+      - [路由性能优化](#路由性能优化)
+      - [路由状态管理与同步](#路由状态管理与同步)
+      - [路由架构设计](#路由架构设计)
+      - [路由库源码分析](#路由库源码分析)
+    - [React性能优化](#react性能优化-1)
+      - [避免不必要的渲染](#避免不必要的渲染)
+      - [代码分割与懒加载](#代码分割与懒加载)
+      - [虚拟化列表实现](#虚拟化列表实现)
+      - [性能监控与分析工具使用](#性能监控与分析工具使用)
+      - [React渲染机制深入理解](#react渲染机制深入理解)
+      - [自定义渲染优化方案](#自定义渲染优化方案)
+      - [极限性能调优与底层机制结合](#极限性能调优与底层机制结合)
+    - [React测试](#react测试-1)
+      - [单元测试基础（Jest）](#单元测试基础jest)
+      - [组件测试（React Testing Library）](#组件测试react-testing-library)
+      - [端到端测试基础（Cypress）](#端到端测试基础cypress)
+      - [测试覆盖率与测试策略](#测试覆盖率与测试策略)
+      - [测试性能优化与Mock技术](#测试性能优化与mock技术)
+      - [测试架构设计与持续集成](#测试架构设计与持续集成)
+      - [测试工具源码分析与扩展](#测试工具源码分析与扩展)
+    - [React生态与工具链](#react生态与工具链-1)
+      - [Create React App使用](#create-react-app使用)
+      - [Vite与构建工具配置](#vite与构建工具配置)
+      - [ESLint与代码规范](#eslint与代码规范)
+      - [Prettier代码格式化](#prettier代码格式化)
+      - [React DevTools使用](#react-devtools使用)
+      - [性能分析工具（Profiler）](#性能分析工具profiler)
+      - [Webpack配置优化](#webpack配置优化)
+      - [Babel插件开发基础](#babel插件开发基础)
+      - [自定义脚手架开发](#自定义脚手架开发)
+      - [构建工具源码分析](#构建工具源码分析)
+      - [前端工程化架构设计](#前端工程化架构设计)
+    - [React安全与最佳实践](#react安全与最佳实践-1)
+      - [XSS攻击防范](#xss攻击防范)
+      - [CSRF防护机制](#csrf防护机制)
+      - [安全编码规范](#安全编码规范)
+      - [性能与安全权衡](#性能与安全权衡)
+      - [安全漏洞排查与修复](#安全漏洞排查与修复)
+      - [安全架构设计](#安全架构设计)
+      - [安全策略与团队治理](#安全策略与团队治理)
+  - [旧的问题列表](#旧的问题列表)
+    - [1. React 组件会经历哪四个生命周期阶段？](#1-react-组件会经历哪四个生命周期阶段)
+    - [2. 什么是 React？它与其他 JavaScript 框架有何不同？](#2-什么是-react它与其他-javascript-框架有何不同)
+    - [3. 什么是无状态组件？](#3-什么是无状态组件)
+    - [4. 如何在 React 循环中创建元素？](#4-如何在-react-循环中创建元素)
+    - [5. 如何更新 React 中的 state 对象？](#5-如何更新-react-中的-state-对象)
+    - [6. 什么是高阶组件？](#6-什么是高阶组件)
+    - [7. 什么是 Render Props？](#7-什么是-render-props)
+    - [8. React Portals 是什么？](#8-react-portals-是什么)
+    - [9. React Profiler 的作用是什么？](#9-react-profiler-的作用是什么)
+    - [10. React 中的 StrictMode 是什么？](#10-react-中的-strictmode-是什么)
+    - [11. React Fragments 的作用是什么？](#11-react-fragments-的作用是什么)
+    - [12. 调用 setState 时会发生什么？](#12-调用-setstate-时会发生什么)
+    - [13. React 元素（Element）和组件（Component）有何区别？](#13-react-元素element和组件component有何区别)
+    - [14. 何时应选择类组件（Class Component）而非函数组件（Functional Component）？](#14-何时应选择类组件class-component而非函数组件functional-component)
+    - [15. React 中如何创建组件？](#15-react-中如何创建组件)
+    - [16. React 中的 props 是什么？](#16-react-中的-props-是什么)
+    - [17. React 中的 state 是什么？](#17-react-中的-state-是什么)
+    - [18. React 中的 context 是什么？](#18-react-中的-context-是什么)
+    - [19. 如何实现条件渲染？](#19-如何实现条件渲染)
+    - [20. 如何在 JSX 回调中绑定方法或事件处理程序？](#20-如何在-jsx-回调中绑定方法或事件处理程序)
+    - [21. 如何条件式应用 CSS 类属性？](#21-如何条件式应用-css-类属性)
+    - [22. 什么是 React Refs？为什么它们很重要？](#22-什么是-react-refs为什么它们很重要)
+    - [23. 什么是 React Keys？为什么它们很重要？](#23-什么是-react-keys为什么它们很重要)
+    - [24. 受控组件与非受控组件有何区别？](#24-受控组件与非受控组件有何区别)
+    - [25. 在 Class 组件中应该在哪个生命周期方法发起 AJAX 请求？](#25-在-class-组件中应该在哪个生命周期方法发起-ajax-请求)
+    - [26. shouldComponentUpdate 的作用及其重要性是什么？](#26-shouldcomponentupdate-的作用及其重要性是什么)
+    - [27. 如何设置 React 生产环境构建？会产生哪些影响？](#27-如何设置-react-生产环境构建会产生哪些影响)
+    - [28. React 事件处理机制是如何工作的？](#28-react-事件处理机制是如何工作的)
+    - [29. createElement 与 cloneElement 的核心区别是什么？](#29-createelement-与-cloneelement-的核心区别是什么)
+    - [30. setState 方法的第二个可选参数是什么？其作用如何？](#30-setstate-方法的第二个可选参数是什么其作用如何)
+    - [31. 什么是状态突变？如何有效预防？](#31-什么是状态突变如何有效预防)
+    - [32. 单元测试中浅渲染的优缺点分析？](#32-单元测试中浅渲染的优缺点分析)
+    - [33. 如何诊断优化 React 应用的渲染性能问题？](#33-如何诊断优化-react-应用的渲染性能问题)
+    - [34. 什么是虚拟DOM（VDOM）？React如何利用它进行DOM渲染？](#34-什么是虚拟domvdomreact如何利用它进行dom渲染)
+    - [35. 什么是prop drilling？如何避免？](#35-什么是prop-drilling如何避免)
+    - [36. React（库）与Angular（框架）的核心架构差异是什么？这对项目技术选型有何影响？](#36-react库与angular框架的核心架构差异是什么这对项目技术选型有何影响)
+    - [37. React组件命名有哪些例外情况？](#37-react组件命名有哪些例外情况)
+    - [38. 常用的React动画库有哪些？](#38-常用的react动画库有哪些)
+    - [39. 什么是React Router？](#39-什么是react-router)
+    - [40. React Router v6中的Router组件有哪些？](#40-react-router-v6中的router组件有哪些)
+    - [41. history对象中push()和replace()方法的作用？](#41-history对象中push和replace方法的作用)
+    - [42. 如何实现404页面？](#42-如何实现404页面)
+    - [43. 哪些场景下错误边界无法捕获异常？](#43-哪些场景下错误边界无法捕获异常)
+    - [44. Next.js是什么？它的核心特性有哪些？](#44-nextjs是什么它的核心特性有哪些)
+    - [45. 如何防止函数被高频调用？](#45-如何防止函数被高频调用)
+    - [46. JSX 如何防止注入攻击？](#46-jsx-如何防止注入攻击)
+    - [47. 表单处理的主流选择是什么？](#47-表单处理的主流选择是什么)
+    - [48. Formik 相比 Redux Form 有何优势？](#48-formik-相比-redux-form-有何优势)
+    - [49. 为何不推荐使用继承机制？](#49-为何不推荐使用继承机制)
+    - [50. 推荐哪些数组操作进行状态更新？](#50-推荐哪些数组操作进行状态更新)
+    - [51. 如何定义嵌套函数组件？](#51-如何定义嵌套函数组件)
+    - [52. key 能用于非列表元素吗？](#52-key-能用于非列表元素吗)
+    - [53. getDerivedStateFromError 的作用是什么？](#53-getderivedstatefromerror-的作用是什么)
+    - [54. 组件重渲染时的生命周期顺序？](#54-组件重渲染时的生命周期顺序)
+    - [55. 错误处理会触发哪些方法？](#55-错误处理会触发哪些方法)
+    - [56. unmountComponentAtNode 的用途？](#56-unmountcomponentatnode-的用途)
+    - [57. 如何阻止组件渲染？](#57-如何阻止组件渲染)
+    - [58. 举例说明如何使用Context（上下文）？](#58-举例说明如何使用context上下文)
+    - [59. 如何使用contextType属性？](#59-如何使用contexttype属性)
+    - [60. 什么是Consumer？](#60-什么是consumer)
+    - [61. 如何解决使用Context时的性能问题？](#61-如何解决使用context时的性能问题)
+    - [62. HOC中forwardRef的作用是什么？](#62-hoc中forwardref的作用是什么)
+    - [63. ref参数是否对所有函数/类组件可用？](#63-ref参数是否对所有函数类组件可用)
+    - [64. 使用forwardRef时为何要特别注意组件库开发？](#64-使用forwardref时为何要特别注意组件库开发)
+    - [65. 如何在不使用 ES6 的情况下创建 React 类组件？](#65-如何在不使用-es6-的情况下创建-react-类组件)
+    - [66. 什么是 TypeScript？](#66-什么是-typescript)
+    - [67. TypeScript 中的泛型是什么？](#67-typescript-中的泛型是什么)
+    - [68. TypeScript 的内置（原始）类型有哪些？](#68-typescript-的内置原始类型有哪些)
+    - [69. TypeScript 中的模块是什么？](#69-typescript-中的模块是什么)
+    - [70. TypeScript 中的接口是什么？](#70-typescript-中的接口是什么)
+    - [71. 如何将多个 TypeScript 文件编译为单个文件？](#71-如何将多个-typescript-文件编译为单个文件)
+    - [72. 如何在 TS 子类中调用基类构造方法？](#72-如何在-ts-子类中调用基类构造方法)
+    - [73. TypeScript 中的命名空间是什么？如何声明？](#73-typescript-中的命名空间是什么如何声明)
+    - [74. TypeScript 中的鸭子类型是什么？](#74-typescript-中的鸭子类型是什么)
 
 <a id='1-react-组件会经历哪四个生命周期阶段'></a>
 ### 1. React 组件会经历哪四个生命周期阶段？
@@ -5205,7 +5610,7 @@ const MemoizedList = React.memo(
 <a id='35-什么是prop-drilling如何避免'></a>
 ### 35. 什么是prop drilling？如何避免？
 
-当深层嵌套组件需要使用高层组件的数据时，prop drilling指数据通过多层中间组件逐级传递的现象。例如`<EditUsersPage>`的状态`selectedUserAddress`需要传递到`<UserAddress>`，中间经过`<User>`和`<UserDetails>`组件。
+当深层嵌套组件需要使用高层组件的数据时，prop drilling指数据通过多层中间组件逐级传递的现象。例如`<EditUsersPage>`的状态`selectedUserAddress`需要传递到`<UserAddress>`，中间经过`<User>`和`<Userdetails>`组件。
 
 > [解决方案] 使用React Context API可避免该问题。通过创建Provider组件包裹数据源，深层组件通过`useContext`直接消费数据。另一个典型方案是引入状态管理库（如Redux），但Context更适合局部状态共享。[深入理解] 中间组件被迫传递不相关props会导致代码冗余和维护困难，破坏组件封装性。
 

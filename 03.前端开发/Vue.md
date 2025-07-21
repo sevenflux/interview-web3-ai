@@ -158,7 +158,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 通过 Object.defineProperty 对数据对象的属性进行 getter 和 setter 拦截，从而实现数据变化侦测。 解释：Vue 2 的响应式系统基于 Object.defineProperty ，通过重写属性的 getter 和 setter 来追踪依赖和触发更新，而 Proxy 是 Vue 3 的实现方式。选项 B 是 Vue 3 的机制，C 和 D 并非 Vue 响应式的实现方式。</strong></p>
+  <p><strong>
+
+正确答案: A. 通过 Object.defineProperty 对数据对象的属性进行 getter 和 setter 拦截，从而实现数据变化侦测。 解释：Vue 2 的响应式系统基于 Object.defineProperty ，通过重写属性的 getter 和 setter 来追踪依赖和触发更新，而 Proxy 是 Vue 3 的实现方式。选项 B 是 Vue 3 的机制，C 和 D 并非 Vue 响应式的实现方式。</strong></p>
 </details>
 
 **问题 2:**
@@ -167,7 +169,9 @@
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Vue通过使用响应式数据绑定机制实现数据变化时自动更新视图。其核心原理是利用`Object.defineProperty`（Vue 2）或Proxy（Vue 3）劫持数据对象的属性的访问和修改。当数据被访问时，Vue会收集依赖（即对应的视图组件或模板），当数据发生变化时，Vue会通知这些依赖进行更新，从而实现视图自动刷新。
+  <p><strong>
+
+正确答案: Vue通过使用响应式数据绑定机制实现数据变化时自动更新视图。其核心原理是利用`Object.defineProperty`（Vue 2）或Proxy（Vue 3）劫持数据对象的属性的访问和修改。当数据被访问时，Vue会收集依赖（即对应的视图组件或模板），当数据发生变化时，Vue会通知这些依赖进行更新，从而实现视图自动刷新。
 
 例如，Vue 2中通过`Object.defineProperty`为每个属性设置getter和setter，getter中收集依赖，setter中通知依赖更新；Vue 3使用Proxy实现更高效的响应式。
 
@@ -212,7 +216,9 @@ this.obj = {...this.obj, newProp: 'value'}; // 通过替换对象触发响应
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Vue 在组件渲染过程中，会收集当前渲染函数中访问的响应式属性作为依赖，当这些属性变化时，Vue 只会触发相关依赖的更新函数。 解析：Vue 的响应式系统基于依赖追踪机制，在组件渲染时收集所使用的响应式数据属性作为依赖，当这些属性发生变化时，Vue 会触发相关依赖的更新函数，避免不必要的重新渲染，提高性能。选项 A 错误，因为 Vue 不是将所有属性放入全局依赖，而是按需收集依赖；选项 C 错误，因为 Vue 不是通过轮询检测变化，而是利用了 getter/setter 或 Proxy 实现依赖收集；选项 D 错误，因为依赖会在每次渲染时重新收集，且属性变化会自动触发更新。</strong></p>
+  <p><strong>
+
+正确答案: B. Vue 在组件渲染过程中，会收集当前渲染函数中访问的响应式属性作为依赖，当这些属性变化时，Vue 只会触发相关依赖的更新函数。 解析：Vue 的响应式系统基于依赖追踪机制，在组件渲染时收集所使用的响应式数据属性作为依赖，当这些属性发生变化时，Vue 会触发相关依赖的更新函数，避免不必要的重新渲染，提高性能。选项 A 错误，因为 Vue 不是将所有属性放入全局依赖，而是按需收集依赖；选项 C 错误，因为 Vue 不是通过轮询检测变化，而是利用了 getter/setter 或 Proxy 实现依赖收集；选项 D 错误，因为依赖会在每次渲染时重新收集，且属性变化会自动触发更新。</strong></p>
 </details>
 
 **问题 2:**
@@ -221,7 +227,9 @@ this.obj = {...this.obj, newProp: 'value'}; // 通过替换对象触发响应
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Vue 3 中，响应式系统利用 Proxy 实现依赖收集和触发更新。具体过程如下：
+  <p><strong>
+
+正确答案: 在 Vue 3 中，响应式系统利用 Proxy 实现依赖收集和触发更新。具体过程如下：
 
 1. 依赖收集：
    - 当模板渲染时，访问 `state.count` 会触发 Proxy 的 `get` 拦截器。
@@ -254,7 +262,9 @@ this.obj = {...this.obj, newProp: 'value'}; // 通过替换对象触发响应
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C</strong></p>
+  <p><strong>
+
+正确答案: C</strong></p>
 </details>
 
 **问题 2:**
@@ -270,7 +280,9 @@ this.obj = {...this.obj, newProp: 'value'}; // 通过替换对象触发响应
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 监听能力与实现方式：
+  <p><strong>
+
+正确答案: 1. 监听能力与实现方式：
 - Object.defineProperty：通过在对象的每个属性上定义getter和setter来实现响应式。它不能监听新增或删除的属性，也无法直接监听数组索引和长度变化。
 - Proxy：代理整个对象，能够拦截所有操作，包括读取、写入、属性添加、删除等，支持监听新增属性和数组变化。
 
@@ -307,7 +319,9 @@ this.obj = {...this.obj, newProp: 'value'}; // 通过替换对象触发响应
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 利用computed属性缓存计算结果，仅在依赖变化时重新计算。
+  <p><strong>
+
+正确答案: B. 利用computed属性缓存计算结果，仅在依赖变化时重新计算。
 
 解释：computed属性基于其依赖的响应式数据进行缓存，只有当依赖发生变化时才会重新计算，避免了不必要的重复计算和组件重新渲染，提升性能。选项A的深度监听会带来较大性能开销，选项C中methods每次渲染都会执行，不具备缓存能力，选项D的强制更新容易导致性能问题。</strong></p>
 </details>
@@ -318,7 +332,9 @@ this.obj = {...this.obj, newProp: 'value'}; // 通过替换对象触发响应
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 性能问题可能的原因包括：
+  <p><strong>
+
+正确答案: 性能问题可能的原因包括：
 
 1. 过度的响应式监听：对大量数据进行深度响应式监听，导致数据变化时触发大量无关组件更新。
 2. 不必要的组件重新渲染：组件依赖的数据过多或未合理拆分，导致小的变动触发整个组件重新渲染。
@@ -359,7 +375,9 @@ this.obj = {...this.obj, newProp: 'value'}; // 通过替换对象触发响应
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. `reactive` 函数返回的是原始对象的一个代理（Proxy），通过拦截操作实现响应式追踪。 解释：Vue 3的响应式系统基于ES6的Proxy实现，`reactive`函数通过返回原始对象的代理，拦截对对象的读取和写入操作，从而实现依赖追踪和响应式更新。选项A描述的是Vue 2的实现方式，选项C错误，Vue 3不通过深度克隆实现响应式，选项D错误，`reactive`支持对普通对象和数组等多种类型的响应式处理。</strong></p>
+  <p><strong>
+
+正确答案: B. `reactive` 函数返回的是原始对象的一个代理（Proxy），通过拦截操作实现响应式追踪。 解释：Vue 3的响应式系统基于ES6的Proxy实现，`reactive`函数通过返回原始对象的代理，拦截对对象的读取和写入操作，从而实现依赖追踪和响应式更新。选项A描述的是Vue 2的实现方式，选项C错误，Vue 3不通过深度克隆实现响应式，选项D错误，`reactive`支持对普通对象和数组等多种类型的响应式处理。</strong></p>
 </details>
 
 **问题 2:**
@@ -374,7 +392,9 @@ this.obj = {...this.obj, newProp: 'value'}; // 通过替换对象触发响应
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. Vue 3 响应式系统基于 ES6 Proxy 实现，核心是通过代理对象拦截属性的读取（get）和写入（set）操作，实现依赖收集和变化通知。依赖收集通过在 get 时将当前激活的副作用函数（effect）与属性关联，set 时触发这些副作用函数，完成视图更新。
+  <p><strong>
+
+正确答案: 1. Vue 3 响应式系统基于 ES6 Proxy 实现，核心是通过代理对象拦截属性的读取（get）和写入（set）操作，实现依赖收集和变化通知。依赖收集通过在 get 时将当前激活的副作用函数（effect）与属性关联，set 时触发这些副作用函数，完成视图更新。
 
 2. Proxy 的 get 拦截器中会调用 track 函数进行依赖收集，将属性与当前 effect 关联；set 拦截器中调用 trigger 函数，通知所有依赖该属性的 effect 重新执行。
 
@@ -410,7 +430,9 @@ this.obj = {...this.obj, newProp: 'value'}; // 通过替换对象触发响应
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在父组件的 components 选项中注册子组件，然后在 template 中使用子组件的标签。 解释：Vue 组件的使用要求在父组件的 components 选项中声明（注册）子组件，才能在模板中使用子组件标签。选项 A 错误，因为未注册的组件不能直接使用；选项 C 错误，子组件不导入父组件用于显示；选项 D 错误，虽然可以全局注册组件，但通常局部注册更常用且推荐。</strong></p>
+  <p><strong>
+
+正确答案: B. 在父组件的 components 选项中注册子组件，然后在 template 中使用子组件的标签。 解释：Vue 组件的使用要求在父组件的 components 选项中声明（注册）子组件，才能在模板中使用子组件标签。选项 A 错误，因为未注册的组件不能直接使用；选项 C 错误，子组件不导入父组件用于显示；选项 D 错误，虽然可以全局注册组件，但通常局部注册更常用且推荐。</strong></p>
 </details>
 
 **问题 2:**
@@ -419,7 +441,9 @@ this.obj = {...this.obj, newProp: 'value'}; // 通过替换对象触发响应
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 局部注册是指在某个组件内部通过`components`选项注册子组件，只在该组件及其子组件中可用。示例：
+  <p><strong>
+
+正确答案: 局部注册是指在某个组件内部通过`components`选项注册子组件，只在该组件及其子组件中可用。示例：
 
 ```js
 import UserCard from '@/components/UserCard.vue';
@@ -470,7 +494,9 @@ app.mount('#app');
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 父组件通过监听子组件自定义事件来响应子组件的操作。正确，因为子组件通过 $emit 触发自定义事件，父组件监听这些事件以实现通信，保持单向数据流原则。</strong></p>
+  <p><strong>
+
+正确答案: B. 父组件通过监听子组件自定义事件来响应子组件的操作。正确，因为子组件通过 $emit 触发自定义事件，父组件监听这些事件以实现通信，保持单向数据流原则。</strong></p>
 </details>
 
 **问题 2:**
@@ -479,7 +505,9 @@ app.mount('#app');
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 实现思路：
+  <p><strong>
+
+正确答案: 实现思路：
 1. 父组件将商品数据通过 props 传递给子组件，子组件负责展示这些数据。
 2. 子组件在“加入购物车”按钮的点击事件中，使用 `$emit` 触发一个自定义事件（例如 `add-to-cart`），并将当前商品的信息作为参数传递出去。
 3. 父组件监听子组件的 `add-to-cart` 事件，接收到事件后，执行相应的处理函数，更新购物车的数据。
@@ -513,7 +541,9 @@ app.mount('#app');
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用具名插槽时，子组件通过<slot name="slotName"></slot>定义插槽位置，父组件通过<template v-slot:slotName>传入内容。因为具名插槽允许子组件定义多个插槽位置，父组件通过指定对应名称的模板内容传入，实现更加灵活的内容分发。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用具名插槽时，子组件通过<slot name="slotName"></slot>定义插槽位置，父组件通过<template v-slot:slotName>传入内容。因为具名插槽允许子组件定义多个插槽位置，父组件通过指定对应名称的模板内容传入，实现更加灵活的内容分发。</strong></p>
 </details>
 
 **问题 2:**
@@ -522,7 +552,9 @@ app.mount('#app');
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Vue 中，可以通过插槽机制实现组件的内容分发。针对弹窗组件，
+  <p><strong>
+
+正确答案: 在 Vue 中，可以通过插槽机制实现组件的内容分发。针对弹窗组件，
 
 1. 使用具名插槽定义标题和底部按钮区域，例如：
 ```vue
@@ -586,7 +618,9 @@ app.mount('#app');
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 `defineAsyncComponent` 包裹一个动态导入的函数，例如：
+  <p><strong>
+
+正确答案: A. 使用 `defineAsyncComponent` 包裹一个动态导入的函数，例如：
 ```javascript
 const AsyncComp = defineAsyncComponent(() => import('./MyComponent.vue'))
 ```
@@ -600,7 +634,9 @@ const AsyncComp = defineAsyncComponent(() => import('./MyComponent.vue'))
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 实现方式：
+  <p><strong>
+
+正确答案: 1. 实现方式：
 - 动态组件：使用 `<component :is="currentComponent" />` 来根据变量动态切换组件。
 - 异步组件：使用 Vue 异步组件语法，如 `const AsyncComp = () => import('./AsyncComp.vue')`，将组件定义为异步加载。
 结合两者，可以在动态组件的 `:is` 属性中绑定异步组件，实现按需加载和动态切换。
@@ -633,7 +669,9 @@ const AsyncComp = defineAsyncComponent(() => import('./MyComponent.vue'))
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 函数式组件没有实例，因此它们不能访问 this，也不支持响应式数据，但性能更优。 解释：函数式组件是无状态且无实例的组件，因此不能使用 this，也不能使用生命周期钩子，但因为开销小，渲染性能更好。选项A错误，高阶组件不要求无状态或无生命周期钩子；选项C错误，高阶组件通常是通过包装组件，而非继承；选项D错误，函数式组件不能修改 props，因为 props 是只读的。</strong></p>
+  <p><strong>
+
+正确答案: B. 函数式组件没有实例，因此它们不能访问 this，也不支持响应式数据，但性能更优。 解释：函数式组件是无状态且无实例的组件，因此不能使用 this，也不能使用生命周期钩子，但因为开销小，渲染性能更好。选项A错误，高阶组件不要求无状态或无生命周期钩子；选项C错误，高阶组件通常是通过包装组件，而非继承；选项D错误，函数式组件不能修改 props，因为 props 是只读的。</strong></p>
 </details>
 
 **问题 2:**
@@ -646,7 +684,9 @@ const AsyncComp = defineAsyncComponent(() => import('./MyComponent.vue'))
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 定义和区别：
+  <p><strong>
+
+正确答案: 1. 定义和区别：
 - 高阶组件（HOC）是一个函数，接受一个组件作为参数并返回一个新的组件，主要用于复用组件逻辑。它通常是有状态组件，可以包装普通组件，添加额外的功能或数据。
 - 函数式组件在Vue中是无状态、无实例的组件，渲染性能更优，因为它们没有组件实例的开销，主要用于纯展示逻辑。
 
@@ -680,7 +720,9 @@ const AsyncComp = defineAsyncComponent(() => import('./MyComponent.vue'))
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. created。因为 created 钩子是在实例被创建之后调用，此时数据已经被观测，事件和侦听器也已经设置，但组件还未挂载到 DOM，适合进行数据初始化操作。mounted 是组件挂载完成后调用，beforeMount 是挂载开始前调用，但数据尚未初始化，beforeCreate 是实例初始化之前调用，此时数据和事件都未设置。</strong></p>
+  <p><strong>
+
+正确答案: B. created。因为 created 钩子是在实例被创建之后调用，此时数据已经被观测，事件和侦听器也已经设置，但组件还未挂载到 DOM，适合进行数据初始化操作。mounted 是组件挂载完成后调用，beforeMount 是挂载开始前调用，但数据尚未初始化，beforeCreate 是实例初始化之前调用，此时数据和事件都未设置。</strong></p>
 </details>
 
 **问题 2:**
@@ -689,7 +731,9 @@ const AsyncComp = defineAsyncComponent(() => import('./MyComponent.vue'))
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 发起API请求的最佳生命周期钩子是`created`或`mounted`。通常选择`created`是因为组件实例已经创建，响应式数据已经设置好，可以进行数据请求而不依赖DOM。选择`mounted`则是确保DOM已经渲染完成，适合需要操作DOM的请求场景。对于清理请求或资源，应放在`beforeDestroy`（Vue 2）或`beforeUnmount`（Vue 3）钩子中，以确保在组件销毁前能取消未完成的请求，避免内存泄漏或执行无效的回调。
+  <p><strong>
+
+正确答案: 发起API请求的最佳生命周期钩子是`created`或`mounted`。通常选择`created`是因为组件实例已经创建，响应式数据已经设置好，可以进行数据请求而不依赖DOM。选择`mounted`则是确保DOM已经渲染完成，适合需要操作DOM的请求场景。对于清理请求或资源，应放在`beforeDestroy`（Vue 2）或`beforeUnmount`（Vue 3）钩子中，以确保在组件销毁前能取消未完成的请求，避免内存泄漏或执行无效的回调。
 
 如果把请求放在错误的生命周期钩子，比如放在`beforeCreate`，此时组件实例尚未创建，响应式数据还不可用，可能导致无法正确处理请求结果。若清理操作放在`destroyed`/`unmounted`之后，可能无法及时取消请求，导致潜在的性能和内存问题。</strong></p>
 </details>
@@ -715,7 +759,9 @@ const AsyncComp = defineAsyncComponent(() => import('./MyComponent.vue'))
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用插槽（slots）来允许父组件传入不同的内容，增强组件的通用性。 解释：插槽机制允许组件的内容由父组件动态传入，从而使组件更灵活且易于复用。选项A会导致组件臃肿且难以维护，选项C忽视了组件间数据传递的清晰边界，选项D虽然是状态管理方案，但并非直接提升组件复用与抽象的最佳实践。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用插槽（slots）来允许父组件传入不同的内容，增强组件的通用性。 解释：插槽机制允许组件的内容由父组件动态传入，从而使组件更灵活且易于复用。选项A会导致组件臃肿且难以维护，选项C忽视了组件间数据传递的清晰边界，选项D虽然是状态管理方案，但并非直接提升组件复用与抽象的最佳实践。</strong></p>
 </details>
 
 **问题 2:**
@@ -724,7 +770,9 @@ const AsyncComp = defineAsyncComponent(() => import('./MyComponent.vue'))
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 针对该场景，可以采用以下设计思路：
+  <p><strong>
+
+正确答案: 针对该场景，可以采用以下设计思路：
 
 1. **抽象通用列表组件**：创建一个通用的商品列表组件（如 `BaseProductList`），负责实现列表的基础功能，如数据展示、分页、排序、筛选的基础逻辑框架。该组件通过 `props` 接收具体的字段配置、排序规则和筛选条件等。
 
@@ -765,7 +813,9 @@ const AsyncComp = defineAsyncComponent(() => import('./MyComponent.vue'))
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用插槽 (slots) 来实现组件的内容分发，同时通过 props 定义组件的可配置属性。 解释：该设计模式结合了 props 和 slots 的优点，props 用于传递配置数据，保持组件的可配置性和可预测性；slots 用于内容分发，增强组件的灵活性和复用性。选项 A 错误，因为直接修改 props 违反了 Vue 的单向数据流原则；选项 C 错误，直接操作 DOM 破坏了 Vue 的响应式和虚拟 DOM 优势；选项 D 虽然可以实现通信，但过度使用全局事件总线会导致代码难以维护和调试。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用插槽 (slots) 来实现组件的内容分发，同时通过 props 定义组件的可配置属性。 解释：该设计模式结合了 props 和 slots 的优点，props 用于传递配置数据，保持组件的可配置性和可预测性；slots 用于内容分发，增强组件的灵活性和复用性。选项 A 错误，因为直接修改 props 违反了 Vue 的单向数据流原则；选项 C 错误，直接操作 DOM 破坏了 Vue 的响应式和虚拟 DOM 优势；选项 D 虽然可以实现通信，但过度使用全局事件总线会导致代码难以维护和调试。</strong></p>
 </details>
 
 **问题 2:**
@@ -774,7 +824,9 @@ const AsyncComp = defineAsyncComponent(() => import('./MyComponent.vue'))
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在设计商品详情页的组件结构时，可以采用组合式组件设计模式，将页面拆分为多个功能明确的子组件，例如：商品基本信息组件、库存状态组件、用户评价组件和促销活动组件。每个子组件负责自身的 UI 及逻辑，保持高内聚、低耦合。
+  <p><strong>
+
+正确答案: 在设计商品详情页的组件结构时，可以采用组合式组件设计模式，将页面拆分为多个功能明确的子组件，例如：商品基本信息组件、库存状态组件、用户评价组件和促销活动组件。每个子组件负责自身的 UI 及逻辑，保持高内聚、低耦合。
 
 1. 组合式组件设计：
    - 使用“容器-展示组件”模式，容器组件负责数据获取和状态管理，展示组件负责渲染 UI。
@@ -818,7 +870,9 @@ const AsyncComp = defineAsyncComponent(() => import('./MyComponent.vue'))
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. `setupState` 是组件内部响应式数据的集中管理，支持直接访问 `ref` 和 `reactive` 创建的响应式对象。 解释：在 Vue 3 组件源码中，`setupState` 主要存储 `setup` 函数返回的响应式状态，包括通过 `ref` 和 `reactive` 创建的响应式对象。它是组件实例响应式数据的集中管理点，可以在模板和其他生命周期中直接访问。而选项 A 错误在于 `setupState` 里也可以访问 props，但 props 是通过 `props` 属性单独管理的；选项 C 错误，`setupState` 不是方法；选项 D 错误，响应式数据和 props 是分别管理的，且 `setupState` 主要存放 `setup` 返回的数据。</strong></p>
+  <p><strong>
+
+正确答案: B. `setupState` 是组件内部响应式数据的集中管理，支持直接访问 `ref` 和 `reactive` 创建的响应式对象。 解释：在 Vue 3 组件源码中，`setupState` 主要存储 `setup` 函数返回的响应式状态，包括通过 `ref` 和 `reactive` 创建的响应式对象。它是组件实例响应式数据的集中管理点，可以在模板和其他生命周期中直接访问。而选项 A 错误在于 `setupState` 里也可以访问 props，但 props 是通过 `props` 属性单独管理的；选项 C 错误，`setupState` 不是方法；选项 D 错误，响应式数据和 props 是分别管理的，且 `setupState` 主要存放 `setup` 返回的数据。</strong></p>
 </details>
 
 **问题 2:**
@@ -827,7 +881,9 @@ const AsyncComp = defineAsyncComponent(() => import('./MyComponent.vue'))
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，我会从组件库的源码入口开始，理解组件的整体结构，重点关注组件的props、事件机制、生命周期钩子以及内部状态管理。通过阅读源码，我会定位哪些部分提供了对外暴露的接口（如props、emits、slots），以及哪些内部逻辑是可插拔或可复用的。
+  <p><strong>
+
+正确答案: 首先，我会从组件库的源码入口开始，理解组件的整体结构，重点关注组件的props、事件机制、生命周期钩子以及内部状态管理。通过阅读源码，我会定位哪些部分提供了对外暴露的接口（如props、emits、slots），以及哪些内部逻辑是可插拔或可复用的。
 
 其次，针对扩展需求，我会考虑以下几种方式：
 
@@ -867,7 +923,9 @@ const AsyncComp = defineAsyncComponent(() => import('./MyComponent.vue'))
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. v-bind - 因为 v-bind 用于绑定元素的属性，使属性值能够动态响应 Vue 实例中的数据变化，其他选项功能不同，如 v-if 用于条件渲染，v-for 用于列表渲染，v-on 用于事件监听。</strong></p>
+  <p><strong>
+
+正确答案: B. v-bind - 因为 v-bind 用于绑定元素的属性，使属性值能够动态响应 Vue 实例中的数据变化，其他选项功能不同，如 v-if 用于条件渲染，v-for 用于列表渲染，v-on 用于事件监听。</strong></p>
 </details>
 
 **问题 2:**
@@ -876,7 +934,9 @@ const AsyncComp = defineAsyncComponent(() => import('./MyComponent.vue'))
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以使用Vue的插值表达式来显示商品名称和价格，使用条件渲染指令`v-if`来根据库存数量动态显示“有货”或“缺货”。示例代码如下：
+  <p><strong>
+
+正确答案: 你可以使用Vue的插值表达式来显示商品名称和价格，使用条件渲染指令`v-if`来根据库存数量动态显示“有货”或“缺货”。示例代码如下：
 
 ```vue
 <template>
@@ -930,7 +990,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. v-show 通过切换元素的 CSS display 属性控制显示隐藏，不会移除元素；v-if 会在条件不满足时完全销毁元素及其绑定。 -- 这是正确的，因为 v-show 只是切换元素的 display 样式，不会改变 DOM 结构，而 v-if 根据条件动态添加或移除元素，销毁时会移除绑定和事件监听。</strong></p>
+  <p><strong>
+
+正确答案: C. v-show 通过切换元素的 CSS display 属性控制显示隐藏，不会移除元素；v-if 会在条件不满足时完全销毁元素及其绑定。 -- 这是正确的，因为 v-show 只是切换元素的 display 样式，不会改变 DOM 结构，而 v-if 根据条件动态添加或移除元素，销毁时会移除绑定和事件监听。</strong></p>
 </details>
 
 **问题 2:**
@@ -945,7 +1007,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 使用 v-for 指令遍历菜单数组，结合一个权限判断条件来筛选出当前用户有权限访问的菜单项。例如：
+  <p><strong>
+
+正确答案: 1. 使用 v-for 指令遍历菜单数组，结合一个权限判断条件来筛选出当前用户有权限访问的菜单项。例如：
 ```vue
 <li v-for="item in menuItems" :key="item.id" v-if="hasPermission(item)">{{ item.name }}</li>
 ```
@@ -982,7 +1046,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. bind
+  <p><strong>
+
+正确答案: C. bind
 
 解释：
 在 Vue 自定义指令的生命周期钩子中，bind 钩子函数会在指令第一次绑定到元素时调用，适合进行初始化操作。inserted 是指令所在元素插入到父节点时调用，updated 和 componentUpdated 分别在元素更新时触发，但不适合用于初始化。</strong></p>
@@ -994,7 +1060,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 创建自定义指令 `v-highlight`，可以通过 Vue 的 `directive` 方法注册。该指令至少需要实现 `mounted` 和 `updated` 钩子。  
+  <p><strong>
+
+正确答案: 1. 创建自定义指令 `v-highlight`，可以通过 Vue 的 `directive` 方法注册。该指令至少需要实现 `mounted` 和 `updated` 钩子。  
 
 2. 在 `mounted` 钩子中，初始化元素的高亮样式，比如设置背景色。  
 
@@ -1040,7 +1108,9 @@ app.directive('highlight', {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. inserted
+  <p><strong>
+
+正确答案: B. inserted
 
 解释：inserted 钩子在绑定元素插入父节点之后调用，且只调用一次，适合进行依赖于 DOM 的初始化操作。bind 钩子只调用一次，但在元素插入父节点之前调用；update 和 componentUpdated 钩子会在元素更新时多次调用，因此不符合题意。</strong></p>
 </details>
@@ -1051,7 +1121,9 @@ app.directive('highlight', {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Vue 自定义指令主要包含以下生命周期钩子：
+  <p><strong>
+
+正确答案: Vue 自定义指令主要包含以下生命周期钩子：
 
 1. **bind**（Vue 2） / **created**（Vue 3）：指令第一次绑定到元素时调用，可以进行一次性的初始化工作。
 2. **inserted**（Vue 2） / **beforeMount**（Vue 3）：被绑定元素插入父节点时调用，适合访问父节点或进行 DOM 操作。
@@ -1113,7 +1185,9 @@ Vue.directive('my-event', {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 使用计算属性缓存复杂表达式的结果，避免在指令表达式中直接书写复杂逻辑。 解析：计算属性会缓存其结果，避免表达式重复计算，提升性能。选项A中v-if和v-show各有适用场景，v-if频繁切换会有销毁和重建DOM开销；选项B中多个指令合理使用不会明显影响性能；选项D中频繁操作DOM反而会降低性能，不符合性能优化原则。</strong></p>
+  <p><strong>
+
+正确答案: C. 使用计算属性缓存复杂表达式的结果，避免在指令表达式中直接书写复杂逻辑。 解析：计算属性会缓存其结果，避免表达式重复计算，提升性能。选项A中v-if和v-show各有适用场景，v-if频繁切换会有销毁和重建DOM开销；选项B中多个指令合理使用不会明显影响性能；选项D中频繁操作DOM反而会降低性能，不符合性能优化原则。</strong></p>
 </details>
 
 **问题 2:**
@@ -1122,7 +1196,9 @@ Vue.directive('my-event', {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在大型Vue项目中，自定义指令绑定大量动态数据时，性能瓶颈通常来自以下几个方面：
+  <p><strong>
+
+正确答案: 在大型Vue项目中，自定义指令绑定大量动态数据时，性能瓶颈通常来自以下几个方面：
 
 1. **频繁的指令钩子调用**：自定义指令的钩子函数（如 `update` 和 `componentUpdated`）会在数据变化时频繁执行，若操作复杂或无差异判断，会导致性能下降。
 
@@ -1166,7 +1242,9 @@ Vue.directive('my-event', {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 routes 数组中的对象，每个对象必须包含 path 和 component 两个属性。
+  <p><strong>
+
+正确答案: A. 使用 routes 数组中的对象，每个对象必须包含 path 和 component 两个属性。
 
 解释：Vue Router 中定义路由时，routes 是一个数组，数组中的每个对象都必须包含 path（路径）和 component（对应组件）属性，这是路由配置的基本要求。选项 B 错误，根路径应该用 '/' 表示，不能用空字符串。选项 C 错误，路由组件通常是一个组件对象或异步组件，而不是字符串。选项 D 错误，name 属性是可选的，用于命名路由，方便通过名称跳转，但不是必需的。</strong></p>
 </details>
@@ -1177,7 +1255,9 @@ Vue.directive('my-event', {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 路由配置：
+  <p><strong>
+
+正确答案: 1. 路由配置：
 在 Vue Router 的配置文件中，定义两个路由：一个指向主页组件（Home），另一个指向文章详情页组件（PostDetail），其中文章详情页路由需要使用动态路由参数来接收文章 ID，例如：
 
 ```javascript
@@ -1229,7 +1309,9 @@ this.$router.push(`/post/${post.id}`);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. { path: '/user/:id', component: User }。这是 Vue Router 中定义动态路由参数的标准写法，使用冒号 ":" 来标识参数。选项 B 使用了错误的花括号语法，选项 C 使用了错误的美元符号，选项 D 中的问号表示该参数是可选的，不完全等同于必需的动态路由参数定义。</strong></p>
+  <p><strong>
+
+正确答案: A. { path: '/user/:id', component: User }。这是 Vue Router 中定义动态路由参数的标准写法，使用冒号 ":" 来标识参数。选项 B 使用了错误的花括号语法，选项 C 使用了错误的美元符号，选项 D 中的问号表示该参数是可选的，不完全等同于必需的动态路由参数定义。</strong></p>
 </details>
 
 **问题 2:**
@@ -1238,7 +1320,9 @@ this.$router.push(`/post/${post.id}`);
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 配置动态路由：
+  <p><strong>
+
+正确答案: 1. 配置动态路由：
 在 Vue Router 的路由配置中，使用冒号(:)定义动态路径参数，例如：
 ```js
 const routes = [
@@ -1275,7 +1359,9 @@ const routes = [
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. beforeEach — 全局守卫，适合进行权限校验和路由跳转控制。因为 beforeEach 是全局前置守卫，可以在路由切换前统一检测用户权限并决定是否允许访问或重定向，最符合权限控制的需求。其他选项要么作用范围有限，要么不能阻止路由跳转。</strong></p>
+  <p><strong>
+
+正确答案: B. beforeEach — 全局守卫，适合进行权限校验和路由跳转控制。因为 beforeEach 是全局前置守卫，可以在路由切换前统一检测用户权限并决定是否允许访问或重定向，最符合权限控制的需求。其他选项要么作用范围有限，要么不能阻止路由跳转。</strong></p>
 </details>
 
 **问题 2:**
@@ -1284,7 +1370,9 @@ const routes = [
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 实现步骤如下：
+  <p><strong>
+
+正确答案: 实现步骤如下：
 1. 在路由配置中，为需要登录访问的路由设置一个元信息字段（如 meta: { requiresAuth: true }）。
 2. 使用全局前置守卫 router.beforeEach 来检测每次路由跳转。
 3. 在守卫中检查目标路由的 meta.requiresAuth 是否为 true。
@@ -1320,7 +1408,9 @@ const routes = [
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在路由配置中使用箭头函数动态导入组件，例如：component: () => import('./MyComponent.vue')。这是 Vue Router 官方推荐的路由懒加载写法，利用动态 import 实现代码分割，只有访问到该路由时才会加载对应的组件代码。选项 A 是错误的，因为直接同步 import 会导致组件代码被打包到主包中，无法实现懒加载。选项 C 的 require 是同步导入，不支持代码分割。选项 D 是早期 Webpack 的异步加载写法，Vue Router 4 等现代版本不推荐使用。</strong></p>
+  <p><strong>
+
+正确答案: B. 在路由配置中使用箭头函数动态导入组件，例如：component: () => import('./MyComponent.vue')。这是 Vue Router 官方推荐的路由懒加载写法，利用动态 import 实现代码分割，只有访问到该路由时才会加载对应的组件代码。选项 A 是错误的，因为直接同步 import 会导致组件代码被打包到主包中，无法实现懒加载。选项 C 的 require 是同步导入，不支持代码分割。选项 D 是早期 Webpack 的异步加载写法，Vue Router 4 等现代版本不推荐使用。</strong></p>
 </details>
 
 **问题 2:**
@@ -1329,7 +1419,9 @@ const routes = [
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 路由懒加载是指在 Vue 路由配置中，使用动态导入（如 `import()`）方式按需加载路由组件，而不是一次性全部加载，配合 Webpack 等打包工具实现代码分割。代码分割则是将应用的代码拆分成多个小块(chunk)，使得浏览器只加载当前访问页面所需的代码。
+  <p><strong>
+
+正确答案: 路由懒加载是指在 Vue 路由配置中，使用动态导入（如 `import()`）方式按需加载路由组件，而不是一次性全部加载，配合 Webpack 等打包工具实现代码分割。代码分割则是将应用的代码拆分成多个小块(chunk)，使得浏览器只加载当前访问页面所需的代码。
 
 在大型 Vue 应用中，初始加载体积大导致页面加载缓慢，可以通过路由懒加载将不同路由对应的组件拆分成独立的代码块，用户访问某个路由时才加载对应代码，从而减少首屏加载量，提高加载速度和体验。
 
@@ -1368,7 +1460,9 @@ const routes = [
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用 `<keep-alive>` 组件包裹 `<router-view>`，并结合 `include` 或 `exclude` 属性控制缓存的组件。 解析：Vue 官方推荐使用 `<keep-alive>` 组件来缓存路由组件的状态，这样可以避免组件销毁及重建，提升页面切换的性能。`include` 和 `exclude` 属性可以精细控制哪些组件需要缓存，避免缓存无关组件。选项 A 虽然能保存状态，但需要手动管理且复杂，非最佳方案；选项 C 中的 `meta.cache` 并非 Vue Router 的内置功能；选项 D 通过 localStorage 保存状态虽然可行，但影响性能且不够优雅。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用 `<keep-alive>` 组件包裹 `<router-view>`，并结合 `include` 或 `exclude` 属性控制缓存的组件。 解析：Vue 官方推荐使用 `<keep-alive>` 组件来缓存路由组件的状态，这样可以避免组件销毁及重建，提升页面切换的性能。`include` 和 `exclude` 属性可以精细控制哪些组件需要缓存，避免缓存无关组件。选项 A 虽然能保存状态，但需要手动管理且复杂，非最佳方案；选项 C 中的 `meta.cache` 并非 Vue Router 的内置功能；选项 D 通过 localStorage 保存状态虽然可行，但影响性能且不够优雅。</strong></p>
 </details>
 
 **问题 2:**
@@ -1384,7 +1478,9 @@ const routes = [
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 缓存策略设计：
+  <p><strong>
+
+正确答案: 1. 缓存策略设计：
 - 使用 Vue Router 来管理多标签页的路由，每个标签页对应一个路由。
 - 利用 Vue 的 <keep-alive> 组件缓存标签页组件，结合 include 或 exclude 来控制缓存哪些组件。
 - 通过动态设置 <keep-alive> 的 include 属性，确保当前打开的标签页组件被缓存，而关闭或未激活的标签页组件不缓存。
@@ -1420,7 +1516,9 @@ const routes = [
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 通过一个队列机制，依次执行每个导航守卫，等待异步完成后再进入下一个守卫。Vue Router 源码中，导航守卫的执行是通过一个异步队列机制来实现的，确保每个守卫可以异步执行且按顺序等待前一个守卫完成。这种设计保证了导航流程的可控性和灵活性，而不是简单的同步调用或事件监听。</strong></p>
+  <p><strong>
+
+正确答案: B. 通过一个队列机制，依次执行每个导航守卫，等待异步完成后再进入下一个守卫。Vue Router 源码中，导航守卫的执行是通过一个异步队列机制来实现的，确保每个守卫可以异步执行且按顺序等待前一个守卫完成。这种设计保证了导航流程的可控性和灵活性，而不是简单的同步调用或事件监听。</strong></p>
 </details>
 
 **问题 2:**
@@ -1429,7 +1527,9 @@ const routes = [
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Vue Router的路由守卫主要包括全局守卫、路由独享守卫和组件内守卫。它们的执行流程通常是基于导航触发时，调用一系列注册的守卫函数，这些函数本质上是异步任务链，依赖于内部的`runQueue`方法来保证顺序执行。核心源码中，`beforeEach`的注册会将守卫函数加入`beforeHooks`队列，导航触发时执行`transitionTo`方法，内部通过`confirmTransition`方法来串联执行这些守卫。
+  <p><strong>
+
+正确答案: Vue Router的路由守卫主要包括全局守卫、路由独享守卫和组件内守卫。它们的执行流程通常是基于导航触发时，调用一系列注册的守卫函数，这些函数本质上是异步任务链，依赖于内部的`runQueue`方法来保证顺序执行。核心源码中，`beforeEach`的注册会将守卫函数加入`beforeHooks`队列，导航触发时执行`transitionTo`方法，内部通过`confirmTransition`方法来串联执行这些守卫。
 
 如果需要扩展一个全局异步权限校验机制，可以在`beforeHooks`队列中插入自定义的权限校验函数，或者更底层地，在`confirmTransition`中对守卫执行流程进行增强。选择这两个点的原因是：
 
@@ -1460,7 +1560,9 @@ const routes = [
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 用来存储应用的全局状态，所有组件可以访问，但只能通过 mutations 才能修改。 解释：Vuex 的 state 是集中存储应用的全局状态，组件可以直接访问 state，但为了保证状态的可预测性和维护性，Vuex 要求所有状态的变更必须通过 mutations 来完成，而不能直接修改 state。</strong></p>
+  <p><strong>
+
+正确答案: C. 用来存储应用的全局状态，所有组件可以访问，但只能通过 mutations 才能修改。 解释：Vuex 的 state 是集中存储应用的全局状态，组件可以直接访问 state，但为了保证状态的可预测性和维护性，Vuex 要求所有状态的变更必须通过 mutations 来完成，而不能直接修改 state。</strong></p>
 </details>
 
 **问题 2:**
@@ -1469,7 +1571,9 @@ const routes = [
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在电商网站的购物车功能中，Vuex可以作为一个集中式状态管理工具，帮助多个组件共享和管理购物车的数据，避免组件之间通过复杂的props传递或事件传递来同步状态。这样可以保证购物车状态的一致性和可维护性。
+  <p><strong>
+
+正确答案: 在电商网站的购物车功能中，Vuex可以作为一个集中式状态管理工具，帮助多个组件共享和管理购物车的数据，避免组件之间通过复杂的props传递或事件传递来同步状态。这样可以保证购物车状态的一致性和可维护性。
 
 - state：存储应用的状态数据，比如购物车中商品的列表和数量。
 - mutations：是唯一可以直接修改state的方法，负责同步地改变状态。例如添加商品到购物车，更新商品数量等。
@@ -1496,7 +1600,9 @@ const routes = [
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: D. State 是存储应用状态的地方，不能直接被组件修改，必须通过 Mutation 来修改。 解释：在 Vuex 中，State 是用于存储应用的状态，组件不能直接修改 State，必须通过 Mutation 来进行同步的状态修改。Mutation 必须是同步函数，不能包含异步操作。Getter 用于计算派生状态，但它自身不接受参数（需要参数时通常通过返回函数实现）。Action 可以包含异步操作并且用于提交 Mutation。</strong></p>
+  <p><strong>
+
+正确答案: D. State 是存储应用状态的地方，不能直接被组件修改，必须通过 Mutation 来修改。 解释：在 Vuex 中，State 是用于存储应用的状态，组件不能直接修改 State，必须通过 Mutation 来进行同步的状态修改。Mutation 必须是同步函数，不能包含异步操作。Getter 用于计算派生状态，但它自身不接受参数（需要参数时通常通过返回函数实现）。Action 可以包含异步操作并且用于提交 Mutation。</strong></p>
 </details>
 
 **问题 2:**
@@ -1512,7 +1618,9 @@ const routes = [
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. State：用于存储购物车中的商品列表数据。比如一个数组，包含多个商品对象，每个对象有ID、名称和数量。
+  <p><strong>
+
+正确答案: 1. State：用于存储购物车中的商品列表数据。比如一个数组，包含多个商品对象，每个对象有ID、名称和数量。
 
 2. Getter：用于计算衍生状态，比如计算购物车中所有商品的总数量。Getter 会从 state 中读取商品列表，遍历计算数量总和，方便组件获取且具有缓存能力。
 
@@ -1549,7 +1657,9 @@ const routes = [
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 通过设置模块的namespaced为true，可以使模块内的mutations、actions和getters实现局部命名空间，从而避免与其他模块冲突。这是模块化管理中关键的一步，能够保证模块内的状态管理不会与其他模块产生命名冲突，方便维护和扩展。</strong></p>
+  <p><strong>
+
+正确答案: C. 通过设置模块的namespaced为true，可以使模块内的mutations、actions和getters实现局部命名空间，从而避免与其他模块冲突。这是模块化管理中关键的一步，能够保证模块内的状态管理不会与其他模块产生命名冲突，方便维护和扩展。</strong></p>
 </details>
 
 **问题 2:**
@@ -1558,7 +1668,9 @@ const routes = [
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Vuex 中实现模块化管理，主要是通过将状态、变更（mutations）、动作（actions）和获取器（getters）划分到不同的模块中，每个模块拥有自己的 state、mutations、actions 和 getters。然后在根 store 中通过 modules 选项将这些模块注册。
+  <p><strong>
+
+正确答案: 在 Vuex 中实现模块化管理，主要是通过将状态、变更（mutations）、动作（actions）和获取器（getters）划分到不同的模块中，每个模块拥有自己的 state、mutations、actions 和 getters。然后在根 store 中通过 modules 选项将这些模块注册。
 
 具体步骤包括：
 1. 将相关状态和逻辑封装到独立的模块文件中，如购物车模块 cart 和用户信息模块 user。
@@ -1610,7 +1722,9 @@ const store = new Vuex.Store({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 插件允许在每次 mutation 被触发时执行自定义代码，从而实现日志记录、状态持久化等功能。——这是 Vuex 插件的核心设计理念，插件通过订阅 store 的 mutation，执行自定义逻辑，增强状态管理的功能。</strong></p>
+  <p><strong>
+
+正确答案: B. 插件允许在每次 mutation 被触发时执行自定义代码，从而实现日志记录、状态持久化等功能。——这是 Vuex 插件的核心设计理念，插件通过订阅 store 的 mutation，执行自定义逻辑，增强状态管理的功能。</strong></p>
 </details>
 
 **问题 2:**
@@ -1619,7 +1733,9 @@ const store = new Vuex.Store({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Vuex 插件是一个接收 store 作为参数的函数，可以监听所有 mutation 的状态变化。针对统一管理多个 Vuex 模块的日志记录，可以设计一个日志插件，实现自动捕获 mutation 触发并记录相关信息。
+  <p><strong>
+
+正确答案: Vuex 插件是一个接收 store 作为参数的函数，可以监听所有 mutation 的状态变化。针对统一管理多个 Vuex 模块的日志记录，可以设计一个日志插件，实现自动捕获 mutation 触发并记录相关信息。
 
 设计思路：
 1. 创建一个插件函数，接受 store 作为参数。
@@ -1649,7 +1765,9 @@ const store = new Vuex.Store({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 将状态拆分为多个模块，并通过 getters 精细化访问数据，减少无关组件的重新渲染。 解析：将状态拆分成模块可以让状态管理更清晰且易于维护，同时通过 getters 精细访问数据，可以避免组件订阅整个状态树，从而减少不必要的组件重新渲染，提高性能。选项A会导致组件订阅过多数据，增加不必要的更新；选项C使用一个全局 mutation 不利于状态管理的可维护性和性能优化；选项D深拷贝整个状态树虽然保证了数据安全，但会带来较大的性能开销。</strong></p>
+  <p><strong>
+
+正确答案: B. 将状态拆分为多个模块，并通过 getters 精细化访问数据，减少无关组件的重新渲染。 解析：将状态拆分成模块可以让状态管理更清晰且易于维护，同时通过 getters 精细访问数据，可以避免组件订阅整个状态树，从而减少不必要的组件重新渲染，提高性能。选项A会导致组件订阅过多数据，增加不必要的更新；选项C使用一个全局 mutation 不利于状态管理的可维护性和性能优化；选项D深拷贝整个状态树虽然保证了数据安全，但会带来较大的性能开销。</strong></p>
 </details>
 
 **问题 2:**
@@ -1658,7 +1776,9 @@ const store = new Vuex.Store({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 性能问题的主要原因是组件订阅了过多的全局状态，导致状态变化时大量不相关的组件也被触发重新渲染。具体表现为：
+  <p><strong>
+
+正确答案: 性能问题的主要原因是组件订阅了过多的全局状态，导致状态变化时大量不相关的组件也被触发重新渲染。具体表现为：
 
 1. 过度依赖全局状态，导致状态更新粒度粗，任何状态变更都会触发所有订阅该状态的组件重新计算和渲染。
 2. 组件没有合理拆分或使用计算属性，难以精准监听需要的数据。
@@ -1695,7 +1815,9 @@ const store = new Vuex.Store({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 同步触发mutation，用于改变state。因为在Vuex源码设计中，commit方法用于同步调用mutation以修改state，mutation必须是同步函数以保证状态变更的可追踪性和调试的准确性。选项A错误，因为mutation不支持异步操作，异步逻辑应放在action中处理。选项C描述的是dispatch的功能，而非commit。选项D描述getter的功能，与commit无关。</strong></p>
+  <p><strong>
+
+正确答案: B. 同步触发mutation，用于改变state。因为在Vuex源码设计中，commit方法用于同步调用mutation以修改state，mutation必须是同步函数以保证状态变更的可追踪性和调试的准确性。选项A错误，因为mutation不支持异步操作，异步逻辑应放在action中处理。选项C描述的是dispatch的功能，而非commit。选项D描述getter的功能，与commit无关。</strong></p>
 </details>
 
 **问题 2:**
@@ -1704,7 +1826,9 @@ const store = new Vuex.Store({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Vuex通过模块化机制支持将状态、mutations、actions和getters拆分为多个模块，方便管理大型项目的复杂状态。源码中，Vuex使用ModuleCollection类递归注册模块，生成模块树结构，每个模块对应自己的state和相关操作。模块的状态被合并到根状态树中，通过Vue的响应式系统实现响应式数据绑定。具体来说，Vuex利用Vue的`Vue.observable`（Vue 2中通过`new Vue`实现）将状态变为响应式，保证状态变化能够驱动视图更新。
+  <p><strong>
+
+正确答案: Vuex通过模块化机制支持将状态、mutations、actions和getters拆分为多个模块，方便管理大型项目的复杂状态。源码中，Vuex使用ModuleCollection类递归注册模块，生成模块树结构，每个模块对应自己的state和相关操作。模块的状态被合并到根状态树中，通过Vue的响应式系统实现响应式数据绑定。具体来说，Vuex利用Vue的`Vue.observable`（Vue 2中通过`new Vue`实现）将状态变为响应式，保证状态变化能够驱动视图更新。
 
 在异步操作管理上，actions支持返回Promise，允许异步流程控制，内部通过`dispatch`进行分发，保证异步操作的统一管理和链式调用。
 
@@ -1752,7 +1876,9 @@ const store = new Vuex.Store({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 可以在 setup 函数中直接调用 onMounted 生命周期钩子来注册组件挂载后的回调函数。因为在 Composition API 中，生命周期钩子如 onMounted 是通过导入的方式在 setup 函数内部调用的，而此时组件实例还未完全创建，无法使用 this，因此选项 A 错误；选项 C 错误，因为 setup 内可以访问生命周期钩子；选项 D 错误，setup 函数执行时机早于组件挂载。</strong></p>
+  <p><strong>
+
+正确答案: B. 可以在 setup 函数中直接调用 onMounted 生命周期钩子来注册组件挂载后的回调函数。因为在 Composition API 中，生命周期钩子如 onMounted 是通过导入的方式在 setup 函数内部调用的，而此时组件实例还未完全创建，无法使用 this，因此选项 A 错误；选项 C 错误，因为 setup 内可以访问生命周期钩子；选项 D 错误，setup 函数执行时机早于组件挂载。</strong></p>
 </details>
 
 **问题 2:**
@@ -1761,7 +1887,9 @@ const store = new Vuex.Store({
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在`setup`函数中，不能直接执行异步数据请求（如API调用），因为`setup`函数在组件实例创建之前执行，且它的执行不应产生副作用。正确的做法是使用`onMounted`生命周期钩子来执行异步请求。示例代码如下：
+  <p><strong>
+
+正确答案: 在`setup`函数中，不能直接执行异步数据请求（如API调用），因为`setup`函数在组件实例创建之前执行，且它的执行不应产生副作用。正确的做法是使用`onMounted`生命周期钩子来执行异步请求。示例代码如下：
 
 ```javascript
 import { ref, onMounted } from 'vue';
@@ -1809,7 +1937,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. `reactive` 返回的是一个响应式的代理对象，适用于对象和数组。 解释：`reactive` 用于创建响应式的代理对象，适合包裹对象和数组，而 `ref` 可包裹基本类型和对象，但访问对象时仍需通过 `.value`。选项 A 错误，因为 `ref` 可以包裹对象和数组。选项 C 错误，访问 `ref` 包裹的对象仍需 `.value`。选项 D 错误，解构 `reactive` 响应式对象会丢失响应性。</strong></p>
+  <p><strong>
+
+正确答案: B. `reactive` 返回的是一个响应式的代理对象，适用于对象和数组。 解释：`reactive` 用于创建响应式的代理对象，适合包裹对象和数组，而 `ref` 可包裹基本类型和对象，但访问对象时仍需通过 `.value`。选项 A 错误，因为 `ref` 可以包裹对象和数组。选项 C 错误，访问 `ref` 包裹的对象仍需 `.value`。选项 D 错误，解构 `reactive` 响应式对象会丢失响应性。</strong></p>
 </details>
 
 **问题 2:**
@@ -1818,7 +1948,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在 Vue 3 中，`ref` 和 `reactive` 都用于创建响应式数据，但适用场景和原理有所不同。
+  <p><strong>
+
+正确答案: 在 Vue 3 中，`ref` 和 `reactive` 都用于创建响应式数据，但适用场景和原理有所不同。
 
 1. 使用 `ref`：
    - 适用于基本类型数据（如字符串、数字）或需要包装的单一数据。
@@ -1858,7 +1990,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 组合函数可以封装状态和逻辑，并通过返回对象的方式暴露给使用者。组合函数的核心就是封装可复用的状态和逻辑，并通过返回值提供给组件或其他组合函数使用，这是 Composition API 设计的初衷和最佳实践。</strong></p>
+  <p><strong>
+
+正确答案: C. 组合函数可以封装状态和逻辑，并通过返回对象的方式暴露给使用者。组合函数的核心就是封装可复用的状态和逻辑，并通过返回值提供给组件或其他组合函数使用，这是 Composition API 设计的初衷和最佳实践。</strong></p>
 </details>
 
 **问题 2:**
@@ -1867,7 +2001,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 你可以为表单输入状态和验证逻辑创建一个组合函数，如 `useForm`，该函数内部管理表单字段的响应式状态和验证方法，并返回这些状态和操作方法。多个不同的表单组件通过调用 `useForm` 来复用这套逻辑，而无需重复代码。
+  <p><strong>
+
+正确答案: 你可以为表单输入状态和验证逻辑创建一个组合函数，如 `useForm`，该函数内部管理表单字段的响应式状态和验证方法，并返回这些状态和操作方法。多个不同的表单组件通过调用 `useForm` 来复用这套逻辑，而无需重复代码。
 
 例如，针对登录和注册表单都需要管理用户名、密码及其验证，可以定义一个 `useForm` 组合函数来统一处理输入数据和验证规则，不同表单组件调用该函数并根据需求调整验证规则。
 
@@ -1902,7 +2038,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C</strong></p>
+  <p><strong>
+
+正确答案: C</strong></p>
 </details>
 
 **问题 2:**
@@ -1913,7 +2051,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计思路：
+  <p><strong>
+
+正确答案: 设计思路：
 
 1. 将商品筛选相关的状态（如筛选条件、筛选结果）和逻辑封装到一个自定义组合函数中。
 2. 该组合函数内部使用 `ref` 或 `reactive` 来管理状态，并提供更新筛选条件的方法。
@@ -1973,7 +2113,9 @@ export function useProductFilter(products) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. Composition API 通过函数组合逻辑，能够更灵活地复用代码，而 Options API 的逻辑复用通常依赖 mixins 或 extends。 解析：Composition API 的设计初衷是通过组合函数来组织和复用逻辑，使得代码更灵活和可维护。而 Options API 主要通过定义不同选项（如 data、methods、computed）来组织代码，逻辑复用通常依赖于 mixins 或 extends，这些方式存在命名冲突和代码难以追踪的问题。</strong></p>
+  <p><strong>
+
+正确答案: C. Composition API 通过函数组合逻辑，能够更灵活地复用代码，而 Options API 的逻辑复用通常依赖 mixins 或 extends。 解析：Composition API 的设计初衷是通过组合函数来组织和复用逻辑，使得代码更灵活和可维护。而 Options API 主要通过定义不同选项（如 data、methods、computed）来组织代码，逻辑复用通常依赖于 mixins 或 extends，这些方式存在命名冲突和代码难以追踪的问题。</strong></p>
 </details>
 
 **问题 2:**
@@ -1982,7 +2124,9 @@ export function useProductFilter(products) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Composition API 相较于 Options API 的主要优势包括：
+  <p><strong>
+
+正确答案: Composition API 相较于 Options API 的主要优势包括：
 
 1. 逻辑复用性更高：Composition API 允许将组件逻辑抽取成可复用的函数（composables），在多个组件间共享，提高代码复用率。
 2. 代码组织更灵活：通过 setup 函数，相关逻辑可以按功能组织在一起，而不是分散在 data、methods、computed 等不同选项中，增强代码可读性和维护性。
@@ -2012,7 +2156,9 @@ export function useProductFilter(products) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B。高级组合函数设计中，封装内部状态并通过参数和返回接口暴露必要功能，可以增强复用性和维护性，避免外部直接操作内部状态带来的副作用。A 选项暴露所有状态，可能导致状态被任意修改，降低封装性；C 选项将副作用完全放外部，不符合组合函数封装副作用的初衷；D 选项直接依赖全局状态管理，降低组合函数的通用性和独立性。</strong></p>
+  <p><strong>
+
+正确答案: B。高级组合函数设计中，封装内部状态并通过参数和返回接口暴露必要功能，可以增强复用性和维护性，避免外部直接操作内部状态带来的副作用。A 选项暴露所有状态，可能导致状态被任意修改，降低封装性；C 选项将副作用完全放外部，不符合组合函数封装副作用的初衷；D 选项直接依赖全局状态管理，降低组合函数的通用性和独立性。</strong></p>
 </details>
 
 **问题 2:**
@@ -2027,7 +2173,9 @@ export function useProductFilter(products) {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计这样一个高级组合函数时，可以考虑以下几点：
+  <p><strong>
+
+正确答案: 设计这样一个高级组合函数时，可以考虑以下几点：
 
 1. 使用响应式数据结构管理字段及其验证规则，比如用一个 `reactive` 对象维护字段状态和验证规则。
 
@@ -2117,7 +2265,9 @@ export function useDynamicFormValidation() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. `reactive` 通过使用 JavaScript 的 `Proxy` 对目标对象进行包裹，实现对对象属性的拦截和依赖收集。  
+  <p><strong>
+
+正确答案: A. `reactive` 通过使用 JavaScript 的 `Proxy` 对目标对象进行包裹，实现对对象属性的拦截和依赖收集。  
 解析：Vue 3 的 Composition API 中，`reactive` 的核心是利用原生的 `Proxy` 对目标对象进行代理，这样可以拦截对对象属性的读取和修改，从而实现依赖收集和响应式更新。选项 B 描述的是 Vue 2 时代的响应式实现方式，选项 C 错误地将 Vue 3 的实现与 Vue 2 混淆，选项 D 不符合 `reactive` 的源码设计机制。</strong></p>
 </details>
 
@@ -2127,7 +2277,9 @@ export function useDynamicFormValidation() {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. reactive 的底层实现：
+  <p><strong>
+
+正确答案: 1. reactive 的底层实现：
 - reactive 通过使用 ES6 的 Proxy 对目标对象进行代理，拦截对对象的读取（get）和修改（set）操作。
 - 在 get 拦截中，会进行依赖收集，即将当前激活的副作用函数（effect）注册到对应属性的依赖列表中。
 - 在 set 拦截中，会触发依赖列表中的所有副作用函数，进行重新执行。
@@ -2177,7 +2329,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 通过比较新旧虚拟DOM树的差异，只更新变化的部分，减少真实DOM的操作。虚拟DOM的核心原理是通过diff算法对比新旧虚拟DOM树，精确定位变化的节点，从而只对真实DOM做必要的更新，避免了频繁且性能开销大的直接DOM操作，提升渲染效率。</strong></p>
+  <p><strong>
+
+正确答案: B. 通过比较新旧虚拟DOM树的差异，只更新变化的部分，减少真实DOM的操作。虚拟DOM的核心原理是通过diff算法对比新旧虚拟DOM树，精确定位变化的节点，从而只对真实DOM做必要的更新，避免了频繁且性能开销大的直接DOM操作，提升渲染效率。</strong></p>
 </details>
 
 **问题 2:**
@@ -2186,7 +2340,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 虚拟DOM是对真实DOM的一层抽象表示，当商品库存和价格频繁变化时，Vue会先在内存中创建一棵虚拟DOM树，描述当前UI状态。每次数据更新时，Vue会生成新的虚拟DOM树，并与旧的虚拟DOM树进行比较（称为diff算法），找出最小的差异。然后，只将这些差异部分应用到真实DOM中。这样避免了对整个DOM的重新渲染，减少了DOM操作的开销，从而提升了页面渲染性能。虚拟DOM通过批量更新和最小化DOM操作，保证了页面在频繁数据更新时的流畅和高效。</strong></p>
+  <p><strong>
+
+正确答案: 虚拟DOM是对真实DOM的一层抽象表示，当商品库存和价格频繁变化时，Vue会先在内存中创建一棵虚拟DOM树，描述当前UI状态。每次数据更新时，Vue会生成新的虚拟DOM树，并与旧的虚拟DOM树进行比较（称为diff算法），找出最小的差异。然后，只将这些差异部分应用到真实DOM中。这样避免了对整个DOM的重新渲染，减少了DOM操作的开销，从而提升了页面渲染性能。虚拟DOM通过批量更新和最小化DOM操作，保证了页面在频繁数据更新时的流畅和高效。</strong></p>
 </details>
 
 ---
@@ -2210,7 +2366,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Vue 采用双端比较策略，从头尾同时开始比较新旧虚拟 DOM，减少了不必要的节点比对，提高了性能。——Vue 的 Diff 算法利用双端比较（从头尾同时比较）策略，避免了全量对比，降低了时间复杂度，从而优化了渲染性能。选项 A 的描述有误，算法不是直接替换不同节点而是尽量重用节点。选项 C 错误，因为 Diff 是基于虚拟 DOM 比较，而非真实 DOM。选项 D 是无关描述，渲染时间记录并非 Diff 算法的优化手段。</strong></p>
+  <p><strong>
+
+正确答案: B. Vue 采用双端比较策略，从头尾同时开始比较新旧虚拟 DOM，减少了不必要的节点比对，提高了性能。——Vue 的 Diff 算法利用双端比较（从头尾同时比较）策略，避免了全量对比，降低了时间复杂度，从而优化了渲染性能。选项 A 的描述有误，算法不是直接替换不同节点而是尽量重用节点。选项 C 错误，因为 Diff 是基于虚拟 DOM 比较，而非真实 DOM。选项 D 是无关描述，渲染时间记录并非 Diff 算法的优化手段。</strong></p>
 </details>
 
 **问题 2:**
@@ -2219,7 +2377,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Vue的渲染机制基于虚拟DOM和响应式系统，当数据变化时，Vue会重新渲染组件生成新的虚拟DOM树，然后通过Diff算法比较新旧虚拟DOM，计算出最小的DOM更新操作，最终更新实际DOM。性能瓶颈可能出现在：
+  <p><strong>
+
+正确答案: Vue的渲染机制基于虚拟DOM和响应式系统，当数据变化时，Vue会重新渲染组件生成新的虚拟DOM树，然后通过Diff算法比较新旧虚拟DOM，计算出最小的DOM更新操作，最终更新实际DOM。性能瓶颈可能出现在：
 
 1. 频繁且大规模的数据变化导致Diff算法比较开销大，尤其是在列表项较多时。
 2. Diff算法默认是基于同层节点的比较，当key未合理设置时，会导致不必要的DOM元素重建。
@@ -2252,7 +2412,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. Vue Devtools 的 Performance 面板，通过记录组件的渲染时间来定位性能问题。——Vue Devtools 的 Performance 面板能够详细记录 Vue 组件的渲染时长和更新过程，帮助开发者精准定位渲染性能瓶颈，是性能监控与分析中最直接有效的工具。选项 B 的 Network 面板虽能监控接口性能，但不直接反映组件渲染性能；选项 C 的 Lighthouse 主要评估网页整体表现和 SEO，而非细粒度组件渲染；选项 D 的导航守卫用于路由控制，不能直接用于性能监控。</strong></p>
+  <p><strong>
+
+正确答案: A. Vue Devtools 的 Performance 面板，通过记录组件的渲染时间来定位性能问题。——Vue Devtools 的 Performance 面板能够详细记录 Vue 组件的渲染时长和更新过程，帮助开发者精准定位渲染性能瓶颈，是性能监控与分析中最直接有效的工具。选项 B 的 Network 面板虽能监控接口性能，但不直接反映组件渲染性能；选项 C 的 Lighthouse 主要评估网页整体表现和 SEO，而非细粒度组件渲染；选项 D 的导航守卫用于路由控制，不能直接用于性能监控。</strong></p>
 </details>
 
 **问题 2:**
@@ -2261,7 +2423,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Vue电商平台中遇到页面加载速度慢的问题时，可以选择以下性能监控与分析工具：
+  <p><strong>
+
+正确答案: 在Vue电商平台中遇到页面加载速度慢的问题时，可以选择以下性能监控与分析工具：
 
 1. Chrome DevTools Performance面板：用于录制页面加载和交互的性能数据，分析时间线上的各个阶段（如DOM解析、资源加载、JS执行等），帮助定位耗时操作。
 
@@ -2298,7 +2462,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用Vue的异步组件语法，结合Webpack的代码拆分功能，确保组件仅在需要时加载。 解析：选项A描述了正确的异步组件懒加载方式，通过动态导入实现代码拆分，只有在组件真正被渲染时才加载对应代码，从而有效减少初始包大小，提升页面加载性能。选项B错误地在入口文件预加载异步组件，违背懒加载原则。选项C虽使用异步组件，但同步加载大量子组件，会增加初始渲染负担。选项D全局注册异步组件导致所有组件初始化时加载，失去懒加载的意义。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用Vue的异步组件语法，结合Webpack的代码拆分功能，确保组件仅在需要时加载。 解析：选项A描述了正确的异步组件懒加载方式，通过动态导入实现代码拆分，只有在组件真正被渲染时才加载对应代码，从而有效减少初始包大小，提升页面加载性能。选项B错误地在入口文件预加载异步组件，违背懒加载原则。选项C虽使用异步组件，但同步加载大量子组件，会增加初始渲染负担。选项D全局注册异步组件导致所有组件初始化时加载，失去懒加载的意义。</strong></p>
 </details>
 
 **问题 2:**
@@ -2315,7 +2481,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 异步组件的实现方式及原理：
+  <p><strong>
+
+正确答案: 1. 异步组件的实现方式及原理：
    Vue 允许通过动态 import 语法配合 defineAsyncComponent 或直接使用异步函数来定义组件，这样组件代码会被拆分成单独的块（chunk），只有在真正需要渲染时才会加载该代码块，从而减少初始包体积。
 
 2. 路由懒加载实现：
@@ -2363,7 +2531,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -2372,7 +2542,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 可能导致 SSR 性能瓶颈的原因包括：
+  <p><strong>
+
+正确答案: 可能导致 SSR 性能瓶颈的原因包括：
 
 1. **数据获取延迟**：服务端在渲染页面前需要获取大量异步数据，尤其是接口响应慢或调用次数多，会阻塞渲染流程。
 2. **服务端渲染计算量大**：复杂组件和大量节点的渲染增加 CPU 负载，导致响应变慢。
@@ -2420,7 +2592,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 修改响应式系统中依赖收集的触发条件，使得只有真正依赖变化的组件才会更新。——这是深度源码调优中关键的性能优化点，依赖收集准确可以最大程度避免无效的组件重新渲染，提升整体性能。B 项关闭静态节点标记反而会增加渲染成本，C 项对微任务队列的实现影响有限，D 项强制调用 $forceUpdate 会导致性能下降。</strong></p>
+  <p><strong>
+
+正确答案: A. 修改响应式系统中依赖收集的触发条件，使得只有真正依赖变化的组件才会更新。——这是深度源码调优中关键的性能优化点，依赖收集准确可以最大程度避免无效的组件重新渲染，提升整体性能。B 项关闭静态节点标记反而会增加渲染成本，C 项对微任务队列的实现影响有限，D 项强制调用 $forceUpdate 会导致性能下降。</strong></p>
 </details>
 
 **问题 2:**
@@ -2429,7 +2603,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 定位问题：
+  <p><strong>
+
+正确答案: 1. 定位问题：
 - 利用 Vue 的性能分析工具（如 Vue Devtools 的性能面板）观察哪些组件更新频繁和耗时。
 - 结合源码，重点关注响应式系统中依赖收集（track）和触发更新（trigger）相关代码。
 
@@ -2480,7 +2656,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. SSR 通过在服务器上预先渲染完整的 HTML，提升首屏加载速度和 SEO 友好性。——这是 SSR 的核心优势，服务器预渲染 HTML 可以加快页面首屏展示速度并且对搜索引擎更友好。选项 B 错误，因为 SSR 是服务器执行渲染，而不仅仅是客户端执行 JavaScript；选项 C 错误，SSR 支持动态数据渲染；选项 D 错误，SSR 渲染完成后页面仍然可以响应用户交互。</strong></p>
+  <p><strong>
+
+正确答案: A. SSR 通过在服务器上预先渲染完整的 HTML，提升首屏加载速度和 SEO 友好性。——这是 SSR 的核心优势，服务器预渲染 HTML 可以加快页面首屏展示速度并且对搜索引擎更友好。选项 B 错误，因为 SSR 是服务器执行渲染，而不仅仅是客户端执行 JavaScript；选项 C 错误，SSR 支持动态数据渲染；选项 D 错误，SSR 渲染完成后页面仍然可以响应用户交互。</strong></p>
 </details>
 
 **问题 2:**
@@ -2489,7 +2667,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Vue的服务端渲染（SSR）是指在服务器端将Vue组件渲染成HTML字符串，然后将完整的HTML页面发送到客户端，浏览器直接展示内容。这样用户可以更快看到页面内容，减少首屏加载时间。\n\nSSR提升首屏体验的原因是服务器提前生成了页面内容，用户无需等待JavaScript加载和执行完成后才看到页面。\n\n相比之下，传统的客户端渲染（CSR）是在客户端浏览器加载空白的HTML骨架，依赖JavaScript下载、解析和执行后，才渲染出页面内容，导致首屏加载时间较长。\n\n总结：SSR通过服务器预渲染页面，提升首屏速度和SEO友好性；CSR则依赖客户端渲染，首屏体验相对较慢。</strong></p>
+  <p><strong>
+
+正确答案: Vue的服务端渲染（SSR）是指在服务器端将Vue组件渲染成HTML字符串，然后将完整的HTML页面发送到客户端，浏览器直接展示内容。这样用户可以更快看到页面内容，减少首屏加载时间。SSR提升首屏体验的原因是服务器提前生成了页面内容，用户无需等待JavaScript加载和执行完成后才看到页面。相比之下，传统的客户端渲染（CSR）是在客户端浏览器加载空白的HTML骨架，依赖JavaScript下载、解析和执行后，才渲染出页面内容，导致首屏加载时间较长。总结：SSR通过服务器预渲染页面，提升首屏速度和SEO友好性；CSR则依赖客户端渲染，首屏体验相对较慢。</strong></p>
 </details>
 
 ---
@@ -2513,7 +2693,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在页面组件的 asyncData() 方法中获取异步数据。 解释：在 Nuxt.js 的 SSR 环境中，asyncData() 是专门用来在服务器端渲染之前获取异步数据的钩子，返回的数据会合并到组件的 data 中，确保页面在服务端渲染时就已经准备好数据。mounted() 和 created() 钩子只在客户端执行，无法在 SSR 阶段获取数据。fetch() 方法可以用于异步数据获取，但它不返回数据，而是直接修改组件状态，且通常适用于客户端和服务端。</strong></p>
+  <p><strong>
+
+正确答案: B. 在页面组件的 asyncData() 方法中获取异步数据。 解释：在 Nuxt.js 的 SSR 环境中，asyncData() 是专门用来在服务器端渲染之前获取异步数据的钩子，返回的数据会合并到组件的 data 中，确保页面在服务端渲染时就已经准备好数据。mounted() 和 created() 钩子只在客户端执行，无法在 SSR 阶段获取数据。fetch() 方法可以用于异步数据获取，但它不返回数据，而是直接修改组件状态，且通常适用于客户端和服务端。</strong></p>
 </details>
 
 **问题 2:**
@@ -2522,7 +2704,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 在Nuxt.js中，可以使用`asyncData`或者`fetch`方法来在服务端渲染期间获取数据。具体来说：
+  <p><strong>
+
+正确答案: 在Nuxt.js中，可以使用`asyncData`或者`fetch`方法来在服务端渲染期间获取数据。具体来说：
 
 1. 使用`asyncData(context)`方法，它会在页面组件渲染之前调用，支持异步操作，如调用API获取商品列表数据。该方法返回的数据会合并到组件的`data`中。
 
@@ -2557,7 +2741,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 服务端在渲染时预取数据并将状态注入到页面中，客户端在挂载时复用该状态以避免重复请求。 解释：在 Vue SSR 的数据预取与状态同步中，服务端负责在渲染前预取所需数据，并将这些数据状态注入到 HTML 中（通常通过 window.__INITIAL_STATE__），客户端在挂载时复用该状态，避免了重复请求和闪烁，提升性能与用户体验。选项 A 忽略了 SSR 的数据预取优势，选项 C 不符合 SSR 设计，选项 D 会导致状态不一致和重复请求。</strong></p>
+  <p><strong>
+
+正确答案: B. 服务端在渲染时预取数据并将状态注入到页面中，客户端在挂载时复用该状态以避免重复请求。 解释：在 Vue SSR 的数据预取与状态同步中，服务端负责在渲染前预取所需数据，并将这些数据状态注入到 HTML 中（通常通过 window.__INITIAL_STATE__），客户端在挂载时复用该状态，避免了重复请求和闪烁，提升性能与用户体验。选项 A 忽略了 SSR 的数据预取优势，选项 C 不符合 SSR 设计，选项 D 会导致状态不一致和重复请求。</strong></p>
 </details>
 
 **问题 2:**
@@ -2570,7 +2756,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 服务端数据预取：在Nuxt.js中，可以利用页面组件的asyncData或fetch钩子在服务端预取商品列表数据。预取的数据会被序列化并注入到服务端渲染的HTML中，通过window.__NUXT__变量传递给客户端。
+  <p><strong>
+
+正确答案: 1. 服务端数据预取：在Nuxt.js中，可以利用页面组件的asyncData或fetch钩子在服务端预取商品列表数据。预取的数据会被序列化并注入到服务端渲染的HTML中，通过window.__NUXT__变量传递给客户端。
 
 2. 客户端状态同步：客户端加载时，Nuxt.js会自动读取window.__NUXT__中的预取数据并初始化Vuex状态管理或组件内部状态，避免页面加载后再次发起相同的请求，从而实现状态同步。
 
@@ -2595,7 +2783,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 在服务器端使用内存缓存（如 LRU 缓存）结合缓存失效机制，根据数据变更主动清理缓存。因为 Vue SSR 的核心是服务端生成 HTML，合理的内存缓存策略可以显著提升响应速度，且通过主动缓存失效保证数据更新后页面内容的及时刷新。A 选项依赖浏览器缓存不适合 SSR 页面的频繁动态更新；C 选项放弃服务端缓存会降低性能；D 选项禁用服务端缓存会导致每次请求都需重新渲染，增加服务器负担。</strong></p>
+  <p><strong>
+
+正确答案: B. 在服务器端使用内存缓存（如 LRU 缓存）结合缓存失效机制，根据数据变更主动清理缓存。因为 Vue SSR 的核心是服务端生成 HTML，合理的内存缓存策略可以显著提升响应速度，且通过主动缓存失效保证数据更新后页面内容的及时刷新。A 选项依赖浏览器缓存不适合 SSR 页面的频繁动态更新；C 选项放弃服务端缓存会降低性能；D 选项禁用服务端缓存会导致每次请求都需重新渲染，增加服务器负担。</strong></p>
 </details>
 
 **问题 2:**
@@ -2604,7 +2794,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 缓存粒度：
+  <p><strong>
+
+正确答案: 1. 缓存粒度：
    - 对首页整体 HTML 进行缓存，避免每次请求都进行完整的 SSR 渲染。
    - 结合用户身份或请求参数，区分不同缓存版本（例如登录状态、地区差异等）。
 
@@ -2644,7 +2836,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用代码分割和懒加载结合缓存机制，减少服务端渲染的负载，同时对用户输入进行严格的转义，防止 XSS 攻击。 解释：选项 B 综合考虑了性能优化和安全性。代码分割和懒加载减少了服务端渲染的负担，提高响应速度，而严格转义用户输入是防止 SSR 过程中 XSS 攻击的关键。选项 A 依赖客户端防护存在风险，选项 C 禁用缓存会严重影响性能，选项 D 延迟加载所有数据不符合 SSR 的初衷，并不能有效防止数据泄露。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用代码分割和懒加载结合缓存机制，减少服务端渲染的负载，同时对用户输入进行严格的转义，防止 XSS 攻击。 解释：选项 B 综合考虑了性能优化和安全性。代码分割和懒加载减少了服务端渲染的负担，提高响应速度，而严格转义用户输入是防止 SSR 过程中 XSS 攻击的关键。选项 A 依赖客户端防护存在风险，选项 C 禁用缓存会严重影响性能，选项 D 延迟加载所有数据不符合 SSR 的初衷，并不能有效防止数据泄露。</strong></p>
 </details>
 
 **问题 2:**
@@ -2653,7 +2847,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. SSR 安全性优化：
+  <p><strong>
+
+正确答案: 1. SSR 安全性优化：
 - 防止 XSS 攻击：严格使用 Vue 的模板语法自动转义，避免直接使用 v-html 插入未经处理的内容，必要时对用户输入进行过滤和清洗。
 - 防止 SSR 注入攻击：避免在服务端直接拼接用户输入生成 HTML，使用安全的模板引擎和渲染方法。
 - 隐私数据保护：避免在服务端渲染时泄漏用户敏感信息，确保不同用户的数据隔离，采用合适的身份验证和授权机制。
@@ -2690,7 +2886,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C</strong></p>
+  <p><strong>
+
+正确答案: C</strong></p>
 </details>
 
 **问题 2:**
@@ -2699,7 +2897,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: Vue SSR 的核心流程主要包括以下几个步骤：
+  <p><strong>
+
+正确答案: Vue SSR 的核心流程主要包括以下几个步骤：
 
 1. **创建 Vue 实例**：在服务端通过 `createApp` 函数创建一个新的 Vue 应用实例，其中包含路由和状态管理。
 
@@ -2754,7 +2954,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. Vue Devtools 允许你查看组件树、检查和修改组件的状态，以及时间旅行调试 Vuex 状态。 解析：Vue Devtools 是 Vue 官方提供的调试工具，它支持查看组件树结构，检查和修改组件的状态（data、props），同时支持 Vuex 状态管理的时间旅行调试功能。A 选项错误，因为 Devtools 不会直接修改源文件，只是在运行时修改状态；B 选项错误，Vue Devtools 也能辅助调试路由状态；D 选项不完全正确，虽然生产模式下功能受限，但仍能在一定程度上使用。</strong></p>
+  <p><strong>
+
+正确答案: C. Vue Devtools 允许你查看组件树、检查和修改组件的状态，以及时间旅行调试 Vuex 状态。 解析：Vue Devtools 是 Vue 官方提供的调试工具，它支持查看组件树结构，检查和修改组件的状态（data、props），同时支持 Vuex 状态管理的时间旅行调试功能。A 选项错误，因为 Devtools 不会直接修改源文件，只是在运行时修改状态；B 选项错误，Vue Devtools 也能辅助调试路由状态；D 选项不完全正确，虽然生产模式下功能受限，但仍能在一定程度上使用。</strong></p>
 </details>
 
 **问题 2:**
@@ -2763,7 +2965,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 当遇到组件状态更新异常且 UI 没有按预期刷新的问题时，可以使用 Vue Devtools 的以下功能进行排查：
+  <p><strong>
+
+正确答案: 当遇到组件状态更新异常且 UI 没有按预期刷新的问题时，可以使用 Vue Devtools 的以下功能进行排查：
 
 1. 组件树（Component Tree）查看当前组件的状态和层级关系，确认更新的组件是否正确渲染。
 2. 状态检查（State Inspection）查看相关组件的 props 和 data，确认数据是否已经发生变化。
@@ -2792,7 +2996,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 `shallowMount` 来挂载组件，它会自动替换所有子组件为占位符。 解析：`shallowMount` 是 Vue Test Utils 提供的用于浅渲染组件的方法，它会自动用占位符替换子组件，从而避免对子组件的实际实现进行渲染，帮助测试者专注于父组件的逻辑。选项 B 需要手动 mock，复杂且不够优雅；选项 C 创建本地 Vue 实例主要用于插件安装等场景，不直接用于替换子组件；选项 D 的 `moduleNameMapper` 是 Jest 的模块映射功能，通常用于替换第三方模块，而非 Vue 组件的子组件替换，且操作复杂。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 `shallowMount` 来挂载组件，它会自动替换所有子组件为占位符。 解析：`shallowMount` 是 Vue Test Utils 提供的用于浅渲染组件的方法，它会自动用占位符替换子组件，从而避免对子组件的实际实现进行渲染，帮助测试者专注于父组件的逻辑。选项 B 需要手动 mock，复杂且不够优雅；选项 C 创建本地 Vue 实例主要用于插件安装等场景，不直接用于替换子组件；选项 D 的 `moduleNameMapper` 是 Jest 的模块映射功能，通常用于替换第三方模块，而非 Vue 组件的子组件替换，且操作复杂。</strong></p>
 </details>
 
 **问题 2:**
@@ -2801,7 +3007,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 引入必要的测试库和组件，例如：import { mount } from '@vue/test-utils' 和计数器组件。
+  <p><strong>
+
+正确答案: 1. 引入必要的测试库和组件，例如：import { mount } from '@vue/test-utils' 和计数器组件。
 2. 使用mount函数挂载组件，生成一个wrapper实例。
 3. 通过wrapper找到按钮元素，例如使用wrapper.find('button')。
 4. 模拟点击事件，如调用button.trigger('click')。
@@ -2835,7 +3043,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在每个测试用例（it 块）中使用 cy.visit() 重新加载页面，确保每个测试用例独立执行。这是 Cypress 推荐的最佳实践，可以保证每个测试用例的环境干净且一致，避免测试之间的状态污染，提升测试的稳定性和可靠性。</strong></p>
+  <p><strong>
+
+正确答案: A. 在每个测试用例（it 块）中使用 cy.visit() 重新加载页面，确保每个测试用例独立执行。这是 Cypress 推荐的最佳实践，可以保证每个测试用例的环境干净且一致，避免测试之间的状态污染，提升测试的稳定性和可靠性。</strong></p>
 </details>
 
 **问题 2:**
@@ -2844,7 +3054,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 对于用户登录的测试用例，你需要模拟用户输入用户名和密码，点击登录按钮，然后断言页面是否跳转到用户主页或显示登录成功的信息。对于添加商品到购物车的测试用例，首先需要访问商品列表页，选择一个商品，点击“添加到购物车”，然后断言购物车中商品数量是否正确更新。
+  <p><strong>
+
+正确答案: 对于用户登录的测试用例，你需要模拟用户输入用户名和密码，点击登录按钮，然后断言页面是否跳转到用户主页或显示登录成功的信息。对于添加商品到购物车的测试用例，首先需要访问商品列表页，选择一个商品，点击“添加到购物车”，然后断言购物车中商品数量是否正确更新。
 
 在处理异步加载的数据和页面状态时，Cypress提供了自动等待机制，但你仍需要合理使用`cy.wait()`、`cy.intercept()`等命令来确保请求完成后再进行断言。例如，可以使用`cy.intercept()`监听相关的API请求，等待请求完成后再检查页面元素的状态。此外，利用`cy.get()`配合适当的超时时间和条件断言，可以避免因元素未及时渲染导致的测试不稳定。
 
@@ -2872,7 +3084,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B</strong></p>
+  <p><strong>
+
+正确答案: B</strong></p>
 </details>
 
 **问题 2:**
@@ -2881,7 +3095,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，针对测试覆盖率较低的问题，应该通过分析覆盖率报告定位未覆盖或覆盖不足的关键组件和业务逻辑，编写针对性的单元测试和集成测试，尤其是复杂业务场景下的边界条件和异常处理，确保核心功能的可靠性。其次，针对性能表现不佳的问题，可以使用浏览器性能分析工具（如Chrome DevTools Performance面板）和Vue性能工具（如Vue Devtools Performance标签）进行性能瓶颈定位，关注组件渲染时间、数据响应时间及不必要的重渲染。优化措施包括合理使用Vue的异步组件、避免不必要的计算属性和侦听器开销、以及利用懒加载和代码拆分减少首屏加载压力。平衡测试覆盖率与性能优化的关系时，要避免过度测试导致测试用例冗余和执行时间过长，影响开发效率和持续集成速度。因此，应优先保证关键路径和高风险代码的测试覆盖，同时引入性能测试作为回归测试的一部分，确保性能指标达标。最终通过持续监控和迭代，提升测试质量和性能表现。</strong></p>
+  <p><strong>
+
+正确答案: 首先，针对测试覆盖率较低的问题，应该通过分析覆盖率报告定位未覆盖或覆盖不足的关键组件和业务逻辑，编写针对性的单元测试和集成测试，尤其是复杂业务场景下的边界条件和异常处理，确保核心功能的可靠性。其次，针对性能表现不佳的问题，可以使用浏览器性能分析工具（如Chrome DevTools Performance面板）和Vue性能工具（如Vue Devtools Performance标签）进行性能瓶颈定位，关注组件渲染时间、数据响应时间及不必要的重渲染。优化措施包括合理使用Vue的异步组件、避免不必要的计算属性和侦听器开销、以及利用懒加载和代码拆分减少首屏加载压力。平衡测试覆盖率与性能优化的关系时，要避免过度测试导致测试用例冗余和执行时间过长，影响开发效率和持续集成速度。因此，应优先保证关键路径和高风险代码的测试覆盖，同时引入性能测试作为回归测试的一部分，确保性能指标达标。最终通过持续监控和迭代，提升测试质量和性能表现。</strong></p>
 </details>
 
 ---
@@ -2902,7 +3118,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 利用浏览器的断点调试功能，结合 Vue 的响应式系统源码，逐步跟踪数据变化链。因为 Vue 的响应式系统较为复杂，单纯打印日志难以全面捕捉数据变化链，使用断点调试可以精准地定位和跟踪响应式数据的依赖收集和触发更新过程，有助于深入理解和排查问题。</strong></p>
+  <p><strong>
+
+正确答案: C. 利用浏览器的断点调试功能，结合 Vue 的响应式系统源码，逐步跟踪数据变化链。因为 Vue 的响应式系统较为复杂，单纯打印日志难以全面捕捉数据变化链，使用断点调试可以精准地定位和跟踪响应式数据的依赖收集和触发更新过程，有助于深入理解和排查问题。</strong></p>
 </details>
 
 **问题 2:**
@@ -2911,7 +3129,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，定位响应式数据未更新的问题，可以从以下几个方面入手：
+  <p><strong>
+
+正确答案: 首先，定位响应式数据未更新的问题，可以从以下几个方面入手：
 
 1. **使用 Vue Devtools**：检查组件的响应式数据状态，确认数据是否真的发生了变化。如果数据变化了但视图未刷新，说明可能是响应式系统未正确触发更新。
 
@@ -2950,7 +3170,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 $t 方法，例如：{{ $t('message.hello') }}。vue-i18n 提供的 $t 方法是模板中获取翻译文本的标准方法，其他选项中的 $i18n 和 $translate 并非 vue-i18n 的正式方法，直接访问 i18n 对象也不是推荐用法。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 $t 方法，例如：{{ $t('message.hello') }}。vue-i18n 提供的 $t 方法是模板中获取翻译文本的标准方法，其他选项中的 $i18n 和 $translate 并非 vue-i18n 的正式方法，直接访问 i18n 对象也不是推荐用法。</strong></p>
 </details>
 
 **问题 2:**
@@ -2965,7 +3187,9 @@ reactive 和 effect 是 Composition API 响应式系统的核心。reactive 负�
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 配置vue-i18n实例：
+  <p><strong>
+
+正确答案: 1. 配置vue-i18n实例：
 
 ```js
 import { createI18n } from 'vue-i18n';
@@ -3030,7 +3254,9 @@ methods: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 通过修改 Vue I18n 实例的 locale 属性，实时更新当前语言，无需刷新页面。 -- 这是 Vue I18n 推荐的动态语言切换方式。修改 locale 属性可以即时影响所有使用 i18n 的组件，从而实现无刷新语言切换。选项 A 错误，因为浏览器语言设置不应被应用直接修改；选项 C 不优雅且用户体验差；选项 D 逻辑不合理且容易导致性能问题。</strong></p>
+  <p><strong>
+
+正确答案: B. 通过修改 Vue I18n 实例的 locale 属性，实时更新当前语言，无需刷新页面。 -- 这是 Vue I18n 推荐的动态语言切换方式。修改 locale 属性可以即时影响所有使用 i18n 的组件，从而实现无刷新语言切换。选项 A 错误，因为浏览器语言设置不应被应用直接修改；选项 C 不优雅且用户体验差；选项 D 逻辑不合理且容易导致性能问题。</strong></p>
 </details>
 
 **问题 2:**
@@ -3041,7 +3267,9 @@ methods: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 设计与实现步骤：
+  <p><strong>
+
+正确答案: 1. 设计与实现步骤：
 - 使用 vue-i18n 插件管理多语言资源。
 - 在 Vue 应用初始化时，配置 i18n 实例，加载多语言 JSON 文件。
 - 在界面上提供语言切换的 UI（如下拉菜单或按钮）。
@@ -3074,7 +3302,9 @@ methods: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B。为每种语言创建独立的 JSON 文件，并利用懒加载按需加载对应语言资源是一种最佳实践，既保证了资源的清晰分离，便于维护，也能通过按需加载减少初始包大小，提高性能。选项A虽然简单，但大型文件会影响加载速度和维护；选项C不利于扩展和统一管理；选项D动态拼接字符串容易出错且不利于国际化规范。</strong></p>
+  <p><strong>
+
+正确答案: B。为每种语言创建独立的 JSON 文件，并利用懒加载按需加载对应语言资源是一种最佳实践，既保证了资源的清晰分离，便于维护，也能通过按需加载减少初始包大小，提高性能。选项A虽然简单，但大型文件会影响加载速度和维护；选项C不利于扩展和统一管理；选项D动态拼接字符串容易出错且不利于国际化规范。</strong></p>
 </details>
 
 **问题 2:**
@@ -3083,7 +3313,9 @@ methods: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 多语言资源管理设计：
+  <p><strong>
+
+正确答案: 1. 多语言资源管理设计：
 - 使用 Vue I18n 作为国际化插件，统一管理多语言资源。
 - 将多语言资源按照模块或页面拆分成多个 JSON 文件，例如：
   /locales/en/product.json
@@ -3123,7 +3355,9 @@ methods: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用按需加载（懒加载）方式，仅加载当前用户所需语言的翻译资源。这样可以避免一次性加载所有语言资源导致的体积过大和初始加载时间延长，是国际化性能优化的常用做法。选项A虽然避免了运行时请求，但会显著增加初始包体积；选项C的做法复杂且不利于维护；选项D虽然利用缓存，但缓存所有语言资源依然会增加初始加载压力且占用较大存储空间。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用按需加载（懒加载）方式，仅加载当前用户所需语言的翻译资源。这样可以避免一次性加载所有语言资源导致的体积过大和初始加载时间延长，是国际化性能优化的常用做法。选项A虽然避免了运行时请求，但会显著增加初始包体积；选项C的做法复杂且不利于维护；选项D虽然利用缓存，但缓存所有语言资源依然会增加初始加载压力且占用较大存储空间。</strong></p>
 </details>
 
 **问题 2:**
@@ -3132,7 +3366,9 @@ methods: {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 语言包的加载策略：采用按需加载（懒加载）语言包，而不是一次性加载所有语言资源。可以利用动态 import 来实现语言包的异步加载，减少首屏加载时间。例如：
+  <p><strong>
+
+正确答案: 1. 语言包的加载策略：采用按需加载（懒加载）语言包，而不是一次性加载所有语言资源。可以利用动态 import 来实现语言包的异步加载，减少首屏加载时间。例如：
 
 ```js
 const loadLocaleMessages = (locale) => {
@@ -3170,7 +3406,9 @@ const loadLocaleMessages = (locale) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用 v-html 指令时，确保只渲染可信的静态内容，避免直接渲染用户输入的 HTML。——因为 Vue 默认模板会自动对插值表达式进行 HTML 转义，从而防止 XSS 攻击。但使用 v-html 指令时会跳过转义，直接渲染原始 HTML，所以必须确保内容的安全性，避免渲染未经处理的用户输入内容。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用 v-html 指令时，确保只渲染可信的静态内容，避免直接渲染用户输入的 HTML。——因为 Vue 默认模板会自动对插值表达式进行 HTML 转义，从而防止 XSS 攻击。但使用 v-html 指令时会跳过转义，直接渲染原始 HTML，所以必须确保内容的安全性，避免渲染未经处理的用户输入内容。</strong></p>
 </details>
 
 **问题 2:**
@@ -3179,7 +3417,9 @@ const loadLocaleMessages = (locale) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. Vue的防护机制：Vue模板默认对绑定的变量内容进行HTML转义，防止恶意脚本注入，从而避免XSS攻击。例如，使用{{ content }}插值绑定时，内容会被自动转义。
+  <p><strong>
+
+正确答案: 1. Vue的防护机制：Vue模板默认对绑定的变量内容进行HTML转义，防止恶意脚本注入，从而避免XSS攻击。例如，使用{{ content }}插值绑定时，内容会被自动转义。
 
 2. 当用户输入包含HTML标签时，如果直接使用v-html渲染，则有XSS风险。为安全使用v-html，必须对输入内容进行严格的白名单过滤和清洗，移除恶意脚本和事件处理器。
 
@@ -3206,7 +3446,9 @@ const loadLocaleMessages = (locale) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: C. 采用双重Cookie验证机制，即在Cookie和请求体中都携带CSRF Token，服务器进行比对。因为CSRF攻击利用用户的登录状态发起伪造请求，双重Cookie验证可以确保请求来源的合法性，是目前防护CSRF的有效方式。A选项的自定义请求头并不能完全避免CSRF，B选项JWT主要用于身份验证而非CSRF防护，D选项禁用浏览器跨站请求功能不可行且会影响正常功能。</strong></p>
+  <p><strong>
+
+正确答案: C. 采用双重Cookie验证机制，即在Cookie和请求体中都携带CSRF Token，服务器进行比对。因为CSRF攻击利用用户的登录状态发起伪造请求，双重Cookie验证可以确保请求来源的合法性，是目前防护CSRF的有效方式。A选项的自定义请求头并不能完全避免CSRF，B选项JWT主要用于身份验证而非CSRF防护，D选项禁用浏览器跨站请求功能不可行且会影响正常功能。</strong></p>
 </details>
 
 **问题 2:**
@@ -3215,7 +3457,9 @@ const loadLocaleMessages = (locale) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: CSRF（跨站请求伪造）攻击是指攻击者诱使已登录的用户在不知情的情况下，向受信任的网站发送恶意请求，利用用户的身份执行未授权操作。攻击利用了浏览器自动携带Cookie的特性。\n\n在该电商平台场景中，后端通过Cookie识别用户身份，如果没有防护，攻击者可伪造请求进行购物车操作、下单等行为。\n\n防护措施：\n1. 后端生成并绑定CSRF Token（通常存放在响应中，放在Cookie或响应体）。\n2. 前端Vue应用在每次发送需要身份验证的请求时（如POST、PUT、DELETE），必须在请求头中携带该CSRF Token。\n3. 后端验证请求头中的CSRF Token与服务器端存储的一致，才允许操作。\n\n前端应配合的点：\n- 在Vue应用启动或用户登录后，从后端获取CSRF Token（例如通过响应头或接口返回）。\n- 使用axios等HTTP库时，统一将CSRF Token写入请求头（比如'X-CSRF-Token'）。\n- 确保跨域请求时，前端请求配置中开启credentials，以携带Cookie。\n\n这样结合前后端的Token验证机制，能有效防止CSRF攻击。</strong></p>
+  <p><strong>
+
+正确答案: CSRF（跨站请求伪造）攻击是指攻击者诱使已登录的用户在不知情的情况下，向受信任的网站发送恶意请求，利用用户的身份执行未授权操作。攻击利用了浏览器自动携带Cookie的特性。在该电商平台场景中，后端通过Cookie识别用户身份，如果没有防护，攻击者可伪造请求进行购物车操作、下单等行为。防护措施：1. 后端生成并绑定CSRF Token（通常存放在响应中，放在Cookie或响应体）。2. 前端Vue应用在每次发送需要身份验证的请求时（如POST、PUT、DELETE），必须在请求头中携带该CSRF Token。3. 后端验证请求头中的CSRF Token与服务器端存储的一致，才允许操作。前端应配合的点：- 在Vue应用启动或用户登录后，从后端获取CSRF Token（例如通过响应头或接口返回）。- 使用axios等HTTP库时，统一将CSRF Token写入请求头（比如'X-CSRF-Token'）。- 确保跨域请求时，前端请求配置中开启credentials，以携带Cookie。这样结合前后端的Token验证机制，能有效防止CSRF攻击。</strong></p>
 </details>
 
 ---
@@ -3236,7 +3480,9 @@ const loadLocaleMessages = (locale) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 使用非内联的外部脚本文件，并在 CSP 中指定可信任的脚本源。正确原因：内容安全策略推荐避免使用内联脚本（即不使用 `unsafe-inline`），因为内联脚本容易被注入恶意代码。更安全的做法是将脚本放在独立的文件中，并在 CSP 中明确指定可信任的脚本源，这样可以有效防止 XSS 攻击。选项 A 提供了不安全的做法，选项 C 则放弃了安全保护，选项 D 过于宽松，无法有效防止恶意资源加载。</strong></p>
+  <p><strong>
+
+正确答案: B. 使用非内联的外部脚本文件，并在 CSP 中指定可信任的脚本源。正确原因：内容安全策略推荐避免使用内联脚本（即不使用 `unsafe-inline`），因为内联脚本容易被注入恶意代码。更安全的做法是将脚本放在独立的文件中，并在 CSP 中明确指定可信任的脚本源，这样可以有效防止 XSS 攻击。选项 A 提供了不安全的做法，选项 C 则放弃了安全保护，选项 D 过于宽松，无法有效防止恶意资源加载。</strong></p>
 </details>
 
 **问题 2:**
@@ -3245,7 +3491,9 @@ const loadLocaleMessages = (locale) => {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 内容安全策略（CSP）是一种浏览器安全机制，通过限制网页允许加载的资源来源，防止恶意脚本注入和执行，从而降低跨站脚本攻击（XSS）的风险。CSP 通过在 HTTP 响应头中设置规则，规定哪些域名可以加载脚本、样式、图片等资源。
+  <p><strong>
+
+正确答案: 内容安全策略（CSP）是一种浏览器安全机制，通过限制网页允许加载的资源来源，防止恶意脚本注入和执行，从而降低跨站脚本攻击（XSS）的风险。CSP 通过在 HTTP 响应头中设置规则，规定哪些域名可以加载脚本、样式、图片等资源。
 
 在 Vue 项目中配置 CSP 需要注意：
 1. 避免使用 'unsafe-inline'，因为 Vue 的模板编译会生成内联脚本，使用该指令可能降低安全性。
@@ -3280,7 +3528,9 @@ Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.examp
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 定期使用 npm audit 或 yarn audit 工具扫描依赖漏洞，并及时升级存在安全问题的依赖。——这是最有效的依赖安全管理措施，能及时发现和修复已知漏洞。B 选项只是减少生产环境依赖但不能完全避免安全问题；C 选项手动删除依赖不系统且易遗漏；D 选项依赖自动管理并非万能，仍需定期检查。</strong></p>
+  <p><strong>
+
+正确答案: A. 定期使用 npm audit 或 yarn audit 工具扫描依赖漏洞，并及时升级存在安全问题的依赖。——这是最有效的依赖安全管理措施，能及时发现和修复已知漏洞。B 选项只是减少生产环境依赖但不能完全避免安全问题；C 选项手动删除依赖不系统且易遗漏；D 选项依赖自动管理并非万能，仍需定期检查。</strong></p>
 </details>
 
 **问题 2:**
@@ -3296,7 +3546,9 @@ Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.examp
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 识别和评估依赖库中的安全风险：
+  <p><strong>
+
+正确答案: 1. 识别和评估依赖库中的安全风险：
 - 利用自动化工具（如 npm audit、Snyk、Dependabot）扫描项目依赖，及时发现已知的安全漏洞。
 - 关注依赖库的维护状态和社区活跃度，避免使用长期不维护或无安全保障的库。
 - 评估依赖库的权限和功能，避免引入权限过大的库。
@@ -3337,7 +3589,9 @@ Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.examp
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. vue create my-project
+  <p><strong>
+
+正确答案: A. vue create my-project
 
 解释：在 Vue CLI 3 及以上版本中，使用 `vue create` 命令来创建新的 Vue 项目。`vue init` 是 Vue CLI 2 的老版本命令，且需要额外安装模板工具。`npm vue create` 和 `vue new` 都不是正确的命令。</strong></p>
 </details>
@@ -3348,7 +3602,9 @@ Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.examp
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 按需加载配置：
+  <p><strong>
+
+正确答案: 1. 按需加载配置：
    - Vue CLI 默认支持基于路由的代码分割，只需在路由配置中使用动态 import 语法即可实现按需加载。例如：
      ```javascript
      const User = () => import('@/views/User.vue')
@@ -3396,7 +3652,9 @@ Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.examp
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. Vite 通过在开发环境中使用原生 ES 模块，实现快速冷启动和即时模块热替换。 解释：Vite 利用浏览器对 ES 模块的原生支持，在开发环境中无需打包即可快速启动，并通过模块热替换（HMR）提升开发体验。它与 Webpack 和 Rollup 不同，Webpack 是传统打包工具，Rollup 用于生产环境打包，而 Vite 开发时则直接使用原生 ES 模块。</strong></p>
+  <p><strong>
+
+正确答案: B. Vite 通过在开发环境中使用原生 ES 模块，实现快速冷启动和即时模块热替换。 解释：Vite 利用浏览器对 ES 模块的原生支持，在开发环境中无需打包即可快速启动，并通过模块热替换（HMR）提升开发体验。它与 Webpack 和 Rollup 不同，Webpack 是传统打包工具，Rollup 用于生产环境打包，而 Vite 开发时则直接使用原生 ES 模块。</strong></p>
 </details>
 
 **问题 2:**
@@ -3405,7 +3663,9 @@ Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.examp
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 首先，我会检查 Vite 的构建配置，特别是针对生产环境的配置，如 `build.rollupOptions` 和 `optimizeDeps`。
+  <p><strong>
+
+正确答案: 首先，我会检查 Vite 的构建配置，特别是针对生产环境的配置，如 `build.rollupOptions` 和 `optimizeDeps`。
 
 1. **排查依赖预构建**：确认该第三方库是否被 Vite 正确处理，可能需要在 `optimizeDeps.include` 中手动添加该库以确保预构建。
 
@@ -3438,7 +3698,9 @@ Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.examp
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A。Vue 插件的标准注册方式是插件对象中必须包含一个 install 方法，然后通过 Vue.use() 来安装插件，从而全局注册插件功能。选项 B 错误，因为直接赋值给 Vue.prototype 并不能触发插件机制；选项 C 是局部使用方式，不是插件的标准注册；选项 D 错误，插件不会自动注册，需要手动调用 Vue.use()。</strong></p>
+  <p><strong>
+
+正确答案: A。Vue 插件的标准注册方式是插件对象中必须包含一个 install 方法，然后通过 Vue.use() 来安装插件，从而全局注册插件功能。选项 B 错误，因为直接赋值给 Vue.prototype 并不能触发插件机制；选项 C 是局部使用方式，不是插件的标准注册；选项 D 错误，插件不会自动注册，需要手动调用 Vue.use()。</strong></p>
 </details>
 
 **问题 2:**
@@ -3447,7 +3709,9 @@ Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.examp
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计和实现Vue插件的步骤：
+  <p><strong>
+
+正确答案: 设计和实现Vue插件的步骤：
 
 1. 插件结构设计：
    - 创建一个JavaScript对象，包含一个install方法。
@@ -3521,7 +3785,9 @@ new Vue({ ... }).$mount('#app');
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 在插件的 install 方法中，直接给 Vue.prototype 添加方法，例如 Vue.prototype.$myMethod = function() { ... }。这是 Vue 2.x 中添加全局方法的标准做法，可以让所有 Vue 实例访问该方法。选项 B 错误，因为 this 在插件上下文中不是组件实例。选项 C 误导，因为 Vue.extend 是用来创建组件而不是添加全局方法。选项 D 虽然可以添加实例方法，但会影响所有组件，不是添加全局方法的正确方式。</strong></p>
+  <p><strong>
+
+正确答案: A. 在插件的 install 方法中，直接给 Vue.prototype 添加方法，例如 Vue.prototype.$myMethod = function() { ... }。这是 Vue 2.x 中添加全局方法的标准做法，可以让所有 Vue 实例访问该方法。选项 B 错误，因为 this 在插件上下文中不是组件实例。选项 C 误导，因为 Vue.extend 是用来创建组件而不是添加全局方法。选项 D 虽然可以添加实例方法，但会影响所有组件，不是添加全局方法的正确方式。</strong></p>
 </details>
 
 **问题 2:**
@@ -3538,7 +3804,9 @@ new Vue({ ... }).$mount('#app');
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 1. 插件定义和导出：
+  <p><strong>
+
+正确答案: 1. 插件定义和导出：
 - 创建一个插件对象，包含一个 install 方法。
 - install 方法接收 app 实例和可选的配置选项。
 
@@ -3629,7 +3897,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: B. 通过 Webpack 进行模块依赖分析和打包输出。原因是，Webpack 作为构建工具的核心，负责解析源码中的模块依赖关系，将源码和相关资源打包成浏览器可运行的文件，完成构建流程的关键环节。虽然 Babel 转译（选项 A）和 ESLint 检查（选项 D）也是构建流程的一部分，但它们分别负责代码转换和代码质量控制，未直接完成打包过程；而选项 C 是代码质量管理，不属于构建流程的核心步骤。</strong></p>
+  <p><strong>
+
+正确答案: B. 通过 Webpack 进行模块依赖分析和打包输出。原因是，Webpack 作为构建工具的核心，负责解析源码中的模块依赖关系，将源码和相关资源打包成浏览器可运行的文件，完成构建流程的关键环节。虽然 Babel 转译（选项 A）和 ESLint 检查（选项 D）也是构建流程的一部分，但它们分别负责代码转换和代码质量控制，未直接完成打包过程；而选项 C 是代码质量管理，不属于构建流程的核心步骤。</strong></p>
 </details>
 
 **问题 2:**
@@ -3638,7 +3908,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 构建流程关键环节包括：
+  <p><strong>
+
+正确答案: 构建流程关键环节包括：
 
 1. 代码预处理（如 Babel 转码）
    - 作用：将现代 JavaScript 转换为浏览器兼容代码。
@@ -3689,7 +3961,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: A. 使用单一的monorepo仓库管理所有项目，利用工具如Lerna或Nx进行依赖管理和版本控制。 —— 这是目前跨项目架构治理中最有效的做法，monorepo能够统一管理代码，保证版本一致性，简化依赖关系和发布流程。选项B虽然通过npm私有包实现共享，但维护成本较高且版本协调复杂。选项C通过复制粘贴代码会导致维护难度和版本不一致。选项D使用子模块管理代码容易引起依赖复杂且不利于自动化构建和发布。</strong></p>
+  <p><strong>
+
+正确答案: A. 使用单一的monorepo仓库管理所有项目，利用工具如Lerna或Nx进行依赖管理和版本控制。 —— 这是目前跨项目架构治理中最有效的做法，monorepo能够统一管理代码，保证版本一致性，简化依赖关系和发布流程。选项B虽然通过npm私有包实现共享，但维护成本较高且版本协调复杂。选项C通过复制粘贴代码会导致维护难度和版本不一致。选项D使用子模块管理代码容易引起依赖复杂且不利于自动化构建和发布。</strong></p>
 </details>
 
 **问题 2:**
@@ -3704,7 +3978,9 @@ export default {
 
 <details>
   <summary>点击查看答案</summary>
-  <p><strong>正确答案: 设计跨项目架构与治理方案时，首先要明确目标是实现代码复用、版本管理规范和高效协作。具体方案包括：
+  <p><strong>
+
+正确答案: 设计跨项目架构与治理方案时，首先要明确目标是实现代码复用、版本管理规范和高效协作。具体方案包括：
 
 1. 组件库管理
 - 采用独立的组件库仓库，使用工具如 Lerna 或 Nx 进行多包管理，保证组件的独立开发和版本发布。
@@ -3741,173 +4017,270 @@ export default {
 ## 旧的问题列表
 
 
-- [1. Vue.js 是什么？](#1-vue-js-是什么)
-- [2. Vue.js 是否只在少数浏览器中支持？](#2-vue-js-是否只在少数浏览器中支持)
-- [3. 列举 Vue.js 的核心特性？](#3-列举-vue-js-的核心特性)
-- [4. 什么是 Vue.js 中的过滤器 (filters)？](#4-什么是-vue-js-中的过滤器-filters)
-- [5. v-for 指令的主要作用是什么？](#5-v-for-指令的主要作用是什么)
-- [6. 在 Vue.js 中如何创建 Vue 实例？](#6-在-vue-js-中如何创建-vue-实例)
-- [7. 能否在 Vue.js 中创建自定义过滤器？](#7-能否在-vue-js-中创建自定义过滤器)
-- [8. Vue.js 提供了哪些常用的内置指令？](#8-vue-js-提供了哪些常用的内置指令)
-- [9. const 关键字在 Vue.js 中的用途？](#9-const-关键字在-vue-js-中的用途)
-- [10. 什么是虚拟 DOM (Virtual DOM)？](#10-什么是虚拟-dom-virtual-dom)
-- [11. Vue.js 是否支持双向数据绑定？](#11-vue-js-是否支持双向数据绑定)
-- [12. 哪种指令用于单向数据绑定？](#12-哪种指令用于单向数据绑定)
-- [13. Vue.js 中实现双向绑定的指令是？](#13-vue-js-中实现双向绑定的指令是)
-- [14. 什么是混入 (Mixin)？](#14-什么是混入-mixin)
-- [15. Vue 3 中是否仍可使用过滤器？](#15-vue-3-中是否仍可使用过滤器)
-- [16. 过滤器在 Vue 中是否可复用？](#16-过滤器在-vue-中是否可复用)
-- [17. Vue.js 中的条件渲染指令有哪些？](#17-vue-js-中的条件渲染指令有哪些)
-- [18. 是否能在 Vue.js 中调用 REST API？](#18-是否能在-vue-js-中调用-rest-api)
-- [19. Vue.js 如何检测数组变更？](#19-vue-js-如何检测数组变更)
-- [20. 列举 Vue 的按键修饰符](#20-列举-vue-的按键修饰符)
-- [21. Vue 的事件修饰符有哪些？](#21-vue-的事件修饰符有哪些)
-- [22. v-show 和 v-if 的区别？](#22-v-show-和-v-if-的区别)
-- [23. Vue.js 的鼠标事件修饰符有哪些？](#23-vue-js-的鼠标事件修饰符有哪些)
-- [24. 什么是 $parent 属性？](#24-什么是-parent-属性)
-- [25. 什么是全局组件？](#25-什么是全局组件)
-- [26. 什么是局部组件？](#26-什么是局部组件)
-- [27. Vue 单文件组件包含哪几部分？](#27-vue-单文件组件包含哪几部分)
-- [28. $child 属性的用途](#28-child-属性的用途)
-- [29. Vue.js 的主要优势？](#29-vue-js-的主要优势)
-- [30. Vue.js 为何性能优秀？](#30-vue-js-为何性能优秀)
-- [31. 什么是 Vue-loader？](#31-什么是-vue-loader)
-- [32. 解释 Vue 的响应式系统原理？](#32-解释-vue-的响应式系统原理)
-- [33. 什么是 refs？](#33-什么是-refs)
-- [34. 如何扩展 Vue 应用功能？](#34-如何扩展-vue-应用功能)
-- [35. 哪种指令用于更新元素的文本内容？](#35-哪种指令用于更新元素的文本内容)
-- [36. 什么是 Watcher？](#36-什么是-watcher)
-- [37. 哪个指令可用于动态绑定 HTML 属性和样式？](#37-哪个指令可用于动态绑定-html-属性和样式)
-- [38. Vue Router 的作用？](#38-vue-router-的作用)
-- [39. Vue 指令有哪些类型？](#39-vue-指令有哪些类型)
-- [40. 使用混入 (Mixin) 的主要优势？](#40-使用混入-mixin-的主要优势)
-- [41. Vue 实例的生命周期钩子有哪些？](#41-vue-实例的生命周期钩子有哪些)
-- [42. 导航守卫 (Navigation Guards) 的作用？](#42-导航守卫-navigation-guards-的作用)
-- [43. 什么是即时原型开发 (Instant Prototyping)？](#43-什么是即时原型开发-instant-prototyping)
-- [44. Vue 中组件的定义？](#44-vue-中组件的定义)
-- [45. 在Vue中如何创建组件？](#45-在vue中如何创建组件)
-- [46. Vue中的Props是什么？](#46-vue中的props是什么)
-- [47. 描述Vue组件间的数据流机制](#47-描述vue组件间的数据流机制)
-- [48. 什么是Slot？](#48-什么是slot)
-- [49. 如何为Slot添加默认内容？](#49-如何为slot添加默认内容)
-- [50. Vue中的属性绑定如何实现？](#50-vue中的属性绑定如何实现)
-- [51. Vue中如何实现双向数据绑定？](#51-vue中如何实现双向数据绑定)
-- [52. 如何向指令传递多个值？](#52-如何向指令传递多个值)
-- [53. 解释普通插槽和作用域插槽的区别？](#53-解释普通插槽和作用域插槽的区别)
-- [54. v-if和v-show有何区别？](#54-v-if和v-show有何区别)
-- [55. 解释Vue响应式原理及常见变更追踪问题？](#55-解释vue响应式原理及常见变更追踪问题)
-- [56. 列举Vue应用内存泄漏的常见原因及解决方法？](#56-列举vue应用内存泄漏的常见原因及解决方法)
-- [57. 什么是虚拟DOM及其优势？](#57-什么是虚拟dom及其优势)
-- [58. Vue支持哪些Prop类型？](#58-vue支持哪些prop类型)
-- [59. 什么是非 prop 属性？](#59-什么是非-prop-属性)
-- [60. props 的验证机制有哪些类型？](#60-props-的验证机制有哪些类型)
-- [61. 如何为组件自定义 v-model 指令？](#61-如何为组件自定义-v-model-指令)
-- [62. Vue 中有哪些实现过渡效果的方法？](#62-vue-中有哪些实现过渡效果的方法)
-- [63. Vue Router 是什么及其核心特性？](#63-vue-router-是什么及其核心特性)
-- [64. 使用 Vue Router 的步骤及示例？](#64-使用-vue-router-的步骤及示例)
-- [65. 什么是动态路由匹配？](#65-什么是动态路由匹配)
-- [66. 如何使路由参数变化具有响应性？](#66-如何使路由参数变化具有响应性)
-- [67. 什么是路由匹配优先级？](#67-什么是路由匹配优先级)
-- [68. 什么是嵌套路由？](#68-什么是嵌套路由)
-- [69. 什么是单文件组件？](#69-什么是单文件组件)
-- [70. 单文件组件是否违反关注点分离原则？](#70-单文件组件是否违反关注点分离原则)
-- [71. 单文件组件解决了哪些关键问题？](#71-单文件组件解决了哪些关键问题)
-- [72. 如何进行过滤器链式调用？](#72-如何进行过滤器链式调用)
-- [73. 能否给过滤器传递参数？](#73-能否给过滤器传递参数)
-- [74. 插件及其服务是什么？](#74-插件及其服务是什么)
-- [75. 如何创建插件？](#75-如何创建插件)
-- [76. 如何使用插件？](#76-如何使用插件)
-- [77. 自定义选项合并策略是什么？](#77-自定义选项合并策略是什么)
-- [78. 什么是自定义指令？](#78-什么是自定义指令)
-- [79. 如何局部注册指令？](#79-如何局部注册指令)
-- [80. 指令提供哪些钩子函数？](#80-指令提供哪些钩子函数)
-- [81. 指令钩子的参数有哪些？](#81-指令钩子的参数有哪些)
-- [82. 如何传递多值到指令？](#82-如何传递多值到指令)
-- [83. 什么是指令钩子中的函数简写？](#83-什么是指令钩子中的函数简写)
-- [84. Render函数相比模板有什么优势？](#84-render函数相比模板有什么优势)
-- [85. 什么是Render函数？](#85-什么是render函数)
-- [86. 如何在组件中编写重复的虚拟节点？](#86-如何在组件中编写重复的虚拟节点)
-- [87. 列出Render函数中模板特性的等价实现方式？](#87-列出render函数中模板特性的等价实现方式)
-- [88. 什么是函数式组件？](#88-什么是函数式组件)
-- [89. VueJS与ReactJS有哪些相似之处？](#89-vuejs与reactjs有哪些相似之处)
-- [90. VueJS与ReactJS有何主要区别？](#90-vuejs与reactjs有何主要区别)
-- [91. Vue相比React有哪些优势？](#91-vue相比react有哪些优势)
-- [92. React相比Vue有哪些优势？](#92-react相比vue有哪些优势)
-- [93. VueJS与Angular有何主要区别？](#93-vuejs与angular有何主要区别)
-- [94. 什么是动态组件 (Dynamic Components)？](#94-什么是动态组件-dynamic-components)
-- [95. keep-alive 标签的作用是什么？](#95-keep-alive-标签的作用是什么)
-- [96. 什么是异步组件 (Async Components)？](#96-什么是异步组件-async-components)
-- [97. 异步组件工厂的结构是怎样的？](#97-异步组件工厂的结构是怎样的)
-- [98. 什么是内联模板 (Inline Templates)？](#98-什么是内联模板-inline-templates)
-- [99. 什么是 X-Templates？](#99-什么是-x-templates)
-- [100. 如何解决组件间的循环依赖？](#100-如何解决组件间的循环依赖)
-- [101. 如何确保 Vue 应用符合 CSP（内容安全策略）？](#101-如何确保-vue-应用符合-csp内容安全策略)
-- [102. 全构建 (Full) 和运行时构建 (Runtime Only) 有何区别？](#102-全构建-full-和运行时构建-runtime-only-有何区别)
-- [103. Vue.js 有哪些不同的构建版本？](#103-vue-js-有哪些不同的构建版本)
-- [104. 如何在 Webpack 中配置 Vue.js？](#104-如何在-webpack-中配置-vue-js)
-- [105. Vue.js 编译器的作用是什么？](#105-vue-js-编译器的作用是什么)
-- [106. 如何访问根实例？](#106-如何访问根实例)
-- [107. renderError 的作用是什么？](#107-rendererror-的作用是什么)
-- [108. 如何访问父组件实例？](#108-如何访问父组件实例)
-- [109. 什么是 Vuex？](#109-什么是-vuex)
-- [110. 状态管理模式的核心组件是什么？](#110-状态管理模式的核心组件是什么)
-- [111. 如何在 Vuex 中体现单向数据流？](#111-如何在-vuex-中体现单向数据流)
-- [112. 什么是 Vue Loader？](#112-什么是-vue-loader)
-- [113. 如何在 Webpack 中配置 Vue Loader？](#113-如何在-webpack-中配置-vue-loader)
-- [114. 能否为 CSS 模块使用自定义注入名称？](#114-能否为-css-模块使用自定义注入名称)
-- [115. Vue Loader 中的热重载是什么？](#115-vue-loader-中的热重载是什么)
-- [116. 热重载的默认行为是什么？](#116-热重载的默认行为是什么)
-- [117. 如何显式关闭热重载？](#117-如何显式关闭热重载)
-- [118. 如何使用热重载功能？](#118-如何使用热重载功能)
-- [119. 热重载的状态保持规则有哪些？](#119-热重载的状态保持规则有哪些)
-- [120. 如何使用 Vue Loader 创建函数式组件？](#120-如何使用-vue-loader-创建函数式组件)
-- [121. 如何在函数式组件中访问全局属性？](#121-如何在函数式组件中访问全局属性)
-- [122. Vue.js 如何进行测试？](#122-vue-js-如何进行测试)
-- [123. 如何实现 CSS 代码检查？](#123-如何实现-css-代码检查)
-- [124. 如何使用 ESLint 插件？](#124-如何使用-eslint-插件)
-- [125. ESLint Loader 的作用是什么？](#125-eslint-loader-的作用是什么)
-- [126. stylelint 有哪些特性？](#126-stylelint-有哪些特性)
-- [127. Vuex 应用结构遵循哪些原则？](#127-vuex-应用结构遵循哪些原则)
-- [128. Vuex 是否支持热重载？](#128-vuex-是否支持热重载)
-- [129. vuex store 中 hotUpdate API 的目的是什么？](#129-vuex-store-中-hotupdate-api-的目的是什么)
-- [130. 如何测试 mutations？](#130-如何测试-mutations)
-- [131. 如何测试 getters？](#131-如何测试-getters)
-- [132. 如何在 node 环境中运行测试？](#132-如何在-node-环境中运行测试)
-- [133. 如何在浏览器中运行测试？](#133-如何在浏览器中运行测试)
-- [134. vuex 严格模式的目的是什么？](#134-vuex-严格模式的目的是什么)
-- [135. 生产环境可以使用严格模式吗？](#135-生产环境可以使用严格模式吗)
-- [136. 是否需要将全部局部状态迁移到 vuex？](#136-是否需要将全部局部状态迁移到-vuex)
-- [137. vuex getters 的作用是什么？](#137-vuex-getters-的作用是什么)
-- [138. 什么是属性风格的getter访问形式？](#138-什么是属性风格的getter访问形式)
-- [139. 方法风格的getter访问有什么特点？](#139-方法风格的getter访问有什么特点)
-- [140. mapGetters辅助函数的作用是什么？](#140-mapgetters辅助函数的作用是什么)
-- [141. 如何定义Vuex的mutations？](#141-如何定义vuex的mutations)
-- [142. 如何在commit时携带payload？](#142-如何在commit时携带payload)
-- [143. 什么是对象风格的commit方式？](#143-什么是对象风格的commit方式)
-- [144. Vuex mutations使用时有哪些注意事项？](#144-vuex-mutations使用时有哪些注意事项)
-- [145. 为什么要求mutations必须是同步的？](#145-为什么要求mutations必须是同步的)
-- [146. 如何实现组件中的mutation触发？](#146-如何实现组件中的mutation触发)
-- [147. 必须使用常量定义mutation类型吗？](#147-必须使用常量定义mutation类型吗)
-- [148. 如何进行异步操作处理？](#148-如何进行异步操作处理)
-- [149. mutations和actions的核心区别是什么？](#149-mutations和actions的核心区别是什么)
-- [150. 如何实现日期时间本地化？](#150-如何实现日期时间本地化)
-- [151. 如何实现数字货币本地化？](#151-如何实现数字货币本地化)
-- [152. 如何切换应用语言？](#152-如何切换应用语言)
-- [153. 什么是翻译懒加载？](#153-什么是翻译懒加载)
-- [154. 方法和计算属性的核心区别？](#154-方法和计算属性的核心区别)
-- [155. 什么是Vuetify？](#155-什么是vuetify)
-- [156. 如何监听对象深层属性变化？](#156-如何监听对象深层属性变化)
-- [157. 如何让监听器在初始化时立即触发？](#157-如何让监听器在初始化时立即触发)
-- [158. comments 选项的作用是什么？](#158-comments-选项的作用是什么)
-- [159. 如何判断当前代码运行在客户端还是服务端？](#159-如何判断当前代码运行在客户端还是服务端)
-- [160. 什么是 Vue Router 的导航守卫？](#160-什么是-vue-router-的导航守卫)
-- [161. 是否可以在一个计算属性中使用另一个计算属性？](#161-是否可以在一个计算属性中使用另一个计算属性)
-- [162. 如何将导入的常量用于模板？](#162-如何将导入的常量用于模板)
-- [163. 是否推荐在计算属性中使用异步操作？](#163-是否推荐在计算属性中使用异步操作)
-- [164. 组合式 API 的优势有哪些？](#164-组合式-api-的优势有哪些)
-- [165. 什么是组合函数？](#165-什么是组合函数)
-- [166. 什么是 Teleport？](#166-什么是-teleport)
-- [167. v-html 指令的作用是什么？](#167-v-html-指令的作用是什么)
+- [面试题集: 前端开发-Vue](#面试题集-前端开发-vue)
+  - [技能概览](#技能概览)
+    - [响应式原理](#响应式原理)
+    - [组件系统](#组件系统)
+    - [模板语法与指令](#模板语法与指令)
+    - [路由管理](#路由管理)
+    - [状态管理](#状态管理)
+    - [Composition API](#composition-api)
+    - [性能优化](#性能优化)
+    - [服务端渲染(SSR)](#服务端渲染ssr)
+    - [测试与调试](#测试与调试)
+    - [国际化与多语言支持](#国际化与多语言支持)
+    - [安全性](#安全性)
+    - [生态与工具链](#生态与工具链)
+  - [详细题目列表](#详细题目列表)
+    - [响应式原理](#响应式原理-1)
+      - [响应式数据绑定机制](#响应式数据绑定机制)
+      - [依赖收集与触发更新](#依赖收集与触发更新)
+      - [Proxy与Object.defineProperty区别](#proxy与objectdefineproperty区别)
+      - [响应式系统的性能优化](#响应式系统的性能优化)
+      - [响应式底层源码分析](#响应式底层源码分析)
+    - [组件系统](#组件系统-1)
+      - [组件注册与使用](#组件注册与使用)
+      - [组件通信（props, events）](#组件通信props-events)
+      - [插槽机制](#插槽机制)
+      - [动态组件与异步组件](#动态组件与异步组件)
+      - [高阶组件与函数式组件](#高阶组件与函数式组件)
+      - [组件生命周期钩子](#组件生命周期钩子)
+      - [组件复用与抽象](#组件复用与抽象)
+      - [组件设计模式](#组件设计模式)
+      - [组件源码阅读与扩展](#组件源码阅读与扩展)
+    - [模板语法与指令](#模板语法与指令-1)
+      - [模板基本语法](#模板基本语法)
+      - [内置指令（v-if, v-for, v-show等）](#内置指令v-if-v-for-v-show等)
+      - [自定义指令](#自定义指令)
+      - [指令的生命周期与钩子](#指令的生命周期与钩子)
+      - [指令性能优化](#指令性能优化)
+    - [路由管理](#路由管理-1)
+      - [Vue Router基础使用](#vue-router基础使用)
+      - [动态路由与路由参数](#动态路由与路由参数)
+      - [路由守卫](#路由守卫)
+      - [路由懒加载与代码分割](#路由懒加载与代码分割)
+      - [路由状态管理与缓存](#路由状态管理与缓存)
+      - [路由源码分析](#路由源码分析)
+    - [状态管理](#状态管理-1)
+      - [Vuex基础概念](#vuex基础概念)
+      - [State, Getter, Mutation, Action](#state-getter-mutation-action)
+      - [模块化管理](#模块化管理)
+      - [插件机制](#插件机制)
+      - [状态管理性能优化](#状态管理性能优化)
+      - [Vuex源码分析](#vuex源码分析)
+    - [Composition API](#composition-api-1)
+      - [setup函数与生命周期](#setup函数与生命周期)
+      - [响应式引用(ref, reactive)](#响应式引用ref-reactive)
+      - [组合函数与逻辑复用](#组合函数与逻辑复用)
+      - [自定义组合函数](#自定义组合函数)
+      - [Composition API与Options API对比](#composition-api与options-api对比)
+      - [高级组合函数设计](#高级组合函数设计)
+      - [Composition API源码解析](#composition-api源码解析)
+    - [性能优化](#性能优化-1)
+      - [虚拟DOM原理](#虚拟dom原理)
+      - [渲染机制与Diff算法](#渲染机制与diff算法)
+      - [性能监控与分析工具](#性能监控与分析工具)
+      - [异步组件与懒加载优化](#异步组件与懒加载优化)
+      - [SSR性能优化](#ssr性能优化)
+      - [深度源码调优](#深度源码调优)
+    - [服务端渲染(SSR)](#服务端渲染ssr-1)
+      - [SSR基本概念](#ssr基本概念)
+      - [Nuxt.js框架使用](#nuxtjs框架使用)
+      - [数据预取与状态同步](#数据预取与状态同步)
+      - [SSR缓存策略](#ssr缓存策略)
+      - [SSR安全与性能优化](#ssr安全与性能优化)
+      - [SSR源码分析](#ssr源码分析)
+    - [测试与调试](#测试与调试-1)
+      - [Vue Devtools使用](#vue-devtools使用)
+      - [单元测试（Jest, Vue Test Utils）](#单元测试jest-vue-test-utils)
+      - [端到端测试（Cypress）](#端到端测试cypress)
+      - [测试覆盖率与性能测试](#测试覆盖率与性能测试)
+      - [调试技巧与源码调试](#调试技巧与源码调试)
+    - [国际化与多语言支持](#国际化与多语言支持-1)
+      - [vue-i18n基础使用](#vue-i18n基础使用)
+      - [动态语言切换](#动态语言切换)
+      - [多语言资源管理](#多语言资源管理)
+      - [国际化性能优化](#国际化性能优化)
+    - [安全性](#安全性-1)
+      - [XSS防护](#xss防护)
+      - [CSRF防护](#csrf防护)
+      - [内容安全策略(CSP)](#内容安全策略csp)
+      - [依赖安全管理](#依赖安全管理)
+    - [生态与工具链](#生态与工具链-1)
+      - [Vue CLI使用](#vue-cli使用)
+      - [Vite构建工具](#vite构建工具)
+      - [插件开发与使用](#插件开发与使用)
+      - [自定义插件开发](#自定义插件开发)
+      - [源码构建流程理解](#源码构建流程理解)
+      - [跨项目架构与治理](#跨项目架构与治理)
+  - [旧的问题列表](#旧的问题列表)
+    - [1. Vue.js 是什么？](#1-vuejs-是什么)
+    - [2. Vue.js 是否只在少数浏览器中支持？](#2-vuejs-是否只在少数浏览器中支持)
+    - [3. 列举 Vue.js 的核心特性？](#3-列举-vuejs-的核心特性)
+    - [4. 什么是 Vue.js 中的过滤器 (filters)？](#4-什么是-vuejs-中的过滤器-filters)
+    - [5. v-for 指令的主要作用是什么？](#5-v-for-指令的主要作用是什么)
+    - [6. 在 Vue.js 中如何创建 Vue 实例？](#6-在-vuejs-中如何创建-vue-实例)
+    - [7. 能否在 Vue.js 中创建自定义过滤器？](#7-能否在-vuejs-中创建自定义过滤器)
+    - [8. Vue.js 提供了哪些常用的内置指令？](#8-vuejs-提供了哪些常用的内置指令)
+    - [9. const 关键字在 Vue.js 中的用途？](#9-const-关键字在-vuejs-中的用途)
+    - [10. 什么是虚拟 DOM (Virtual DOM)？](#10-什么是虚拟-dom-virtual-dom)
+    - [11. Vue.js 是否支持双向数据绑定？](#11-vuejs-是否支持双向数据绑定)
+    - [12. 哪种指令用于单向数据绑定？](#12-哪种指令用于单向数据绑定)
+    - [13. Vue.js 中实现双向绑定的指令是？](#13-vuejs-中实现双向绑定的指令是)
+    - [14. 什么是混入 (Mixin)？](#14-什么是混入-mixin)
+    - [15. Vue 3 中是否仍可使用过滤器？](#15-vue-3-中是否仍可使用过滤器)
+    - [16. 过滤器在 Vue 中是否可复用？](#16-过滤器在-vue-中是否可复用)
+    - [17. Vue.js 中的条件渲染指令有哪些？](#17-vuejs-中的条件渲染指令有哪些)
+    - [18. 是否能在 Vue.js 中调用 REST API？](#18-是否能在-vuejs-中调用-rest-api)
+    - [19. Vue.js 如何检测数组变更？](#19-vuejs-如何检测数组变更)
+    - [20. 列举 Vue 的按键修饰符](#20-列举-vue-的按键修饰符)
+    - [21. Vue 的事件修饰符有哪些？](#21-vue-的事件修饰符有哪些)
+    - [22. v-show 和 v-if 的区别？](#22-v-show-和-v-if-的区别)
+    - [23. Vue.js 的鼠标事件修饰符有哪些？](#23-vuejs-的鼠标事件修饰符有哪些)
+    - [24. 什么是 $parent 属性？](#24-什么是-parent-属性)
+    - [25. 什么是全局组件？](#25-什么是全局组件)
+    - [26. 什么是局部组件？](#26-什么是局部组件)
+    - [27. Vue 单文件组件包含哪几部分？](#27-vue-单文件组件包含哪几部分)
+    - [28. $child 属性的用途](#28-child-属性的用途)
+    - [29. Vue.js 的主要优势？](#29-vuejs-的主要优势)
+    - [30. Vue.js 为何性能优秀？](#30-vuejs-为何性能优秀)
+    - [31. 什么是 Vue-loader？](#31-什么是-vue-loader)
+    - [32. 解释 Vue 的响应式系统原理？](#32-解释-vue-的响应式系统原理)
+    - [33. 什么是 refs？](#33-什么是-refs)
+    - [34. 如何扩展 Vue 应用功能？](#34-如何扩展-vue-应用功能)
+    - [35. 哪种指令用于更新元素的文本内容？](#35-哪种指令用于更新元素的文本内容)
+    - [36. 什么是 Watcher？](#36-什么是-watcher)
+    - [37. 哪个指令可用于动态绑定 HTML 属性和样式？](#37-哪个指令可用于动态绑定-html-属性和样式)
+    - [38. Vue Router 的作用？](#38-vue-router-的作用)
+    - [39. Vue 指令有哪些类型？](#39-vue-指令有哪些类型)
+    - [40. 使用混入 (Mixin) 的主要优势？](#40-使用混入-mixin-的主要优势)
+    - [41. Vue 实例的生命周期钩子有哪些？](#41-vue-实例的生命周期钩子有哪些)
+    - [42. 导航守卫 (Navigation Guards) 的作用？](#42-导航守卫-navigation-guards-的作用)
+    - [43. 什么是即时原型开发 (Instant Prototyping)？](#43-什么是即时原型开发-instant-prototyping)
+    - [44. Vue 中组件的定义？](#44-vue-中组件的定义)
+    - [45. 在Vue中如何创建组件？](#45-在vue中如何创建组件)
+    - [46. Vue中的Props是什么？](#46-vue中的props是什么)
+    - [47. 描述Vue组件间的数据流机制](#47-描述vue组件间的数据流机制)
+    - [48. 什么是Slot？](#48-什么是slot)
+    - [49. 如何为Slot添加默认内容？](#49-如何为slot添加默认内容)
+    - [50. Vue中的属性绑定如何实现？](#50-vue中的属性绑定如何实现)
+    - [51. Vue中如何实现双向数据绑定？](#51-vue中如何实现双向数据绑定)
+    - [52. 如何向指令传递多个值？](#52-如何向指令传递多个值)
+    - [53. 解释普通插槽和作用域插槽的区别？](#53-解释普通插槽和作用域插槽的区别)
+    - [54. v-if和v-show有何区别？](#54-v-if和v-show有何区别)
+    - [55. 解释Vue响应式原理及常见变更追踪问题？](#55-解释vue响应式原理及常见变更追踪问题)
+    - [56. 列举Vue应用内存泄漏的常见原因及解决方法？](#56-列举vue应用内存泄漏的常见原因及解决方法)
+    - [57. 什么是虚拟DOM及其优势？](#57-什么是虚拟dom及其优势)
+    - [58. Vue支持哪些Prop类型？](#58-vue支持哪些prop类型)
+    - [59. 什么是非 prop 属性？](#59-什么是非-prop-属性)
+    - [60. props 的验证机制有哪些类型？](#60-props-的验证机制有哪些类型)
+    - [61. 如何为组件自定义 v-model 指令？](#61-如何为组件自定义-v-model-指令)
+    - [62. Vue 中有哪些实现过渡效果的方法？](#62-vue-中有哪些实现过渡效果的方法)
+    - [63. Vue Router 是什么及其核心特性？](#63-vue-router-是什么及其核心特性)
+    - [64. 使用 Vue Router 的步骤及示例？](#64-使用-vue-router-的步骤及示例)
+    - [65. 什么是动态路由匹配？](#65-什么是动态路由匹配)
+    - [66. 如何使路由参数变化具有响应性？](#66-如何使路由参数变化具有响应性)
+    - [67. 什么是路由匹配优先级？](#67-什么是路由匹配优先级)
+    - [68. 什么是嵌套路由？](#68-什么是嵌套路由)
+    - [69. 什么是单文件组件？](#69-什么是单文件组件)
+    - [70. 单文件组件是否违反关注点分离原则？](#70-单文件组件是否违反关注点分离原则)
+    - [71. 单文件组件解决了哪些关键问题？](#71-单文件组件解决了哪些关键问题)
+    - [72. 如何进行过滤器链式调用？](#72-如何进行过滤器链式调用)
+    - [73. 能否给过滤器传递参数？](#73-能否给过滤器传递参数)
+    - [74. 插件及其服务是什么？](#74-插件及其服务是什么)
+    - [75. 如何创建插件？](#75-如何创建插件)
+    - [76. 如何使用插件？](#76-如何使用插件)
+    - [77. 自定义选项合并策略是什么？](#77-自定义选项合并策略是什么)
+    - [78. 什么是自定义指令？](#78-什么是自定义指令)
+    - [79. 如何局部注册指令？](#79-如何局部注册指令)
+    - [80. 指令提供哪些钩子函数？](#80-指令提供哪些钩子函数)
+    - [81. 指令钩子的参数有哪些？](#81-指令钩子的参数有哪些)
+    - [82. 如何传递多值到指令？](#82-如何传递多值到指令)
+    - [83. 什么是指令钩子中的函数简写？](#83-什么是指令钩子中的函数简写)
+    - [84. Render函数相比模板有什么优势？](#84-render函数相比模板有什么优势)
+    - [85. 什么是Render函数？](#85-什么是render函数)
+    - [86. 如何在组件中编写重复的虚拟节点？](#86-如何在组件中编写重复的虚拟节点)
+    - [87. 列出Render函数中模板特性的等价实现方式？](#87-列出render函数中模板特性的等价实现方式)
+    - [88. 什么是函数式组件？](#88-什么是函数式组件)
+    - [89. VueJS与ReactJS有哪些相似之处？](#89-vuejs与reactjs有哪些相似之处)
+    - [90. VueJS与ReactJS有何主要区别？](#90-vuejs与reactjs有何主要区别)
+    - [91. Vue相比React有哪些优势？](#91-vue相比react有哪些优势)
+    - [92. React相比Vue有哪些优势？](#92-react相比vue有哪些优势)
+    - [93. VueJS与Angular有何主要区别？](#93-vuejs与angular有何主要区别)
+    - [94. 什么是动态组件 (Dynamic Components)？](#94-什么是动态组件-dynamic-components)
+    - [95. keep-alive 标签的作用是什么？](#95-keep-alive-标签的作用是什么)
+    - [96. 什么是异步组件 (Async Components)？](#96-什么是异步组件-async-components)
+    - [97. 异步组件工厂的结构是怎样的？](#97-异步组件工厂的结构是怎样的)
+    - [98. 什么是内联模板 (Inline Templates)？](#98-什么是内联模板-inline-templates)
+    - [99. 什么是 X-Templates？](#99-什么是-x-templates)
+    - [100. 如何解决组件间的循环依赖？](#100-如何解决组件间的循环依赖)
+    - [101. 如何确保 Vue 应用符合 CSP（内容安全策略）？](#101-如何确保-vue-应用符合-csp内容安全策略)
+    - [102. 全构建 (Full) 和运行时构建 (Runtime Only) 有何区别？](#102-全构建-full-和运行时构建-runtime-only-有何区别)
+    - [103. Vue.js 有哪些不同的构建版本？](#103-vuejs-有哪些不同的构建版本)
+    - [104. 如何在 Webpack 中配置 Vue.js？](#104-如何在-webpack-中配置-vuejs)
+    - [105. Vue.js 编译器的作用是什么？](#105-vuejs-编译器的作用是什么)
+    - [106. 如何访问根实例？](#106-如何访问根实例)
+    - [107. renderError 的作用是什么？](#107-rendererror-的作用是什么)
+    - [108. 如何访问父组件实例？](#108-如何访问父组件实例)
+    - [109. 什么是 Vuex？](#109-什么是-vuex)
+    - [110. 状态管理模式的核心组件是什么？](#110-状态管理模式的核心组件是什么)
+    - [111. 如何在 Vuex 中体现单向数据流？](#111-如何在-vuex-中体现单向数据流)
+    - [112. 什么是 Vue Loader？](#112-什么是-vue-loader)
+    - [113. 如何在 Webpack 中配置 Vue Loader？](#113-如何在-webpack-中配置-vue-loader)
+    - [114. 能否为 CSS 模块使用自定义注入名称？](#114-能否为-css-模块使用自定义注入名称)
+    - [115. Vue Loader 中的热重载是什么？](#115-vue-loader-中的热重载是什么)
+    - [116. 热重载的默认行为是什么？](#116-热重载的默认行为是什么)
+    - [117. 如何显式关闭热重载？](#117-如何显式关闭热重载)
+    - [118. 如何使用热重载功能？](#118-如何使用热重载功能)
+    - [119. 热重载的状态保持规则有哪些？](#119-热重载的状态保持规则有哪些)
+    - [120. 如何使用 Vue Loader 创建函数式组件？](#120-如何使用-vue-loader-创建函数式组件)
+    - [121. 如何在函数式组件中访问全局属性？](#121-如何在函数式组件中访问全局属性)
+    - [122. Vue.js 如何进行测试？](#122-vuejs-如何进行测试)
+    - [123. 如何实现 CSS 代码检查？](#123-如何实现-css-代码检查)
+    - [124. 如何使用 ESLint 插件？](#124-如何使用-eslint-插件)
+    - [125. ESLint Loader 的作用是什么？](#125-eslint-loader-的作用是什么)
+    - [126. stylelint 有哪些特性？](#126-stylelint-有哪些特性)
+    - [127. Vuex 应用结构遵循哪些原则？](#127-vuex-应用结构遵循哪些原则)
+    - [128. Vuex 是否支持热重载？](#128-vuex-是否支持热重载)
+    - [129. vuex store 中 hotUpdate API 的目的是什么？](#129-vuex-store-中-hotupdate-api-的目的是什么)
+    - [130. 如何测试 mutations？](#130-如何测试-mutations)
+    - [131. 如何测试 getters？](#131-如何测试-getters)
+    - [132. 如何在 node 环境中运行测试？](#132-如何在-node-环境中运行测试)
+    - [133. 如何在浏览器中运行测试？](#133-如何在浏览器中运行测试)
+    - [134. vuex 严格模式的目的是什么？](#134-vuex-严格模式的目的是什么)
+    - [135. 生产环境可以使用严格模式吗？](#135-生产环境可以使用严格模式吗)
+    - [136. 是否需要将全部局部状态迁移到 vuex？](#136-是否需要将全部局部状态迁移到-vuex)
+    - [137. vuex getters 的作用是什么？](#137-vuex-getters-的作用是什么)
+    - [138. 什么是属性风格的getter访问形式？](#138-什么是属性风格的getter访问形式)
+    - [139. 方法风格的getter访问有什么特点？](#139-方法风格的getter访问有什么特点)
+    - [140. mapGetters辅助函数的作用是什么？](#140-mapgetters辅助函数的作用是什么)
+    - [141. 如何定义Vuex的mutations？](#141-如何定义vuex的mutations)
+    - [142. 如何在commit时携带payload？](#142-如何在commit时携带payload)
+    - [143. 什么是对象风格的commit方式？](#143-什么是对象风格的commit方式)
+    - [144. Vuex mutations使用时有哪些注意事项？](#144-vuex-mutations使用时有哪些注意事项)
+    - [145. 为什么要求mutations必须是同步的？](#145-为什么要求mutations必须是同步的)
+    - [146. 如何实现组件中的mutation触发？](#146-如何实现组件中的mutation触发)
+    - [147. 必须使用常量定义mutation类型吗？](#147-必须使用常量定义mutation类型吗)
+    - [148. 如何进行异步操作处理？](#148-如何进行异步操作处理)
+    - [149. mutations和actions的核心区别是什么？](#149-mutations和actions的核心区别是什么)
+    - [150. 如何实现日期时间本地化？](#150-如何实现日期时间本地化)
+    - [151. 如何实现数字货币本地化？](#151-如何实现数字货币本地化)
+    - [152. 如何切换应用语言？](#152-如何切换应用语言)
+    - [153. 什么是翻译懒加载？](#153-什么是翻译懒加载)
+    - [154. 方法和计算属性的核心区别？](#154-方法和计算属性的核心区别)
+    - [155. 什么是Vuetify？](#155-什么是vuetify)
+    - [156. 如何监听对象深层属性变化？](#156-如何监听对象深层属性变化)
+    - [157. 如何让监听器在初始化时立即触发？](#157-如何让监听器在初始化时立即触发)
+    - [158. comments 选项的作用是什么？](#158-comments-选项的作用是什么)
+    - [159. 如何判断当前代码运行在客户端还是服务端？](#159-如何判断当前代码运行在客户端还是服务端)
+    - [160. 什么是 Vue Router 的导航守卫？](#160-什么是-vue-router-的导航守卫)
+    - [161. 是否可以在一个计算属性中使用另一个计算属性？](#161-是否可以在一个计算属性中使用另一个计算属性)
+    - [162. 如何将导入的常量用于模板？](#162-如何将导入的常量用于模板)
+    - [163. 是否推荐在计算属性中使用异步操作？](#163-是否推荐在计算属性中使用异步操作)
+    - [164. 组合式 API 的优势有哪些？](#164-组合式-api-的优势有哪些)
+    - [165. 什么是组合函数？](#165-什么是组合函数)
+    - [166. 什么是 Teleport？](#166-什么是-teleport)
+    - [167. v-html 指令的作用是什么？](#167-v-html-指令的作用是什么)
 
 <a id='1-vue-js-是什么'></a>
 ### 1. Vue.js 是什么？
